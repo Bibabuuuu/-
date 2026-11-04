@@ -1,0 +1,123 @@
+{
+  "evidence_audit_passed": true,
+  "quadratic_ceiling": {
+    "fixed_T_s": 0.6195207030426355,
+    "common_window_s": 0.8998625445380035,
+    "active_objective_coefficients": 9,
+    "other_variables_affect_constraints_not_objective_directly": 41,
+    "seed_f": 0.7388873230670365,
+    "last_accepted_f": 0.7379294548851882,
+    "relaxed_lower_f": 0.7379002889000073,
+    "seed_reference_RMS_mps2": 0.5598878363974262,
+    "last_reference_RMS_mps2": 0.5595248090117092,
+    "relaxed_lower_reference_RMS_mps2": 0.5595137515498932,
+    "maximum_possible_RMS_reduction_from_seed_percent": 0.06681424800011326,
+    "observed_last_RMS_reduction_from_seed_percent": 0.06483930568181862,
+    "maximum_additional_RMS_reduction_from_last_percent": 0.0019762236880049855,
+    "maximum_additional_absolute_RMS_reduction_from_last_mps2": 1.105746181595535e-05,
+    "positive_Hessian_min_eigenvalue": 0.0038099342531622087,
+    "stationarity_residual_inf": 6.505213034913027e-19,
+    "solver_normal_convergence": false,
+    "new_candidate_qualified": false,
+    "interpretation": "Algebraic lower bound of the frozen discrete quadratic, with all mapping/geometry/actuator/bounds constraints relaxed; no pstar reference was generated or admitted.",
+    "limitations": [
+      "not a lower bound for variable duration or a different reference family",
+      "not global optimality of full robot planning or physical execution",
+      "no claim about hand moment, angular load, grasp slip or torque optimum"
+    ]
+  },
+  "finite_candidate_tradeoffs": {
+    "rows": [
+      {
+        "label": "straight",
+        "execution_qualified": true,
+        "acceleration_RMS_mps2": 0.6475390208388282,
+        "hand_moment_RMS_Nm": 0.026761279003510705,
+        "minimum_actual_sampled_clearance_m": 0.046421102554624616,
+        "maximum_axle_forward_travel_m": 0.15359418802405556,
+        "persistent_translation_rest_s": 0.899,
+        "failed_gates": []
+      },
+      {
+        "label": "coordinated",
+        "execution_qualified": true,
+        "acceleration_RMS_mps2": 0.6523727611227557,
+        "hand_moment_RMS_Nm": 0.03021749002092183,
+        "minimum_actual_sampled_clearance_m": 0.02811665028816246,
+        "maximum_axle_forward_travel_m": 0.14457281937526478,
+        "persistent_translation_rest_s": 1.0070000000000001,
+        "failed_gates": []
+      },
+      {
+        "label": "held_same_base",
+        "execution_qualified": false,
+        "acceleration_RMS_mps2": 0.733476071512758,
+        "hand_moment_RMS_Nm": 0.0342197406137111,
+        "minimum_actual_sampled_clearance_m": 0.024750130061852005,
+        "maximum_axle_forward_travel_m": 0.1447825787390501,
+        "persistent_translation_rest_s": 1.0170000000000001,
+        "failed_gates": [
+          "wheels"
+        ]
+      }
+    ],
+    "common_motion_window_s": [
+      0.25,
+      0.918732400344874
+    ],
+    "qualification_filter": "original execution flags retained; held_same_base excluded from qualified Pareto set",
+    "metrics_primary": {
+      "acceleration_RMS_mps2": 1.0,
+      "hand_moment_RMS_Nm": 1.0,
+      "minimum_actual_sampled_clearance_m": -1.0
+    },
+    "qualified_frontier": [
+      "straight"
+    ],
+    "sensitivity_if_axle_travel_is_also_minimized": [
+      "straight",
+      "coordinated"
+    ],
+    "interpretation": "Straight dominates the recorded coordinated candidate on load RMS and whole-robot sampled clearance; adding axle travel creates a tradeoff. These are two recorded qualified candidates, not a global search.",
+    "limits": "Different base curves are allowed here as candidate tradeoffs; the separate fixed-base ablation isolates upper command contribution. Do not confuse these comparisons or derive online selection from future actual outcomes."
+  },
+  "decisions": {
+    "no_new_contact_diagnostic_batch": true,
+    "old_wheel_gate_and_failures_unchanged": true,
+    "no_fixed_T_optimizer_time_extension_without_new_decision_value": true,
+    "no_unconstrained_bound_point_added_to_action_library": true,
+    "keep_shared_reference_and_existing_controller": true,
+    "next_milestone": "Freeze one fair mature-baseline task: permissions, representative existing obstacle conditions, stopping space/time freedom and unweighted metric reporting, before any further physical batch.",
+    "candidate_not_implemented": "Prefer original mature action-family/continuous-parameter baseline as first comparison route; retain the 50-parameter representation as an offline research tool. Any objective/horizon/interface change remains a separate consequential decision."
+  },
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-first-joint-solve\\contract.json": "982863d61bfabcaba7734d075b469078619ac4af45d306e918da7ca2b9a09754",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-first-joint-solve\\result.json": "a81b31280f4d55d02939ad3127a7efa068a88bb78fb4aba92221f6a5ca48577c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-first-joint-solve\\delivery_check.json": "4166019c6a59e0df2eb74d80817250ba09d15bf1e21c19ef2edee1748426426a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-first-joint-solve\\iterations.json": "76e978f0183585da8cb650e7d4f4a17c1f80817ccae8ddb8d8624d0be207914b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\objective_quadratic.npz": "8c603c40e830b390af138d7d814baf0df8813274fa6366658a7050243143d47d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\objective_structure.json": "ac765b76b4806cf7a5a4d49736e776f8e9ba3371c4090d248b405e562614958d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-trigger-execution\\common_window_comparison.json": "80be0a7a0b4aa6df24159470f5f63c8e3415609e02c42a54537824d65fc13a41",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-matched-base-execution\\paired_comparison.json": "beabfff631943f3b1ff5611008f0323235c3e0581a18b40905d83ae7a8b5f1c6",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-matched-base-execution\\delivery_check.json": "9b53b8155d6b4df60e00347af60d1eb54103728eae322b263a1dc65bd91def41",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.s3-mainline-consolidation\\audit.py": "b9ef8cdb21dca3a217b63d6bff723d88057bcb2531b19aa86e90f1b53fa5c209",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\execution\\forced_deadline\\config.json": "249dbc508c49e79fdb58e903b1eb031213b51664232a8f009dfca3647394bd4c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\execution\\forced_deadline\\analysis.json": "20008e1ca39c939c84488ec2db6e84c93bbb010b3a0c7ec922546c1acac7dbfc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\execution\\forced_deadline\\trigger_events.json": "db289285d7dce751538b304277a20c6cfd002bd8a96bff9495111c00d851c67e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-trigger-execution\\execution\\upper_at_deadline\\config.json": "a9236eb0f64d19417d8aceef5e33750681237acfcde4501244f22359d0f5c026",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-trigger-execution\\execution\\upper_at_deadline\\analysis.json": "5b61417697497cf2659bb4dd299e2ec2cac095c039b0842fbc673f3026d6d50f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-trigger-execution\\execution\\upper_at_deadline\\trigger_events.json": "cac511047a6e346c163a1c412521fab2a5e54a57fdd10eaf94175970819ebecf",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-matched-base-execution\\execution\\held_same_base\\config.json": "ec660e7a68cca756840f957a31acbd5094a00fcc74b13ef193b1b3eec3a268ca",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-matched-base-execution\\execution\\held_same_base\\analysis.json": "a58d4b330e940698a51bb84837da79ef0df9bcda1aa32a7bf47bbaf86f7791dc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-matched-base-execution\\execution\\held_same_base\\trigger_events.json": "2bb1cbf0138be17c5e4603d0b015829c2b3bde34b417145f63e1d672e6c9b835"
+  },
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "new_IK": 0,
+  "new_QP": 0,
+  "new_optimizer_calls": 0,
+  "S3_cumulative_runs": 56,
+  "S3_cumulative_steps": 141061,
+  "S3_complete": false,
+  "S4_started": false
+}

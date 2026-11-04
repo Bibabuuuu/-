@@ -1,0 +1,300 @@
+{
+  "passed": true,
+  "comparisons": [
+    {
+      "method": "slsqp",
+      "solver": {
+        "success": false,
+        "status": 9,
+        "message": "Iteration limit reached",
+        "nit": 40,
+        "nfev": 46,
+        "njev": 41
+      },
+      "failure_or_budget": null,
+      "evaluations": 2835,
+      "iterations": 40,
+      "wall_s": 91.96091580000211,
+      "qualified": false,
+      "best_dense_reference": {
+        "rms_acceleration_mps2": 0.5594541536601694,
+        "peak_acceleration_mps2": 0.8604639497275783,
+        "peak_predicted_TCP_moment_Nm": 0.03728021718177443,
+        "minimum_reference_gap_m": 0.006257614311795806,
+        "closure_norm_max_SI": [
+          1.318677622999132e-05,
+          0.00013270080152807208,
+          3.771796609111707e-05,
+          0.00037132426311688367,
+          0.00019506592860359033,
+          0.0021062178961948714
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -0.0021874480993280265,
+        "upper_joint_excursion_norm_rad": 0.03833162036402716,
+        "final_turn_deg": -9.506761979645356
+      },
+      "rms_change_from_warm_start_pct": -0.07752213319571766,
+      "selected_kind": "finite_difference",
+      "selected_parameter_change_inf": 0.035438643609547696,
+      "kkt": {
+        "lagrangian_gradient_inf": 0.008251104487332577,
+        "complementarity_inf": 5.18547503550869e-07,
+        "dual_sign_violation": 0.0,
+        "scope": "finite-difference residual with returned local multipliers; no global optimality certificate"
+      },
+      "replay_max_error": 0.0,
+      "gradient_check": {
+        "closure_forward_vs_central_relative_l2": 1.9603221679831027e-08,
+        "objective_directional_error": 4.097647270779291e-07
+      },
+      "solver_final_constraint_groups": {
+        "closure_minus": {
+          "minimum_scaled": -0.01082512447176387,
+          "worst_time_s": 0.5420806151623061,
+          "violated_components": 5
+        },
+        "closure_plus": {
+          "minimum_scaled": -0.03192917444738108,
+          "worst_time_s": 0.5420806151623061,
+          "violated_components": 6
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.491551835870763,
+          "worst_time_s": 0.18340679628518677,
+          "violated_components": 0
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.2538465960492706,
+          "worst_time_s": 0.44915250970591075,
+          "violated_components": 0
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.8290150205014428,
+          "worst_time_s": 0.30976035152131776,
+          "violated_components": 0
+        },
+        "obstacle_gap": {
+          "minimum_scaled": 1.748821579246676e-05,
+          "worst_time_s": 0.46464052728197663,
+          "violated_components": 0
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "worst_time_s": 0.0,
+          "violated_components": 0
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "worst_time_s": 0.6195207030426355,
+          "violated_components": 0
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "worst_time_s": 0.0,
+          "violated_components": 0
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08296601857406616,
+          "worst_time_s": 0.278784316369186,
+          "violated_components": 0
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "worst_time_s": 0.0,
+          "violated_components": 0
+        },
+        "jerk": {
+          "minimum_scaled": -2.220446049250313e-16,
+          "worst_time_s": 0.0,
+          "violated_components": 0
+        },
+        "turn": {
+          "minimum_scaled": 0.002540176071179623,
+          "worst_time_s": 0.6195207030426355,
+          "violated_components": 0
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.16278291760038932,
+          "worst_time_s": 0.32524836909738364,
+          "violated_components": 0
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 2.6978419498391304e-14,
+          "worst_time_s": 0.5420806151623061,
+          "violated_components": 0
+        }
+      },
+      "selected_reference_derivative_error_SI": 7.779498711890653e-09
+    },
+    {
+      "method": "trust",
+      "solver": {
+        "success": false,
+        "status": 0,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nit": 40,
+        "nfev": 40,
+        "njev": 40
+      },
+      "failure_or_budget": null,
+      "evaluations": 2761,
+      "iterations": 40,
+      "wall_s": 92.11767510000209,
+      "qualified": true,
+      "best_dense_reference": {
+        "rms_acceleration_mps2": 0.5598881786124332,
+        "peak_acceleration_mps2": 0.8747106294982263,
+        "peak_predicted_TCP_moment_Nm": 0.03747299203047838,
+        "minimum_reference_gap_m": 0.007495222861891455,
+        "closure_norm_max_SI": [
+          9.948504559751725e-06,
+          9.531245035465137e-05,
+          3.018068485519158e-05,
+          0.00028905623786754114,
+          0.0001721961535149654,
+          0.0014888853336189338
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -1.1102230246251565e-15,
+        "upper_joint_excursion_norm_rad": 0.03708916511029768,
+        "final_turn_deg": -9.439781930294698
+      },
+      "rms_change_from_warm_start_pct": -2.1998776911225093e-06,
+      "selected_kind": "finite_difference",
+      "selected_parameter_change_inf": 1.000000000001e-06,
+      "kkt": {
+        "lagrangian_gradient_inf": 0.33293101240614126,
+        "complementarity_inf": 0.1877810088216963,
+        "dual_sign_violation": 0.031105506591316067,
+        "scope": "finite-difference residual with returned local multipliers; no global optimality certificate"
+      },
+      "replay_max_error": 0.0,
+      "gradient_check": {
+        "closure_forward_vs_central_relative_l2": 2.0140355277425493e-08,
+        "objective_directional_error": 4.003407982899887e-07
+      },
+      "solver_final_constraint_groups": {
+        "closure_minus": {
+          "minimum_scaled": 0.6141331980151463,
+          "worst_time_s": 0.030976035152131775,
+          "violated_components": 0
+        },
+        "closure_plus": {
+          "minimum_scaled": 0.7418931108548753,
+          "worst_time_s": 0.10841612303246122,
+          "violated_components": 0
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.4533236682813806,
+          "worst_time_s": 0.32524836909738364,
+          "violated_components": 0
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.617994210146073,
+          "worst_time_s": 0.0,
+          "violated_components": 0
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.8329802582369263,
+          "worst_time_s": 0.18585621091279064,
+          "violated_components": 0
+        },
+        "obstacle_gap": {
+          "minimum_scaled": 0.9781793929321299,
+          "worst_time_s": 0.3717124218255813,
+          "violated_components": 0
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "worst_time_s": 0.0,
+          "violated_components": 0
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "worst_time_s": 0.6195207030426355,
+          "violated_components": 0
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "worst_time_s": 0.0,
+          "violated_components": 0
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08101964735618972,
+          "worst_time_s": 0.2478082812170542,
+          "violated_components": 0
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "worst_time_s": 0.0,
+          "violated_components": 0
+        },
+        "jerk": {
+          "minimum_scaled": -0.010310377527137149,
+          "worst_time_s": 0.6040326854665696,
+          "violated_components": 15
+        },
+        "turn": {
+          "minimum_scaled": 0.8487221542930768,
+          "worst_time_s": 0.557568632738372,
+          "violated_components": 0
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.8112437699379264,
+          "worst_time_s": 0.30976035152131776,
+          "violated_components": 0
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 0.7677795751581111,
+          "worst_time_s": 0.18340679628518677,
+          "violated_components": 0
+        }
+      },
+      "selected_reference_derivative_error_SI": 5.6877835774571395e-09
+    }
+  ],
+  "independent_reference_callbacks": 12,
+  "native_geometry_checks": [
+    {
+      "method": "slsqp",
+      "index": 0,
+      "native_geometries": 508
+    },
+    {
+      "method": "slsqp",
+      "index": 1244,
+      "native_geometries": 508
+    },
+    {
+      "method": "trust",
+      "index": 0,
+      "native_geometries": 508
+    },
+    {
+      "method": "trust",
+      "index": 1244,
+      "native_geometries": 508
+    }
+  ],
+  "new_nonlinear_solves": 2,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "audit_wall_s": 3.4767881000007037,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\slsqp\\final_linearization.npz": "8eaf79ff33d492af3dea308bf3ff5dffe7df74d2c53558f7ce8aae7c2e599111",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\slsqp\\history.json": "4867631fc46c5a843e550a10dcdb5f9f612913e6560326df1ac9b0ecf184cc71",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\slsqp\\iterations.json": "58fafabb6891dcf010e38cf21a43db3e6506599bcf9d7b9a82feef3787d544da",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\slsqp\\partial_history.json": "9e4f11560a1f75e95410d8fdf96c0c8413ccf8deb16e17a9675495d9a0eacfef",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\slsqp\\plan.json": "21acb43479b205740ce47226b48ace6fb0c4a0333e49c059e9ee6eb2650525cc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\trust\\final_linearization.npz": "bb1a3699d5ef29cca7a7b8236d2f9cdb30867e6d5a9da66a9d634ada5d735a7e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\trust\\history.json": "c5ba5fade61753b37c90a409cb1c98c33b6bf96c9043a3ad4e8f609dd226d291",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\trust\\iterations.json": "a5de67b0f376d92fba3e4b1dafd5cd120e3f07f1fdab9c56c091318b1e7a66af",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\trust\\partial_history.json": "d0d3d4a6e94fecfeb807b82a0fb2b8d3ba5362e68679c0f6ec230c43802dacff",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\trust\\plan.json": "1e8fc4d71f1d151a7be3b312a97208f65a9a9edc4460ea59f7eb5da0d3080362",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\contract.json": "9d285e907e694cae6a2fdc06febdd004186dcdd89c0fa09710082cb06c4b23a4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\compare_stop_solvers.py": "c093af681fbe82bbff5aae6a2c62711fb7b0ae14410f2b495113b12bd9e45af2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-solver-compare\\verify_solver_comparison.py": "7c47b39c1eecf2a69744868638cb8e9b11a32d064f47edc4d41f65089b3526fa"
+  },
+  "scope": "audit passed does not mean either optimizer converged or a physical grasp improved"
+}

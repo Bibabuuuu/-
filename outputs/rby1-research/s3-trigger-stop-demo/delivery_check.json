@@ -1,0 +1,70 @@
+{
+  "audit_passed": true,
+  "rows": [
+    {
+      "label": "measured_latency",
+      "passed": true,
+      "steps": 4000,
+      "control_reference_analytic_max_error_m": 2.220446049250313e-16,
+      "grasp_FK_max_error_m": 0.0,
+      "sampled_front_gap_m": 0.06601124568826333,
+      "actual_trigger_to_max_forward_travel_m": 0.13400408847217815,
+      "integration_continuity_diagnostics": [
+        {
+          "index": 400,
+          "maximum_velocity_difference": 4.511946372076636e-13
+        },
+        {
+          "index": 402,
+          "maximum_velocity_difference": 8.415490526658687e-13
+        },
+        {
+          "index": 1717,
+          "maximum_velocity_difference": 1.6591593550441264e-12
+        }
+      ]
+    },
+    {
+      "label": "forced_deadline",
+      "passed": true,
+      "steps": 4000,
+      "control_reference_analytic_max_error_m": 2.220446049250313e-16,
+      "grasp_FK_max_error_m": 0.0,
+      "sampled_front_gap_m": 0.046421102554624616,
+      "actual_trigger_to_max_forward_travel_m": 0.15359418802405556,
+      "integration_continuity_diagnostics": [
+        {
+          "index": 400,
+          "maximum_velocity_difference": 4.511946372076636e-13
+        },
+        {
+          "index": 500,
+          "maximum_velocity_difference": 2.1704663450371458e-13
+        },
+        {
+          "index": 1815,
+          "maximum_velocity_difference": 1.227695028971354e-12
+        }
+      ]
+    }
+  ],
+  "controller_control_to_step_block_identical": true,
+  "original_sources_hash_match": true,
+  "prefix_before_first_handover_identical": true,
+  "prefix_samples": 403,
+  "additional_delay_travel_m": 0.019590099551877405,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "new_IK": 0,
+  "new_optimizer_calls": 0,
+  "physical_runs_audited": 2,
+  "physical_steps_audited": 8000,
+  "S3_cumulative_runs": 54,
+  "S3_cumulative_steps": 133061,
+  "caveats": [
+    "latency-injected single-thread simulation; not hard real time or independent watchdog",
+    "one nominal scene/speed/load, fixed upper posture; not optimized whole-body response",
+    "sampled geometry and relative pose; no continuous collision or material slip certificate"
+  ],
+  "auditor_sha256": "c5c8a777559cf8a51b3c0a68314adafe32c54aa9efd890683dd15835e93b245c"
+}

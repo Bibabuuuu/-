@@ -1,0 +1,314 @@
+{
+  "passed": true,
+  "new_physics_runs": 3,
+  "new_physics_steps": 5474,
+  "independent_all_geometry_distance_queries": 25908,
+  "max_distance_difference_m": 0.0,
+  "same_initial_state": true,
+  "unchanged_old_scene_definitions": true,
+  "pre_execution_decision_bound_to_runs": true,
+  "open_default_regression_bitwise_equal": true,
+  "two_noncontact_scenes_same_command_bitwise_equal": true,
+  "no_candidate_means_no_forced_physics_run": true,
+  "reference_default_checks": {
+    "passed": true,
+    "nominal_stop_duration_s": 0.9,
+    "straight_distance_m": 0.18000000000000016,
+    "reference_acceleration_derivative_error_mps2": 3.909661483447735e-11,
+    "independent_relations": "straight analytic distance, left/right mirror, no lateral axle velocity, acceleration finite difference"
+  },
+  "frozen_count": 15,
+  "new_physics_steps_in_audit": 0,
+  "independent_records": [
+    {
+      "scene": "open",
+      "candidate": "straight_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "straight_A0.5",
+      "sample_index": 180,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "straight_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "straight_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "left_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "left_A0.5",
+      "sample_index": 180,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "left_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "left_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "right_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "right_A0.5",
+      "sample_index": 180,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "right_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "open",
+      "candidate": "right_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "straight_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "straight_A0.5",
+      "sample_index": 180,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "straight_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "straight_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "left_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "left_A0.5",
+      "sample_index": 180,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "left_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "left_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "right_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "right_A0.5",
+      "sample_index": 180,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "right_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "candidate": "right_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "straight_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "straight_A0.5",
+      "sample_index": 127,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "straight_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "straight_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "left_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "left_A0.5",
+      "sample_index": 130,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "left_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "left_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "right_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "right_A0.5",
+      "sample_index": 130,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "right_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "candidate": "right_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "straight_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "straight_A0.5",
+      "sample_index": 180,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "straight_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "straight_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "left_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "left_A0.5",
+      "sample_index": 180,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "left_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "left_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "right_A0.5",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "right_A0.5",
+      "sample_index": 180,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "right_A0.6",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "candidate": "right_A0.6",
+      "sample_index": 158,
+      "max_distance_difference_m": 0.0
+    }
+  ],
+  "scope": "sampled geometry and nominal physical-chain audit, not continuous safety, real-time readiness or full strong baseline",
+  "auditor_sha256": "649150c412f8962cd5e028cb8550fbcc1cb360acc8efa847177c44df6acab5e7"
+}

@@ -1,0 +1,283 @@
+{
+  "published": true,
+  "files_verified": 66,
+  "diagnostic_completed": true,
+  "evidence_verified": true,
+  "derivative_accuracy_certified": false,
+  "complete_evaluations": 52,
+  "IK_calls": 2340,
+  "QP_calls": 4524,
+  "QP_internal_iterations": 9048,
+  "reference_qualified": 48,
+  "physical_execution_admitted": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "first_joint_solve_status": "pending discussion, not started",
+  "files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\jacobian_probe.py",
+      "sha256": "7161091F5559B85FAA188E27B6753969C4037F22F5A6ABEC381D5322B4C1BD57"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\verify_jacobian_probe.py",
+      "sha256": "00AEE7D767ED55814072468B8C71D6F05AEF1BC677986C4E89A696E79741F055"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\contract.json",
+      "sha256": "7B8AC11DBCD504B0DE087068EDECEE95A317AD1AEC8E4D3ED71715F390290E46"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\result.json",
+      "sha256": "8EED52BE9DB1B578B43A03244A486697BD843C0FA83018542D0837EED0F29D52"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\jacobian.npz",
+      "sha256": "AC742763F8D5207F825852BF888230BB8B221E3E87502416D6E2D86A657F4E01"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\progress.json",
+      "sha256": "DEA640B6056365958FF3DB2CE250A054A098D75FF2F8FFDED225A23DAB595020"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\delivery_check.json",
+      "sha256": "AD1CB00E7D182FED118211A7E7D5A59655379F824BDA6C43D00DB1F7FAD46A8E"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\review_signed_jerk.py",
+      "sha256": "722B715990A7D6269B97345E6EF936E50F2DFF46A4114A54DD5F93B66F8487B0"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\signed_jerk_review.json",
+      "sha256": "F212960FB891D3F088C3474747F3F92F8AAD19D1B5B8F9414526B86048D6C20F"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\signed_jerk_review.npz",
+      "sha256": "3E244BCE34680D16E53FA0318884AC21B39F79B0B396F61E3F9D643AFF875B5D"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\first_joint_solve_proposal.json",
+      "sha256": "BCF9FB470A1A355D6FC7A6951CE3A15E97B21E064B4772137726D541D57E2194"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\数值导数诊断_结果与联合求解建议.md",
+      "sha256": "7A2D05B9923A6D9163240BF8BA2CCD99564A5CEB1C78BC26F834DF9C8794240F"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_00.npz",
+      "sha256": "95D7BBAF2410B091DBD13B16652C5A1930412368DDE605F50E1F9C627DA57CC4"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_01.npz",
+      "sha256": "3B6A6E4AB277CB1B35BD3C37DDFF29A4EA5B97BBCF8A92A2223F4D6DFA339AF8"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_02.npz",
+      "sha256": "E9707BE7902667566F7FC9F6958D22F927756B0FF86B2887038184E9E5BD1075"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_03.npz",
+      "sha256": "A027062FA25E83882163114E88A1827883F12B462168910361AFC6C96B1DE9DC"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_04.npz",
+      "sha256": "F0EA0C7CB69E4A4BE12413194B0CC71948FB87A0A188B9EB0B024BB519D15D52"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_05.npz",
+      "sha256": "9AD8A331EBC62F54403EA7DF02B7785F0B74DFBDA2B98D8F5F725025E033AF3E"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_06.npz",
+      "sha256": "2B2168EFAC317705E5D2702B80D4C9F2F70805902578F9C6D238BC39958C5590"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_07.npz",
+      "sha256": "41F9E69C2D758AA49FF4BBAC54E76DEAD023E3DCE886CE0FCFD3A42228A2D4CC"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_08.npz",
+      "sha256": "C0098DEECC9E47412A0D377C1CCFC0500D74B4F3FE53BBD31C9825FC31E624DE"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_09.npz",
+      "sha256": "1AF3940306A35DC25A0DF83ACAA64599D3EBF86B99A2E3F64938FB50BF3DAE2F"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_10.npz",
+      "sha256": "B253FFC7BD231AB5B22AAD7952EF0B403355682ABB9DD705592D13C5033670ED"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_11.npz",
+      "sha256": "5D163379849ADA2D6DA56C413FB5DF7522CEEC5C2451D68EB72ADEF1AD92B8A7"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_12.npz",
+      "sha256": "7898B0BEB0086445E96E059FF0CCDEA67C395ADBB04B6A1AAB0D038E4C5DC6C8"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_13.npz",
+      "sha256": "BDFD6B2B586AFB5B42A68AD4710256508688D91F9106FB4FAF3B1D3A024F49F3"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_14.npz",
+      "sha256": "73AC0AA6088C7C889C9F46C8BA82187F29830DE44ADB554BB537D1AAAB772928"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_15.npz",
+      "sha256": "0B5CAC2D2001F3E9DBEC0D3B7238A23608FEAB8BEC6215264408F582A6891C34"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_16.npz",
+      "sha256": "6626C99A27212A1D04AF3433DA20E8A4F65D28900EB6AE4A435AFE1BB19CBAF5"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_17.npz",
+      "sha256": "32F919144C5DC98B24F550BC01B45E5022665B804B24BE3A4419131DAC188B95"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_18.npz",
+      "sha256": "D5B72E0244CFC6F85092B5F8EDDED91435B35449E97F02482FFF32BCE88F61D3"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_19.npz",
+      "sha256": "9BEF9B12BA831BDAF9B9B7CC5E27DF323853E62E5610BE7B83A4688E3D53E63D"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_20.npz",
+      "sha256": "DCCBAF77173EB08949881321093E1A054EAE56E623C8A32D99D2850CDE99277F"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_21.npz",
+      "sha256": "C66CCDAB5495D8D3F4681510C010C14C905C6A7959D18A1FB393A14E37F766AC"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_22.npz",
+      "sha256": "888A625518F4DD847C809E121E8757E368FE9B628F5CBCD356F37630E41552B8"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_23.npz",
+      "sha256": "B3C3BF8E993F826A567B484BE2FB7C29071C64EC0F45EB946FD8D144AD22A4B7"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_24.npz",
+      "sha256": "971FF71F079FC4D0CAF2FD445BC072CCE0488357EEAEAC7032B2D7A41D9489BA"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_25.npz",
+      "sha256": "EB3977270EF7DACCD133666B4B87B9368CE901E0F8E8355C9F543EBC777AECCF"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_26.npz",
+      "sha256": "00F6ED7641DDB3A0AAFF0BAD2C945031D996002C4A4F6CF1DEAA92442DC5594B"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_27.npz",
+      "sha256": "A67B03FB3475F7740ECE8D57A93BC4CCA8D6DC7C4F2E6EBFCF07B798333EAB86"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_28.npz",
+      "sha256": "576D076F784C669145F94876416E0BA4537D7945430DB070C41C272AC0DE58FE"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_29.npz",
+      "sha256": "B0EF16C31E659CE75E04A6F459250828209E4EDE67301659A7664CB5E3417E22"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_30.npz",
+      "sha256": "24E3FBD90221D18C309B30DD4104F50A87CD77713D835592E465755BC8489B69"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_31.npz",
+      "sha256": "9021792ED095AB0BE88FF3111299DFA29EA0EE6ACAD29B102714A161BA9E1625"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_32.npz",
+      "sha256": "2927E96B85918293B15F9835AD9AA35D0A6DA216C8FE2820939B92D96FE00C1D"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_33.npz",
+      "sha256": "911B19446D5A7E267FD55CBDF1FB400B8B49A3242050DE6709D3A43009218A00"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_34.npz",
+      "sha256": "354B1F1B617D727D15E49CF1D21A157EA1EA87D17C9E4D25EC459A7B5E495F5C"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_35.npz",
+      "sha256": "88E7DD20762F82A7B83257C8A09B2595809FD340E90480DDD6E57F503D186618"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_36.npz",
+      "sha256": "7F22BE6CCF68CFD107B667CE1C6DB2B2671721288C7CFA06A22F8CF42934B092"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_37.npz",
+      "sha256": "24322E03A680A648CAC21C31BAEDF7CC7CDACE595C721211E9C146C47454E170"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_38.npz",
+      "sha256": "5D306D0F12FBD33CA9F8672303DBB084A704977938B6823BD6474CAA31EDAFDF"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_39.npz",
+      "sha256": "30F1AECC1F4A8CD9DC052868745F6CB9746EA7FD6BFFA0C81817C9A9C6E33BCB"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_40.npz",
+      "sha256": "7CF6E0511EAA0205C0318A5F37B4AD1ACA0AA21C24CB64C0FC6D6339FA8A88B2"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_41.npz",
+      "sha256": "7E45BA2DC929576AB0D602894D8E2AF106A95F5F09A1BFC5187491122FE1107E"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_42.npz",
+      "sha256": "8F36A8400650947CA98D1F6C2A68090B8700B90B56C2DCB6D645AC2021AF8EFF"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_43.npz",
+      "sha256": "B9198BD52E99C9B99A60DD0355FC2FD9F6F316C2B8EAEDCD647D9B65D4DB29DD"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_44.npz",
+      "sha256": "6FF70B807D64DEC49E94AE488206FD4EF12BF0630EF3536101D83E1AD81E9191"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_45.npz",
+      "sha256": "2088A73185C3A92F17726370E5B54E00099A6C5B08FC6E568DAD7848B649CC4A"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_46.npz",
+      "sha256": "3632D5279B04FBF95559DDEDCAD6D0A05886C8411961707A38D4F8824ED7F830"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_47.npz",
+      "sha256": "45F55804A2BC92B1F39B4FDCE399760220E3BA8328C20C709C66CA0A2188B8EB"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_48.npz",
+      "sha256": "F35FDE866EE1318715B2FA0A9B1189AF2C51E625B36678400B7E168B56763F52"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_49.npz",
+      "sha256": "4CC7221824EA7A0E214BABA81871DCD24D19E9AEC98317D3D3B0AB59526F5A72"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_50.npz",
+      "sha256": "82746AD22E487020069BF0AF9F0DBF31E8D83E2F18237201D1E67833B077AB10"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-reference-jacobian-diagnostic\\case_51.npz",
+      "sha256": "35737542C61D9BA73AA630BAC770B8D8DCBDC08172742D2662AAED7FB7F45507"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\PROJECT_PLAN.md",
+      "sha256": "4DD80203E6692BC62BCE20DFD5735F203A882A3C0FB152D8D8EC7D9F52E9ED21"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\plans\\34-s3-mature-stop-baselines.md",
+      "sha256": "346CD6D2477E51EE153DD981202A5A28ED9BF34AAFD3C95D45212277B3A35F16"
+    }
+  ]
+}

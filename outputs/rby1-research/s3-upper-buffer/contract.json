@@ -1,0 +1,342 @@
+{
+  "methods": [
+    {
+      "label": "fast_held",
+      "A": 1.0,
+      "buffer": false
+    },
+    {
+      "label": "soft_held",
+      "A": 0.5855712890625,
+      "buffer": false
+    },
+    {
+      "label": "fast_buffer",
+      "A": 1.0,
+      "buffer": true
+    }
+  ],
+  "low_scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\low_scene_20.xml",
+  "wheel_cap_Nm": 20.0,
+  "wheel_cap_role": "same diagnostic condition, not hardware calibration",
+  "model_change_audit": {
+    "xml_changed_attributes": 6,
+    "changed_compiled_array_fields": [
+      "actuator_ctrlrange",
+      "actuator_forcerange",
+      "jnt_actfrcrange"
+    ],
+    "other_compiled_array_fields_identical": true,
+    "all_three_wheel_limit_layers": 20.0
+  },
+  "common_observation_start_s": 0.8998625445380035,
+  "duration_s": 1.8998625445380035,
+  "upper_reference": {
+    "base_A_mps2": 1.0,
+    "object_scalar_A_mps2": 0.5,
+    "J_mps3": 5.0,
+    "base_stop_s": 0.5999312722690018,
+    "object_stop_s": 0.8998625445380035,
+    "forward_stroke_m": 0.059975947655901085,
+    "joint_path_audit": {
+      "qp_calls": 80,
+      "max_qp_constraint_violation": 0.0,
+      "max_qp_stationarity_error": 8.673617379884035e-19,
+      "line_search_reductions": 0,
+      "max_ik_position_error_m": 6.844483179610237e-12,
+      "max_ik_angle_error_rad": 2.6047668791968236e-11,
+      "method": "shared-object Jacobian local QP, offline path, degree-7 interpolation",
+      "include_torso": true,
+      "active_joint_names": [
+        "torso_0",
+        "torso_1",
+        "torso_2",
+        "torso_3",
+        "torso_4",
+        "torso_5",
+        "left_arm_0",
+        "left_arm_1",
+        "left_arm_2",
+        "left_arm_3",
+        "left_arm_4",
+        "left_arm_5",
+        "left_arm_6",
+        "right_arm_0",
+        "right_arm_1",
+        "right_arm_2",
+        "right_arm_3",
+        "right_arm_4",
+        "right_arm_5",
+        "right_arm_6"
+      ],
+      "extent_m": 0.059975947655901085,
+      "backward_extent_m": 0.0,
+      "polynomial_max_position_error_m": 7.652531348937388e-12,
+      "polynomial_max_angle_error_rad": 2.925502324812258e-11,
+      "nonpayload_self_penetration_m": 0.0,
+      "joint_range_min_margin_rad": 0.26179935498539275,
+      "validation_points": 161,
+      "preparation_wall_ms": 221.5546000006725,
+      "grasp_transforms_object_to_hands": {
+        "left": {
+          "position_m": [
+            -7.70926525010987e-05,
+            0.1600000781260105,
+            0.1005460801856188
+          ],
+          "rotation": [
+            [
+              2.0684830647203187e-06,
+              0.9999996538544919,
+              -0.0008320376293642314
+            ],
+            [
+              -0.9999999999978461,
+              2.068343612232485e-06,
+              -1.6846392507651557e-07
+            ],
+            [
+              -1.6674292704755177e-07,
+              0.0008320376297109047,
+              0.9999996538566168
+            ]
+          ]
+        },
+        "right": {
+          "position_m": [
+            -7.843763631401075e-05,
+            -0.15999973912959564,
+            0.10054608296278454
+          ],
+          "rotation": [
+            [
+              -2.3527073513685136e-06,
+              -0.9999996429239723,
+              -0.000845071825396361
+            ],
+            [
+              0.9999999999972008,
+              -2.3529145855110275e-06,
+              2.442323877708813e-07
+            ],
+            [
+              -2.4622068238506666e-07,
+              -0.0008450718248193893,
+              0.9999996429267101
+            ]
+          ]
+        }
+      },
+      "objective": "Task pose residual plus 1e-5 times joint-increment norm normalized by model joint-speed caps; same weights for both groups.",
+      "numerical_trust_step_rad": 0.12,
+      "physical_speed_check": "Performed on the timed stop reference and actual execution, not inferred from IK iteration steps.",
+      "collision_method": "Nonlinear FK at accepted IK steps and independent interpolation grid; no continuous collision certificate or global route search.",
+      "reference_data_is_separate_from_physics": true
+    },
+    "policy": "relative scalar stopping distance along current planned base heading; fixed payload orientation in yaw frame; offline shared-object IK; no measured-base pose correction"
+  },
+  "reference_checks": [
+    {
+      "angle_rad": 0.0,
+      "max_acceleration_derivative_error": 4.22228363383681e-11,
+      "joint_v_error": 1.0996068985913432e-10,
+      "joint_a_error": 3.279987392801331e-11
+    },
+    {
+      "angle_rad": -0.1404455425331374,
+      "max_acceleration_derivative_error": 5.966838134696673e-11,
+      "joint_v_error": 1.0996068985913432e-10,
+      "joint_a_error": 3.279987392801331e-11
+    },
+    {
+      "angle_rad": 0.1404455425331374,
+      "max_acceleration_derivative_error": 4.9447723693418766e-11,
+      "joint_v_error": 1.0996068985913432e-10,
+      "joint_a_error": 3.279987392801331e-11
+    }
+  ],
+  "geometry": [
+    {
+      "label": "fast_held",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\low_scene_20.xml",
+      "A_mps2": 1.0,
+      "angle_deg": 0.0,
+      "base_stop_s": 0.5999312722690018,
+      "all_reference_stop_s": 0.5999312722690018,
+      "samples": 121,
+      "geometry_admitted": true,
+      "closest": {
+        "label": "fast_held",
+        "time_s": 0.5999312722690018,
+        "base_distance_m": 0.04003519799290535,
+        "upper_distance_m": 0.26115255988884684,
+        "payload_distance_m": 0.45930257316506395,
+        "min_distance_m": 0.04003519799290535,
+        "closest_group": "base",
+        "closest_geom": "wheel_l_tire"
+      },
+      "first_intersection_s": null,
+      "peak_reference_object_acceleration_mps2": 1.0,
+      "max_hand_position_error_m": 7.137570341115371e-16,
+      "max_hand_angle_error_rad": 4.118944384594395e-20,
+      "max_self_penetration_m": 0.0,
+      "max_reference_joint_speed_fraction": 0.0
+    },
+    {
+      "label": "soft_held",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\low_scene_20.xml",
+      "A_mps2": 0.5855712890625,
+      "angle_deg": 0.0,
+      "base_stop_s": 0.8000904892962737,
+      "all_reference_stop_s": 0.8000904892962737,
+      "samples": 162,
+      "geometry_admitted": true,
+      "closest": {
+        "label": "soft_held",
+        "time_s": 0.8000904892962737,
+        "base_distance_m": 1.0232972538185085e-05,
+        "upper_distance_m": 0.22444333898788899,
+        "payload_distance_m": 0.45931335805927553,
+        "min_distance_m": 1.0232972538185085e-05,
+        "closest_group": "base",
+        "closest_geom": "wheel_l_tire"
+      },
+      "first_intersection_s": null,
+      "peak_reference_object_acceleration_mps2": 0.5855712890625,
+      "max_hand_position_error_m": 7.137570341115371e-16,
+      "max_hand_angle_error_rad": 4.118944384594395e-20,
+      "max_self_penetration_m": 0.0,
+      "max_reference_joint_speed_fraction": 0.0
+    },
+    {
+      "label": "fast_buffer",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\low_scene_20.xml",
+      "A_mps2": 1.0,
+      "angle_deg": 0.0,
+      "base_stop_s": 0.5999312722690018,
+      "all_reference_stop_s": 0.8998625445380035,
+      "samples": 182,
+      "geometry_admitted": true,
+      "closest": {
+        "label": "fast_buffer",
+        "time_s": 0.5999312722690018,
+        "base_distance_m": 0.04003519799290535,
+        "upper_distance_m": 0.255835885054662,
+        "payload_distance_m": 0.4593171280458088,
+        "min_distance_m": 0.04003519799290535,
+        "closest_group": "base",
+        "closest_geom": "wheel_l_tire"
+      },
+      "first_intersection_s": null,
+      "peak_reference_object_acceleration_mps2": 0.5,
+      "max_hand_position_error_m": 7.655233707519165e-12,
+      "max_hand_angle_error_rad": 2.926140559152308e-11,
+      "max_self_penetration_m": 0.0,
+      "max_reference_joint_speed_fraction": 0.055060119438314674
+    },
+    {
+      "label": "upper_bar_buffer",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\upper_bar\\scene.xml",
+      "A_mps2": 1.0,
+      "angle_deg": 0.0,
+      "base_stop_s": 0.5999312722690018,
+      "all_reference_stop_s": 0.8998625445380035,
+      "samples": 182,
+      "geometry_admitted": false,
+      "closest": {
+        "label": "upper_bar_buffer",
+        "time_s": 0.8998625445380035,
+        "base_distance_m": 0.5195246808353386,
+        "upper_distance_m": -0.007006922189830457,
+        "payload_distance_m": -0.017657975784737493,
+        "min_distance_m": -0.017657975784737493,
+        "closest_group": "payload",
+        "closest_geom": "payload_beam"
+      },
+      "first_intersection_s": 0.59,
+      "peak_reference_object_acceleration_mps2": 0.5,
+      "max_hand_position_error_m": 7.655233707519165e-12,
+      "max_hand_angle_error_rad": 2.926140559152308e-11,
+      "max_self_penetration_m": 0.0,
+      "max_reference_joint_speed_fraction": 0.055060119438314674
+    },
+    {
+      "label": "right_column_buffer",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\right_20\\scene.xml",
+      "A_mps2": 1.0,
+      "angle_deg": -8.046875,
+      "base_stop_s": 0.5999312722690018,
+      "all_reference_stop_s": 0.8998625445380035,
+      "samples": 182,
+      "geometry_admitted": false,
+      "closest": {
+        "label": "right_column_buffer",
+        "time_s": 0.8998625445380035,
+        "base_distance_m": 0.10689143006402757,
+        "upper_distance_m": -0.039369806528715724,
+        "payload_distance_m": -0.05401202465039898,
+        "min_distance_m": -0.05401202465039898,
+        "closest_group": "payload",
+        "closest_geom": "payload_beam"
+      },
+      "first_intersection_s": 0.355,
+      "peak_reference_object_acceleration_mps2": 0.6342485534943157,
+      "max_hand_position_error_m": 7.655272518230892e-12,
+      "max_hand_angle_error_rad": 2.926131681034352e-11,
+      "max_self_penetration_m": 0.0,
+      "max_reference_joint_speed_fraction": 0.055060119438314674
+    },
+    {
+      "label": "left_column_buffer",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\left_20\\scene.xml",
+      "A_mps2": 1.0,
+      "angle_deg": 8.046875,
+      "base_stop_s": 0.5999312722690018,
+      "all_reference_stop_s": 0.8998625445380035,
+      "samples": 182,
+      "geometry_admitted": false,
+      "closest": {
+        "label": "left_column_buffer",
+        "time_s": 0.8998625445380035,
+        "base_distance_m": 0.10684869861857105,
+        "upper_distance_m": -0.04700808412397485,
+        "payload_distance_m": -0.05403888222476368,
+        "min_distance_m": -0.05403888222476368,
+        "closest_group": "payload",
+        "closest_geom": "payload_beam"
+      },
+      "first_intersection_s": 0.355,
+      "peak_reference_object_acceleration_mps2": 0.6342372405026018,
+      "max_hand_position_error_m": 7.65453728693615e-12,
+      "max_hand_angle_error_rad": 2.9261390597550556e-11,
+      "max_self_penetration_m": 0.0,
+      "max_reference_joint_speed_fraction": 0.055060119438314674
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\upper_buffer_comparison.py": "e9fe54aadc01891a535e92218f9f908fdd3bb3906eb07344bcecfd84a025fe9e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_planar_stop.py": "fcafce946de623478f02f1e470bcfac8ee02aeace585b0fe08d192f64dbfeb48",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\planar_upper_buffer.py": "d343bd4c14120121f2966adce0ddc3c99a444d81c41f2f881f75b35ce34c80fb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\motion_distribution.py": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\buffer_reference.py": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\wheel_speed_integral.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\check_stage31.py": "261591420a62c2abb7ad91bb3526edd11d061109111be928b38b60655ab76b5d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\config.json": "9ae54b2f942d33ab906806fe290151c39337e2794324ea65de7f0b8c671e0a35",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154757_768066_s26_base_only\\joint_trace.npz": "e2ce08788515b29e95d3654b215fab3f96e9d1ecbe3c83d0d1788c8da3690d1a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\low\\scene.xml": "83087440c95615520b28300392a26faf2e1e6554950b9036182180153422797a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\low_scene_20.xml": "a71033157488f40cab899b15a313af5c43af070448366a860242a9072648c48b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\joint_path.npz": "ec927681ac3017c2f6d41371d97440635f4a7f77aa3a9ea88860bb31eb007f04",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\path_audit.json": "a342b859937bd541b65623bc434fb0b09909b02f748081a6173a444715be56be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\initial_state.npz": "ac0bb9dc946932fa5fc0f8178bcf8448214671acaa0d963e5dcc8d58d87be6f8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\upper_bar\\scene.xml": "d76491e1c8233f20386ba121f80562ca4eab4c017ef54f67864643b7a75273df",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\right_20\\scene.xml": "d8b42f8057ed8777289d7cef4d5c22a4a6338b241cf025d7045a43144eddb3bb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\left_20\\scene.xml": "396af6d480f07b3461d55357ce714806da78c9ebeb06eb7f86b0d520ebcdeebd"
+  },
+  "budget": {
+    "main_runs": 3,
+    "conditional_halfdt_runs": 1,
+    "maximum_steps": 9500
+  },
+  "physics_runs_at_contract": 0,
+  "scope": "three low-obstacle comparisons; other scenes reference-only; no rescaled obstacles, online optimization, hardware or universal stability claim"
+}

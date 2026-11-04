@@ -1,0 +1,397 @@
+{
+  "evidence_verified": true,
+  "diagnostic_evaluations_verified": 52,
+  "full_J_shape": [
+    4860,
+    50
+  ],
+  "original_all_probe_vector_max_error": 0.0,
+  "objective_max_error": 3.3306690738754696e-16,
+  "independent_parameter_target_max_error": 5.029310301551959e-14,
+  "reference_sample_qualified_count": 48,
+  "physical_execution_admitted_count": 0,
+  "derivative_accuracy_certified": false,
+  "checks": [
+    {
+      "case": 0,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 1,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": false
+    },
+    {
+      "case": 2,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": false
+    },
+    {
+      "case": 3,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 4,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": false
+    },
+    {
+      "case": 5,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 6,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 7,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 8,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 9,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 10,
+      "original_vector_max_error": 0.0,
+      "objective_error": 2.220446049250313e-16,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 11,
+      "original_vector_max_error": 0.0,
+      "objective_error": 1.1102230246251565e-16,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 12,
+      "original_vector_max_error": 0.0,
+      "objective_error": 3.3306690738754696e-16,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 13,
+      "original_vector_max_error": 0.0,
+      "objective_error": 3.3306690738754696e-16,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 14,
+      "original_vector_max_error": 0.0,
+      "objective_error": 3.3306690738754696e-16,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 15,
+      "original_vector_max_error": 0.0,
+      "objective_error": 1.1102230246251565e-16,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 16,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 17,
+      "original_vector_max_error": 0.0,
+      "objective_error": 1.1102230246251565e-16,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 18,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 19,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 20,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 21,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 22,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 23,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 24,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 25,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 26,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 27,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 28,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 29,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 30,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 31,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 32,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 33,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 34,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 35,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 36,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 37,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 38,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 39,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 40,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 41,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 42,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 43,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 44,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 45,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 46,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 47,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 48,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 49,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 50,
+      "original_vector_max_error": 0.0,
+      "objective_error": 0.0,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": true
+    },
+    {
+      "case": 51,
+      "original_vector_max_error": 0.0,
+      "objective_error": 3.3306690738754696e-16,
+      "independent_target_error": 5.029310301551959e-14,
+      "reference_sample_qualified": false
+    }
+  ],
+  "IK_calls_in_verification": 0,
+  "QP_calls_in_verification": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\verify_jacobian_probe.py": "00aee7d767ed55814072468b8c71d6f05aef1bc677986c4e89a696e79741f055",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\jacobian_probe.py": "7161091f5559b85faa188e27b6753969c4037f22f5a6abec381d5322b4c1bd57",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\contract.json": "7b8ac11dbcd504b0de087068edecee95a317ad1aec8e4d3ed71715f390290e46",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\result.json": "8eed52be9db1b578b43a03244a486697bd843c0fa83018542d0837eed0f29d52",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\jacobian.npz": "ac742763f8d5207f825852bf888230bb8b221e3e87502416d6e2d86a657f4e01"
+  },
+  "limitations": [
+    "One forward step and one mixed direction only.",
+    "No optimizer convergence or physical qualification.",
+    "Target/geometry audit at 45 sampled nodes, not interval-wide or lifted Gauss nodes."
+  ]
+}

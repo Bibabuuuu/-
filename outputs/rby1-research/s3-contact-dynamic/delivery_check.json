@@ -1,0 +1,19 @@
+{
+  "passed": false,
+  "evidence_verified": true,
+  "dynamic_qualification_passed": false,
+  "batch_stopped": true,
+  "new_physics_runs": 1,
+  "new_physics_steps": 1900,
+  "planned_maximum_runs": 4,
+  "remaining_planned_runs_unexecuted": 3,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-dynamic\\contract.json": "bcd425d4074e9e59ef4373c0c60552e8853ea5dd41cb7a4e0e4709ab48115a21",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-dynamic\\summary.json": "de5e64f9e8d78749a99f7cd6b5042deb56e94f72efaabcd57d88546c022a487b",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\dynamic-contact-audit\\failure_diagnosis.json": "13397286e1700f5444e1cd4f0e915b88449a2c532f9c58a6f2305ea994031628",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-dynamic\\dynamic_contact_check.py": "2622bef22958e6e13b8a74ed579d85521903054426c6fefb1289979b412da759",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-dynamic\\verify_dynamic_contact.py": "a1ca2b186512b553e0527bbff3a0032942f2a5bf3a98ad783005fa3799456450",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\audit_stopped_dynamic.py": "acc61d2af69263cf46a5fef36d9e3aeeed7847f1122bc677ae7e43109b2e5e9c"
+  },
+  "scope": "Audit of stopped batch and retained paired measurements; no positive dynamic qualification."
+}

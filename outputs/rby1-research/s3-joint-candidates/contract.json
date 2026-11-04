@@ -1,0 +1,126 @@
+{
+  "scenes": [
+    {
+      "name": "low",
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\low\\scene.xml",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\low_scene_20.xml",
+      "copy_audit": {
+        "identical_scene_bytes": true
+      }
+    },
+    {
+      "name": "upper_bar",
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\upper_bar\\scene.xml",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\upper_bar\\scene.xml",
+      "copy_audit": {
+        "xml_changed_attributes": 6,
+        "changed_compiled_array_fields": [
+          "actuator_ctrlrange",
+          "actuator_forcerange",
+          "jnt_actfrcrange"
+        ],
+        "other_compiled_array_fields_identical": true,
+        "all_three_wheel_limit_layers": 20.0
+      }
+    },
+    {
+      "name": "right_column",
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\right_column\\scene.xml",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\right_20\\scene.xml",
+      "copy_audit": {
+        "identical_scene_bytes": true
+      }
+    },
+    {
+      "name": "left_column",
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\left_column\\scene.xml",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\left_20\\scene.xml",
+      "copy_audit": {
+        "identical_scene_bytes": true
+      }
+    },
+    {
+      "name": "center_column",
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\center_column\\scene.xml",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\center_column\\scene.xml",
+      "copy_audit": {
+        "xml_changed_attributes": 6,
+        "changed_compiled_array_fields": [
+          "actuator_ctrlrange",
+          "actuator_forcerange",
+          "jnt_actfrcrange"
+        ],
+        "other_compiled_array_fields_identical": true,
+        "all_three_wheel_limit_layers": 20.0
+      }
+    }
+  ],
+  "A_levels": [
+    0.5,
+    0.6,
+    0.75,
+    1.0
+  ],
+  "angles_deg": [
+    -10.0,
+    -5.0,
+    0.0,
+    5.0,
+    10.0
+  ],
+  "buffer_fractions": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "maximum_reference_evaluations": 460,
+  "geometry_dt_s": 0.005,
+  "fraction_bracket_width": 0.00390625,
+  "common_hold_start_s": 0.8998625445380035,
+  "duration_s": 1.8998625445380035,
+  "wheel_cap_Nm": 20.0,
+  "cap_role": "same uncalibrated diagnostic condition, default unchanged",
+  "physical_budget": {
+    "main_runs": 4,
+    "conditional_halfdt_runs": 1,
+    "maximum_steps": 11400
+  },
+  "physics_scenes": [
+    "upper_bar",
+    "right_column"
+  ],
+  "new_physics_runs_at_contract": 0,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\low_scene_20.xml": "a71033157488f40cab899b15a313af5c43af070448366a860242a9072648c48b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\low\\scene.xml": "a71033157488f40cab899b15a313af5c43af070448366a860242a9072648c48b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\upper_bar\\scene.xml": "d76491e1c8233f20386ba121f80562ca4eab4c017ef54f67864643b7a75273df",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\upper_bar\\scene.xml": "302e273226eb4520bf6e5a6e57e0fbfe4aa882341ba5e72b2cdc847d9f627f84",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\right_20\\scene.xml": "d8b42f8057ed8777289d7cef4d5c22a4a6338b241cf025d7045a43144eddb3bb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\right_column\\scene.xml": "d8b42f8057ed8777289d7cef4d5c22a4a6338b241cf025d7045a43144eddb3bb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\left_20\\scene.xml": "396af6d480f07b3461d55357ce714806da78c9ebeb06eb7f86b0d520ebcdeebd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\left_column\\scene.xml": "396af6d480f07b3461d55357ce714806da78c9ebeb06eb7f86b0d520ebcdeebd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\center_column\\scene.xml": "5b630d06b6eebbaa16788459a22326c2fca8afbf860a4e6dc8daa68a0ed11e34",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\center_column\\scene.xml": "671cf7a38c4b96ff2b161051ebd7cb7eae8ca760e6847ce99aad32dae7f095e4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\joint_stop_candidates.py": "9863a089a201730e573757d16de3174039fd5d20bb8b54f66e746a6e45754470",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_planar_stop.py": "fcafce946de623478f02f1e470bcfac8ee02aeace585b0fe08d192f64dbfeb48",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\planar_upper_buffer.py": "d343bd4c14120121f2966adce0ddc3c99a444d81c41f2f881f75b35ce34c80fb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\buffer_reference.py": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\motion_distribution.py": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\check_stage31.py": "261591420a62c2abb7ad91bb3526edd11d061109111be928b38b60655ab76b5d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_scene_chain.py": "ab932ba23dff06c2f8afd7585e327f54fdbb35289b7d936c62cb81e27ec0b4ed",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\state_stop_reference.py": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\payload_wrench.py": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\wheel_speed_integral.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\grasp_observation.py": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\config.json": "9ae54b2f942d33ab906806fe290151c39337e2794324ea65de7f0b8c671e0a35",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\joint_path.npz": "ec927681ac3017c2f6d41371d97440635f4a7f77aa3a9ea88860bb31eb007f04",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\path_audit.json": "a342b859937bd541b65623bc434fb0b09909b02f748081a6173a444715be56be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\contract.json": "338db49397cdb1d1529666c2b6cf539f88b6f31aa134c5e24a3c66da5aa81d68",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\initial_state.npz": "ac0bb9dc946932fa5fc0f8178bcf8448214671acaa0d963e5dcc8d58d87be6f8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-straight\\plan.json": "1e9863325c8df593870c0b44e7b97c36cf07fae1cfc1339762d9c79079e5be17"
+  },
+  "probe_rule": "largest-clearance coarse held candidate; locally refine sampled buffer transitions; take half of greatest checked admissible fraction and recheck; not a safety margin or final user preference",
+  "scope": "finite static-scene reference search; no online, global optimality, force-feedback or hardware claim"
+}

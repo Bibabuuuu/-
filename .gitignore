@@ -1,0 +1,22 @@
+# Local Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local editors and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local environments, downloaded sources, and dependency bundles
+work/
+
+# Generated research runs: selected evidence is force-added explicitly
+outputs/

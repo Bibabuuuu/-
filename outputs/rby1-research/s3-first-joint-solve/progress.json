@@ -1,0 +1,19 @@
+{
+  "phase": "stopped",
+  "reason": "LimitReached: 160-second optimizer cutoff",
+  "solver_calls": 1,
+  "optimizer_normal_success": false,
+  "new_reference_qualified": false,
+  "complete_evaluations_started": 594,
+  "complete_evaluations_finished": 593,
+  "stats": {
+    "IK_calls": 26719,
+    "QP_calls": 68082,
+    "QP_internal_iterations": 136164,
+    "unique_targets": 26719,
+    "line_search_trials": 68082
+  },
+  "run_wall_s": 160.1363771999895,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0
+}

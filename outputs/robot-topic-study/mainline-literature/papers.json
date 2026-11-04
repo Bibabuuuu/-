@@ -1,0 +1,282 @@
+{
+  "date": "2026-10-31",
+  "paper_count": 8,
+  "papers": [
+    {
+      "title": "Jerk-limited Real-time Trajectory Generation with Arbitrary Target States",
+      "authors": [
+        "Lars Berscheid",
+        "Torsten Kroeger"
+      ],
+      "year": 2021,
+      "doi": "10.15607/rss.2021.xvii.015",
+      "journal": "Robotics: Science and Systems XVII",
+      "source": "crossref",
+      "abstract": "",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "publisher": "Robotics: Science and Systems Foundation",
+      "type": "proceedings-article",
+      "references_count": 0,
+      "url": "https://www.roboticsproceedings.org/rss17/p015.pdf",
+      "key": "berscheid2021",
+      "scope": "方法原文：PDF III Problem Definition、IV Algorithm，及作者仓库输入/停车接口说明。未运行。",
+      "anchors": [
+        "PDF第2页III：初始/目标位置速度加速度及速度/加速度/jerk约束",
+        "IV：brake pre-trajectory与多自由度同步",
+        "作者README ControlInterface与输入验证"
+      ],
+      "method": "任意符合条件的初始/目标状态之间，生成受速度、加速度及jerk限制的多自由度时间最优轨迹；可用速度接口构造停车。",
+      "boundary": "通用运动学轨迹生成不自动处理物体/双臂/底盘给定制动之间的耦合；输入状态须可接受。社区版不等于含所有高级空间功能。",
+      "reuse": "优先作为成熟OTG强基线，接入任务包装后另查空间包络和IK。",
+      "code": {
+        "url": "https://github.com/pantor/ruckig",
+        "verified": "官方README可访问；速度接口用于停车。当前位置界max/min_position、Tracking接口标为Pro；中间点Community使用非实时云服务。未安装、未复现。"
+      }
+    },
+    {
+      "title": "Trajectory generation for immediate path-accurate jerk-limited stopping of industrial robots",
+      "authors": [
+        "Friedrich Lange",
+        "Michael Suppa"
+      ],
+      "year": 2015,
+      "doi": "10.1109/icra.2015.7139463",
+      "journal": "2015 IEEE International Conference on Robotics and Automation (ICRA)",
+      "source": "crossref",
+      "abstract": "",
+      "volume": "",
+      "issue": "",
+      "pages": "2021-2026",
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "references_count": 22,
+      "url": "https://elib.dlr.de/96525/2/stop_ICRA15_header.pdf",
+      "key": "lange2015",
+      "scope": "6页作者PDF，重点摘要、II/III/IV与结论；机构书目。",
+      "anchors": [
+        "II：每周期由当前状态重新生成受限停车",
+        "III Arc Length Interpolation：q(s)而非独立缩放各坐标",
+        "IV/Conclusion：KUKA路径保持实验"
+      ],
+      "method": "预警触发后利用弧长插值保持给定几何路径，直接检查加速度/jerk限制并处理零速附近反弹。",
+      "boundary": "关注给定路径上的受控停车；不据此推断物体接触稳定或给定底盘制动下的双臂相对运动已解决。文中与其使用的emergency-stop术语有所区分。",
+      "reuse": "已有正常路径必须保持时的基线/思路；当前仅直线场景可先简化。",
+      "code": {
+        "verified": "作者全文和视频入口已见；未核实可直接运行源码。"
+      }
+    },
+    {
+      "title": "Fast yet predictable braking manoeuvers for real-time robot control",
+      "authors": [
+        "Mazin Hamad",
+        "Jesus Gutierrez-Moreno",
+        "Hugo T.M. Kussaba",
+        "Nico Mansfeld",
+        "Saeed Abdolshah",
+        "Abdalla Swikir",
+        "Wolfram Burgard",
+        "Sami Haddadin"
+      ],
+      "year": 2023,
+      "doi": "10.1016/j.ifacol.2023.10.711",
+      "journal": "IFAC-PapersOnLine",
+      "source": "crossref",
+      "abstract": "",
+      "volume": "56",
+      "issue": "2",
+      "pages": "9984-9991",
+      "publisher": "Elsevier BV",
+      "type": "journal-article",
+      "references_count": 17,
+      "url": "https://arxiv.org/html/2306.06525v1",
+      "key": "hamad2023",
+      "scope": "预印本v1模型假设、模态制动设计及仿真范围；Crossref期刊元数据。",
+      "anchors": [
+        "Sec.2 Assumption1：重力/科氏局部准静态并假设无接触力",
+        "后续模态限制与非线性最短时间benchmark",
+        "摘要/仿真：7DOF模型中3关节运动"
+      ],
+      "method": "通过动力学模态限制构造快速且可预测的制动，比较保守与优化限制，并用非线性最短时间控制作基准。",
+      "boundary": "不是移动双臂持物稳定；依赖动力学/执行器限制，当前用户已暂缓力矩上限支线。",
+      "reuse": "作为制动预测与实际偏差评价的背景，现阶段不主做其力矩优化。",
+      "code": {
+        "verified": "未核实公开可运行实现。"
+      }
+    },
+    {
+      "title": "Model-Predictive Spill-Free Emergency Stopping for Liquid-Manipulating Robots",
+      "authors": [
+        "Samuli Hynninen",
+        "Ville Kyrki"
+      ],
+      "year": 2026,
+      "doi": "10.1109/lra.2026.3734909",
+      "journal": "IEEE Robotics and Automation Letters",
+      "source": "crossref",
+      "abstract": "",
+      "volume": "11",
+      "issue": "11",
+      "pages": "12751-12758",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "references_count": 35,
+      "url": "https://arxiv.org/html/2604.16667v1",
+      "key": "hynninen2026",
+      "scope": "预印本v1 IV Methodology、V Experiments和VI Conclusion；期刊书目/机构摘要核对。最终PDF链接可见但访问403，不能把v1局限当期刊最终版已确认局限。",
+      "read_title": "Emergency Stopping for Liquid-manipulating Robots",
+      "anchors": [
+        "IV-B：QP、速度代价、soft no-spill与jerk代价",
+        "IV-C：20Hz重规划/高频控制、2秒40步、实际状态反馈及液面状态积分",
+        "VI：自由停止方向/受限工作空间待扩展，仅v1"
+      ],
+      "method": "液体以摆模型描述，线性化后QP滚动求解停车；高频环读取计划并反馈机器人状态，以实际笛卡尔加速度积分液面状态。",
+      "boundary": "防溢出软约束存在违反；v1明确自由运动方向假设，未给出本项目既定底盘/有限上身行程模型。期刊最终全文未比对。",
+      "reuse": "任务触发、低频规划/高频执行分工及状态反馈的直接邻近方法；不能仅把液体换成刚体就声称创新。",
+      "code": {
+        "verified": "所读原文未核实公开可运行源码。"
+      },
+      "published_primary": "https://research.aalto.fi/en/publications/model-predictive-spill-free-emergency-stopping-for-liquid-manipul/",
+      "final_pdf": "https://research.aalto.fi/files/238426364/Model-Predictive_Spill-Free_Emergency_Stopping_for_Liquid-Manipulating_Robots.pdf"
+    },
+    {
+      "title": "Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator",
+      "authors": [
+        "Adam Heins",
+        "Angela P. Schoellig"
+      ],
+      "year": 2023,
+      "doi": "10.1109/lra.2023.3324520",
+      "journal": "IEEE Robotics and Automation Letters",
+      "source": "crossref",
+      "abstract": "",
+      "volume": "8",
+      "issue": "12",
+      "pages": "7986-7993",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "references_count": 26,
+      "url": "https://arxiv.org/html/2305.17484v2",
+      "key": "heins2023",
+      "scope": "v2 III–VI、动态障碍实验及附录低层控制；期刊元数据和作者仓库。",
+      "anchors": [
+        "III-A：含底盘的广义位置/速度/加速度，jerk输入，速度控制机器人",
+        "IV–VI：单边接触、摩擦与物体保持不滑的约束，碰撞约束，在线MPC",
+        "Appendix E：高频仿射状态反馈；物体位姿不作在线反馈"
+      ],
+      "method": "同时规划移动底盘与机械臂，用物体接触约束及障碍约束维持托盘上物体平衡；jerk输入经积分形成速度命令。",
+      "boundary": "托盘非抓持运输；底盘与机械臂均可优化，不是把指定制动过程作为外部输入。已知物体参数和初始相对位姿，无物体位姿在线反馈。",
+      "reuse": "物体约束、底盘/臂统一状态及高低频反馈组织可借用；应把底盘自由优化改成约束输入作公平适配。",
+      "code": {
+        "url": "https://github.com/learnsyslab/upright",
+        "verified": "作者仓库可访问，声明2023在线MPC/2025鲁棒离线规划；原工程依赖ROS/OCS2等，未安装/复现。"
+      }
+    },
+    {
+      "title": "Robust Nonprehensile Object Transportation With Uncertain Inertial Parameters",
+      "authors": [
+        "Adam Heins",
+        "Angela P. Schoellig"
+      ],
+      "year": 2025,
+      "doi": "10.1109/lra.2025.3551067",
+      "journal": "IEEE Robotics and Automation Letters",
+      "source": "crossref",
+      "abstract": "",
+      "volume": "10",
+      "issue": "5",
+      "pages": "4492-4499",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "references_count": 28,
+      "url": "https://arxiv.org/html/2411.07079v3",
+      "key": "heins2025",
+      "scope": "v3 V接触扳手/不确定性、VI离线规划及VII验证说明；期刊元数据。",
+      "anchors": [
+        "V-B：质心多面体顶点约束；惯量不确定性不在在线规划中全量处理",
+        "VI：离线一次规划再跟踪，在线更新可能增加末端振动",
+        "VII：物理可实现惯性集合与规划后SDP检查"
+      ],
+      "method": "对不确定质心采用鲁棒接触约束，规划后核查更广泛的物理可实现惯性；实际采用离线规划后跟踪。",
+      "boundary": "不能概括成已在线鲁棒优化全部未知惯性；作者明确规划/验证分工，并报告在线更新带来振动的风险。",
+      "reuse": "提醒比较离线计划与重规划的接管连续性；惯性鲁棒部分为后续候选，当前不扩展载荷极限。",
+      "code": {
+        "url": "https://github.com/learnsyslab/upright",
+        "verified": "共享作者代码入口，未复现。"
+      }
+    },
+    {
+      "title": "Efficient Whole‐Body Model Predictive Control for Online Compliant Dual‐Arm Mobile Manipulation",
+      "authors": [
+        "Wenqian Du",
+        "Ran Long",
+        "João Moura",
+        "Jiayi Wang",
+        "Saeid Samadi",
+        "Sethu Vijayakumar"
+      ],
+      "year": 2026,
+      "doi": "10.1002/rob.70320",
+      "journal": "Journal of Field Robotics",
+      "source": "crossref",
+      "abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:p>Dual‐arm mobile manipulators can transport and manipulate large objects with simple end‐effectors. Interacting with dynamic environments subject to strict safety and compliance requirements, achieving whole‐body motion planning online while meeting various hard constraints for highly redundant mobile manipulators poses a significant challenge. We tackle this challenge by presenting an efficient whole‐body motion‐planning approach based on model‐based predictive control (MPC). We construct a hierarchical MPC framework in which the first MPC optimizes the end‐effectors' collision‐free motion, thereby guiding the second MPC to optimize whole‐body joint trajectories. In the first stage, we employ a Bézier‐curve representation to parameterize the high‐degree‐of‐freedom (high‐DOF) motion in  of two collaborating end‐effectors, notably introducing a novel and efficient method to optimize quaternion trajectories. This facilitates fast long‐horizon motion planning of coupled translational and rotational trajectories while accounting for approximated feasibility constraints. In the second stage, this is the first work to novelly incorporate the representation into a whole‐body MPC for online high‐DOF motion generation with predictive admittance control over a relatively short horizon while satisfying whole‐body hard constraints. Compared with the usage of a discretization approach, our whole‐body MPC ensures accurate model‐state transitions with faster, more stable computation speeds, and consistent motion command generation which enhances tracking performance for our hybrid position/velocity‐controlled robot. Both MPCs perform replanning in each control loop to adapt to a changing environment. Simulations and real‐world experiments validate the proposed hierarchical MPC framework, demonstrating that its two novel MPCs achieve efficient and robust performance in scenarios involving static and dynamic obstacle avoidance, compliant interaction with manipulated objects, and external disturbances.</jats:p>",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "publisher": "Wiley",
+      "type": "journal-article",
+      "references_count": 58,
+      "url": "https://arxiv.org/html/2410.22910v1",
+      "key": "du2026",
+      "scope": "2024预印本v1 III框架/参数化/预测导纳与IV相关实验；2026期刊仅元数据及出版社摘要，未比对最终方法全文。",
+      "read_title": "An Efficient Representation of Whole-body Model Predictive Control for Online Compliant Dual-arm Mobile Manipulation",
+      "anchors": [
+        "III-A：MPC-T任务轨迹、MPC-W全身关节轨迹及力参考",
+        "III-B：Bezier参数化保持位置/速度命令一致",
+        "III-D：位置/速度接口与腕力预测导纳；小末端质量/基座加速度条件下省略一惯性项"
+      ],
+      "method": "两层MPC先规划双手任务运动，再求全身关节运动；预测导纳把受力偏差转换为运动修正。",
+      "boundary": "不是直接关节力矩分配器；底盘通常参与优化，未在所读范围验证指定底盘急停与剩余行程耦合。不能以v1替代2026期刊全文。",
+      "reuse": "腰臂运动分配、任务层/执行层接口和一致参考设计；第一版不必复现整套两层非线性MPC。",
+      "code": {
+        "verified": "所核查原文/机构页未确认公开可运行源码，不等于作者没有代码。"
+      },
+      "published_primary": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70320"
+    },
+    {
+      "title": "Hierarchical Framework for Constrained Dual-Arm Cooperative Manipulation with Whole-Body Collision Avoidance",
+      "authors": [
+        "Silong Zhang",
+        "Quecheng Qiu",
+        "Yingtai Ni",
+        "Yuecheng Shao",
+        "Ziyang Feng",
+        "Jianmin Ji"
+      ],
+      "year": 2025,
+      "doi": "10.1109/iros60139.2025.11247571",
+      "journal": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "source": "crossref",
+      "abstract": "",
+      "volume": "",
+      "issue": "",
+      "pages": "5131-5138",
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "references_count": 32,
+      "url": "https://doi.org/10.1109/IROS60139.2025.11247571",
+      "key": "zhang2025",
+      "scope": "Crossref元数据、出版社摘要和引言；未取得完整方法正文。",
+      "anchors": [
+        "Abstract/Introduction：双臂闭链、whole-body避障、学习规划/经典控制分层"
+      ],
+      "method": "学习式规划与经典控制相结合，处理双臂共同持物的几何关系及全身避障，并设计训练数据生成。",
+      "boundary": "本轮不能确认具体移动底盘/躯干构型及停止约束，不把摘要里的whole-body当作当前轮式平台算法直接可用。",
+      "reuse": "背景：双臂一致性/全身避障已有研究，避免将增加第二只手作为贡献。",
+      "code": {
+        "verified": "未核实公开实现。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,965 @@
+{
+  "runs": [
+    {
+      "label": "default_half",
+      "setting": "default",
+      "kind": "half",
+      "dt_s": 0.0005,
+      "mu": 0.8,
+      "result": {
+        "case": "static",
+        "label": "default_half",
+        "status": "completed",
+        "steps": 5000,
+        "wall_s": 24.080145799991442,
+        "sim_s": 2.5,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.0002285398237442188,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.657104214379968e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "hands": [
+        {
+          "hand": "left",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.15612311168910006,
+          "object_minus_pad_z_slope_mmps": -0.1561231116890121,
+          "z_range_mm": 0.23418536934319434,
+          "z_linear_fit_residual_rms_mm": 5.34011954836117e-07,
+          "pad_relative_fit_residual_rms_mm": 5.340119012503822e-07,
+          "normal_force_mean_N": 8.750000022851829,
+          "max_contact_friction_utilization": 0.3572307064336483,
+          "tangent_speed_mean_mmps": 0.15609787260643412
+        },
+        {
+          "hand": "left",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.156121611274814,
+          "object_minus_pad_z_slope_mmps": -0.15612161127512528,
+          "z_range_mm": 0.15612167343452654,
+          "z_linear_fit_residual_rms_mm": 1.4977492502621728e-07,
+          "pad_relative_fit_residual_rms_mm": 1.4977489805772117e-07,
+          "normal_force_mean_N": 8.75000002553178,
+          "max_contact_friction_utilization": 0.3571666035658113,
+          "tangent_speed_mean_mmps": 0.15609805568006008
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.15605809871068477,
+          "object_minus_pad_z_slope_mmps": -0.15605809871070958,
+          "z_range_mm": 0.23408651440104222,
+          "z_linear_fit_residual_rms_mm": 4.492457257081019e-07,
+          "pad_relative_fit_residual_rms_mm": 4.492457770229846e-07,
+          "normal_force_mean_N": 8.749999987691746,
+          "max_contact_friction_utilization": 0.3576317390981729,
+          "tangent_speed_mean_mmps": 0.15609472167184077
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.15605935164201318,
+          "object_minus_pad_z_slope_mmps": -0.1560593516422373,
+          "z_range_mm": 0.15605929622249448,
+          "z_linear_fit_residual_rms_mm": 1.1932590038075227e-07,
+          "pad_relative_fit_residual_rms_mm": 1.1932592528635734e-07,
+          "normal_force_mean_N": 8.7499999905717,
+          "max_contact_friction_utilization": 0.35745337223509266,
+          "tangent_speed_mean_mmps": 0.15609442324696024
+        }
+      ],
+      "window_mean_pad_force_world_N": [
+        4.03943150156874e-08,
+        -2.9863276184871806e-08,
+        4.905000002419608
+      ],
+      "mean_vertical_support_ratio": 1.000000000493294,
+      "mean_vertical_capacity_upper_N": 13.99974398980166,
+      "maximum_vertical_capacity_upper_N": 13.999743995212144,
+      "maximum_contact_cone_ratio": 0.35745337223509266,
+      "maximum_pad_vs_total_object_force_error_N": 1.7763568394002505e-15,
+      "max_TCP_moment_Nm": 0.004606451044086722,
+      "minimum_loaded_contacts_after_first_step": 8.0,
+      "world_object_z_change_mm": -0.389817184057617
+    },
+    {
+      "label": "default_lowmu",
+      "setting": "default",
+      "kind": "lowmu",
+      "dt_s": 0.001,
+      "mu": 0.1,
+      "result": {
+        "case": "static",
+        "label": "default_lowmu",
+        "status": "completed",
+        "steps": 50,
+        "wall_s": 0.7191114999877755,
+        "sim_s": 0.05,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 2.4412357434330483,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.4094191900692415e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "hands": [
+        {
+          "hand": "left",
+          "window_s": [
+            0.005,
+            0.05
+          ],
+          "TCP_z_slope_mmps": -183.32075227937477,
+          "object_minus_pad_z_slope_mmps": -183.32075227937878,
+          "z_range_mm": 8.287456131805598,
+          "z_linear_fit_residual_rms_mm": 0.5430874048915371,
+          "pad_relative_fit_residual_rms_mm": 0.5430874048915416,
+          "normal_force_mean_N": 8.472765348203671,
+          "max_contact_friction_utilization": 1.0000000000000002,
+          "tangent_speed_mean_mmps": 182.6061566710065
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            0.005,
+            0.05
+          ],
+          "TCP_z_slope_mmps": -183.9848194742113,
+          "object_minus_pad_z_slope_mmps": -183.98481947421521,
+          "z_range_mm": 8.309482035196282,
+          "z_linear_fit_residual_rms_mm": 0.5436319302828897,
+          "pad_relative_fit_residual_rms_mm": 0.5436319302828662,
+          "normal_force_mean_N": 8.45969442735064,
+          "max_contact_friction_utilization": 1.0000000000000004,
+          "tangent_speed_mean_mmps": 179.02566652884423
+        }
+      ],
+      "window_mean_pad_force_world_N": [
+        0.01548942503878912,
+        0.1429636680556687,
+        1.69154181603972
+      ],
+      "mean_vertical_support_ratio": 0.3448607168276697,
+      "mean_vertical_capacity_upper_N": 1.7291795607928662,
+      "maximum_vertical_capacity_upper_N": 2.066710953502201,
+      "maximum_contact_cone_ratio": 1.0000000000000004,
+      "maximum_pad_vs_total_object_force_error_N": 7.216449660063518e-16,
+      "max_TCP_moment_Nm": 0.7795267249706815,
+      "minimum_loaded_contacts_after_first_step": 0.0,
+      "world_object_z_change_mm": -8.050555267861025
+    },
+    {
+      "label": "default_nominal",
+      "setting": "default",
+      "kind": "nominal",
+      "dt_s": 0.001,
+      "mu": 0.8,
+      "result": {
+        "case": "static",
+        "label": "default_nominal",
+        "status": "completed",
+        "steps": 2500,
+        "wall_s": 12.308806700006244,
+        "sim_s": 2.5,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.0002288454434680497,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.669229639960323e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "hands": [
+        {
+          "hand": "left",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.15612311492551342,
+          "object_minus_pad_z_slope_mmps": -0.15612311492566652,
+          "z_range_mm": 0.23418537756751334,
+          "z_linear_fit_residual_rms_mm": 5.358353372357203e-07,
+          "pad_relative_fit_residual_rms_mm": 5.358353900219057e-07,
+          "normal_force_mean_N": 8.750000022839252,
+          "max_contact_friction_utilization": 0.3572309487738168,
+          "tangent_speed_mean_mmps": 0.15609787274992554
+        },
+        {
+          "hand": "left",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.15612161083934517,
+          "object_minus_pad_z_slope_mmps": -0.15612161083944187,
+          "z_range_mm": 0.15612167313148007,
+          "z_linear_fit_residual_rms_mm": 1.5003661092712626e-07,
+          "pad_relative_fit_residual_rms_mm": 1.500366858720616e-07,
+          "normal_force_mean_N": 8.750000025526273,
+          "max_contact_friction_utilization": 0.357166598408754,
+          "tangent_speed_mean_mmps": 0.15609805586333456
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.15605809806505497,
+          "object_minus_pad_z_slope_mmps": -0.15605809806526466,
+          "z_range_mm": 0.2340865124106415,
+          "z_linear_fit_residual_rms_mm": 4.5009429083702073e-07,
+          "pad_relative_fit_residual_rms_mm": 4.5009423563040876e-07,
+          "normal_force_mean_N": 8.749999987678274,
+          "max_contact_friction_utilization": 0.3576319307098876,
+          "tangent_speed_mean_mmps": 0.15609472131442853
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.1560593523390377,
+          "object_minus_pad_z_slope_mmps": -0.15605935233910553,
+          "z_range_mm": 0.1560592969403558,
+          "z_linear_fit_residual_rms_mm": 1.1947225326811723e-07,
+          "pad_relative_fit_residual_rms_mm": 1.1947217275510072e-07,
+          "normal_force_mean_N": 8.749999990566169,
+          "max_contact_friction_utilization": 0.3574534110370295,
+          "tangent_speed_mean_mmps": 0.1560944227977284
+        }
+      ],
+      "window_mean_pad_force_world_N": [
+        5.191375603234623e-08,
+        -2.7849488440531536e-08,
+        4.905000001825197
+      ],
+      "mean_vertical_support_ratio": 1.0000000003721095,
+      "mean_vertical_capacity_upper_N": 13.999743989755894,
+      "maximum_vertical_capacity_upper_N": 13.999743995174729,
+      "maximum_contact_cone_ratio": 0.3574534110370295,
+      "maximum_pad_vs_total_object_force_error_N": 1.7763568394002505e-15,
+      "max_TCP_moment_Nm": 0.004606451831348813,
+      "minimum_loaded_contacts_after_first_step": 8.0,
+      "world_object_z_change_mm": -0.38989523879651156
+    },
+    {
+      "label": "hard_half",
+      "setting": "hard",
+      "kind": "half",
+      "dt_s": 0.0005,
+      "mu": 0.8,
+      "result": {
+        "case": "static",
+        "label": "hard_half",
+        "status": "completed",
+        "steps": 5000,
+        "wall_s": 23.999162199994316,
+        "sim_s": 2.5,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 2.6294713022441372e-05,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.657155808850078e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "hands": [
+        {
+          "hand": "left",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.015811591904514366,
+          "object_minus_pad_z_slope_mmps": -0.015811591904648856,
+          "z_range_mm": 0.023726101525824106,
+          "z_linear_fit_residual_rms_mm": 1.4375480437385278e-05,
+          "pad_relative_fit_residual_rms_mm": 1.437548042627701e-05,
+          "normal_force_mean_N": 8.749994493163717,
+          "max_contact_friction_utilization": 0.3624551080476734,
+          "tangent_speed_mean_mmps": 0.015615866609323079
+        },
+        {
+          "hand": "left",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.015769215358398946,
+          "object_minus_pad_z_slope_mmps": -0.01576921535868881,
+          "z_range_mm": 0.015771218382198526,
+          "z_linear_fit_residual_rms_mm": 4.98039353481396e-06,
+          "pad_relative_fit_residual_rms_mm": 4.980393547401687e-06,
+          "normal_force_mean_N": 8.74999561694938,
+          "max_contact_friction_utilization": 0.3613082950631473,
+          "tangent_speed_mean_mmps": 0.015614529582332424
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.015437100228312413,
+          "object_minus_pad_z_slope_mmps": -0.015437100228405373,
+          "z_range_mm": 0.023149151466810736,
+          "z_linear_fit_residual_rms_mm": 1.150072286194301e-05,
+          "pad_relative_fit_residual_rms_mm": 1.1500722872181582e-05,
+          "normal_force_mean_N": 8.749994330165261,
+          "max_contact_friction_utilization": 0.363278907817547,
+          "tangent_speed_mean_mmps": 0.015616528034272157
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.015471052285286281,
+          "object_minus_pad_z_slope_mmps": -0.015471052285490913,
+          "z_range_mm": 0.015469523679442432,
+          "z_linear_fit_residual_rms_mm": 4.057425015916263e-06,
+          "pad_relative_fit_residual_rms_mm": 4.057425000534002e-06,
+          "normal_force_mean_N": 8.749995479420594,
+          "max_contact_friction_utilization": 0.3621082278392968,
+          "tangent_speed_mean_mmps": 0.01561513146054292
+        }
+      ],
+      "window_mean_pad_force_world_N": [
+        6.390314807548807e-09,
+        4.44974915290975e-08,
+        4.90500000135303
+      ],
+      "mean_vertical_support_ratio": 1.0000000002758471,
+      "mean_vertical_capacity_upper_N": 13.99973683287092,
+      "maximum_vertical_capacity_upper_N": 13.999739255161863,
+      "maximum_contact_cone_ratio": 0.3621082278392968,
+      "maximum_pad_vs_total_object_force_error_N": 1.7763568394002505e-15,
+      "max_TCP_moment_Nm": 0.004584456030385283,
+      "minimum_loaded_contacts_after_first_step": 8.0,
+      "world_object_z_change_mm": -0.03900682361579477
+    },
+    {
+      "label": "hard_lowmu",
+      "setting": "hard",
+      "kind": "lowmu",
+      "dt_s": 0.001,
+      "mu": 0.1,
+      "result": {
+        "case": "static",
+        "label": "hard_lowmu",
+        "status": "completed",
+        "steps": 50,
+        "wall_s": 0.71264520000841,
+        "sim_s": 0.05,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 2.4411877109005147,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.25549393793052e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "hands": [
+        {
+          "hand": "left",
+          "window_s": [
+            0.005,
+            0.05
+          ],
+          "TCP_z_slope_mmps": -183.31701445788335,
+          "object_minus_pad_z_slope_mmps": -183.3170144578864,
+          "z_range_mm": 8.287285939951317,
+          "z_linear_fit_residual_rms_mm": 0.5430801363804284,
+          "pad_relative_fit_residual_rms_mm": 0.5430801363803576,
+          "normal_force_mean_N": 8.4731539627085,
+          "max_contact_friction_utilization": 1.0000000000000004,
+          "tangent_speed_mean_mmps": 182.6021767952225
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            0.005,
+            0.05
+          ],
+          "TCP_z_slope_mmps": -183.98110493266822,
+          "object_minus_pad_z_slope_mmps": -183.98110493266933,
+          "z_range_mm": 8.309314289798067,
+          "z_linear_fit_residual_rms_mm": 0.5436244223394726,
+          "pad_relative_fit_residual_rms_mm": 0.5436244223394007,
+          "normal_force_mean_N": 8.45992449784061,
+          "max_contact_friction_utilization": 1.0000000000000004,
+          "tangent_speed_mean_mmps": 179.02177124904802
+        }
+      ],
+      "window_mean_pad_force_world_N": [
+        0.015489604009453137,
+        0.1429660694208145,
+        1.6916036659270182
+      ],
+      "mean_vertical_support_ratio": 0.3448733263867519,
+      "mean_vertical_capacity_upper_N": 1.7292427932347711,
+      "maximum_vertical_capacity_upper_N": 2.0667167560520125,
+      "maximum_contact_cone_ratio": 1.0000000000000004,
+      "maximum_pad_vs_total_object_force_error_N": 9.992007221626409e-16,
+      "max_TCP_moment_Nm": 0.7795233761999477,
+      "minimum_loaded_contacts_after_first_step": 0.0,
+      "world_object_z_change_mm": -8.050382160264768
+    },
+    {
+      "label": "hard_nominal",
+      "setting": "hard",
+      "kind": "nominal",
+      "dt_s": 0.001,
+      "mu": 0.8,
+      "result": {
+        "case": "static",
+        "label": "hard_nominal",
+        "status": "completed",
+        "steps": 2500,
+        "wall_s": 12.213857800001279,
+        "sim_s": 2.5,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 2.6295910837615822e-05,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.662916704184757e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "hands": [
+        {
+          "hand": "left",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.015811541929616636,
+          "object_minus_pad_z_slope_mmps": -0.01581154192972665,
+          "z_range_mm": 0.023726011531934432,
+          "z_linear_fit_residual_rms_mm": 1.4378627458397753e-05,
+          "pad_relative_fit_residual_rms_mm": 1.4378627463888653e-05,
+          "normal_force_mean_N": 8.749994494418576,
+          "max_contact_friction_utilization": 0.36245414337897647,
+          "tangent_speed_mean_mmps": 0.015615864722313973
+        },
+        {
+          "hand": "left",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.015769182381042728,
+          "object_minus_pad_z_slope_mmps": -0.01576918238105713,
+          "z_range_mm": 0.015771181192334893,
+          "z_linear_fit_residual_rms_mm": 4.98340062042017e-06,
+          "pad_relative_fit_residual_rms_mm": 4.983400571413093e-06,
+          "normal_force_mean_N": 8.749995617899124,
+          "max_contact_friction_utilization": 0.3613076535396025,
+          "tangent_speed_mean_mmps": 0.015614528131238642
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.015437154597877626,
+          "object_minus_pad_z_slope_mmps": -0.015437154597967167,
+          "z_range_mm": 0.023149245019638442,
+          "z_linear_fit_residual_rms_mm": 1.1501728380651311e-05,
+          "pad_relative_fit_residual_rms_mm": 1.150172837477849e-05,
+          "normal_force_mean_N": 8.749994331436609,
+          "max_contact_friction_utilization": 0.3632779175232317,
+          "tangent_speed_mean_mmps": 0.015616527031653003
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -0.015471088433250065,
+          "object_minus_pad_z_slope_mmps": -0.015471088433290868,
+          "z_range_mm": 0.01546956335570826,
+          "z_linear_fit_residual_rms_mm": 4.059360911719836e-06,
+          "pad_relative_fit_residual_rms_mm": 4.059360962082107e-06,
+          "normal_force_mean_N": 8.74999548038353,
+          "max_contact_friction_utilization": 0.36210756581395326,
+          "tangent_speed_mean_mmps": 0.015615130736557585
+        }
+      ],
+      "window_mean_pad_force_world_N": [
+        7.719778988690285e-09,
+        4.5501733560924306e-08,
+        4.905000001251411
+      ],
+      "mean_vertical_support_ratio": 1.0000000002551295,
+      "mean_vertical_capacity_upper_N": 13.999736834387804,
+      "maximum_vertical_capacity_upper_N": 13.999739256171912,
+      "maximum_contact_cone_ratio": 0.36210756581395326,
+      "maximum_pad_vs_total_object_force_error_N": 1.7763568394002505e-15,
+      "max_TCP_moment_Nm": 0.004584543428715568,
+      "minimum_loaded_contacts_after_first_step": 8.0,
+      "world_object_z_change_mm": -0.03901463030064889
+    },
+    {
+      "label": "noslip_half",
+      "setting": "noslip",
+      "kind": "half",
+      "dt_s": 0.0005,
+      "mu": 0.8,
+      "result": {
+        "case": "static",
+        "label": "noslip_half",
+        "status": "completed",
+        "steps": 5000,
+        "wall_s": 24.858311600008165,
+        "sim_s": 2.5,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.00022155259909597674,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.65683827036962e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "hands": [
+        {
+          "hand": "left",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -1.839068157653758e-05,
+          "object_minus_pad_z_slope_mmps": -1.8390681500768943e-05,
+          "z_range_mm": 2.826393932764404e-05,
+          "z_linear_fit_residual_rms_mm": 2.9458608453121306e-06,
+          "pad_relative_fit_residual_rms_mm": 2.945860820543792e-06,
+          "normal_force_mean_N": 8.75000065325851,
+          "max_contact_friction_utilization": 0.36017514287099006,
+          "tangent_speed_mean_mmps": 9.193810130349969e-05
+        },
+        {
+          "hand": "left",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -2.720371860978081e-05,
+          "object_minus_pad_z_slope_mmps": -2.7203718490891447e-05,
+          "z_range_mm": 2.7030842645103803e-05,
+          "z_linear_fit_residual_rms_mm": 1.2527859990151914e-06,
+          "pad_relative_fit_residual_rms_mm": 1.252785999008059e-06,
+          "normal_force_mean_N": 8.750000665116898,
+          "max_contact_friction_utilization": 0.36017514287099006,
+          "tangent_speed_mean_mmps": 7.095728114290941e-05
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": 0.0008225074698878456,
+          "object_minus_pad_z_slope_mmps": 0.000822507469961614,
+          "z_range_mm": 0.0012379305070453483,
+          "z_linear_fit_residual_rms_mm": 5.463079512777795e-06,
+          "pad_relative_fit_residual_rms_mm": 5.4630794894280005e-06,
+          "normal_force_mean_N": 8.749999032489363,
+          "max_contact_friction_utilization": 0.36302810371036826,
+          "tangent_speed_mean_mmps": 0.002026070475394941
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": 0.0008066191519159807,
+          "object_minus_pad_z_slope_mmps": 0.0008066191520155187,
+          "z_range_mm": 0.0008071450809268299,
+          "z_linear_fit_residual_rms_mm": 1.868562521866108e-06,
+          "pad_relative_fit_residual_rms_mm": 1.8685625196260174e-06,
+          "normal_force_mean_N": 8.749999037900622,
+          "max_contact_friction_utilization": 0.36302810371036826,
+          "tangent_speed_mean_mmps": 0.00211387575674781
+        }
+      ],
+      "window_mean_pad_force_world_N": [
+        -1.5018956763192848e-08,
+        -7.171595820558139e-08,
+        4.904999985848831
+      ],
+      "mean_vertical_support_ratio": 0.9999999971149502,
+      "mean_vertical_capacity_upper_N": 13.999743585064396,
+      "maximum_vertical_capacity_upper_N": 13.999743607895821,
+      "maximum_contact_cone_ratio": 0.36302810371036826,
+      "maximum_pad_vs_total_object_force_error_N": 1.7763568394002505e-15,
+      "max_TCP_moment_Nm": 0.00467078526139469,
+      "minimum_loaded_contacts_after_first_step": 8.0,
+      "world_object_z_change_mm": 0.001144444896516994
+    },
+    {
+      "label": "noslip_lowmu",
+      "setting": "noslip",
+      "kind": "lowmu",
+      "dt_s": 0.001,
+      "mu": 0.1,
+      "result": {
+        "case": "static",
+        "label": "noslip_lowmu",
+        "status": "completed",
+        "steps": 50,
+        "wall_s": 0.7145107999967877,
+        "sim_s": 0.05,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 2.4412357451007956,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.446201370161098e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "hands": [
+        {
+          "hand": "left",
+          "window_s": [
+            0.005,
+            0.05
+          ],
+          "TCP_z_slope_mmps": -183.3207515115732,
+          "object_minus_pad_z_slope_mmps": -183.3207515115737,
+          "z_range_mm": 8.287456099960764,
+          "z_linear_fit_residual_rms_mm": 0.5430874038769955,
+          "pad_relative_fit_residual_rms_mm": 0.5430874038770166,
+          "normal_force_mean_N": 8.472765349511294,
+          "max_contact_friction_utilization": 1.0000000000000002,
+          "tangent_speed_mean_mmps": 182.6061561365476
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            0.005,
+            0.05
+          ],
+          "TCP_z_slope_mmps": -183.98481991887715,
+          "object_minus_pad_z_slope_mmps": -183.98481991887581,
+          "z_range_mm": 8.30948205200474,
+          "z_linear_fit_residual_rms_mm": 0.5436319324790111,
+          "pad_relative_fit_residual_rms_mm": 0.5436319324790109,
+          "normal_force_mean_N": 8.459694421503068,
+          "max_contact_friction_utilization": 1.0000000000000004,
+          "tangent_speed_mean_mmps": 179.0256668477255
+        }
+      ],
+      "window_mean_pad_force_world_N": [
+        0.01548957951411191,
+        0.14296364573883735,
+        1.6915418126928077
+      ],
+      "mean_vertical_support_ratio": 0.34486071614532265,
+      "mean_vertical_capacity_upper_N": 1.7291795603364941,
+      "maximum_vertical_capacity_upper_N": 2.066710954912756,
+      "maximum_contact_cone_ratio": 1.0000000000000004,
+      "maximum_pad_vs_total_object_force_error_N": 1.1102230246251565e-15,
+      "max_TCP_moment_Nm": 0.7795267234303425,
+      "minimum_loaded_contacts_after_first_step": 0.0,
+      "world_object_z_change_mm": -8.050555260014747
+    },
+    {
+      "label": "noslip_nominal",
+      "setting": "noslip",
+      "kind": "nominal",
+      "dt_s": 0.001,
+      "mu": 0.8,
+      "result": {
+        "case": "static",
+        "label": "noslip_nominal",
+        "status": "completed",
+        "steps": 2500,
+        "wall_s": 12.852307299996028,
+        "sim_s": 2.5,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.00022167569458672503,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.649308857999432e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "hands": [
+        {
+          "hand": "left",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -1.847057858636591e-05,
+          "object_minus_pad_z_slope_mmps": -1.8470578847338125e-05,
+          "z_range_mm": 2.834138128093855e-05,
+          "z_linear_fit_residual_rms_mm": 2.9309595642406393e-06,
+          "pad_relative_fit_residual_rms_mm": 2.9309596429131196e-06,
+          "normal_force_mean_N": 8.750000653228572,
+          "max_contact_friction_utilization": 0.360175169290978,
+          "tangent_speed_mean_mmps": 9.204941653034759e-05
+        },
+        {
+          "hand": "left",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": -2.723649941688989e-05,
+          "object_minus_pad_z_slope_mmps": -2.7236499865495202e-05,
+          "z_range_mm": 2.706741709346261e-05,
+          "z_linear_fit_residual_rms_mm": 1.2516580227197607e-06,
+          "pad_relative_fit_residual_rms_mm": 1.251658050332207e-06,
+          "normal_force_mean_N": 8.750000665104677,
+          "max_contact_friction_utilization": 0.360175169290978,
+          "tangent_speed_mean_mmps": 7.099419920677753e-05
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.0,
+            2.5
+          ],
+          "TCP_z_slope_mmps": 0.0008224348017274283,
+          "object_minus_pad_z_slope_mmps": 0.0008224348015574705,
+          "z_range_mm": 0.0012377849507174687,
+          "z_linear_fit_residual_rms_mm": 5.452309563797706e-06,
+          "pad_relative_fit_residual_rms_mm": 5.4523096423999905e-06,
+          "normal_force_mean_N": 8.749999032457778,
+          "max_contact_friction_utilization": 0.363028142116423,
+          "tangent_speed_mean_mmps": 0.0020260718250422268
+        },
+        {
+          "hand": "right",
+          "window_s": [
+            1.5,
+            2.5
+          ],
+          "TCP_z_slope_mmps": 0.0008065847602508178,
+          "object_minus_pad_z_slope_mmps": 0.0008065847597853774,
+          "z_range_mm": 0.0008071068081250132,
+          "z_linear_fit_residual_rms_mm": 1.8684203989785173e-06,
+          "pad_relative_fit_residual_rms_mm": 1.8684204297722171e-06,
+          "normal_force_mean_N": 8.749999037891747,
+          "max_contact_friction_utilization": 0.363028142116423,
+          "tangent_speed_mean_mmps": 0.0021139102933464392
+        }
+      ],
+      "window_mean_pad_force_world_N": [
+        -8.133649373928223e-09,
+        -7.145107088208928e-08,
+        4.9049999857544275
+      ],
+      "mean_vertical_support_ratio": 0.9999999970957039,
+      "mean_vertical_capacity_upper_N": 13.999743584994572,
+      "maximum_vertical_capacity_upper_N": 13.999743607800816,
+      "maximum_contact_cone_ratio": 0.363028142116423,
+      "maximum_pad_vs_total_object_force_error_N": 2.6645352591003757e-15,
+      "max_TCP_moment_Nm": 0.004667283742140593,
+      "minimum_loaded_contacts_after_first_step": 8.0,
+      "world_object_z_change_mm": 0.0011445985695912597
+    }
+  ],
+  "step_comparisons": [
+    {
+      "setting": "default",
+      "nominal_max_abs_z_slope_mmps": 0.15612161083944187,
+      "half_max_abs_z_slope_mmps": 0.15612161127512528,
+      "maximum_paired_slope_difference_mmps": 6.968682297880946e-10
+    },
+    {
+      "setting": "hard",
+      "nominal_max_abs_z_slope_mmps": 0.01576918238105713,
+      "half_max_abs_z_slope_mmps": 0.01576921535868881,
+      "maximum_paired_slope_difference_mmps": 3.6147799954699966e-08
+    },
+    {
+      "setting": "noslip",
+      "nominal_max_abs_z_slope_mmps": 0.0008065847597853774,
+      "half_max_abs_z_slope_mmps": 0.0008066191520155187,
+      "maximum_paired_slope_difference_mmps": 3.4392230141371515e-08
+    }
+  ],
+  "new_physics_runs": 9,
+  "new_physics_steps": 22650,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\binding.json": "64cb5d9aa43468620bc03da5e03b544106f9932edd0be08a006cf8f1d0466b66",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\config.json": "8e5605d6ae74467f0809974b8f2987dee11dda2c497559a2d40970affdc943f4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\grasp_contacts.npz": "cace828f85ef073b360f696c1c8895d7004950517e3276e7e3bda29b60098615",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\grasp_metadata.json": "5d510302413f6810e99ef667df1d6eca6c9c7a47f72904c7977cb60e4703ccfc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\grasp_trace.npz": "f0851ab420474835d4b86a5d3f8999be5556406b41289b28d6754fb91188b9a6",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\result.json": "3f82ea73cf29762b48b1d46d44339e8d69da18d52c817d1f0e159571c5a5df89",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\trace.npz": "840f42f457a5d8cac1eec41f3205f1f39ad6f86e8065b10b4f63f427440d2abb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\wheel_integral_summary.json": "b7dbe0774dd90e00683df8207b7a5c2f2de1b105e97ecd1edc6301887ab6c3ac",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_half\\wheel_integral_trace.npz": "fc054ba20498ac7f20ab537ae645659535489b96581e27a6776bad100826b6e0",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\binding.json": "a5c242722030b9959a57ee9584a38cc65bb0a2dfd9b00189657640ce7e7b63af",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\config.json": "98c7e3585e13188c49908a9054723fa18a54eb90d5ac3b0a02e997d6546780e2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\grasp_contacts.npz": "632ce809f41adb83dff6865b4e7d8bc3ed387f5f39534a89d22b270ebd77784e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\grasp_metadata.json": "d1694451a161ac8fd2e1afe93567855f79fa8e8c3e29da2c58baa55d9191e7f0",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\grasp_trace.npz": "cfc5d19c59702a8d3df26cc23b967982929ff906b5ef4a5009d5c39cb1910e4b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\result.json": "158e8fe95d85586402aa875ca9e7f8849af0423e03f10561ce2e773e657e4456",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\trace.npz": "d500704f0a30b9e629e8b782ba29aeb5cab88dc0cf4ad234aed450df82f718b9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\wheel_integral_summary.json": "1f99ec17fe434a0ff1ac985416541fb1716dc97880bb9b9315b5c4b685b8a154",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_lowmu\\wheel_integral_trace.npz": "4e9c260079dbdf4fb805a4184589f3e6a555d058b930dbc3af075bc91152b475",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\binding.json": "049de99112bfb3aa522a4d0609d97b295e346d5e40400e028fe3f170913db8d3",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\config.json": "e57ac2d0e52979e26de475091c6b4c2afd5df9c2df73bc96ad8575f715e3934a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\grasp_contacts.npz": "d15f827359ffa8846b429e903b6cad68dd9964a83a97ba3416a4b140077cadf0",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\grasp_metadata.json": "cb288bc1b8adc690924f8ba2df880d072cdcb9cd0be86f85d5c9b02c6b227e48",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\grasp_trace.npz": "905cedb8742f431bd67cddb1b65248320ab9557e921a2ddb0e087133dd13cd5f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\result.json": "c8af4e667c2a7f86e83b37bd3e167e946f26868d780aa9182b7aacf3f890701b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\trace.npz": "6f93210f3d22d791f46f6e2200c466bf4274f5be357ed43dbd740d2306d2aa5d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\wheel_integral_summary.json": "b7e205fc2768c84d65e8ddf414f3e09359c0c315eabc72a66c599bb4d3608a42",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\default_nominal\\wheel_integral_trace.npz": "3f271efae8db8d772a1d7adc40f7ba9d1fca5086672cd78435543b44fe88ab75",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\binding.json": "3ddbd9fc7653b7b744c2a6b37b37e9beaa56485d1e8d245a6a64a8a0cb21a3b5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\config.json": "01ae8689da7beaca4d9cc652108435cbc35447a1a5c5103274ead676da98682d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\grasp_contacts.npz": "1074b48324e700c8307e617beaf1add1296daa38d5eefb3dbec8db5c62a65e21",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\grasp_metadata.json": "5d510302413f6810e99ef667df1d6eca6c9c7a47f72904c7977cb60e4703ccfc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\grasp_trace.npz": "cb6a49b98b881b1b7ec245435ec8e5552967421634ce7d8ac959949314301321",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\result.json": "a7d09bf3a80ee72a951009b83eade4b83c867a5d2cb3de04a59735e3522978a4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\trace.npz": "d6258934fedd357082a6afe51fc548860317141894c63f78f0b9e4a9e8a60b02",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\wheel_integral_summary.json": "75563655b60ff8472bdf5b4455d6b5773b03cf3f5145b67160989979b10c3e4d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_half\\wheel_integral_trace.npz": "5ea5a8c39dd872469399e48d462c68dde0364fccfe421cb500ce6b16da26b798",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\binding.json": "4a5652768aea7d35a67e94a9d2f378261aeafbd3f022d93feaec203ae897d4bb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\config.json": "43068340e4d3201554fcc3da6ed3df693aa49cc734d861d0bf1e3f2ccebc263d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\grasp_contacts.npz": "4f0ed295e931421c8ff814bfeb5efc3c1d1293fc8bcad18e603bcbd515aa7f5f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\grasp_metadata.json": "d1694451a161ac8fd2e1afe93567855f79fa8e8c3e29da2c58baa55d9191e7f0",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\grasp_trace.npz": "aa6eafcb8ab81371a633e6744f40c8feaf093eefade515dba679deffc09f06a6",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\result.json": "3a58aae3172bf4df93439f32ebc9448bc302a6191c8663db48be753b4681f19c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\trace.npz": "ff708aeb17b6a2bb21573d3fa778f75931143183ca9915494be1fcef0754553c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\wheel_integral_summary.json": "ac023df182097c1e46237c433015bfe61e5c8736520fdeb4d2e9b597900c4d96",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_lowmu\\wheel_integral_trace.npz": "ad31d34296d1d90a282c6d89e89ac1ab1a145026948172ec7493783b4b31dc44",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\binding.json": "9ad03fa80195a42ec6d613c29be951c9b60f8bc6dec1a40c8a130dd15c4434a4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\config.json": "697e9300f0acd1066e007c29f02c4e8040b96f0039c025b1ad6ecddddc7958f1",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\grasp_contacts.npz": "476e84baa8d8dc69f8a29625be912cd6f5228d76eb2fbd0e66ec1c314a1340a4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\grasp_metadata.json": "cb288bc1b8adc690924f8ba2df880d072cdcb9cd0be86f85d5c9b02c6b227e48",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\grasp_trace.npz": "742c4e2a615398d9ef60f2496df38289ed2b1ee3bd2bfb83a22cd47f768f8510",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\result.json": "d1cc3ca58763987504efff56ebb40cb494b5f6eb03321ded24637e7e4ff1c025",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\trace.npz": "2279645499e48c010d6dff02820a2296591d4d87ff48745244248d2aea26075a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\wheel_integral_summary.json": "75d6fdf8088a9706619b5bdca795fe10e3d76e5b8f91f922864fdb49e5ea59ac",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\hard_nominal\\wheel_integral_trace.npz": "f2c10596359280195ea6cfef02aea2e4ce1fdabfd9b869118bb41674ad4da6ba",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\binding.json": "5cfb9cc5d7ec11f3c9271ad5f799ad9c344aa1305d30ebde83ce376d92181efd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\config.json": "dc8152f7df1fed0ff943bc67748fe5dbf463dffd0c1c19fa4db1676582d97837",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\grasp_contacts.npz": "3925ebf224baf9faf69b9aab37e9eb76b2dd4642bbcf1139d52f27d680a6c8bf",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\grasp_metadata.json": "5d510302413f6810e99ef667df1d6eca6c9c7a47f72904c7977cb60e4703ccfc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\grasp_trace.npz": "a0b9fe1b85c646545e7f5c870bfb3b38ae067370d804a9bdc4bf05f7a5faaf11",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\result.json": "89c96a450cc99e815fa1245892bb5218ec12d05a5f85ac542af5748b4080c643",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\trace.npz": "50d01461fb130ac38e67454a0529513d82bf53daa519d888afe795474e9a0dc1",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\wheel_integral_summary.json": "36fea147277517d56d34fbced9187dd1ff10076c0ec1e37482da5c9bbe5ae1f0",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_half\\wheel_integral_trace.npz": "56616825195e2e8c85e1dc86251e6141d6eb9791d40069f4ab092f00477ed852",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\binding.json": "ef5decbc005d9c7018afc10402bd3a6f9eb8982dc7535573de17b4167f142e09",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\config.json": "2a80872f57c1f7c82a7e1408cfb5a64bd9abca0bd6c2c661583f550f9a0c0426",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\grasp_contacts.npz": "6eb559e0d2bee64ee116a629a0aa1f817b4e0e548cbb47522d0658d8d1045e8a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\grasp_metadata.json": "d1694451a161ac8fd2e1afe93567855f79fa8e8c3e29da2c58baa55d9191e7f0",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\grasp_trace.npz": "0f8ae6bd6c35155a89f8a43d7105c97002953a46466364fbe30427faa2f342c9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\result.json": "f0167012a3bb31a83195b2eab617f6af43343a5cbd1c31c31717b3a931e06a9f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\trace.npz": "f6c88dd7e1c5262e2d8fb32ec29bd1e429278c6b88eee0db259e0c4e09fcfeda",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\wheel_integral_summary.json": "c9e1442df82aca7baa6b70a01941cfe0a87d3efc976019e8c9b09e3f3cd7b2d4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_lowmu\\wheel_integral_trace.npz": "d71b3daccba5254dea95c3f69e8881a0deff681851efaf35d3af14c90ad03415",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\binding.json": "c4d0af0e7946db6fe7df8415645ce9a0e85a8aa7e27b72e6fa09982077b57949",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\config.json": "400763b0e7e0be42fbd8d9788ff5c5f851ff797955367c3e08adaf814070792c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\grasp_contacts.npz": "ba0c8f6acff1e88cfd093a06202946f5ca90e423285b802c584184a3b6a4d729",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\grasp_metadata.json": "cb288bc1b8adc690924f8ba2df880d072cdcb9cd0be86f85d5c9b02c6b227e48",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\grasp_trace.npz": "55702264b103eab93ecedd7e4cce5e5b93fdf46d998761e387a5e15c6054aa16",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\result.json": "e2ea7149a13add23b49d250e462aeb948175ef9b31bc5c84acb4b20a3a855cf5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\trace.npz": "44651a994346e78da6e75e9fdf977e7025500f196f0fb54008f2063af53e62b8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\wheel_integral_summary.json": "ebe762c716974431cd1394813d1a63a2244ac612e43a466887b7b6db1d9ec918",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\execution\\noslip_nominal\\wheel_integral_trace.npz": "0fdff92581436ca6cb5f328a0935430e81d71f4826c9d371024329acdf03f21c"
+  },
+  "scope": "static common-pose contact diagnostics; no real-time/hardware or controlled-stopping benefit claim"
+}

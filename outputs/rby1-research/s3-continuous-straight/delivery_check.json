@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "controller_only_metadata_change": true,
+  "independent_full_geometry_queries": 7620,
+  "independent_checks": [
+    {
+      "scene": "low",
+      "full_geometry_before_contact_m": 6.933212721293998e-09,
+      "full_geometry_after_contact_m": -2.603530442733766e-09
+    },
+    {
+      "scene": "low",
+      "execution": "execution",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "execution": "execution",
+      "sample_index": 796,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "low",
+      "execution": "execution",
+      "sample_index": 1801,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "tall_same_face",
+      "full_geometry_before_contact_m": 1.0784906079308598e-08,
+      "full_geometry_after_contact_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "full_geometry_before_contact_m": 8.544835727875011e-09,
+      "full_geometry_after_contact_m": -9.919074450692733e-10
+    },
+    {
+      "scene": "upper_bar",
+      "execution": "execution",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "execution": "execution",
+      "sample_index": 802,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "execution": "execution",
+      "sample_index": 1812,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "execution": "execution_halfdt",
+      "sample_index": 0,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "execution": "execution_halfdt",
+      "sample_index": 1607,
+      "max_distance_difference_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "execution": "execution_halfdt",
+      "sample_index": 3624,
+      "max_distance_difference_m": 0.0
+    }
+  ],
+  "out_of_scope_lateral_box_rejected": true,
+  "backward_heading_rejected": true,
+  "frozen_count": 15,
+  "same_initial_state": true,
+  "decisions_bound_before_physics": true,
+  "audit_new_physics_steps": 0,
+  "new_physics_runs": 3,
+  "new_physics_steps": 7237,
+  "note": "Audit success means records consistent; individual physical outcomes remain in summary, not assumed passed"
+}

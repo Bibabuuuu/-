@@ -1,0 +1,398 @@
+{
+  "status": "已实现并在冻结名义范围已验证",
+  "physics_runs": 2,
+  "physics_steps": 8000,
+  "S3_cumulative_runs": 54,
+  "S3_cumulative_steps": 133061,
+  "rows": [
+    {
+      "passed": true,
+      "gates": {
+        "completed": true,
+        "originals_frozen": true,
+        "collision_free": true,
+        "front_gap": true,
+        "no_control_clipping": true,
+        "joint_range": true,
+        "self_penetration": true,
+        "joint_speed": true,
+        "wheels": true,
+        "hands": true,
+        "axle_rest": true,
+        "object_rest": true,
+        "yaw_rest": true,
+        "trigger_snapshot_is_live": true,
+        "C2_handover": true,
+        "decision_admitted": true,
+        "handover_no_reset": true,
+        "command_by_deadline_plus_tick": true
+      },
+      "metrics": {
+        "label": "measured_latency",
+        "case": "straight",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "final_turn_deg": -0.00015010659050300194,
+        "target_turn_deg": 0.0,
+        "final_yaw_error_deg": 0.00015010659050300194,
+        "peak_yaw_error_deg": 0.0001916408511435411,
+        "final_axle_xy_error_mm": 0.14792323111030894,
+        "peak_axle_xy_error_mm": 0.14792323111030894,
+        "peak_object_com_error_mm": 0.3241735726462755,
+        "peak_object_acceleration_mps2": 0.7814872462862228,
+        "peak_object_angular_acceleration_radps2": 0.012060452689427644,
+        "final_object_speed_mmps": 0.1560983365341424,
+        "final_base_yaw_rate_degps": -9.482734445470986e-09,
+        "wheel_no_contact_samples": 0,
+        "peak_wheel_lateral_contact_speed_mps": 1.6204628597957313e-08,
+        "peak_base_tilt_deg": 0.0075775332693098045,
+        "linear_balance_residual_rms_N": 0.00023675857439943185,
+        "angular_balance_residual_rms_Nm": 3.876024003175454e-07,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.254710200737639,
+        "max_self_penetration_m": 0.0,
+        "frozen_unchanged": true,
+        "actuators_at_bound": [],
+        "peak_raw_relative_position_change_mm": 0.3123157364933524,
+        "peak_raw_relative_rotation_change_deg": 0.05111593167196327,
+        "peak_TCP_contact_moment_Nm": 0.03231852774675467,
+        "peak_friction_utilization": 0.4091628130086287,
+        "min_loaded_contacts_per_hand": 0,
+        "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+        "zero_loaded_contact_samples_after_first_controlled_step": 0,
+        "contact_force_crosscheck_N": 2.3603665272841412e-15,
+        "hold_1s_raw_relative_position_change_mm": 0.15608686994972565,
+        "hold_1s_base_yaw_change_deg": 2.9161845824611564e-06
+      },
+      "events": {
+        "events": [
+          {
+            "event": "obstacle_revealed_and_snapshot_read",
+            "time_s": 0.2
+          },
+          {
+            "event": "stop_reference_activated",
+            "time_s": 0.201,
+            "reason": "planner_selection"
+          },
+          {
+            "event": "first_nonzero_deceleration_command",
+            "time_s": 0.2015
+          }
+        ],
+        "observation": {
+          "time_s": 0.2,
+          "axle_m": [
+            0.9082858079898947,
+            -5.0187358509368174e-05,
+            0.09991663009532015
+          ],
+          "actual_forward_speed_mps": 0.3997618358961236,
+          "command_speed_mps": 0.39993127226900177,
+          "front_gap_m": 0.2000199533110465,
+          "obstacle_face_x_m": 1.3027049005359823,
+          "fronts": {
+            "base": {
+              "x_m": 1.0083105234568037,
+              "geom": "wheel_l_tire"
+            },
+            "upper": {
+              "x_m": 1.1026849472249358,
+              "geom": "link_left_arm_4_LINK_18_collision_4_5"
+            },
+            "payload": {
+              "x_m": 1.1004075535381135,
+              "geom": "payload_beam"
+            }
+          }
+        },
+        "decision": {
+          "candidates": [
+            {
+              "A_mps2": 0.5,
+              "duration_s": 0.8998625445380035,
+              "stop_reference_distance_m": 0.17994158615215247,
+              "delay_allowance_m": 0.01999656361345009,
+              "predicted_front_gap_m": 8.180354544393142e-05,
+              "admitted": false
+            },
+            {
+              "A_mps2": 0.78,
+              "duration_s": 0.668732400344874,
+              "stop_reference_distance_m": 0.13372349983871445,
+              "delay_allowance_m": 0.01999656361345009,
+              "predicted_front_gap_m": 0.04629988985888195,
+              "admitted": true
+            }
+          ],
+          "selected_index": 1,
+          "scope": "two straight fixed-upper references; current measured front/speed; no dynamics guarantee"
+        },
+        "measured_snapshot_and_planning_wall_s": 0.0005760999920312315,
+        "injected_result_latency_s": 0.0005760999920312315,
+        "quantized_result_available_s": 0.201,
+        "forced_late": false,
+        "handover": {
+          "time_s": 0.201,
+          "reason": "planner_selection",
+          "A_mps2": 0.78,
+          "reference_position_jump_m": 0.0,
+          "reference_velocity_jump_mps": 0.0,
+          "reference_acceleration_jump_mps2": 0.0,
+          "actual_axle_position_error_m": 2.7573563894926638e-05,
+          "actual_axle_velocity_error_mps": 0.00016930139627168868,
+          "live_integration_state_unchanged": true
+        },
+        "reference_stop_time_s": 0.8697324003448741,
+        "first_deceleration_command_s": 0.2015,
+        "trigger_to_first_deceleration_command_s": 0.0015000000000000013,
+        "latency_policy": "measure snapshot/geometry/profile/selection CPU; advance live physics at cruise for quantized delay, no state restore; not asynchronous or hard real-time validation",
+        "excluded_latency": "real lidar, transport, OS scheduling and full control/physics wall cost",
+        "fallback_policy": "precomputed startup straight A=.78 J=5 stop; stale primary ignored after deadline; simulated timer, not an independent OS watchdog"
+      },
+      "actual_minimum_front_plane_gap_m": 0.06601124568826333,
+      "minimum_gap_time_s": 0.8585,
+      "native_checks": [
+        {
+          "index": 0,
+          "time_s": 0.0,
+          "front_plane_gap_m": 0.27998625418685696,
+          "native_box_gap_m": 0.27998625418685696
+        },
+        {
+          "index": 400,
+          "time_s": 0.2,
+          "front_plane_gap_m": 0.2000199533110465,
+          "native_box_gap_m": 0.2000199533110465
+        },
+        {
+          "index": 1717,
+          "time_s": 0.8585,
+          "front_plane_gap_m": 0.06601124568826333,
+          "native_box_gap_m": 0.06601124568826332
+        },
+        {
+          "index": 4000,
+          "time_s": 2.0,
+          "front_plane_gap_m": 0.06602361134210466,
+          "native_box_gap_m": 0.06602361134210465
+        }
+      ],
+      "maximum_forward_axle_travel_after_trigger_m": 0.13400408847217815,
+      "persistent_rest_time_s": 0.85,
+      "final_axle_speed_mps": 4.4703460181308295e-09,
+      "final_object_speed_mps": 0.0001560983365341424,
+      "trigger_to_end_peak_relative_position_change_mm": 0.2811290417377388,
+      "post_reference_stop_relative_change_mm": 0.17638045386552165,
+      "note": "sampled whole-robot front plane separation; native distances checked at four states; no unsampled continuous collision proof; relative pose is not material slip",
+      "steps": 4000,
+      "physics_runs": 1
+    },
+    {
+      "passed": true,
+      "gates": {
+        "completed": true,
+        "originals_frozen": true,
+        "collision_free": true,
+        "front_gap": true,
+        "no_control_clipping": true,
+        "joint_range": true,
+        "self_penetration": true,
+        "joint_speed": true,
+        "wheels": true,
+        "hands": true,
+        "axle_rest": true,
+        "object_rest": true,
+        "yaw_rest": true,
+        "trigger_snapshot_is_live": true,
+        "C2_handover": true,
+        "decision_admitted": true,
+        "handover_no_reset": true,
+        "command_by_deadline_plus_tick": true
+      },
+      "metrics": {
+        "label": "forced_deadline",
+        "case": "straight",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "final_turn_deg": -0.0001574105556744722,
+        "target_turn_deg": 0.0,
+        "final_yaw_error_deg": 0.0001574105556744722,
+        "peak_yaw_error_deg": 0.00020557660938596425,
+        "final_axle_xy_error_mm": 0.15445669509371074,
+        "peak_axle_xy_error_mm": 0.15445669509371074,
+        "peak_object_com_error_mm": 0.3259742029677797,
+        "peak_object_acceleration_mps2": 0.7815043917865654,
+        "peak_object_angular_acceleration_radps2": 0.012392712670145386,
+        "final_object_speed_mmps": 0.15610143667468102,
+        "final_base_yaw_rate_degps": -9.47632728916431e-09,
+        "wheel_no_contact_samples": 0,
+        "peak_wheel_lateral_contact_speed_mps": 1.6204628597957313e-08,
+        "peak_base_tilt_deg": 0.007577680303681237,
+        "linear_balance_residual_rms_N": 0.00023682811278160173,
+        "angular_balance_residual_rms_Nm": 3.8764397498377616e-07,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.254710200737639,
+        "max_self_penetration_m": 0.0,
+        "frozen_unchanged": true,
+        "actuators_at_bound": [],
+        "peak_raw_relative_position_change_mm": 0.31231587740890226,
+        "peak_raw_relative_rotation_change_deg": 0.05117888532455548,
+        "peak_TCP_contact_moment_Nm": 0.03232206947022743,
+        "peak_friction_utilization": 0.4091670195527808,
+        "min_loaded_contacts_per_hand": 0,
+        "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+        "zero_loaded_contact_samples_after_first_controlled_step": 0,
+        "contact_force_crosscheck_N": 2.7465400791133423e-15,
+        "hold_1s_raw_relative_position_change_mm": 0.1560872317698531,
+        "hold_1s_base_yaw_change_deg": 3.1836170589000366e-06
+      },
+      "events": {
+        "events": [
+          {
+            "event": "obstacle_revealed_and_snapshot_read",
+            "time_s": 0.2
+          },
+          {
+            "event": "stop_reference_activated",
+            "time_s": 0.25,
+            "reason": "deadline_fallback"
+          },
+          {
+            "event": "first_nonzero_deceleration_command",
+            "time_s": 0.2505
+          }
+        ],
+        "observation": {
+          "time_s": 0.2,
+          "axle_m": [
+            0.9082858079898947,
+            -5.0187358509368174e-05,
+            0.09991663009532015
+          ],
+          "actual_forward_speed_mps": 0.3997618358961236,
+          "command_speed_mps": 0.39993127226900177,
+          "front_gap_m": 0.2000199533110465,
+          "obstacle_face_x_m": 1.3027049005359823,
+          "fronts": {
+            "base": {
+              "x_m": 1.0083105234568037,
+              "geom": "wheel_l_tire"
+            },
+            "upper": {
+              "x_m": 1.1026849472249358,
+              "geom": "link_left_arm_4_LINK_18_collision_4_5"
+            },
+            "payload": {
+              "x_m": 1.1004075535381135,
+              "geom": "payload_beam"
+            }
+          }
+        },
+        "decision": {
+          "candidates": [
+            {
+              "A_mps2": 0.5,
+              "duration_s": 0.8998625445380035,
+              "stop_reference_distance_m": 0.17994158615215247,
+              "delay_allowance_m": 0.01999656361345009,
+              "predicted_front_gap_m": 8.180354544393142e-05,
+              "admitted": false
+            },
+            {
+              "A_mps2": 0.78,
+              "duration_s": 0.668732400344874,
+              "stop_reference_distance_m": 0.13372349983871445,
+              "delay_allowance_m": 0.01999656361345009,
+              "predicted_front_gap_m": 0.04629988985888195,
+              "admitted": true
+            }
+          ],
+          "selected_index": 1,
+          "scope": "two straight fixed-upper references; current measured front/speed; no dynamics guarantee"
+        },
+        "measured_snapshot_and_planning_wall_s": 0.0005373000021791086,
+        "injected_result_latency_s": 0.0505,
+        "quantized_result_available_s": 0.2505,
+        "forced_late": true,
+        "handover": {
+          "time_s": 0.25,
+          "reason": "deadline_fallback",
+          "A_mps2": 0.78,
+          "reference_position_jump_m": 0.0,
+          "reference_velocity_jump_mps": 0.0,
+          "reference_acceleration_jump_mps2": 0.0,
+          "actual_axle_position_error_m": 3.56791285646953e-05,
+          "actual_axle_velocity_error_mps": 0.00016132546634915027,
+          "live_integration_state_unchanged": true
+        },
+        "reference_stop_time_s": 0.918732400344874,
+        "first_deceleration_command_s": 0.2505,
+        "trigger_to_first_deceleration_command_s": 0.05049999999999999,
+        "latency_policy": "measure snapshot/geometry/profile/selection CPU; advance live physics at cruise for quantized delay, no state restore; not asynchronous or hard real-time validation",
+        "excluded_latency": "real lidar, transport, OS scheduling and full control/physics wall cost",
+        "fallback_policy": "precomputed startup straight A=.78 J=5 stop; stale primary ignored after deadline; simulated timer, not an independent OS watchdog"
+      },
+      "actual_minimum_front_plane_gap_m": 0.046421102554624616,
+      "minimum_gap_time_s": 0.9075,
+      "native_checks": [
+        {
+          "index": 0,
+          "time_s": 0.0,
+          "front_plane_gap_m": 0.27998625418685696,
+          "native_box_gap_m": 0.27998625418685696
+        },
+        {
+          "index": 400,
+          "time_s": 0.2,
+          "front_plane_gap_m": 0.2000199533110465,
+          "native_box_gap_m": 0.2000199533110465
+        },
+        {
+          "index": 1815,
+          "time_s": 0.9075,
+          "front_plane_gap_m": 0.046421102554624616,
+          "native_box_gap_m": 0.046421102554624616
+        },
+        {
+          "index": 4000,
+          "time_s": 2.0,
+          "front_plane_gap_m": 0.04643349387540918,
+          "native_box_gap_m": 0.04643349387540918
+        }
+      ],
+      "maximum_forward_axle_travel_after_trigger_m": 0.15359418802405556,
+      "persistent_rest_time_s": 0.899,
+      "final_axle_speed_mps": 4.488251213759301e-09,
+      "final_object_speed_mps": 0.00015610143667468102,
+      "trigger_to_end_peak_relative_position_change_mm": 0.28112920525485835,
+      "post_reference_stop_relative_change_mm": 0.1687317150306972,
+      "note": "sampled whole-robot front plane separation; native distances checked at four states; no unsampled continuous collision proof; relative pose is not material slip",
+      "steps": 4000,
+      "physics_runs": 1
+    }
+  ],
+  "independent_audit_passed": true,
+  "additional_delay_travel_m": 0.019590099551877405,
+  "contact_or_grip_or_controller_tuning": false,
+  "new_optimization_or_IK": false,
+  "startup_fault": {
+    "stage": "scene loading before any physics step",
+    "resolved": "identical ASCII archive scene path",
+    "physics_steps": 0
+  },
+  "reporting_fault": {
+    "stage": "JSON serialization after first complete physics run",
+    "resolved": "NumPy scalar output adapter; original trace and physics code unchanged",
+    "physics_reruns": 0
+  },
+  "remaining": [
+    "real lidar/transport/OS scheduling/full control compute latency",
+    "independent watchdog and hard real time",
+    "moving-state validity/reanchoring of waist/arm coordinating candidates",
+    "full-body fast planning and high-speed/load qualification",
+    "default-contact vertical creep and true material slip evidence"
+  ]
+}

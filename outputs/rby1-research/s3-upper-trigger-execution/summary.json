@@ -1,0 +1,248 @@
+{
+  "result": {
+    "passed": true,
+    "gates": {
+      "completed": true,
+      "originals_frozen": true,
+      "collision_free": true,
+      "front_gap": true,
+      "no_control_clipping": true,
+      "joint_range": true,
+      "self_penetration": true,
+      "joint_speed": true,
+      "wheels": true,
+      "hands": true,
+      "axle_rest": true,
+      "object_rest": true,
+      "yaw_rest": true,
+      "trigger_snapshot_is_live": true,
+      "C2_handover": true,
+      "decision_admitted": true,
+      "handover_no_reset": true,
+      "command_by_deadline_plus_tick": true,
+      "upper_reference_activated": true,
+      "all_C2_fields": true,
+      "nominal_trigger_state": true
+    },
+    "metrics": {
+      "label": "upper_at_deadline",
+      "case": "straight",
+      "dt_s": 0.0005,
+      "steps": 4000,
+      "final_turn_deg": -9.085065219342326,
+      "target_turn_deg": -9.439781930294698,
+      "final_yaw_error_deg": -0.3547167109523713,
+      "peak_yaw_error_deg": 0.7556361533845718,
+      "final_axle_xy_error_mm": 1.278553376096967,
+      "peak_axle_xy_error_mm": 1.301723141734977,
+      "peak_object_com_error_mm": 2.7421153421447992,
+      "peak_object_acceleration_mps2": 0.9301865925131252,
+      "peak_object_angular_acceleration_radps2": 2.2673972672368743,
+      "final_object_speed_mmps": 0.15590149056629649,
+      "final_base_yaw_rate_degps": -9.236723638482052e-07,
+      "wheel_no_contact_samples": 0,
+      "peak_wheel_lateral_contact_speed_mps": 0.0016153703255051715,
+      "peak_base_tilt_deg": 0.006638190578813933,
+      "linear_balance_residual_rms_N": 0.007195195427809126,
+      "angular_balance_residual_rms_Nm": 0.00018118959321945867,
+      "max_unclipped_control_excess": 0.0,
+      "max_joint_range_excess": 0.0,
+      "max_joint_speed_fraction": 0.254710200737639,
+      "max_self_penetration_m": 0.0,
+      "frozen_unchanged": true,
+      "actuators_at_bound": [],
+      "peak_raw_relative_position_change_mm": 0.3150958502315854,
+      "peak_raw_relative_rotation_change_deg": 0.07887723399322015,
+      "peak_TCP_contact_moment_Nm": 0.043831513217455355,
+      "peak_friction_utilization": 0.5358786288414419,
+      "min_loaded_contacts_per_hand": 0,
+      "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+      "zero_loaded_contact_samples_after_first_controlled_step": 0,
+      "contact_force_crosscheck_N": 2.6651134375294657e-15,
+      "hold_1s_raw_relative_position_change_mm": 0.16343454133587887,
+      "hold_1s_base_yaw_change_deg": -0.02019930645956017
+    },
+    "events": {
+      "events": [
+        {
+          "event": "obstacle_revealed_and_actual_trigger_state_checked",
+          "time_s": 0.2
+        },
+        {
+          "event": "stop_reference_activated",
+          "time_s": 0.25,
+          "reason": "preloaded_upper_at_fixed_release"
+        },
+        {
+          "event": "first_nonzero_deceleration_command",
+          "time_s": 0.2505
+        }
+      ],
+      "observation": {
+        "time_s": 0.2,
+        "regression_state_exact": {
+          "qpos": true,
+          "qvel": true,
+          "ctrl": true
+        },
+        "hand_loaded_count": [
+          8.0,
+          8.0
+        ],
+        "front_gap_m": 0.2000199533110465,
+        "obstacle_face_x_m": 1.3027049005359823,
+        "fronts": {
+          "base": {
+            "x_m": 1.0083105234568037,
+            "geom": "wheel_l_tire"
+          },
+          "upper": {
+            "x_m": 1.1026849472249358,
+            "geom": "link_left_arm_4_LINK_18_collision_4_5"
+          },
+          "payload": {
+            "x_m": 1.1004075535381135,
+            "geom": "payload_beam"
+          }
+        },
+        "state_guard_role": "test-only admission to this one previously observed nominal trigger state, exact qpos/qvel/ctrl; no general tracking tube",
+        "actual_upper_q_error_rad": 1.7199781638055356e-05,
+        "actual_upper_v_radps": 4.7179195834878435e-05
+      },
+      "decision": {
+        "selected_index": 0,
+        "selected_kind": "upper",
+        "checks": {
+          "nominal_regression_state": true,
+          "both_hands_loaded": true,
+          "command_C2": true,
+          "reference_gap": true,
+          "ready_by_deadline": true
+        },
+        "cached_reference_gap_at_release_m": 0.028112831654788062,
+        "command_C2_max_error": 2.270042084698181e-16,
+        "planned_command_translation_m": [
+          0.09998281771780815,
+          -8.359213588270259e-06,
+          0.0
+        ],
+        "estimated_command_release_s": 0.25,
+        "measured_snapshot_and_selection_wall_s": 0.0033752000017557293,
+        "note": "Known cruise command predicts the release placement; no future actual-state input"
+      },
+      "handover": {
+        "time_s": 0.25,
+        "reason": "preloaded_upper_at_fixed_release",
+        "reference_position_jump_m": 0.0,
+        "reference_velocity_jump_mps": 0.0,
+        "reference_acceleration_jump_mps2": 0.0,
+        "payload_position_jump_m": 2.270042084698181e-16,
+        "payload_velocity_jump_mps": 0.0,
+        "payload_acceleration_jump_mps2": 0.0,
+        "payload_rotation_jump_rad": 1.312377606067111e-19,
+        "joint_q_jump_rad": 0.0,
+        "joint_v_jump_radps": 0.0,
+        "joint_a_jump_radps2": 0.0,
+        "live_integration_state_unchanged": true,
+        "activation_and_telemetry_wall_s": 0.0002952999930130318
+      },
+      "measured_snapshot_and_planning_wall_s": 0.0033752000017557293,
+      "quantized_result_available_s": 0.20350000000000001,
+      "reference_stop_time_s": 0.8695207030426355,
+      "first_deceleration_command_s": 0.2505,
+      "trigger_to_first_deceleration_command_s": 0.05049999999999999,
+      "upper_selected": true,
+      "latency_policy": "fixed 50ms simulated release reserve; measured trigger work must finish within it; live cruise continues; single-thread latency injection, not independent watchdog",
+      "excluded_latency": "real lidar/transport/OS and full control/physics wall cost; activation/telemetry cost logged separately; no hard real-time claim"
+    },
+    "actual_minimum_front_plane_gap_m": 0.02811665028816246,
+    "minimum_gap_time_s": 1.0115,
+    "native_checks": [
+      {
+        "index": 0,
+        "time_s": 0.0,
+        "front_plane_gap_m": 0.27998625418685696,
+        "native_box_gap_m": 0.27998625418685696
+      },
+      {
+        "index": 400,
+        "time_s": 0.2,
+        "front_plane_gap_m": 0.2000199533110465,
+        "native_box_gap_m": 0.2000199533110465
+      },
+      {
+        "index": 2023,
+        "time_s": 1.0115,
+        "front_plane_gap_m": 0.02811665028816246,
+        "native_box_gap_m": 0.028116650288162456
+      },
+      {
+        "index": 4000,
+        "time_s": 2.0,
+        "front_plane_gap_m": 0.028305899744744956,
+        "native_box_gap_m": 0.028305899744744956
+      }
+    ],
+    "maximum_forward_axle_travel_after_trigger_m": 0.14457281937526478,
+    "persistent_rest_time_s": 1.0070000000000001,
+    "final_axle_speed_mps": 2.904761552653198e-09,
+    "final_object_speed_mps": 0.0001559014905662965,
+    "trigger_to_end_peak_relative_position_change_mm": 0.2842450072917837,
+    "post_reference_stop_relative_change_mm": 0.18340877373370804,
+    "note": "sampled whole-robot front plane separation; native distances checked at four states; no unsampled continuous collision proof; relative pose is not material slip",
+    "steps": 4000,
+    "physics_runs": 1
+  },
+  "comparison": {
+    "baseline": "previous forced_deadline straight fallback, reused without a new run",
+    "new": "one upper_at_deadline episode",
+    "common_motion_window_s": [
+      0.25,
+      0.918732400344874
+    ],
+    "common_hold_window_s": [
+      0.918732400344874,
+      1.918732400344874
+    ],
+    "baseline_metrics": {
+      "object_acceleration_RMS_mps2": 0.6475390208388282,
+      "max_hand_contact_TCP_moment_RMS_Nm": 0.026761279003510705,
+      "common_hold_1s_relative_position_change_mm": 0.1560872317698531,
+      "common_hold_1s_contact_tangent_travel_mm": 0.15610107964520567,
+      "peak_object_acceleration_in_common_motion_mps2": 0.7815043917865654,
+      "peak_hand_contact_TCP_moment_in_common_motion_Nm": 0.03232206947022743
+    },
+    "upper_metrics": {
+      "object_acceleration_RMS_mps2": 0.6523727611227557,
+      "max_hand_contact_TCP_moment_RMS_Nm": 0.03021749002092183,
+      "common_hold_1s_relative_position_change_mm": 0.15947758637732024,
+      "common_hold_1s_contact_tangent_travel_mm": 0.15620895684350458,
+      "peak_object_acceleration_in_common_motion_mps2": 0.9301865925131252,
+      "peak_hand_contact_TCP_moment_in_common_motion_Nm": 0.043831513217455355
+    },
+    "relative_change_percent": {
+      "object_acceleration_RMS_mps2": 0.7464786103030141,
+      "max_hand_contact_TCP_moment_RMS_Nm": 12.914969486165884,
+      "common_hold_1s_relative_position_change_mm": 2.1720896507833043,
+      "common_hold_1s_contact_tangent_travel_mm": 0.06910727238025327,
+      "peak_object_acceleration_in_common_motion_mps2": 19.02512670295602,
+      "peak_hand_contact_TCP_moment_in_common_motion_Nm": 35.60862264042075
+    },
+    "note": "same trigger/cruise prefix and release, but stopping duration, turning and upper motion differ together; no isolated waist/arm causal benefit or overall stability ranking"
+  },
+  "decision": {
+    "status": "单次名义事件接管已实现并通过冻结验收",
+    "new_physics_runs": 1,
+    "new_physics_steps": 4000,
+    "S3_cumulative_runs": 55,
+    "S3_cumulative_steps": 137061,
+    "upper_action_activated": true,
+    "default_straight_action_replaced": false,
+    "general_state_admission_established": false,
+    "evidence": "same successful cruise prefix, live trigger guard, preloaded unchanged old reference, C2 and physical checks passed",
+    "selection_role": "this test exercised one admissible preloaded upper action; it did not implement multi-metric optimal selection",
+    "reason_to_keep_straight_default": "in this scene straight already stops with more clearance; upper candidate has higher object acceleration and hand moment metrics; base path/turn/profile also differ",
+    "next_scope": "read-only review of fair action comparison and when upper coordination is needed; no further physical run in this batch"
+  },
+  "independent_audit_passed": true
+}

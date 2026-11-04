@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-31",
+  "question": "人为制动预测误差/规划等待的现实性及当前阶段优先级",
+  "workflow": "targeted multi-source literature and official documentation recheck, not systematic review",
+  "search": {
+    "query": "mobile manipulation robust nonprehensile object transportation model predictive control",
+    "requested_sources": [
+      "crossref",
+      "arxiv"
+    ],
+    "rows_per_source": 3,
+    "returned_records": 3,
+    "returned_source_labels": [
+      "crossref"
+    ],
+    "note": "The tool returned three CrossRef records and no arXiv-labelled discovery record, with errors=null. Known arXiv primary texts were opened separately. Returned broad results were screened by task relevance, not used as evidence of a research gap.",
+    "records": [
+      {
+        "title": "Toward multi-object nonprehensile transportation via shared teleoperation: A framework based on virtual object model predictive control",
+        "doi": "10.1007/s11465-026-0888-0",
+        "used_for_decision": false
+      },
+      {
+        "title": "Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator",
+        "doi": "10.1109/LRA.2023.3324520",
+        "used_for_decision": "Already in stage-13 bibliography; no new method claim derived here."
+      },
+      {
+        "title": "Model-based control for nonprehensile manipulation of a two-rigid-link object by two cooperative arms",
+        "doi": "10.1109/ROBIO.2010.5723372",
+        "used_for_decision": false
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Robust Nonprehensile Object Transportation with Uncertain Inertial Parameters",
+      "url": "https://arxiv.org/html/2411.07079v3",
+      "doi": "10.1109/LRA.2025.3551067",
+      "anchors": [
+        "VI Robust Planning, offline plan with online tracking",
+        "IX Hardware Experiments, Table II"
+      ],
+      "supports": "Another real mobile manipulator has base tracking error; one-shot planning with feedback can be a meaningful strong baseline.",
+      "does_not_support": "No target-platform brake duration error distribution, no conversion from trajectory RMSE to 10%/20% emergency stop duration."
+    },
+    {
+      "title": "Emergency Stopping for Liquid-manipulating Robots, preprint v1",
+      "url": "https://arxiv.org/html/2604.16667v1",
+      "doi_of_journal_record": "10.1109/LRA.2026.3734909",
+      "anchors": [
+        "IV-D Implementation",
+        "V-A Simulation analysis"
+      ],
+      "supports": "Current-state feedback is part of the control implementation; core physical-parameter analysis and model misspecification are separate experiment questions.",
+      "does_not_support": "Pendulum-length misspecification percentages do not calibrate base braking errors; final journal full text not compared."
+    },
+    {
+      "title": "RB-Y1 RobotState official documentation",
+      "url": "https://rainbowrobotics.github.io/rby1-dev/sdk/protos/generated/robot_state/robotstate.html",
+      "anchors": [
+        "RobotState field table: joint_states, velocity, odometry"
+      ],
+      "supports": "The interface exposes state feedback and mobility odometry.",
+      "does_not_support": "No measured accuracy, emergency braking delay or stop-time uncertainty bound is provided by this field listing."
+    }
+  ],
+  "retrieval_limitations": [
+    "An official Omron stopping-distance manual was found via search with stated test conditions; full PDF fetch failed because of content length. It is not used to assign target-platform error magnitudes.",
+    "Pinned model-only source location did not contain README/examples; no claim about its runtime control behavior was derived from missing files."
+  ],
+  "recommendation_status": "待讨论",
+  "recommended_sequence": [
+    "Complete basic state feedback and check computation availability.",
+    "Demonstrate the nominal short-stop/finite-stroke task with credible strong baselines and continuous object metrics.",
+    "After the method and task are defined, test bounded uncertainties with documented or measured provenance."
+  ],
+  "new_physical_runs": 0,
+  "new_algorithm": false
+}

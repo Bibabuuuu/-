@@ -1,0 +1,156 @@
+{
+  "settings": [
+    {
+      "label": "right_20",
+      "scene": "right_column",
+      "cap_Nm": 20.0,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\right_20\\scene.xml",
+      "source_scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\scene.xml",
+      "candidate": {
+        "case": "right",
+        "A_mps2": 1.0,
+        "J_mps3": 5.0,
+        "T_s": 0.5999312722690018,
+        "reference_geometry_admitted": true,
+        "minimum_predicted_distance_m": 0.0038137528447873717,
+        "closest_group": "upper",
+        "closest_geom": "link_right_arm_4_LINK_11_collision_3_4",
+        "first_predicted_intersection_s": null,
+        "predicted_peak_object_acceleration_mps2": 1.0691041443795894,
+        "predicted_peak_object_angular_acceleration_radps2": 2.2525368532935137,
+        "predicted_peak_equal_split_TCP_moment_Nm": 0.04491208416678264,
+        "samples": 121,
+        "wall_s": 0.10658220000186702,
+        "id": "A1.00000_angle-8.046875",
+        "turn_angle_deg": -8.046875,
+        "probe_interval_deg": [
+          -10.0,
+          -6.09375
+        ]
+      },
+      "model_change_audit": {
+        "xml_changed_attributes": 6,
+        "changed_compiled_array_fields": [
+          "actuator_ctrlrange",
+          "actuator_forcerange",
+          "jnt_actfrcrange"
+        ],
+        "other_compiled_array_fields_identical": true,
+        "all_three_wheel_limit_layers": 20.0
+      }
+    },
+    {
+      "label": "left_20",
+      "scene": "left_column",
+      "cap_Nm": 20.0,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\left_20\\scene.xml",
+      "source_scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\scene.xml",
+      "candidate": {
+        "case": "left",
+        "A_mps2": 1.0,
+        "J_mps3": 5.0,
+        "T_s": 0.5999312722690018,
+        "reference_geometry_admitted": true,
+        "minimum_predicted_distance_m": 0.003785144110226247,
+        "closest_group": "upper",
+        "closest_geom": "link_left_arm_4_LINK_18_collision_4_5",
+        "first_predicted_intersection_s": null,
+        "predicted_peak_object_acceleration_mps2": 1.069093259171642,
+        "predicted_peak_object_angular_acceleration_radps2": 2.2525368532935137,
+        "predicted_peak_equal_split_TCP_moment_Nm": 0.04491249495753383,
+        "samples": 121,
+        "wall_s": 0.10425129999930505,
+        "id": "A1.00000_angle+8.046875",
+        "turn_angle_deg": 8.046875,
+        "probe_interval_deg": [
+          6.09375,
+          10.0
+        ]
+      },
+      "model_change_audit": {
+        "xml_changed_attributes": 6,
+        "changed_compiled_array_fields": [
+          "actuator_ctrlrange",
+          "actuator_forcerange",
+          "jnt_actfrcrange"
+        ],
+        "other_compiled_array_fields_identical": true,
+        "all_three_wheel_limit_layers": 20.0
+      }
+    },
+    {
+      "label": "right_40",
+      "scene": "right_column",
+      "cap_Nm": 40.0,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\right_40\\scene.xml",
+      "source_scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\scene.xml",
+      "candidate": {
+        "case": "right",
+        "A_mps2": 1.0,
+        "J_mps3": 5.0,
+        "T_s": 0.5999312722690018,
+        "reference_geometry_admitted": true,
+        "minimum_predicted_distance_m": 0.0038137528447873717,
+        "closest_group": "upper",
+        "closest_geom": "link_right_arm_4_LINK_11_collision_3_4",
+        "first_predicted_intersection_s": null,
+        "predicted_peak_object_acceleration_mps2": 1.0691041443795894,
+        "predicted_peak_object_angular_acceleration_radps2": 2.2525368532935137,
+        "predicted_peak_equal_split_TCP_moment_Nm": 0.04491208416678264,
+        "samples": 121,
+        "wall_s": 0.10658220000186702,
+        "id": "A1.00000_angle-8.046875",
+        "turn_angle_deg": -8.046875,
+        "probe_interval_deg": [
+          -10.0,
+          -6.09375
+        ]
+      },
+      "model_change_audit": {
+        "xml_changed_attributes": 6,
+        "changed_compiled_array_fields": [
+          "actuator_ctrlrange",
+          "actuator_forcerange",
+          "jnt_actfrcrange"
+        ],
+        "other_compiled_array_fields_identical": true,
+        "all_three_wheel_limit_layers": 40.0
+      }
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\wheel_limit_sensitivity.py": "6c389eb3abed5e833144319ac5821a8cbf20bf593539d7f8616071e6820be573",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_planar_stop.py": "d212564a3c6c609afcf27c3b64c9ce5536ae7640692e453d3d9c0f9504636b22",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\wheel_speed_integral.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\config.json": "9ae54b2f942d33ab906806fe290151c39337e2794324ea65de7f0b8c671e0a35",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\plan.json": "712f9cb09f8acdefc183b039dbe0bd734051760961005d2dd420e55b626b767e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\summary.json": "9f7603b3d3046cefb45e9c58ee971f5fc839e12473cf4722aeac28f24d9d4d77",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\initial_state.npz": "ac0bb9dc946932fa5fc0f8178bcf8448214671acaa0d963e5dcc8d58d87be6f8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\scene.xml": "98f4eb784da41a1f940e46a0181021b5f4110600de6957c28683c43b743e44d8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\right_20\\scene.xml": "d8b42f8057ed8777289d7cef4d5c22a4a6338b241cf025d7045a43144eddb3bb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\scene.xml": "9936b36160c5e8f6be533ef0eb3ab0cdcb2fc35439eb2035256d47a2963f9f63",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\left_20\\scene.xml": "396af6d480f07b3461d55357ce714806da78c9ebeb06eb7f86b0d520ebcdeebd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-limit-sensitivity\\right_40\\scene.xml": "e01bf472dec092bf9659d85336691733368193db320532136c7c4941abb9149c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\execution\\trace.npz": "903d966dfa0605e144af8b53f34237f909b87416573c0bc21654f58035b98f4d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\execution\\grasp_trace.npz": "74bf3268359268200c6ca4814a674e6c6f0eab4c2af1f183aed9ef09599b9b93",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\execution\\wheel_integral_trace.npz": "46755196e3cc4cb2f59b34fefecd40c2e6c0d3506c95dec5acde1379c436f900",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\execution\\config.json": "6711c8da7aaafa1cf0d1df4f5b42aaac51abb97129f45dc048ad812d6ad9cbfa",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\execution\\result.json": "c8c932b4186b235e892b6f74801e54a18a95e7a78f64915a990f52d7f09a908b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\execution\\probe_source.py": "d212564a3c6c609afcf27c3b64c9ce5536ae7640692e453d3d9c0f9504636b22",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\execution\\trace.npz": "dcaaccbb37e169d2d0f002186cd1bf50c63388731a4080b646bda951b7bf435e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\execution\\grasp_trace.npz": "3408e8bd0f49b06f59960c21bbb3b7c95c336150b42fea666c3d0fed59c71df4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\execution\\wheel_integral_trace.npz": "ac655b4cd8ee38af99886debd4585085453cdb1657a0aa65eed28cb28e0291d5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\execution\\config.json": "49adfcdd2d7b8e979a4a2ffe53e5d78fe68908664960ecade31a42547185e564",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\execution\\result.json": "b38e006c3e29a9d5f8c34147220bb068607bed225d9b0708b1ddadc6ce6283f4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\execution\\probe_source.py": "d212564a3c6c609afcf27c3b64c9ce5536ae7640692e453d3d9c0f9504636b22"
+  },
+  "common_precontact_end_s": 0.34700000000000003,
+  "new_physics_runs_at_contract": 0,
+  "budget": {
+    "main_runs": 3,
+    "optional_halfdt_runs": 1,
+    "maximum_steps": 8000
+  },
+  "role": "20/40Nm are 2x/4x intervention values, not hardware calibration, admissible product limits or replacement defaults",
+  "hypothesis": "Hold reference, state, controller and scene constant; change only wheel limit layers and their existing antiwindup response; test clipping/contact and 20-vs-40 invariance"
+}

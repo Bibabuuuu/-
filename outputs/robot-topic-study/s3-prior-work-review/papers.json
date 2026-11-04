@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-01",
+  "papers": [
+    {
+      "title": "Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator",
+      "authors": [
+        "Adam Heins",
+        "Angela P. Schoellig"
+      ],
+      "year": 2023,
+      "doi": "10.1109/lra.2023.3324520",
+      "journal": "IEEE Robotics and Automation Letters",
+      "source": "crossref",
+      "volume": "8",
+      "issue": "12",
+      "pages": "7986-7993",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "references_count": 26,
+      "url": "https://doi.org/10.1109/lra.2023.3324520",
+      "id": "R1",
+      "read_version": "arXiv:2305.17484v2",
+      "method_url": "https://arxiv.org/html/2305.17484v2",
+      "anchors": [
+        "III-A",
+        "VI",
+        "VIII-B",
+        "Appendix A/C"
+      ],
+      "level": "targeted_methods",
+      "reproduced": false,
+      "verified_date": "2026-11-01"
+    },
+    {
+      "title": "Efficient Whole‐Body Model Predictive Control for Online Compliant Dual‐Arm Mobile Manipulation",
+      "authors": [
+        "Wenqian Du",
+        "Ran Long",
+        "João Moura",
+        "Jiayi Wang",
+        "Saeid Samadi",
+        "Sethu Vijayakumar"
+      ],
+      "year": 2026,
+      "doi": "10.1002/rob.70320",
+      "journal": "Journal of Field Robotics",
+      "source": "crossref",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "publisher": "Wiley",
+      "type": "journal-article",
+      "references_count": 58,
+      "url": "https://doi.org/10.1002/rob.70320",
+      "id": "R2",
+      "read_version": "arXiv:2410.22910v1; journal abstract only",
+      "method_url": "https://arxiv.org/html/2410.22910v1",
+      "anchors": [
+        "III-A",
+        "III-C Eq13",
+        "III-D Eq19,25,26",
+        "IV"
+      ],
+      "level": "preprint_targeted_methods",
+      "journal_article_number": "e70320",
+      "journal_article_number_source": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70320",
+      "journal_volume_status": "Early View; Crossref empty; do not interpret publisher citation placeholder 0 as assigned volume",
+      "reproduced": false,
+      "verified_date": "2026-11-01"
+    },
+    {
+      "title": "Model-Predictive Spill-Free Emergency Stopping for Liquid-Manipulating Robots",
+      "authors": [
+        "Samuli Hynninen",
+        "Ville Kyrki"
+      ],
+      "year": 2026,
+      "doi": "10.1109/lra.2026.3734909",
+      "journal": "IEEE Robotics and Automation Letters",
+      "source": "crossref",
+      "volume": "11",
+      "issue": "11",
+      "pages": "12751-12758",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "references_count": 35,
+      "url": "https://doi.org/10.1109/lra.2026.3734909",
+      "id": "R3",
+      "read_version": "arXiv:2604.16667v1",
+      "method_url": "https://arxiv.org/html/2604.16667v1",
+      "anchors": [
+        "II-A",
+        "III-A"
+      ],
+      "level": "problem_scope_targeted; earlier S1 methods retained",
+      "reproduced": false,
+      "verified_date": "2026-11-01"
+    },
+    {
+      "title": "Robust Nonprehensile Object Transportation With Uncertain Inertial Parameters",
+      "authors": [
+        "Adam Heins",
+        "Angela P. Schoellig"
+      ],
+      "year": 2025,
+      "doi": "10.1109/lra.2025.3551067",
+      "journal": "IEEE Robotics and Automation Letters",
+      "source": "crossref",
+      "volume": "10",
+      "issue": "5",
+      "pages": "4492-4499",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "references_count": 28,
+      "url": "https://doi.org/10.1109/lra.2025.3551067",
+      "id": "R4",
+      "read_version": "arXiv:2411.07079v3 abstract",
+      "method_url": "https://arxiv.org/abs/2411.07079v3",
+      "anchors": [
+        "Abstract"
+      ],
+      "level": "abstract_only",
+      "reproduced": false,
+      "verified_date": "2026-11-01"
+    },
+    {
+      "title": "Robust Shared Control With Stable Contact Servoing for Enhanced Object Transportation by Telerobotic Bimanual Mobile Manipulators",
+      "authors": [
+        "Tao Teng",
+        "Xi Wu",
+        "Zhihao Li",
+        "Darwin Caldwell",
+        "Fei Chen"
+      ],
+      "year": 2025,
+      "doi": "10.1002/rob.22464",
+      "journal": "Journal of Field Robotics",
+      "source": "crossref",
+      "volume": "42",
+      "issue": "4",
+      "pages": "1491-1507",
+      "publisher": "Wiley",
+      "type": "journal-article",
+      "references_count": 46,
+      "url": "https://doi.org/10.1002/rob.22464",
+      "id": "R5",
+      "read_version": "publisher abstract",
+      "method_url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22464",
+      "anchors": [
+        "ABSTRACT"
+      ],
+      "level": "abstract_only",
+      "reproduced": false,
+      "verified_date": "2026-11-01"
+    }
+  ]
+}

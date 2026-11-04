@@ -1,0 +1,80 @@
+{
+  "published": true,
+  "files_verified": 16,
+  "two_cached_evaluations_passed": true,
+  "evidence_verified": true,
+  "IK_calls": 90,
+  "QP_calls": 174,
+  "QP_internal_iterations": 348,
+  "cache_snapshot_unchanged": true,
+  "new_numerical_constraint_Jacobians": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\cached_evaluation.py",
+      "sha256": "670D5AA25DBB917BB3B993EE6580942663A870A71E6C1C56128F68F69949349A"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\verify_cached_evaluation.py",
+      "sha256": "445F2B10089FFD5C076EF82F773020C6AD99C4D71C6401AC6A6356B534ADA25B"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\contract.json",
+      "sha256": "598C3CB9835748D0441A4C720E5420496F9671A86B133ED8E51CAF0BAC934298"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\result.json",
+      "sha256": "3C03AE4D09A93F7E3680CD320A1E4BC5A4DE7897D580BF6B3543A8E2E87EEEC0"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\case_0.npz",
+      "sha256": "8E1709C1843009C674594DD638932349E4A28226D2363F4221093E515EEC7428"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\case_1.npz",
+      "sha256": "5F3AC2F7DC0AE36DC153A9A8D0278AFC56CB5D3D3CF44AEB59164727DFAE4F8C"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\progress.json",
+      "sha256": "22739096FFE517FF098962CD130C622A1588305680C1CBE25FF19A6A7AEFD7BB"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\delivery_check.json",
+      "sha256": "F5CFEB8BB3BD76C4920EC118093AF58B47E2078D003857FD4FF3897757CEB736"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\pre_execution_v1.py",
+      "sha256": "14E0E0432905BCECF85AC4C1CD4B750A9D18376A7C2A109AE7BFD60EB8B4B2C3"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\pre_execution_contract_v1.json",
+      "sha256": "536D3947CEA01CD08142AB92715B9CF3AA90AB077D142C10E84BF223CCE67E99"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\review_solver_readiness.py",
+      "sha256": "E6868B6C5F4DF3182A554C36F060573091AE70812DC977054777805AF09F4E46"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\solver_readiness_review.json",
+      "sha256": "4B942635422C987DE8F20E0B14D7533099ADBF34FE949AC74D8782FCAB6B0CEB"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\next_jacobian_probe_proposal.json",
+      "sha256": "39AB0BAA6C8A54107E2DA605577CF8F400FDA8D6A915DF0FB3F7640B146BBA83"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cached-reference-evaluation\\固定准备复用_等价性与成本结果.md",
+      "sha256": "81B0D7A4EE0A0377A21EC803E01A728F3C78EF3921348E1089DE434DE393A4DA"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\PROJECT_PLAN.md",
+      "sha256": "C95302674756E340275B27BD3E892FC5F4905CFB3B59E93C231658C4FA9A726D"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\plans\\34-s3-mature-stop-baselines.md",
+      "sha256": "A05AEA8587AC5306C6BCFDDEFF14AACBB57F8C292F31D22AB191A3384D92313C"
+    }
+  ]
+}

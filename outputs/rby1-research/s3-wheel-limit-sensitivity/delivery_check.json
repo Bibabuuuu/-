@@ -1,0 +1,56 @@
+{
+  "records_consistent": true,
+  "same_initial_state_and_references": true,
+  "execution_source_identical_to_failed_runs": true,
+  "original_inputs_unchanged": true,
+  "frozen_count": 15,
+  "independent_full_geometry_queries": 4572,
+  "independent_geometry_checks": [
+    {
+      "label": "right_20",
+      "index": 0,
+      "distance_error_m": 0.0
+    },
+    {
+      "label": "right_20",
+      "index": 510,
+      "distance_error_m": 0.0
+    },
+    {
+      "label": "right_20",
+      "index": 1600,
+      "distance_error_m": 0.0
+    },
+    {
+      "label": "left_20",
+      "index": 0,
+      "distance_error_m": 0.0
+    },
+    {
+      "label": "left_20",
+      "index": 516,
+      "distance_error_m": 0.0
+    },
+    {
+      "label": "left_20",
+      "index": 1600,
+      "distance_error_m": 0.0
+    },
+    {
+      "label": "right_40",
+      "index": 0,
+      "distance_error_m": 0.0
+    },
+    {
+      "label": "right_40",
+      "index": 510,
+      "distance_error_m": 0.0
+    },
+    {
+      "label": "right_40",
+      "index": 1600,
+      "distance_error_m": 0.0
+    }
+  ],
+  "audit_new_physics_steps": 0
+}

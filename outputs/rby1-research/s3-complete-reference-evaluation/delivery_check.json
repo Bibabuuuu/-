@@ -1,0 +1,57 @@
+{
+  "evidence_verified": true,
+  "single_complete_evaluation_qualified": true,
+  "original_constraint_vector_length": 4860,
+  "original_constraint_vector_max_error": 0.0,
+  "original_seed_Gauss_objective_error": 3.885780586188048e-16,
+  "target_component_max_abs": [
+    4.3520742565306136e-14,
+    1.3127933100400307e-13,
+    2.7269853042355408e-15,
+    1.1102230246251565e-16,
+    1.8512968935624485e-14,
+    8.881784197001252e-16
+  ],
+  "max_target_scaled": 7.53801373062357e-10,
+  "max_closure_scaled": 4.903114743601698e-10,
+  "prior_zero_replay_error": {
+    "q": 0.0,
+    "v": 0.0,
+    "a": 0.0,
+    "object_p": 0.0,
+    "object_a": 0.0,
+    "object_R": 0.0
+  },
+  "native_geometry": [
+    {
+      "index": 0,
+      "time_s": 0.0,
+      "gap_m": 0.10003086230912508,
+      "geometry_count": 508
+    },
+    {
+      "index": 44,
+      "time_s": 0.6195207030426355,
+      "gap_m": 0.007495235916372162,
+      "geometry_count": 508
+    }
+  ],
+  "IK_calls_in_verification": 0,
+  "QP_calls_in_verification": 0,
+  "new_numerical_constraint_Jacobians": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.complete-reference-evaluation\\verify_evaluation.py": "b996cec486e78a54745bd84f297f1c813f9e3c34b0c2363d9a13937ae7c0a284",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.complete-reference-evaluation\\contract.json": "f9b74720a0fcc6f05938a445a1ca4ec6c89fd17f1f9c5d74c30bbcd2a6f45eee",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.complete-reference-evaluation\\result.json": "96c8f488a6c0b76164c700ceb82d360a289361735739b85e2d31b0e0b4d187c3",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.complete-reference-evaluation\\evaluation.npz": "be6112686bb500f1082b891b5ebbb83ce7ee2a52ff2cb2d00a8ddcbc8da6995e",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.complete-reference-evaluation\\evaluate_reference.py": "9f639e14634665450fe9eb659de18fab08da1ae719a8503d2502b84f510878e2"
+  },
+  "limitations": [
+    "Mapping consistency checked on 45 constraint nodes, not 60 lifted Gauss nodes.",
+    "This zero reference cost is not a nonzero candidate, full Jacobian or optimization cost.",
+    "No actual initial-state handoff or physical improvement verified."
+  ]
+}

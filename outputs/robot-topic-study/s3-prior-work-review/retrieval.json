@@ -1,0 +1,191 @@
+{
+  "date": "2026-11-01",
+  "workflow": "multi-source-search plus targeted original source review",
+  "scope": "S3 closest-prior adaptation review; not systematic review",
+  "queries": [
+    {
+      "query": "mobile manipulator emergency stopping object transportation model predictive control",
+      "requested_sources": [
+        "crossref",
+        "arxiv"
+      ],
+      "sources_queried": [
+        "crossref",
+        "arxiv"
+      ],
+      "rows": 6,
+      "result_count": 6,
+      "errors": null,
+      "records": [
+        {
+          "title": "Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator",
+          "authors": [
+            "Adam Heins",
+            "Angela P. Schoellig"
+          ],
+          "year": 2023,
+          "doi": "10.1109/lra.2023.3324520",
+          "journal": "IEEE Robotics and Automation Letters",
+          "source": "crossref"
+        },
+        {
+          "title": "A Model Predictive Control Approach for Vision-Based Object Grasping via Mobile Manipulator",
+          "authors": [
+            "Michalis Logothetis",
+            "George C. Karras",
+            "Shahab Heshmati-Alamdari",
+            "Panagiotis Vlantis",
+            "Kostas J. Kyriakopoulos"
+          ],
+          "year": 2018,
+          "doi": "10.1109/iros.2018.8593759",
+          "journal": "2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+          "source": "crossref"
+        },
+        {
+          "title": "Model Reference Control of Human-Operated Mobile Robot for Object Transportation",
+          "authors": [
+            "Naoki Uchiyama",
+            "Tatsuhiro Hashimoto"
+          ],
+          "year": 2010,
+          "doi": "10.5772/9518",
+          "journal": "Factory Automation",
+          "source": "crossref"
+        },
+        {
+          "title": "Communication-based Decentralized Cooperative Object Transportation Using Nonlinear Model Predictive Control",
+          "authors": [
+            "Christos K. Verginis",
+            "Alexandros Nikou",
+            "Dimos V. Dimarogonas"
+          ],
+          "year": 2018,
+          "doi": "10.23919/ecc.2018.8550305",
+          "journal": "2018 European Control Conference (ECC)",
+          "source": "crossref"
+        },
+        {
+          "title": "End Effector Path Tracking by a 13-DOF Mobile Manipulator System Using ANN-Based Model Predictive Control",
+          "authors": [
+            "Adersh Maruvattu",
+            "Ashish Dutta"
+          ],
+          "year": 2024,
+          "doi": "10.1109/romoco60539.2024.10604302",
+          "journal": "2024 13th International Workshop on Robot Motion and Control (RoMoCo)",
+          "source": "crossref"
+        },
+        {
+          "title": "An approach for accurate stopping of high-speed train by using model predictive control",
+          "authors": [
+            "Xiaoyu Liu",
+            "Jing Xun",
+            "Bin Ning",
+            "Lei Yuan"
+          ],
+          "year": 2019,
+          "doi": "10.1109/itsc.2019.8917237",
+          "journal": "2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
+          "source": "crossref"
+        }
+      ]
+    },
+    {
+      "query": "dual arm mobile manipulation predictive control stable contact transportation",
+      "requested_sources": [
+        "crossref",
+        "arxiv"
+      ],
+      "sources_queried": [
+        "crossref",
+        "arxiv"
+      ],
+      "rows": 6,
+      "result_count": 6,
+      "errors": null,
+      "records": [
+        {
+          "title": "Dynamics, Contact Motion and Control of Dual Arm Object Manipulation With Soft Rolling Fingertips",
+          "authors": [
+            "Zoe Doulgeri",
+            "John Fasoulas"
+          ],
+          "year": 2002,
+          "doi": "10.1115/imece2002-33125",
+          "journal": "Dynamic Systems and Control",
+          "source": "crossref"
+        },
+        {
+          "title": "Efficient Whole‐Body Model Predictive Control for Online Compliant Dual‐Arm Mobile Manipulation",
+          "authors": [
+            "Wenqian Du",
+            "Ran Long",
+            "João Moura",
+            "Jiayi Wang",
+            "Saeid Samadi",
+            "et al."
+          ],
+          "year": 2026,
+          "doi": "10.1002/rob.70320",
+          "journal": "Journal of Field Robotics",
+          "source": "crossref"
+        },
+        {
+          "title": "Motion Planning and Nonlinear Model Predictive Control for Dual-Arm Collaborative Manipulation",
+          "authors": [
+            "Tanghao Qin",
+            "Youmin Gong",
+            "Jie Mei"
+          ],
+          "year": 2025,
+          "doi": "10.1109/cac67268.2025.11487301",
+          "journal": "2025 China Automation Congress (CAC)",
+          "source": "crossref"
+        },
+        {
+          "title": "Hybrid Force-Velocity Model Predictive Control Framework for Coordinated Manipulation of Humanoid Dual-Arm Robots_supp1-3675353.mp4",
+          "authors": [
+            "Jin Wang"
+          ],
+          "year": 2026,
+          "doi": "10.1109/tase.2026.3675353/mm1",
+          "journal": "",
+          "source": "crossref"
+        },
+        {
+          "title": "Mobile manipulation of humanoid robots-body and leg control for dual arm manipulation",
+          "authors": [
+            "K. Inoue",
+            "Y. Nishihama",
+            "T. Arai",
+            "Y. Mae"
+          ],
+          "year": 2003,
+          "doi": "10.1109/robot.2002.1013568",
+          "journal": "Proceedings 2002 IEEE International Conference on Robotics and Automation (Cat. No.02CH37292)",
+          "source": "crossref"
+        },
+        {
+          "title": "Development of dual arm mobile manipulation systems for small part assembly tasks",
+          "authors": [
+            "Alexander Bubeck"
+          ],
+          "year": 2014,
+          "doi": "10.36288/roscon2014-900185",
+          "journal": "ROSCon Chicago 2014",
+          "source": "crossref"
+        }
+      ]
+    }
+  ],
+  "returned_records": 12,
+  "unique_identifier_records": 12,
+  "duplicate_identifier_records": 0,
+  "notes": [
+    "All returned records were Crossref; no arXiv results were returned by this connector. arXiv sources were read directly through web.",
+    "Exclude video supplementary DOI 10.1109/tase.2026.3675353/mm1 as standalone paper; unrelated records do not count as relevant papers.",
+    "Provider total result counts are not screening counts. Five targeted papers include records retrieved by DOI and existing S1 selections, not five selected from only these 12.",
+    "No citation-impact ranking; citation counts and abstracts omitted from this metadata-only archive."
+  ]
+}

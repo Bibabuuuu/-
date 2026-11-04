@@ -1,0 +1,581 @@
+{
+  "executions": [
+    {
+      "label": "baseline",
+      "metrics": {
+        "label": "baseline",
+        "case": "right",
+        "dt_s": 0.001,
+        "steps": 1900,
+        "final_turn_deg": -9.64759716468012,
+        "target_turn_deg": -10.0,
+        "final_yaw_error_deg": -0.3524028353198796,
+        "peak_yaw_error_deg": 0.7448873850640786,
+        "final_axle_xy_error_mm": 1.2373143877348587,
+        "peak_axle_xy_error_mm": 1.2581082814736742,
+        "peak_object_com_error_mm": 2.812952327191487,
+        "peak_object_acceleration_mps2": 1.1646383183209725,
+        "peak_object_angular_acceleration_radps2": 3.028807927041576,
+        "final_object_speed_mmps": 0.1558630608891296,
+        "final_base_yaw_rate_degps": -1.4256439991994447e-06,
+        "wheel_no_contact_samples": 3,
+        "peak_wheel_lateral_contact_speed_mps": 0.002507772236729857,
+        "peak_base_tilt_deg": 0.006338872036363451,
+        "linear_balance_residual_rms_N": 0.016542749673718368,
+        "angular_balance_residual_rms_Nm": 0.0004123258263656101,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.2606044678468597,
+        "max_self_penetration_m": 0.0,
+        "frozen_unchanged": true,
+        "actuators_at_bound": [],
+        "peak_raw_relative_position_change_mm": 0.31593001711604046,
+        "peak_raw_relative_rotation_change_deg": 0.08422786930763049,
+        "peak_TCP_contact_moment_Nm": 0.06101415904788068,
+        "peak_friction_utilization": 0.6349125264573302,
+        "min_loaded_contacts_per_hand": 0,
+        "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+        "zero_loaded_contact_samples_after_first_controlled_step": 0,
+        "contact_force_crosscheck_N": 1.9908701176995277e-15,
+        "hold_1s_raw_relative_position_change_mm": 0.1802630737486702,
+        "hold_1s_base_yaw_change_deg": -0.02005892141255525,
+        "common_acceleration_rms_mps2": 0.643405698805092,
+        "common_TCP_moment_rms_Nm": 0.029829697918068505,
+        "common_hold_relative_change_mm": 0.15699100510548028,
+        "contact_tangent_travel_mm": 0.35048144184214125,
+        "peak_hand_normal_force_N": 8.750414606060152,
+        "initial_controlled_normal_force_N": [
+          8.749999997960778,
+          8.750000010299459
+        ],
+        "max_sync_position_residual_mm": 0.10189058390774018,
+        "max_sync_velocity_residual_mmps": 0.7801094688344213,
+        "minimum_actual_clearance_mm": 3.2546613704224296
+      },
+      "hands": [
+        {
+          "side": "left",
+          "object_TCP_net_mm": [
+            -0.007718017395824672,
+            0.014946428711149007,
+            -0.15608570562922197
+          ],
+          "pad_center_TCP_net_mm": [
+            -0.007678428798350289,
+            5.197920525813218e-13,
+            6.38378239159465e-13
+          ],
+          "hold_peak_change_mm": 0.15698952520952425,
+          "object_pad_normal_peak_mm": 3.958859747438346e-05
+        },
+        {
+          "side": "right",
+          "object_TCP_net_mm": [
+            0.008061153759064688,
+            0.015242988779694332,
+            -0.156041163726639
+          ],
+          "pad_center_TCP_net_mm": [
+            0.008023454051441435,
+            -2.778607128137359e-13,
+            6.661338147750939e-13
+          ],
+          "hold_peak_change_mm": 0.15699100510548028,
+          "object_pad_normal_peak_mm": 3.7699707623252074e-05
+        }
+      ],
+      "result": {
+        "case": "right",
+        "label": "baseline",
+        "status": "completed",
+        "steps": 1900,
+        "wall_s": 11.3731231999991,
+        "sim_s": 1.9000000000000001,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.2606044678468597,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.837344521833812e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "geometry_samples": 1908
+    },
+    {
+      "label": "baseline_halfdt",
+      "metrics": {
+        "label": "baseline_halfdt",
+        "case": "right",
+        "dt_s": 0.0005,
+        "steps": 3800,
+        "final_turn_deg": -9.648747887942033,
+        "target_turn_deg": -10.0,
+        "final_yaw_error_deg": -0.3512521120579661,
+        "peak_yaw_error_deg": 0.7679517862734997,
+        "final_axle_xy_error_mm": 1.3432317787004198,
+        "peak_axle_xy_error_mm": 1.3667213697362446,
+        "peak_object_com_error_mm": 2.957221538506342,
+        "peak_object_acceleration_mps2": 1.1577572027129637,
+        "peak_object_angular_acceleration_radps2": 2.788123667920895,
+        "final_object_speed_mmps": 0.15586653579857573,
+        "final_base_yaw_rate_degps": -1.390663053432776e-06,
+        "wheel_no_contact_samples": 1,
+        "peak_wheel_lateral_contact_speed_mps": 0.0015812540360520537,
+        "peak_base_tilt_deg": 0.005722578667180189,
+        "linear_balance_residual_rms_N": 0.008164643473809784,
+        "angular_balance_residual_rms_Nm": 0.00020113659513968654,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.25664519443301176,
+        "max_self_penetration_m": 0.0,
+        "frozen_unchanged": true,
+        "actuators_at_bound": [],
+        "peak_raw_relative_position_change_mm": 0.31785269884071077,
+        "peak_raw_relative_rotation_change_deg": 0.08420177285198566,
+        "peak_TCP_contact_moment_Nm": 0.06313237827488478,
+        "peak_friction_utilization": 0.6151407185660052,
+        "min_loaded_contacts_per_hand": 0,
+        "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+        "zero_loaded_contact_samples_after_first_controlled_step": 0,
+        "contact_force_crosscheck_N": 2.7018595191470222e-15,
+        "hold_1s_raw_relative_position_change_mm": 0.1805564701215791,
+        "hold_1s_base_yaw_change_deg": -0.02286925352009672,
+        "common_acceleration_rms_mps2": 0.6371784172044758,
+        "common_TCP_moment_rms_Nm": 0.02979595596947602,
+        "common_hold_relative_change_mm": 0.1571283950717755,
+        "contact_tangent_travel_mm": 0.3499917121272746,
+        "peak_hand_normal_force_N": 8.750561468090773,
+        "initial_controlled_normal_force_N": [
+          8.749999997938914,
+          8.750000009500456
+        ],
+        "max_sync_position_residual_mm": 0.09941078671552549,
+        "max_sync_velocity_residual_mmps": 0.7120340224647937,
+        "minimum_actual_clearance_mm": 2.961032623189163
+      },
+      "hands": [
+        {
+          "side": "left",
+          "object_TCP_net_mm": [
+            -0.007626462318166549,
+            0.014930197880675138,
+            -0.15591529864783515
+          ],
+          "pad_center_TCP_net_mm": [
+            -0.007599958058354334,
+            4.469920216564401e-13,
+            4.85722573273506e-13
+          ],
+          "hold_peak_change_mm": 0.1568140749062091,
+          "object_pad_normal_peak_mm": 2.650454145196931e-05
+        },
+        {
+          "side": "right",
+          "object_TCP_net_mm": [
+            0.007964326188131254,
+            0.01524245608492339,
+            -0.15618440888481855
+          ],
+          "pad_center_TCP_net_mm": [
+            0.007940814167417916,
+            -5.306281419818987e-13,
+            3.608224830031759e-13
+          ],
+          "hold_peak_change_mm": 0.1571283950717755,
+          "object_pad_normal_peak_mm": 2.351673905192156e-05
+        }
+      ],
+      "result": {
+        "case": "right",
+        "label": "baseline_halfdt",
+        "status": "completed",
+        "steps": 3800,
+        "wall_s": 22.50862860000052,
+        "sim_s": 1.9000000000000001,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.25664519443301176,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.856061411711531e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "geometry_samples": 3808
+    },
+    {
+      "label": "rms",
+      "metrics": {
+        "label": "rms",
+        "case": "right",
+        "dt_s": 0.001,
+        "steps": 1900,
+        "final_turn_deg": -9.08318079790722,
+        "target_turn_deg": -9.439781930294698,
+        "final_yaw_error_deg": -0.3566011323874777,
+        "peak_yaw_error_deg": 0.7653380090213769,
+        "final_axle_xy_error_mm": 1.257705589587142,
+        "peak_axle_xy_error_mm": 1.2822113393448413,
+        "peak_object_com_error_mm": 2.7203060468992164,
+        "peak_object_acceleration_mps2": 0.9057812790501338,
+        "peak_object_angular_acceleration_radps2": 2.986476551567926,
+        "final_object_speed_mmps": 0.15591987547669442,
+        "final_base_yaw_rate_degps": -8.023239241860297e-07,
+        "wheel_no_contact_samples": 3,
+        "peak_wheel_lateral_contact_speed_mps": 0.002211162261673102,
+        "peak_base_tilt_deg": 0.006645575701208789,
+        "linear_balance_residual_rms_N": 0.015140585145058522,
+        "angular_balance_residual_rms_Nm": 0.00038406259741161135,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.2547090529534433,
+        "max_self_penetration_m": 0.0,
+        "frozen_unchanged": true,
+        "actuators_at_bound": [],
+        "peak_raw_relative_position_change_mm": 0.30009626041179444,
+        "peak_raw_relative_rotation_change_deg": 0.07918090678102706,
+        "peak_TCP_contact_moment_Nm": 0.050443911417777786,
+        "peak_friction_utilization": 0.5840218234485125,
+        "min_loaded_contacts_per_hand": 0,
+        "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+        "zero_loaded_contact_samples_after_first_controlled_step": 0,
+        "contact_force_crosscheck_N": 2.2206195148221764e-15,
+        "hold_1s_raw_relative_position_change_mm": 0.1629569520242239,
+        "hold_1s_base_yaw_change_deg": -0.017906945975020676,
+        "common_acceleration_rms_mps2": 0.5688366185995446,
+        "common_TCP_moment_rms_Nm": 0.02633054260929242,
+        "common_hold_relative_change_mm": 0.15833282877192328,
+        "contact_tangent_travel_mm": 0.2961259993722692,
+        "peak_hand_normal_force_N": 8.750643633802637,
+        "initial_controlled_normal_force_N": [
+          8.749999997960778,
+          8.750000010299459
+        ],
+        "max_sync_position_residual_mm": 0.07298289796889984,
+        "max_sync_velocity_residual_mmps": 0.43735875171669664,
+        "minimum_actual_clearance_mm": 5.352207331085889
+      },
+      "hands": [
+        {
+          "side": "left",
+          "object_TCP_net_mm": [
+            0.0010007372065745646,
+            0.01246998591623954,
+            -0.1543690518457791
+          ],
+          "pad_center_TCP_net_mm": [
+            0.0009865819195167818,
+            -3.2371016377443424e-14,
+            -2.220446049250313e-13
+          ],
+          "hold_peak_change_mm": 0.154875130965151,
+          "object_pad_normal_peak_mm": 1.7739510595846434e-05
+        },
+        {
+          "side": "right",
+          "object_TCP_net_mm": [
+            -0.000742173967616111,
+            0.013732630270043013,
+            -0.15773442462121978
+          ],
+          "pad_center_TCP_net_mm": [
+            -0.000726237634388871,
+            1.863633378399966e-13,
+            1.1102230246251565e-13
+          ],
+          "hold_peak_change_mm": 0.15833282877192328,
+          "object_pad_normal_peak_mm": 1.899953424207225e-05
+        }
+      ],
+      "result": {
+        "case": "right",
+        "label": "rms",
+        "status": "completed",
+        "steps": 1900,
+        "wall_s": 11.354938999997103,
+        "sim_s": 1.9000000000000001,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.2547090529534433,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.625545555921013e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "geometry_samples": 1908
+    },
+    {
+      "label": "rms_halfdt",
+      "metrics": {
+        "label": "rms_halfdt",
+        "case": "right",
+        "dt_s": 0.0005,
+        "steps": 3800,
+        "final_turn_deg": -9.091014897279091,
+        "target_turn_deg": -9.439781930294698,
+        "final_yaw_error_deg": -0.34876703301560574,
+        "peak_yaw_error_deg": 0.7589516026403518,
+        "final_axle_xy_error_mm": 1.263419460090936,
+        "peak_axle_xy_error_mm": 1.2874315054518344,
+        "peak_object_com_error_mm": 2.7563780418920665,
+        "peak_object_acceleration_mps2": 0.9291611111514317,
+        "peak_object_angular_acceleration_radps2": 2.3101451003685987,
+        "final_object_speed_mmps": 0.15592888403000368,
+        "final_base_yaw_rate_degps": -7.431194810743405e-07,
+        "wheel_no_contact_samples": 0,
+        "peak_wheel_lateral_contact_speed_mps": 0.0015899522433335815,
+        "peak_base_tilt_deg": 0.0066445265225767705,
+        "linear_balance_residual_rms_N": 0.007287604415901976,
+        "angular_balance_residual_rms_Nm": 0.0001831894338808394,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.25471020073763895,
+        "max_self_penetration_m": 0.0,
+        "frozen_unchanged": true,
+        "actuators_at_bound": [],
+        "peak_raw_relative_position_change_mm": 0.2995544994377533,
+        "peak_raw_relative_rotation_change_deg": 0.07870328462455002,
+        "peak_TCP_contact_moment_Nm": 0.043865069049426726,
+        "peak_friction_utilization": 0.5353727398476189,
+        "min_loaded_contacts_per_hand": 0,
+        "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+        "zero_loaded_contact_samples_after_first_controlled_step": 0,
+        "contact_force_crosscheck_N": 2.3610191932795496e-15,
+        "hold_1s_raw_relative_position_change_mm": 0.16328962702159114,
+        "hold_1s_base_yaw_change_deg": -0.020056677936776825,
+        "common_acceleration_rms_mps2": 0.5632396123866519,
+        "common_TCP_moment_rms_Nm": 0.026210745517488677,
+        "common_hold_relative_change_mm": 0.15843302001721324,
+        "contact_tangent_travel_mm": 0.2960706478731911,
+        "peak_hand_normal_force_N": 8.75037765493592,
+        "initial_controlled_normal_force_N": [
+          8.749999997938914,
+          8.750000009500456
+        ],
+        "max_sync_position_residual_mm": 0.07318107289057928,
+        "max_sync_velocity_residual_mmps": 0.3372496425898458,
+        "minimum_actual_clearance_mm": 5.3412769011553936
+      },
+      "hands": [
+        {
+          "side": "left",
+          "object_TCP_net_mm": [
+            0.0009076820783326944,
+            0.012468441226381318,
+            -0.15427935013279104
+          ],
+          "pad_center_TCP_net_mm": [
+            0.0009058709493748718,
+            -6.622223670931891e-14,
+            -6.938893903907228e-14
+          ],
+          "hold_peak_change_mm": 0.1547850244395994,
+          "object_pad_normal_peak_mm": 5.6283979665399655e-06
+        },
+        {
+          "side": "right",
+          "object_TCP_net_mm": [
+            -0.0006420439720433713,
+            0.013748910289082995,
+            -0.15783401749044912
+          ],
+          "pad_center_TCP_net_mm": [
+            -0.0006377191056424245,
+            -1.97776078133162e-13,
+            -1.3877787807814457e-14
+          ],
+          "hold_peak_change_mm": 0.15843302001721324,
+          "object_pad_normal_peak_mm": 7.463354194306134e-06
+        }
+      ],
+      "result": {
+        "case": "right",
+        "label": "rms_halfdt",
+        "status": "completed",
+        "steps": 3800,
+        "wall_s": 22.807605600006355,
+        "sim_s": 1.9000000000000001,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.25471020073763895,
+        "max_self_penetration_m": 0.0,
+        "feedforward_wrench_balance_error": 5.667851734492969e-17,
+        "sources_unchanged": true,
+        "frozen_unchanged": true,
+        "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+        "obstacle_contact_audit": {
+          "contact_steps": 0,
+          "first_contact_s": null,
+          "minimum_contact_distance_m": null
+        }
+      },
+      "geometry_samples": 3808
+    }
+  ],
+  "percentages": {
+    "1ms": {
+      "common_acceleration_rms_mps2": -11.589745061946799,
+      "peak_object_acceleration_mps2": -22.22638867352621,
+      "common_TCP_moment_rms_Nm": -11.730441650421708,
+      "peak_TCP_contact_moment_Nm": -17.324253574990557,
+      "common_hold_relative_change_mm": 0.8547137242298941,
+      "contact_tangent_travel_mm": -15.508793328450764
+    },
+    "_halfdt": {
+      "common_acceleration_rms_mps2": -11.604097505722066,
+      "peak_object_acceleration_mps2": -19.7447349950287,
+      "common_TCP_moment_rms_Nm": -12.032540441596007,
+      "peak_TCP_contact_moment_Nm": -30.518902902035837,
+      "common_hold_relative_change_mm": 0.8302922872990504,
+      "contact_tangent_travel_mm": -15.406383175860771
+    }
+  },
+  "new_physics_runs": 5,
+  "new_physics_steps": 13300,
+  "geometry_checks": [
+    {
+      "label": "baseline",
+      "index": 0,
+      "native_geometries": 508
+    },
+    {
+      "label": "baseline",
+      "index": 467,
+      "native_geometries": 508
+    },
+    {
+      "label": "baseline",
+      "index": 1900,
+      "native_geometries": 508
+    },
+    {
+      "label": "baseline_halfdt",
+      "index": 0,
+      "native_geometries": 508
+    },
+    {
+      "label": "baseline_halfdt",
+      "index": 933,
+      "native_geometries": 508
+    },
+    {
+      "label": "baseline_halfdt",
+      "index": 3800,
+      "native_geometries": 508
+    },
+    {
+      "label": "rms",
+      "index": 0,
+      "native_geometries": 508
+    },
+    {
+      "label": "rms",
+      "index": 570,
+      "native_geometries": 508
+    },
+    {
+      "label": "rms",
+      "index": 1900,
+      "native_geometries": 508
+    },
+    {
+      "label": "rms_halfdt",
+      "index": 0,
+      "native_geometries": 508
+    },
+    {
+      "label": "rms_halfdt",
+      "index": 1138,
+      "native_geometries": 508
+    },
+    {
+      "label": "rms_halfdt",
+      "index": 3800,
+      "native_geometries": 508
+    }
+  ],
+  "common_hold_window_s": [
+    0.8998625445380035,
+    1.8998625445380035
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\config.json": "96e5f139afaa914377384c2f802f4d3c6ad9a32f662cd8fd2825d87bc683e853",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\decision_binding.json": "93c36d8a499a83fb34891f2f27fb476bdca17ca208afb1911204ba66a4beebf5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\grasp_contacts.npz": "fd922da2a4a79b196762cc6c3f6c472809ebbf9caf65ac2cb8a51bbfcafa3af8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\grasp_metadata.json": "8afd59f51aea817a7415e592d7af27a7fac44e02a65566fcd30d6a9ffeaf0ea1",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\grasp_trace.npz": "220cee7aa7a3efb5a2c020ae262b21a74ad8ff05425cd9e1fa64f794ef2b218e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\reference_contract_source.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\result.json": "3e6b771866c8de96d24f73fa157318b2d556ee502be2698836f55855480a5596",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\trace.npz": "8950f133afbd0a1dabf4ab98c355c708e6de78280088ccc0c343c756d5454dd7",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\wheel_integral_summary.json": "5c9d237f325a2286e6d973814bd9ff04ef4075effc9f56dca56e5a16125dbc8a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline\\wheel_integral_trace.npz": "44a949c3d7dd32b2723f77eb47d721f416e0dd35386133e8ef219da36effc3fd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\config.json": "3274557d47edaff06373426378c8c66ae55056ab88015672c389db0bc2b85ea8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\decision_binding.json": "93c36d8a499a83fb34891f2f27fb476bdca17ca208afb1911204ba66a4beebf5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\grasp_contacts.npz": "b1d90f9ccda7b8bf82fe912bce0e06b9cc49c29bb058ad15e5dc0c771592d6ea",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\grasp_metadata.json": "168b849743bdcca60742c298b65e9fe1fc05260cbe791b13d0a536acf464379b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\grasp_trace.npz": "619a9ae485806f65d41c792518579baaa6f833265d136054eff8361f98f5c989",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\reference_contract_source.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\result.json": "4e9d996e03de449f46dbb7f471b4a64adb70d7edff1c5ffde035d440d28cf295",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\trace.npz": "0eaae1d3eebe2ded4d32e875ebe70a7802381f511b0f5d976c45e28d7b8cb58e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\wheel_integral_summary.json": "0b3bc229ab229e88a6f21a590b1c77d27c05c4e1c048569b71d9a00aabcd1734",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\baseline_halfdt\\wheel_integral_trace.npz": "8c38a46b87a111ca214036e6cd68da769042dba2ccf60fc6189a9e074245a445",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\config.json": "2df1f2bcd78380ad2d4f54b19c49497ac48db7d7c702dfa5af5c3f6cfed39457",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\decision_binding.json": "93c36d8a499a83fb34891f2f27fb476bdca17ca208afb1911204ba66a4beebf5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\grasp_contacts.npz": "e3d86a9830e32bae09dc0fc4ec467db1b15690583ab747de9e3567a4ace69402",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\grasp_metadata.json": "8afd59f51aea817a7415e592d7af27a7fac44e02a65566fcd30d6a9ffeaf0ea1",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\grasp_trace.npz": "94a51d60926e30ff9d33d490a61ce620cf676fde40bf9c86285d768daf7c7682",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\reference_contract_source.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\result.json": "b304c792d607c69a00a71ff2c99b27209ab6215c821f792eb0259e1bfce5594a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\trace.npz": "fb34c9f32e520632a44265a7b83247aab7aa6cd4b0f210e39b96fe45618cd4b2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\wheel_integral_summary.json": "09e2dca42a302c8bfa3c635374667f5865087fa3e77bb598814fa0ca537c151f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\regression\\wheel_integral_trace.npz": "b2e1bf59b318ab87813d920cd5b88f1bceff354374da7ac141c5fe1e448271fe",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\config.json": "593ab0d88fec5038e35ff51432534c21a54609e8e3144db45788c4675e2cabd2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\decision_binding.json": "b8602ccc60bbae02841952c719983ce75c10eeeef7d650a302ab57738c85cffe",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\grasp_contacts.npz": "186f01bf863513f7213f2780cc47d880ee08eada310401646988923543a82c75",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\grasp_metadata.json": "8afd59f51aea817a7415e592d7af27a7fac44e02a65566fcd30d6a9ffeaf0ea1",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\grasp_trace.npz": "a4d8e776dcf2c2f32d03b24d231a76f38b985013ac28b01685927dbdea10dd72",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\reference_contract_source.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\result.json": "62c4069c3255f40fb988a284e4f3b445ec1cb2858486035f3c5b98551b98de27",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\trace.npz": "518ea0b02143bf6764c0238b38e753ee431fda71a657d707ac6d2a385da01043",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\wheel_integral_summary.json": "11bdf55c5275aef20351d6e10ad442bd7467b6a30c9ae1a06128118ff52a22ba",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms\\wheel_integral_trace.npz": "fb3dacd2b3e0771532bf9858470d405d872e42c28ba8629f9814849f5f937c34",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\config.json": "705d6777b3c7bf53bc9fa290b8c4acba7320ed67cc9d68eac21cf6ca849e92fc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\decision_binding.json": "b8602ccc60bbae02841952c719983ce75c10eeeef7d650a302ab57738c85cffe",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\grasp_contacts.npz": "1e8807de808a8c02c4b663c4b2268f0f50a1fe29b410260c70ea0c8d750ee802",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\grasp_metadata.json": "168b849743bdcca60742c298b65e9fe1fc05260cbe791b13d0a536acf464379b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\grasp_trace.npz": "8de58ea691cf930863b1cbc5b019814c889831623bd59fb5150c69e370f5f464",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\reference_contract_source.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\result.json": "8935ec70123c235528e3fd38b65db2d56080d6bf66ee0411e6fdc82c6a72698b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\trace.npz": "6b27ef291391db1ca52b9f6624a6ad3a8e9390b7513e1b2cbd797b7a0cff0115",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\wheel_integral_summary.json": "472845982e9dbea7f8a4ca331f88e3fef12a3486aea1c2f4efa64cedf8a2c326",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\wheel_integral_trace.npz": "b2743c0ee6ee22bf73fe4d55f866ee0dddaeb4943e09ce5972e5de93ca921d74"
+  },
+  "scope": "finite nominal repair verification; relative position and contact travel are not material slip measurements"
+}

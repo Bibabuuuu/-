@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "evidence_verified": true,
+  "new_physics_runs": 1,
+  "new_physics_steps": 3800,
+  "prior_failed_batch_unchanged": true,
+  "new_single_run_basic_execution_passed": true,
+  "aggregate_wheel_contact_count_never_zero": true,
+  "relative_pose_replay_error_m": 0.0,
+  "runs": [
+    {
+      "label": "default_1ms",
+      "steps": 1900,
+      "initial_state_exact": true,
+      "raw_metrics_recomputed": true,
+      "wheel_zero_samples": 2,
+      "minimum_native_checked_gap_mm": 6.836593330798943
+    },
+    {
+      "label": "default_half",
+      "steps": 3800,
+      "initial_state_exact": true,
+      "raw_metrics_recomputed": true,
+      "wheel_zero_samples": 0,
+      "minimum_native_checked_gap_mm": 7.024646399288514
+    },
+    {
+      "label": "hard_1ms",
+      "steps": 1900,
+      "initial_state_exact": true,
+      "raw_metrics_recomputed": true,
+      "wheel_zero_samples": 2,
+      "minimum_native_checked_gap_mm": 7.019690305517298
+    },
+    {
+      "label": "hard_half",
+      "steps": 3800,
+      "initial_state_exact": true,
+      "raw_metrics_recomputed": true,
+      "wheel_zero_samples": 0,
+      "minimum_native_checked_gap_mm": 6.769730128270506
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-timestep\\contract.json": "d2d55aa4246812b29b79946985bed8c68b7db99965f2c5677185617fd3d90fab",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-timestep\\summary.json": "b0b79a4bba2e15099cd130a20dedd49219fc2be0e02340c5c9583f0ea6b8a3a3",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-timestep\\contact_timestep.py": "5f4d83338fd7d8c0a71bd97b1201e1d294bb3337b68c299e5b5b4e448d177f4a"
+  },
+  "not_verified": [
+    "asymptotic convergence",
+    "both tires continuously loaded",
+    "continuous collision safety",
+    "real contact calibration",
+    "other motions or payloads",
+    "overall grasp improvement"
+  ]
+}

@@ -1,0 +1,139 @@
+TY  - JOUR
+TI  - Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator
+AU  - Adam Heins
+AU  - Angela P. Schoellig
+PY  - 2023
+DO  - 10.1109/lra.2023.3324520
+JO  - IEEE Robotics and Automation Letters
+VL  - 8
+IS  - 12
+SP  - 7986
+EP  - 7993
+UR  - https://doi.org/10.1109/lra.2023.3324520
+N1  - 实读版本与范围见papers.json；预印本与发表版未重复入库。
+ER  - 
+
+TY  - JOUR
+TI  - Efficient Whole‐Body Model Predictive Control for Online Compliant Dual‐Arm Mobile Manipulation
+AU  - Wenqian Du
+AU  - Ran Long
+AU  - João Moura
+AU  - Jiayi Wang
+AU  - Saeid Samadi
+AU  - Sethu Vijayakumar
+PY  - 2026
+DO  - 10.1002/rob.70320
+JO  - Journal of Field Robotics
+UR  - https://doi.org/10.1002/rob.70320
+N1  - 实读版本与范围见papers.json；预印本与发表版未重复入库。
+ER  - 
+
+TY  - JOUR
+TI  - Model-Predictive Spill-Free Emergency Stopping for Liquid-Manipulating Robots
+AU  - Samuli Hynninen
+AU  - Ville Kyrki
+PY  - 2026
+DO  - 10.1109/lra.2026.3734909
+JO  - IEEE Robotics and Automation Letters
+VL  - 11
+IS  - 11
+SP  - 12751
+EP  - 12758
+UR  - https://doi.org/10.1109/lra.2026.3734909
+N1  - 实读版本与范围见papers.json；预印本与发表版未重复入库。
+ER  - 
+
+TY  - CPAPER
+TI  - Dual-arm Object Transportation via Model Predictive Control and External Disturbance Estimation
+AU  - Maolin Lei
+AU  - Mario Selvaggio
+AU  - Ting Wang
+AU  - Fabio Ruggiero
+AU  - Cheng Zhou
+AU  - Chen Yao
+AU  - Yu Zheng
+PY  - 2022
+DO  - 10.1109/case49997.2022.9926627
+JO  - 2022 IEEE 18th International Conference on Automation Science and Engineering (CASE)
+SP  - 2328
+EP  - 2334
+UR  - https://doi.org/10.1109/case49997.2022.9926627
+N1  - 实读版本与范围见papers.json；预印本与发表版未重复入库。
+ER  - 
+
+TY  - JOUR
+TI  - Robust Shared Control With Stable Contact Servoing for Enhanced Object Transportation by Telerobotic Bimanual Mobile Manipulators
+AU  - Tao Teng
+AU  - Xi Wu
+AU  - Zhihao Li
+AU  - Darwin Caldwell
+AU  - Fei Chen
+PY  - 2025
+DO  - 10.1002/rob.22464
+JO  - Journal of Field Robotics
+VL  - 42
+IS  - 4
+SP  - 1491
+EP  - 1507
+UR  - https://doi.org/10.1002/rob.22464
+N1  - 实读版本与范围见papers.json；预印本与发表版未重复入库。
+ER  - 
+
+TY  - JOUR
+TI  - Whole-Body MPC for a Dynamically Stable Mobile Manipulator
+AU  - Maria Vittoria Minniti
+AU  - Farbod Farshidian
+AU  - Ruben Grandia
+AU  - Marco Hutter
+PY  - 2019
+DO  - 10.1109/lra.2019.2927955
+JO  - IEEE Robotics and Automation Letters
+VL  - 4
+IS  - 4
+SP  - 3687
+EP  - 3694
+UR  - https://doi.org/10.1109/lra.2019.2927955
+N1  - 实读版本与范围见papers.json；预印本与发表版未重复入库。
+ER  - 
+
+TY  - CPAPER
+TI  - GOMP-FIT: Grasp-Optimized Motion Planning for Fast Inertial Transport
+AU  - Jeffrey Ichnowski
+AU  - Yahav Avigal
+AU  - Yi Liu
+AU  - Ken Goldberg
+PY  - 2022
+DO  - 10.1109/icra46639.2022.9812387
+JO  - 2022 International Conference on Robotics and Automation (ICRA)
+SP  - 5255
+EP  - 5261
+UR  - https://doi.org/10.1109/icra46639.2022.9812387
+N1  - 实读版本与范围见papers.json；预印本与发表版未重复入库。
+ER  - 
+
+TY  - CPAPER
+TI  - Whole-Body Model Predictive Control for Mobile Manipulation With Task Priority Transition
+AU  - Yushi Wang
+AU  - Ruoqu Chen
+AU  - Mingguo Zhao
+PY  - 2025
+DO  - 10.1109/icra55743.2025.11127515
+JO  - 2025 IEEE International Conference on Robotics and Automation (ICRA)
+SP  - 13356
+EP  - 13362
+UR  - https://doi.org/10.1109/icra55743.2025.11127515
+N1  - 实读版本与范围见papers.json；预印本与发表版未重复入库。
+ER  - 
+
+TY  - JOUR
+TI  - A Coordinated Planning and Control Framework for Mobile Dual-arm Robots with Manipulability Optimization and Force Tracking
+AU  - Yang Zhang
+PY  - 2025
+DO  - 10.1007/s10846-025-02247-y
+JO  - Journal of Intelligent & Robotic Systems
+VL  - 111
+IS  - 2
+UR  - https://doi.org/10.1007/s10846-025-02247-y
+N1  - 实读版本与范围见papers.json；预印本与发表版未重复入库。
+ER  - 
+

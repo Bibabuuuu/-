@@ -1,0 +1,71 @@
+{
+  "status": "已授权实施",
+  "date": "2026-11-02",
+  "authorization": "user accepted one actual matched-base held-upper counterfactual",
+  "budget": {
+    "max_physics_runs": 1,
+    "max_physics_steps": 4000,
+    "dt_s": 0.0005,
+    "duration_s": 2.0,
+    "new_IK": 0,
+    "new_optimizer_calls": 0
+  },
+  "only_parameter_change": "60 upper coefficients set to zero; same 8 base coefficients, full base reference, original T, model/contact/controller/gains/grip and event times",
+  "trigger_s": 0.2,
+  "release_s": 0.25,
+  "paired_reference_already_executed": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-trigger-execution\\execution\\upper_at_deadline",
+  "model_scope": "same synchronized neq=2 model, 20Nm diagnostic wheel bounds, .4m/s and .5kg nominal state; no hardware calibration",
+  "state_and_timing_policy": "exact qpos/qvel/ctrl match to previous successful cruising episode at t=.2; both hands loaded at original .05N recording cutoff; no general state tube claimed",
+  "qualification": {
+    "completed": true,
+    "obstacle_contact_steps": 0,
+    "min_sampled_front_gap_m": 0.006257608649436586,
+    "max_control_excess": 0,
+    "max_joint_range_excess": 0,
+    "max_self_penetration": 0,
+    "max_joint_speed_fraction": 1.0,
+    "wheel_zero_contact_samples": 0,
+    "zero_loaded_hand_samples_after_first_controlled_step": 0,
+    "final_axle_and_object_speed_mps": 0.001,
+    "final_yaw_rate_radps": 0.0017453292519943296,
+    "speed_role": "nominal demo rest criterion, not new hardware or grasp-success limits"
+  },
+  "control_block_sha256": "c663b70f836dba8d1f7c860a8316a545b3563f1bdd5bd022d22a793e7a5b5889",
+  "prephysics": {
+    "preload_wall_s": 0.8292695999989519,
+    "validation": {
+      "rotation_orthogonality_error": 2.886579864025407e-15,
+      "initial_joint_error_rad": 0.0,
+      "terminal_reference_speed_norm": 0.0,
+      "terminal_reference_acceleration_norm": 0.0,
+      "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+    },
+    "same_base_at_31_nodes_exact": true,
+    "upper_q_held_and_v_a_zero": true
+  },
+  "failure_policy": "one result only, keep failure and stop; no parameter/contact/threshold fixes, no rerun",
+  "comparison_windows": {
+    "motion": [
+      0.25,
+      0.918732400344874
+    ],
+    "hold": [
+      0.918732400344874,
+      1.918732400344874
+    ]
+  },
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\matched.py": "fea4cfd02feb6645d45b82dbc9b264a7b86e656e55985e085564fa72b64640d4",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-execution\\execute.py": "0d753acb8bbf0ab52917fdd56bc237d08ad46629e0e7d68f216221242a4c539e",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-execution\\contract.json": "b9e7d30cde83bba4c443b4b6d5b784534139d0e74ba4f47a7b1efc83a94b747a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-coordination-fairness-review\\next_matched_base_case_proposal.json": "84fec400431eb3951be5ae85764340ba2ea75324ae0a2582766192d17231b5bb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-coordination-fairness-review\\reference_ablation.npz": "376cd62557afceedd641546d67358170b6611d751050537b06128f8ef266add1",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-coordination-fairness-review\\delivery_check.json": "2125326a45f3580b28dce3ee4eb50fc5f605d2839d9a14c251f14f1f8ba80dd4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\trigger_scene.xml": "a86db77e7f66d8f1f8ca93847507387dd9efac3434d81fbb2b0a09b455acaeb2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-trigger-execution\\execution\\upper_at_deadline\\trace.npz": "21ec9f1a9e56808ebe0d30799853971da96fddfca9c5c75b50a5b02211f7d339",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-trigger-execution\\execution\\upper_at_deadline\\grasp_trace.npz": "a0aa102eebc991ceb5199b44f425545045b7d11c325875247b9f5b987c17af7f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-trigger-execution\\execution\\upper_at_deadline\\trigger_events.json": "cac511047a6e346c163a1c412521fab2a5e54a57fdd10eaf94175970819ebecf",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-trigger-execution\\execution\\upper_at_deadline\\config.json": "a9236eb0f64d19417d8aceef5e33750681237acfcde4501244f22359d0f5c026",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\expanded_driver.py": "5bf97a1b741b2debd1863ec793a2541e2aae5244c8bca0c983f719f2c9a37382"
+  }
+}

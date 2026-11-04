@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-01",
+  "scope": "review artifact checks; not algorithm/physics validation",
+  "guarded_file_count": 153,
+  "changed_guarded_files": [],
+  "historical_frozen_source_count": 15,
+  "historical_frozen_sources_unchanged": true,
+  "paper_count": 5,
+  "paper_dois_unique": true,
+  "all_papers_marked_not_reproduced": true,
+  "retrieved_record_count": 12,
+  "report_local_links_checked": 8,
+  "missing_report_local_links": [],
+  "master_version_014": true,
+  "S3_ongoing": true,
+  "new_method_pending_confirmation": true,
+  "new_physics_runs": 0,
+  "S3_cumulative_runs": 23,
+  "S3_cumulative_steps": 47311,
+  "upstream_reproduction": false,
+  "upstream_commit_pinned": false,
+  "source_guard_sha256": "ce7ec88b2f28982cb5577050ed73f55579aa5f88dd56457f84e3d21e24b22bf7",
+  "passed": true,
+  "artifact_sha256": {
+    "before_sources.json": "ce7ec88b2f28982cb5577050ed73f55579aa5f88dd56457f84e3d21e24b22bf7",
+    "papers.json": "7aabfc072ae2309d23966163babc823c1a4b0771ced4d7c06b3b1a41c0711138",
+    "retrieval.json": "0844e91978da2755be04a8ee3b5be688356f9fe1687d190fe5f958f29e093658",
+    "source_audit.json": "33d332dbd52d284dff575b6632351c1cd7b1fc287819ed00977bed55e4c85f49",
+    "前作覆盖与停止基线适配评审.md": "7e611baed975e0b73464e74be47ec415a2c0fd7043ff69ed2238b9fad27dd1bb"
+  }
+}

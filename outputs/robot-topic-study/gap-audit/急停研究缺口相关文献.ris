@@ -1,0 +1,135 @@
+TY  - CONF
+ID  - G1
+AU  - Lars Berscheid
+AU  - Torsten Kroeger
+TI  - Jerk-limited Real-time Trajectory Generation with Arbitrary Target States
+PY  - 2021
+JO  - Robotics: Science and Systems XVII
+DO  - 10.15607/rss.2021.xvii.015
+UR  - https://www.roboticsproceedings.org/rss17/p015.pdf
+N1  - RSS 2021作者论文，III/IV；沿用前次书目，本轮核查原文定义。
+ER  -
+
+TY  - CONF
+ID  - G2
+AU  - Friedrich Lange
+AU  - Michael Suppa
+TI  - Trajectory generation for immediate path-accurate jerk-limited stopping of industrial robots
+PY  - 2015
+JO  - 2015 IEEE International Conference on Robotics and Automation (ICRA)
+DO  - 10.1109/icra.2015.7139463
+UR  - https://elib.dlr.de/96525/2/stop_ICRA15_header.pdf
+N1  - DLR作者稿，II/III/IV及术语；非最终排版全文比对。
+SP  - 2021
+EP  - 2026
+ER  -
+
+TY  - JOUR
+ID  - G3
+AU  - Samuli Hynninen
+AU  - Ville Kyrki
+TI  - Model-Predictive Spill-Free Emergency Stopping for Liquid-Manipulating Robots
+PY  - 2026
+JO  - IEEE Robotics and Automation Letters
+DO  - 10.1109/lra.2026.3734909
+UR  - https://arxiv.org/html/2604.16667v1
+N1  - 预印本v1的III/IV/VI；最终版元数据核对，Aalto最终PDF访问403。
+VL  - 11
+IS  - 11
+SP  - 12751
+EP  - 12758
+ER  -
+
+TY  - JOUR
+ID  - G4
+AU  - Adam Heins
+AU  - Angela P. Schoellig
+TI  - Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator
+PY  - 2023
+JO  - IEEE Robotics and Automation Letters
+DO  - 10.1109/lra.2023.3324520
+UR  - https://arxiv.org/html/2305.17484v2
+N1  - 作者预印本v2，模型及VIII-B突然障碍实验；非最终排版逐页比对。
+VL  - 8
+IS  - 12
+SP  - 7986
+EP  - 7993
+ER  -
+
+TY  - JOUR
+ID  - G5
+AU  - Wenqian Du
+AU  - Ran Long
+AU  - João Moura
+AU  - Jiayi Wang
+AU  - Saeid Samadi
+AU  - Sethu Vijayakumar
+TI  - Efficient Whole‐Body Model Predictive Control for Online Compliant Dual‐Arm Mobile Manipulation
+PY  - 2026
+JO  - Journal of Field Robotics
+DO  - 10.1002/rob.70320
+UR  - https://arxiv.org/html/2410.22910v1
+N1  - 2024预印本v1的III-D式25/26、IV-E，2026期刊Crossref摘要；最终正文未比对。
+ER  -
+
+TY  - CONF
+ID  - G6
+AU  - Yushi Wang
+AU  - Ruoqu Chen
+AU  - Mingguo Zhao
+TI  - Whole-Body Model Predictive Control for Mobile Manipulation With Task Priority Transition
+PY  - 2025
+JO  - 2025 IEEE International Conference on Robotics and Automation (ICRA)
+DO  - 10.1109/icra55743.2025.11127515
+UR  - https://wbmpc.github.io/static/pdfs/paper.pdf
+N1  - 作者PDF的III-B/E/F与实验；Crossref标题/DOI已核。
+SP  - 13356
+EP  - 13362
+ER  -
+
+TY  - RPRT
+ID  - G7
+AU  - Junfeng Long
+AU  - Pieter Abbeel
+AU  - Koushil Sreenath
+AU  - Roberto Horowitz
+AU  - Guanya Shi
+AU  - C. Karen Liu
+TI  - Humanoid Safe Stop via Learned Stoppability Value
+PY  - 2026
+JO  - arXiv preprint
+DO  - 10.48550/arXiv.2609.02358
+UR  - https://arxiv.org/html/2609.02358v1
+N1  - v1第3/4/6节，预印本，未视为同行评审最终论文。
+ER  -
+
+TY  - CONF
+ID  - G8
+AU  - Jeremy Marvel
+AU  - Roger Bostelman
+TI  - Towards mobile manipulator safety standards
+PY  - 2013
+JO  - 2013 IEEE International Symposium on Robotic and Sensors Environments (ROSE)
+DO  - 10.1109/rose.2013.6698414
+UR  - https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=913947
+N1  - NIST作者存档稿第4页A-C；仅用作历史工程动机，不解释现行标准。
+SP  - 31
+EP  - 36
+ER  -
+
+TY  - CONF
+ID  - G9
+AU  - Vito Magnanimo
+AU  - Steffen Walther
+AU  - Luigi Tecchia
+AU  - Ciro Natale
+AU  - Tim Guhl
+TI  - Safeguarding a mobile manipulator using dynamic safety fields
+PY  - 2016
+JO  - 2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+DO  - 10.1109/iros.2016.7759460
+UR  - https://www.researchgate.net/publication/312431159_Safeguarding_a_mobile_manipulator_using_dynamic_safety_fields
+N1  - 作者上传全文中的III/IV，与Crossref DOI/题名核对；未核最终排版PDF。
+SP  - 2972
+EP  - 2977
+ER  -

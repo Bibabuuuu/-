@@ -1,0 +1,38 @@
+{
+  "source_sha256": {
+    "simulation/rby1/run_buffer.py": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+    "simulation/rby1/state_stop_reference.py": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+    "simulation/rby1/motion_distribution.py": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+    "simulation/rby1/stop_candidates.py": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+    "simulation/rby1/grasp_observation.py": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+    "outputs/rby1-research/model/research_model.xml": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+    "outputs/rby1-research/payload_model/payload_scene.xml": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+    "simulation/rby1/run_payload.py": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906"
+  },
+  "stage24_all_external_clearances_none": true,
+  "current_scene_top_level_geometries": "floor, base robot, payload; no external obstacle actor",
+  "motion_path_scope": "One-dimensional forward task, fixed orientation, prepared local waist-arm IK branch; not a global or online collision planner.",
+  "evidence_levels": {
+    "engineering_need": "supported",
+    "current_implementation_gap": "verified",
+    "academic_novelty": "not established"
+  },
+  "primary_source_access": [
+    {
+      "id": "G3",
+      "url": "https://research.aalto.fi/files/238426364/Model-Predictive_Spill-Free_Emergency_Stopping_for_Liquid-Manipulating_Robots.pdf",
+      "status": "403, final body not read; use v1 with explicit boundary"
+    },
+    {
+      "id": "G4",
+      "url": "https://arxiv.org/html/2305.17484v2",
+      "status": "Method and VIII-B successfully read; later subsection reopen returned transient UnexpectedStatusCode"
+    },
+    {
+      "id": "G8",
+      "url": "https://doi.org/10.1109/ROSE.2013.6698414",
+      "status": "DOI browser open unavailable; NIST original PDF and Crossref title metadata verified"
+    }
+  ],
+  "scope": "No new physical runs, no control/model changes; method study and bounded arithmetic only."
+}

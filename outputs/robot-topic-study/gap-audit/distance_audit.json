@@ -1,0 +1,134 @@
+{
+  "reference_checks": 1204,
+  "duration_max_error_s": 2.220446049250313e-16,
+  "distance_max_error_m": 8.326672684688674e-17,
+  "stage24_summary_sha256": "c176ac12d573d6d1f3fe8e7855816b7dd6267b1c65e6e47e00dba05f50a57ffc",
+  "source_unchanged": true,
+  "new_physical_runs": 0,
+  "matched_existing_cases": [
+    {
+      "label": "s24_normal_fixed",
+      "reference_duration_s": 0.6688205128205129,
+      "reference_object_distance_m": 0.1337641025641026,
+      "base_reference_distance_m": 0.12,
+      "reference_object_distance_minus_final_base_distance_m": 0.013764102564102598,
+      "measured_maximum_ee_relative_forward_m": 0.013851810858594993,
+      "warning": "Final object-minus-base reference displacement is not generally the maximum transient relative stroke or the full-body collision envelope."
+    },
+    {
+      "label": "s24_normal_acceleration",
+      "reference_duration_s": 0.9,
+      "reference_object_distance_m": 0.18000000000000002,
+      "base_reference_distance_m": 0.12,
+      "reference_object_distance_minus_final_base_distance_m": 0.060000000000000026,
+      "measured_maximum_ee_relative_forward_m": 0.060064102654467606,
+      "warning": "Final object-minus-base reference displacement is not generally the maximum transient relative stroke or the full-body collision envelope."
+    },
+    {
+      "label": "s24_normal_motion",
+      "reference_duration_s": 0.6000000000000001,
+      "reference_object_distance_m": 0.12000000000000002,
+      "base_reference_distance_m": 0.12,
+      "reference_object_distance_minus_final_base_distance_m": 2.7755575615628914e-17,
+      "measured_maximum_ee_relative_forward_m": 0.0009216786425586543,
+      "warning": "Final object-minus-base reference displacement is not generally the maximum transient relative stroke or the full-body collision envelope."
+    },
+    {
+      "label": "s24_forward_fixed",
+      "reference_duration_s": 0.797025641025641,
+      "reference_object_distance_m": 0.19925641025641025,
+      "base_reference_distance_m": 0.15,
+      "reference_object_distance_minus_final_base_distance_m": 0.049256410256410255,
+      "measured_maximum_ee_relative_forward_m": 0.049347877978071164,
+      "warning": "Final object-minus-base reference displacement is not generally the maximum transient relative stroke or the full-body collision envelope."
+    },
+    {
+      "label": "s24_forward_acceleration",
+      "reference_duration_s": 1.1,
+      "reference_object_distance_m": 0.275,
+      "base_reference_distance_m": 0.15,
+      "reference_object_distance_minus_final_base_distance_m": 0.12500000000000003,
+      "measured_maximum_ee_relative_forward_m": 0.1250597162057524,
+      "warning": "Final object-minus-base reference displacement is not generally the maximum transient relative stroke or the full-body collision envelope."
+    },
+    {
+      "label": "s24_forward_motion",
+      "reference_duration_s": 0.65,
+      "reference_object_distance_m": 0.1625,
+      "base_reference_distance_m": 0.15,
+      "reference_object_distance_minus_final_base_distance_m": 0.012500000000000011,
+      "measured_maximum_ee_relative_forward_m": 0.012610808208428859,
+      "warning": "Final object-minus-base reference displacement is not generally the maximum transient relative stroke or the full-body collision envelope."
+    }
+  ],
+  "probes": [
+    {
+      "speed_mps": 0.4,
+      "illustrative_object_distance_budget_m": 0.16453846153846155,
+      "budget_origin": "Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",
+      "coarse_first_admitted_A_mps2": 0.65,
+      "continuous_same_reference_family_A_mps2": 0.5633649543345691,
+      "continuous_peak_deceleration_reduction_percent": 13.328468563912443
+    },
+    {
+      "speed_mps": 0.4,
+      "illustrative_object_distance_budget_m": 0.14142051282051282,
+      "budget_origin": "Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",
+      "coarse_first_admitted_A_mps2": 0.78,
+      "continuous_same_reference_family_A_mps2": 0.7071138097530032,
+      "continuous_peak_deceleration_reduction_percent": 9.344383364999597
+    },
+    {
+      "speed_mps": 0.4,
+      "illustrative_object_distance_budget_m": 0.12688205128205132,
+      "budget_origin": "Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",
+      "coarse_first_admitted_A_mps2": 1.0,
+      "continuous_same_reference_family_A_mps2": 0.8680581389819926,
+      "continuous_peak_deceleration_reduction_percent": 13.194186101800742
+    },
+    {
+      "speed_mps": 0.4,
+      "illustrative_object_distance_budget_m": 0.11700000000000002,
+      "budget_origin": "Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",
+      "coarse_first_admitted_A_mps2": 1.25,
+      "continuous_same_reference_family_A_mps2": 1.0897987121031105,
+      "continuous_peak_deceleration_reduction_percent": 12.816103031751158
+    },
+    {
+      "speed_mps": 0.5,
+      "illustrative_object_distance_budget_m": 0.24990384615384614,
+      "budget_origin": "Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",
+      "coarse_first_admitted_A_mps2": 0.65,
+      "continuous_same_reference_family_A_mps2": 0.5637882884991925,
+      "continuous_peak_deceleration_reduction_percent": 13.263340230893462
+    },
+    {
+      "speed_mps": 0.5,
+      "illustrative_object_distance_budget_m": 0.21203205128205127,
+      "budget_origin": "Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",
+      "coarse_first_admitted_A_mps2": 0.78,
+      "continuous_same_reference_family_A_mps2": 0.7076071388173351,
+      "continuous_peak_deceleration_reduction_percent": 9.281136049059613
+    },
+    {
+      "speed_mps": 0.5,
+      "illustrative_object_distance_budget_m": 0.1871282051282051,
+      "budget_origin": "Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",
+      "coarse_first_admitted_A_mps2": 1.0,
+      "continuous_same_reference_family_A_mps2": 0.8704341530225999,
+      "continuous_peak_deceleration_reduction_percent": 12.956584697740015
+    },
+    {
+      "speed_mps": 0.5,
+      "illustrative_object_distance_budget_m": 0.16875,
+      "budget_origin": "Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",
+      "coarse_first_admitted_A_mps2": 1.25,
+      "continuous_same_reference_family_A_mps2": 1.0978761792464624,
+      "continuous_peak_deceleration_reduction_percent": 12.169905660283009
+    }
+  ],
+  "assumptions": "One-dimensional forward stopping, initial acceleration zero, final velocity/acceleration zero, J=5; A settings from the existing family. No robot dynamics, grasp/contact feasibility or collision certification.",
+  "physical_lower_bound": "With forward acceleration bounded below by -A, stopping before a plane requires forward distance at least v^2/(2A). This bound ignores jerk and cannot certify robot feasibility.",
+  "reference_formula_role": "Symmetric minimum-time OTG reference arithmetic, verified against Ruckig; not a new full-body optimality proof.",
+  "finding": "A coarse finite candidate family can lose to a continuously adjusted version of the SAME mature stopping reference. That gap alone cannot establish a new-method contribution."
+}

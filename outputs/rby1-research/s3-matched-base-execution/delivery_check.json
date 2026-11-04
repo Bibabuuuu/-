@@ -1,0 +1,31 @@
+{
+  "evidence_audit_passed": true,
+  "held_execution_qualified": false,
+  "coordinated_execution_qualified": true,
+  "failed_held_gates": [
+    "wheels"
+  ],
+  "entire_base_reference_pose_exact": true,
+  "all_sampled_base_v_a_omega_alpha_exact": true,
+  "whole_501sample_live_prefix_exact": true,
+  "held_upper_q_constant_v_a_zero": true,
+  "actual_base_pair_position_max_difference_m": 0.00021729958766901898,
+  "snapshots_and_finger_commands_exact": true,
+  "common_window_function_unchanged": true,
+  "zero_wheel_contact_sample_count": 4,
+  "original_failure_retained": true,
+  "new_physics_runs_in_audit": 0,
+  "new_physics_steps_in_audit": 0,
+  "new_IK": 0,
+  "new_optimizer_calls": 0,
+  "physical_runs_audited": 1,
+  "physical_steps_audited": 4000,
+  "S3_cumulative_runs": 56,
+  "S3_cumulative_steps": 141061,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\matched.py": "fea4cfd02feb6645d45b82dbc9b264a7b86e656e55985e085564fa72b64640d4",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\verify_pair.py": "8fa717b19877034de3b72a05f8afed68cd7f375a9a35eca6e8e0cf504a32f102",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\paired_comparison.json": "beabfff631943f3b1ff5611008f0323235c3e0581a18b40905d83ae7a8b5f1c6",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\wheel_contact_failure.json": "84f7c7402e44cc4068f22fb51d065b5bf3804a427963a4c31ec5d7303d3cf14e"
+  }
+}

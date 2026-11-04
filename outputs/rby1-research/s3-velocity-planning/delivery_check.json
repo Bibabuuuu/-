@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "evidence_verified": true,
+  "solver_success": true,
+  "execution_admitted": false,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "scalar_checks": [
+    {
+      "candidate": "warmstart",
+      "scalar_valid": true,
+      "native_polynomial_error": 9.992007221626409e-16,
+      "quadrature_error": 5.551115123125783e-17
+    },
+    {
+      "candidate": "final",
+      "scalar_valid": false,
+      "native_polynomial_error": 8.881784197001252e-16,
+      "quadrature_error": 5.551115123125783e-17
+    }
+  ],
+  "relative_pose_replay_error_m": null,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\contract.json": "94f7dae3d0d748c0f412355d2214f7e9f80873185298c7bbf1ec947bb1f07569",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\model.npz": "6f9c44e67542336aaf699fcac57736b714226718fb9b21a0edf227fb61f32ead",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\solve\\plan.json": "476c4aa272760e05618db42212d773567386c840354cd288186bb8d01b52036a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\solve\\history.json": "c7223f7ac7ce36f98869bc02083fa0dad96387ef25bcdd8d8f619810d8d6bf51",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\summary.json": "4a443f5908522817d2ec47b5beccbf50872356a796ce805f7f6280aedf68f29e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\longitudinal_planner.py": "e958b95dfa2515263f62ff36a9c88d328ec87f4edb005de6523e3347aed00d38"
+  },
+  "not_verified": [
+    "full 68-variable convergence",
+    "global optimum",
+    "continuous geometric safety",
+    "overall grasp improvement",
+    "hardware or real-time planning"
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "passed": true,
+  "new_physics_runs": 9,
+  "new_physics_steps": 22650,
+  "checks": [
+    {
+      "label": "default_half",
+      "steps": 5000,
+      "initial_state_exact": true,
+      "slope_replay_error_mmps": 1.7677526109594055e-13
+    },
+    {
+      "label": "default_lowmu",
+      "steps": 50,
+      "initial_state_exact": true,
+      "slope_replay_error_mmps": 1.0800249583553523e-12
+    },
+    {
+      "label": "default_nominal",
+      "steps": 2500,
+      "initial_state_exact": true,
+      "slope_replay_error_mmps": 1.5451528945220616e-13
+    },
+    {
+      "label": "hard_half",
+      "steps": 5000,
+      "initial_state_exact": true,
+      "slope_replay_error_mmps": 1.7740323099424415e-13
+    },
+    {
+      "label": "hard_lowmu",
+      "steps": 50,
+      "initial_state_exact": true,
+      "slope_replay_error_mmps": 3.979039320256561e-13
+    },
+    {
+      "label": "hard_nominal",
+      "steps": 2500,
+      "initial_state_exact": true,
+      "slope_replay_error_mmps": 9.09290004402763e-14
+    },
+    {
+      "label": "noslip_half",
+      "steps": 5000,
+      "initial_state_exact": true,
+      "slope_replay_error_mmps": 4.512698808384341e-14
+    },
+    {
+      "label": "noslip_lowmu",
+      "steps": 50,
+      "initial_state_exact": true,
+      "slope_replay_error_mmps": 8.810729923425242e-13
+    },
+    {
+      "label": "noslip_nominal",
+      "steps": 2500,
+      "initial_state_exact": true,
+      "slope_replay_error_mmps": 1.008983986584746e-13
+    }
+  ],
+  "positive": [
+    {
+      "label": "default_half",
+      "max_abs_z_slope_mmps": 0.15612161127512528,
+      "max_z_fit_residual_rms_mm": 1.4977492502621728e-07,
+      "vertical_support_ratio": 1.000000000493294,
+      "normal_force_mean_N": [
+        8.75000002553178,
+        8.7499999905717
+      ],
+      "max_contact_friction_utilization": 0.35745337223509266
+    },
+    {
+      "label": "default_nominal",
+      "max_abs_z_slope_mmps": 0.15612161083944187,
+      "max_z_fit_residual_rms_mm": 1.5003661092712626e-07,
+      "vertical_support_ratio": 1.0000000003721095,
+      "normal_force_mean_N": [
+        8.750000025526273,
+        8.749999990566169
+      ],
+      "max_contact_friction_utilization": 0.3574534110370295
+    },
+    {
+      "label": "hard_half",
+      "max_abs_z_slope_mmps": 0.01576921535868881,
+      "max_z_fit_residual_rms_mm": 4.98039353481396e-06,
+      "vertical_support_ratio": 1.0000000002758471,
+      "normal_force_mean_N": [
+        8.74999561694938,
+        8.749995479420594
+      ],
+      "max_contact_friction_utilization": 0.3621082278392968
+    },
+    {
+      "label": "hard_nominal",
+      "max_abs_z_slope_mmps": 0.01576918238105713,
+      "max_z_fit_residual_rms_mm": 4.98340062042017e-06,
+      "vertical_support_ratio": 1.0000000002551295,
+      "normal_force_mean_N": [
+        8.749995617899124,
+        8.74999548038353
+      ],
+      "max_contact_friction_utilization": 0.36210756581395326
+    },
+    {
+      "label": "noslip_half",
+      "max_abs_z_slope_mmps": 0.0008066191520155187,
+      "max_z_fit_residual_rms_mm": 1.868562521866108e-06,
+      "vertical_support_ratio": 0.9999999971149502,
+      "normal_force_mean_N": [
+        8.750000665116898,
+        8.749999037900622
+      ],
+      "max_contact_friction_utilization": 0.36302810371036826
+    },
+    {
+      "label": "noslip_nominal",
+      "max_abs_z_slope_mmps": 0.0008065847597853774,
+      "max_z_fit_residual_rms_mm": 1.8684203989785173e-06,
+      "vertical_support_ratio": 0.9999999970957039,
+      "normal_force_mean_N": [
+        8.750000665104677,
+        8.749999037891747
+      ],
+      "max_contact_friction_utilization": 0.363028142116423
+    }
+  ],
+  "negative": [
+    {
+      "label": "default_lowmu",
+      "object_world_drop_mm": -8.050555267861025,
+      "maximum_all_pad_vertical_capacity_upper_N": 2.0667109535022004,
+      "gravity_N": 4.905,
+      "maximum_joint_speed_fraction": 2.4412357434330483,
+      "joint_at_maximum": "gripper_finger_l1",
+      "first_speed_limit_exceedance_s": 0.026000000000000002,
+      "drop_before_speed_exceedance_mm": -1.9780896746123267,
+      "role": "diagnostic negative example only, not an executable motion qualification"
+    },
+    {
+      "label": "hard_lowmu",
+      "object_world_drop_mm": -8.050382160264768,
+      "maximum_all_pad_vertical_capacity_upper_N": 2.066716756052012,
+      "gravity_N": 4.905,
+      "maximum_joint_speed_fraction": 2.4411877109005147,
+      "joint_at_maximum": "gripper_finger_l1",
+      "first_speed_limit_exceedance_s": 0.026000000000000002,
+      "drop_before_speed_exceedance_mm": -1.9780400241032892,
+      "role": "diagnostic negative example only, not an executable motion qualification"
+    },
+    {
+      "label": "noslip_lowmu",
+      "object_world_drop_mm": -8.050555260014747,
+      "maximum_all_pad_vertical_capacity_upper_N": 2.066710954912756,
+      "gravity_N": 4.905,
+      "maximum_joint_speed_fraction": 2.4412357451007956,
+      "joint_at_maximum": "gripper_finger_l1",
+      "first_speed_limit_exceedance_s": 0.026000000000000002,
+      "drop_before_speed_exceedance_mm": -1.9780896691093952,
+      "role": "diagnostic negative example only, not an executable motion qualification"
+    }
+  ],
+  "step_comparisons": [
+    {
+      "setting": "default",
+      "nominal_max_abs_z_slope_mmps": 0.15612161083944187,
+      "half_max_abs_z_slope_mmps": 0.15612161127512528,
+      "maximum_paired_slope_difference_mmps": 6.968682297880946e-10
+    },
+    {
+      "setting": "hard",
+      "nominal_max_abs_z_slope_mmps": 0.01576918238105713,
+      "half_max_abs_z_slope_mmps": 0.01576921535868881,
+      "maximum_paired_slope_difference_mmps": 3.6147799954699966e-08
+    },
+    {
+      "setting": "noslip",
+      "nominal_max_abs_z_slope_mmps": 0.0008065847597853774,
+      "half_max_abs_z_slope_mmps": 0.0008066191520155187,
+      "maximum_paired_slope_difference_mmps": 3.4392230141371515e-08
+    }
+  ],
+  "relative_pose_replay_error_m": 0.0,
+  "capacity_note": "Independent negative bounds sum all pad contacts including weak ones, unlike the summary loaded-contact subset.",
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\contract.json": "53d82d6987021a9e767adc16d88b1625a14baabaa685df790f193f781f830a3e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\summary.json": "4a7d9abdac5659b177fb398d2c25aa75a51e98361d1d0a35752230b92d61697e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\contact_baseline.py": "86e7ca281841fa4958bd1339545e20e3d1e43a598b79c93201c46c02688b55aa",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-baseline\\verify_contact_baseline.py": "109a2be2958056ca05d51d26dbd8ec0e131d91711a534796af57cb857e39bf1a"
+  },
+  "not_verified": [
+    "real pad friction/compliance",
+    "controlled-braking performance under new settings",
+    "continuous safety",
+    "zero slip"
+  ]
+}

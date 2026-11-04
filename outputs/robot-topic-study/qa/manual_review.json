@@ -1,0 +1,62 @@
+{
+  "source_conflicts": [
+    "B1预印本Table I与IV-A平均时间19.4/19.3ms、6.2/6.3ms；保留差异，未计算唯一加速比"
+  ],
+  "not_verified": [
+    "原代码运行与复现",
+    "仿真效果",
+    "候选问题专门新颖性",
+    "全部公式重推",
+    "实验视频",
+    "2024预印本与2026期刊版逐段差异"
+  ],
+  "visual_review": {
+    "page_numbering": "1/8至8/8连续",
+    "report_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "source_key_pages": [
+      "A1 PDF p.5",
+      "B1 PDF p.10",
+      "C1 PDF p.5"
+    ]
+  },
+  "manual_inventory": {
+    "A1": {
+      "pdf_pages": 10,
+      "tables": 1,
+      "figures": 14
+    },
+    "C1": {
+      "pdf_pages": 6,
+      "tables": 0,
+      "figures": 7
+    },
+    "B1": {
+      "pdf_pages": 17,
+      "tables": 2,
+      "figures": 17
+    }
+  },
+  "scope": "第一轮定向预调研，最终课题待讨论",
+  "date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "automated_inventory_limits": {
+    "A1": "自动漏检Table I，卡片已人工补核",
+    "B1": "自动漏检全部图表，卡片已人工补核；自动审计通过不代表图表自动覆盖通过"
+  },
+  "source_counts": {
+    "full_paper_cards": 3,
+    "records": 13,
+    "metadata_background_only": 1,
+    "withdrawn_excluded": 1,
+    "abstract_or_partial": 9
+  }
+}

@@ -1,0 +1,129 @@
+<div id="grasp-stop-replay">
+  <h2>停车后，物体和手各自怎么动？</h2>
+  <div class="viz-controls">
+    <button type="button" class="btn" data-play>播放保持段</button>
+    <label class="form-label" style="flex:1;min-width:150px"><span>时间 <output class="tabular-nums" data-time></output> s</span>
+      <input class="form-range" type="range" min="0" max="350" step="1" value="185" aria-label="回放时间" data-time-slider>
+    </label>
+    <span data-phase aria-live="polite"></span>
+  </div>
+  <div class="replay-views">
+    <div>
+      <h3>原尺度记录回放</h3>
+      <img data-frame width="320" height="240" alt="同一运行的机器人持物状态回放，微小接触运动在原尺度下难以看清">
+      <div class="text-small" data-frame-time></div>
+    </div>
+    <div>
+      <h3>左手局部 · 下移放大示意</h3>
+      <svg data-local role="img" aria-label="固定手指与物体相对向下移动的放大示意"></svg>
+      <div class="text-small tabular-nums" data-relative></div>
+    </div>
+  </div>
+  <div class="replay-status text-small tabular-nums" data-status></div>
+  <div class="replay-height text-small tabular-nums" data-height></div>
+  <h3>物体相对左手的变化 · 以急停时刻3.500 s为参考</h3>
+  <div class="viz-row" data-legend></div>
+  <svg class="replay-chart" data-chart role="img" aria-label="物体相对手的位置分量和距离随时间变化；向下为负，距离始终非负"></svg>
+  <div class="tooltip" role="tooltip" data-tip hidden></div>
+  <script type="application/json" data-record>__GRASP_DATA__</script>
+</div>
+<style>
+  #grasp-stop-replay {position:relative;display:flex;flex-direction:column;gap:calc(var(--font-size-base)*.65)}
+  #grasp-stop-replay .replay-views {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(var(--font-size-base)*1)}
+  #grasp-stop-replay img {width:100%;height:auto;display:block}
+  #grasp-stop-replay [data-local] {width:100%;height:240px;display:block}
+  #grasp-stop-replay .replay-chart {width:100%;height:245px;display:block;touch-action:pan-y}
+  #grasp-stop-replay .replay-chart text,#grasp-stop-replay [data-local] text {fill:var(--foreground);font-size:12px;font-weight:400}
+  #grasp-stop-replay [data-legend] button {background:transparent;border:0;padding:0;display:inline-flex;align-items:center;gap:6px;color:var(--foreground);font:inherit}
+  #grasp-stop-replay [data-legend] .swatch {width:22px;height:8px;display:inline-block}
+  #grasp-stop-replay [data-tip] {position:absolute;pointer-events:none;background:var(--popover);color:var(--popover-foreground);padding:8px;z-index:3}
+  @media(max-width:560px) {#grasp-stop-replay .replay-views {grid-template-columns:1fr} #grasp-stop-replay [data-local] {height:210px}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(() => {
+  const root=document.getElementById('grasp-stop-replay');
+  const record=JSON.parse(root.querySelector('[data-record]').textContent);
+  const rows=record.rows,slider=root.querySelector('[data-time-slider]'),play=root.querySelector('[data-play]');slider.max=rows.length-1;
+  const chart=d3.select(root.querySelector('[data-chart]')),local=d3.select(root.querySelector('[data-local]'));
+  const tip=root.querySelector('[data-tip]'),visible=[true,true,true,true];
+  const series=[{label:'前后 Δx',col:1,color:'var(--viz-series-2)',dash:null},{label:'左右 Δy',col:2,color:'var(--viz-series-3)',dash:'3 3'},
+                {label:'上下 Δz',col:3,color:'var(--viz-series-1)',dash:null},{label:'相对距离',col:4,color:'var(--foreground)',dash:'6 3'}];
+  const svgNS='http://www.w3.org/2000/svg';
+  let selected=rows.findIndex(r=>r[0]>=record.hold_start),timer=null,xScale,yScale,chartBox;
+  const saved=window.openai?.widgetState?.privateContent;
+  if(saved && Number.isInteger(saved.index) && saved.index>=0 && saved.index<rows.length)selected=saved.index;
+  const fmt=(x,d=3)=>Number(x).toFixed(d),clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+  function save() {if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{run:'s23_middle',selected_time_s:rows[selected][0]},privateContent:{index:selected}}).catch(()=>{});}
+  function stop() {clearInterval(timer);timer=null;play.textContent='播放保持段';}
+  const legend=root.querySelector('[data-legend]');
+  series.forEach((s,k)=>{const b=document.createElement('button');b.type='button';b.className='cursor-interaction';b.setAttribute('aria-pressed','true');
+    const sw=document.createElementNS(svgNS,'svg');sw.setAttribute('class','swatch');sw.setAttribute('viewBox','0 0 22 8');sw.setAttribute('aria-hidden','true');
+    const line=document.createElementNS(svgNS,'line');line.setAttribute('x1','0');line.setAttribute('x2','22');line.setAttribute('y1','4');line.setAttribute('y2','4');line.setAttribute('stroke',s.color);line.setAttribute('stroke-width','2');if(s.dash)line.setAttribute('stroke-dasharray',s.dash);sw.appendChild(line);b.append(sw,document.createTextNode(s.label));
+    b.addEventListener('click',()=>{visible[k]=!visible[k];b.setAttribute('aria-pressed',String(visible[k]));drawChart();update();});legend.appendChild(b);});
+  function phase(t) {return t<3.5?'递送中':t<4.1?'底盘制动、手臂缓冲':t<record.object_stop?'底盘已停、手臂仍缓冲':t<record.hold_start?'参考停止后过渡':'保持段';}
+  function update() {
+    const r=rows[selected];slider.value=selected;root.querySelector('[data-time]').value=fmt(r[0]);root.querySelector('[data-phase]').textContent=phase(r[0]);
+    const i=d3.bisector(f=>f.time).center(record.frames,r[0]),f=record.frames[i];root.querySelector('[data-frame]').src=f.url;
+    root.querySelector('[data-frame-time]').textContent=`画面 t=${fmt(f.time)} s · 原尺度，未放大位移`;
+    root.querySelector('[data-relative]').textContent=`Δz ${fmt(r[3])} mm · 相对距离 ${fmt(r[4])} mm`;
+    root.querySelector('[data-status]').textContent=`底盘 vx ${fmt(r[6])} m/s · 相对竖直速度 ${fmt(r[5])} mm/s · 向上接触力 ${fmt(r[7])} N / 重力 ${fmt(record.weight)} N`;
+    root.querySelector('[data-height]').textContent=`相对保持段 ${fmt(record.world_anchor)} s：物体世界高度 ${fmt(r[9])} mm；左手世界高度 ${fmt(r[10])} mm`;
+    drawLocal();if(xScale){chart.select('[data-selected-guide]').attr('x1',xScale(r[0])).attr('x2',xScale(r[0]));}
+  }
+  function drawLocal() {
+    const w=Math.max(280,root.querySelector('[data-local]').clientWidth),h=root.querySelector('[data-local]').clientHeight;
+    local.selectAll('*').remove();local.attr('viewBox',`0 0 ${w} ${h}`);
+    const cx=w*.44,base=h*.35,scale=h*.48/.4,drop=-rows[selected][3]*scale,bodyW=w*.36,bodyH=35;
+    local.append('title').text('物体相对左手的竖直位移放大示意；轮廓不按比例，未放大或显示旋转');
+    for(const side of [-1,1])local.append('rect').attr('x',cx+side*(bodyW*.5+18)-7).attr('y',base-30).attr('width',14).attr('height',110).attr('fill','var(--muted)');
+    local.append('rect').attr('x',cx-bodyW*.5).attr('y',base-bodyH*.5).attr('width',bodyW).attr('height',bodyH).attr('fill','none').attr('stroke','var(--muted-foreground)').attr('stroke-dasharray','4 3');
+    local.append('rect').attr('x',cx-bodyW*.5).attr('y',base+drop-bodyH*.5).attr('width',bodyW).attr('height',bodyH).attr('fill','var(--viz-series-1)').attr('fill-opacity',.55);
+    local.append('text').attr('x',8).attr('y',18).text('手指固定于手系；实色为当前物体');
+    local.append('text').attr('x',8).attr('y',h-9).text('虚线：急停时位置；轮廓示意，位移已放大');
+    const rulerX=w-46;
+    local.append('line').attr('x1',rulerX).attr('x2',rulerX).attr('y1',base).attr('y2',base+.4*scale).attr('stroke','var(--border)');
+    [0,.2,.4].forEach(v=>{local.append('line').attr('x1',rulerX-4).attr('x2',rulerX+4).attr('y1',base+v*scale).attr('y2',base+v*scale).attr('stroke','var(--foreground)');local.append('text').attr('x',rulerX+8).attr('y',base+v*scale+4).text(fmt(v,1));});
+    local.append('text').attr('x',rulerX).attr('y',base-16).text('mm');
+  }
+  function hoverAt(time,event) {
+    const j=d3.bisector(r=>r[0]).left(rows,time),a=rows[Math.max(0,j-1)],b=rows[Math.min(rows.length-1,j)];
+    const alpha=b[0]===a[0]?0:(time-a[0])/(b[0]-a[0]),vals=series.map(s=>a[s.col]+alpha*(b[s.col]-a[s.col]));
+    chart.select('[data-chart-hover-guide]').attr('x1',xScale(time)).attr('x2',xScale(time)).attr('visibility','visible');
+    chart.selectAll('[data-chart-hover-marker]').each(function(_,k){d3.select(this).attr('cx',xScale(time)).attr('cy',yScale(vals[k])).attr('visibility',visible[k]?'visible':'hidden');});
+    tip.replaceChildren();const title=document.createElement('div');title.textContent=`t=${fmt(time)} s`;tip.append(title);
+    series.forEach((s,k)=>{if(visible[k]){const line=document.createElement('div');line.textContent=`${s.label} ${fmt(vals[k])} mm`;tip.append(line);}});
+    tip.hidden=false;const rect=root.getBoundingClientRect();tip.style.left=`${clamp(event.clientX-rect.left+10,0,Math.max(0,rect.width-170))}px`;tip.style.top=`${Math.max(0,event.clientY-rect.top-tip.offsetHeight-12)}px`;
+  }
+  function drawChart() {
+    chart.selectAll('*').remove();const width=Math.max(280,root.querySelector('[data-chart]').clientWidth),height=245;
+    const margin={left:67,right:20,top:25,bottom:49},right=width-margin.right,bottom=height-margin.bottom;
+    chart.attr('viewBox',`0 0 ${width} ${height}`);chart.append('title').text('物体相对左手的位置分量与距离；向下移动为负，距离为正');
+    const extent=d3.extent(rows.flatMap(r=>series.map(s=>r[s.col]))),pad=(extent[1]-extent[0])*.1;
+    xScale=d3.scaleLinear().domain(d3.extent(rows,r=>r[0])).range([margin.left+2,right-2]);
+    yScale=d3.scaleLinear().domain([extent[0]-pad,extent[1]+pad]).range([bottom-2,margin.top+2]);chartBox={left:margin.left,right,top:margin.top,bottom};
+    chart.append('rect').attr('data-chart-frame','').attr('x',margin.left).attr('y',margin.top).attr('width',right-margin.left).attr('height',bottom-margin.top).attr('fill','none').attr('stroke','var(--border)');
+    const xAxis=chart.append('g').attr('transform',`translate(0,${bottom})`).call(d3.axisBottom(xScale).ticks(width<400?3:6).tickFormat(d3.format('.1f')));
+    const yAxis=chart.append('g').attr('transform',`translate(${margin.left},0)`).call(d3.axisLeft(yScale).ticks(4).tickFormat(d3.format('.1f')));
+    [xAxis,yAxis].forEach(g=>{g.selectAll('text').attr('fill','var(--foreground)');g.selectAll('path,line').attr('stroke','var(--border)');});
+    chart.append('text').attr('class','axis-title').attr('data-axis','x').attr('x',(margin.left+right)/2).attr('y',height-7).attr('text-anchor','middle').text('时间（s）');
+    chart.append('text').attr('class','axis-title').attr('data-axis','y').attr('x',margin.left).attr('y',14).text('位置变化（mm）');
+    for(const [time,label] of [[3.5,'急停'],[record.object_stop,'参考停止']]){chart.append('line').attr('x1',xScale(time)).attr('x2',xScale(time)).attr('y1',margin.top).attr('y2',bottom).attr('stroke','var(--border)').attr('stroke-dasharray','3 3');if(width>=500)chart.append('text').attr('x',xScale(time)+4).attr('y',margin.top+14).text(label);}
+    series.forEach((s,k)=>{if(visible[k])chart.append('path').datum(rows).attr('fill','none').attr('stroke',s.color).attr('stroke-width',1.8).attr('stroke-dasharray',s.dash).attr('d',d3.line().x(r=>xScale(r[0])).y(r=>yScale(r[s.col])));});
+    chart.append('line').attr('data-selected-guide','').attr('y1',margin.top).attr('y2',bottom).attr('stroke','var(--foreground)').attr('stroke-width',1);
+    chart.append('line').attr('data-chart-hover-guide','').attr('y1',margin.top).attr('y2',bottom).attr('stroke','var(--muted-foreground)').attr('visibility','hidden');
+    series.forEach(s=>chart.append('circle').attr('data-chart-hover-marker','').attr('r',3).attr('fill',s.color).attr('visibility','hidden'));
+    chart.append('rect').attr('data-chart-hit','').attr('data-chart-hover-overlay','cross-series').attr('x',margin.left).attr('y',margin.top).attr('width',right-margin.left).attr('height',bottom-margin.top).attr('fill','transparent')
+      .on('pointermove',function(event){hoverAt(clamp(xScale.invert(d3.pointer(event,this)[0]),rows[0][0],rows.at(-1)[0]),event);})
+      .on('pointerleave',()=>{tip.hidden=true;chart.selectAll('[data-chart-hover-guide],[data-chart-hover-marker]').attr('visibility','hidden');})
+      .on('click',function(event){stop();const t=clamp(xScale.invert(d3.pointer(event,this)[0]),rows[0][0],rows.at(-1)[0]);selected=d3.bisector(r=>r[0]).center(rows,t);update();hoverAt(t,event);save();});
+    // Remove optional phase labels first if any text overlaps another label.
+    const labels=chart.selectAll('text').nodes();for(let i=0;i<labels.length;i++){const a=labels[i].getBoundingClientRect();for(let j=i+1;j<labels.length;j++){const b=labels[j].getBoundingClientRect();if(a.left<b.right+4 && a.right+4>b.left && a.top<b.bottom+4 && a.bottom+4>b.top && ['急停','参考停止'].includes(labels[j].textContent))labels[j].remove();}}
+  }
+  slider.addEventListener('input',()=>{stop();selected=Number(slider.value);update();});slider.addEventListener('change',save);
+  play.addEventListener('click',()=>{if(timer){stop();save();return;}if(selected>=rows.length-1 || rows[selected][0]<record.hold_start)selected=rows.findIndex(r=>r[0]>=record.hold_start);play.textContent='暂停';
+    const slow=window.matchMedia('(prefers-reduced-motion: reduce)').matches?4:2;timer=setInterval(()=>{selected=Math.min(rows.length-1,selected+1);update();if(selected===rows.length-1){stop();save();}},10*slow);update();});
+  window.addEventListener('openai:set_globals',event=>{const state=event.detail?.globals?.widgetState?.privateContent;if(Number.isInteger(state?.index)&&state.index>=0&&state.index<rows.length){stop();selected=state.index;update();}});
+  new ResizeObserver(()=>{drawChart();update();}).observe(root);drawChart();update();
+})();
+</script>

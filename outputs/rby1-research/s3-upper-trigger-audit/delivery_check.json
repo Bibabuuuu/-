@@ -1,0 +1,39 @@
+{
+  "audit_passed": true,
+  "source_hashes_unchanged": true,
+  "actual_joint_errors_reconstructed": true,
+  "command_rebase_roundtrip_q_max": 2.220446049250313e-16,
+  "fixed_wall_envelope_equivalence_max_m": 2.498001805406602e-16,
+  "original_preflight_density_matched": true,
+  "dense_reference_geometry_passed": true,
+  "command_C2_passed": true,
+  "actual_state_validity_tube_established": false,
+  "physical_admission": false,
+  "counters": {
+    "total_Context_builds": 2,
+    "complete_bundle_queries": 28,
+    "final_base_callback_calls": 2,
+    "additional_uncached_final_base_sample": 1,
+    "tabulated_reference_pose_samples": 1272,
+    "initial_audit_geometry_states": 81,
+    "dense_geometry_states": 1245,
+    "envelope_FK_states": 1245,
+    "new_physics_runs": 0,
+    "new_physics_steps": 0,
+    "new_IK": 0,
+    "new_optimizer_calls": 0
+  },
+  "timing_scope": "single audit measurements; scalar envelope lookup excludes sensors, current-state admission and command dispatch",
+  "S3_cumulative_runs": 54,
+  "S3_cumulative_steps": 133061,
+  "conclusion": "cold preparation and dense runtime recheck exceed deadline; fixed-wall precomputed front is algebraically reusable on the same grid; measured-state and physical handover still unqualified",
+  "audit_implementation_correction": "first draft assumed the cruise heading was exactly world +x; saved yaw has a small offset. Preserve full 3D command translation when inverting placements. Original check and failure kept; no physics or reference change.",
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-audit\\audit.py": "af4c127a9ec8e5061250080e4467c2ede9068958c8d8e08fc817143bf35554bc",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-audit\\result.json": "39f50bbc1cac44a74804d2f650326f7445b3a44b406d8b4a98edd7a9ec0e3b4c",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-audit\\dense_cost.py": "e219d06decdb777cae587a53ef685a726046cca3148340be0ff7f6856cb87541",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-audit\\dense_result.json": "6a34712dbbc949368a3d258e7ce800a7cac3c83648552a19618dcc4d9fd2d038",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-audit\\geometry_envelope_probe.json": "953539cea78f4d8689840da482b22067de8908adff002e90e454f86a4d7ee6e9",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-audit\\verify_and_cache.py": "06bbcc62115fb85988b15e9701cdef2be3891cc80ee56fbfc375b8af28b6ad7d"
+  }
+}

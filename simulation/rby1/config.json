@@ -1,0 +1,21 @@
+{
+  "status": "Nominal research assumptions, not calibrated hardware parameters",
+  "source_commit": "300a585c297d1bdf8554312c3a1659610a9823f5",
+  "timestep_s": 0.001,
+  "wheel_radius_m": 0.1,
+  "wheel_half_width_m": 0.035,
+  "wheel_torque_limit_Nm": 10.0,
+  "wheel_friction": 0.8,
+  "support_centers_m": [[-0.277, -0.083, 0.035], [-0.277, 0.083, 0.035]],
+  "support_radius_m": 0.035,
+  "support_friction": 0.0,
+  "support_note": "Ideal passive support approximation near original rear ground-contact coordinates. Normal contact only at zero friction; no caster swivel/rolling inertia. Straight motion on flat ground only.",
+  "continuous_torque_Nm": {"torso_proximal": 250.0, "torso_distal": 125.0, "arm_proximal": 65.0, "elbow": 35.0, "wrist": 14.0},
+  "torque_source": "https://rainbowrobotics.github.io/rby1-dev/hardware/mechanical_part.html; use min(URDF effort, continuous torque), no transient peak capability claimed",
+  "head_torque_assumption_Nm": 2.0,
+  "finger_force_assumption_N": 5.0,
+  "armature": {"wheel": 0.02, "torso": 0.08, "arm_proximal": 0.03, "wrist": 0.003, "head": 0.001, "finger": 0.0},
+  "damping": {"wheel": 0.05, "torso": 1.5, "arm_proximal": 0.3, "wrist": 0.05, "head": 0.2, "finger": 5.0},
+  "actuator_note": "Added inertia, damping, wheel/head/finger caps are explicit hypotheses; free base gets zero artificial armature/damping.",
+  "initial_pose_rad_or_m": {"torso_1": 0.3, "torso_2": -0.6, "torso_3": 0.3, "left_arm_0": -0.3, "right_arm_0": -0.3, "left_arm_1": 0.25, "right_arm_1": -0.25, "left_arm_3": -0.7, "right_arm_3": -0.7, "gripper_finger_r1": -0.015, "gripper_finger_r2": 0.015, "gripper_finger_l1": -0.015, "gripper_finger_l2": 0.015}
+}

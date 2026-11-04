@@ -1,0 +1,224 @@
+{
+  "evidence_verified": true,
+  "full_four_case_qualification_passed": false,
+  "zero_reference_continuous_sample_and_order_checks_passed": true,
+  "completed_cases": [
+    0,
+    1
+  ],
+  "zero_query_order_difference": 0.0,
+  "samples_checked": 202,
+  "IK_calls_in_verification": 0,
+  "QP_calls_in_verification": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "max_independent_pose_error_m_rad": [
+    4.7269464686199385e-14,
+    2.7607146180432146e-13
+  ],
+  "max_independent_target_closure_scaled": [
+    7.53801373062357e-10,
+    4.903114743601701e-10
+  ],
+  "failed_case_independent_peak_jerk_mps3": 5.0023988392681975,
+  "checks": [
+    {
+      "case": 0,
+      "targets": 101,
+      "FD_checks": [
+        {
+          "time_s": 0.08673289842597,
+          "h_s": 0.001,
+          "target_scaled_error": 0.04554576898669618,
+          "closure_scaled_error": 1.882709708579726e-05
+        },
+        {
+          "time_s": 0.08673289842597,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.011374560441760741,
+          "closure_scaled_error": 1.5919459135023252e-05
+        },
+        {
+          "time_s": 0.17346579685194,
+          "h_s": 0.001,
+          "target_scaled_error": 0.017704293238513878,
+          "closure_scaled_error": 4.219261370823019e-06
+        },
+        {
+          "time_s": 0.17346579685194,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.0044184548583427975,
+          "closure_scaled_error": 3.306185147447956e-05
+        },
+        {
+          "time_s": 0.26639390230833,
+          "h_s": 0.001,
+          "target_scaled_error": 0.022178306223185767,
+          "closure_scaled_error": 1.8685191807653112e-05
+        },
+        {
+          "time_s": 0.26639390230833,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.005576782027752215,
+          "closure_scaled_error": 3.3775047422093326e-05
+        },
+        {
+          "time_s": 0.3531268007343,
+          "h_s": 0.001,
+          "target_scaled_error": 0.020402948123956127,
+          "closure_scaled_error": 1.1026121647258624e-05
+        },
+        {
+          "time_s": 0.3531268007343,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.00509605337577476,
+          "closure_scaled_error": 2.6684031047055034e-05
+        },
+        {
+          "time_s": 0.4460549061907,
+          "h_s": 0.001,
+          "target_scaled_error": 0.01699220121693153,
+          "closure_scaled_error": 4.527432935175508e-06
+        },
+        {
+          "time_s": 0.4460549061907,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.00423214212591089,
+          "closure_scaled_error": 1.884748482505963e-05
+        },
+        {
+          "time_s": 0.53278780461667,
+          "h_s": 0.001,
+          "target_scaled_error": 0.037788831409631005,
+          "closure_scaled_error": 1.3691824552424213e-05
+        },
+        {
+          "time_s": 0.53278780461667,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.00949611080827692,
+          "closure_scaled_error": 2.887485496615511e-05
+        }
+      ],
+      "null_residuals": [
+        4.244773290296498e-15,
+        1.6754887758464704e-17,
+        1.1829269783895684e-16
+      ],
+      "native_geometry_checks": [
+        {
+          "time_s": 0.0,
+          "native_gap_m": 0.10003086230912511,
+          "geometry_count": 508
+        },
+        {
+          "time_s": 0.6195207030426355,
+          "native_gap_m": 0.007495235916372294,
+          "geometry_count": 508
+        }
+      ],
+      "initial_velocity_difference_from_actual_radps": 5.4903710595328164e-05
+    },
+    {
+      "case": 1,
+      "targets": 101,
+      "FD_checks": [
+        {
+          "time_s": 0.08673289842597,
+          "h_s": 0.001,
+          "target_scaled_error": 0.04554576898669618,
+          "closure_scaled_error": 1.882709708579726e-05
+        },
+        {
+          "time_s": 0.08673289842597,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.011374560441760741,
+          "closure_scaled_error": 1.5919459135023252e-05
+        },
+        {
+          "time_s": 0.17346579685194,
+          "h_s": 0.001,
+          "target_scaled_error": 0.017704293238513878,
+          "closure_scaled_error": 4.219261370823019e-06
+        },
+        {
+          "time_s": 0.17346579685194,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.0044184548583427975,
+          "closure_scaled_error": 3.306185147447956e-05
+        },
+        {
+          "time_s": 0.26639390230833,
+          "h_s": 0.001,
+          "target_scaled_error": 0.022178306223185767,
+          "closure_scaled_error": 1.8685191807653112e-05
+        },
+        {
+          "time_s": 0.26639390230833,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.005576782027752215,
+          "closure_scaled_error": 3.3775047422093326e-05
+        },
+        {
+          "time_s": 0.3531268007343,
+          "h_s": 0.001,
+          "target_scaled_error": 0.020402948123956127,
+          "closure_scaled_error": 1.1026121647258624e-05
+        },
+        {
+          "time_s": 0.3531268007343,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.00509605337577476,
+          "closure_scaled_error": 2.6684031047055034e-05
+        },
+        {
+          "time_s": 0.4460549061907,
+          "h_s": 0.001,
+          "target_scaled_error": 0.01699220121693153,
+          "closure_scaled_error": 4.527432935175508e-06
+        },
+        {
+          "time_s": 0.4460549061907,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.00423214212591089,
+          "closure_scaled_error": 1.884748482505963e-05
+        },
+        {
+          "time_s": 0.53278780461667,
+          "h_s": 0.001,
+          "target_scaled_error": 0.037788831409631005,
+          "closure_scaled_error": 1.3691824552424213e-05
+        },
+        {
+          "time_s": 0.53278780461667,
+          "h_s": 0.0005,
+          "target_scaled_error": 0.00949611080827692,
+          "closure_scaled_error": 2.887485496615511e-05
+        }
+      ],
+      "null_residuals": [
+        4.244773290296498e-15,
+        1.6754887758464704e-17,
+        1.1829269783895684e-16
+      ],
+      "native_geometry_checks": [],
+      "initial_velocity_difference_from_actual_radps": 5.4903710595328164e-05
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.continuous-reference-qualification\\contract.json": "58584680d2e9b1b16b9c1772ce57579187e2c391c9930fd788a322adcbc66667",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.continuous-reference-qualification\\result.json": "4411d57d3a80885dcd922e50726336e2808893bc3f203dcd1128a568de78d007",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.continuous-reference-qualification\\continuous_reference.py": "06a57e2aaab4cb137f779e2ebd10fd9cbda2b45f2133fed5d1a8aee4e52b90db",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.continuous-reference-qualification\\case_0.npz": "74292b7fb8de0d1cbd7e3919680654d66afec561a62b08f87f56989d62d95585",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.continuous-reference-qualification\\case_1.npz": "74292b7fb8de0d1cbd7e3919680654d66afec561a62b08f87f56989d62d95585",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.continuous-reference-qualification\\verify_continuous_reference.py": "843c227a68ce0af767cfef0be94dd34d69c4dfefca4ea1f65997a648cd4ec5b3"
+  },
+  "not_verified": [
+    "nonzero combined-motion IK",
+    "full feasible neighborhood",
+    "complete outer objective/constraint evaluation cost",
+    "seamless actual initial-state handoff",
+    "interval-wide collision safety",
+    "physical grasp improvement"
+  ]
+}

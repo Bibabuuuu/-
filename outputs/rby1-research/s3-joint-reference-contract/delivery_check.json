@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "scope": "independent raw-state and report evidence audit; not continuous-adapter or optimizer qualification",
+  "independent_hand_COM_twist_error_max": 5.551115123125783e-17,
+  "independent_upper_initial_speed_difference_radps_max": 5.4903710595328164e-05,
+  "proposal_arithmetic_passed": true,
+  "local_markdown_links_checked": 213,
+  "no_new_solves_or_physics": true,
+  "sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.joint-reference-review\\initial_state_and_basis_audit.py": "5910703250592771e74aa122cfd5375de2cf34cbeaa81559204b864e5efd9226",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.joint-reference-review\\initial_state_and_basis_audit.json": "0ecfdba4a4c52ff72f47f96b7690504e2b576ed981e38717a31f71127e0890e4",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.joint-reference-review\\proposal.json": "49877124e24800190eb77744d0e762371425394e2550aca39c558e95a84d8363",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.joint-reference-review\\连续参考初值与联合变量_方案评审.md": "35e54ba1cd6018eb50c12be011a38012091d0eb561c6fc07b5d40fb195304ecf",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.joint-reference-review\\PROJECT_PLAN.md": "c23ce405c3ece26c178be31d57844eb140a45036578386bac186992a3cc93f59",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.joint-reference-review\\34-s3-mature-stop-baselines.md": "c3b0b41c690d1a589ddb482fecd12067466a6f141bf7eb54aabcb6632ec0ad3c",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.joint-reference-review\\verify_review.py": "4063b352f01d843659b53839280f784e2fca6c40ca351ad099534a5983aa3241"
+  }
+}

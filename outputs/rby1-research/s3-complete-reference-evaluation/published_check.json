@@ -1,0 +1,55 @@
+{
+  "published": true,
+  "files_verified": 10,
+  "complete_single_evaluation_passed": true,
+  "evidence_verified": true,
+  "IK_calls": 45,
+  "QP_calls": 87,
+  "QP_internal_iterations": 174,
+  "new_numerical_constraint_Jacobians": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-complete-reference-evaluation\\evaluate_reference.py",
+      "sha256": "9F639E14634665450FE9EB659DE18FAB08DA1AE719A8503D2502B84F510878E2"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-complete-reference-evaluation\\verify_evaluation.py",
+      "sha256": "B996CEC486E78A54745BD84F297F1C813F9E3C34B0C2363D9A13937AE7C0A284"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-complete-reference-evaluation\\contract.json",
+      "sha256": "F9B74720A0FCC6F05938A445A1CA4EC6C89FD17F1F9C5D74C30BBCD2A6F45EEE"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-complete-reference-evaluation\\result.json",
+      "sha256": "96C8F488A6C0B76164C700CEB82D360A289361735739B85E2D31B0E0B4D187C3"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-complete-reference-evaluation\\evaluation.npz",
+      "sha256": "BE6112686BB500F1082B891B5EBBB83CE7EE2A52FF2CB2D00A8DDCBC8DA6995E"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-complete-reference-evaluation\\delivery_check.json",
+      "sha256": "D076FEEF78003DC249AD4D3FE86BE7DA4526201FC88EE17AF19D40C3B0655DFE"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-complete-reference-evaluation\\next_cached_evaluation_proposal.json",
+      "sha256": "A349748B9BD28A9748678FD1517A998656EED73365D3D2EBF67367AA793C68AC"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-complete-reference-evaluation\\完整目标约束评价_结果与成本.md",
+      "sha256": "8DE2AA63F05896C2E3A10936D4E0623361750B8030D36C65DE3FA93AE4A2C54F"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\PROJECT_PLAN.md",
+      "sha256": "3A05EED70D8419B7E8C973168CAD785E6ED82EDFEFCC9B0CE0D0F5887A2B3E87"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\plans\\34-s3-mature-stop-baselines.md",
+      "sha256": "B6669C138D21CD90311B78E31FACEB842F6DC2DA63935BE1A0842860460CB7CD"
+    }
+  ]
+}

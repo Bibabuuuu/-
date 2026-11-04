@@ -1,0 +1,182 @@
+{
+  "passed": true,
+  "changed_existing_sources": [
+    "simulation/rby1/qualify_planar_stop.py"
+  ],
+  "default_module_AST_equivalent_without_new_opt_in": true,
+  "exact_regressions": true,
+  "coordinate_derivative_checks": [
+    {
+      "scene": "low",
+      "samples": 41,
+      "step_s": 1e-05,
+      "maximum_component_errors_SI": {
+        "base_dp_v": 0.00011418969956941694,
+        "base_dv_a": 2.2343238370581275e-12,
+        "payload_dp_v": 0.00011418970218879387,
+        "payload_dv_a": 4.752809257269064e-12,
+        "rotation_dR_omega": 0.0,
+        "joint_dq_v": 6.642383865163026e-11,
+        "joint_dv_a": 9.823913904583037e-11,
+        "payload_relative_dp_v": 9.253245392137899e-11
+      },
+      "contract": {
+        "rotation_orthogonality_error": 3.3306690738754696e-15,
+        "initial_joint_error_rad": 0.0,
+        "terminal_reference_speed_norm": 0.0,
+        "terminal_reference_acceleration_norm": 0.0,
+        "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+      },
+      "legacy_position_table_vs_Simpson_m": 5.2066532196803905e-09,
+      "position_derivative_note": "inherited linear interpolation mismatch retained; smooth relative motion separately checked"
+    },
+    {
+      "scene": "right_column",
+      "samples": 41,
+      "step_s": 1e-05,
+      "maximum_component_errors_SI": {
+        "base_dp_v": 5.3768704933343514e-05,
+        "base_dv_a": 2.5446528694947346e-10,
+        "payload_dp_v": 5.3768699444747825e-05,
+        "payload_dv_a": 8.781687044212561e-10,
+        "rotation_dR_omega": 6.43546751478985e-10,
+        "joint_dq_v": 0.0,
+        "joint_dv_a": 0.0,
+        "payload_relative_dp_v": 8.500480186282924e-11
+      },
+      "contract": {
+        "rotation_orthogonality_error": 3.552713678800501e-15,
+        "initial_joint_error_rad": 0.0,
+        "terminal_reference_speed_norm": 0.0,
+        "terminal_reference_acceleration_norm": 0.0,
+        "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+      },
+      "legacy_position_table_vs_Simpson_m": 4.804919018219778e-09,
+      "position_derivative_note": "inherited linear interpolation mismatch retained; smooth relative motion separately checked"
+    }
+  ],
+  "selected_reference_full_geometry": [
+    {
+      "time_s": 0.0,
+      "native_checks": 508,
+      "gap_m": 0.10003086230912511,
+      "error_m": 0.0
+    },
+    {
+      "time_s": 0.47350000000000003,
+      "native_checks": 508,
+      "gap_m": 0.006257665841123234,
+      "error_m": 0.0
+    },
+    {
+      "time_s": 0.6195207030426355,
+      "native_checks": 508,
+      "gap_m": 0.006751345942980656,
+      "error_m": 0.0
+    }
+  ],
+  "actual_geometry_samples": 11432,
+  "historical_halfdt_reused": true,
+  "low_selected_execution_reused": true,
+  "new_physics_runs": 4,
+  "new_physics_steps": 9500,
+  "frozen_checks": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_buffer.py": {
+      "expected": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "actual": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\grasp_observation.py": {
+      "expected": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "actual": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\state_stop_reference.py": {
+      "expected": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "actual": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_candidates.py": {
+      "expected": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "actual": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\motion_distribution.py": {
+      "expected": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "actual": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\buffer_reference.py": {
+      "expected": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "actual": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\payload_wrench.py": {
+      "expected": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "actual": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\load_sharing.py": {
+      "expected": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "actual": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\control_uncertainty.py": {
+      "expected": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "actual": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_profiles.py": {
+      "expected": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "actual": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\static_payload.py": {
+      "expected": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "actual": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\model\\research_model.xml": {
+      "expected": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "actual": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\payload_model\\payload_scene.xml": {
+      "expected": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "actual": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_payload.py": {
+      "expected": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "actual": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_allocation.py": {
+      "expected": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "actual": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "unchanged": true
+    }
+  },
+  "artifact_sha256": {
+    "contract.json": "585fccaed53d433e2044fc438c250beb6e3ac574a2b054cc1c3a5639f427d3f3",
+    "regression.json": "eddd7ccc909949392bd130753df4abdf29be30abaf793925799b13dd7eeae492",
+    "summary.json": "fc67312662bf046250000c13d557a916026a9b429c2d492fc60f21af686770f9",
+    "execution_metrics.csv": "1ae7926d4d25e44df4defa8ee38c1019facd6a54fad16ab07a73d3a989c682ad",
+    "comparison_curves.csv": "babf4b603865c2e809ec7695ccc06f7e6bdaad6cae0c7566eb5036b01bae0a73",
+    "low/plan.json": "6bee5337608fcd3731a59b9d9e2ee4535e78ebd95e55a9c3b377d3eb6d640ae6",
+    "right_column/plan.json": "b78b5d3571a14c332bd1388f3c448b4ac2cb2052b4b57b5a748b6d2ceca1671d",
+    "right_column/execution_selection.json": "6dd756eedb52f75aeeccd9f49cca9407367f6fc6d0e664aa8c15c791a36f66ca",
+    "有限停止优化与通用参考_结果说明.md": "35b8599d40a6ed52355935000af91f8bb5836b2716e19480c232fb15dfc0b4be",
+    "optimization_tradeoffs.png": "d234af9aad1755b92476fc201763dff642bda14661b0a2c212629d6a6ad1d1c0",
+    "optimization_tradeoffs.pdf": "3e357316e0697c4dbd8b54a764eb9a9146466f1a7878a314ef968a7bd8b206fc"
+  },
+  "new_source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\analyze_stop_optimization_pilot.py": "8efc43d9281992b830272c6cfe0072cebe9ccf3ffbacc6aa2b6bdd0bd992c98e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\check_stop_optimization_pilot.py": "8583667de629fa3955863e526d46c0790f09a29a4b992620c400bd2520531790",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\plot_stop_optimization_pilot.py": "0f43123d97a59175de0f16141c0b1e1325bbdc52bb423c576a3576f843d39d71",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\refine_stop_pilot.py": "078a191c1037eda041538c7ccfd98c46cd4429cc2fc87afa8ac98758f205760a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_optimization_pilot.py": "7d02cfd7f3add440f861ef2b25dbeb17684fff14ee4b6434f98aa3208bedf34d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\whole_body_stop_reference.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f"
+  },
+  "scope": "nominal numerical/interface qualification only; no continuous safety, real slip, global optimum or full whole-body baseline claim"
+}

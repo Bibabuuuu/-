@@ -1,0 +1,357 @@
+{
+  "result": {
+    "passed": false,
+    "gates": {
+      "completed": true,
+      "originals_frozen": true,
+      "collision_free": true,
+      "front_gap": true,
+      "no_control_clipping": true,
+      "joint_range": true,
+      "self_penetration": true,
+      "joint_speed": true,
+      "wheels": false,
+      "hands": true,
+      "axle_rest": true,
+      "object_rest": true,
+      "yaw_rest": true,
+      "trigger_snapshot_is_live": true,
+      "C2_handover": true,
+      "decision_admitted": true,
+      "handover_no_reset": true,
+      "command_by_deadline_plus_tick": true,
+      "held_reference_activated": true,
+      "all_C2_fields": true,
+      "nominal_state": true
+    },
+    "metrics": {
+      "label": "held_same_base",
+      "case": "straight",
+      "dt_s": 0.0005,
+      "steps": 4000,
+      "final_turn_deg": -9.076750087574029,
+      "target_turn_deg": -9.439781930294698,
+      "final_yaw_error_deg": -0.36303184272066863,
+      "peak_yaw_error_deg": 0.7577818221818988,
+      "final_axle_xy_error_mm": 1.4157482402074044,
+      "peak_axle_xy_error_mm": 1.4486770281453125,
+      "peak_object_com_error_mm": 3.0095228198685566,
+      "peak_object_acceleration_mps2": 1.1174005464472216,
+      "peak_object_angular_acceleration_radps2": 2.726141661061908,
+      "final_object_speed_mmps": 0.15584663478012717,
+      "final_base_yaw_rate_degps": -1.6343584848968092e-06,
+      "wheel_no_contact_samples": 4,
+      "peak_wheel_lateral_contact_speed_mps": 0.0014190982624369898,
+      "peak_base_tilt_deg": 0.005781651122820094,
+      "linear_balance_residual_rms_N": 0.008103751474321092,
+      "angular_balance_residual_rms_Nm": 0.00018212169212615715,
+      "max_unclipped_control_excess": 0.0,
+      "max_joint_range_excess": 0.0,
+      "max_joint_speed_fraction": 0.254710200737639,
+      "max_self_penetration_m": 0.0,
+      "frozen_unchanged": true,
+      "actuators_at_bound": [],
+      "peak_raw_relative_position_change_mm": 0.3297975098086914,
+      "peak_raw_relative_rotation_change_deg": 0.08442091828483338,
+      "peak_TCP_contact_moment_Nm": 0.06069199581365159,
+      "peak_friction_utilization": 0.617804797878529,
+      "min_loaded_contacts_per_hand": 0,
+      "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+      "zero_loaded_contact_samples_after_first_controlled_step": 0,
+      "contact_force_crosscheck_N": 2.2211398302543545e-15,
+      "hold_1s_raw_relative_position_change_mm": 0.17958638036644559,
+      "hold_1s_base_yaw_change_deg": -0.023446445201716827
+    },
+    "events": {
+      "events": [
+        {
+          "event": "obstacle_revealed_and_actual_trigger_state_checked",
+          "time_s": 0.2
+        },
+        {
+          "event": "stop_reference_activated",
+          "time_s": 0.25,
+          "reason": "preloaded_held_same_base_at_fixed_release"
+        },
+        {
+          "event": "first_nonzero_deceleration_command",
+          "time_s": 0.2505
+        }
+      ],
+      "observation": {
+        "time_s": 0.2,
+        "regression_state_exact": {
+          "qpos": true,
+          "qvel": true,
+          "ctrl": true
+        },
+        "hand_loaded_count": [
+          8.0,
+          8.0
+        ],
+        "front_gap_m": 0.2000199533110465,
+        "obstacle_face_x_m": 1.3027049005359823,
+        "fronts": {
+          "base": {
+            "x_m": 1.0083105234568037,
+            "geom": "wheel_l_tire"
+          },
+          "upper": {
+            "x_m": 1.1026849472249358,
+            "geom": "link_left_arm_4_LINK_18_collision_4_5"
+          },
+          "payload": {
+            "x_m": 1.1004075535381135,
+            "geom": "payload_beam"
+          }
+        },
+        "state_guard_role": "test-only admission to this one previously observed nominal trigger state, exact qpos/qvel/ctrl; no general tracking tube",
+        "actual_upper_q_error_rad": 1.7199781638055356e-05,
+        "actual_upper_v_radps": 4.7179195834878435e-05
+      },
+      "decision": {
+        "selected_index": 0,
+        "selected_kind": "held_same_base",
+        "checks": {
+          "nominal_regression_state": true,
+          "both_hands_loaded": true,
+          "command_C2": true,
+          "reference_gap": true,
+          "ready_by_deadline": true
+        },
+        "cached_reference_gap_at_release_m": 0.02513870305966548,
+        "command_C2_max_error": 2.270042084698181e-16,
+        "planned_command_translation_m": [
+          0.09998281771780815,
+          -8.359213588270259e-06,
+          0.0
+        ],
+        "estimated_command_release_s": 0.25,
+        "measured_snapshot_and_selection_wall_s": 0.004344699991634116,
+        "note": "Known cruise command predicts the release placement; no future actual-state input"
+      },
+      "handover": {
+        "time_s": 0.25,
+        "reason": "preloaded_held_same_base_at_fixed_release",
+        "reference_position_jump_m": 0.0,
+        "reference_velocity_jump_mps": 0.0,
+        "reference_acceleration_jump_mps2": 0.0,
+        "payload_position_jump_m": 2.270042084698181e-16,
+        "payload_velocity_jump_mps": 0.0,
+        "payload_acceleration_jump_mps2": 0.0,
+        "payload_rotation_jump_rad": 1.312377606067111e-19,
+        "joint_q_jump_rad": 0.0,
+        "joint_v_jump_radps": 0.0,
+        "joint_a_jump_radps2": 0.0,
+        "live_integration_state_unchanged": true,
+        "activation_and_telemetry_wall_s": 0.0003087999939452857
+      },
+      "measured_snapshot_and_planning_wall_s": 0.004344699991634116,
+      "quantized_result_available_s": 0.20450000000000002,
+      "reference_stop_time_s": 0.8695207030426355,
+      "first_deceleration_command_s": 0.2505,
+      "trigger_to_first_deceleration_command_s": 0.05049999999999999,
+      "latency_policy": "fixed 50ms simulated release reserve; measured trigger work must finish within it; live cruise continues; single-thread latency injection, not independent watchdog",
+      "excluded_latency": "real lidar/transport/OS and full control/physics wall cost; activation/telemetry cost logged separately; no hard real-time claim",
+      "paired_reference_selected": true,
+      "upper_motion_commanded": false
+    },
+    "actual_minimum_front_plane_gap_m": 0.024750130061852005,
+    "minimum_gap_time_s": 0.995,
+    "native_checks": [
+      {
+        "index": 0,
+        "time_s": 0.0,
+        "front_plane_gap_m": 0.27998625418685696,
+        "native_box_gap_m": 0.27998625418685696
+      },
+      {
+        "index": 400,
+        "time_s": 0.2,
+        "front_plane_gap_m": 0.2000199533110465,
+        "native_box_gap_m": 0.2000199533110465
+      },
+      {
+        "index": 1990,
+        "time_s": 0.995,
+        "front_plane_gap_m": 0.024750130061852005,
+        "native_box_gap_m": 0.024750130061852005
+      },
+      {
+        "index": 4000,
+        "time_s": 2.0,
+        "front_plane_gap_m": 0.024952845408577895,
+        "native_box_gap_m": 0.02495284540857789
+      }
+    ],
+    "maximum_forward_axle_travel_after_trigger_m": 0.1447825787390501,
+    "persistent_rest_time_s": 1.0170000000000001,
+    "final_axle_speed_mps": 1.4507257109566389e-09,
+    "final_object_speed_mps": 0.00015584663478012718,
+    "trigger_to_end_peak_relative_position_change_mm": 0.30040465617711076,
+    "post_reference_stop_relative_change_mm": 0.1995141608205294,
+    "note": "sampled whole-robot front plane separation; native distances checked at four states; no unsampled continuous collision proof; relative pose is not material slip",
+    "steps": 4000,
+    "physics_runs": 1
+  },
+  "evidence_audit": {
+    "evidence_audit_passed": true,
+    "held_execution_qualified": false,
+    "coordinated_execution_qualified": true,
+    "failed_held_gates": [
+      "wheels"
+    ],
+    "entire_base_reference_pose_exact": true,
+    "all_sampled_base_v_a_omega_alpha_exact": true,
+    "whole_501sample_live_prefix_exact": true,
+    "held_upper_q_constant_v_a_zero": true,
+    "actual_base_pair_position_max_difference_m": 0.00021729958766901898,
+    "snapshots_and_finger_commands_exact": true,
+    "common_window_function_unchanged": true,
+    "zero_wheel_contact_sample_count": 4,
+    "original_failure_retained": true,
+    "new_physics_runs_in_audit": 0,
+    "new_physics_steps_in_audit": 0,
+    "new_IK": 0,
+    "new_optimizer_calls": 0,
+    "physical_runs_audited": 1,
+    "physical_steps_audited": 4000,
+    "S3_cumulative_runs": 56,
+    "S3_cumulative_steps": 141061,
+    "source_sha256": {
+      "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\matched.py": "fea4cfd02feb6645d45b82dbc9b264a7b86e656e55985e085564fa72b64640d4",
+      "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\verify_pair.py": "8fa717b19877034de3b72a05f8afed68cd7f375a9a35eca6e8e0cf504a32f102",
+      "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\paired_comparison.json": "beabfff631943f3b1ff5611008f0323235c3e0581a18b40905d83ae7a8b5f1c6",
+      "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.matched-base-execution\\wheel_contact_failure.json": "84f7c7402e44cc4068f22fb51d065b5bf3804a427963a4c31ec5d7303d3cf14e"
+    }
+  },
+  "comparison": {
+    "held_metrics": {
+      "object_acceleration_RMS_mps2": 0.733476071512758,
+      "max_hand_contact_TCP_moment_RMS_Nm": 0.0342197406137111,
+      "common_hold_1s_relative_position_change_mm": 0.17065054121633513,
+      "common_hold_1s_contact_tangent_travel_mm": 0.15628802656580523,
+      "peak_object_acceleration_in_common_motion_mps2": 1.1174005464472216,
+      "peak_hand_contact_TCP_moment_in_common_motion_Nm": 0.06069199581365159
+    },
+    "coordinated_metrics": {
+      "object_acceleration_RMS_mps2": 0.6523727611227557,
+      "max_hand_contact_TCP_moment_RMS_Nm": 0.03021749002092183,
+      "common_hold_1s_relative_position_change_mm": 0.15947758637732024,
+      "common_hold_1s_contact_tangent_travel_mm": 0.15620895684350458,
+      "peak_object_acceleration_in_common_motion_mps2": 0.9301865925131252,
+      "peak_hand_contact_TCP_moment_in_common_motion_Nm": 0.043831513217455355
+    },
+    "coordinated_vs_held_percent": {
+      "object_acceleration_RMS_mps2": -11.057390082641794,
+      "max_hand_contact_TCP_moment_RMS_Nm": -11.695736206678486,
+      "common_hold_1s_relative_position_change_mm": -6.547271845361946,
+      "common_hold_1s_contact_tangent_travel_mm": -0.050592309620955955,
+      "peak_object_acceleration_in_common_motion_mps2": -16.754417610528627,
+      "peak_hand_contact_TCP_moment_in_common_motion_Nm": -27.780405587525216
+    },
+    "common_motion_window_s": [
+      0.25,
+      0.918732400344874
+    ],
+    "common_hold_window_s": [
+      0.918732400344874,
+      1.918732400344874
+    ],
+    "held_execution_qualified": false,
+    "coordinated_execution_qualified": true,
+    "base_command_matched": true,
+    "causal_intervention": "only 60 upper trajectory coefficients changed; actual base response can change through coupling",
+    "interpretation": "observed paired-run differences; held run failed original wheel-contact gate, so not two qualified successful methods or a general grasp-stability gain"
+  },
+  "wheel_contact": {
+    "zero_contact_samples": 4,
+    "episodes": [
+      {
+        "start_s": 0.493,
+        "last_sample_s": 0.493,
+        "sample_count": 1,
+        "sample_grid_duration_s": 0.0005
+      },
+      {
+        "start_s": 0.5695,
+        "last_sample_s": 0.5695,
+        "sample_count": 1,
+        "sample_grid_duration_s": 0.0005
+      },
+      {
+        "start_s": 0.5815,
+        "last_sample_s": 0.5815,
+        "sample_count": 1,
+        "sample_grid_duration_s": 0.0005
+      },
+      {
+        "start_s": 0.593,
+        "last_sample_s": 0.593,
+        "sample_count": 1,
+        "sample_grid_duration_s": 0.0005
+      }
+    ],
+    "samples": [
+      {
+        "index": 986,
+        "time_s": 0.493,
+        "right_left_tire_geometric_gap_m": [
+          2.655606425081003e-07,
+          7.992060819528302e-08
+        ],
+        "recorded_total_ground_force_z_N": 243.53773242054513,
+        "recorded_base_tilt_deg": 0.0026917259861970887
+      },
+      {
+        "index": 1139,
+        "time_s": 0.5695,
+        "right_left_tire_geometric_gap_m": [
+          3.9881497474608674e-07,
+          4.76251933688443e-07
+        ],
+        "recorded_total_ground_force_z_N": 220.87096443809787,
+        "recorded_base_tilt_deg": 0.00047166724894123546
+      },
+      {
+        "index": 1163,
+        "time_s": 0.5815,
+        "right_left_tire_geometric_gap_m": [
+          1.429622543597242e-06,
+          1.5902941816622885e-06
+        ],
+        "recorded_total_ground_force_z_N": 223.01707375144701,
+        "recorded_base_tilt_deg": 0.001878194714948217
+      },
+      {
+        "index": 1186,
+        "time_s": 0.593,
+        "right_left_tire_geometric_gap_m": [
+          1.2340278255376647e-06,
+          9.649733469091482e-07
+        ],
+        "recorded_total_ground_force_z_N": 225.89882504856251,
+        "recorded_base_tilt_deg": 0.002631044894048545
+      }
+    ],
+    "maximum_tire_floor_gap_um": 1.5902941816622884,
+    "qualification": "original aggregate wheel contact gate failed; not relabeled as success",
+    "interpretation": "recorded contact-count failure plus saved-state geometric gap; positive total ground force may include other base supports; not hardware danger/stability proof or calibrated safety threshold"
+  },
+  "decision": {
+    "status": "单次对照已执行并完成证据核验；保持组未通过原轮接触门槛",
+    "held_execution_qualified": false,
+    "coordinated_execution_qualified": true,
+    "matched_pair_success_qualification": false,
+    "observed_same_base_load_reduction": true,
+    "hardware_or_material_slip_superiority_claimed": false,
+    "default_straight_action_replaced": false,
+    "physical_rerun_allowed_in_batch": false,
+    "new_physics_runs": 1,
+    "new_physics_steps": 4000,
+    "S3_cumulative_runs": 56,
+    "S3_cumulative_steps": 141061,
+    "conclusion": "only upper command coefficients changed; recorded acceleration/moment reductions support buffering within these model runs; one run failed the unchanged wheel-contact gate",
+    "next_scope": "review physical meaning and numerical sensitivity of the existing aggregate wheel-contact gate using existing evidence before further physical batches; do not retrospectively relabel failure"
+  }
+}

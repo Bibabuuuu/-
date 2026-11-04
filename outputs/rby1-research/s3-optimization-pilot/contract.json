@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-01",
+  "seeds": {
+    "low": [
+      1.0,
+      0.0,
+      1.0
+    ],
+    "right_column": [
+      1.0,
+      -10.0,
+      0.185546875
+    ]
+  },
+  "minimum_reference_clearance_m": {
+    "low": 0.04003519799290535,
+    "right_column": 0.006257608649436586
+  },
+  "clearance_role": "match the existing seed reference clearance; performance comparison, not measured safety margin",
+  "bounds": [
+    [
+      0.5,
+      1.0
+    ],
+    [
+      -10.0,
+      10.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "common_motion_window_s": 0.8998625445380035,
+  "observation_duration_s": 1.9,
+  "solver": {
+    "name": "SciPy SLSQP",
+    "version": "1.17.1",
+    "maxiter": 35,
+    "ftol": 1e-07,
+    "eps": 1e-05,
+    "maximum_unique_evaluations_per_scene": 180,
+    "maximum_wall_s_per_scene": 100.0
+  },
+  "objective": "integral of squared 3D object COM acceleration / common motion window; no stability aggregate",
+  "selection": "best feasible evaluated objective including initial seed, even when solver exits unsuccessfully; label status separately",
+  "reference_dt_s": 0.005,
+  "dense_selected_dt_s": 0.0005,
+  "physical_budget": {
+    "regression_runs": 2,
+    "optimized_runs_at_most": 2,
+    "conditional_halfdt_runs": 1,
+    "maximum_steps": 11400
+  },
+  "regression": [
+    "low held legacy default vs saved old low fast-held",
+    "right buffer external adapter vs saved right buffer"
+  ],
+  "changes": "external reference opt-in only; fixed equal wrench, wheel PI, model, grasp and scenes",
+  "not_implemented": [
+    "unrestricted SE3/joint trajectory optimization",
+    "force allocation optimization",
+    "online MPC",
+    "hardware qualification"
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_planar_stop.py": "2300c8531ed6a64846ece8045b292632c8488013ff54bd45df586c0339ffa718",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\whole_body_stop_reference.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_optimization_pilot.py": "7d02cfd7f3add440f861ef2b25dbeb17684fff14ee4b6434f98aa3208bedf34d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\joint_stop_candidates.py": "9863a089a201730e573757d16de3174039fd5d20bb8b54f66e746a6e45754470",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\initial_state.npz": "ac0bb9dc946932fa5fc0f8178bcf8448214671acaa0d963e5dcc8d58d87be6f8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\joint_path.npz": "ec927681ac3017c2f6d41371d97440635f4a7f77aa3a9ea88860bb31eb007f04",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\path_audit.json": "a342b859937bd541b65623bc434fb0b09909b02f748081a6173a444715be56be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\low\\scene.xml": "a71033157488f40cab899b15a313af5c43af070448366a860242a9072648c48b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\right_column\\scene.xml": "d8b42f8057ed8777289d7cef4d5c22a4a6338b241cf025d7045a43144eddb3bb"
+  },
+  "checker_revision": "Allow matching NaN masks for contact-unavailable samples, and reuse completed regression runs. No numerical data, optimizer settings, reference or control changes."
+}

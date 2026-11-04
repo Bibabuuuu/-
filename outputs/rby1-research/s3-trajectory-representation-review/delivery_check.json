@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "date": "2026-11-02",
+  "new_physics_runs": 0,
+  "new_trajectory_NLP_calls": 0,
+  "existing_static_IK_tasks": 18,
+  "static_IK_obstacle_intersections_retained": 2,
+  "source_files_unchanged": 164,
+  "frozen_checks": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_buffer.py": {
+      "expected": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "actual": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\grasp_observation.py": {
+      "expected": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "actual": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\state_stop_reference.py": {
+      "expected": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "actual": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_candidates.py": {
+      "expected": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "actual": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\motion_distribution.py": {
+      "expected": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "actual": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\buffer_reference.py": {
+      "expected": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "actual": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\payload_wrench.py": {
+      "expected": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "actual": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\load_sharing.py": {
+      "expected": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "actual": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\control_uncertainty.py": {
+      "expected": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "actual": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_profiles.py": {
+      "expected": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "actual": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\static_payload.py": {
+      "expected": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "actual": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\model\\research_model.xml": {
+      "expected": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "actual": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\payload_model\\payload_scene.xml": {
+      "expected": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "actual": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_payload.py": {
+      "expected": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "actual": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_allocation.py": {
+      "expected": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "actual": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "unchanged": true
+    }
+  },
+  "local_document_links": 119,
+  "literature_identifiers_checked": 2,
+  "plan_version": "0.16",
+  "S3_physics_runs": 27,
+  "S3_physics_steps": 56811,
+  "status": "representation/cost review completed; proposed core implementation and new batch await confirmation",
+  "counter_note": "preflight new_optimizer_calls means new trajectory NLP, not the old local IK QP invoked inside the 18 static probes",
+  "artifact_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trajectory-representation-review\\preflight.py": "8cc7c1439def5d544e3f1579ebf8ce4f6257b34cef9fe155de1f9b363c59cdbc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trajectory-representation-review\\preflight_contract.json": "57b26a9369350c30af71cd62cbcc346902e4ceb30a0daaf053387658cf4fa3b8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trajectory-representation-review\\preflight.json": "395dc454711477a8ffba4569ce14542842d1cf26eeb7020bd9081d3f79ef4388",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trajectory-representation-review\\source_0.json": "df5d23f07a79784420beedf1eba66029088aa7a60a9d299c77ad16e648a1ffad",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trajectory-representation-review\\source_1.json": "49408fb6da0b79e4ade8c395cc596c971b23e0ebcb613e89f088d5255cd3d0de",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trajectory-representation-review\\整段停止轨迹优化_方案与成本评审.md": "93bb442e68f653793ca22bc4d910dca4d7a6d6d219461df11808460c30974ed2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trajectory-representation-review\\check_delivery.py": "c75f0aae7411fc25390a8aa101196cb3e0d017db7689c28021e3ca98b5f3162b"
+  }
+}

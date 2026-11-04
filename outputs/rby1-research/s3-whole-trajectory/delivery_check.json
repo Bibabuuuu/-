@@ -1,0 +1,166 @@
+{
+  "passed": true,
+  "prior_source_files_unchanged": 161,
+  "frozen_checks": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_buffer.py": {
+      "expected": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "actual": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\grasp_observation.py": {
+      "expected": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "actual": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\state_stop_reference.py": {
+      "expected": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "actual": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_candidates.py": {
+      "expected": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "actual": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\motion_distribution.py": {
+      "expected": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "actual": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\buffer_reference.py": {
+      "expected": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "actual": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\payload_wrench.py": {
+      "expected": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "actual": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\load_sharing.py": {
+      "expected": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "actual": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\control_uncertainty.py": {
+      "expected": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "actual": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_profiles.py": {
+      "expected": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "actual": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\static_payload.py": {
+      "expected": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "actual": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\model\\research_model.xml": {
+      "expected": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "actual": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\payload_model\\payload_scene.xml": {
+      "expected": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "actual": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_payload.py": {
+      "expected": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "actual": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_allocation.py": {
+      "expected": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "actual": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "unchanged": true
+    }
+  },
+  "new_physics_runs": 4,
+  "new_physics_steps": 11400,
+  "searches": {
+    "rms": {
+      "evaluations": 2834,
+      "wall_s_including_final_audit": 83.97407380000368,
+      "solver": {
+        "success": false,
+        "status": 9,
+        "message": "Iteration limit reached",
+        "nit": 40,
+        "nfev": 2834
+      },
+      "selected_evaluation": 365,
+      "feasible_evaluations": 134
+    },
+    "moment": {
+      "evaluations": 2875,
+      "wall_s_including_final_audit": 89.06574959999853,
+      "solver": {
+        "success": false,
+        "status": 9,
+        "message": "Iteration limit reached",
+        "nit": 40,
+        "nfev": 2875
+      },
+      "selected_evaluation": 50,
+      "feasible_evaluations": 68
+    }
+  },
+  "matched_percentage_change": {
+    "1ms": {
+      "common_acceleration_rms_mps2": -11.58236331311362,
+      "peak_object_acceleration_mps2": -24.39494035908255,
+      "peak_TCP_contact_moment_Nm": -17.634394040822375,
+      "common_TCP_moment_rms_Nm": -11.801438690181133,
+      "peak_raw_relative_position_change_mm": 20.92261520245129,
+      "common_hold_relative_change_mm": 32.108378986461084,
+      "contact_tangent_travel_mm": -15.474823735438825
+    },
+    "_halfdt": {
+      "common_acceleration_rms_mps2": -11.574277709493074,
+      "peak_object_acceleration_mps2": -19.933241452991723,
+      "peak_TCP_contact_moment_Nm": -30.585168789199745,
+      "common_TCP_moment_rms_Nm": -12.095555781843592,
+      "peak_raw_relative_position_change_mm": 20.07702204774575,
+      "common_hold_relative_change_mm": 32.040119501104684,
+      "contact_tangent_travel_mm": -15.372351907336679
+    }
+  },
+  "new_source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\whole_stop_spline.py": "410c48590691c0094af8e9abc1561c00e9cea3b04e8c3f2c7731fb33d6c9bf97",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\check_whole_stop_entry.py": "55d552049e08287d021ee76d81932f1c7cea5c83d0fab8a71d2ff5ae0486e8ad",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_whole_stop_spline.py": "2c86ac956c2f7a9f0cb195ce64e6de1b3bb99fbeeb9922a5f5cc6cf86bc6358e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\check_whole_stop_selection.py": "fbace44cacaabc9029a97093b53e9479f230accd423328dd9a39fbf4d7d1a3ea",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\analyze_whole_stop_spline.py": "175123852c53b063a44683e51649b0e48e868c870795c06cf8346e860b615230",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\plot_whole_stop_spline.py": "3150442f3782f69861b69693df9ce612310538ec80846758968743442969715a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\verify_whole_stop_spline.py": "ff5ddc85d6d31054a0da633c21c03c9a3ba6911a64579b4597bcb6585a5d38cf"
+  },
+  "artifact_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\summary.json": "52f93040f354c7a4efc22822adb760c36d099555f5f99bf3bb4295638c81f3c7",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\contract.json": "00bd7ae5ba4ebe8b7b79a6b1cf7a07864500c76a6d7a5018db93810c60f12d4b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\entry_check.json": "10bb48713a5852185028048b2da1d30f0bdc661a129f3a97f1774ea1849c581b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\selection_check.json": "de8ad3295b5d4e4cec24c8d8f3e29dc9966baf77092dab38291db051080ec6f4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\observation_decomposition.json": "af8a497911db3822aee35d7c4f6d1a9e4916355e7445813b498e1b8ca3537ce2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\whole_trajectory_tradeoffs.png": "949e2a0be70ad88074387cf6c2d9bdfe24ee4b54b76771919bb26ea7da1f00f7"
+  },
+  "not_verified": [
+    "optimizer convergence or optimality",
+    "continuous collision safety",
+    "material slip",
+    "time-step convergence",
+    "cause of extra normal relative motion",
+    "hardware or real-time execution"
+  ],
+  "documentation_check": {
+    "local_links_checked": 140,
+    "missing": [],
+    "files_sha256": {
+      "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\PROJECT_PLAN.md": "aae97c1c4361332ec0a23a879b3d9c3a4cc1015c10a573a4f7ec26d360ddb95c",
+      "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\plans\\34-s3-mature-stop-baselines.md": "e39f7ba89daf3dbc5542146641599b9303191f51f8b412eb588eaac3cd5fce29",
+      "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\整段停止轨迹与实际抓持_结果说明.md": "82ccfe732839252a331e437f9b7e0872efcd6bf85163fdfefbb05ee376dba9ec"
+    },
+    "one_active_section": true
+  }
+}

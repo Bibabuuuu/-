@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-31",
+  "selected_papers": 8,
+  "exact_doi_matches": 8,
+  "ris_records": 8,
+  "all_ris_titles_dois_authors_match": true,
+  "initial_crossref_records": 28,
+  "arxiv_api_failures": 4,
+  "journal_preprint_versions_not_double_counted": true,
+  "all_report_relative_links_exist": true,
+  "reading_scope_caveats": [
+    "Liquid emergency stop: v1 method read, final journal PDF forbidden (403), no comparison of final methods.",
+    "Du: 2024 v1 method read, 2026 publication abstract/metadata verified.",
+    "Zhang: publisher abstract and introduction only."
+  ],
+  "new_physical_experiments": 0,
+  "new_controller_implementation": false,
+  "limits": "Directional review, no exhaustive novelty or performance proof. No citation-count claims or code execution.",
+  "sha256": {
+    "主线文献调查_停止规划与腰臂协同.md": "9ebfe0eb9796526978fb4344f14aeeb86875824c09cd7de63c22aa629f81478b",
+    "papers.json": "ad20165fb42835828ae68e72293f7d2473e91b4f9d22f7be2f9a5e702be34b59",
+    "search_log.json": "2ead2f7ebc057cda45160f133281fc5f1f25ccaecae1c38cc73c561706386471",
+    "主线相关论文.ris": "e2142ae58d5b90a57ebaf864316beb76d6049496a6fb4101090e4135d09e2320"
+  }
+}

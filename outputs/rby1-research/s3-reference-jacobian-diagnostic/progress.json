@@ -1,0 +1,13 @@
+{
+  "completed": 52,
+  "stats": {
+    "IK_calls": 2340,
+    "QP_calls": 4524,
+    "QP_internal_iterations": 9048,
+    "unique_targets": 2340,
+    "line_search_trials": 4524
+  },
+  "reference_qualified": 48,
+  "physically_admitted": 0,
+  "run_wall_s": 12.556642600000487
+}

@@ -1,0 +1,266 @@
+{
+  "date": "2026-11-01",
+  "paper_count": 9,
+  "papers": [
+    {
+      "title": "Jerk-limited Real-time Trajectory Generation with Arbitrary Target States",
+      "authors": [
+        "Lars Berscheid",
+        "Torsten Kroeger"
+      ],
+      "year": 2021,
+      "doi": "10.15607/rss.2021.xvii.015",
+      "journal": "Robotics: Science and Systems XVII",
+      "source": "crossref",
+      "abstract": "",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "publisher": "Robotics: Science and Systems Foundation",
+      "type": "proceedings-article",
+      "references_count": 0,
+      "url": "https://www.roboticsproceedings.org/rss17/p015.pdf",
+      "key": "berscheid2021",
+      "scope": "方法原文：PDF III/IV及作者接口说明；本轮另用已安装Ruckig核对1204组一维参考算术，未复现论文全部实验。",
+      "anchors": [
+        "PDF第2页III：初始/目标位置速度加速度及速度/加速度/jerk约束",
+        "IV：brake pre-trajectory与多自由度同步",
+        "作者README ControlInterface与输入验证"
+      ],
+      "method": "任意符合条件的初始/目标状态之间，生成受速度、加速度及jerk限制的多自由度时间最优轨迹；可用速度接口构造停车。",
+      "boundary": "通用运动学轨迹生成不自动处理物体/双臂/底盘给定制动之间的耦合；输入状态须可接受。社区版不等于含所有高级空间功能。",
+      "reuse": "优先作为成熟OTG强基线，接入任务包装后另查空间包络和IK。",
+      "code": {
+        "url": "https://github.com/pantor/ruckig",
+        "verified": "官方README接口信息为前阶段阅读记录；本项目已安装Ruckig 0.19.4，当前沿用速度接口并核对1204组一维停止参考。未使用Pro功能，未复现论文多自由度实验。"
+      },
+      "id": "G1",
+      "method_source": "https://www.roboticsproceedings.org/rss17/p015.pdf",
+      "read_scope": "RSS 2021作者论文，III/IV；沿用前次书目，本轮核查原文定义。",
+      "relevance_and_boundary": "给定完整运动状态及速度/加速度/jerk界的成熟OTG；不是物体/环境约束的完整求解器。"
+    },
+    {
+      "title": "Trajectory generation for immediate path-accurate jerk-limited stopping of industrial robots",
+      "authors": [
+        "Friedrich Lange",
+        "Michael Suppa"
+      ],
+      "year": 2015,
+      "doi": "10.1109/icra.2015.7139463",
+      "journal": "2015 IEEE International Conference on Robotics and Automation (ICRA)",
+      "source": "crossref",
+      "abstract": "",
+      "volume": "",
+      "issue": "",
+      "pages": "2021-2026",
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "references_count": 22,
+      "url": "https://elib.dlr.de/96525/2/stop_ICRA15_header.pdf",
+      "key": "lange2015",
+      "scope": "6页作者PDF，重点摘要、II/III/IV与结论；机构书目。",
+      "anchors": [
+        "II：每周期由当前状态重新生成受限停车",
+        "III Arc Length Interpolation：q(s)而非独立缩放各坐标",
+        "IV/Conclusion：KUKA路径保持实验"
+      ],
+      "method": "预警触发后利用弧长插值保持给定几何路径，直接检查加速度/jerk限制并处理零速附近反弹。",
+      "boundary": "关注给定路径上的受控停车；不据此推断物体接触稳定或给定底盘制动下的双臂相对运动已解决。文中与其使用的emergency-stop术语有所区分。",
+      "reuse": "已有正常路径必须保持时的基线/思路；当前仅直线场景可先简化。",
+      "code": {
+        "verified": "作者全文和视频入口已见；未核实可直接运行源码。"
+      },
+      "id": "G2",
+      "method_source": "https://elib.dlr.de/96525/2/stop_ICRA15_header.pdf",
+      "read_scope": "DLR作者稿，II/III/IV及术语；非最终排版全文比对。",
+      "relevance_and_boundary": "曲线路径保持的受控停车已有研究；停得平滑或保持原路径均不能独立视为创新。"
+    },
+    {
+      "title": "Model-Predictive Spill-Free Emergency Stopping for Liquid-Manipulating Robots",
+      "authors": [
+        "Samuli Hynninen",
+        "Ville Kyrki"
+      ],
+      "year": 2026,
+      "doi": "10.1109/lra.2026.3734909",
+      "journal": "IEEE Robotics and Automation Letters",
+      "source": "crossref",
+      "citation_count": 0,
+      "abstract": "",
+      "volume": "11",
+      "issue": "11",
+      "pages": "12751-12758",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "references_count": 35,
+      "url": "https://doi.org/10.1109/lra.2026.3734909",
+      "id": "G3",
+      "method_source": "https://arxiv.org/html/2604.16667v1",
+      "read_scope": "预印本v1的III/IV/VI；最终版元数据核对，Aalto最终PDF访问403。",
+      "relevance_and_boundary": "液体急停QP/MPC和软防溢出约束已做；自由方向/空间局限仅确认于v1，最终版边界未知。"
+    },
+    {
+      "title": "Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator",
+      "authors": [
+        "Adam Heins",
+        "Angela P. Schoellig"
+      ],
+      "year": 2023,
+      "doi": "10.1109/lra.2023.3324520",
+      "journal": "IEEE Robotics and Automation Letters",
+      "source": "crossref",
+      "citation_count": 40,
+      "abstract": "",
+      "volume": "8",
+      "issue": "12",
+      "pages": "7986-7993",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "references_count": 26,
+      "url": "https://doi.org/10.1109/lra.2023.3324520",
+      "id": "G4",
+      "method_source": "https://arxiv.org/html/2305.17484v2",
+      "read_scope": "作者预印本v2，模型及VIII-B突然障碍实验；非最终排版逐页比对。",
+      "relevance_and_boundary": "稳定运输并应对突然出现的障碍已有实机实验；底盘与臂共同优化，不等于不能适配给定底盘制动。"
+    },
+    {
+      "title": "Efficient Whole‐Body Model Predictive Control for Online Compliant Dual‐Arm Mobile Manipulation",
+      "authors": [
+        "Wenqian Du",
+        "Ran Long",
+        "João Moura",
+        "Jiayi Wang",
+        "Saeid Samadi",
+        "Sethu Vijayakumar"
+      ],
+      "year": 2026,
+      "doi": "10.1002/rob.70320",
+      "journal": "Journal of Field Robotics",
+      "source": "crossref",
+      "citation_count": 0,
+      "abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:p>Dual‐arm mobile manipulators can transport and manipulate large objects with simple end‐effectors. Interacting with dynamic environments subject to strict safety and compliance requirements, achieving whole‐body motion planning online while meeting various hard constraints for highly redundant mobile manipulators poses a significant challenge. We tackle this challenge by presenting an efficient whole‐body motion‐planning approach based on model‐based predictive control (MPC). We construct a hierarchical MPC framework in which the first MPC optimizes the end‐effectors' collision‐free motion, thereby guiding the second MPC to optimize whole‐body joint trajectories. In the first stage, we employ a Bézier‐curve representation to parameterize the high‐degree‐of‐freedom (high‐DOF) motion in  of two collaborating end‐effectors, notably introducing a novel and efficient method to optimize quaternion trajectories. This facilitates fast long‐horizon motion planning of coupled translational and rotational trajectories while accounting for approximated feasibility constraints. In the second stage, this is the first work to novelly incorporate the representation into a whole‐body MPC for online high‐DOF motion generation with predictive admittance control over a relatively short horizon while satisfying whole‐body hard constraints. Compared with the usage of a discretization approach, our whole‐body MPC ensures accurate model‐state transitions with faster, more stable computation speeds, and consistent motion command generation which enhances tracking performance for our hybrid position/velocity‐controlled robot. Both MPCs perform replanning in each control loop to adapt to a changing environment. Simulations and real‐world experiments validate the proposed hierarchical MPC framework, demonstrating that its two novel MPCs achieve efficient and robust performance in scenarios involving static and dynamic obstacle avoidance, compliant interaction with manipulated objects, and external disturbances.</jats:p>",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "publisher": "Wiley",
+      "type": "journal-article",
+      "references_count": 58,
+      "url": "https://doi.org/10.1002/rob.70320",
+      "id": "G5",
+      "method_source": "https://arxiv.org/html/2410.22910v1",
+      "read_scope": "2024预印本v1的III-D式25/26、IV-E，2026期刊Crossref摘要；最终正文未比对。",
+      "relevance_and_boundary": "双臂移动的预测导纳、运动重规划与动态避障已有前作；v1几何近似不能当作最终版完整包络结论。"
+    },
+    {
+      "title": "Whole-Body Model Predictive Control for Mobile Manipulation With Task Priority Transition",
+      "authors": [
+        "Yushi Wang",
+        "Ruoqu Chen",
+        "Mingguo Zhao"
+      ],
+      "year": 2025,
+      "doi": "10.1109/icra55743.2025.11127515",
+      "journal": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+      "source": "crossref",
+      "citation_count": 3,
+      "abstract": "",
+      "volume": "",
+      "issue": "",
+      "pages": "13356-13362",
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "references_count": 30,
+      "url": "https://doi.org/10.1109/icra55743.2025.11127515",
+      "id": "G6",
+      "method_source": "https://wbmpc.github.io/static/pdfs/paper.pdf",
+      "read_scope": "作者PDF的III-B/E/F与实验；Crossref标题/DOI已核。",
+      "relevance_and_boundary": "任务优先级切换、全身MPC和高低频分层已有研究；本论文实验不等于已证明负载友好急停。"
+    },
+    {
+      "id": "G7",
+      "title": "Humanoid Safe Stop via Learned Stoppability Value",
+      "authors": [
+        "Junfeng Long",
+        "Pieter Abbeel",
+        "Koushil Sreenath",
+        "Roberto Horowitz",
+        "Guanya Shi",
+        "C. Karen Liu"
+      ],
+      "year": 2026,
+      "doi": "10.48550/arXiv.2609.02358",
+      "journal": "arXiv preprint",
+      "source": "arXiv primary abstract and HTML",
+      "url": "https://arxiv.org/abs/2609.02358",
+      "method_source": "https://arxiv.org/html/2609.02358v1",
+      "read_scope": "v1第3/4/6节，预印本，未视为同行评审最终论文。",
+      "relevance_and_boundary": "将怎么停止与能否停止分开判别已有前作；目标为人形站停/防摔，未据此展示轮式双臂负载急停。"
+    },
+    {
+      "title": "Towards mobile manipulator safety standards",
+      "authors": [
+        "Jeremy Marvel",
+        "Roger Bostelman"
+      ],
+      "year": 2013,
+      "doi": "10.1109/rose.2013.6698414",
+      "journal": "2013 IEEE International Symposium on Robotic and Sensors Environments (ROSE)",
+      "source": "crossref",
+      "citation_count": 17,
+      "abstract": "",
+      "volume": "",
+      "issue": "",
+      "pages": "31-36",
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "references_count": 33,
+      "url": "https://doi.org/10.1109/rose.2013.6698414",
+      "id": "G8",
+      "method_source": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=913947",
+      "read_scope": "NIST作者存档稿第4页A-C；仅用作历史工程动机，不解释现行标准。",
+      "relevance_and_boundary": "臂、载荷、底盘的停止行为与几何耦合是真实工程问题；历史标准缺口不是当前法规判断。"
+    },
+    {
+      "title": "Safeguarding a mobile manipulator using dynamic safety fields",
+      "authors": [
+        "Vito Magnanimo",
+        "Steffen Walther",
+        "Luigi Tecchia",
+        "Ciro Natale",
+        "Tim Guhl"
+      ],
+      "year": 2016,
+      "doi": "10.1109/iros.2016.7759460",
+      "journal": "2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "source": "crossref",
+      "citation_count": 8,
+      "abstract": "",
+      "volume": "",
+      "issue": "",
+      "pages": "2972-2977",
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "references_count": 17,
+      "url": "https://doi.org/10.1109/iros.2016.7759460",
+      "id": "G9",
+      "method_source": "https://www.researchgate.net/publication/312431159_Safeguarding_a_mobile_manipulator_using_dynamic_safety_fields",
+      "read_scope": "作者上传全文中的III/IV，与Crossref DOI/题名核对；未核最终排版PDF。",
+      "relevance_and_boundary": "用底盘速度、机械臂位置和激光环境动态更新保护区域已有研究，不能把考虑臂包络本身当作新意。"
+    }
+  ],
+  "technical_sources": [
+    {
+      "id": "T1",
+      "title": "TRON 2 User Manual",
+      "url": "https://www.limxdynamics.com/en/documents/852949782845591552",
+      "anchor": "4.4 / body components Emergency Stop Button",
+      "role": "官方手册示例说明有的硬件急停会切断所有电机驱动；不推断未定平台或RB-Y1也如此。"
+    }
+  ],
+  "metadata_warnings": [
+    "NIST的一次候选DOI解析到不同文章，已剔除并按题名改为10.1109/ROSE.2013.6698414，原始响应保留。",
+    "Wang等作者稿第二作者拼写及发现页页码与书目来源有差异；条目保留Crossref，方法依据作者稿，不猜测修改。",
+    "G3和G5预印本的边界未自动外推到最终期刊版；期刊元数据或摘要不等于已读最终全文。"
+  ],
+  "search_qualification": "Targeted follow-up and prior-work reuse, not a systematic review or novelty guarantee. Broad search results, reference follow-ups and primary-source reading are separate."
+}

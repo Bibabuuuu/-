@@ -1,0 +1,21 @@
+{
+  "status": "Explicit simulation task assumptions; not hardware calibration",
+  "mass_kg": 0.5,
+  "friction": 0.8,
+  "payload_origin_m": [0.46, 0.0, 0.85],
+  "handle_y_m": 0.16,
+  "ee_height_above_grip_m": 0.1,
+  "component_boxes": [
+    {"name":"beam", "half_size_m":[0.06,0.22,0.015], "center_m":[0.0,0.0,-0.075], "mass_fraction":0.8},
+    {"name":"left_handle", "half_size_m":[0.025,0.015,0.04], "center_m":[0.0,0.16,-0.02], "mass_fraction":0.1},
+    {"name":"right_handle", "half_size_m":[0.025,0.015,0.04], "center_m":[0.0,-0.16,-0.02], "mass_fraction":0.1}
+  ],
+  "finger_pad_half_size_m": [0.003,0.012,0.018],
+  "finger_pad_local_center_m": [0.0,0.0,-0.025],
+  "initial_finger_opening_m": 0.01499,
+  "grip_force_limit_per_finger_N": 5.0,
+  "grip_velocity_reference_mps": 0.035,
+  "contact_solref": [0.008,1.0],
+  "friction_impedance_ratio": 10.0,
+  "note": "Pads approximate compliant finger surfaces. No payload welds; free payload with analytic compound-box inertia. Normal of pads faces along robot lateral y, so longitudinal braking loads tangential friction. No pickup planning."
+}

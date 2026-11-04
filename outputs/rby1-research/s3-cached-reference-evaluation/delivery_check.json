@@ -1,0 +1,103 @@
+{
+  "evidence_verified": true,
+  "two_cached_complete_evaluations_qualified": true,
+  "checks": [
+    {
+      "case": 0,
+      "archive_max_errors": {
+        "q": 0.0,
+        "v": 0.0,
+        "a": 0.0,
+        "base_p": 0.0,
+        "base_yaw": 0.0,
+        "base_v": 0.0,
+        "base_a": 0.0,
+        "base_w": 0.0,
+        "base_alpha": 0.0,
+        "object_p": 0.0,
+        "object_v": 0.0,
+        "object_a": 0.0,
+        "object_R": 0.0,
+        "object_w": 0.0,
+        "object_alpha": 0.0
+      },
+      "original_4860_vector_max_error": 0.0,
+      "cold_zero_constraint_error": 2.375877272697835e-14,
+      "independent_objective_error": 0.0,
+      "max_target_scaled": 7.53801373062357e-10,
+      "max_COM_acceleration_error": 1.8512968935624485e-14,
+      "native_geometry": [
+        {
+          "index": 0,
+          "gap_m": 0.10003086230912508,
+          "geometry_count": 508
+        },
+        {
+          "index": 44,
+          "gap_m": 0.007495235916372162,
+          "geometry_count": 508
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "archive_max_errors": {
+        "q": 0.0,
+        "v": 0.0,
+        "a": 0.0,
+        "base_p": 0.0,
+        "base_yaw": 0.0,
+        "base_v": 0.0,
+        "base_a": 0.0,
+        "base_w": 0.0,
+        "base_alpha": 0.0,
+        "object_p": 0.0,
+        "object_v": 0.0,
+        "object_a": 0.0,
+        "object_R": 0.0,
+        "object_w": 0.0,
+        "object_alpha": 0.0
+      },
+      "original_4860_vector_max_error": 0.0,
+      "cold_zero_constraint_error": null,
+      "independent_objective_error": 0.0,
+      "max_target_scaled": 7.614932238078912e-10,
+      "max_COM_acceleration_error": 1.648334246873162e-14,
+      "native_geometry": [
+        {
+          "index": 0,
+          "gap_m": 0.10003086230912508,
+          "geometry_count": 508
+        },
+        {
+          "index": 44,
+          "gap_m": 0.007494449149855514,
+          "geometry_count": 508
+        }
+      ]
+    }
+  ],
+  "candidate_outputs_are_distinct": true,
+  "zero_snapshot_matches_saved_data": true,
+  "cache_isolation_record_verified": true,
+  "IK_calls_in_verification": 0,
+  "QP_calls_in_verification": 0,
+  "new_numerical_constraint_Jacobians": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\verify_cached_evaluation.py": "445f2b10089ffd5c076ef82f773020c6ad99c4d71c6401ac6a6356b534ada25b",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\cached_evaluation.py": "670d5aa25dbb917bb3b993ee6580942663a870a71e6c1c56128f68f69949349a",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\contract.json": "598c3cb9835748d0441a4c720e5420496f9671a86b133ed8e51caf0bac934298",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\result.json": "3c03ae4d09a93f7e3680cd320a1e4bc5a4de7897d580bf6b3543a8e2e87eeec0",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\case_0.npz": "8e1709c1843009c674594dd638932349e4a28226d2363f4221093e515eec7428",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\case_1.npz": "5f3ac2f7dc0ae36dc153a9a8d0278afc56cb5d3d3cf44aeb59164727dfae4f8c"
+  },
+  "limitations": [
+    "Two prior qualified references, not arbitrary candidates or a 50D derivative audit.",
+    "Private-data checks do not establish thread safety or online behavior.",
+    "Mapping and geometry checked at 45 nodes, not interval-wide or lifted Gauss nodes.",
+    "No actual initial-state handoff, physical grasp improvement or optimizer convergence verified."
+  ]
+}

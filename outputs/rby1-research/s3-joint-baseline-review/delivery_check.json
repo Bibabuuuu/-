@@ -1,0 +1,47 @@
+{
+  "review_complete": true,
+  "proposal_implemented": false,
+  "new_trajectory_optimization_solves": 0,
+  "new_IK_solves": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "pose_callbacks": 44,
+  "cumulative_physics_runs": 52,
+  "cumulative_physics_steps": 125061,
+  "old_failed_admission_unchanged": true,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-baseline-review\\联合强基线与双手相容性表示_评审.md": "db6d8c6fd6fb93ce93a19cd41c94d129e6300fe607f4aa6527a9e1e6f1083a25",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-baseline-review\\representation_probe.json": "75c64c6b92d9b0c3d1d91386c863579835eb54b1b0c1c6286cd9ac3462a95065",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\joint_baseline_probe.py": "ba2bdf3e12a8c0a29bc596c43eb389730fa9af0a62850c92e1ec3df012be5eb7",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\whole_body_stop_reference.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\motion_distribution.py": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\execution\\selected\\admission.json": "3e1dba4deb0dd01a90b767cedbd22115845c602df5840a1140c860a6ca5cce76"
+  },
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/html/2410.22910v1",
+      "version": "v1",
+      "scope": "task/whole-body layers, terminal constraints, implementation"
+    },
+    {
+      "url": "https://arxiv.org/html/2305.17484v2",
+      "version": "v2",
+      "scope": "joint-space MPC and nonholonomic extension"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.16667",
+      "scope": "author abstract and bibliographic scope"
+    },
+    {
+      "url": "https://github.com/adamheins/uplite",
+      "scope": "README only, current online branch not commit-pinned"
+    }
+  ],
+  "not_verified": [
+    "new reference representation implementation",
+    "IK branch or derivative qualification",
+    "full joint optimization convergence",
+    "hardware significance of zero wheel-contact samples",
+    "novelty or whole-system superiority"
+  ]
+}

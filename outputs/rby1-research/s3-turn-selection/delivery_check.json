@@ -1,0 +1,110 @@
+{
+  "records_consistent": true,
+  "independent_geometry_checks": [
+    {
+      "scene": "right_column",
+      "kind": "reference",
+      "index": 0,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "kind": "reference",
+      "index": 97,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "kind": "reference",
+      "index": 120,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "kind": "actual",
+      "index": 0,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "kind": "actual",
+      "index": 349,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "kind": "actual",
+      "index": 350,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "kind": "actual",
+      "index": 393,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "kind": "actual",
+      "index": 1600,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "left_column",
+      "kind": "reference",
+      "index": 0,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "left_column",
+      "kind": "reference",
+      "index": 97,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "left_column",
+      "kind": "reference",
+      "index": 120,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "left_column",
+      "kind": "actual",
+      "index": 0,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "left_column",
+      "kind": "actual",
+      "index": 352,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "left_column",
+      "kind": "actual",
+      "index": 353,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "left_column",
+      "kind": "actual",
+      "index": 397,
+      "distance_error_m": 0.0
+    },
+    {
+      "scene": "left_column",
+      "kind": "actual",
+      "index": 1600,
+      "distance_error_m": 0.0
+    }
+  ],
+  "independent_full_geometry_queries": 10668,
+  "control_loop_unchanged": true,
+  "default_and_explicit_default_references_bitwise_equal": true,
+  "scenes_frozen_before_search": true,
+  "all_candidates_preserved": true,
+  "frozen_count": 15,
+  "audit_new_physics_steps": 0,
+  "physical_admission_count": 0,
+  "note": "record/audit consistency is separate from execution success"
+}

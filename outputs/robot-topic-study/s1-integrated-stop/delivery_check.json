@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-01",
+  "physics_runs": 0,
+  "source_frozen_count": 15,
+  "source_frozen_all_unchanged": true,
+  "doi_unique_count": 9,
+  "paper_count": 9,
+  "matrix_rows": 9,
+  "ris_records": 9,
+  "all_priority_records_not_reproduced": true,
+  "search_raw_record_count": 24,
+  "markdown_local_links_missing": [],
+  "source_checks": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_buffer.py": {
+      "expected": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "actual": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\grasp_observation.py": {
+      "expected": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "actual": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\state_stop_reference.py": {
+      "expected": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "actual": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_candidates.py": {
+      "expected": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "actual": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\motion_distribution.py": {
+      "expected": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "actual": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\buffer_reference.py": {
+      "expected": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "actual": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\payload_wrench.py": {
+      "expected": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "actual": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\load_sharing.py": {
+      "expected": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "actual": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\control_uncertainty.py": {
+      "expected": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "actual": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_profiles.py": {
+      "expected": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "actual": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\static_payload.py": {
+      "expected": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "actual": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\model\\research_model.xml": {
+      "expected": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "actual": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\payload_model\\payload_scene.xml": {
+      "expected": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "actual": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_payload.py": {
+      "expected": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "actual": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_allocation.py": {
+      "expected": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "actual": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "unchanged": true
+    }
+  },
+  "scope": "document consistency and frozen source integrity only; no new physics or performance validation"
+}

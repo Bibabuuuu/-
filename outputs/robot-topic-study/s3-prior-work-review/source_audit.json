@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-01",
+  "status": "literature_and_static_code_review_only",
+  "primary_sources": [
+    {
+      "id": "R1",
+      "url": "https://arxiv.org/html/2305.17484v2",
+      "anchors": [
+        "III-A",
+        "VI Eq9",
+        "VIII-B",
+        "Appendix A",
+        "Appendix C"
+      ],
+      "read": "targeted methods; not reproduction"
+    },
+    {
+      "id": "R2-preprint",
+      "url": "https://arxiv.org/html/2410.22910v1",
+      "anchors": [
+        "III-A",
+        "III-C Eq13",
+        "III-D Eq19 and following approximation",
+        "III-D Eq25/26",
+        "IV"
+      ],
+      "read": "targeted methods"
+    },
+    {
+      "id": "R2-journal",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70320",
+      "read": "abstract and bibliographic record; full entry redirected to abs",
+      "article_number": "e70320",
+      "version_of_record_online": "2026-08-17"
+    },
+    {
+      "id": "R3",
+      "url": "https://arxiv.org/html/2604.16667v1",
+      "anchors": [
+        "II-A",
+        "III-A"
+      ],
+      "read": "problem-scope check; journal title differs from preprint"
+    },
+    {
+      "id": "R4",
+      "url": "https://arxiv.org/abs/2411.07079v3",
+      "read": "abstract and version record"
+    },
+    {
+      "id": "R5",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22464",
+      "read": "abstract and bibliographic record",
+      "first_online": "2024-11-08",
+      "issue_year": 2025
+    }
+  ],
+  "code_sources": [
+    {
+      "url": "https://github.com/learnsyslab/upright/blob/main/README.md",
+      "read": "installation and repository scope"
+    },
+    {
+      "url": "https://github.com/learnsyslab/upright/blob/main/upright_control/src/controller_interface.cpp",
+      "read": "targeted registration and interface blocks",
+      "anchors": [
+        "ControllerInterface",
+        "problem_.inequalityConstraintPtr obstacle_avoidance",
+        "problem_.finalEqualityConstraintPtr stationary_desired_position_constraint",
+        "get_object_dynamics_constraint",
+        "get_contact_force_constraint"
+      ],
+      "limits": "registration inspected; downstream terminal residual implementation not fully inspected"
+    },
+    {
+      "url": "https://github.com/adamheins/uplite",
+      "read": "README scope and dependencies"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/adamheins/uplite/main/uplite/planner.py",
+      "read": "targeted model/OCP and replanning interface",
+      "anchors": [
+        "_waiter_model",
+        "_waiter_ocp initial state and terminal constraint",
+        "Planner.replan"
+      ]
+    }
+  ],
+  "upstream_version": {
+    "branch": "main",
+    "commit_sha": null,
+    "pinned": false,
+    "executed": false,
+    "warning": "current code may differ from paper experimental version"
+  },
+  "local_interface_evidence": [
+    {
+      "path": "simulation/rby1/qualify_planar_stop.py",
+      "lines": [
+        100,
+        132,
+        137,
+        241,
+        257,
+        260
+      ],
+      "topic": "reference construction, upper reference and orientation/load contract"
+    },
+    {
+      "path": "simulation/rby1/planar_upper_buffer.py",
+      "symbol": "PlanarUpperBuffer",
+      "topic": "one-dimensional relative motion"
+    },
+    {
+      "path": "simulation/rby1/payload_wrench.py",
+      "symbol": "split_wrench",
+      "topic": "symmetric resultant allocation"
+    },
+    {
+      "path": "simulation/rby1/joint_stop_candidates.py",
+      "symbol": "plan",
+      "topic": "finite candidate family and saved reference screening"
+    }
+  ],
+  "limitations": [
+    "Not a systematic search; 12 connector records do not establish absence of prior work.",
+    "R2 journal methods and R5 full methods were not accessible through full links; redirects went to abstract.",
+    "No author code located for R2 in targeted retrieval; no claim that it does not exist.",
+    "GitHub API tree and several raw/header endpoints failed with cache/access errors; blob controller page was accessible.",
+    "Local urllib access produced WinError 10013; web browsing was used instead. No escalation or new dependency installation.",
+    "No upstream commit was resolved; findings are dated branch observations.",
+    "No new physics, controller, model or algorithm implementation in this review."
+  ],
+  "environment": {
+    "python": "work/robot-model-audit/.venv/Scripts/python.exe",
+    "module_discovery": {
+      "scipy": false,
+      "casadi": false,
+      "pinocchio": false,
+      "acados_template": false
+    },
+    "scope": "active simulation venv only; other interpreters not checked"
+  },
+  "scope_counts": {
+    "new_physics_runs": 0,
+    "S3_runs_retained": 23,
+    "S3_steps_retained": 47311
+  },
+  "next_proposal_status": "pending_confirmation",
+  "skill": "C:/Users/14737/.codex/skills/nature-skills-main/skills/nature-academic-search/SKILL.md"
+}

@@ -1,0 +1,121 @@
+TY  - CONF
+AU  - Berscheid, Lars
+AU  - Kroeger, Torsten
+TI  - Jerk-limited Real-time Trajectory Generation with Arbitrary Target States
+T2  - Robotics: Science and Systems XVII
+PY  - 2021
+DO  - 10.15607/rss.2021.xvii.015
+UR  - https://doi.org/10.15607/rss.2021.xvii.015
+N1  - 方法原文：PDF III Problem Definition、IV Algorithm，及作者仓库输入/停车接口说明。未运行。
+ER  - 
+
+TY  - CONF
+AU  - Lange, Friedrich
+AU  - Suppa, Michael
+TI  - Trajectory generation for immediate path-accurate jerk-limited stopping of industrial robots
+T2  - 2015 IEEE International Conference on Robotics and Automation (ICRA)
+PY  - 2015
+SP  - 2021
+EP  - 2026
+DO  - 10.1109/icra.2015.7139463
+UR  - https://doi.org/10.1109/icra.2015.7139463
+N1  - 6页作者PDF，重点摘要、II/III/IV与结论；机构书目。
+ER  - 
+
+TY  - JOUR
+AU  - Hamad, Mazin
+AU  - Gutierrez-Moreno, Jesus
+AU  - Kussaba, Hugo T.M.
+AU  - Mansfeld, Nico
+AU  - Abdolshah, Saeed
+AU  - Swikir, Abdalla
+AU  - Burgard, Wolfram
+AU  - Haddadin, Sami
+TI  - Fast yet predictable braking manoeuvers for real-time robot control
+JO  - IFAC-PapersOnLine
+PY  - 2023
+VL  - 56
+IS  - 2
+SP  - 9984
+EP  - 9991
+DO  - 10.1016/j.ifacol.2023.10.711
+UR  - https://doi.org/10.1016/j.ifacol.2023.10.711
+N1  - 预印本v1模型假设、模态制动设计及仿真范围；Crossref期刊元数据。
+ER  - 
+
+TY  - JOUR
+AU  - Hynninen, Samuli
+AU  - Kyrki, Ville
+TI  - Model-Predictive Spill-Free Emergency Stopping for Liquid-Manipulating Robots
+JO  - IEEE Robotics and Automation Letters
+PY  - 2026
+VL  - 11
+IS  - 11
+SP  - 12751
+EP  - 12758
+DO  - 10.1109/lra.2026.3734909
+UR  - https://doi.org/10.1109/lra.2026.3734909
+N1  - 预印本v1 IV Methodology、V Experiments和VI Conclusion；期刊书目/机构摘要核对。最终PDF链接可见但访问403，不能把v1局限当期刊最终版已确认局限。
+ER  - 
+
+TY  - JOUR
+AU  - Heins, Adam
+AU  - Schoellig, Angela P.
+TI  - Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator
+JO  - IEEE Robotics and Automation Letters
+PY  - 2023
+VL  - 8
+IS  - 12
+SP  - 7986
+EP  - 7993
+DO  - 10.1109/lra.2023.3324520
+UR  - https://doi.org/10.1109/lra.2023.3324520
+N1  - v2 III–VI、动态障碍实验及附录低层控制；期刊元数据和作者仓库。
+ER  - 
+
+TY  - JOUR
+AU  - Heins, Adam
+AU  - Schoellig, Angela P.
+TI  - Robust Nonprehensile Object Transportation With Uncertain Inertial Parameters
+JO  - IEEE Robotics and Automation Letters
+PY  - 2025
+VL  - 10
+IS  - 5
+SP  - 4492
+EP  - 4499
+DO  - 10.1109/lra.2025.3551067
+UR  - https://doi.org/10.1109/lra.2025.3551067
+N1  - v3 V接触扳手/不确定性、VI离线规划及VII验证说明；期刊元数据。
+ER  - 
+
+TY  - JOUR
+AU  - Du, Wenqian
+AU  - Long, Ran
+AU  - Moura, João
+AU  - Wang, Jiayi
+AU  - Samadi, Saeid
+AU  - Vijayakumar, Sethu
+TI  - Efficient Whole‐Body Model Predictive Control for Online Compliant Dual‐Arm Mobile Manipulation
+JO  - Journal of Field Robotics
+PY  - 2026
+DO  - 10.1002/rob.70320
+UR  - https://doi.org/10.1002/rob.70320
+N1  - 2024预印本v1 III框架/参数化/预测导纳与IV相关实验；2026期刊仅元数据及出版社摘要，未比对最终方法全文。
+ER  - 
+
+TY  - CONF
+AU  - Zhang, Silong
+AU  - Qiu, Quecheng
+AU  - Ni, Yingtai
+AU  - Shao, Yuecheng
+AU  - Feng, Ziyang
+AU  - Ji, Jianmin
+TI  - Hierarchical Framework for Constrained Dual-Arm Cooperative Manipulation with Whole-Body Collision Avoidance
+T2  - 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+PY  - 2025
+SP  - 5131
+EP  - 5138
+DO  - 10.1109/iros60139.2025.11247571
+UR  - https://doi.org/10.1109/iros60139.2025.11247571
+N1  - Crossref元数据、出版社摘要和引言；未取得完整方法正文。
+ER  -

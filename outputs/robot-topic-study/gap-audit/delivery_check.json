@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-01",
+  "investigation_status": "complete",
+  "new_controller_or_geometry_implementation": false,
+  "academic_novelty": "not established",
+  "paper_count": 9,
+  "ris_unique_doi_count": 9,
+  "coverage_rows": 9,
+  "distance_curve_rows": 602,
+  "numeric_probes": 8,
+  "reference_checks": 1204,
+  "duration_max_error_s": 2.220446049250313e-16,
+  "distance_max_error_m": 8.326672684688674e-17,
+  "new_physical_runs": 0,
+  "stage24_summary_unchanged": true,
+  "stage24_source_hashes_unchanged": {
+    "simulation/rby1/run_buffer.py": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+    "simulation/rby1/grasp_observation.py": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+    "simulation/rby1/state_stop_reference.py": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+    "simulation/rby1/stop_candidates.py": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+    "simulation/rby1/motion_distribution.py": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+    "simulation/rby1/buffer_reference.py": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+    "simulation/rby1/payload_wrench.py": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+    "simulation/rby1/load_sharing.py": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+    "simulation/rby1/control_uncertainty.py": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+    "simulation/rby1/stop_profiles.py": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+    "simulation/rby1/static_payload.py": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+    "outputs/rby1-research/model/research_model.xml": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+    "outputs/rby1-research/payload_model/payload_scene.xml": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+    "simulation/rby1/run_payload.py": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906"
+  },
+  "stage24_clearances_all_none": true,
+  "worldbody_top_level": {
+    "bodies": [
+      "base",
+      "payload"
+    ],
+    "geometries": [
+      "floor"
+    ]
+  },
+  "all_report_local_links_exist": true,
+  "source_arithmetic_sha256": "4ac7fc59f7cfe3a5960aa2052330c1ed6c984f056f579a1ed3205739bee3b0b0",
+  "artifact_sha256": {
+    "coarse_vs_continuous.csv": "75f542fb6e867496e1d0eb77f35a5c8e48389687069905da0a0dd024ce31db52",
+    "coverage_matrix.csv": "77f3812af91445fd2ec9bc816079bd41c8c3cd3c9961e50aff57c6b55d7c25c3",
+    "distance_audit.json": "4e9aad4424e4573e7b5f07d13bad5f8814ef248739cfc02679fd94a0d7c82a63",
+    "implementation_and_access_audit.json": "8c0ff10f82302a86c41bdcb424072d83e48ad3094e4bfe218c151946ed52789d",
+    "metadata_verification_raw.json": "33bf805094942b02aab05679e6c1fbac24bb53019403ce6e8becbc33053f1bde",
+    "papers.json": "f3eb1d446dc624c02e3235212538e619a556efcbd381df8605a245761729946b",
+    "reference_distance_curve.csv": "c3410c08a05f1cd80c66a247a0e3fd349525f2273f240177ff28fabb0ab5fd29",
+    "search_log.json": "69975e63dcca6d95d5488e909576f08a13a5da4db34173b454716e904ee4fe14",
+    "急停研究缺口相关文献.ris": "01782bdeb652c8845862052c493755a6d8a6ba1548edc4cb25490eb46773cdcc",
+    "研究缺口核查与最小验证草案.md": "bffa2675fdc7a408e84999395e24b8467e2a9b211db3acdb70f701286e517925"
+  },
+  "known_limits": [
+    "G3 final PDF unavailable (403); methods use v1.",
+    "G5 final article body not compared against v1.",
+    "G6 author spelling/page discrepancy retained.",
+    "Existing full-body predictive baselines not reproduced.",
+    "No actual obstacle scenario or alternative feasible path validated."
+  ],
+  "export_directory": "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\2026-11-01_急停研究缺口核查",
+  "export_copies_identical": true
+}

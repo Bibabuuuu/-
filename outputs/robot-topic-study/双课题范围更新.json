@@ -1,0 +1,1478 @@
+{
+  "date": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "confirmed_constraints": [
+    "两人各自形成独立论文问题",
+    "目标客体一致，研究内容不同",
+    "平台尚未确定，先仿真"
+  ],
+  "recommended_pair": null,
+  "pair_status": "用户明确要求暂不推进第二方向；当前仅聚焦A：急刹或短距离制动下的持物稳定。两篇论文的最终分工暂不讨论",
+  "active_focus": {
+    "user_instruction": "第二个方向先不管，聚焦急停搬运稳定；用户澄清水只是例子，希望考察重载、多种搬运物体及腰部自由度，不能把已有液体论文视为问题已被完全解决",
+    "confirmed": "单台轮式底盘、升降柱、双臂平台；平台未定，先仿真；当前仅推进A；研究目标不限于水，腰部自由度是新提出的候选",
+    "next_phase_status": "用户要求先重整总体规划。当前仅形成docs/PROJECT_PLAN.md讨论稿，不启动新的研究实施小节；此前下一步建议仅为候选。",
+    "technical_choices": "当前继续使用Python＋MuJoCo；用户明确暂缓MATLAB，不把它作为推进依赖。现有统一URDF参数、研究模型、成熟停止候选与离线腰臂分配继续复用；硬件平台及最终论文创新仍未确定。"
+  },
+  "shared_scenario_status": "已确认同一轮式底盘、升降柱、双臂平台并先做仿真；载荷类型和具体任务尚未确定",
+  "independence_rule": "论文一可用基础控制器独立验证；论文二可用预定义路径或已有规划器独立验证",
+  "previous_report_note": "已有 PDF 和压缩包属于早期调查快照。通用调姿防倾覆及推门防倾覆不再作为重点候选；原报告未覆盖新检出的 2026 年液体紧急停止论文，不能用于证明 A 的新颖性。2026-10-27 已核实该工作的 RA-L 正式书目记录；目前实际阅读的全文仍是 arXiv v1。",
+  "novelty_status": "成熟停止参考与基本反馈已可执行多组名义工况；不再以无任务依据的示例阈值制造算法缺口。最终论文创新尚未确立；本轮是基线清理，非新算法。",
+  "direction_a": {
+    "status": "当前仅推进轮式双臂受控制动下持物稳定；第30节有限名义完整位姿对照完成，最终创新/真实接触标定和硬件仍未确立。重载力矩边界与第二方向暂缓。",
+    "user_concerns": [
+      "完成难度",
+      "实际需求与应用范围",
+      "已有工作覆盖程度"
+    ],
+    "critical_prior_art": {
+      "title": "Model-Predictive Spill-Free Emergency Stopping for Liquid-Manipulating Robots",
+      "preprint_title": "Emergency Stopping for Liquid-manipulating Robots",
+      "authors": [
+        "Samuli Hynninen",
+        "Ville Kyrki"
+      ],
+      "submitted": "2026-04-17",
+      "publication_status": "2026-10-27 经 Crossref DOI 元数据及 Aalto 作者组官方出版物列表核实，已有 IEEE Robotics and Automation Letters 2026 年 11 月刊正式书目记录；实际阅读全文为 arXiv v1，尚未取得并比对期刊最终全文",
+      "doi": "10.1109/LRA.2026.3734909",
+      "journal": "IEEE Robotics and Automation Letters",
+      "volume_issue_pages": "11(11):12751-12758",
+      "url": "https://arxiv.org/abs/2604.16667",
+      "full_text": "https://arxiv.org/html/2604.16667v1",
+      "reading_scope": "已核对 arXiv v1 全文 HTML 的问题定义、模型、约束、实现、实验与局限；期刊版本仅核实书目记录，不能假定与 v1 完全相同；尚未复现或独立审计图表",
+      "verified_overlap": [
+        "液体紧急停止",
+        "MPC 与高频控制回路",
+        "仿真与单臂 Panda 真水实验"
+      ],
+      "verified_limits": [
+        "所读 arXiv v1 的结论说明停止时假设可向任意方向运动",
+        "所读 arXiv v1 将受限工作空间和方向性危险列为后续研究；尚未比对期刊版本",
+        "所读 arXiv v1 的无溢出条件使用软约束，文中报告了约束违反"
+      ],
+      "candidate_difference_only": "移动底盘制动过程与有限机械臂补偿行程共同约束下的停止；尚未证明该区别未被其他工作解决，也未证明足以构成论文贡献",
+      "additional_check_stage13": "2026-10-31复核：Crossref与Aalto列RA-L 11(11):12751–12758及最终PDF入口；最终PDF访问403，当前方法证据仍为arXiv v1。未将其空间局限推广为最终版结论。"
+    },
+    "proposed_next_stage": [
+      "当前实施安排由../../docs/PROJECT_PLAN.md统一管理；先讨论总体目标、阶段与文献节点，不自动接续此前局部实验建议。"
+    ],
+    "proposed_validation_constraints": [
+      "所研究的是制动期间上身仍可控的情形；驱动断电后的补偿需另有硬件机制。",
+      "底盘按给定制动要求执行；不能悄悄拉长时长改善物体指标。",
+      "保留关节范围、速度和力矩、碰撞、有限抓持接触及模型有效性检查，数值与来源明确标注。",
+      "同时记录物体、机械臂与上身空间包络；仅在实际任务提供空间预算时作约束，不默认15cm。",
+      "A/J是可调轨迹整形设置；0.8m/s²、0.5°等示例不作为通用安全阈值。",
+      "已核查局部IK范围只是当前插值有效域；超出需重新准备路径，不证明全局不可达。",
+      "当前固定腰部、固定朝向、直线和轻载是基线范围，不是后续研究禁止条件。"
+    ],
+    "implementation_status": "第5–12小节有限名义验证已实现。缓冲、载荷补偿、校准及分担已有有限证据；长时慢漂受接触正则化显著影响，尚不能据累计位移阈值确定重载急停能力边界。默认接触模型未更换，主动躯干/真机/创新仍未证明。",
+    "supervisor_discussion_document": {
+      "status": "已完成并检查文档；技术路线仍为导师讨论草案，不代表算法实施或验证完成",
+      "docx": "../researchwrite/emergency-stop-stability/exports/轮式双臂机器人急停搬运稳定_任务设计_技术路线与专家质疑论证.docx",
+      "structure": "按用户提供教师文件的脉络：任务设计与优选、完整技术路线、专家质疑与回应；含MATLAB与MuJoCo、能力约束、创新候选和工作包",
+      "pages": 14,
+      "qa": "../researchwrite/emergency-stop-stability/qa_logs/document_qa.md"
+    },
+    "route_assessment_2026_10_27": {
+      "status": "上一轮技术路线建议，待讨论；水作为首个对象的收窄已被用户纠正，以payload_scope_clarification_2026_10_27为当前范围入口；不是已确认算法或已验证创新",
+      "judgment": "具有可研究的物理矛盾，可组成一个聚焦课题的工作量；广义液体急停、MPC、高频回路、移动机械臂防晃和障碍约束均有前作，当前新颖性尚未确立",
+      "recommended_problem_draft": "给定底盘受控制动要求、机械臂有限补偿能力及机器人和载荷的整体安全运动边界，研究液体载荷可实现的稳定停止条件和受约束补偿控制；液体仅为首个验证场景建议，尚未最终确认",
+      "assumptions": [
+        "初期底盘制动轨迹作为外部输入，不能通过任意延长制动距离换取防洒效果",
+        "制动触发后机械臂仍通电且可控，信号与执行延迟必须建模",
+        "先研究直线制动、升降柱固定、一个简单容器；后续才验证完整双臂执行",
+        "不能只约束底盘停车位置；机械臂、容器和载荷的世界坐标运动也须受限"
+      ],
+      "route": [
+        "明确制动接口、危险方向、稳定判据和最终停止条件",
+        "建立底盘平移、有限相对补偿行程和低阶液体晃动的最小模型",
+        "先分析和数值检验可行性；数值求解失败不能单独证明物理不可行",
+        "比较持臂不动、简单加速度前馈、相同约束下适配的已有急停方法；再讨论是否需要约束 MPC",
+        "将容器运动映射到完整双臂，核查关节、速度、力矩、共同抓持一致性与控制延迟",
+        "在相同制动和安全空间预算下扫描初速度、剩余行程、延迟、液体初始状态和模型误差，并用独立模型或实物核验液体结论"
+      ],
+      "candidate_contributions_not_established": [
+        "在指定简化模型内给出考虑液体状态、有限补偿能力和安全空间的保守停止条件；不是宣称完整机器人最大可行域",
+        "针对上述具体问题设计受约束补偿及不可行识别，并证明相对公平适配前作的增量",
+        "在该具体问题下处理制动延迟或初始晃动不确定性；一般鲁棒 MPC 本身不是创新"
+      ],
+      "not_sufficient_as_novelty": [
+        "将单臂换成双臂或在机械臂下增加移动底盘",
+        "使用 MPC、提高控制频率或仅加入空间约束",
+        "仅用基本运动学距离估计作为论文贡献",
+        "只在同一个低阶液体模型中设计并评估控制器"
+      ],
+      "early_gate": "建议先用约 2-4 周形成最小模型和公平基线，时间是条件性工作估计；若简单补偿已覆盖合理工况，或改进只能依赖侵入危险区，应重新收窄问题，不能靠增加系统复杂度宣称创新",
+      "additional_prior_art": [
+        {
+          "title": "Clutter-Aware Spill-Free Liquid Transport via Learned Dynamics",
+          "doi": "10.1109/IROS58592.2024.10802215",
+          "url": "https://arxiv.org/abs/2408.00215",
+          "reading_scope": "核实 DOI 和 IROS 2024 书目信息，阅读 arXiv HTML 的任务、方法及结论；未复现",
+          "overlap_boundary": "受障碍和容器几何约束的防洒运输已有方法；不能把一般空间约束当作新颖性"
+        },
+        {
+          "title": "Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator",
+          "doi": "10.1109/LRA.2023.3324520",
+          "url": "https://arxiv.org/abs/2305.17484",
+          "reading_scope": "核实 DOI 及 RA-L 2023 书目信息，阅读作者 PDF 摘要和引言中的任务、接口和假设；未完整精读或复现",
+          "overlap_boundary": "已有移动机械臂、刚性载荷接触稳定和障碍避让的整体 MPC；不等同于液体急停，但排除泛化的底盘加手臂协调创新主张"
+        },
+        {
+          "title": "Fast Replanning for Slosh-Free Trajectories and Compensation Control with Outflow Liquid Dynamics in a Mobile Manipulator",
+          "source_type": "National Taiwan University master's thesis, 2024",
+          "url": "https://tdr.lib.ntu.edu.tw/handle/123456789/93137?mode=full",
+          "reading_scope": "仅核对机构库元数据、摘要和目录，未阅读全文",
+          "overlap_boundary": "摘要已包含移动底盘与机械臂整体 MPC 防晃，不能称广义移动平台防晃 MPC 未被研究；是否覆盖指定制动工况尚未核实"
+        }
+      ],
+      "search_limitations": "学术检索的 arXiv 接口遇到 HTTP 429，Crossref 查询曾连接中断；随后通过 DOI 元数据和原始论文、作者或机构页面核验关键记录。检索不是穷尽查新，也未取得最接近工作的期刊最终全文。"
+    },
+    "payload_scope_clarification_2026_10_27": {
+      "user_confirmed": [
+        "水仅是举例，核心问题是急停或短距离制动时搬运载荷及末端的稳定",
+        "用户希望核查重载和多种搬运物体的适用性",
+        "用户提出腰部自由度作为模型扩展候选，尚未确认具体结构",
+        "已有工作有适用边界，不能由存在相近论文推断研究问题已完全解决"
+      ],
+      "working_problem_draft": "载荷特性与抓持能力约束下，轮式双臂机器人急停过程中的腰臂协调与载荷稳定控制",
+      "status": "范围澄清已确认；具体载荷族、算法、腰部自由度和实现均待讨论；无新仿真结果",
+      "recommended_manageable_scope": "先检验不同质量、重心和惯量的刚性载荷族，包含平台能力范围内的偏载或较重共同抓持载荷；液体可作为以后采用独立稳定约束的扩展对象。该路线是建议，不是用户已确认的载荷选择。",
+      "unification_boundary": "可共享制动接口、机器人模型、运动优化与双臂执行框架，并用载荷参数及约束模块表示差异；不同刚性载荷可共享刚体动力学，但液体或柔性载荷需要额外内部状态，不能只改质量就宣称适用于任何物体",
+      "heavy_payload_mechanism_to_test": "静态可持稳且处于平台能力范围内的物体，在制动附加惯性需求下是否接近关节、腕部力矩或抓持极限；腰部姿态和双臂受力分配能否改善。不得预先断言必然滑移、倾覆或需要新算法。",
+      "candidate_waist_benefits_to_test": [
+        "为两臂提供共同的前后补偿运动，减少单臂行程或关节速度瓶颈",
+        "改变双臂姿态和可实现的末端力/力矩范围，改善重载下的制动能力",
+        "必须计入腰部自身的力矩、速度、行程及底盘接触限制；腰部运动未必在短制动时间内有效",
+        "绕竖直轴旋转、俯仰和升降的作用不同，不能将任意腰部自由度等同于前后缓冲能力"
+      ],
+      "candidate_contribution": "在给定制动需求与整体安全空间下，建立载荷及机器人姿态相关的可稳定停止条件，并研究腰部运动与双臂接触力的实时分配；跨载荷适用性通过保留物体和参数组合验证，尚未完成查新或验证",
+      "baseline_design_draft": "采用相同硬件模型、载荷、初始姿态和制动要求，对比常规末端跟踪/补偿、固定腰部的双臂控制、腰臂协调，并分别比较是否考虑载荷动力学及接触/力矩约束；不把增加硬件能力混同为算法收益",
+      "additional_verified_sources": [
+        {
+          "title": "GOMP-FIT: Grasp-Optimized Motion Planning for Fast Inertial Transport",
+          "doi": "10.1109/ICRA46639.2022.9812387",
+          "year": 2022,
+          "url": "https://arxiv.org/html/2110.15326v2",
+          "reading_scope": "Crossref 与 arXiv 书目交叉核实；阅读作者项目页、摘要、引言及约束类型；未复现或全面审计实验",
+          "boundary": "已用不同末端加速度约束处理开口容器和易损物体；所述任务为预先规划的快速运输，不能据此认为移动底盘突发制动已解决，也不能将一般多载荷约束接口独占为新贡献"
+        },
+        {
+          "title": "Robust Nonprehensile Object Transportation With Uncertain Inertial Parameters",
+          "doi": "10.1109/LRA.2025.3551067",
+          "year": 2025,
+          "url": "https://arxiv.org/html/2411.07079v2",
+          "reading_scope": "核实 DOI；阅读摘要、引言、机器人与物体模型、接触约束和鲁棒规划章节；未复现或完整审计实验",
+          "boundary": "处理移动机械臂托盘运输中的惯性参数不确定性；使用机器人运动学模型并离线规划后跟踪，区别于本轮拟议的受制动扰动、重载执行器限制和双臂接触力实时分配"
+        },
+        {
+          "title": "Workspace Analysis for a Kinematically Coupled Torso of a Torque Controlled Humanoid Robot",
+          "doi": "10.1109/ICRA.2014.6907354",
+          "year": 2014,
+          "url": "https://elib.dlr.de/89434/",
+          "reading_scope": "核实 DLR 官方书目记录，并检查作者全文的搜索可见片段中载荷、力矩与躯干工作空间关系；未阅读全文",
+          "boundary": "躯干运动及受载荷和力矩约束的工作空间分析已有基础；腰部作用须在具体急停任务中证明，不能只靠自由度数量主张创新"
+        }
+      ],
+      "search_limitations": "本轮 Crossref 查询及 DOI 核验成功，arXiv MCP 查询 30 秒超时，随后通过 arXiv 全文、作者项目和机构页面补查；定向调查尚不能证明该组合问题无人研究"
+    },
+    "technical_route_work_packages_draft": {
+      "status": "待讨论；为回答用户技术路线、主要工作和工作量所形成的方案草案，不代表已授权算法实现或已运行实验",
+      "initial_scope_recommended": "抓取已完成、抓点已知的共同搬运；首先验证不同质量、重心和惯量的刚性载荷；直线受控制动、升降柱先固定；腰部俯仰作为最小候选自由度，实际结构未定",
+      "task_boundary": "底盘执行给定制动要求，腰部与双臂保持可控；控制从制动触发开始到机器人和载荷均达到可持续保持的静止状态；危险检测暂用触发信号代替",
+      "stable_stop_definition_draft": "物体在规定安全运动范围内减速至静止，抓持无失效滑移或失控转动，机器人执行器和接触能力满足约束；允许为缓冲进行受控末端运动，不将稳定等同于世界坐标位置完全不变",
+      "packages": [
+        {
+          "id": "A-W1",
+          "work": "任务与基线验证",
+          "method": "确定制动信号与反馈接口、物体及抓点、关节和夹持能力；平面简化模型中运行常规末端跟踪及简单加速度补偿，检查平台能力范围内的动态瓶颈",
+          "output": "问题定义、输入输出与失效判据，以及合理工况下的基线性能和瓶颈证据",
+          "nature": "必要基础及可行性检验"
+        },
+        {
+          "id": "A-W2",
+          "work": "载荷—双臂—腰部动力学与能力约束",
+          "method": "结合刚体载荷动力学、双臂抓持几何和机器人逆动力学，约束接触摩擦、夹持力、关节力矩、速度与行程；计入底盘制动力和地面接触能力，防止把底盘当作无限能力的运动源",
+          "output": "可在优化器内计算的载荷与姿态相关约束；单时刻承载可行不等于整段停止可行",
+          "nature": "建模工作为基础；急停阶段的能力表征和可停止条件是候选研究贡献"
+        },
+        {
+          "id": "A-W3",
+          "work": "受约束的停止轨迹与接触力协调",
+          "method": "先离线求解短时停止优化，检验是否存在满足安全空间、有限补偿能力、动力学和最终静止承载条件的解；随后评估采用滚动优化实时生成载荷及腰部参考的可行性",
+          "output": "有限空间内的停止参考与一致的接触力计划、不可行或超时处理及求解耗时",
+          "nature": "主要算法工作；MPC名称本身不作为创新"
+        },
+        {
+          "id": "A-W4",
+          "work": "完整双臂与腰部执行",
+          "method": "采用带动力学、抓持一致性和力矩限制的全身控制QP，跟踪上层参考并分配双臂接触力；上下层约束保持一致并由实际状态闭环修正",
+          "output": "完整机器人模型上的可执行控制器及跟踪、力矩和接触反馈记录",
+          "nature": "显著集成工作；腰臂运动与接触力在急停中的协调机制为候选贡献"
+        },
+        {
+          "id": "A-W5",
+          "work": "跨载荷、参数误差与对比实验",
+          "method": "先使用已知载荷参数，后引入有界参数误差；同一硬件和制动条件下比较简单补偿、固定腰、简单腰动作、完整方法及公平适配的相关方法；在控制设计未逐个调参的保留物体和参数组合上测试",
+          "output": "稳定停止比例、滑移与姿态偏差、约束违反、整体停止时间和距离、求解时间与失败结果",
+          "nature": "主要验证工作；跨载荷适用性作为需证明的性能，不能仅更换物体外观"
+        }
+      ],
+      "architecture_recommendation": "有预测的受约束停止规划加动态全身控制；先用低维离线优化验证，再确定实时MPC与QP分工，避免上层可行但下层因力矩或闭链限制无法执行",
+      "alternatives": "单层全身非线性优化耦合更完整但实时求解和调试成本高；简单前馈加QP成本低且是必要基线，但不能仅靠局部反应判断剩余行程是否够完成停止；以上为方案讨论，不是最终选型",
+      "candidate_main_contributions": [
+        "在载荷、抓持与机器人动态能力共同约束下，给出指定简化模型的保守可稳定停止条件或可计算判据；无需承诺完整系统最大可行域",
+        "给定底盘制动要求下，对腰部、双臂运动和接触力进行有预测的一致协调，并验证其相对简单动作和公平适配前作的增量"
+      ],
+      "workload_estimate": "条件性估计：一名学生主做、已有机器人模型且具备基础控制与编程能力时，约4-7个月形成较完整仿真研究；从零补基础或搭模型会更长。最初约2-4周用于问题与基线预验证，不能视为论文完成时间。",
+      "first_deliverable": "一页任务定义、一份可核对参数表、一套简化模型、基线结果与瓶颈说明；这些形成后再决定是否实施完整优化控制路线",
+      "implementation_status": "未开始新仿真或控制器实现",
+      "modeling_toolchain_draft": {
+        "status": "工具分工解释与公开模型资源核查；尚未选型、下载运行模型或验证其动力学参数",
+        "matlab_role": "可导入URDF/Xacro形成rigidBodyTree，利用质量、质心和惯量计算运动学及逆动力学，开发载荷与机器人能力约束、控制与优化；并非必须手工推导所有展开式",
+        "mujoco_role": "采用MJCF或导入URDF建立动力学仿真，补齐驱动器、摩擦接触、碰撞、底盘和载荷配置，用闭环控制验证实际模拟响应；MATLAB模型不是自动可运行的MuJoCo模型",
+        "shared_data": "统一机器人版本、连杆与关节坐标系、长度、质量、质心、惯量和关节限位；分别保留控制模型与仿真配置，明确转换中补充或修改的参数",
+        "dynamics_constraints": "先根据物体运动和受力分配计算接触需求，再用机器人逆动力学检查各关节所需力矩；力矩、速度、行程、夹持力及摩擦限制须显式加入能力分析和仿真，不会因导入外观模型自动齐全",
+        "special_requirements": [
+          "底盘制动加速度须进入模型，不能仅用固定底座机械臂的静态动力学代替",
+          "共同抓持形成的闭链和载荷受力平衡需显式处理，URDF导入的机器人树并不会自动完成",
+          "双臂握持的载荷应采用有限接触能力验证滑移；刚性焊接只能用于相应理想化检查",
+          "MATLAB与MuJoCo先比较正运动学、总质量、静态重力力矩，再比较无接触动力学，最后加入抓持与轮地接触；更换引擎不能自动代表实物验证"
+        ],
+        "verified_sources": [
+          {
+            "name": "MathWorks importrobot",
+            "url": "https://www.mathworks.com/help/robotics/ref/importrobot.html",
+            "verified": "支持URDF/Xacro等输入；文档说明闭链约束不能由rigidBodyTree导入自动保持，重力等配置须核对"
+          },
+          {
+            "name": "MathWorks inverseDynamics",
+            "url": "https://www.mathworks.com/help/robotics/ref/rigidbodytree.inversedynamics.html",
+            "verified": "根据关节位置、速度、加速度和外力计算所需关节力矩"
+          },
+          {
+            "name": "MuJoCo modeling guide",
+            "url": "https://mujoco.readthedocs.io/en/stable/modeling.html",
+            "verified": "原生格式为MJCF，也可加载URDF；驱动器和接触等需按仿真任务配置"
+          }
+        ],
+        "public_model_candidates_not_selected": [
+          {
+            "name": "Rainbow Robotics RB-Y1",
+            "manufacturer_models": "https://github.com/RainbowRobotics/rby1-sdk/tree/main/models",
+            "verified": "厂商官方SDK的rby1a及rby1m目录均含urdf和mujoco子目录；适合进一步核查带躯干的轮式双臂模型",
+            "not_verified": "尚未逐项核查具体版本的质量、惯量、执行器限值、接触配置及控制接口，也未运行"
+          },
+          {
+            "name": "PAL Robotics TIAGo双臂",
+            "manufacturer_description": "https://github.com/pal-robotics/tiago_dual_robot",
+            "mujoco_description": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/pal_tiago_dual",
+            "verified": "厂商发布机器人描述；DeepMind Menagerie提供从公开URDF派生的简化MJCF，README明确其补充底盘惯量、手工加入驱动并调整碰撞的步骤；Menagerie版不是厂商原封发布的模型",
+            "not_verified": "尚未逐项核查动力学保真度、不同版本参数一致性和重载急停适用性，也未运行"
+          },
+          {
+            "name": "Galaxea R1系列",
+            "manufacturer_description": "https://github.com/userguide-galaxea/URDF",
+            "verified": "厂商公开R1、R1Lite和R1Pro的URDF入口；未确认厂商原生MuJoCo模型，不能把其他仿真平台资源当作已验证MuJoCo模型",
+            "not_verified": "尚未检查具体文件的惯性、限值、腰部结构和MuJoCo适配工作量"
+          }
+        ],
+        "recommended_next_readonly_step": "比较RB-Y1和TIAGo双臂具体模型的参数完整性、腰部结构、驱动方式及版本对应关系，再确认建模平台；不从零重画整机外观或重复手写已有刚体动力学算法"
+      }
+    },
+    "model_selection_audit": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "plan": "../../docs/plans/01-robot-model-audit.md",
+      "results": "../robot-model-audit/audit_summary.json",
+      "implementation_boundary": "仅候选核查、空载保持、小幅关节运动和底盘诊断；未实施完整研究模型修整或持物控制器。",
+      "recommendation": {
+        "primary_candidate": "RB-Y1 A v1.2",
+        "backup": "TIAGo双臂Menagerie版本",
+        "status": "建议；不等于真机选型或全部动力学验证通过",
+        "reason": "RB-Y1的六关节躯干支持腰臂协同研究；TIAGo更接近升降柱构型，若限定该构型则优先考虑TIAGo。"
+      },
+      "evidence": [
+        "固定两个源码提交并保存校验清单",
+        "四个场景编译成功",
+        "10项短时诊断按时结束、状态有限且无MuJoCo警告",
+        "RB-Y1与TIAGo的保持和小幅关节运动可运行；原始底盘配置均未直接获得合格行驶响应",
+        "TIAGo较小步长或较低轮速伺服增益显著改变异常表现，较低增益版本直行与停止表现合理"
+      ],
+      "critical_gaps": [
+        "RB-Y1同版本URDF/MJCF有17项关节范围差异和4项同名刚体质量差异超过1e-4 kg",
+        "RB-Y1通用力矩范围、附加惯量/阻尼、自碰撞掩码、夹爪驱动及底盘支撑需处理",
+        "TIAGo原场景悬空、全向轮接触简化、轮速伺服配置敏感",
+        "真机断电急停与驱动保持工作的快速受控制动必须区分"
+      ],
+      "next_section": {
+        "status": "已完成",
+        "plan": "../../docs/plans/02-rby1-research-base.md",
+        "scope": "名义参数统一、能力约束和空载直行制动验证；未包含载荷抓持"
+      }
+    },
+    "rby1_research_model_stage": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "authorization": "用户在前一轮推荐RB-Y1及实施顺序后回复“继续”",
+      "plan": "../../docs/plans/02-rby1-research-base.md",
+      "code": "../../simulation/rby1",
+      "model": "../rby1-research/model/research_model.xml",
+      "parameters": "../rby1-research/model/parameters.json",
+      "validation": "../rby1-research/parameter_validation.json",
+      "dynamic_suite": "../rby1-research/base_suite.json",
+      "preview": "../rby1-research/base_braking_preview.gif",
+      "result_summary": {
+        "parameter_poses_passed": 5,
+        "empty_dynamic_cases_passed": 6,
+        "nominal_brake_from_mps": 0.25,
+        "nominal_distance_to_speed_threshold_m": 0.0460916922988614,
+        "stop_speed_threshold_mps": 0.01,
+        "half_timestep_distance_difference_m": 3.613030997551281e-06
+      },
+      "qualification": "仅规定名义模型与低速空载工况；理想被动支撑、执行器附加惯量/阻尼与部分力矩限值是假设，不是真机标定。",
+      "matlab_status": "已提供导入与对照脚本，当前环境未发现可调用MATLAB，尚未执行。",
+      "next_section": {
+        "status": "已完成",
+        "plan": "../../docs/plans/03-dual-arm-payload.md",
+        "scope": "Physical dual-arm grasp and braking baseline; user authorized continuation"
+      }
+    },
+    "dual_arm_payload_stage": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "authorization": "用户继续推进已确认范围：双臂接触抓持、静态验证与制动基线。",
+      "plan": "../../docs/plans/03-dual-arm-payload.md",
+      "code": "../../simulation/rby1",
+      "model": "../rby1-research/payload_model/payload_scene.xml",
+      "results": "../rby1-research/payload_summary.json",
+      "preview": "../rby1-research/payload_fast_brake.gif",
+      "result_summary": {
+        "positive_cases_passed": [
+          "static",
+          "brake",
+          "fast_brake",
+          "heavier",
+          "half_dt",
+          "inertial_ff"
+        ],
+        "qualified_negative_control": "release",
+        "nonqualified_diagnostic": "low_friction：下落伴随夹指超速，不用于合格性能比较。",
+        "static_relative_displacement_m": 0.0004946245406947311,
+        "fast_brake_relative_displacement_m": 0.00031590049606008866,
+        "heavier_brake_relative_displacement_m": 0.0005881618820162056
+      },
+      "qualification": "名义接触仿真；载荷为0.5和1 kg对称刚体；已知载荷重力前馈；夹爪能力、摩擦、软接触和被动支撑未实物标定；未验证真机、重载能力或新算法有效性。",
+      "finding": "所测工况中普通姿态保持加已知载荷重力前馈已稳定，尚未证明复杂协调控制的必要性。简单惯性前馈同时改变底盘实际减速暂态，不能孤立归因机械臂收益。",
+      "next_section": {
+        "status": "已完成",
+        "scope": "核实夹爪与底盘能力依据；有针对性地识别静态可持住、规定制动下基础控制不足的条件，区分物理不可行、数值问题和控制不足。",
+        "implementation_gate": "先讨论有效困难条件与评价标准，再进入完整协调算法；不通过任意弱化能力制造问题。",
+        "plan": "../../docs/plans/04-capability-and-boundary.md",
+        "authorization": "用户在上一阶段结论后回复继续；开展能力依据核查与有界定向试验，不实施完整新控制器。"
+      }
+    },
+    "capability_and_boundary_stage": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "authorization": "用户在能力依据与失效边界核查建议后回复继续；本轮有限验证共16次，无新控制器。",
+      "plan": "../../docs/plans/04-capability-and-boundary.md",
+      "capability_evidence": "../rby1-research/capability_evidence.json",
+      "results": "../rby1-research/boundary_probe/20261031T172314/audited_results.json",
+      "table": "../rby1-research/boundary_probe/20261031T172314/case_table.csv",
+      "verification": {
+        "runs": 16,
+        "numerical_and_joint_limit_passes": 14,
+        "original_stability_criterion_passes": 11,
+        "baseline_source_and_model_unchanged": true
+      },
+      "conclusions": [
+        "官方夹爪典型30 N与堵转150 N的测量及持续能力口径未落实到仿真滑块；原每指5 N、轮子10 Nm仍是假设。",
+        "1.35 kg候选条件的2 mm合格性对接触参数敏感；步长减半结果接近，但尚不能作为可靠物理失效边界。",
+        "更短停车指令没有兑现，原轮速跟踪器饱和且命令制动段结束后前馈归零；抓持稳定不等于急停任务完成。",
+        "主研究方向保留；当前证据未证明复杂协调算法或论文创新。"
+      ],
+      "next_section": {
+        "status": "已完成",
+        "scope": "建立可实现、实际停车可核验的底盘制动基准；补充接触力/力矩与世界坐标载荷运动评价；再做固定姿态和简单主动缓冲的最小对照。",
+        "open_decisions": [
+          "实际载荷的允许位移/加速度/接触力与障碍净空",
+          "夹爪力口径和合理接触参数区间",
+          "新制动参考与缓冲对照的具体边界"
+        ],
+        "deferred": "完整NMPC/WBC、真机、VLA和第二课题",
+        "plan": "../../docs/plans/05-feasible-braking-buffer.md",
+        "authorization": "用户回复可以，已授权可实现制动及简单缓冲对照。"
+      }
+    },
+    "feasible_braking_buffer_stage": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "authorization": "用户回复可以，实施可核验制动和双臂缓冲最小对照。",
+      "plan": "../../docs/plans/05-feasible-braking-buffer.md",
+      "results": "../rby1-research/buffer_comparison/summary.json",
+      "figure": "../rby1-research/buffer_comparison/comparison.png",
+      "implementation": "平滑速度/位移参考、有界IK和多项式关节参考、共用计算力矩及已知载荷力前馈、纵向模型前馈及位置/轮速反馈。未实现完整载荷力矩分配、末端姿态闭环或腰部缓冲。",
+      "verification": {
+        "runs_passed": 8,
+        "paired_settings": 4,
+        "prefix_state_identical": true,
+        "nominal_acceleration_reduction_percent": 36.63598441641275,
+        "nominal_extra_forward_stroke_m": 0.08158536962554552,
+        "base_max_speed_difference_mps": 0.0003786537497097,
+        "base_max_position_difference_m": 7.252388677236876e-05,
+        "historical_baseline_unchanged": true
+      },
+      "findings": [
+        "在共同收近10 cm的起始姿态、1 kg刚体和0.4 m/s条件下，缓冲使峰值加速度下降约36.6%，该收益在所测步长和两种接触变化下接近。",
+        "缓冲使物体前缘前行增至约20.5 cm，世界姿态变化略增，局部摩擦达到边界；不能称为综合稳定性全面改善。",
+        "原始姿态在所选朝向和局部连续IK分支中未通过所需前伸检查；不等于全局不可达，当前结果不能推广到任意姿态。"
+      ],
+      "qualification": "名义仿真机制验证，不是硬件验证、行业需求证明、任意载荷鲁棒性或论文创新。",
+      "next_section": {
+        "status": "已完成",
+        "scope": "建立姿态和净空相关的缓冲可行性判断；先与完整载荷力/力矩前馈及末端姿态反馈等简单强基线比较，再决定腰臂分配和优化算法。",
+        "plan": "../../docs/plans/06-wrench-and-feasibility.md",
+        "authorization": "用户明确授权离开期间自行推进，并要求完整逻辑与参数解释。",
+        "results": "../rby1-research/stage6/summary.json"
+      }
+    },
+    "wrench_and_feasibility_stage": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "authorization": "用户要求离开期间自行推进，返回后解释工作、逻辑、证明目标和参数。",
+      "plan": "../../docs/plans/06-wrench-and-feasibility.md",
+      "report": "../rby1-research/stage6/研究逻辑与参数说明.md",
+      "results": "../rby1-research/stage6/summary.json",
+      "verification": {
+        "runs": 21,
+        "quality_grasp_braking_passed": 21,
+        "comparable_pairs": 10,
+        "all_recorded_snapshot_hashes_verified": true,
+        "default_logged_trajectories_exact_regression": true,
+        "nominal_acceleration_reduction_percent": 39.85790279175413
+      },
+      "implemented": "对称载荷力/力矩分配、理想物体姿态反馈、上肢模型被动力补偿；局部姿态与净空相关的离线参考筛选及接受候选物理仿真。",
+      "findings": [
+        "补强简单基线后仍得到约39.9%峰值加速度下降，三组敏感性对照接近；底盘实际制动匹配。",
+        "固定组也能抓稳；缓冲的世界姿态误差、相对抓持位移及局部摩擦使用率并未全面改善。",
+        "代表候选依据姿态/空间选8、2、1.5或0 cm；10 cm净空拒绝当前模板，未证明整个任务不可能。"
+      ],
+      "qualification": "名义仿真、1 kg已知刚体和理想状态反馈；离线筛选，无在线时延或动态安全保证；未证明重载、任意物体或论文新颖性。",
+      "next_section": {
+        "status": "已完成",
+        "scope": "讨论有限载荷/重心误差和延迟边界及真实任务要求，并聚焦查新；腰臂优化和NMPC尚未锁定。",
+        "plan": "../../docs/plans/07-uncertainty-and-delay.md",
+        "authorization": "用户回复可以，继续有限载荷估计误差与延迟对照。"
+      },
+      "subsequent_correction": "第八小节发现本版载荷 Jᵀw 只施加于手臂，遗漏共同躯干；历史结果保留，最新名义/部分误差解释以第八小节为准，不能用旧朝向误差证明复杂算法必要。"
+    },
+    "uncertainty_and_delay_stage": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "authorization": "用户在第六小节报告和后续建议后回复可以。",
+      "plan": "../../docs/plans/07-uncertainty-and-delay.md",
+      "report": "../rby1-research/stage7/误差与延迟验证说明.md",
+      "results": "../rby1-research/stage7/summary.json",
+      "verification": {
+        "physical_runs": 18,
+        "qualified_runs": 14,
+        "qualified_performance_pairs": 7,
+        "prebrake_failed_runs": 4,
+        "default_logged_trajectory_exact_regression": true,
+        "main_scene_hash_identical": true,
+        "delay_sequences_verified": true
+      },
+      "implemented": "控制载荷估计与真实物理解耦；上肢力矩FIFO传输延迟；制动前/后诊断及未触发指标空值语义。",
+      "findings": [
+        "所测质量±20%、重心前后2 cm误差及20 ms指令延迟下，加速度收益约39.3%–40.4%。",
+        "重心后偏估计可产生约2.6°目标朝向误差；原抓持判据通过不代表朝向任务达标。",
+        "50 ms持续上肢指令延迟在两步长下均于制动前失稳且能力超限，不作为急停性能对照。",
+        "载荷不确定性和移动操作MPC已有近邻研究；当前新颖性未证实。"
+      ],
+      "qualification": "有限单因素名义仿真，未测组合误差或真实硬件，不是时延安全界；仍未证明重载可搬运范围扩大。",
+      "next_section": {
+        "status": "已完成",
+        "scope": "讨论物体加速度/朝向要求及其来源或参数化形式，再比较姿态、接触与净空共同约束的缓冲可行性路线。",
+        "plan": "../../docs/plans/08-joint-constraints.md",
+        "authorization": "用户明确要求自主持续推进。"
+      },
+      "subsequent_correction": "第八小节发现本版载荷 Jᵀw 只施加于手臂，遗漏共同躯干；历史结果保留，最新名义/部分误差解释以第八小节为准，不能用旧朝向误差证明复杂算法必要。"
+    },
+    "joint_constraints_stage": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "authorization": "用户明确要求自主持续推进。",
+      "plan": "../../docs/plans/08-joint-constraints.md",
+      "report": "../rby1-research/stage8/联合约束验证与技术路线修订.md",
+      "results": "../rby1-research/stage8/summary.json",
+      "verification": {
+        "physical_runs": 24,
+        "original_quality_grasp_braking_passed": 24,
+        "qualified_comparisons": 12,
+        "default_exact_regression": true,
+        "optional_reference_fixed_baseline_exact_match": true,
+        "snapshot_hashes_verified": true,
+        "main_physics_identical_except_halfdt": true,
+        "actual_delay_sequences_verified": true
+      },
+      "implemented": "相关上肢关节的完整载荷雅可比映射；可选一维加加速度受限解析停车参考；显式加速度、朝向、空间要求的离线联合检查。",
+      "findings": [
+        "名义缓冲朝向误差由0.8566°降至0.0891°，暴露旧基线遗漏；补齐后1 s缓冲相对固定组仍降低峰值加速度40.33%。",
+        "简单分段参考在0.8 m/s²、0.5°、15 cm示例要求下取得0.7820 m/s²、0.0891°、13.3927 cm；原三次速度模板拒绝不等于物理不可能。",
+        "质量低估20%时0.8030 m/s²与0.6634°，20 ms上肢指令延迟时0.8896 m/s²，分别超出部分任务指标；没有掩盖失败。",
+        "更低示例要求0.6 m/s²、0.5°、18 cm下，名义分段候选取得0.5825 m/s²、0.0891°、16.1344 cm。"
+      ],
+      "qualification": "1 kg名义刚体、理想反馈、单因素有限试验；任务阈值为显式探索假设。补偿修正和分段轨迹均不是已确立创新；无在线安全保证、主动腰部优化、重载或真机验证。",
+      "next_section": {
+        "status": "已完成",
+        "decision_status": "已授权实施",
+        "scope": "先比较简单载荷校准/有限延迟补偿与不确定性感知在线准入；明确可用传感和真实任务要求，再决定是否需要腰臂或MPC。",
+        "plan": "../../docs/plans/09-simple-baseline-calibration.md",
+        "authorization": "用户明确要求可以，持续推进，中间不用停下来。"
+      }
+    },
+    "simple_baseline_calibration_stage": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "authorization": "用户明确要求持续推进，中间不用停下来；本轮连续完成约定简单基线及必要复核。",
+      "plan": "../../docs/plans/09-simple-baseline-calibration.md",
+      "report": "../rby1-research/stage9/简单校准与延迟余量验证.md",
+      "results": "../rby1-research/stage9/summary.json",
+      "verification": {
+        "physical_runs": 23,
+        "original_quality_grasp_braking_passed": 23,
+        "task_passed_records": 11,
+        "qualified_pairs": 8,
+        "nominal_exact_regression": true,
+        "calibration_recomputed_from_observations": true,
+        "snapshot_and_delay_arrays_verified": true
+      },
+      "implemented": "静止受力代理估计质量与水平重心、已知竖直重心先验、行驶前平滑更新；用更保守参考检查延迟下的实际任务指标。",
+      "findings": [
+        "相同A=0.78分段参考下，质量低估经校准后由0.8030 m/s²、0.6634°改善为0.7820 m/s²、0.1025°；半步长复核支持。",
+        "20 ms延迟下A=0.70主/半步长均仍超限；追加A=0.68主/半步长通过0.8 m/s²、0.5°、15 cm硬任务，代价为物体前缘约14.52 cm，不满足旧1 cm参考预留。",
+        "质量低估、水平重心后偏及20 ms延迟的唯一组合条件，校准加A=0.68得到约0.7862 m/s²、0.1929°、14.5253 cm；半步长结果接近。",
+        "简单办法已解释部分原超限，不应把它们继续作为必须采用复杂方法的证据。"
+      ],
+      "qualification": "真实物体仍为1 kg；理想接触受力和状态输入，静止准备窗口及竖直重心/惯量先验；参数准确非硬件辨识精度。11/23不是成功率，无误差集合安全或创新保证。",
+      "next_section": {
+        "status": "已完成",
+        "scope": "调查并收敛无校准窗口、途中变化、空间误差及真实传感接口等未覆盖条件，比较近邻方法；继续授权有效，不因普通阶段边界重复提问。",
+        "plan": "../../docs/plans/10-physical-meaning-audit.md"
+      }
+    },
+    "physical_meaning_stage": {
+      "date": "2026-10-31",
+      "status": "已完成",
+      "plan": "../../docs/plans/10-physical-meaning-audit.md",
+      "report": "../rby1-research/stage10/加速度收益与抓持物理边界核查.md",
+      "results": "../rby1-research/stage10/physical_meaning.json",
+      "verification": {
+        "historical_traces": 4,
+        "new_physical_runs": 0,
+        "trace_hashes_verified": true,
+        "analytical_checks_passed": true
+      },
+      "findings": [
+        "加速度下降40.33%时合接触力峰值仅降约0.293%，当前低加速度承重由重力主导，不能称重载能力等比例提升。",
+        "理想合力必要条件的示意质量上界增约0.334%，不等于实际可搬质量；局部摩擦使用率变化更大，应查力矩与受力分配。",
+        "核对近邻托盘鲁棒搬运的运动学/接触约束和离线规划，以及液体急停v1空间边界；发现作者较新uplite入口但未安装或复现。"
+      ],
+      "qualification": "解析必要条件和有限原文核查；无重载能力、全局可行性或创新保证。",
+      "next_section": {
+        "status": "已完成",
+        "scope": "定位局部接触力矩和关节能力瓶颈，定义静态可持稳、几何惯性一致的最小载荷族，再判断受约束控制增量。",
+        "authorization": "用户明确要求先查论文，再自主实验。",
+        "plan": "../../docs/plans/11-literature-load-sharing.md"
+      }
+    },
+    "literature_load_sharing_stage": {
+      "status": "已完成",
+      "plan": "../../docs/plans/11-literature-load-sharing.md",
+      "authorization": "用户要求先查手臂、肩和躯干协调文献，再做实验。",
+      "date": "2026-10-31",
+      "scheme_status": "已验证，限本轮范围",
+      "report": "../rby1-research/stage11/双臂分担与躯干协调_文献和仿真报告.md",
+      "results": "../rby1-research/stage11/summary.json",
+      "verification": {
+        "physical_runs": 21,
+        "quality_passes": 21,
+        "moving_runs": 18,
+        "braking_passes_moving": 18,
+        "static_hold_runs": 3,
+        "grasp_passes_all_settings": 17,
+        "general_qp_vs_scipy_cases": 32,
+        "box_kkt_cases": 16,
+        "half_timestep_methods": 3,
+        "default_exact_regression": true,
+        "all_snapshot_hashes_verified": true
+      },
+      "findings": [
+        "固定姿态、相同物体总扳手下，内部分担对共同躯干的瞬时载荷映射约为零；臂部可变化。",
+        "偏心对称分担静止6秒时已有2.748毫米相对位移；QP和杠杆分担均约1.70毫米。不能把原失败全部称为急停特有问题。",
+        "偏心缓冲时几何杠杆分担与QP几乎相同，未证明复杂优化器必要或独立创新。",
+        "离线改变torso_2后，缓冲制动臂部归一化力矩30.11%降至24.40%，躯干35.81%升至45.34%，存在权衡。"
+      ],
+      "qualification": "1 kg已知刚体、理想状态、6秒有限测试；曲线仍漂移，不是长期稳定、重载、全身主动优化或真机验证。",
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已授权实施",
+        "scope": "先定位静态及正常搬运可行而给定制动触及接触/关节能力的区间；必须比较几何分担和简单缓冲，再判断是否需主动躯干优化。",
+        "plan": "../../docs/plans/12-static-dynamic-boundary.md"
+      },
+      "subsequent_evidence": "第十二小节：1 kg原参数6秒的通过不能推广至12秒；静态与正常搬运均约3.15 mm。旧结果保留其原时窗，不当作长期持稳依据。"
+    },
+    "static_dynamic_boundary_stage": {
+      "status": "已完成",
+      "plan": "../../docs/plans/12-static-dynamic-boundary.md",
+      "authorization": "用户在急停特有能力边界核查建议后回复可以。",
+      "scheme_status": "已验证，限本轮范围",
+      "date": "2026-10-31",
+      "report": "../rby1-research/stage12/静态与制动能力边界_持物时间及接触漂移核查.md",
+      "results": "../rby1-research/stage12/summary.json",
+      "verification": {
+        "complete_runs": 14,
+        "postprocessing_failed_attempts": 1,
+        "quality_passes": 14,
+        "grasp_passes": 9,
+        "actual_braking_runs": 7,
+        "actual_braking_passes": 7,
+        "default_exact_regression": true,
+        "all_snapshot_hashes_verified": true
+      },
+      "findings": [
+        "原1 kg长时静止/正常/制动均约3.15 mm慢漂，不属于急停独有失效。",
+        "步长减半几乎不变，impratio100降为0.316 mm、NoSlip3为0.038 mm；支持软接触正则化的重要影响，未采用新默认。",
+        "原参数0.5 kg通过12秒静止/正常和两种制动，缓冲降低峰值加速度约21.9%，尚无必须主动腰臂协调的能力瓶颈。"
+      ],
+      "next_section": {
+        "status": "待开始",
+        "scheme_status": "待讨论",
+        "scope": "按用户新要求暂缓力矩饱和支线；讨论停止参考在线生成与闭环执行，接触慢漂保留为验证边界。"
+      }
+    },
+    "current_user_steering": {
+      "date": "2026-11-01",
+      "confirmed": "用户同意先用Python＋MuJoCo验证前后递送中途急停，MATLAB暂缓；本轮已完成。",
+      "deferred": [
+        "寻找关节力矩上限失效工况",
+        "以增加载荷逼近饱和来证明协调必要性"
+      ],
+      "mainline_recommendation_status": "单轴递送接管已实现并验证；下一增量、任务偏好与论文创新仍待讨论。",
+      "mainline_recommendation": "从预设参考演示推进到触发状态驱动的停止参考生成与闭环执行；先固定腰部验证，再比较腰臂运动学分配。",
+      "candidate_steps": [
+        "复用已验证的独立物体运动参考、成熟停止生成器、腰臂路径与动力学跟踪。",
+        "依据具体任务缺口讨论后续，不自动新增MPC或人为失效搜索。"
+      ],
+      "contact_model_note": "已有慢漂诊断及有限合格工况保留，作为仿真验证边界；不把持续接触调参列为主线算法本身。",
+      "primary_source_for_baseline": "https://www.roboticsproceedings.org/rss17/p015.pdf",
+      "literature_followup": "mainline-literature/主线文献调查_停止规划与腰臂协同.md",
+      "error_priority_review": {
+        "date": "2026-10-31",
+        "user_request": "综合判断人为误差/扰动是否符合真实机器人及当前阶段是否应考虑。",
+        "status": "已确认，已授权本轮实施",
+        "recommendation": "当前补齐基本反馈和计算可用性，回到名义短距离制动与有限行程的核心效果；系统鲁棒性扫描后移，使用实测或可追溯范围。",
+        "prior_evidence_boundary": "10%/20%和5/45 ms为敏感性测试参数，非平台标定；保留历史，不作为实机典型误差或MPC必要性依据。",
+        "evidence": "mainline-literature/阶段优先级复核.json",
+        "user_confirmed_new_implementation": true,
+        "user_confirmed_at": "2026-11-01"
+      },
+      "tooling_decision_2026_11_01": {
+        "status": "已确认",
+        "user_instruction": "暂时不用MATLAB，继续Python与MuJoCo主线。",
+        "implementation": "保留现有未执行的MATLAB导入核验脚本，MATLAB不作为当前推进依赖；未授权新增替代动力学库或整套重写。"
+      }
+    },
+    "mainline_literature_stage": {
+      "status": "已完成",
+      "plan": "../../docs/plans/13-mainline-literature.md",
+      "authorization": "用户明确要求这部分先调查论文。",
+      "date": "2026-10-31",
+      "report": "mainline-literature/主线文献调查_停止规划与腰臂协同.md",
+      "papers": "mainline-literature/papers.json",
+      "references": "mainline-literature/主线相关论文.ris",
+      "verification": {
+        "selected_papers": 8,
+        "exact_doi_matches": 8,
+        "ris_records_verified": 8,
+        "initial_crossref_records": 28,
+        "arxiv_api_errors": 4,
+        "new_physical_runs": 0,
+        "new_controller": false
+      },
+      "findings": [
+        "任意状态限jerk停车、路径保持停车、反馈MPC和双臂全身运动均有直接前作。",
+        "液体急停v1已做高低频控制与实际状态反馈；不能把加入反馈当新贡献。最终期刊PDF403，未比对最终方法。",
+        "鲁棒运输论文有在线重规划引入振动的反例，应比较一次计划后跟踪与滚动更新。",
+        "候选差异是既定底盘制动与有限相对行程/方向性空间/执行偏差的耦合；本轮未证明新颖性。"
+      ],
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证，限第十四小节范围",
+        "scope": "先适配成熟停车强基线与任务空间/局部IK可行性检查，再决定规划、滚动修正和腰臂分配的最小实现。",
+        "plan": "../../docs/plans/14-state-driven-stop-baseline.md"
+      }
+    },
+    "state_driven_stop_baseline_stage": {
+      "status": "已完成",
+      "plan": "../../docs/plans/14-state-driven-stop-baseline.md",
+      "scheme_status": "已实现、已验证，限本轮范围",
+      "date": "2026-10-31",
+      "authorization": "用户在成熟OTG强基线与任务可行性检查建议后要求可以继续。",
+      "report": "../rby1-research/stage14/状态驱动停车基线_实现与有限验证.md",
+      "results": "../rby1-research/stage14/summary.json",
+      "verification_record": "../rby1-research/stage14/delivery_check.json",
+      "verification": {
+        "complete_runs": 15,
+        "incomplete_physical_runs": 0,
+        "new_adapter_runs": 11,
+        "exact_regressions": 4,
+        "quality_grasp_brake_passes": 15,
+        "example_motion_task_passes_among_new": 9,
+        "matched_pairs": 4,
+        "all_snapshot_hashes_verified": true,
+        "frozen_models_original_runner_unchanged": true
+      },
+      "findings": [
+        "匀速时Ruckig与原解析S曲线几乎相同，降低物体加速度的改善来自已有缓冲，非新库优势。",
+        "加速触发时原S参考加速度跳变约0.6 m/s²，Ruckig匹配观测加速度；代价为约23.44 mm相对前向行程和较高物体峰值加速度，未证明全面更优。",
+        "12.5 cm空间拒绝缓冲后回退可保持底盘停车与抓持，但实际物体峰值约1.0016 m/s²，不满足示例0.8门槛。",
+        "观测速度与旧命令差约0.0002284 m/s，未证明完整C²接管；整套准入约43–45 ms且仿真未计入延迟，不作实时声明。"
+      ],
+      "qualification": "一次状态驱动参考与现有高频反馈、固定腰部、已知0.5 kg刚体6秒有限测试；采样局部IK与方向包络不构成全局安全证明，未证明新颖性。4次默认回归另用历史1 kg设置。",
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证，限第十五小节范围",
+        "scope": "先确定连续参考接管/实测状态与计算延迟处理，再以底盘实际制动偏差比较一次规划和有限频率修正；不直接锁定完整MPC或主动腰臂优化。",
+        "plan": "../../docs/plans/15-handover-computation-latency.md"
+      }
+    },
+    "handover_latency_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，限本轮范围",
+      "plan": "../../docs/plans/15-handover-computation-latency.md",
+      "date": "2026-10-31",
+      "authorization": "用户在接管差异和计算耗时解释及后续处理建议后回复可以。",
+      "report": "../rby1-research/stage15/连续接管与规划等待_有限验证.md",
+      "results": "../rby1-research/stage15/summary.json",
+      "verification_record": "../rby1-research/stage15/delivery_check.json",
+      "verification": {
+        "complete_runs": 10,
+        "incomplete_physical_runs": 0,
+        "quality_grasp_brake_passes": 10,
+        "adapter_runs": 8,
+        "adapter_example_motion_task_passes": 8,
+        "command_initialized_pva_continuity_passes": 7,
+        "exact_regressions": 4,
+        "matched_delay_pairs": 3,
+        "all_snapshot_hashes_verified": true,
+        "frozen_models_original_runner_unchanged": true
+      },
+      "findings": [
+        "命令状态初始化使已准入参考发布点P/V/A差为0；实际状态反馈保留，非全机或物理jerk证明。",
+        "相同采样的批量准入中位数约3.5–3.9 ms，逐点约42–43 ms；初轮7.519 ms单次值保留，不作硬实时声明。",
+        "显式等待0/5/45 ms的加速案例通过有限指标，缓冲从23.568到44.046 mm，峰值加速度从0.692808到0.784233 m/s²。",
+        "匀速45 ms候选包络14.8775 cm加0.3 cm余量超15 cm，离线拒绝，未执行该候选。"
+      ],
+      "qualification": "固定腰部、已知0.5 kg刚体6秒有限测试；2次默认回归另用历史1 kg设置。没有真实线程/通信、制动预测偏差、MPC或硬件验证。",
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证，限第十六小节范围",
+        "scope": "以可解释的底盘实际制动与预测偏差检验一次规划加现有反馈的不足，再比较有限频率修正；不直接锁定完整MPC。",
+        "plan": "../../docs/plans/16-brake-prediction-mismatch.md"
+      }
+    },
+    "brake_prediction_mismatch_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，限本轮范围",
+      "plan": "../../docs/plans/16-brake-prediction-mismatch.md",
+      "date": "2026-10-31",
+      "authorization": "用户在制动预测偏差与一次规划反馈检验建议后回复可以。",
+      "report": "../rby1-research/stage16/制动预测偏差_一次规划基线与世界参考误差.md",
+      "results": "../rby1-research/stage16/summary.json",
+      "verification_record": "../rby1-research/stage16/delivery_check.json",
+      "verification": {
+        "complete_runs": 10,
+        "incomplete_physical_runs": 0,
+        "quality_passes": 10,
+        "grasp_passes": 10,
+        "execution_tracking_passes": 8,
+        "original_braking_metric_passes": 4,
+        "original_braking_metric_failures": 6,
+        "object_example_passes_among_interface_runs": 4,
+        "object_example_failures_among_interface_runs": 4,
+        "exact_regressions": 3,
+        "roundoff_only_regressions": 1,
+        "matched_mismatch_cases": 5,
+        "all_snapshot_hashes_verified": true,
+        "frozen_models_original_runner_unchanged": true
+      },
+      "findings": [
+        "匀速制动时长+10%/+20%和起刹晚20ms时物体加速度约0.876/0.903/0.865 m/s²；+20%包络约15.674 cm，违反本轮示例门槛。",
+        "加速触发的+10%/+20%仍通过物体指标，但底盘原停车匹配失败；不能把执行目标跟踪当作原任务成功。",
+        "+20%匀速的物体最大世界误差约25.12mm、底盘预测位置误差23.98mm，采样残差1.31mm；关节误差亦增加，需补世界坐标执行基线。",
+        "失败未依赖接近力矩上限；没有证明MPC必要或新颖性。"
+      ],
+      "qualification": "固定腰部、已知0.5kg、原接触与6秒时窗；执行曲线为受控偏差模拟而非实机故障。2次默认回归另用历史1kg。",
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证，限第十七小节范围",
+        "scope": "优先补基本世界坐标末端反馈与名义短距离/有限行程核心验证；系统误差扫描建议后移，取值需出处。具体下一阶段待讨论。",
+        "plan": "../../docs/plans/17-world-x-feedback-nominal.md"
+      }
+    },
+    "world_x_nominal_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，限本轮范围",
+      "plan": "../../docs/plans/17-world-x-feedback-nominal.md",
+      "date": "2026-11-01",
+      "authorization": "用户在优先补基本反馈/名义效果、系统鲁棒性后移建议后回复可以。",
+      "report": "../rby1-research/stage17/基本前向反馈与名义制动_核心效果核查.md",
+      "results": "../rby1-research/stage17/summary.json",
+      "verification_record": "../rby1-research/stage17/delivery_check.json",
+      "verification": {
+        "complete_runs": 12,
+        "incomplete_physical_runs": 0,
+        "quality_grasp_admitted_brake_passes": 12,
+        "new_forward_feedback_runs": 9,
+        "new_feedback_example_passes": 6,
+        "new_feedback_example_failures": 3,
+        "exact_regressions": 3,
+        "matched_nominal_pairs": 4,
+        "all_snapshot_hashes_verified": true,
+        "frozen_models_original_runner_unchanged": true,
+        "no_injected_brake_mismatch_wait_or_command_delay": true
+      },
+      "findings": [
+        "补一维实测底盘位置/速度映射，不改物体停车计划，旧默认3次精确回归。",
+        "名义匀速、较快与前伸姿态的成熟缓冲峰值加速度约降21.8%–21.9%，额外行程约11.7–13.7mm；加速触发峰值反而更高，接管/jerk与加速度存在权衡。",
+        "当前支路x=.36前向100mm通过105mm失败，x=.44前向20mm通过25mm失败；不作全局可达域结论，执行子路径不是实际硬限值。",
+        "成熟基线覆盖本轮四组，无新优化器、主动腰部或最终新颖性证明。"
+      ],
+      "qualification": "固定腰部、已知0.5kg、理想状态与6秒有限测试；2次默认回归另用历史1kg，较快案例为准入后.75s/22cm。",
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证，限第十八小节范围",
+        "scope": "核查前伸姿态与加速触发等名义约束组合，并审查物体停止时长下界/局部插值范围是否为不必要限制；先判定成熟基线不足，再评估新协调。",
+        "plan": "../../docs/plans/18-nominal-stroke-duration-audit.md"
+      }
+    },
+    "nominal_stroke_duration_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，保留示例加速度失败",
+      "plan": "../../docs/plans/18-nominal-stroke-duration-audit.md",
+      "date": "2026-11-01",
+      "authorization": "用户在名义行程真实冲突和排除成熟基线不必要限制的说明后回复懂了可以。",
+      "report": "../rby1-research/stage18/名义行程冲突核查_停止时长下界与成熟基线.md",
+      "results": "../rby1-research/stage18/summary.json",
+      "verification_record": "../rby1-research/stage18/delivery_check.json",
+      "verification": {
+        "complete_runs": 3,
+        "incomplete_physical_runs": 0,
+        "quality_grasp_base_stop_passes": 3,
+        "default_exact_regressions": 1,
+        "new_candidate_physical_runs": 2,
+        "example_acceleration_limit_failures_among_new": 2,
+        "all_snapshot_hashes_verified": true,
+        "frozen_models_original_runner_unchanged": true
+      },
+      "findings": [
+        "当前支路+22.75mm通过、+23.00mm首次失败，不作全局可达域证明。",
+        "原时长下界.6s要求23.52mm；去掉后目标时长.578564s、最大相对行程21.097mm，加1mm余量通过直接IK和原路径检查。",
+        "新候选固定腰部可执行，实际前向21.20mm、抓持/底盘停车通过；实际峰值.809590/.808917超过示例.8，未称全面成功。",
+        "该例首先是成熟基线额外限制问题，没有新增优化器或主动腰部必要性证据。"
+      ],
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证",
+        "plan": "../../docs/plans/19-constraint-cleanup.md",
+        "scope": "按用户最新要求清理额外默认限制，保留物理与数值检查。"
+      }
+    },
+    "constraint_cleanup_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，限清理及名义仿真",
+      "plan": "../../docs/plans/19-constraint-cleanup.md",
+      "authorization": "用户要求移除不必要约束，仅保留对后续工作有益的内容。",
+      "date": "2026-11-01",
+      "results": "../rby1-research/stage19/summary.json",
+      "verification_record": "../rby1-research/stage19/delivery_check.json",
+      "verification": {
+        "complete_runs": 4,
+        "model_and_base_tracking_checks_passed": 4,
+        "legacy_exact_regression": true,
+        "all_snapshot_hashes_verified": true,
+        "frozen_models_unchanged": true
+      },
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证",
+        "plan": "../../docs/plans/20-waist-arm-motion-distribution.md",
+        "scope": "同一停止参考下的腰臂运动分配。"
+      },
+      "current_constraint_policy": {
+        "removed_defaults": [
+          "物体停止不得早于底盘",
+          "15cm前向空间预算",
+          "3mm空间及1mm行程附加余量",
+          "隐藏的1m/s²参考限制导致自动拉长底盘停车时间",
+          "无来源物体示例值的通用成败裁定",
+          "未使用的10cm行程上限字段"
+        ],
+        "retained": [
+          "关节范围、速度和力矩及其来源/假设",
+          "碰撞与有限摩擦抓持物理",
+          "原底盘制动要求和跟踪检查",
+          "数值求解/路径有效性与运行保护",
+          "加速度、姿态、滑移、力、空间连续指标"
+        ],
+        "reference_settings": {
+          "A_mps2": 0.78,
+          "J_mps3": 5.0,
+          "role": "基线整形参数，可配置，非真实物体损伤阈值"
+        },
+        "current_scope": "固定腰部和手部朝向、直线、0.5kg刚体、已知载荷、6s窗口；保留已有接触慢漂及未标定能力的边界。"
+      }
+    },
+    "waist_arm_motion_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，限离线分配与名义物理对照",
+      "plan": "../../docs/plans/20-waist-arm-motion-distribution.md",
+      "authorization": "用户对先离线计算和MuJoCo验证腰臂运动分配的建议回复可以。",
+      "date": "2026-11-01",
+      "results": "../rby1-research/stage20/summary.json",
+      "verification_record": "../rby1-research/stage20/delivery_check.json",
+      "verification": {
+        "complete_runs": 5,
+        "incomplete_runs": 0,
+        "model_base_tracking_and_legacy_grasp_diagnostics_passed": 5,
+        "same_reference_pairs": 2,
+        "legacy_exact_state_control_regression": true,
+        "snapshot_and_frozen_model_hashes_verified": true,
+        "independent_fk_jacobian_derivative_and_qp_checks_passed": true
+      },
+      "findings": [
+        "同一停止参考下，躯干最大单关节变化约0.612/2.175度，手臂总关节运动量下降约91.97%/92.63%；是运动指标，不是能耗或稳定性提升百分比。",
+        "物体加速度及姿态几乎不变，不能声称普遍更稳；上身包络增加约0.88/0.58mm。",
+        "实际底盘成对位置最大差约1.03/2.28微米，原0.6s参考不变。",
+        "当前完成离线局部QP路径及动力学跟踪，不是在线QP/WBC或已确立论文创新。"
+      ],
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证",
+        "plan": "../../docs/plans/21-state-conditioned-stop-candidates.md",
+        "scope": "有限停止候选评价及取舍展示。"
+      }
+    },
+    "state_conditioned_candidate_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，限有限候选评价与名义物理对照",
+      "plan": "../../docs/plans/21-state-conditioned-stop-candidates.md",
+      "authorization": "用户要求继续推进状态相关的停止动作；未确认唯一偏好，先展示取舍并验证透明选择规则。",
+      "date": "2026-11-01",
+      "user_preference": "用户明确选择先展示取舍，再确定偏好；本轮不设置唯一默认偏好。",
+      "results": "../rby1-research/stage21/summary.json",
+      "verification_record": "../rby1-research/stage21/delivery_check.json",
+      "figure": "../rby1-research/stage21/停止动作取舍.png",
+      "verification": {
+        "offline_states": 5,
+        "candidates_per_state": 5,
+        "complete_runs": 7,
+        "incomplete_runs": 0,
+        "same_base_reference_comparisons": 4,
+        "legacy_exact_state_control_regression": true,
+        "all_snapshots_and_frozen_model_hashes_verified": true
+      },
+      "findings": [
+        "偏柔和方案实际峰值加速度下降约35.9%，需要更多上身动作和空间；偏少动方案运动指标下降98.4%/93.6%，加速度上升28.2%/60.2%。",
+        "候选评价包含离线姿态路径，但相同速度的两种姿态未改变最少动选择；不能声称已证明姿态单独要求更换轨迹。",
+        "完成有限候选取舍与明确偏好的选择；用户尚未确定唯一偏好。不是全局最优、真实构型重规划或在线MPC。"
+      ],
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证",
+        "plan": "../../docs/plans/22-delivery-stop-handover.md",
+        "scope": "独立前后递送中的急停连续接管。"
+      }
+    },
+    "delivery_stop_handover_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，限单轴递送名义工况",
+      "plan": "../../docs/plans/22-delivery-stop-handover.md",
+      "authorization": "用户对加入前后递送、不同动作阶段急停及连续接管验证回复可以。",
+      "date": "2026-11-01",
+      "results": "../rby1-research/stage22/summary.json",
+      "verification_record": "../rby1-research/stage22/delivery_check.json",
+      "playback": "../rby1-research/stage22/递送中急停.gif",
+      "verification": {
+        "final_complete_runs": 5,
+        "first_pass_complete_runs_retained": 5,
+        "total_complete_runs": 10,
+        "incomplete_runs": 0,
+        "legacy_exact_state_control_regression": true,
+        "boundary_fix_exact_state_control_regressions": 5,
+        "same_reference_half_timestep": true,
+        "source_versions_match_preflight": true,
+        "all_snapshots_and_frozen_model_hashes_verified": true
+      },
+      "findings": [
+        "独立前送的正/零/负加速度初态均可由成熟Ruckig连续接管，位置/速度/加速度参考连续；三工况原底盘制动参考一致。",
+        "初末段速度同为0.4256m/s，加速度为+0.16/-0.16m/s²，额外前移约4.47/1.73cm，体现初始加速度影响。",
+        "修复精确触发时刻只读采样遗漏递送位移的问题；复跑5组状态和控制逐点一致，实际执行未改，前向跟踪误差均<0.095mm。",
+        "当前工况未提供新增在线QP/MPC必要性或论文创新证据。"
+      ],
+      "next_section": {
+        "status": "已完成",
+        "scheme_status": "已实现、已验证，限当前名义仿真观测",
+        "plan": "../../docs/plans/23-grasp-stability-observations.md",
+        "scope": "只读补齐逐手抓持稳定性记录及分阶段评价。"
+      }
+    },
+    "grasp_stability_observation_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，限当前名义仿真观测",
+      "plan": "../../docs/plans/23-grasp-stability-observations.md",
+      "authorization": "用户同意补齐逐手位姿/滑动/接触载荷/摩擦余量时序，用已有工况完善评价。",
+      "date": "2026-11-01",
+      "results": "../rby1-research/stage23/summary.json",
+      "verification_record": "../rby1-research/stage23/delivery_check.json",
+      "report": "../rby1-research/stage23/结果与指标说明.md",
+      "figure": "../rby1-research/stage23/急停抓持稳定性.pdf",
+      "verification": {
+        "complete_runs": 5,
+        "exact_observer_on_off_state_control_regressions": 5,
+        "high_rate_samples": 36005,
+        "raw_contact_rows": 576080,
+        "phase_metric_rows": 30,
+        "frozen_models_unchanged": true,
+        "finite_difference_and_wrench_checks_passed": true,
+        "figure_alignment_text_collision_visual_checks_passed": true
+      },
+      "findings": [
+        "逐手位姿变化、接触切向路程代理、末端接触载荷和实际关节广义力已分开记录，不回送控制。",
+        "中段制动相对位置变化约0.1029mm，单手接触力矩峰值约0.03235N·m，摩擦利用率峰值约0.40933。",
+        "后续保持段仍有约0.2577mm缓慢相对变化，不能把全程漂移归因于急停，也不能由摩擦利用率小于1宣称无滑移。",
+        "半步长观测接近；未验证真实接触、实机、新物体或不同停止动作在这些指标下的优劣。"
+      ],
+      "next_candidate": "用新增指标评价已有停止动作，并统一后续保持窗口；未启动新小节。",
+      "replay_followup": {
+        "status": "已完成",
+        "authorization": "用户要求解释停车后相对位置继续增大并查看界面；只读回放与诊断。",
+        "diagnostics": "../rby1-research/stage23/replay_diagnostics.json",
+        "ui_checks": "../rby1-research/stage23/replay_ui_checks.json",
+        "findings": [
+          "后保持段手高度基本不变，物体相对下移约0.156mm/s，急停前也存在接触慢运动。",
+          "观测与MuJoCo软接触慢漂移机制一致；现控制无物体相对手竖直位置纠偏。未通过隔离试验唯一确认成因，未外推实机。"
+        ],
+        "physical_runs": 0,
+        "model_or_controller_changes": false,
+        "standalone_exports": {
+          "status": "已完成",
+          "reason": "用户反馈聊天内回放打不开",
+          "offline_html": "../rby1-research/stage23/grasp-stop-replay-offline.html",
+          "video": "../rby1-research/stage23/grasp-stop-replay.mp4",
+          "check": "../rby1-research/stage23/media_export_check.json",
+          "user_directory": "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\急停回放_20261101"
+        }
+      }
+    },
+    "stop_action_grasp_comparison_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证，限现有名义工况配对比较",
+      "date": "2026-11-01",
+      "plan": "../../docs/plans/24-stop-actions-grasp-quality.md",
+      "authorization": "用户要求继续推进；沿用比较已有停止动作并统一停车后观察时长的已讨论下一步。",
+      "scope": "6组第21节已有工况，新增逐手抓持观测；1 s保持窗口；原始指标与急停前趋势参照分开。",
+      "no_changes": "模型、接触、控制算法和底盘制动不改；不做重载/扰动/新物体扫描。",
+      "results": "../rby1-research/stage24/summary.json",
+      "report": "../rby1-research/stage24/比较结果说明.md",
+      "figure": "../rby1-research/stage24/停止动作与抓持质量.pdf",
+      "verification_record": "../rby1-research/stage24/delivery_check.json",
+      "verification": {
+        "complete_runs": 6,
+        "historical_exact_state_control_regressions": 6,
+        "same_pretrigger_telemetry_and_base_reference": true,
+        "frozen_models_and_physical_sources_unchanged": true,
+        "high_rate_samples": 36006,
+        "raw_contact_rows": 576096,
+        "phase_metric_rows": 36,
+        "figure_checks_passed": true
+      },
+      "findings": [
+        "偏柔和方案峰值加速度下降约35.9%，单手接触力矩下降约35.6%；代价为更多上身运动和向前缓冲。",
+        "制动段平均切向速率可降低，但持续时间更久，累计路程不一定降低，原始相对位姿也未一致改善。",
+        "相同1 s保持段漂移仍约0.156mm，未以微小差异排名。趋势偏离不是越小越好的误差分数。",
+        "现有成熟停止参考即可产生收益；未证明新增控制算法必要性、真实抓持安全或论文创新。"
+      ],
+      "next_candidate": "围绕低冲击收益与上身活动/前向缓冲空间的实际取舍明确现有方法缺口；未启动新实施小节。"
+    },
+    "research_gap_audit_stage": {
+      "status": "已完成",
+      "scheme_status": "已验证调查与参考算术；新方法必要性和创新仍待证明",
+      "date": "2026-11-01",
+      "plan": "../../docs/plans/25-research-gap-audit.md",
+      "authorization": "用户同意明确现有方法在何种实际急停要求下不足。",
+      "scope": "定向原文和版本核查、已有实现边界、有限离线解析检查、强基线与最小反证场景草案；无新物理仿真。",
+      "report": "gap-audit/研究缺口核查与最小验证草案.md",
+      "coverage_matrix": "gap-audit/coverage_matrix.csv",
+      "reference_checks": 1204,
+      "new_physical_runs": 0,
+      "findings": [
+        "9篇独立论文已定向复核；液体与双臂相关工作的最终正文阅读边界明确保留。",
+        "连续调整同一成熟参考可优于五档选择，必须作为后续强基线；无新控制算法贡献。",
+        "当前无外部障碍和实际空间预算；只验证项目实现缺口，尚不能证明学术空白。"
+      ],
+      "next_candidate": "讨论几何场景资格和连续参数强基线；S0/S1/S2为待实施草案，未确定新全身规划算法。",
+      "checks": "gap-audit/delivery_check.json",
+      "subsequent_discussion": {
+        "date": "2026-11-01",
+        "status": "已确认；有限基线比较已完成，见base_upper_allocation_stage",
+        "topic": "相同外部停止要求下，底盘单独整形、底盘与上身共同调整、底盘尽快停止后上身缓冲的公平比较",
+        "record": "../../docs/plans/25-research-gap-audit.md",
+        "implementation_authorized": false,
+        "current_controller_changed": false
+      }
+    },
+    "base_upper_allocation_stage": {
+      "status": "已完成",
+      "scheme_status": "已实现、已验证；限四组名义公平基线",
+      "date": "2026-11-01",
+      "plan": "../../docs/plans/26-base-upper-stop-allocation.md",
+      "scope": "四种成熟参考的匹配核查与最多4次名义运行；无新优化器、真实障碍或接触修改",
+      "report": "../rby1-research/stage26/底盘与上身停止分配_结果说明.md",
+      "summary": "../rby1-research/stage26/summary.json",
+      "physical_runs": 4,
+      "raw_grasp_samples": 24004,
+      "findings": [
+        "物体曲线相同的三种分配，其峰值加速度与单手接触力矩相近；底盘单独柔和停止应保留为这两类指标的强基线，不能据此称抓持稳定性相同。",
+        "相同0.6 s/12 cm底盘参考下，上身缓冲把物体峰值加速度降低49.99%、单手TCP接触力矩降低49.76%；多用6 cm物体参考距离和0.3 s时间。",
+        "现实价值取决于具体障碍几何和停止接口是否允许底盘先停、物体继续缓冲；未加入真实障碍或证明创新。",
+        "用户追问后补齐相同0.9 s窗口的相对位移/转角、接触切向路程及摩擦利用率；同加速度也有不同相对微动。停车后1 s慢漂四组均约0.156 mm，未解决持续抓持稳定。"
+      ],
+      "verification": "../rby1-research/stage26/delivery_check.json",
+      "next_candidate": "先讨论抓持基线及慢漂处理，再扩大障碍几何；尚未选定或实施新接触模型、防滑反馈或规划器。",
+      "stability_followup": {
+        "status": "已完成原始数据补充分析",
+        "new_physical_runs": 0,
+        "metrics_by_hand": "../rby1-research/stage26/grasp_metrics_by_hand.csv",
+        "unresolved": "默认模型持续慢漂，真实接触标定与防滑平移反馈尚未完成；加速度下降不等于抓持稳定。"
+      }
+    },
+    "grasp_contact_baseline_stage": {
+      "status": "已完成",
+      "scheme_status": "有限诊断已实现、已验证；默认模型未替换",
+      "date": "2026-11-01",
+      "plan": "../../docs/plans/27-grasp-contact-baseline.md",
+      "scope": "官方接触设置资格核查、独立负对照和最多8次当前模型名义运行；不实施防滑控制器。",
+      "physical_runs": 8,
+      "raw_grasp_samples": 72008,
+      "report": "../rby1-research/stage27/抓持慢漂与接触基线_结果说明.md",
+      "summary": "../rby1-research/stage27/summary.json",
+      "verification": "../rby1-research/stage27/delivery_check.json",
+      "findings": [
+        "保持摩擦/夹紧/几何/质量与控制不变，默认、impratio100、NoSlip3的静态竖直慢漂约0.156102、0.015610、0.000318 mm/s，说明接触数值处理影响显著。",
+        "NoSlip3中仍有残余微动；相同较快底盘下缓冲保留约50%惯性/接触力矩收益，但相对位移模长排序与原设置相反，不能由加速度宣称抓持更稳。",
+        "NoSlip3缓冲组更大位移主要为手系z正向偏移，不等于更大向下滑；接触路程、转角、摩擦、方向与保持段均保留。",
+        "8次机器人运行现有模型/跟踪检查通过，无警告；静止半步长共同窗口接近，动态微米级排名未做步长收敛或物理标定。"
+      ],
+      "next_candidate": "先讨论接触基线适用范围与动态相对位姿/接触运动来源；未锁定新防滑控制器或扩大障碍场景。",
+      "hand_frame_clarification": {
+        "status": "已完成只读解释与可视化",
+        "images": "../rby1-research/stage27/hand_frames/",
+        "definition": "Relative position expressed at each EE site; +z is approximately world-up only in the current carry pose. Increase includes hand motion and frame rotation.",
+        "new_physical_runs": 0
+      }
+    },
+    "relative_motion_decomposition_stage": {
+      "status": "已完成",
+      "scheme_status": "只读几何与接触位置分解已验证；新控制未实现",
+      "date": "2026-11-01",
+      "plan": "../../docs/plans/28-relative-motion-decomposition.md",
+      "scope": "原设置/NoSlip3既有8组数据；世界运动、手运动、坐标转动与接触参考点几何分解，无新物理运行。",
+      "new_physical_runs": 0,
+      "existing_cases": 8,
+      "report": "../rby1-research/stage28/相对微动来源与下一步_结果说明.md",
+      "summary": "../rby1-research/stage28/summary.json",
+      "verification": "../rby1-research/stage28/delivery_check.json",
+      "findings": [
+        "NoSlip3缓冲组约0.024 mm相对z变化主要来自手自身高度变化，另有坐标轴转动，非物体整体升高。",
+        "初始接触位置的固连点也有约0.026 mm切向变化，不能把全部微动归为坐标假象；未据此认证真实滑移。",
+        "当前一维反馈未完整补偿底盘高度与姿态变化；FK分解显示这些项与手高度变化有关，尚未通过物理干预证明控制改进收益。"
+      ],
+      "next_candidate": "保持相同物体参考，先离线核查完整底盘位姿到双手目标的映射，再讨论有限在线对照；未选择新MPC或力控。"
+    },
+    "full_base_pose_offline_stage": {
+      "status": "已完成",
+      "scheme_status": "离线核查已实现、已验证；在线未实施",
+      "date": "2026-11-01",
+      "plan": "../../docs/plans/29-full-base-pose-offline-check.md",
+      "scope": "既有8组、3.001–5.501 s状态；完整位姿双手局部IK、关节修正/速度/范围与采样碰撞核查。",
+      "new_physical_runs": 0,
+      "controller_changed": false,
+      "report": "../rby1-research/stage29/完整位姿补偿离线核查_结果说明.md",
+      "summary": "../rby1-research/stage29/summary.json",
+      "verification": "../rby1-research/stage29/delivery_check.json",
+      "existing_cases": 8,
+      "saved_states": 2008,
+      "midpoints": 2000,
+      "findings": [
+        "8组均通过；最大关节修正约0.00925°，总参考采样速度最高约占当前模型上限5.512%，无检查范围内非允许穿透。",
+        "修正包含刹车前已有偏差；3.501–4.401 s额外变化最大约0.00336°，不把全部补偿归为急刹造成。",
+        "原物体参考/抓持变换及冻结模型源保持不变；不以近零FK数值残差宣称抓持改善或实机精度。"
+      ],
+      "next_candidate": "讨论有限在线对照及关节位置/速度/加速度参考一致性、接入连续性；抓持微动、接触力矩与保持段指标仍须实际运行核验。"
+    },
+    "full_base_pose_online_stage": {
+      "status": "已完成",
+      "scheme_status": "有限在线对照已实现、已验证；无一致抓持收益，默认控制未替换",
+      "date": "2026-11-01",
+      "plan": "../../docs/plans/30-full-base-pose-online-comparison.md",
+      "scope": "最多5次6 s名义运行；4组候选与既有原数据比较，另1次关闭功能回归。",
+      "default_contact_model_changed": false,
+      "old_runner_changed": false,
+      "physical_runs": 5,
+      "new_grasp_samples": 30005,
+      "report": "../rby1-research/stage30/完整位姿补偿在线对照_结果说明.md",
+      "summary": "../rby1-research/stage30/summary.json",
+      "verification": "../rby1-research/stage30/delivery_check.json",
+      "figure": "../rby1-research/stage30/online_comparison.png",
+      "findings": [
+        "关闭新增功能时，关节状态、控制与参考逐点复现旧记录；四次候选加一次回归均完成并通过现有模型质量/制动核查。",
+        "完整位姿补偿改善手世界高度/目标跟踪；NoSlip3缓冲相对位移约0.024602→0.024672 mm、TCP接触力矩约0.020758→0.020755 N·m，无一致抓持改善。",
+        "原设置保持1 s相对变化仍约0.156 mm；未解决默认模型慢漂。小量指标差异未做动态收敛或真实接触标定，不作为物理收益或创新。"
+      ],
+      "next_candidate": "讨论实际障碍几何及整体机器人/载荷空间预算下停止分配；当前保留可选位姿补偿，不追加参数扫描，不切换默认控制。"
+    },
+    "obstacle_geometry_stage": {
+      "status": "已完成",
+      "scheme_status": "三维几何资格与参考边界已实现、已验证；障碍中动力学未实施",
+      "date": "2026-11-01",
+      "plan": "../../docs/plans/31-obstacle-geometry-qualification.md",
+      "scope": "四场景×四个已有停止动作，完整碰撞几何有符号距离与成熟参考边界；无新控制或动力学。",
+      "new_physical_runs": 0,
+      "obstacle_dimensions_role": "Explicit nominal experimental variables, not measured industrial requirements or safety margins.",
+      "scenarios": 4,
+      "existing_actions": 4,
+      "replayed_state_scene_pairs": 6416,
+      "active_collision_geoms": 508,
+      "report": "../rby1-research/stage31/障碍几何与停止分配_结果说明.md",
+      "summary": "../rby1-research/stage31/summary.json",
+      "verification": "../rby1-research/stage31/delivery_check.json",
+      "findings": [
+        "上身前缘比底盘约多伸出9.44 cm；低障碍与同位置高墙的前向间隙不能混用。",
+        "低障碍允许较快底盘与上身缓冲；同位置高墙四旧动作均被否定；载荷高度障碍否定柔和物体曲线但保留较快无缓冲组。",
+        "A=0.6共同制动在部分场景通过名义几何资格，提示成熟连续参考不能省略；其0.7867 s底盘时长不满足严格0.6 s接口，不能混作公平对照。",
+        "检查完整碰撞代理、负对照及36068对不筛选原生距离，未改模型或运行新动力学；尚未证明新算法必要。"
+      ],
+      "next_candidate": "明确相同控制权限，优先验证固定原0.6 s底盘、连续选择物体停止参考的强基线及有限障碍中闭环对照；不直接扩成MPC。"
+    }
+  },
+  "second_topic_screening": {
+    "current_status": "用户于2026-10-26要求暂不推进；以下候选和报告仅作为历史调查保留，不代表当前工作安排",
+    "withdrawn": [
+      "泛化姿态—速度协调防倾覆",
+      "推门防倾覆"
+    ],
+    "candidates_not_approved": [
+      {
+        "topic": "双臂搬运大载荷时的狭窄空间整体避障，优先核查执行误差与共同抓持约束",
+        "user_status": "用户认为一般，退出本轮重点推荐",
+        "closest_sources": [
+          "https://arxiv.org/abs/2410.22910",
+          "https://arxiv.org/abs/2608.07005",
+          "https://arxiv.org/abs/2511.08778"
+        ],
+        "risk": "全身规划、狭窄通行与载荷几何已有前作；仅增加双臂或改变载荷形状不能直接视为创新"
+      },
+      {
+        "topic": "双臂搬运到放置阶段的接触与承载转移",
+        "user_status": "用户认为一般，退出本轮重点推荐",
+        "closest_sources": [
+          "https://arxiv.org/abs/2106.10969",
+          "https://arxiv.org/abs/2208.00596"
+        ],
+        "reading_scope": "仅作初筛，未完成移动双臂专门检索",
+        "risk": "接触过渡和柔顺操作已有大量工作；需验证位置误差下普通低速放置与阻抗控制的不足，接触建模成本较高"
+      }
+    ],
+    "screening_rule": "先核实合理条件下任务困难及简单基线不足，再检索具体缺口；不因未找到某组关键词而宣称无人研究",
+    "industry_screening": {
+      "status": "三候选的前作、问题边界、最小验证草案与退出条件已形成；仿真及算法实现尚未开始",
+      "scope": "制造装配、设备维护与再制造、农业、包装、建筑及物流人机交接；保持同一轮式升降双臂平台",
+      "decision": "研究意向已确认；最终第二课题与技术路线待讨论。下一步先验证普通方法不足、信息可用性和最小任务可行性，不因本轮预研直接确定算法。",
+      "initial_screening_snapshot": [
+        {
+          "topic": "沿大型设备移动时，线缆未知接触下的张力受限操作与解困",
+          "roles": "一臂引导或换抓，一臂送线及调节余量；底盘扩展沿设备作业的范围",
+          "verified_sources": [
+            "https://www.mech.kuleuven.be/en/pma/research/robotics/research/manufacturing/neura_challenge25",
+            "https://doi.org/10.1109/LRA.2023.3264779",
+            "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2021/EECS-2021-121.html"
+          ],
+          "reading_scope": "KU Leuven 官方演示说明、Qin 2023 作者 PDF 的任务与假设、Berkeley 技术报告摘要；未复现",
+          "important_boundaries": "KU Leuven 演示是单臂移动机械臂；Qin 2023 在人形机器人上验证长柔性带安装；线缆解结及恢复也有前作，均不能直接证明新课题空白",
+          "baseline_to_challenge": "张力阈值停车、恒张力送线、固定回退动作及已有布线规划",
+          "simulation_burden_estimate": "中高；先限定单根线、少量障碍和接触状态，不能直接承诺可泛化到真实线束"
+        },
+        {
+          "topic": "带载拆卸中连接约束解除时的主动承托与载荷转移",
+          "roles": "一臂承托部件，一臂解除连接；底盘主要负责作业位置选择和换工位",
+          "verified_sources": [
+            "https://arxiv.org/abs/2609.27466",
+            "https://arxiv.org/abs/2606.08152",
+            "https://rua.ua.es/dspace/bitstream/10045/10126/1/art%C3%ADculo.pdf"
+          ],
+          "reading_scope": "两篇 2026 预印本摘要及早期作者 PDF 的承托防掉落任务描述；未完成专门的力控方法对比",
+          "important_boundaries": "承托拆卸、无夹具拆卸和双臂支撑转移已有前作；未知载荷下的具体控制增量尚未查明。若要求底盘运动是论文核心，本方向的匹配度低于线缆操作",
+          "baseline_to_challenge": "恒定承托力、普通阻抗控制、固定拆卸顺序及外部支撑夹具",
+          "simulation_burden_estimate": "中等至中高；可先用刚体与可解除连接约束，不能据此宣称真实螺纹或电池拆卸已验证"
+        },
+        {
+          "topic": "农业中受力约束下主动拨叶扶枝与采摘的双臂协同",
+          "roles": "一臂改变局部遮挡与可达性，另一臂观测或采摘；底盘与升降柱选择作业位置和高度",
+          "verified_sources": [
+            "https://arxiv.org/abs/2209.06074",
+            "https://arxiv.org/abs/2604.06341"
+          ],
+          "reading_scope": "摘要与发表元数据；未进行植物力学或真实损伤阈值验证",
+          "important_boundaries": "双臂作物操作及主动推枝解除遮挡均已有前作；后者 arXiv 于 2026 上传，但 journal reference 为 IROS 2024，不能把上传年当会议年",
+          "baseline_to_challenge": "仅换视角、固定拨动位置与力度、已有枝叶推开方法",
+          "simulation_burden_estimate": "偏高；仿真可先研究可见性与受力约束，真实不损伤结论仍需实物验证"
+        },
+        {
+          "topic": "大件人机交接中不对称接触、承载变化与松手时机",
+          "roles": "双臂共同承载大件并逐步交接；底盘主要负责接近位置，移动贡献较弱",
+          "verified_sources": [
+            "https://doi.org/10.1109/TASE.2020.3043480",
+            "https://arxiv.org/abs/2402.14525"
+          ],
+          "reading_scope": "机构论文摘要与 arXiv 摘要；未核查完整人体交互实验设计",
+          "important_boundaries": "双臂大平板交接和松手控制已有前作；交接主体是人，纯仿真难以充分支撑最终结论",
+          "baseline_to_challenge": "拉力阈值释放、载荷转移阈值释放及已有双臂交接控制",
+          "simulation_burden_estimate": "仿真初筛中等，最终交互验证负担偏高"
+        },
+        {
+          "topic": "包装工序中软袋开口状态的主动验证与恢复",
+          "roles": "双臂调节袋口或一臂持袋一臂试探；底盘主要换工位",
+          "verified_sources": [
+            "https://doi.org/10.1109/TMECH.2024.3485471",
+            "https://arxiv.org/abs/2401.11432",
+            "https://arxiv.org/abs/2403.12685"
+          ],
+          "reading_scope": "Crossref 元数据和 arXiv 摘要；未完成包装产线需求核验",
+          "important_boundaries": "双臂开袋及学习袋体动力学已有前作；移动底盘必要性弱，织物接触仿真及实物迁移成本较高",
+          "baseline_to_challenge": "固定开袋动作、视觉开口面积判据以及专用开袋机构",
+          "simulation_burden_estimate": "偏高；暂不列为首选"
+        }
+      ],
+      "initial_screening_note": "保留初筛历史；前三项已获用户授权继续调查，当前范围以current_candidates为准，第四、五项不在本轮重点内。",
+      "user_authorization": "用户明确要求候选1、2、3都继续推进；当前完成定向调查和方案材料，不等于最终选题或大规模实现已确认",
+      "current_candidates": [
+        {
+          "id": "B1",
+          "topic": "有限张力与操作空间下，移动双臂线缆作业的局部接触诊断和解困",
+          "state": "已授权定向预研；最小仿真与算法待讨论",
+          "question": "局部接触不可完全观测时，能否通过受张力限制的试探动作，选择送线、回退或换抓，在恢复作业的同时降低误拉与失败？",
+          "scope": "单根线缆、少量导向点、限定局部卡挂模式；不研究任意结和整车线束。",
+          "baselines": [
+            "张力阈值停车后按原路回退",
+            "恒张力送线加固定恢复动作",
+            "适配后的力估计与动作原语方法L1；必要时加入L3的恢复思想"
+          ],
+          "metrics": [
+            "恢复成功率与拒绝/中止率",
+            "峰值张力和超限持续时间",
+            "恢复时间、动作次数和换抓次数",
+            "控制器可见信息下的模式混淆与不可辨识情况"
+          ],
+          "stop_if": [
+            "简单回退或恒张力已覆盖全部合理测试条件",
+            "需要任意真值接触图才能工作",
+            "与L1/L2/L3的区别仅是底盘坐标或算法名称"
+          ],
+          "source_ids": [
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ]
+        },
+        {
+          "id": "B2",
+          "topic": "有界载荷先验下，连接解除过程的双臂主动承托与受控载荷转移",
+          "state": "已授权定向预研；先补可观测性与具体连接形式，暂不定控制算法",
+          "question": "质量或重心有界不确定、连接可逐步解除或状态可感知时，怎样分配承托与拆卸动作，降低释放后的位移和冲击，并避免顶紧连接？",
+          "scope": "一个刚性盖板或模块、一种可解除连接、一个承托接触；所有负载在目标平台能力范围内。",
+          "baselines": [
+            "普通阻抗控制加缓慢解除连接",
+            "保守恒定承托力",
+            "已知真实载荷的理想参考，仅作为性能上限"
+          ],
+          "metrics": [
+            "释放后最大位移、转角与冲击",
+            "承托力及工具受力峰值",
+            "连接解除完成率与卡滞/主动中止率",
+            "先验误差下的性能变化及估计可辨识性"
+          ],
+          "stop_if": [
+            "完全约束下没有足够传感信息却要求唯一辨识任意载荷",
+            "普通慢速阻抗策略已满足全部约束",
+            "连接形式和应用零件始终无法确定"
+          ],
+          "source_ids": [
+            "D1",
+            "D2",
+            "D3"
+          ]
+        },
+        {
+          "id": "B3",
+          "topic": "接触受限条件下，双臂主动创造可观测且可操作的采摘空间",
+          "state": "已授权定向预研；作物、损伤代理量与模型待讨论",
+          "question": "局部枝条柔顺性不确定时，怎样选择辅助臂接触与移动/升降位置，使采摘臂获得可执行接近路径，并限制受力和过度变形？",
+          "scope": "一个目标、局部少量枝条/叶片；先到达可抓持或可切割位姿，不扩展到整园自主采收。",
+          "baselines": [
+            "仅改变视角与作业位置，不拨动植株",
+            "固定拨动位置和力度后执行采摘接近",
+            "顺序式支撑—接近与已有单臂温和接触思想G2"
+          ],
+          "metrics": [
+            "同时满足可见性、可达性与受力限制的完成率",
+            "峰值接触力、最大枝条变形与代理约束违反",
+            "操作时间及底盘/升降柱移动量",
+            "保持辅助接触时的目标位移、失稳与恢复"
+          ],
+          "stop_if": [
+            "单纯换视角已能完成全部目标",
+            "只提高图像可见比例，没有可执行采摘接近",
+            "损伤阈值无来源却宣称真实无损",
+            "区别仅是把已有方法并列或增加第二只手"
+          ],
+          "source_ids": [
+            "G1",
+            "G2",
+            "G3",
+            "G4",
+            "G5"
+          ]
+        }
+      ],
+      "current_recommendation": {
+        "primary_investigation": "B1线缆，移动与双臂的共同作用最明确；新颖性风险仍高",
+        "agriculture_option": "B3保持活跃，有代码与建模入口，真实损伤验证成本高",
+        "disassembly_gate": "B2先确认具体连接与可观测信息，避免无先验载荷估计承诺",
+        "implementation": "仅生成文档；未实现控制器或运行仿真；计划均为草案"
+      },
+      "deliverables": {
+        "report": "industry-three/轮式双臂机器人_三候选问题边界与最小验证.pdf",
+        "evidence_and_validation_plans": "industry-three/三候选_证据与验证草案.json",
+        "document_qa": "industry-three/文档核验记录.json"
+      },
+      "document_qa": "10页分页与页码、12项来源、3项方案交叉引用已检查；已渲染目视检查，未发现截断或异常分页"
+    }
+  },
+  "last_updated": "2026-11-01",
+  "planning_authority": "../../docs/PROJECT_PLAN.md",
+  "record_role": "前期选题与实验历史证据索引；当前总体规划及新阶段状态以planning_authority为唯一入口，本文件不维护第二套未来实施计划。"
+}

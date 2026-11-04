@@ -1,0 +1,270 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "stage": "定向预调研已完成；最终选题待讨论",
+  "sources": [
+    {
+      "id": "A1",
+      "group": "A",
+      "title": "Keep It Upright: Model Predictive Control for Nonprehensile Object Transportation With Obstacle Avoidance on a Mobile Manipulator",
+      "authors": [
+        "Adam Heins",
+        "Angela P. Schoellig"
+      ],
+      "year": 2023,
+      "venue": "IEEE Robotics and Automation Letters",
+      "doi": "10.1109/LRA.2023.3324520",
+      "url": "https://arxiv.org/abs/2305.17484v2",
+      "level": "F｜全文精读",
+      "point": "单臂托盘稳定运输与在线避障，含突发虚拟障碍及投球。物体未被夹爪固定。",
+      "boundary": "不等同于双臂抓取、限定距离停车或整机防倾覆；参数与初始物体状态已知。",
+      "resource": "upright仓库已核验；未运行。"
+    },
+    {
+      "id": "A2",
+      "group": "A",
+      "title": "Robust Nonprehensile Object Transportation With Uncertain Inertial Parameters",
+      "authors": [
+        "Adam Heins",
+        "Angela P. Schoellig"
+      ],
+      "year": 2025,
+      "venue": "IEEE Robotics and Automation Letters 10(5):4492–4499",
+      "doi": "10.1109/LRA.2025.3551067",
+      "url": "https://arxiv.org/abs/2411.07079",
+      "level": "A｜摘要与元数据",
+      "point": "把惯性参数不确定性纳入非抓取运输规划，报告仿真和实机验证。",
+      "boundary": "本文证明“未知惯性”已有直接前作；本轮未精读其全部理论与实验。",
+      "resource": "与A1共用upright研究代码。"
+    },
+    {
+      "id": "A3",
+      "group": "A",
+      "title": "Fast yet predictable braking manoeuvers for real-time robot control",
+      "authors": [
+        "Mazin Hamad",
+        "Jesus Gutierrez-Moreno",
+        "Hugo T. M. Kussaba",
+        "Nico Mansfeld",
+        "Saeed Abdolshah",
+        "Abdalla Swikir",
+        "Wolfram Burgard",
+        "Sami Haddadin"
+      ],
+      "year": 2023,
+      "venue": "IFAC World Congress / IFAC-PapersOnLine",
+      "doi": "10.1016/j.ifacol.2023.10.711",
+      "url": "https://arxiv.org/abs/2306.06525",
+      "level": "A｜摘要与元数据",
+      "point": "研究可预测、平滑且快速的受控制动；摘要报告7自由度机械臂中3关节运动的仿真比较。",
+      "boundary": "可借鉴制动距离/时间基线，不是移动双臂物体稳定证明。",
+      "resource": "应用代码本轮未核实。"
+    },
+    {
+      "id": "A4",
+      "group": "A",
+      "title": "Design of Maximum Stopping Deceleration of Mobile Manipulator Considering the Protective Separation Distance without Tip-over",
+      "authors": [
+        "Chang Joo Lee",
+        "Jihyun Lee",
+        "Sungsoo Rhim"
+      ],
+      "year": 2021,
+      "venue": "IEEE ISR 2021:326–329",
+      "doi": "10.1109/ISR50024.2021.9419546",
+      "url": "https://khu.elsevierpure.com/en/publications/design-of-maximum-stopping-deceleration-of-mobile-manipulator-con/",
+      "level": "A｜作者机构摘要与元数据",
+      "point": "直接同时考虑停车减速度、保护距离及倾覆风险，摘要报告仿真。",
+      "boundary": "这是A/C交叉方向的重要前作；未获取全文，不能推断其全部模型与负载条件。",
+      "resource": "全文与应用代码待补核。"
+    },
+    {
+      "id": "B1",
+      "group": "B",
+      "title": "Efficient Whole-Body Model Predictive Control for Online Compliant Dual-Arm Mobile Manipulation",
+      "authors": [
+        "Wenqian Du",
+        "Ran Long",
+        "João Moura",
+        "Jiayi Wang",
+        "Saeid Samadi",
+        "Sethu Vijayakumar"
+      ],
+      "year": 2026,
+      "venue": "Journal of Field Robotics，2026-08-17在线发表",
+      "doi": "10.1002/rob.70320",
+      "url": "https://arxiv.org/abs/2410.22910v1",
+      "level": "F｜2024预印本全文精读；2026期刊元数据核验",
+      "point": "双层Bézier-MPC与预测导纳，在EVA实机上展示搬箱、窄通道、动态避障与外力恢复。",
+      "boundary": "统计数值来自2024 v1，未逐段核对期刊版；碰撞代理不等于完整几何。",
+      "resource": "OpTaS/CasADi/KNITRO见原文；应用代码未核实。"
+    },
+    {
+      "id": "B2",
+      "group": "B",
+      "title": "Real-time Whole-Body Motion Planning for Mobile Manipulators Carrying Arbitrarily Shaped Payloads via Kinematically-Coupled SVSDF",
+      "authors": [
+        "Yisheng Li",
+        "Longji Yin",
+        "Tingrui Zhang",
+        "Ruize Xue",
+        "Haoda Zhu",
+        "Nan Chen",
+        "Siqi Liang",
+        "Yuxi Liu",
+        "Fu Zhang"
+      ],
+      "year": 2026,
+      "venue": "arXiv:2608.07005；期刊接收状态本轮未核实",
+      "arxiv": "2608.07005",
+      "url": "https://arxiv.org/abs/2608.07005",
+      "level": "A｜摘要与元数据",
+      "point": "研究复杂形状负载与机器人运动链耦合的几何碰撞规划，摘要报告差速移动机械臂实机。",
+      "boundary": "不能只把“复杂负载过窄门”作为新意；是否覆盖双臂闭链仍待全文核对。",
+      "resource": "代码本轮未核实。"
+    },
+    {
+      "id": "B3",
+      "group": "B",
+      "title": "Pick-and-place in dynamic environments with a mobile dual-arm robot equipped with distributed distance sensors",
+      "authors": [
+        "Sotiris Stavridis",
+        "Pietro Falco",
+        "Zoe Doulgeri"
+      ],
+      "year": 2021,
+      "venue": "Humanoids，出版2021:76–82（会议名保留2020）",
+      "doi": "10.1109/HUMANOIDS47582.2021.9555672",
+      "url": "https://zenodo.org/records/5163236",
+      "level": "A｜机构/作者存档摘要与元数据",
+      "point": "YuMi+Ridgeback实机，以分布式距离传感器与在线优先约束优化处理移动双臂任务。",
+      "boundary": "本轮未精读其全局导航边界和完整碰撞覆盖；不能自动当完整负载规划基线。",
+      "resource": "Zenodo作者PDF可得；应用代码未核实。"
+    },
+    {
+      "id": "B4",
+      "group": "B",
+      "title": "Dual-Arm Whole-Body Motion Planning: Leveraging Overlapping Kinematic Chains",
+      "authors": [
+        "Richard Cheng",
+        "Peter Werner",
+        "Carolyn Matl"
+      ],
+      "year": 2025,
+      "venue": "arXiv:2511.08778；本轮按预印本记录",
+      "arxiv": "2511.08778",
+      "url": "https://arxiv.org/abs/2511.08778",
+      "level": "A｜摘要与元数据",
+      "point": "利用双臂共享运动链结构构建动态路网，摘要报告19自由度移动平台上的任务。",
+      "boundary": "平台可移动不等于规划包含底盘轨迹；共同负载的闭链约束也需单独核对。",
+      "resource": "代码本轮未核实。"
+    },
+    {
+      "id": "C1",
+      "group": "C",
+      "title": "Maintaining Balance of Mobile Manipulators for Safe Pick-Up Tasks",
+      "authors": [
+        "Francesco D'Orazio",
+        "Tommaso Belvedere",
+        "Spyridon G. Tarantos",
+        "Giuseppe Oriolo"
+      ],
+      "year": 2024,
+      "venue": "ICARCV 2024:1207–1212",
+      "doi": "10.1109/ICARCV63323.2024.10821705",
+      "url": "https://www.diag.uniroma1.it/~labrob/pub/papers/ICARCV24_SafePickup.pdf",
+      "level": "F｜全文精读",
+      "point": "用当前ZMP与预测负载接入后的虚拟ZMP约束单臂TIAGo抓取；验证为Gazebo仿真。",
+      "boundary": "作者缩小了评价用支撑区域；指标越界与真实倾覆应分开报告。",
+      "resource": "作者PDF和视频链接可得；代码未核实。"
+    },
+    {
+      "id": "C2",
+      "group": "C",
+      "title": "Time and Energy Optimal Trajectory Planning of Wheeled Mobile Dual-Arm Robot Based on Tip-Over Stability Constraint",
+      "authors": [
+        "Xianhua Li",
+        "Yuping Gu",
+        "Liang Wu",
+        "Qing Sun",
+        "Tao Song"
+      ],
+      "year": 2023,
+      "venue": "Applied Sciences 13(6):3780",
+      "doi": "10.3390/app13063780",
+      "url": "https://doi.org/10.3390/app13063780",
+      "level": "P｜摘要与稳定/规划相关段落",
+      "point": "双臂轮式机器人倾覆裕度约束，结合五次B样条与时间/能量优化；报告仿真。",
+      "boundary": "已有“双臂＋稳定约束＋轨迹优化”，不是简单迁移算法即可形成新题。",
+      "resource": "未核实应用代码；整篇数值未复核。"
+    },
+    {
+      "id": "C3",
+      "group": "C",
+      "title": "Online Dynamic Tip-Over Avoidance for a Wheeled Mobile Manipulator With an Improved Tip-Over Moment Stability Criterion",
+      "authors": [
+        "Xiaojun Ding",
+        "Yi Liu",
+        "Jin Hou",
+        "Qin Ma"
+      ],
+      "year": 2019,
+      "venue": "IEEE Access 7:67632–67645",
+      "doi": "10.1109/ACCESS.2019.2915115",
+      "url": "https://doi.org/10.1109/ACCESS.2019.2915115",
+      "level": "M｜书目与C5的引用描述；原文待补",
+      "point": "C5原文将此工作描述为通过机械臂姿态或车辆速度调整进行在线防倾覆。",
+      "boundary": "本轮未直接核对2019原文，不据此推断全部适用条件或效果；用于补读检索。",
+      "resource": "书目已核验，全文细节与代码待补。"
+    },
+    {
+      "id": "C4",
+      "group": "C",
+      "title": "Tip-Over Detection and Avoidance Algorithms as Stabilization Strategy for Small-Footprint and Lightweight Mobile Manipulators",
+      "authors": [
+        "Aishe Toledo Fuentes",
+        "Franziska Kempf",
+        "Martin Kipfmüller",
+        "Tobias Bergmann",
+        "Miguel J. Prieto"
+      ],
+      "year": 2023,
+      "venue": "Machines 11(1):44；在线日期2022-12-30",
+      "doi": "10.3390/machines11010044",
+      "url": "https://digibuo.uniovi.es/dspace/bitstream/handle/10651/68280/machines-11-00044.pdf?isAllowed=y&sequence=1",
+      "level": "A｜作者机构PDF摘要与元数据",
+      "point": "MHS指标、工作空间约束与机械臂重定位；摘要报告仿真和实验。",
+      "boundary": "机械臂主动重定位与保持工具方向已有前作；本轮不推断其双臂任务能力。",
+      "resource": "机构全文可得；应用代码未核实。"
+    },
+    {
+      "id": "C5",
+      "group": "C",
+      "title": "Online Dynamic Tip-Over Analysis for a Wheeled Mobile Dual-Arm Robot with an Improved Tip-Over Moment Stability Criterion",
+      "authors": [
+        "Xianhua Li",
+        "Liang Wu",
+        "Qing Sun",
+        "Tao Song"
+      ],
+      "year": 2021,
+      "venue": "Journal of Robotics 2021，Article 9913335",
+      "doi": "10.1155/2021/9913335",
+      "url": "https://doi.org/10.1155/2021/9913335",
+      "level": "P｜摘要与稳定分析相关段落",
+      "point": "考虑双臂与平台作用，分析四轮双臂系统的倾覆裕度和工作空间；报告仿真。",
+      "boundary": "分析方法不是已验证的在线防倾覆闭环；需区分指标、规划与控制三个层次。",
+      "resource": "公开全文可读；应用代码未核实。"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "X1",
+      "title": "Dynamic Planning for Sequential Whole-body Mobile Manipulation",
+      "url": "https://arxiv.org/abs/2405.15377",
+      "reason": "arXiv当前页面明确withdrawn；作者说明technical issue, withdraw all the versions。排除有效技术证据，不推测撤回原因。"
+    }
+  ],
+  "novelty_status": "未完成专门新颖性核查",
+  "replication_status": "未安装或运行原代码"
+}

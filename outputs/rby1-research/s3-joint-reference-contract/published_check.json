@@ -1,0 +1,42 @@
+{
+  "published": true,
+  "files_verified": 8,
+  "new_IK": 0,
+  "new_optimization": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-reference-contract\\initial_state_and_basis_audit.py",
+      "sha256": "5910703250592771E74AA122CFD5375DE2CF34CBEAA81559204B864E5EFD9226"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-reference-contract\\initial_state_and_basis_audit.json",
+      "sha256": "0ECFDBA4A4C52FF72F47F96B7690504E2B576ED981E38717A31F71127E0890E4"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-reference-contract\\proposal.json",
+      "sha256": "49877124E24800190EB77744D0E762371425394E2550ACA39C558E95A84D8363"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-reference-contract\\连续参考初值与联合变量_方案评审.md",
+      "sha256": "35E54BA1CD6018EB50C12BE011A38012091D0EB561C6FC07B5D40FB195304ECF"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-reference-contract\\verify_review.py",
+      "sha256": "4063B352F01D843659B53839280F784E2FCA6C40CA351AD099534A5983AA3241"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-reference-contract\\delivery_check.json",
+      "sha256": "84D5ADAD00227B7DE6177D7101EE80B48A5DDD1A7A2CD6CD69A95C9E2C81B9BA"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\PROJECT_PLAN.md",
+      "sha256": "C23CE405C3ECE26C178BE31D57844EB140A45036578386BAC186992A3CC93F59"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\plans\\34-s3-mature-stop-baselines.md",
+      "sha256": "C3B0B41C690D1A589DDB482FECD12067466A6F141BF7EB54AABCB6632EC0AD3C"
+    }
+  ]
+}

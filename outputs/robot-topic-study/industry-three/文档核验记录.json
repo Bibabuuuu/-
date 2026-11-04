@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-20",
+  "report": "轮式双臂机器人_三候选问题边界与最小验证.pdf",
+  "sha256": "be0d59405ce5b5886b67b3b304303fee40d33735fc3d0bc2eea68524506a9c25",
+  "page_count": 10,
+  "source_records": 12,
+  "candidate_plans": 3,
+  "page_checks": [
+    {
+      "page": 1,
+      "characters": 689,
+      "links": 0,
+      "footer_verified": true,
+      "text_within_page": true
+    },
+    {
+      "page": 2,
+      "characters": 646,
+      "links": 4,
+      "footer_verified": true,
+      "text_within_page": true
+    },
+    {
+      "page": 3,
+      "characters": 703,
+      "links": 0,
+      "footer_verified": true,
+      "text_within_page": true
+    },
+    {
+      "page": 4,
+      "characters": 688,
+      "links": 3,
+      "footer_verified": true,
+      "text_within_page": true
+    },
+    {
+      "page": 5,
+      "characters": 704,
+      "links": 0,
+      "footer_verified": true,
+      "text_within_page": true
+    },
+    {
+      "page": 6,
+      "characters": 605,
+      "links": 4,
+      "footer_verified": true,
+      "text_within_page": true
+    },
+    {
+      "page": 7,
+      "characters": 705,
+      "links": 2,
+      "footer_verified": true,
+      "text_within_page": true
+    },
+    {
+      "page": 8,
+      "characters": 719,
+      "links": 0,
+      "footer_verified": true,
+      "text_within_page": true
+    },
+    {
+      "page": 9,
+      "characters": 1155,
+      "links": 7,
+      "footer_verified": true,
+      "text_within_page": true
+    },
+    {
+      "page": 10,
+      "characters": 1220,
+      "links": 7,
+      "footer_verified": true,
+      "text_within_page": true
+    }
+  ],
+  "visual_review": "已检查10页渲染总览，并放大检查第4、10页；未见截断、重叠、缺字或异常分页。",
+  "link_scope": "已核查PDF链接对象与来源记录；不表示所有全文可访问或代码可运行。",
+  "evidence_scope": "原文相关段落或摘要的读取程度逐条登记；未完成全文全部图表独立审计。",
+  "simulation_or_replication": "未开始；本文档核验不等于研究假设、算法或应用效果已验证。"
+}

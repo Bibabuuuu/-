@@ -1,0 +1,22 @@
+{
+  "audit_passed": true,
+  "fixed_base_parameters_and_root_poses_exact": true,
+  "held_upper_positions_constant": true,
+  "same_initial_state_and_base_command_historical_pair": true,
+  "reference_joint_ranges_and_closure_passed": true,
+  "quadrature_12_24_passed": true,
+  "saved_physical_peak_metrics_match_previous_summary": true,
+  "model_scope_confirmed": "current synchronized event model uses 20Nm wheel diagnostic; historical low-barrier pair uses unsynchronized model",
+  "no_default_or_controller_change": true,
+  "new_physics_steps": 0,
+  "new_IK": 0,
+  "new_optimizer_calls": 0,
+  "S3_cumulative_runs": 55,
+  "S3_cumulative_steps": 137061,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.coordination-fairness-review\\review.py": "759528effa34454030fb70fa02f3b881e10f6585749e29b0ed3f17cd5e175ac2",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.coordination-fairness-review\\result.json": "ebcf835e15bce673167a7236f98cfac2d46dcc7fb7341ee53e7e2ea3102373d1",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.coordination-fairness-review\\reference_ablation.npz": "376cd62557afceedd641546d67358170b6611d751050537b06128f8ef266add1",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.coordination-fairness-review\\verify.py": "ee277abf21ee4c8c385b74e92375a90ad1998dad3d57b935e569a47bdc65f9e4"
+  }
+}

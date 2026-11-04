@@ -1,0 +1,9 @@
+﻿speed_mps,illustrative_object_distance_budget_m,budget_origin,coarse_first_admitted_A_mps2,continuous_same_reference_family_A_mps2,continuous_peak_deceleration_reduction_percent
+0.4,0.16453846153846155,"Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",0.65,0.5633649543345691,13.328468563912443
+0.4,0.14142051282051282,"Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",0.78,0.7071138097530032,9.344383364999597
+0.4,0.12688205128205132,"Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",1.0,0.8680581389819926,13.194186101800742
+0.4,0.11700000000000002,"Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",1.25,1.0897987121031105,12.816103031751158
+0.5,0.24990384615384614,"Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",0.65,0.5637882884991925,13.263340230893462
+0.5,0.21203205128205127,"Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",0.78,0.7076071388173351,9.281136049059613
+0.5,0.1871282051282051,"Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",1.0,0.8704341530225999,12.956584697740015
+0.5,0.16875,"Midpoint of adjacent existing-reference distances; algorithmic probe, NOT a measured obstacle or industry requirement.",1.25,1.0978761792464624,12.169905660283009

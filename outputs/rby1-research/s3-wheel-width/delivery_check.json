@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "new_physics_runs": 4,
+  "new_physics_steps": 9500,
+  "initial_qpos_qvel_identical": true,
+  "reference_samples_identical": true,
+  "configuration_equal_except_scene_and_probe_source": true,
+  "control_recording_and_integration_logic_unchanged": true,
+  "historical_sources_match_saved_versions": true,
+  "frozen_count": 15,
+  "frozen_unchanged": true,
+  "new_physics_steps_in_audit": 0,
+  "scope": "nominal collision-width sensitivity only; no real-contact qualification or obstacle decision",
+  "auditor_sha256": "6f2881ada373c119e70392f76a2cc418f6e6e8ea47fc558740d74e3ca3a069ae"
+}

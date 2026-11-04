@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "default_branch_AST_identical": true,
+  "regression_arrays_compared": 33,
+  "new_physics_runs": 5,
+  "new_physics_steps": 13300,
+  "old_artifacts_preserved": 243,
+  "frozen_sources_preserved": 15,
+  "initial_state_only_fingers_projected": true,
+  "geometry_full_checks": 12,
+  "relative_pose_replay_error_m": 0.0,
+  "executions": [
+    {
+      "label": "baseline",
+      "max_sync_q_m": 0.00010189058390774018,
+      "actual_initial_state_exact": true
+    },
+    {
+      "label": "baseline_halfdt",
+      "max_sync_q_m": 9.941078671552549e-05,
+      "actual_initial_state_exact": true
+    },
+    {
+      "label": "rms",
+      "max_sync_q_m": 7.298289796889984e-05,
+      "actual_initial_state_exact": true
+    },
+    {
+      "label": "rms_halfdt",
+      "max_sync_q_m": 7.318107289057928e-05,
+      "actual_initial_state_exact": true
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\verify_finger_sync_repair.py": "d0fb7c51b012e2db9e3e18f978d405c12b773dd201f888362531c6f47f77ec9d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\contract.json": "1a5b583466e84aa7b5ba6035a3ae8175bb223dfe2bceb0984b211b675c6ab5e4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\preflight.json": "4f28ec1f6847e0b9d64c64b55950f39d787b382035daf83c008ffe7442df0012",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\regression.json": "756aad8cd87e6fb6343ca33fc49917326666a0c9fdda284a284affc66d40076a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\summary.json": "1035ac8b0ca1efaefcc607362267f12d8bbbda97d442df49047bfa3718741610"
+  },
+  "not_verified": [
+    "material slip",
+    "hardware dynamics",
+    "continuous collision safety",
+    "optimizer convergence",
+    "real time",
+    "general robustness"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "audit_passed": true,
+  "original_control_block_sha256": "c663b70f836dba8d1f7c860a8316a545b3563f1bdd5bd022d22a793e7a5b5889",
+  "full_501sample_prefix_equal_to_successful_cruise": true,
+  "trigger_and_activation_saved_state_exact": true,
+  "all_base_reference_max_error_m": 4.440892098500626e-16,
+  "all_yaw_reference_max_error_rad": 2.7755575615628914e-17,
+  "checked_payload_reference_max_error_m": 2.220446049250313e-16,
+  "grasp_FK_max_error_m": 0.0,
+  "integration_continuity_diagnostics": [
+    {
+      "index": 400,
+      "max_velocity_difference": 4.511946372076636e-13
+    },
+    {
+      "index": 500,
+      "max_velocity_difference": 2.1704663450371458e-13
+    },
+    {
+      "index": 501,
+      "max_velocity_difference": 4.050093593832571e-13
+    },
+    {
+      "index": 4000,
+      "max_velocity_difference": 1.5174615935763415e-12
+    }
+  ],
+  "old_finger_commands_exact": true,
+  "new_physics_runs_in_audit": 0,
+  "new_physics_steps_in_audit": 0,
+  "new_IK": 0,
+  "new_optimizer_calls": 0,
+  "physical_runs_audited": 1,
+  "physical_steps_audited": 4000,
+  "S3_cumulative_runs": 55,
+  "S3_cumulative_steps": 137061,
+  "limits": [
+    "one exact nominal trigger state; no general tracking tube",
+    "sampled geometry",
+    "single-thread fixed reserve, no hard realtime",
+    "uncalibrated default contact creep persists",
+    "different base turning/stop shape and upper movement; no isolated superiority claim"
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-execution\\execute.py": "0d753acb8bbf0ab52917fdd56bc237d08ad46629e0e7d68f216221242a4c539e",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-execution\\verify_result.py": "92d90a80d67098ac243c3006ad964d388ea3d71d08b6bfe86cda241d87dd1cc5",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-execution\\common_window_comparison.json": "80be0a7a0b4aa6df24159470f5f63c8e3415609e02c42a54537824d65fc13a41"
+  }
+}

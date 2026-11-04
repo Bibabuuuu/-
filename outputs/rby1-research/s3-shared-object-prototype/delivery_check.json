@@ -1,0 +1,129 @@
+{
+  "prototype_qualified_at_declared_nodes": true,
+  "independent_evidence_verified": true,
+  "IK_calls_in_verification": 0,
+  "QP_calls_in_verification": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "targets_checked": 73,
+  "difference_checks": [
+    {
+      "time_s": 0.08673289842597,
+      "h_s": 0.001,
+      "target_scaled_error": 0.04569645933165108,
+      "closure_scaled_error": 7.328088199361641e-05
+    },
+    {
+      "time_s": 0.08673289842597,
+      "h_s": 0.0005,
+      "target_scaled_error": 0.011388932126270084,
+      "closure_scaled_error": 1.1312676045152987e-05
+    },
+    {
+      "time_s": 0.17346579685194,
+      "h_s": 0.001,
+      "target_scaled_error": 0.017696436642179115,
+      "closure_scaled_error": 1.5227329247160355e-05
+    },
+    {
+      "time_s": 0.17346579685194,
+      "h_s": 0.0005,
+      "target_scaled_error": 0.004422297181357341,
+      "closure_scaled_error": 3.489521001576155e-05
+    },
+    {
+      "time_s": 0.26639390230833,
+      "h_s": 0.001,
+      "target_scaled_error": 0.022208777603668,
+      "closure_scaled_error": 2.8874689263649216e-05
+    },
+    {
+      "time_s": 0.26639390230833,
+      "h_s": 0.0005,
+      "target_scaled_error": 0.005558675901912074,
+      "closure_scaled_error": 2.229437770437662e-05
+    },
+    {
+      "time_s": 0.3531268007343,
+      "h_s": 0.001,
+      "target_scaled_error": 0.02029325352393314,
+      "closure_scaled_error": 6.870871691451534e-05
+    },
+    {
+      "time_s": 0.3531268007343,
+      "h_s": 0.0005,
+      "target_scaled_error": 0.005114888834165875,
+      "closure_scaled_error": 1.544347455263953e-05
+    },
+    {
+      "time_s": 0.4460549061907,
+      "h_s": 0.001,
+      "target_scaled_error": 0.01700080550086686,
+      "closure_scaled_error": 1.9196843038545556e-05
+    },
+    {
+      "time_s": 0.4460549061907,
+      "h_s": 0.0005,
+      "target_scaled_error": 0.00423608070620187,
+      "closure_scaled_error": 4.266674381268447e-05
+    },
+    {
+      "time_s": 0.53278780461667,
+      "h_s": 0.001,
+      "target_scaled_error": 0.03809615131058415,
+      "closure_scaled_error": 0.00019695587090752764
+    },
+    {
+      "time_s": 0.53278780461667,
+      "h_s": 0.0005,
+      "target_scaled_error": 0.009488222399759499,
+      "closure_scaled_error": 3.720789206394873e-05
+    }
+  ],
+  "max_pose_error_m_rad": [
+    9.26248929272462e-14,
+    4.014077704477863e-13
+  ],
+  "max_target_closure_scaled": [
+    1.7191286416269058e-09,
+    7.759154439557679e-10
+  ],
+  "max_null_q_v_a_residual": [
+    1.4214275034243017e-14,
+    1.8079071226195786e-17,
+    1.0872514910956199e-16
+  ],
+  "native_geometry_checks": [
+    {
+      "time_s": 0.0,
+      "native_gap_m": 0.10003086230912511,
+      "geometry_count": 508
+    },
+    {
+      "time_s": 0.6195207030426355,
+      "native_gap_m": 0.00749523591639034,
+      "geometry_count": 508
+    }
+  ],
+  "COM_offset_body_from_initial_FK": [
+    -2.037622457914945e-17,
+    5.293955920339377e-23,
+    -0.06399999999999982
+  ],
+  "initial_upper_velocity_difference_from_saved_state": 5.4903710595328164e-05,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-shared-object-prototype\\contract.json": "355067bc9306d4c5351390d9694cc1f0c7e1bbdc729f0236f049d8d866c2f3e9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-shared-object-prototype\\result.json": "44946035fe94fd57c89658e846f26eda60e67adca05f14e4388fde5f5acbd726",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-shared-object-prototype\\reference_samples.npz": "fda223bd0cbb293de49205097301d1c47663564774d839f0d6ac512f4b6b574f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-shared-object-prototype\\shared_object_prototype.py": "40f3368c09183d34b59af2e831b11384ef4c6f4e3418187c8876097ad1835ed7",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-shared-object-prototype\\verify_shared_object_prototype.py": "264bac5ca0a911c971a89a5221fda13fde9ddc40a31374ae358aa05da829f465"
+  },
+  "not_verified": [
+    "new object motions",
+    "general SE3 workspace and singularity handling",
+    "arbitrary-time adapter or interval-wide geometry",
+    "trajectory optimization convergence",
+    "physical grasp improvement",
+    "real-time planning or hardware"
+  ]
+}

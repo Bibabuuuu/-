@@ -1,0 +1,71 @@
+{
+  "published": true,
+  "files_verified": 13,
+  "full_four_case_passed": false,
+  "completed_cases": [
+    0,
+    1
+  ],
+  "IK_calls": 202,
+  "QP_calls": 398,
+  "QP_internal_iterations": 796,
+  "maximum_local_steps": 2.0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "publication_verification_note": "The initial PowerShell count included a null history entry for the unstarted failed case; corrected to completed cases only. No reference or qualification rerun.",
+  "files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\continuous_reference.py",
+      "sha256": "06A57E2AAAB4CB137F779E2EBD10FD9CBDA2B45F2133FED5D1A8AEE4E52B90DB"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\contract.json",
+      "sha256": "58584680D2E9B1B16B9C1772CE57579187E2C391C9930FD788A322ADCBC66667"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\result.json",
+      "sha256": "4411D57D3A80885DCD922E50726336E2808893BC3F203DCD1128A568DE78D007"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\case_0.npz",
+      "sha256": "74292B7FB8DE0D1CBD7E3919680654D66AFEC561A62B08F87F56989D62D95585"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\case_1.npz",
+      "sha256": "74292B7FB8DE0D1CBD7E3919680654D66AFEC561A62B08F87F56989D62D95585"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\progress.json",
+      "sha256": "F06AD84BC07635572A7E3B37137CB0B3A01891A9B1BE8AD22998C0C0364B0FAE"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\verify_continuous_reference.py",
+      "sha256": "843C227A68CE0AF767CFEF0BE94DD34D69C4DFEFCA4EA1F65997A648CD4EC5B3"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\delivery_check.json",
+      "sha256": "433F143419C5A6F9E6D3554C199D80DEBC54A21A0B27AA624AA99057B1E9989B"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\prepare_next_probe_draft.py",
+      "sha256": "091DBB58D8B0688AA743A54EC3D57FB0217B3143D1E7595AE572D61509C072F7"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\next_probe_draft.json",
+      "sha256": "78FB37C29B893B8AFFD2412E61CB935373C8F54D7D7D70A4F4BE0EAAF41E5DA3"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-reference-qualification\\连续参考适配_有限验证结果.md",
+      "sha256": "DFF871B747B8672B4F6558EA212F798762CF8A86B85CB730D64551749DF4CB9F"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\PROJECT_PLAN.md",
+      "sha256": "B941B23CD7E440B844CDB290BA3F586F16C4DDFB767FBAA2B4E50F6ED90D143D"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\plans\\34-s3-mature-stop-baselines.md",
+      "sha256": "59A98BCCD53F49A3F289FEB2B06970E63565618417E53D6BD4E5F7AB29916DEB"
+    }
+  ]
+}

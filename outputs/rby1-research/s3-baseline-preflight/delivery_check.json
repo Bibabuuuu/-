@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "local_links_missing": [],
+  "frozen_count": 15,
+  "frozen_unchanged": true,
+  "new_physics_runs": 0,
+  "s3_status": "not_started_proposal_ready",
+  "mesh_width_m": 0.05,
+  "research_cylinder_width_m": 0.07,
+  "claim": "source inconsistency identified, causal dynamics effect not tested"
+}

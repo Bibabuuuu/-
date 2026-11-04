@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "frozen_unchanged": true,
+  "independent_native_geometry_checks": [
+    {
+      "label": "fast_held",
+      "index": 0,
+      "max_distance_error_m": 0.0
+    },
+    {
+      "label": "fast_held",
+      "index": 610,
+      "max_distance_error_m": 0.0
+    },
+    {
+      "label": "fast_held",
+      "index": 1900,
+      "max_distance_error_m": 0.0
+    },
+    {
+      "label": "soft_held",
+      "index": 0,
+      "max_distance_error_m": 0.0
+    },
+    {
+      "label": "soft_held",
+      "index": 796,
+      "max_distance_error_m": 0.0
+    },
+    {
+      "label": "soft_held",
+      "index": 1900,
+      "max_distance_error_m": 0.0
+    },
+    {
+      "label": "fast_buffer",
+      "index": 0,
+      "max_distance_error_m": 0.0
+    },
+    {
+      "label": "fast_buffer",
+      "index": 857,
+      "max_distance_error_m": 0.0
+    },
+    {
+      "label": "fast_buffer",
+      "index": 1900,
+      "max_distance_error_m": 0.0
+    }
+  ],
+  "geometry_samples": 5724,
+  "exact_disabled_regression": {
+    "passed": true,
+    "old_prefix_arrays_exact": {
+      "data": true,
+      "columns": true,
+      "qpos": true,
+      "qvel": true,
+      "ctrl": true
+    },
+    "new_steps": 1900,
+    "old_steps": 1801,
+    "comparison": "20 Nm same inactive limiter as original 10 Nm; optional upper reference disabled; full common trace prefix bitwise equal"
+  },
+  "new_physics_runs": 3,
+  "new_physics_steps": 5700,
+  "qualification": "audit passed is evidence integrity, not all objectives achieved",
+  "final_source_bindings_rechecked": true,
+  "current_analysis_and_plot_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\analyze_upper_buffer.py": "28d83376c418f80ecb80eeb7fd25cc8cc4fe7f4015b8d27f835618d25416579f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\analyze_planar_stop_qualification.py": "83170641a191a928fbfdf40695c834df87fecb6e5210158de582ae4529befa1b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\plot_upper_buffer.py": "b399962cc7c278b4d8397919df6e0f4af391dd0f090abb4ddbb4847a43a8be18"
+  },
+  "figure_sha256": "6aea58414037cc2cfc95c1723902b839fd3128ca17b9508695c838ac08d99084",
+  "documentation_local_links_exist": true
+}

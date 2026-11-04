@@ -1,0 +1,79 @@
+{
+  "published": true,
+  "files_verified": 16,
+  "two_direction_qualification_passed": true,
+  "evidence_verified": true,
+  "IK_calls": 202,
+  "QP_calls": 398,
+  "QP_internal_iterations": 796,
+  "maximum_local_steps": 2.0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\qualify_directions.py",
+      "sha256": "E9694F67A8170249005A1BBEE604EA63BAC263A6DC7F72E04F0AD6645C626BAE"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\verify_directions.py",
+      "sha256": "BE908BBD380E98F4E575C35B46CFEECEEAE6BEC6785E79063AB857D4BF6EAFAA"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\contract.json",
+      "sha256": "E4C26361391E940054689675F7FEE8CBD838288834F3B55706BC5BAD56634259"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\preflight.json",
+      "sha256": "2681BE279EB1EAE97CC1746F4FD5CF0C49414B7C28962282904C054669F83274"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\result.json",
+      "sha256": "7D62A6C033B2863DC9609974F4F27F4E3DE402606F724C680092E27777C9C886"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\case_0.npz",
+      "sha256": "3E9926F18D5048AA1551E00947A2729BA1CDD2FA2C77BA07296F072E6D246B7F"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\case_1.npz",
+      "sha256": "49AD1E5A2FCE59EF76B886ADA077CA4D6D6B7F286A9C77AB571139205230E889"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\progress.json",
+      "sha256": "2681D5CA0041DB00D8918F76C26E4EE74790C1134B02ABC8F24CBEE8F0865E58"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\delivery_check.json",
+      "sha256": "9FA9039E45866801039CD16B536B6CCF91D894B344A22BA282A0EDA56EE22A1E"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\audit_objective_structure.py",
+      "sha256": "01B60526A2DA8FDBBD750EF70423F131E3CC965F7F3083FD601DC5F828EDF653"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\objective_quadratic.npz",
+      "sha256": "8C603C40E830B390AF138D7D814BAF0DF8813274FA6366658A7050243143D47D"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\objective_structure.json",
+      "sha256": "AC765B76B4806CF7A5A4D49736E776F8E9BA3371C4090D248B405E562614958D"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\next_evaluation_proposal.json",
+      "sha256": "834DA07BCBB30AEF034D7ED7E7ED6B74572320797B285E76B46DF3ACE3A15C84"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\两条可行方向_核验结果.md",
+      "sha256": "9E6EF2732C32CADFB4A375963B5389234B68924C6307341258179AE160838C04"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\PROJECT_PLAN.md",
+      "sha256": "07EE3E05C88F4AE2A781FEA1265755B81C094A38BCEE13650B306192EB41F869"
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\docs\\plans\\34-s3-mature-stop-baselines.md",
+      "sha256": "ED8ADD865B48B2F03F8260B5B2E2519B1C6464A7C36374FE682FC91B5B6C7A2A"
+    }
+  ]
+}

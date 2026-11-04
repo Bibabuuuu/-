@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "frozen_unchanged": true,
+  "source_bindings_passed": true,
+  "reference_preflight": {
+    "passed": true,
+    "max_derivative_errors_qv_qa_comacc": [
+      1.0969359746709414e-10,
+      3.6982292228593394e-11,
+      9.055489691434104e-11
+    ],
+    "derivative_samples": 732,
+    "independent_full_geometry_checks": [
+      {
+        "scene": "low",
+        "role": "held",
+        "distance_m": 0.04003519799290535,
+        "error_m": 0.0
+      },
+      {
+        "scene": "low",
+        "role": "buffer",
+        "distance_m": 0.04003519799290535,
+        "error_m": 0.0
+      },
+      {
+        "scene": "upper_bar",
+        "role": "held",
+        "distance_m": 0.04231797166154627,
+        "error_m": 0.0
+      },
+      {
+        "scene": "upper_bar",
+        "role": "buffer",
+        "distance_m": 0.02920185135406128,
+        "error_m": 0.0
+      },
+      {
+        "scene": "right_column",
+        "role": "held",
+        "distance_m": 0.009869646687411755,
+        "error_m": 0.0
+      },
+      {
+        "scene": "right_column",
+        "role": "buffer",
+        "distance_m": 0.006257608649436586,
+        "error_m": 0.0
+      },
+      {
+        "scene": "left_column",
+        "role": "held",
+        "distance_m": 0.009837349998068868,
+        "error_m": 0.0
+      },
+      {
+        "scene": "left_column",
+        "role": "buffer",
+        "distance_m": 0.00627662528130224,
+        "error_m": 0.0
+      }
+    ],
+    "prior_full_buffer_reference_regression": true,
+    "evaluations": 423,
+    "planning_wall_s": 48.00986060000287,
+    "new_physics_runs": 0
+  },
+  "independent_actual_full_geometry_checks": [
+    {
+      "scene": "upper_bar",
+      "role": "held",
+      "index": 0,
+      "error_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "role": "held",
+      "index": 588,
+      "error_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "role": "held",
+      "index": 1900,
+      "error_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "role": "buffer",
+      "index": 0,
+      "error_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "role": "buffer",
+      "index": 1410,
+      "error_m": 0.0
+    },
+    {
+      "scene": "upper_bar",
+      "role": "buffer",
+      "index": 1900,
+      "error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "role": "held",
+      "index": 0,
+      "error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "role": "held",
+      "index": 437,
+      "error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "role": "held",
+      "index": 1900,
+      "error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "role": "buffer",
+      "index": 0,
+      "error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "role": "buffer",
+      "index": 486,
+      "error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "role": "buffer",
+      "index": 1900,
+      "error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "role": "buffer_halfdt",
+      "index": 0,
+      "error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "role": "buffer_halfdt",
+      "index": 983,
+      "error_m": 0.0
+    },
+    {
+      "scene": "right_column",
+      "role": "buffer_halfdt",
+      "index": 3800,
+      "error_m": 0.0
+    }
+  ],
+  "actual_geometry_samples": 11440,
+  "new_physics_runs": 5,
+  "new_physics_steps": 11400,
+  "qualification": "integrity/audit pass, not final task success or hardware qualification",
+  "final_source_bindings_rechecked": true,
+  "execution_source_unchanged_from_previous_phase": true,
+  "held_trace_regression": {
+    "passed": true,
+    "prior": "s3-upper-buffer/fast_held",
+    "new": "upper_bar/held",
+    "whole_trace_arrays_bitwise_equal": {
+      "data": true,
+      "columns": true,
+      "qpos": true,
+      "qvel": true,
+      "ctrl": true
+    }
+  },
+  "plot_sha256": "da13dac2cf1353c4e1a39306e276a273b4795ab6146be087f032a9913f05f25a",
+  "plot_source_sha256": "fb2a7fc132365a900108c3bdd999b0ca6348bfdcec3037937c45ead113ca240a",
+  "documentation_links_exist": true,
+  "figure_visually_checked": true,
+  "right_buffer_halfdt_differences": {
+    "peak_object_acceleration_mps2": -0.014832253476137147,
+    "peak_TCP_contact_moment_Nm": 2.0220957610089796e-05,
+    "minimum_actual_distance_mm": -0.18831363992722094,
+    "peak_raw_relative_rotation_change_deg": 0.0008785663112000769
+  }
+}

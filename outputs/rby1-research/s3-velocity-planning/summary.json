@@ -1,0 +1,170 @@
+{
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "runs": [
+    {
+      "label": "warmstart",
+      "folder": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution\\load_halfdt",
+      "metrics": {
+        "label": "load_halfdt",
+        "case": "right",
+        "dt_s": 0.0005,
+        "steps": 3800,
+        "final_turn_deg": -9.08280174625653,
+        "target_turn_deg": -9.439781930294698,
+        "final_yaw_error_deg": -0.3569801840381675,
+        "peak_yaw_error_deg": 0.7404108160278935,
+        "final_axle_xy_error_mm": 1.3479346145272464,
+        "peak_axle_xy_error_mm": 1.3750614556620182,
+        "peak_object_com_error_mm": 2.7479201360203884,
+        "peak_object_acceleration_mps2": 0.9050765682175579,
+        "peak_object_angular_acceleration_radps2": 2.216143639855116,
+        "final_object_speed_mmps": 0.15591950196842555,
+        "final_base_yaw_rate_degps": -8.162251708251441e-07,
+        "wheel_no_contact_samples": 0,
+        "peak_wheel_lateral_contact_speed_mps": 0.0016155243104059086,
+        "peak_base_tilt_deg": 0.006629907665697442,
+        "linear_balance_residual_rms_N": 0.007140392783966971,
+        "angular_balance_residual_rms_Nm": 0.00018334300817567914,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.25471020073763895,
+        "max_self_penetration_m": 0.0,
+        "frozen_unchanged": true,
+        "actuators_at_bound": [],
+        "peak_raw_relative_position_change_mm": 0.29963787809880943,
+        "peak_raw_relative_rotation_change_deg": 0.07918839317867746,
+        "peak_TCP_contact_moment_Nm": 0.04203735868766697,
+        "peak_friction_utilization": 0.5238178761457783,
+        "min_loaded_contacts_per_hand": 0,
+        "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+        "zero_loaded_contact_samples_after_first_controlled_step": 0,
+        "contact_force_crosscheck_N": 2.3610191932795496e-15,
+        "hold_1s_raw_relative_position_change_mm": 0.1632473607504333,
+        "hold_1s_base_yaw_change_deg": -0.019589629744625647,
+        "common_acceleration_rms_mps2": 0.561332300667504,
+        "peak_abs_wheel_command_Nm": 15.381002825086078,
+        "wheel_PI": {
+          "peak_abs_error_radps": 0.3245798118679364,
+          "peak_abs_integral_Nm": 3.0420147248850666,
+          "blocked_channel_steps": 0,
+          "final_integral_Nm": [
+            0.0,
+            0.0
+          ]
+        },
+        "common_TCP_moment_rms_Nm": 0.02606087408802624,
+        "common_hold_relative_change_mm": 0.15834827810476765,
+        "hold_hand_net_change_mm": [
+          [
+            0.0010267901220384346,
+            0.012402924619301162,
+            -0.1543616645914847
+          ],
+          [
+            -0.0007567800924812573,
+            0.013699895162219939,
+            -0.1577527094384773
+          ]
+        ],
+        "contact_tangent_travel_mm": 0.29604030896447286,
+        "peak_hand_normal_force_N": 8.75039884838565,
+        "hold_tail_relative_z_slope_mmps": [
+          -0.15577382832198755,
+          -0.1563210658828526
+        ],
+        "hold_tail_normal_mean_N": [
+          8.750000583054282,
+          8.75000057405339
+        ],
+        "minimum_actual_clearance_mm": 4.236178735296745
+      },
+      "new_run": false
+    },
+    {
+      "label": "old_rms",
+      "folder": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt",
+      "metrics": {
+        "label": "rms_halfdt",
+        "case": "right",
+        "dt_s": 0.0005,
+        "steps": 3800,
+        "final_turn_deg": -9.091014897279091,
+        "target_turn_deg": -9.439781930294698,
+        "final_yaw_error_deg": -0.34876703301560574,
+        "peak_yaw_error_deg": 0.7589516026403518,
+        "final_axle_xy_error_mm": 1.263419460090936,
+        "peak_axle_xy_error_mm": 1.2874315054518344,
+        "peak_object_com_error_mm": 2.7563780418920665,
+        "peak_object_acceleration_mps2": 0.9291611111514317,
+        "peak_object_angular_acceleration_radps2": 2.3101451003685987,
+        "final_object_speed_mmps": 0.15592888403000368,
+        "final_base_yaw_rate_degps": -7.431194810743405e-07,
+        "wheel_no_contact_samples": 0,
+        "peak_wheel_lateral_contact_speed_mps": 0.0015899522433335815,
+        "peak_base_tilt_deg": 0.0066445265225767705,
+        "linear_balance_residual_rms_N": 0.007287604415901976,
+        "angular_balance_residual_rms_Nm": 0.0001831894338808394,
+        "max_unclipped_control_excess": 0.0,
+        "max_joint_range_excess": 0.0,
+        "max_joint_speed_fraction": 0.25471020073763895,
+        "max_self_penetration_m": 0.0,
+        "frozen_unchanged": true,
+        "actuators_at_bound": [],
+        "peak_raw_relative_position_change_mm": 0.2995544994377533,
+        "peak_raw_relative_rotation_change_deg": 0.07870328462455002,
+        "peak_TCP_contact_moment_Nm": 0.043865069049426726,
+        "peak_friction_utilization": 0.5353727398476189,
+        "min_loaded_contacts_per_hand": 0,
+        "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+        "zero_loaded_contact_samples_after_first_controlled_step": 0,
+        "contact_force_crosscheck_N": 2.3610191932795496e-15,
+        "hold_1s_raw_relative_position_change_mm": 0.16328962702159114,
+        "hold_1s_base_yaw_change_deg": -0.020056677936776825,
+        "common_acceleration_rms_mps2": 0.5632396123866519,
+        "peak_abs_wheel_command_Nm": 15.835144145311588,
+        "wheel_PI": {
+          "peak_abs_error_radps": 0.32621099989767854,
+          "peak_abs_integral_Nm": 3.0618513412520616,
+          "blocked_channel_steps": 0,
+          "final_integral_Nm": [
+            0.0,
+            0.0
+          ]
+        },
+        "common_TCP_moment_rms_Nm": 0.026210745517488677,
+        "common_hold_relative_change_mm": 0.15843302001721324,
+        "hold_hand_net_change_mm": [
+          [
+            0.0009076820783326944,
+            0.012468441226381318,
+            -0.15427935013279104
+          ],
+          [
+            -0.0006420439720433713,
+            0.013748910289082995,
+            -0.15783401749044912
+          ]
+        ],
+        "contact_tangent_travel_mm": 0.2960706478731911,
+        "peak_hand_normal_force_N": 8.75037765493592,
+        "hold_tail_relative_z_slope_mmps": [
+          -0.15579036874526372,
+          -0.1563082190361927
+        ],
+        "hold_tail_normal_mean_N": [
+          8.75000057835348,
+          8.750000568684536
+        ],
+        "minimum_actual_clearance_mm": 5.3412769011553936
+      },
+      "new_run": false
+    }
+  ],
+  "comparisons": [],
+  "solver_execution_admitted": false,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\solve\\plan.json": "476c4aa272760e05618db42212d773567386c840354cd288186bb8d01b52036a"
+  },
+  "scope": "Same fixed upper/yaw and task; only four longitudinal coefficients optimized. Reference objective and actual measurements remain distinct."
+}

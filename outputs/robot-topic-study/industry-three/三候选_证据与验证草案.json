@@ -1,0 +1,332 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "scope": "三候选定向预研；非正式开题书；算法与仿真器未确定",
+  "authorization": "用户已授权继续调查候选1、2、3；未授权大规模实现",
+  "sources": [
+    {
+      "id": "L1",
+      "group": "线缆",
+      "title": "Feel the Tension: Manipulation of Deformable Linear Objects in Environments with Fixtures using Force Information",
+      "authors": [
+        "Finn Süberkrüb",
+        "Rita Laezza",
+        "Yiannis Karayiannidis"
+      ],
+      "year": 2022,
+      "venue": "IROS 2022:11216–11222；arXiv于2023上传",
+      "doi": "10.1109/IROS47612.2022.9982065",
+      "url": "https://arxiv.org/html/2310.06424",
+      "level": "原文问题定义、模型、控制、实验及结论段核查；未复现",
+      "facts": "在YuMi上用腕部力信息估计接触点与线段弹性，并组合滑动、张紧、卡入等动作完成线束任务。",
+      "boundary": "依赖能建立张力的环境接触、已知抓持处局部姿态和专门指尖；演示动作顺序预设。仅提出力感知或接触估计不能当新意。",
+      "anchor": "III；V；VI；VII-D；VIII"
+    },
+    {
+      "id": "L2",
+      "group": "线缆",
+      "title": "Dual-Arm Mobile Manipulation Planning of a Long Deformable Object in Industrial Installation",
+      "authors": [
+        "Yili Qin",
+        "Adrien Escande",
+        "Fumio Kanehiro",
+        "Eiichi Yoshida"
+      ],
+      "year": 2023,
+      "venue": "IEEE RA-L 8(5):3039–3046",
+      "doi": "10.1109/LRA.2023.3264779",
+      "url": "https://yiliqin.github.io/assets/paper/ral2023_dual.pdf",
+      "level": "作者PDF任务、假设与规划方法段核查；未复现",
+      "facts": "工业柔性带绕滚轮安装，规划包含交替换抓和机器人移动，并在行走人形平台上验证。",
+      "boundary": "2.5D几何简化，忽略扭转，并假设带体足够张紧。不能把其平台描述成轮式；增加移动或换抓本身已有前作。",
+      "anchor": "I-B；II-A；III；实验平台"
+    },
+    {
+      "id": "L3",
+      "group": "线缆",
+      "title": "Multistage Cable Routing Through Hierarchical Imitation Learning",
+      "authors": [
+        "Jianlan Luo",
+        "Charles Xu",
+        "Xinyang Geng",
+        "Gilbert Feng",
+        "Kuan Fang",
+        "Liam Tan",
+        "Stefan Schaal",
+        "Sergey Levine"
+      ],
+      "year": 2024,
+      "venue": "IEEE Transactions on Robotics 40:1476–1491",
+      "doi": "10.1109/TRO.2024.3353075",
+      "url": "https://arxiv.org/html/2307.08927v5",
+      "level": "原文系统、技能、数据和讨论段核查；未复现",
+      "facts": "单臂Panda在桌面多卡扣任务中，利用高层技能选择与低层视觉策略进行重试和纠错。",
+      "boundary": "失败恢复并非空白；不能只与固定脚本比较后宣称超越本方向现状。原系统需要示范和多相机，不等同于移动双臂受张力约束解困。",
+      "anchor": "III；IV；V；VII"
+    },
+    {
+      "id": "L4",
+      "group": "线缆",
+      "title": "NEURA Robotics Challenge 2025 — Cable Harnessing",
+      "authors": [
+        "KU Leuven Robotics"
+      ],
+      "year": 2025,
+      "venue": "作者团队官方应用说明；页面更新2026-01-26",
+      "url": "https://www.mech.kuleuven.be/en/pma/research/robotics/research/manufacturing/neura_challenge25",
+      "level": "官方演示说明",
+      "facts": "MAV移动平台与MAiRA单臂结合视觉和力测量完成大型线束板布线。",
+      "boundary": "属于应用演示，不是双臂结果或某种算法的独立性能证据。",
+      "anchor": "Technical Highlights"
+    },
+    {
+      "id": "D1",
+      "group": "拆卸",
+      "title": "Vision-Guided Dual-Arm Humanoid Robotic Disassembly of End-of-Life 18650 Lithium-ion Battery Packs",
+      "authors": [
+        "Yile Chen",
+        "Zhihao Liu",
+        "Xi Vincent Wang",
+        "Lihui Wang"
+      ],
+      "year": 2026,
+      "venue": "arXiv:2606.08152；正式录用状态未核实",
+      "url": "https://arxiv.org/html/2606.08152v1",
+      "level": "原文架构、支撑转移、实验与局限段核查；未复现",
+      "facts": "双臂交换稳定与抽取角色；验证对象为非功能性电池包样件，流程有人工移除上支架步骤。",
+      "boundary": "已有无夹具支撑转移；不能据摘要称完全自动真实电池拆解。本文不直接证明未知载荷约束解除时的闭环承托问题已解决或未解决。",
+      "anchor": "4.3–4.5；5.1；6"
+    },
+    {
+      "id": "D2",
+      "group": "拆卸",
+      "title": "Dual-Arm Compliance Control with Robust Force Decomposition",
+      "authors": [
+        "William Freidank",
+        "Konrad Ahlin",
+        "Stephen Balakirsky"
+      ],
+      "year": 2023,
+      "venue": "ICINCO 2023 Vol.1:616–623",
+      "doi": "10.5220/0012177300003543",
+      "url": "https://www.scitepress.org/Papers/2023/121773/121773.pdf",
+      "level": "原文摘要、引言与力分解问题描述核查；未复现",
+      "facts": "讨论双臂内部与外部柔顺及力分解，并在两台UR5e与双滑台装置上实验。",
+      "boundary": "柔顺控制、力分解、载荷分配不是新的研究主题；此文作为控制方法背景，不是本轮带载拆卸任务的直接对照实验。",
+      "anchor": "Abstract；1 Introduction"
+    },
+    {
+      "id": "D3",
+      "group": "拆卸",
+      "title": "A Modular Dual-Arm Robotic Cell for Disassembly and Repair of Industrial Control Electronics",
+      "authors": [
+        "Maximilian Ruhe",
+        "Fabian Harlacher",
+        "Christian Friedrich",
+        "Martin Kipfmueller"
+      ],
+      "year": 2026,
+      "venue": "arXiv:2609.27466；正式录用状态未核实",
+      "url": "https://arxiv.org/abs/2609.27466",
+      "level": "摘要与元数据；全文HTML/PDF本轮未取得",
+      "facts": "报告将拆卸顺序、验证、限力技能与行为树结合，用于工业控制电子设备维修。",
+      "boundary": "仅摘要不能判断完整实验可靠性；不能据此证明未知质量或最后连接件释放时的承托控制已得到验证。",
+      "anchor": "Abstract"
+    },
+    {
+      "id": "G1",
+      "group": "农业",
+      "title": "Bimanual crop manipulation for human-inspired robotic harvesting",
+      "authors": [
+        "Sotiris Stavridis",
+        "Dimitrios Papageorgiou",
+        "Leonidas Droukas",
+        "Zoe Doulgeri"
+      ],
+      "year": 2022,
+      "venue": "arXiv:2209.06074；本轮不声称正式发表状态",
+      "url": "https://arxiv.org/pdf/2209.06074",
+      "level": "PDF双臂控制、调度和实验段核查；未复现",
+      "facts": "相机/刀具臂改善果梗视野，抓持臂通过位力控制把作物移向空闲位置。",
+      "boundary": "双臂曝光与力控已存在。实验使用塑料葡萄及枝叶、红色果梗辅助识别；不等于真实植株无损采摘，文中设定力也不是通用损伤阈值。",
+      "anchor": "III-C/D；IV，PDF第6–7页"
+    },
+    {
+      "id": "G2",
+      "group": "农业",
+      "title": "Gentle Manipulation of Tree Branches: A Contact-Aware Policy Learning Approach",
+      "authors": [
+        "Jay Jacob",
+        "Shizhe Cai",
+        "Paulo Vinicius Koerich Borges",
+        "Tirthankar Bandyopadhyay",
+        "Fabio Ramos"
+      ],
+      "year": 2025,
+      "venue": "CoRL 2024会议工作；PMLR270(2025):631–648",
+      "url": "https://proceedings.mlr.press/v270/jacob25a.html",
+      "level": "正式论文集摘要、原文索引的方法段与代码README；全文PDF下载失败，未完整精读",
+      "facts": "基于程序化枝条和弹簧近似，训练本体感觉接触感知策略，并报告单臂真实枝条迁移。",
+      "boundary": "温和接触、枝条随机化与低损伤到达已有前作。代码存在不代表可直接运行，不能把接触代价当真实损伤保证。",
+      "anchor": "PMLR Abstract；Approach索引；仓库README",
+      "resource": "https://github.com/jayadeepj/pcap"
+    },
+    {
+      "id": "G3",
+      "group": "农业",
+      "title": "Occlusion Handling by Pushing for Enhanced Fruit Detection",
+      "authors": [
+        "Ege Gursoy",
+        "Dana Kulić",
+        "Andrea Cherubini"
+      ],
+      "year": 2024,
+      "venue": "IROS 2024；arXiv于2026上传",
+      "doi": "10.1109/IROS58592.2024.10802174",
+      "url": "https://arxiv.org/html/2604.06341v1",
+      "level": "原文方法、实验及结论段核查；未复现",
+      "facts": "识别遮挡果实的枝条，选取推点和方向，展示单臂推枝改善视野。",
+      "boundary": "主动推枝已有前作。原文结论指出多重遮挡和多机械臂扩展仍有挑战；本轮未见完整受力约束验证，不能推广为未受力控制的所有推枝方法。",
+      "anchor": "V–VIII"
+    },
+    {
+      "id": "G4",
+      "group": "农业",
+      "title": "Deep learning-based multi-view perception and adaptive grasp pose correction for cooperative dual-arm fruit harvesting under occlusion",
+      "authors": [
+        "Jeongil Seo",
+        "Han Ul Yoon",
+        "KwangEun Ko"
+      ],
+      "year": 2026,
+      "venue": "Artificial Intelligence in Agriculture；2026-10-01在线",
+      "doi": "10.1016/j.aiia.2026.09.004",
+      "url": "https://doi.org/10.1016/j.aiia.2026.09.004",
+      "level": "出版社摘要、Highlights与Crossref元数据；全文访问受限",
+      "facts": "两臂独立采摘，失败后另一臂转为辅助观察，利用多视角和视觉伺服校正。",
+      "boundary": "多视角协作恢复已有前作；根据摘要，其协作角色以辅助观察为主，不可据此断言未考虑任何物理支撑或接触。",
+      "anchor": "Abstract；Highlights"
+    },
+    {
+      "id": "G5",
+      "group": "农业",
+      "title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
+      "authors": [
+        "Humphrey Munn"
+      ],
+      "year": 2026,
+      "venue": "arXiv:2607.06337；资源候选，未核实正式发表",
+      "url": "https://arxiv.org/abs/2607.06337",
+      "level": "摘要与代码README；未安装或运行",
+      "facts": "提供程序化树体、柔性枝条、果实与遮挡的仿真基准。",
+      "boundary": "当前参考机器人为单臂；不是即用双臂平台，也没有经本轮独立验证的真实损伤保真度。README要求NVIDIA CUDA，适配成本待核。",
+      "anchor": "Abstract；README",
+      "resource": "https://github.com/humphreymunn/orchardbench"
+    }
+  ],
+  "source_count": 12,
+  "replication_status": "未安装、运行或复现任何论文代码；无新仿真结果",
+  "novelty_status": "已识别直接前作；缺口为待验证假设，检索不穷尽",
+  "screening_notes": [
+    "排除将cable-driven parallel robot当作线缆被操作对象的检索噪声",
+    "合并同一论文预印本与正式发表记录；区分会议年、上传年与论文集出版年",
+    "不采用搜索中未核实当前在线日期的2027年期刊条目"
+  ],
+  "approved_next": "形成问题定义、近邻对比、最小验证与退出条件，供讨论",
+  "candidates": [
+    {
+      "id": "B1",
+      "topic": "有限张力与操作空间下，移动双臂线缆作业的局部接触诊断和解困",
+      "state": "已授权定向预研；最小仿真与算法待讨论",
+      "question": "局部接触不可完全观测时，能否通过受张力限制的试探动作，选择送线、回退或换抓，在恢复作业的同时降低误拉与失败？",
+      "scope": "单根线缆、少量导向点、限定局部卡挂模式；不研究任意结和整车线束。",
+      "baselines": [
+        "张力阈值停车后按原路回退",
+        "恒张力送线加固定恢复动作",
+        "适配后的力估计与动作原语方法L1；必要时加入L3的恢复思想"
+      ],
+      "metrics": [
+        "恢复成功率与拒绝/中止率",
+        "峰值张力和超限持续时间",
+        "恢复时间、动作次数和换抓次数",
+        "控制器可见信息下的模式混淆与不可辨识情况"
+      ],
+      "stop_if": [
+        "简单回退或恒张力已覆盖全部合理测试条件",
+        "需要任意真值接触图才能工作",
+        "与L1/L2/L3的区别仅是底盘坐标或算法名称"
+      ],
+      "source_ids": [
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    {
+      "id": "B2",
+      "topic": "有界载荷先验下，连接解除过程的双臂主动承托与受控载荷转移",
+      "state": "已授权定向预研；先补可观测性与具体连接形式，暂不定控制算法",
+      "question": "质量或重心有界不确定、连接可逐步解除或状态可感知时，怎样分配承托与拆卸动作，降低释放后的位移和冲击，并避免顶紧连接？",
+      "scope": "一个刚性盖板或模块、一种可解除连接、一个承托接触；所有负载在目标平台能力范围内。",
+      "baselines": [
+        "普通阻抗控制加缓慢解除连接",
+        "保守恒定承托力",
+        "已知真实载荷的理想参考，仅作为性能上限"
+      ],
+      "metrics": [
+        "释放后最大位移、转角与冲击",
+        "承托力及工具受力峰值",
+        "连接解除完成率与卡滞/主动中止率",
+        "先验误差下的性能变化及估计可辨识性"
+      ],
+      "stop_if": [
+        "完全约束下没有足够传感信息却要求唯一辨识任意载荷",
+        "普通慢速阻抗策略已满足全部约束",
+        "连接形式和应用零件始终无法确定"
+      ],
+      "source_ids": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "id": "B3",
+      "topic": "接触受限条件下，双臂主动创造可观测且可操作的采摘空间",
+      "state": "已授权定向预研；作物、损伤代理量与模型待讨论",
+      "question": "局部枝条柔顺性不确定时，怎样选择辅助臂接触与移动/升降位置，使采摘臂获得可执行接近路径，并限制受力和过度变形？",
+      "scope": "一个目标、局部少量枝条/叶片；先到达可抓持或可切割位姿，不扩展到整园自主采收。",
+      "baselines": [
+        "仅改变视角与作业位置，不拨动植株",
+        "固定拨动位置和力度后执行采摘接近",
+        "顺序式支撑—接近与已有单臂温和接触思想G2"
+      ],
+      "metrics": [
+        "同时满足可见性、可达性与受力限制的完成率",
+        "峰值接触力、最大枝条变形与代理约束违反",
+        "操作时间及底盘/升降柱移动量",
+        "保持辅助接触时的目标位移、失稳与恢复"
+      ],
+      "stop_if": [
+        "单纯换视角已能完成全部目标",
+        "只提高图像可见比例，没有可执行采摘接近",
+        "损伤阈值无来源却宣称真实无损",
+        "区别仅是把已有方法并列或增加第二只手"
+      ],
+      "source_ids": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5"
+      ]
+    }
+  ],
+  "decision_summary": {
+    "primary_investigation": "B1线缆，移动与双臂的共同作用最明确；新颖性风险仍高",
+    "agriculture_option": "B3保持活跃，有代码与建模入口，真实损伤验证成本高",
+    "disassembly_gate": "B2先确认具体连接与可观测信息，避免无先验载荷估计承诺",
+    "implementation": "仅生成文档；未实现控制器或运行仿真；计划均为草案"
+  }
+}
