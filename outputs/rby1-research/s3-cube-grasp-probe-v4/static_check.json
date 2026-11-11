@@ -1,0 +1,36 @@
+{
+  "window_s": [
+    1.0,
+    2.5
+  ],
+  "samples": 3001,
+  "relative_displacement_mm": [
+    0.30095257063601083,
+    0.30035914946548564
+  ],
+  "relative_rotation_deg": [
+    0.6308454839812271,
+    0.6306048053577997
+  ],
+  "mean_vertical_support_N": [
+    2.4529000635502896,
+    2.452215565661267
+  ],
+  "max_vertical_speed_mps": 0.0018595503653524234,
+  "loaded_fraction": [
+    1.0,
+    1.0
+  ],
+  "local_friction_ge_099_fraction": [
+    0.0639786737754082,
+    0.0639786737754082
+  ],
+  "min_local_friction_margin_N": [
+    -2.220446049250313e-16,
+    -2.220446049250313e-16
+  ],
+  "max_hand_moment_rms_Nm": 0.07477011453945383,
+  "settled_s": 0.0,
+  "nonpad_payload_contacts": [],
+  "passed": true
+}

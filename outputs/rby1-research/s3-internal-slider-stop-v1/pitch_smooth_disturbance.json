@@ -1,0 +1,230 @@
+{
+  "scope": "Continuous internal force hidden from both controllers, measured slider states supplied equally. Seeded band-limited cases; no wall contact.",
+  "frequencies_hz": [
+    0.9,
+    2.1,
+    3.7
+  ],
+  "amplitudes_N": [
+    0.04,
+    0.03,
+    0.02
+  ],
+  "seeds": [
+    1111,
+    1112,
+    1113,
+    1114
+  ],
+  "stroke_each_side_m": 0.06,
+  "cases": {
+    "1111_forward": {
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.1191040339818198,
+        "pitch_rms_deg": 0.061624729395143754,
+        "peak_pitch_rate_deg_s": 1.1283691985422584,
+        "peak_applied_torque_Nm": 0.047711607161605066,
+        "peak_slider_mm": 32.442907530203854,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.10503132975142285,
+        "pitch_rms_deg": 0.0538617051223551,
+        "peak_pitch_rate_deg_s": 1.6130676953332732,
+        "peak_applied_torque_Nm": 0.047711607161605066,
+        "peak_slider_mm": 32.442907530203854,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": 5.120560004434083,
+        "selection_compute_max_ms": 5.378100002417341
+      }
+    },
+    "1111_backward": {
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.16066750504598273,
+        "pitch_rms_deg": 0.09869491356533347,
+        "peak_pitch_rate_deg_s": 2.092316306994139,
+        "peak_applied_torque_Nm": 0.06608542416711034,
+        "peak_slider_mm": 44.555762822197586,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.482,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.15065669225303518,
+        "pitch_rms_deg": 0.08396117514293135,
+        "peak_pitch_rate_deg_s": 1.8532338774930324,
+        "peak_applied_torque_Nm": 0.06476278878902593,
+        "peak_slider_mm": 43.993430195843175,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": 5.029845001263311,
+        "selection_compute_max_ms": 5.615800000668969
+      }
+    },
+    "1112_forward": {
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.1013064440158938,
+        "pitch_rms_deg": 0.05010255454834878,
+        "peak_pitch_rate_deg_s": 0.8653794629171444,
+        "peak_applied_torque_Nm": 0.03587112212128842,
+        "peak_slider_mm": 24.41784390267685,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.08701738771866444,
+        "pitch_rms_deg": 0.042086167372219506,
+        "peak_pitch_rate_deg_s": 1.6981150091068837,
+        "peak_applied_torque_Nm": 0.03587112212128842,
+        "peak_slider_mm": 24.41784390267685,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": 4.935720001230948,
+        "selection_compute_max_ms": 6.77469999936875
+      }
+    },
+    "1112_backward": {
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.14156987130728166,
+        "pitch_rms_deg": 0.08299100744250355,
+        "peak_pitch_rate_deg_s": 1.8099563623393504,
+        "peak_applied_torque_Nm": 0.05413265099632575,
+        "peak_slider_mm": 36.5043843195148,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.13417124419334342,
+        "pitch_rms_deg": 0.0826370307673075,
+        "peak_pitch_rate_deg_s": 2.2692477528458235,
+        "peak_applied_torque_Nm": 0.054176544331425464,
+        "peak_slider_mm": 35.97211100305306,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.759,
+        "selection_compute_p95_ms": 5.138379999334575,
+        "selection_compute_max_ms": 5.6207000016001984
+      }
+    },
+    "1113_forward": {
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.11792032664113913,
+        "pitch_rms_deg": 0.0600723939706505,
+        "peak_pitch_rate_deg_s": 1.0678224025777263,
+        "peak_applied_torque_Nm": 0.05087047307977172,
+        "peak_slider_mm": 34.41001844388709,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.11316628173343121,
+        "pitch_rms_deg": 0.05950613480018981,
+        "peak_pitch_rate_deg_s": 1.45581195922545,
+        "peak_applied_torque_Nm": 0.05019621479142056,
+        "peak_slider_mm": 34.12342268413683,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": 5.091070000344189,
+        "selection_compute_max_ms": 6.647099995461758
+      }
+    },
+    "1113_backward": {
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.15170577755508308,
+        "pitch_rms_deg": 0.08619110369571624,
+        "peak_pitch_rate_deg_s": 1.9610679110725693,
+        "peak_applied_torque_Nm": 0.06166752806096528,
+        "peak_slider_mm": 41.523131446517056,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.14756699534318546,
+        "pitch_rms_deg": 0.07759904524838387,
+        "peak_pitch_rate_deg_s": 2.3576858085523074,
+        "peak_applied_torque_Nm": 0.06040589253113556,
+        "peak_slider_mm": 41.020943845858575,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.7375,
+        "selection_compute_p95_ms": 5.288855000617332,
+        "selection_compute_max_ms": 6.567699994775467
+      }
+    },
+    "1114_forward": {
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.13948052161163205,
+        "pitch_rms_deg": 0.07700017175875691,
+        "peak_pitch_rate_deg_s": 1.2084990645898188,
+        "peak_applied_torque_Nm": 0.05380019524691797,
+        "peak_slider_mm": 36.36578849698606,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.143340502411957,
+        "pitch_rms_deg": 0.0738274381242218,
+        "peak_pitch_rate_deg_s": 2.1891070099571017,
+        "peak_applied_torque_Nm": 0.05304369173306946,
+        "peak_slider_mm": 36.05038676309647,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.4655,
+        "selection_compute_p95_ms": 5.0761299975420116,
+        "selection_compute_max_ms": 5.3555000049527735
+      }
+    },
+    "1114_backward": {
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.17499074787571187,
+        "pitch_rms_deg": 0.10352331514173739,
+        "peak_pitch_rate_deg_s": 2.1758323740949503,
+        "peak_applied_torque_Nm": 0.0654452110521137,
+        "peak_slider_mm": 44.07679610643276,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.47450000000000003,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.18900232422913377,
+        "pitch_rms_deg": 0.09541679465443678,
+        "peak_pitch_rate_deg_s": 2.1697144552432492,
+        "peak_applied_torque_Nm": 0.0647807616028031,
+        "peak_slider_mm": 43.56689387601457,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.404,
+        "selection_compute_p95_ms": 5.122204997678637,
+        "selection_compute_max_ms": 6.098199999541976
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "duration_s": 1.2,
+  "dt_s": 0.0005,
+  "half_stroke_m": 0.038,
+  "reference_stop_s": 0.36663230280134784,
+  "plant_forcings": [
+    [
+      "periodic71",
+      "periodic",
+      71,
+      0.04,
+      0.3
+    ],
+    [
+      "random17",
+      "random",
+      17,
+      0.045,
+      0.31
+    ],
+    [
+      "random43",
+      "random",
+      43,
+      0.095,
+      0.34
+    ],
+    [
+      "quiet",
+      "quiet",
+      0,
+      0.04,
+      0.3
+    ]
+  ],
+  "force_limit_N": 1.4,
+  "sensor_period_s": 0.01,
+  "sensor_delay_s": 0.01,
+  "nominal_payload_mass_kg": 0.5,
+  "channels": "robot state and two simulated wrist F/T sensors"
+}

@@ -1,0 +1,855 @@
+{
+  "scope": "read-only sampled traces, no model replay",
+  "window_radius_s": 0.005,
+  "support_is_total_ground_not_per_wheel": true,
+  "rows": {
+    "baseline": {
+      "dt_s": 0.001,
+      "reference_stop_s": 0.6195207030426355,
+      "samples": 1901,
+      "events": [
+        {
+          "t_s": 0.28200000000000003,
+          "neighbor_counts": [
+            4,
+            4
+          ],
+          "min_hand_loaded_contacts_around_event": 8,
+          "metrics": {
+            "support_N": {
+              "sample": 224.77218955688943,
+              "neighbors": [
+                1316.8836629895552,
+                1537.6700067964366
+              ],
+              "near_nonzero_min_max": [
+                1271.7479594634485,
+                1537.6700067964366
+              ],
+              "event_minus_neighbor_mean": -1202.5046453361065
+            },
+            "tilt_deg": {
+              "sample": 0.0018194861899078368,
+              "neighbors": [
+                0.0013301376927429085,
+                0.0007004816045514976
+              ],
+              "near_nonzero_min_max": [
+                0.0007004816045514976,
+                0.004517300469166227
+              ],
+              "event_minus_neighbor_mean": 0.0008041765412606337
+            },
+            "axle_tracking_mm": {
+              "sample": 0.4473685673147405,
+              "neighbors": [
+                0.4449103586341248,
+                0.45002024101883603
+              ],
+              "near_nonzero_min_max": [
+                0.4365854639009249,
+                0.46112154504707936
+              ],
+              "event_minus_neighbor_mean": -9.673251173991648e-05
+            },
+            "yaw_tracking_deg": {
+              "sample": 0.698469127676634,
+              "neighbors": [
+                0.6973623777236979,
+                0.6996517368193945
+              ],
+              "near_nonzero_min_max": [
+                0.693064789253876,
+                0.7044509787930965
+              ],
+              "event_minus_neighbor_mean": -3.7929594912111675e-05
+            },
+            "payload_tracking_mm": {
+              "sample": 1.9396484224062651,
+              "neighbors": [
+                1.9301498704391096,
+                1.9490125174040327
+              ],
+              "near_nonzero_min_max": [
+                1.8906461401916164,
+                1.9853028491947344
+              ],
+              "event_minus_neighbor_mean": 6.722848469387088e-05
+            }
+          }
+        },
+        {
+          "t_s": 0.357,
+          "neighbor_counts": [
+            3,
+            4
+          ],
+          "min_hand_loaded_contacts_around_event": 8,
+          "metrics": {
+            "support_N": {
+              "sample": 216.12904984702118,
+              "neighbors": [
+                1243.4504467236793,
+                1533.4012005715142
+              ],
+              "near_nonzero_min_max": [
+                1243.4504467236793,
+                1533.4012005715142
+              ],
+              "event_minus_neighbor_mean": -1172.2967738005755
+            },
+            "tilt_deg": {
+              "sample": 0.001556212269021635,
+              "neighbors": [
+                0.0011240247011674318,
+                0.0007298456437246283
+              ],
+              "near_nonzero_min_max": [
+                0.0005330242278304342,
+                0.004545723494697672
+              ],
+              "event_minus_neighbor_mean": 0.000629277096575605
+            },
+            "axle_tracking_mm": {
+              "sample": 0.7026482202913665,
+              "neighbors": [
+                0.6984051784882782,
+                0.7068695581583903
+              ],
+              "near_nonzero_min_max": [
+                0.682791992448307,
+                0.723995946564526
+              ],
+              "event_minus_neighbor_mean": 1.0851968032299375e-05
+            },
+            "yaw_tracking_deg": {
+              "sample": 0.7436168908218814,
+              "neighbors": [
+                0.7437344559514381,
+                0.743430069499515
+              ],
+              "near_nonzero_min_max": [
+                0.7424602221320962,
+                0.7441518446593437
+              ],
+              "event_minus_neighbor_mean": 3.4628096404976105e-05
+            },
+            "payload_tracking_mm": {
+              "sample": 2.496440540945278,
+              "neighbors": [
+                2.4906111663133745,
+                2.5022411728707663
+              ],
+              "near_nonzero_min_max": [
+                2.4666951822717773,
+                2.5252797724925666
+              ],
+              "event_minus_neighbor_mean": 1.437135320747629e-05
+            }
+          }
+        },
+        {
+          "t_s": 0.431,
+          "neighbor_counts": [
+            4,
+            4
+          ],
+          "min_hand_loaded_contacts_around_event": 8,
+          "metrics": {
+            "support_N": {
+              "sample": 221.63859551264775,
+              "neighbors": [
+                1297.6819048993093,
+                1521.0475779471135
+              ],
+              "near_nonzero_min_max": [
+                1297.6819048993093,
+                1521.0475779471135
+              ],
+              "event_minus_neighbor_mean": -1187.7261459105637
+            },
+            "tilt_deg": {
+              "sample": 0.0016248111059255358,
+              "neighbors": [
+                0.0011612947411972535,
+                0.0006905144751446407
+              ],
+              "near_nonzero_min_max": [
+                0.00043371281063453335,
+                0.004990660511550187
+              ],
+              "event_minus_neighbor_mean": 0.0006989064977545886
+            },
+            "axle_tracking_mm": {
+              "sample": 1.0104198107720894,
+              "neighbors": [
+                1.0065966374034518,
+                1.0141226327775417
+              ],
+              "near_nonzero_min_max": [
+                0.9907542901802172,
+                1.030399028998565
+              ],
+              "event_minus_neighbor_mean": 6.017568159255582e-05
+            },
+            "yaw_tracking_deg": {
+              "sample": 0.6834799038955264,
+              "neighbors": [
+                0.6847435485346497,
+                0.682055276112711
+              ],
+              "near_nonzero_min_max": [
+                0.6763058555855086,
+                0.689782331806679
+              ],
+              "event_minus_neighbor_mean": 8.049157184597533e-05
+            },
+            "payload_tracking_mm": {
+              "sample": 2.7816519329216804,
+              "neighbors": [
+                2.7800715796657696,
+                2.7831520616290972
+              ],
+              "near_nonzero_min_max": [
+                2.773215271818917,
+                2.78911994010481
+              ],
+              "event_minus_neighbor_mean": 4.011227424705055e-05
+            }
+          }
+        }
+      ],
+      "longest_zero_sequence_samples": 1,
+      "motion_min_max": {
+        "support_N": [
+          216.12904984702118,
+          1537.6700067964366
+        ],
+        "tilt_deg": [
+          0.0003024118801903517,
+          0.006338872036363451
+        ],
+        "axle_tracking_mm": [
+          2.5204910302957057e-06,
+          1.2581082814736742
+        ],
+        "yaw_tracking_deg": [
+          2.0424046420842018e-07,
+          0.7448873850640786
+        ],
+        "payload_tracking_mm": [
+          0.00017154867895991066,
+          2.812952327191487
+        ]
+      }
+    },
+    "baseline_halfdt": {
+      "dt_s": 0.0005,
+      "reference_stop_s": 0.6195207030426355,
+      "samples": 3801,
+      "events": [
+        {
+          "t_s": 0.231,
+          "neighbor_counts": [
+            4,
+            4
+          ],
+          "min_hand_loaded_contacts_around_event": 8,
+          "metrics": {
+            "support_N": {
+              "sample": 230.99797160148404,
+              "neighbors": [
+                1314.0776244710414,
+                1421.9452571942572
+              ],
+              "near_nonzero_min_max": [
+                1266.2585725144145,
+                1421.9452571942572
+              ],
+              "event_minus_neighbor_mean": -1137.0134692311653
+            },
+            "tilt_deg": {
+              "sample": 0.0022317241373403436,
+              "neighbors": [
+                0.002089769320801529,
+                0.0016915309433347993
+              ],
+              "near_nonzero_min_max": [
+                0.0005861384599895663,
+                0.002089769320801529
+              ],
+              "event_minus_neighbor_mean": 0.0003410740052721794
+            },
+            "axle_tracking_mm": {
+              "sample": 0.3107831892790936,
+              "neighbors": [
+                0.309552511422554,
+                0.3120545563271017
+              ],
+              "near_nonzero_min_max": [
+                0.2988445709721563,
+                0.3241554892477009
+              ],
+              "event_minus_neighbor_mean": -2.0344595734245186e-05
+            },
+            "yaw_tracking_deg": {
+              "sample": 0.607183357938217,
+              "neighbors": [
+                0.6060541811092255,
+                0.6083493674386775
+              ],
+              "near_nonzero_min_max": [
+                0.5957451047282137,
+                0.6188031785138652
+              ],
+              "event_minus_neighbor_mean": -1.8416335734516842e-05
+            },
+            "payload_tracking_mm": {
+              "sample": 1.4037641960642198,
+              "neighbors": [
+                1.39809473223107,
+                1.4094157101315583
+              ],
+              "near_nonzero_min_max": [
+                1.3462688233953042,
+                1.4595164320586764
+              ],
+              "event_minus_neighbor_mean": 8.974882905743442e-06
+            }
+          }
+        }
+      ],
+      "longest_zero_sequence_samples": 1,
+      "motion_min_max": {
+        "support_N": [
+          230.99797160148404,
+          1421.9452571942572
+        ],
+        "tilt_deg": [
+          5.6998583401464066e-05,
+          0.005722578667180189
+        ],
+        "axle_tracking_mm": [
+          7.315756326151047e-07,
+          1.3667213697362446
+        ],
+        "yaw_tracking_deg": [
+          5.824048688512763e-09,
+          0.7679517862734997
+        ],
+        "payload_tracking_mm": [
+          8.571616662857547e-05,
+          2.957221538506342
+        ]
+      }
+    },
+    "rms": {
+      "dt_s": 0.001,
+      "reference_stop_s": 0.6195207030426355,
+      "samples": 1901,
+      "events": [
+        {
+          "t_s": 0.22,
+          "neighbor_counts": [
+            4,
+            4
+          ],
+          "min_hand_loaded_contacts_around_event": 8,
+          "metrics": {
+            "support_N": {
+              "sample": 265.6669608697403,
+              "neighbors": [
+                1306.2720514872262,
+                1520.8054262830115
+              ],
+              "near_nonzero_min_max": [
+                1306.2720514872262,
+                1520.8054262830115
+              ],
+              "event_minus_neighbor_mean": -1147.8717780153786
+            },
+            "tilt_deg": {
+              "sample": 0.0028455876023657295,
+              "neighbors": [
+                0.0025457651876535053,
+                0.0006301474190826393
+              ],
+              "near_nonzero_min_max": [
+                0.0006301474190826393,
+                0.00421704412953332
+              ],
+              "event_minus_neighbor_mean": 0.001257631298997657
+            },
+            "axle_tracking_mm": {
+              "sample": 0.2600974158354267,
+              "neighbors": [
+                0.2580112526414282,
+                0.2620743433082176
+              ],
+              "near_nonzero_min_max": [
+                0.2501081844255847,
+                0.2712087557040372
+              ],
+              "event_minus_neighbor_mean": 5.461786060384499e-05
+            },
+            "yaw_tracking_deg": {
+              "sample": 0.5754281166964506,
+              "neighbors": [
+                0.572915959328678,
+                0.5780721988354952
+              ],
+              "near_nonzero_min_max": [
+                0.5627674496409232,
+                0.5887316582880829
+              ],
+              "event_minus_neighbor_mean": -6.596238563605361e-05
+            },
+            "payload_tracking_mm": {
+              "sample": 1.1800776494982048,
+              "neighbors": [
+                1.1689333995591287,
+                1.1911420293531285
+              ],
+              "near_nonzero_min_max": [
+                1.1234058597044954,
+                1.2342694321126946
+              ],
+              "event_minus_neighbor_mean": 3.993504207633336e-05
+            }
+          }
+        },
+        {
+          "t_s": 0.27,
+          "neighbor_counts": [
+            4,
+            4
+          ],
+          "min_hand_loaded_contacts_around_event": 8,
+          "metrics": {
+            "support_N": {
+              "sample": 288.3611620592738,
+              "neighbors": [
+                1324.3207219430544,
+                1530.9649765005702
+              ],
+              "near_nonzero_min_max": [
+                1268.3453145914866,
+                1530.9649765005702
+              ],
+              "event_minus_neighbor_mean": -1139.2816871625387
+            },
+            "tilt_deg": {
+              "sample": 0.002482593636556656,
+              "neighbors": [
+                0.00211608224519052,
+                0.00033718114509328784
+              ],
+              "near_nonzero_min_max": [
+                0.00033718114509328784,
+                0.0036713742006900187
+              ],
+              "event_minus_neighbor_mean": 0.001255961941414752
+            },
+            "axle_tracking_mm": {
+              "sample": 0.41709127957654973,
+              "neighbors": [
+                0.4129034003338409,
+                0.4211008001861249
+              ],
+              "near_nonzero_min_max": [
+                0.3949326555257072,
+                0.43745431629607484
+              ],
+              "event_minus_neighbor_mean": 8.917931656687861e-05
+            },
+            "yaw_tracking_deg": {
+              "sample": 0.6908251272125959,
+              "neighbors": [
+                0.6891565823245761,
+                0.6925527245414136
+              ],
+              "near_nonzero_min_max": [
+                0.6818955921984691,
+                0.6991778039901295
+              ],
+              "event_minus_neighbor_mean": -2.9526220398978786e-05
+            },
+            "payload_tracking_mm": {
+              "sample": 1.685233662151615,
+              "neighbors": [
+                1.6753713766560385,
+                1.6951460936056448
+              ],
+              "near_nonzero_min_max": [
+                1.636595445899586,
+                1.7347506987907193
+              ],
+              "event_minus_neighbor_mean": -2.5072979226603564e-05
+            }
+          }
+        },
+        {
+          "t_s": 0.29,
+          "neighbor_counts": [
+            4,
+            4
+          ],
+          "min_hand_loaded_contacts_around_event": 8,
+          "metrics": {
+            "support_N": {
+              "sample": 275.6553896021343,
+              "neighbors": [
+                1299.873741798821,
+                1510.8003947087425
+              ],
+              "near_nonzero_min_max": [
+                1299.873741798821,
+                1510.8003947087425
+              ],
+              "event_minus_neighbor_mean": -1129.6816786516474
+            },
+            "tilt_deg": {
+              "sample": 0.003588298605442565,
+              "neighbors": [
+                0.002968831975392272,
+                0.0016091882561479593
+              ],
+              "near_nonzero_min_max": [
+                0.0003844740951893199,
+                0.002968831975392272
+              ],
+              "event_minus_neighbor_mean": 0.0012992884896724493
+            },
+            "axle_tracking_mm": {
+              "sample": 0.49875550756545267,
+              "neighbors": [
+                0.4947929466391735,
+                0.5025820514294941
+              ],
+              "near_nonzero_min_max": [
+                0.47870687291573977,
+                0.5194882453586498
+              ],
+              "event_minus_neighbor_mean": 6.800853111887939e-05
+            },
+            "yaw_tracking_deg": {
+              "sample": 0.7205676263066548,
+              "neighbors": [
+                0.7193063109617086,
+                0.7218710104911198
+              ],
+              "near_nonzero_min_max": [
+                0.7140235215253836,
+                0.7269764891008107
+              ],
+              "event_minus_neighbor_mean": -2.1034419759424772e-05
+            },
+            "payload_tracking_mm": {
+              "sample": 1.878839538656009,
+              "neighbors": [
+                1.8695763036974558,
+                1.8880500291800504
+              ],
+              "near_nonzero_min_max": [
+                1.8319766298696774,
+                1.9242127649974152
+              ],
+              "event_minus_neighbor_mean": 2.6372217255987707e-05
+            }
+          }
+        }
+      ],
+      "longest_zero_sequence_samples": 1,
+      "motion_min_max": {
+        "support_N": [
+          265.6669608697403,
+          1530.9649765005702
+        ],
+        "tilt_deg": [
+          0.0003044370547658091,
+          0.006645575701208789
+        ],
+        "axle_tracking_mm": [
+          2.52049236770088e-06,
+          1.2822113393448413
+        ],
+        "yaw_tracking_deg": [
+          1.3714615220521718e-07,
+          0.7653380090213769
+        ],
+        "payload_tracking_mm": [
+          0.00017232450401083801,
+          2.7203060468992164
+        ]
+      }
+    },
+    "rms_halfdt": {
+      "dt_s": 0.0005,
+      "reference_stop_s": 0.6195207030426355,
+      "samples": 3801,
+      "events": [],
+      "longest_zero_sequence_samples": 0,
+      "motion_min_max": {
+        "support_N": [
+          942.3235677452664,
+          1367.8937236909483
+        ],
+        "tilt_deg": [
+          1.6839048422762124e-05,
+          0.0066445265225767705
+        ],
+        "axle_tracking_mm": [
+          7.315756904912881e-07,
+          1.2874315054518344
+        ],
+        "yaw_tracking_deg": [
+          4.475084539449531e-08,
+          0.7589516026403518
+        ],
+        "payload_tracking_mm": [
+          8.581348720623925e-05,
+          2.7563780418920665
+        ]
+      }
+    },
+    "held_A1": {
+      "dt_s": 0.0005,
+      "reference_stop_s": 0.5999312722690018,
+      "samples": 3801,
+      "events": [
+        {
+          "t_s": 0.1815,
+          "neighbor_counts": [
+            3,
+            4
+          ],
+          "min_hand_loaded_contacts_around_event": 8,
+          "metrics": {
+            "support_N": {
+              "sample": 246.91374921947232,
+              "neighbors": [
+                1265.1663016697344,
+                1421.8605772740061
+              ],
+              "near_nonzero_min_max": [
+                1265.1663016697344,
+                1421.8605772740061
+              ],
+              "event_minus_neighbor_mean": -1096.599690252398
+            },
+            "tilt_deg": {
+              "sample": 0.0033769820511835745,
+              "neighbors": [
+                0.0033512000118751098,
+                0.002724916601259577
+              ],
+              "near_nonzero_min_max": [
+                8.318927872140471e-05,
+                0.0033512000118751098
+              ],
+              "event_minus_neighbor_mean": 0.0003389237446162312
+            },
+            "axle_tracking_mm": {
+              "sample": 0.18148046871602672,
+              "neighbors": [
+                0.18007424846211179,
+                0.18291507868995485
+              ],
+              "near_nonzero_min_max": [
+                0.16779498027635417,
+                0.19536781654397772
+              ],
+              "event_minus_neighbor_mean": -1.4194860006616628e-05
+            },
+            "yaw_tracking_deg": {
+              "sample": 0.4697216333909439,
+              "neighbors": [
+                0.46804749399156165,
+                0.4714435498927086
+              ],
+              "near_nonzero_min_max": [
+                0.45276028171736055,
+                0.4867448851029666
+              ],
+              "event_minus_neighbor_mean": -2.3888551191231233e-05
+            },
+            "payload_tracking_mm": {
+              "sample": 0.8472145455523707,
+              "neighbors": [
+                0.8415908238883439,
+                0.8528514033837884
+              ],
+              "near_nonzero_min_max": [
+                0.7915449294858888,
+                0.9038710757954798
+              ],
+              "event_minus_neighbor_mean": -6.568083695368543e-06
+            }
+          }
+        },
+        {
+          "t_s": 0.224,
+          "neighbor_counts": [
+            3,
+            4
+          ],
+          "min_hand_loaded_contacts_around_event": 8,
+          "metrics": {
+            "support_N": {
+              "sample": 226.37413029166913,
+              "neighbors": [
+                1264.6238600219986,
+                1431.1365615601353
+              ],
+              "near_nonzero_min_max": [
+                1262.7762250165315,
+                1431.1365615601353
+              ],
+              "event_minus_neighbor_mean": -1121.5060804993977
+            },
+            "tilt_deg": {
+              "sample": 0.0023790255200771783,
+              "neighbors": [
+                0.0022792820720925907,
+                0.0017947351661549975
+              ],
+              "near_nonzero_min_max": [
+                0.0004272520819834442,
+                0.0022792820720925907
+              ],
+              "event_minus_neighbor_mean": 0.00034201690095338405
+            },
+            "axle_tracking_mm": {
+              "sample": 0.3176566934735027,
+              "neighbors": [
+                0.3154991360535179,
+                0.3198320470945329
+              ],
+              "near_nonzero_min_max": [
+                0.2961497380844103,
+                0.3389505162673039
+              ],
+              "event_minus_neighbor_mean": -8.898100522680696e-06
+            },
+            "yaw_tracking_deg": {
+              "sample": 0.6034828808148002,
+              "neighbors": [
+                0.6021088019773735,
+                0.6048912779158647
+              ],
+              "near_nonzero_min_max": [
+                0.5893311685894269,
+                0.6171781774847406
+              ],
+              "event_minus_neighbor_mean": -1.715913181887796e-05
+            },
+            "payload_tracking_mm": {
+              "sample": 1.3363761571559853,
+              "neighbors": [
+                1.3304827005491606,
+                1.3422828514642144
+              ],
+              "near_nonzero_min_max": [
+                1.2780998338910046,
+                1.3958150838474774
+              ],
+              "event_minus_neighbor_mean": -6.61885070218915e-06
+            }
+          }
+        }
+      ],
+      "longest_zero_sequence_samples": 1,
+      "motion_min_max": {
+        "support_N": [
+          226.37413029166913,
+          1431.1365615601353
+        ],
+        "tilt_deg": [
+          1.0029569411827041e-05,
+          0.005682364827226784
+        ],
+        "axle_tracking_mm": [
+          7.185371227761464e-07,
+          1.5292473956919899
+        ],
+        "yaw_tracking_deg": [
+          1.4622572019221552e-08,
+          0.7981153031759546
+        ],
+        "payload_tracking_mm": [
+          8.572159227620161e-05,
+          3.1450539190872657
+        ]
+      }
+    }
+  },
+  "step_comparison": {
+    "baseline": [
+      {
+        "t_s": 0.28200000000000003,
+        "half_dt_count_at_same_time": 4,
+        "nearest_half_dt_zero_event_gap_s": 0.05100000000000002
+      },
+      {
+        "t_s": 0.357,
+        "half_dt_count_at_same_time": 4,
+        "nearest_half_dt_zero_event_gap_s": 0.12599999999999997
+      },
+      {
+        "t_s": 0.431,
+        "half_dt_count_at_same_time": 3,
+        "nearest_half_dt_zero_event_gap_s": 0.19999999999999998
+      }
+    ],
+    "baseline_half_dt_to_coarse": [
+      {
+        "t_s": 0.231,
+        "coarse_count_at_same_time": 4,
+        "nearest_coarse_zero_event_gap_s": 0.05100000000000002
+      }
+    ],
+    "rms": [
+      {
+        "t_s": 0.22,
+        "half_dt_count_at_same_time": 4,
+        "nearest_half_dt_zero_event_gap_s": null
+      },
+      {
+        "t_s": 0.27,
+        "half_dt_count_at_same_time": 4,
+        "nearest_half_dt_zero_event_gap_s": null
+      },
+      {
+        "t_s": 0.29,
+        "half_dt_count_at_same_time": 4,
+        "nearest_half_dt_zero_event_gap_s": null
+      }
+    ],
+    "rms_half_dt_to_coarse": []
+  },
+  "source_sha256": {
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline/trace.npz": "8950f133afbd0a1dabf4ab98c355c708e6de78280088ccc0c343c756d5454dd7",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline/grasp_trace.npz": "220cee7aa7a3efb5a2c020ae262b21a74ad8ff05425cd9e1fa64f794ef2b218e",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline/config.json": "96e5f139afaa914377384c2f802f4d3c6ad9a32f662cd8fd2825d87bc683e853",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline/result.json": "3e6b771866c8de96d24f73fa157318b2d556ee502be2698836f55855480a5596",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/trace.npz": "0eaae1d3eebe2ded4d32e875ebe70a7802381f511b0f5d976c45e28d7b8cb58e",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/grasp_trace.npz": "619a9ae485806f65d41c792518579baaa6f833265d136054eff8361f98f5c989",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/config.json": "3274557d47edaff06373426378c8c66ae55056ab88015672c389db0bc2b85ea8",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/result.json": "4e9d996e03de449f46dbb7f471b4a64adb70d7edff1c5ffde035d440d28cf295",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms/trace.npz": "518ea0b02143bf6764c0238b38e753ee431fda71a657d707ac6d2a385da01043",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms/grasp_trace.npz": "a4d8e776dcf2c2f32d03b24d231a76f38b985013ac28b01685927dbdea10dd72",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms/config.json": "593ab0d88fec5038e35ff51432534c21a54609e8e3144db45788c4675e2cabd2",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms/result.json": "62c4069c3255f40fb988a284e4f3b445ec1cb2858486035f3c5b98551b98de27",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/trace.npz": "6b27ef291391db1ca52b9f6624a6ad3a8e9390b7513e1b2cbd797b7a0cff0115",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/grasp_trace.npz": "8de58ea691cf930863b1cbc5b019814c889831623bd59fb5150c69e370f5f464",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/config.json": "705d6777b3c7bf53bc9fa290b8c4acba7320ed67cc9d68eac21cf6ca849e92fc",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/result.json": "8935ec70123c235528e3fd38b65db2d56080d6bf66ee0411e6fdc82c6a72698b",
+    "outputs/rby1-research/s3-right-column-b0-physical-v2/held_A1/trace.npz": "f2bc5cd12c31642a6be1dd1b02d12c082767cb2923e652668b0e8c441f74be65",
+    "outputs/rby1-research/s3-right-column-b0-physical-v2/held_A1/grasp_trace.npz": "8cbc7913f5fe37325adae176cee06de0a527ef0dc41cc76d648d8813589acc01",
+    "outputs/rby1-research/s3-right-column-b0-physical-v2/held_A1/config.json": "5eab794ca7be8be10017a9967cafea5d118d24f79b1c7403aa08d4050cc90cfd",
+    "outputs/rby1-research/s3-right-column-b0-physical-v2/held_A1/result.json": "95135bc24fb6d2276941a4c6aa7c96fea5c0ee40872baa80315177ca965f3075",
+    "outputs/rby1-research/s3-finger-sync-repair/initial_state.npz": "148aa548be57765e22bb30f63814572938239ccc7642777af47265effc3df9a9",
+    "outputs/rby1-research/s3-finger-sync-repair/summary.json": "1035ac8b0ca1efaefcc607362267f12d8bbbda97d442df49047bfa3718741610",
+    "outputs/rby1-research/s3-right-column-b0-physical-v2/admission.json": "0151cb50b676fbf200280c3a1b8e38f58a2d4df8b7e2e2537a755b744c883590"
+  }
+}

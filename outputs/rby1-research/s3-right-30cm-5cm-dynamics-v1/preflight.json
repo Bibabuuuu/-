@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "reports": {
+    "B0": {
+      "clearance_m": 0.20227839893422705,
+      "reference_stop_s": 0.6195206206207752,
+      "nodes": 1271,
+      "commands_sha256": "3a634afcf70f519917df8853cb928c0eedf8793b810339bdf473f42544499662"
+    },
+    "B1": {
+      "clearance_m": 0.19989678652377488,
+      "reference_stop_s": 0.6195207030426355,
+      "nodes": 1270,
+      "commands_sha256": "06ba47f506932a7033dfddb4b72093c03c580aaec1383ea05cf23a160949a98d"
+    }
+  },
+  "contract_sha256": "002563b293fa13643c10b1c930a3b5cee572d417dd4c28b3e2bc72f2c42fdc45",
+  "new_IK": 0,
+  "new_physics_steps": 0
+}

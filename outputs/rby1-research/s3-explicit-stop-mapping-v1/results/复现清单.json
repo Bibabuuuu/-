@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-04T09:55:17.725533+00:00",
+  "random_seed": 0,
+  "input_files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\contract.json",
+      "sha256": "4c6c38d9582d0896d11112d6c9acf8250234e72004ba29cdbd0a765e49ac37dd",
+      "bytes": 54309
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\result.json",
+      "sha256": "c28ba60c3b6c9636cd17621f554322cce8eca35e808a1aa19b918934fdfd48ef",
+      "bytes": 659
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\rotation_check.json",
+      "sha256": "7889763a5ca00c04df48187035e4d928dab1022777c58c90e6a2144739d26eb6",
+      "bytes": 237
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\p1_gate.json",
+      "sha256": "978a7754ddbcfdd0121b2f7b08334ff3a481c7663ffa6377599fd33196baccf1",
+      "bytes": 1301
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_explicit_stop_mapping.py",
+      "sha256": "209e09c71e343017b8947eadbf10ad3727302a630d6ddd3f3065f95d413b423b",
+      "bytes": 22025
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\low_held.npz",
+      "sha256": "4cc35adc4d5638a128735eae8e7147952218954570bdf38a0826a1c554a143cf",
+      "bytes": 12939
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\low_held.json",
+      "sha256": "028946946f42ee313ff198ac71da3d5bb39d8795582f0f212743b11316ac59b0",
+      "bytes": 26538
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\low_held_IK.json",
+      "sha256": "dc41d356cb7a073f4962086eb4e57b42384b616e7d02552d7b7655bc0ca2f52e",
+      "bytes": 22773
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\low_buffer.npz",
+      "sha256": "f4f14cf4a00a6e8ba5d685122f67c83e915a3a11b61b2b3759af93877f9f847e",
+      "bytes": 69054
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\low_buffer.json",
+      "sha256": "5c2e949e797b93a8e19f26fd49afaacc682e834f0ffa479c3a8f1fec835bb850",
+      "bytes": 28394
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\low_buffer_IK.json",
+      "sha256": "ba70955bf82e349c8d049eb30e2a392f21ff515e178d1dfda665000329b63d4e",
+      "bytes": 24003
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\upper_buffer.npz",
+      "sha256": "5a6b8495fcf3dd3f1f6d096f74a084c2a2f4b3d5a402730be988c0188d73fceb",
+      "bytes": 61858
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\upper_buffer.json",
+      "sha256": "89fcb64fbbbf4c07c0dd57df4c69a1571d5f09f7095dd852f28fe423dbc10224",
+      "bytes": 28252
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\upper_buffer_IK.json",
+      "sha256": "5a1a029e86549ed4aac152618362a9e388546c395265df20d92094804c617dc0",
+      "bytes": 24051
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\upper_soft_held.npz",
+      "sha256": "0762b33cf882a3a0414a3d32e7ba7e6a9e73d56761d456727bae9373e1bc462a",
+      "bytes": 12785
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\upper_soft_held.json",
+      "sha256": "479123d1e414671be0f0c6d63dfd24f3d615561608fa334e67a8c42faa7a0946",
+      "bytes": 26528
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-explicit-stop-mapping-v1\\upper_soft_held_IK.json",
+      "sha256": "48aa71b909fb28202eb0ae1dc157817ab6805f8ce32b6ad8b1d98a1a077586b5",
+      "bytes": 23299
+    }
+  ],
+  "runtime": {
+    "name": "python",
+    "version": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "mujoco": "3.17.0",
+      "scipy": "1.17.1",
+      "ruckig": "0.19.4"
+    }
+  },
+  "key_parameters": {
+    "references": 4,
+    "primary_nodes_each": 45,
+    "derivative_nodes_each": 30,
+    "maximum_IK": 400,
+    "maximum_QP_calls": 1200,
+    "maximum_QP_internal_iterations": 2400,
+    "maximum_active_seconds": 120,
+    "actual_IK": 300,
+    "actual_QP": 110,
+    "actual_QP_internal_iterations": 220,
+    "recorded_active_seconds": 12.663402999998652,
+    "difference_steps_s": [
+      0.001,
+      0.0005
+    ],
+    "new_outer_solves": 0,
+    "new_physics_steps": 0,
+    "scope": "Read-only recomputation of saved known-reference qualification; not new mapping solves or physical execution."
+  },
+  "reproduce_command": "work/robot-model-audit/.venv/Scripts/python.exe simulation/rby1/qualify_explicit_stop_mapping.py verify"
+}

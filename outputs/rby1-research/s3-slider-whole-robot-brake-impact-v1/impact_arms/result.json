@@ -1,0 +1,21 @@
+{
+  "case": "straight",
+  "label": "impact_arms",
+  "status": "completed",
+  "steps": 2400,
+  "wall_s": 9.805451500003983,
+  "sim_s": 1.2,
+  "max_unclipped_control_excess": 0.0,
+  "max_joint_range_excess": 0.0,
+  "max_joint_speed_fraction": 0.2547099714535419,
+  "max_self_penetration_m": 0.0,
+  "feedforward_wrench_balance_error": 1.3877787807814457e-17,
+  "sources_unchanged": true,
+  "frozen_unchanged": true,
+  "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+  "obstacle_contact_audit": {
+    "contact_steps": 0,
+    "first_contact_s": null,
+    "minimum_contact_distance_m": null
+  }
+}

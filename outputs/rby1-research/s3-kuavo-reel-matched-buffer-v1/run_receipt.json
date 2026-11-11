@@ -1,0 +1,21 @@
+{
+  "case": "straight",
+  "label": "buffer",
+  "status": "completed",
+  "steps": 5000,
+  "wall_s": 57.29536300000109,
+  "sim_s": 2.5,
+  "max_unclipped_control_excess": 0.0,
+  "max_joint_range_excess": 0.0,
+  "max_joint_speed_fraction": 0.25465901081647785,
+  "max_self_penetration_m": 0.0,
+  "feedforward_wrench_balance_error": 4.4124069038586807e-17,
+  "sources_unchanged": true,
+  "frozen_unchanged": true,
+  "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+  "obstacle_contact_audit": {
+    "contact_steps": 0,
+    "first_contact_s": null,
+    "minimum_contact_distance_m": null
+  }
+}

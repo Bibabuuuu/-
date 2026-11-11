@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "scope": "numerical certificate for the current 45-node affine subproblem only, not global robot infeasibility",
+  "consequence": "All four speed-correction coefficients are fixed to zero by exact original affine limits; physical feasible set is contained in this face.",
+  "tolerance_note": "The unchanged final numerical admission still permits its original tiny residuals; do not interpret them as new motion permissions.",
+  "certificate": [
+    {
+      "coefficient": 0,
+      "cost_sign": -1.0,
+      "optimum": 0.0,
+      "dual_bound": 0.0,
+      "dual_stationarity_error": 4.440892098500626e-16,
+      "primal_violation": 0.0,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 0.0,
+      "nonzero_dual_weights": 4
+    },
+    {
+      "coefficient": 0,
+      "cost_sign": 1.0,
+      "optimum": 0.0,
+      "dual_bound": 0.0,
+      "dual_stationarity_error": 8.326672684688674e-17,
+      "primal_violation": 0.0,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 0.0,
+      "nonzero_dual_weights": 4
+    },
+    {
+      "coefficient": 1,
+      "cost_sign": -1.0,
+      "optimum": 0.0,
+      "dual_bound": 0.0,
+      "dual_stationarity_error": 1.3877787807814457e-17,
+      "primal_violation": 0.0,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 0.0,
+      "nonzero_dual_weights": 4
+    },
+    {
+      "coefficient": 1,
+      "cost_sign": 1.0,
+      "optimum": 0.0,
+      "dual_bound": 0.0,
+      "dual_stationarity_error": 1.1102230246251565e-16,
+      "primal_violation": 0.0,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 0.0,
+      "nonzero_dual_weights": 4
+    },
+    {
+      "coefficient": 2,
+      "cost_sign": -1.0,
+      "optimum": 0.0,
+      "dual_bound": 0.0,
+      "dual_stationarity_error": 4.440892098500626e-16,
+      "primal_violation": 0.0,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 0.0,
+      "nonzero_dual_weights": 4
+    },
+    {
+      "coefficient": 2,
+      "cost_sign": 1.0,
+      "optimum": 0.0,
+      "dual_bound": 0.0,
+      "dual_stationarity_error": 1.304512053934559e-15,
+      "primal_violation": 0.0,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 0.0,
+      "nonzero_dual_weights": 4
+    },
+    {
+      "coefficient": 3,
+      "cost_sign": -1.0,
+      "optimum": 0.0,
+      "dual_bound": 0.0,
+      "dual_stationarity_error": 0.0,
+      "primal_violation": 0.0,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 0.0,
+      "nonzero_dual_weights": 1
+    },
+    {
+      "coefficient": 3,
+      "cost_sign": 1.0,
+      "optimum": 0.0,
+      "dual_bound": 0.0,
+      "dual_stationarity_error": 2.949029909160572e-16,
+      "primal_violation": 0.0,
+      "dual_sign_violation": 0.0,
+      "duality_gap": 0.0,
+      "nonzero_dual_weights": 4
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\certify_base_face.py": "38cd6419bd83a3845d9cddc9b62f69db72239a552dc038eff9bfaa92347f2964",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\contract.json": "da8632bac79e9a7075d4490892b3f7d564c3503526ef5f5275983ff1815f04d3",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\structure.npz": "385a691869de2b1fc9e67fa22c5e09ee7ed18cc7589934de517aa9fb309becbb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\base_face_certificate.npz": "1b886dae2a6f4408a2045cc445d28aa6ac1715fb0495697e4773cd186f566a50"
+  },
+  "new_linear_solves": 8,
+  "new_nonlinear_solves": 0,
+  "new_physics_steps": 0
+}

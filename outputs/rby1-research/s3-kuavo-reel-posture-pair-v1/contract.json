@@ -1,0 +1,37 @@
+{
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left.xml": "da74eb015c3071d9947b13607b612ffc76ea3fbf4565fae7944aa1436a16fb2e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-preflight-v1\\initial.npz": "e75ecdffd91efd812b8856ce98d25160ce68111adfdbc05f79bcdc7dc18c4f35",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_planar_stop.py": "a608bc4e5cd3ef3f4cad3c783e00dda6e1c3587355b871837746657b890f128f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-posture-pair-v1\\probe.py": "8ed70c60d5437717431eba88ab2890a4c771a7dc1276ff097b8a3d132368a3e6",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\contract.json": "338456dd6319b833c73dbf7ba1f3c300e9ecc3a8cb07a9fbf8dfe1cf0cb0661c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\joint_path.npz": "09e65ab5b41683a66aa216917b9fce0e7c9e0ee7d3bdce7c3e7f33ea0707e820",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\comparison.json": "a9d8bc5abc5dca37f4bfae518f537556641ac34574fe0f65920ec2f9a4e6fa07"
+  },
+  "path_sha256": "6f3e8e92bd45442e35f29259b57d24c71be834dfc206178f5d0315aaf4399e30",
+  "forward_stroke_m": 0.017727272727272744,
+  "object_accel_mps2": 1.1,
+  "base_accel_mps2": 2.0,
+  "jerk_mps3": 12.0,
+  "trigger_s": 1.43,
+  "base_reference_stop_s": 1.7966666666666666,
+  "all_reference_stop_s": 1.8853030303030303,
+  "deadline_s": 1.93,
+  "windows_s": {
+    "brake": [
+      1.43,
+      1.8853030303030303
+    ],
+    "hold": [
+      1.8853030303030303,
+      2.5
+    ]
+  },
+  "dt_s": 0.0005,
+  "duration_s": 2.5,
+  "max_runs": 1,
+  "max_steps": 5000,
+  "comparison": "Reuse the admitted waist-arm buffer. Keep base and payload references identical, hold torso reference fixed and solve the same buffer with the arms.",
+  "relative_displacement_limit_mm": 2.0,
+  "relative_rotation_limit_deg": 2.0
+}

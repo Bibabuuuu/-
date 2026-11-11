@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "active_s": 12.663402999998652,
+  "stats": {
+    "IK_calls": 300,
+    "unique_targets": 300,
+    "QP_calls": 110,
+    "QP_internal_iterations": 220,
+    "line_search_trials": 110
+  },
+  "completed": [
+    "low_held",
+    "low_buffer",
+    "upper_buffer",
+    "upper_soft_held"
+  ],
+  "failure": null,
+  "contract_sha256": "4c6c38d9582d0896d11112d6c9acf8250234e72004ba29cdbd0a765e49ac37dd",
+  "new_outer_solves": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "scope": "Four known seeds, zero corrections, sampled kinematic mapping only; not free-duration optimization, dynamics or execution admission."
+}

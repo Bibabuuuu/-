@@ -1,0 +1,120 @@
+{
+  "cases": {
+    "v40_a125_left": {
+      "speed_mps": 0.4,
+      "accel_mps2": 1.25,
+      "side": "left",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left.xml",
+      "scene_sha256": "da74eb015c3071d9947b13607b612ffc76ea3fbf4565fae7944aa1436a16fb2e",
+      "stationary_s": 0.6499999999999999,
+      "ramp_s": 0.6,
+      "reference_stop_s": 1.8541666666666665,
+      "reference_trigger_gap_m": 0.19000000001419753,
+      "reference_min_gap_m": 0.10516666668086436,
+      "reuse": false
+    },
+    "v40_a200_left": {
+      "speed_mps": 0.4,
+      "accel_mps2": 2.0,
+      "side": "left",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left.xml",
+      "scene_sha256": "da74eb015c3071d9947b13607b612ffc76ea3fbf4565fae7944aa1436a16fb2e",
+      "stationary_s": 0.6499999999999999,
+      "ramp_s": 0.6,
+      "reference_stop_s": 1.7966666666666666,
+      "reference_trigger_gap_m": 0.19000000001419753,
+      "reference_min_gap_m": 0.11666666668086423,
+      "reuse": true
+    },
+    "v50_a125_left": {
+      "speed_mps": 0.5,
+      "accel_mps2": 1.25,
+      "side": "left",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v50_a125_left.xml",
+      "scene_sha256": "cda044b6b72a6154c596c583029c30351dc7b70a2bcf9f8feda856dda1d144b4",
+      "stationary_s": 0.5,
+      "ramp_s": 0.7499999999999999,
+      "reference_stop_s": 1.9341666666666666,
+      "reference_trigger_gap_m": 0.1900000000141969,
+      "reference_min_gap_m": 0.06395833334753041,
+      "reuse": false
+    },
+    "v50_a200_left": {
+      "speed_mps": 0.5,
+      "accel_mps2": 2.0,
+      "side": "left",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v50_a200_left.xml",
+      "scene_sha256": "cda044b6b72a6154c596c583029c30351dc7b70a2bcf9f8feda856dda1d144b4",
+      "stationary_s": 0.5,
+      "ramp_s": 0.7499999999999999,
+      "reference_stop_s": 1.8466666666666667,
+      "reference_trigger_gap_m": 0.1900000000141969,
+      "reference_min_gap_m": 0.08583333334753018,
+      "reuse": false
+    },
+    "v60_a125_left": {
+      "speed_mps": 0.6,
+      "accel_mps2": 1.25,
+      "side": "left",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a125_left.xml",
+      "scene_sha256": "88f4a7f0f3c7db87e6e804bd3f24f0c4b072f4fab528982750ecf4dd5f6c37a7",
+      "stationary_s": 0.35000000000000003,
+      "ramp_s": 0.8999999999999999,
+      "reference_stop_s": 2.0141666666666667,
+      "reference_trigger_gap_m": 0.1900000000141973,
+      "reference_min_gap_m": 0.014750000014197264,
+      "reuse": false
+    },
+    "v60_a200_left": {
+      "speed_mps": 0.6,
+      "accel_mps2": 2.0,
+      "side": "left",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_left.xml",
+      "scene_sha256": "88f4a7f0f3c7db87e6e804bd3f24f0c4b072f4fab528982750ecf4dd5f6c37a7",
+      "stationary_s": 0.35000000000000003,
+      "ramp_s": 0.8999999999999999,
+      "reference_stop_s": 1.8966666666666665,
+      "reference_trigger_gap_m": 0.1900000000141973,
+      "reference_min_gap_m": 0.05000000001419718,
+      "reuse": false
+    },
+    "v60_a200_right": {
+      "speed_mps": 0.6,
+      "accel_mps2": 2.0,
+      "side": "right",
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_right.xml",
+      "scene_sha256": "e903650cd2753ddf201ac21726fa2c05cd7cd71390005a3447651dbb533a9b88",
+      "stationary_s": 0.35000000000000003,
+      "ramp_s": 0.8999999999999999,
+      "reference_stop_s": 1.8966666666666665,
+      "reference_trigger_gap_m": 0.1900000000141973,
+      "reference_min_gap_m": 0.05000000001419718,
+      "reuse": false
+    }
+  },
+  "trigger_s": 1.43,
+  "deadline_s": 2.08,
+  "cruise_s": 0.18,
+  "duration_s": 2.5,
+  "dt_s": 0.0005,
+  "common_brake_window_s": [
+    1.43,
+    2.08
+  ],
+  "common_hold_window_s": [
+    2.08,
+    2.5
+  ],
+  "jerk_mps3": 12.0,
+  "max_new_runs": 6,
+  "steps_per_run": 5000,
+  "grasp_limits_mm_deg": [
+    2.0,
+    2.0
+  ],
+  "state_sha256": "e75ecdffd91efd812b8856ce98d25160ce68111adfdbc05f79bcdc7dc18c4f35",
+  "controller_sha256": "a608bc4e5cd3ef3f4cad3c783e00dda6e1c3587355b871837746657b890f128f",
+  "driver_sha256": "ddb4f67933e10aaeabbf3f31077b8fc4f8cfa129aa2c9c5ccbeacb6ac8817f44",
+  "reuse_trace_sha256": "5adc8eace690f51fe0cc13a8ffd2e9050168f89b3d1d148a45bb219d7fb9a641",
+  "policy": "Common obstacle geometry and reference trigger gap. Same controller and startup acceleration peak; adjust ramp length and static wait by speed. Same proof thresholds."
+}

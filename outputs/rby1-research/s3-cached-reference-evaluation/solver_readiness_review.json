@@ -1,0 +1,57 @@
+{
+  "status": "read-only review; no solver row omissions implemented",
+  "endpoint_basis_residual": 0.0,
+  "structurally_fixed_active_base_rows": [
+    {
+      "index": 4544,
+      "block": "base_speed_lower",
+      "node": 44,
+      "value": 0.0,
+      "reason": "terminal speed correction is zero"
+    },
+    {
+      "index": 4545,
+      "block": "base_speed_upper",
+      "node": 0,
+      "value": 0.0,
+      "reason": "initial speed correction is zero"
+    },
+    {
+      "index": 4635,
+      "block": "base_acceleration_upper",
+      "node": 0,
+      "value": -0.0,
+      "reason": "initial acceleration correction is zero"
+    },
+    {
+      "index": 4679,
+      "block": "base_acceleration_upper",
+      "node": 44,
+      "value": -0.0,
+      "reason": "terminal acceleration correction is zero"
+    }
+  ],
+  "proposed_handling": "Retain all 4860 original rows and admission checks as authoritative outputs; these four analytically fixed endpoint rows are candidates to omit only from a future solver linearization after explicit implementation verification. Other rows not omitted merely for being inactive here.",
+  "numerical_domain_issue": "The current qualification driver rejects any negative constraint. A constrained solver or difference probe must be able to receive finite f/g for a calculable but inadmissible reference; otherwise it cannot measure a constraint derivative outside an active jerk boundary.",
+  "proposed_domain_contract": "Return finite sampled f/g and a separate qualification flag for numerical probes. Failed IK/nonfinite or budget exhaustion remains an explicit invalid evaluation. Physical admission thresholds and all original records remain unchanged; no physical execution in the probe.",
+  "timing_samples": {
+    "fixed_setup_s": 2.843425800005207,
+    "per_complete_f_g_s": [
+      0.3184182000113651,
+      0.33092669998586643
+    ]
+  },
+  "unchanged_model_controller_limits": true,
+  "new_IK_calls": 0,
+  "new_QP_calls": 0,
+  "new_numerical_constraint_Jacobians": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\review_solver_readiness.py": "e6868b6c5f4df3182a554c36f060573091ae70812dc977054777805af09f4e46",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\contract.json": "598c3cb9835748d0441a4c720e5420496f9671a86b133ed8e51caf0bac934298",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\result.json": "3c03ae4d09a93f7e3680cd320a1e4bc5a4de7897d580bf6b3543a8e2e87eeec0",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\case_0.npz": "8e1709c1843009c674594dd638932349e4a28226d2363f4221093e515eec7428"
+  }
+}

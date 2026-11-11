@@ -1,0 +1,115 @@
+{
+  "cases": {
+    "straight": {
+      "contract_sha256": "3cdad544d359151a07aeb3ce7159fe3826db067de822cdb9ef74a73336370504",
+      "reports": {
+        "B0": {
+          "clearance_m": 0.04200000000000436,
+          "reference_stop_s": 0.5999312722690018,
+          "nodes": 1230,
+          "schema": {
+            "rotation_orthogonality_error": 3.3306690738754696e-15,
+            "initial_joint_error_rad": 0.0,
+            "terminal_reference_speed_norm": 0.0,
+            "terminal_reference_acceleration_norm": 0.0,
+            "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+          },
+          "commands_sha256": "42b19b52c73b2c7c4f9f78f0963c8edd9c6b0a9fe6ca7952f1ac1dfcb98c710a"
+        },
+        "B1": {
+          "clearance_m": 0.05151264139192207,
+          "reference_stop_s": 0.5999312722690018,
+          "nodes": 1230,
+          "schema": {
+            "rotation_orthogonality_error": 3.3306690738754696e-15,
+            "initial_joint_error_rad": 0.0,
+            "terminal_reference_speed_norm": 0.0,
+            "terminal_reference_acceleration_norm": 8.234735220818544e-16,
+            "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+          },
+          "commands_sha256": "92690e0f33d0f928ae58ea1813623a04c4dc502c3389b1203262b570ab1dc83e"
+        }
+      }
+    },
+    "left_near": {
+      "contract_sha256": "0b5e8a6dd328a6ba88855b53406726597a857b81676106067f6d13c617712a97",
+      "reports": {
+        "B0": {
+          "clearance_m": 0.04788158227111413,
+          "reference_stop_s": 0.5999312722690018,
+          "nodes": 1230,
+          "schema": {
+            "rotation_orthogonality_error": 3.552713678800501e-15,
+            "initial_joint_error_rad": 0.0,
+            "terminal_reference_speed_norm": 0.0,
+            "terminal_reference_acceleration_norm": 0.0,
+            "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+          },
+          "commands_sha256": "f211f68f53dbb60bc96d83ef07a806829074e7cac6469855e1909a501314062a"
+        },
+        "B1": {
+          "clearance_m": 0.05182087348281049,
+          "reference_stop_s": 0.5999312722690018,
+          "nodes": 1230,
+          "schema": {
+            "rotation_orthogonality_error": 3.552713678800501e-15,
+            "initial_joint_error_rad": 0.0,
+            "terminal_reference_speed_norm": 0.0,
+            "terminal_reference_acceleration_norm": 8.268996145912129e-16,
+            "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+          },
+          "commands_sha256": "eba04f103613599e1e202a3d7ada36cceb4364db25d8a775ec8337cc25b772eb"
+        }
+      }
+    },
+    "right_near": {
+      "contract_sha256": "823bce482618a2b5c292aec9b69575dc80a77e176dc7980f23a8ec2b9c5714c9",
+      "reports": {
+        "B0": {
+          "clearance_m": 0.047882318294545895,
+          "reference_stop_s": 0.5999312722690018,
+          "nodes": 1230,
+          "schema": {
+            "rotation_orthogonality_error": 3.552713678800501e-15,
+            "initial_joint_error_rad": 0.0,
+            "terminal_reference_speed_norm": 0.0,
+            "terminal_reference_acceleration_norm": 0.0,
+            "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+          },
+          "commands_sha256": "23033339fadce1222d6b043ad9356d12485a2b36034dec2fc2e42fa0bb8f9c2f"
+        },
+        "B1": {
+          "clearance_m": 0.051821382246896294,
+          "reference_stop_s": 0.5999312722690018,
+          "nodes": 1230,
+          "schema": {
+            "rotation_orthogonality_error": 3.552713678800501e-15,
+            "initial_joint_error_rad": 0.0,
+            "terminal_reference_speed_norm": 0.0,
+            "terminal_reference_acceleration_norm": 8.269054698370089e-16,
+            "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+          },
+          "commands_sha256": "4ef9916215f8120291a6e1895285f42acc9a65dd8c6594ba3e9b60aed3028c51"
+        }
+      }
+    }
+  },
+  "new_physics_steps": 0,
+  "active_s": 34.27690219999931,
+  "stats": {
+    "IK_calls": 7194,
+    "QP_calls": 9361,
+    "QP_internal_iterations": 18722,
+    "unique_targets": 7194,
+    "line_search_trials": 9361,
+    "complete_started": 0,
+    "complete_completed": 0,
+    "outer_calls": 0,
+    "jacobians": 0,
+    "cache_hits": 0,
+    "requests": 0
+  },
+  "phases": {
+    "preparepilot": 34.27690479999728
+  }
+}

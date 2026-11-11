@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "evaluations": 36,
+  "active_s": 11.781496899999183,
+  "admitted": 7,
+  "held_admitted": 3,
+  "contract_sha256": "4087a6ac0a2ccfb6f6c6737e477d5c6328bd08dccba8e92c3d0d7c0537fb4191",
+  "new_physics_steps": 0,
+  "new_IK": 0,
+  "new_QP": 0,
+  "rows": null
+}

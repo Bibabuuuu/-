@@ -1,0 +1,50 @@
+{
+  "status": "只读等价性核查；未接正式控制器",
+  "reference": "old rms_halfdt unchanged",
+  "samples": 1245,
+  "maximum_canonical_front_x_m": 1.174609251163386,
+  "front_peak_time_s": 0.6195207030426355,
+  "offline_preparation_wall_s": 0.220400599995628,
+  "all_dense_plane_vs_saved_native_distance_max_error_m": 2.498001805406602e-16,
+  "applicability": "this fixed reference, fixed initial heading, rigid command translation and a static wall entirely ahead; sampled front-plane separation only; finite-box equality checked at deadline placement",
+  "online_predicate": "obstacle_front_x - (cached_maximum_front_x + predicted_command_translation_x) >= existing_comparison_gap",
+  "not_included": [
+    "snapshot/measurement",
+    "state-validity tube",
+    "dynamic tracking error",
+    "arbitrary obstacle/orientation",
+    "continuous collision proof",
+    "independent timeout watchdog"
+  ],
+  "queries": [
+    {
+      "label": "at_trigger",
+      "predicted_command_translation_x_m": 0.07998625417424654,
+      "cached_1245node_front_gap_m": 0.04810939519834956,
+      "reference_geometry_admitted": true,
+      "scalar_lookup_wall_ns": 5200,
+      "physical_admission": false
+    },
+    {
+      "label": "normal_handover",
+      "predicted_command_translation_x_m": 0.08038618544511777,
+      "cached_1245node_front_gap_m": 0.047709463927478435,
+      "reference_geometry_admitted": true,
+      "scalar_lookup_wall_ns": 2500,
+      "physical_admission": false
+    },
+    {
+      "label": "deadline_handover",
+      "predicted_command_translation_x_m": 0.09998281771780815,
+      "cached_1245node_front_gap_m": 0.028112831654788062,
+      "reference_geometry_admitted": true,
+      "scalar_lookup_wall_ns": 2100,
+      "physical_admission": false
+    }
+  ],
+  "physical_admission": false,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-audit\\dense_replay.npz": "2525149bbb11cc8d7978c3cab10e6b713e4a2052e38e9efac13f9244d4ed3a4f",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.upper-trigger-audit\\verify_and_cache.py": "06bbcc62115fb85988b15e9701cdef2be3891cc80ee56fbfc375b8af28b6ad7d"
+  }
+}

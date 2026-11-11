@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-04T14:21:05.075980+00:00",
+  "random_seed": 0,
+  "input_files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\contract.json",
+      "sha256": "00856147fc5dc69e94644db71b9735f5c647daf6d8a1c83f10f25b7188aa4f58",
+      "bytes": 242322
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\result.json",
+      "sha256": "1b87166d1920ad28755df8a457346669711f4660fe68838998209a1b217d8b7b",
+      "bytes": 12212
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\progress.json",
+      "sha256": "9d3c675ada30049fa7a783bbb953ca0e64c4ffc0f8b073521f37d7e499f890cb",
+      "bytes": 12035
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\pilot.json",
+      "sha256": "bcbea4f94906a540e548192bb6f6a21527d042a04b434fd0e7e7e06a0fc702b4",
+      "bytes": 22753
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\p1_gate.json",
+      "sha256": "777410f4bdf45dd5e3814997b4755356c106c66353fd132518cddec073e99f04",
+      "bytes": 1214
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B0_solve_0.json",
+      "sha256": "907788aeeb3f19fc632a99fbc318a01cfdc6583223faabcbc2cf932f292185d0",
+      "bytes": 24483
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B0_solve_1.json",
+      "sha256": "3094c190383d2508ba4c86d56595674cfab46ff060f7a20a1a58319d2df45b92",
+      "bytes": 317265
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B0_solve_2.json",
+      "sha256": "ac1fc2e8ec9416e782f963359c31dfc9d0dda40c224c5c8feed96587441866a5",
+      "bytes": 433748
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_solve_0.json",
+      "sha256": "01ff2f7674e21b701b8ad7ab5d82685422d819fa21dfdad22f204b955caeeafd",
+      "bytes": 3460219
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B0_dense.json",
+      "sha256": "416827680c8b21cc668addd90912865cfbd76f23bdf432d4944bd90698a78c7a",
+      "bytes": 10560
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\solve_summary.csv",
+      "sha256": "83fde7e746de30e7f366df7cb95106c5820674c7064e1b298514c0d82b9109ef",
+      "bytes": 739
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\eval_0206.npz",
+      "sha256": "8c552395eae3ef05c857bafcb69858ef0f9944e5dda7495ccbf855a8bdf8c27d",
+      "bytes": 1580553
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\compare_continuous_stop.py",
+      "sha256": "54090767caa19a0fc39ebe248e39dc46b4f8b9315d2d39c9c3c937825fa551e0",
+      "bytes": 34921
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\eval_1089_failed.json",
+      "sha256": "963af7e90ce2fd9f034a4d2aaa9c8ab1b35455192e481ed58100693da68f9884",
+      "bytes": 5141
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\eval_1089_partial.npz",
+      "sha256": "817d3733cf2f1ba389da7300c281cec83ec65765fe6a9dea765a64a49f0ee8a7",
+      "bytes": 6750
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\eval_1089_started.json",
+      "sha256": "18d5802b05fd0c3a24d88887d05276d851ac4f6ae39460fac0947546356ed2ec",
+      "bytes": 863
+    }
+  ],
+  "runtime": {
+    "name": "python",
+    "version": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.1",
+      "mujoco": "3.17.0",
+      "ruckig": "0.19.4"
+    }
+  },
+  "key_parameters": {
+    "status": "controlled_stop_at_B1_phase_limit; no admitted B1 comparison",
+    "deadline_s": 0.7865521204483363,
+    "H_s": 0.8998625445380035,
+    "limits": {
+      "max_active_s": 1200,
+      "max_IK": 90000,
+      "max_QP": 240000,
+      "max_QP_iterations": 480000,
+      "max_complete_started": 1568
+    },
+    "actual_stats": {
+      "IK_calls": 55200,
+      "QP_calls": 123739,
+      "QP_internal_iterations": 247478,
+      "unique_targets": 55200,
+      "line_search_trials": 123739,
+      "complete_started": 1089,
+      "complete_completed": 1088,
+      "outer_calls": 4,
+      "jacobians": 48,
+      "cache_hits": 231,
+      "requests": 1313
+    },
+    "recorded_active_s": 962.0392463000026,
+    "phase_times": {
+      "preparepilot": 8.412025199999334,
+      "b0": 108.08299920000718,
+      "dense": 5.33615610000561,
+      "b1": 840.2080593999999
+    },
+    "physics_runs": 0,
+    "physics_steps": 0,
+    "command_exit_codes": {
+      "prepare": 0,
+      "pilot": 0,
+      "b0": 0,
+      "b1": 1
+    },
+    "verification_scope": "Saved-data recomputation only; no repeated optimizer, IK, QP or physics."
+  },
+  "reproduce_command": "work/robot-model-audit/.venv/Scripts/python.exe simulation/rby1/compare_continuous_stop.py verify"
+}

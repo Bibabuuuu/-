@@ -1,0 +1,228 @@
+{
+  "static_alignment_passed": true,
+  "physics_admitted": false,
+  "scope": "two in-memory obstacle replacements and initial kinematics only",
+  "root_and_payload_pose_velocity_exactly_equal_to_legacy": true,
+  "state_changes": [
+    {
+      "joint": "gripper_finger_r1",
+      "q_delta": -2.239736096414091e-07,
+      "v_delta": -7.128130003923083e-08
+    },
+    {
+      "joint": "gripper_finger_r2",
+      "q_delta": -2.239736096414091e-07,
+      "v_delta": -7.128130003923083e-08
+    },
+    {
+      "joint": "gripper_finger_l1",
+      "q_delta": 1.063352612594437e-07,
+      "v_delta": 3.2628535339744135e-08
+    },
+    {
+      "joint": "gripper_finger_l2",
+      "q_delta": 1.063352612594437e-07,
+      "v_delta": 3.2628535339744135e-08
+    }
+  ],
+  "max_qpos_difference": 2.239736096414091e-07,
+  "max_qvel_difference": 7.128130003923083e-08,
+  "path_start_joint_error_rad": 0.0,
+  "layouts": [
+    {
+      "layout": "low",
+      "obstacle_attributes": {
+        "name": "qualification_obstacle",
+        "type": "box",
+        "pos": "1.1283520397018825 0 0.15",
+        "size": "0.04 0.7 0.15",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": ".78 .38 .18 .58",
+        "group": "2"
+      },
+      "front_x_m": 1.0883520397018824,
+      "height_range_m": [
+        0.0,
+        0.3
+      ],
+      "world_coordinates_preserved": true,
+      "neq": 2,
+      "checked_compiled_fields_identical": [
+        "body_mass",
+        "body_inertia",
+        "body_pos",
+        "body_quat",
+        "jnt_type",
+        "jnt_qposadr",
+        "jnt_dofadr",
+        "jnt_range",
+        "actuator_ctrlrange",
+        "actuator_forcerange",
+        "jnt_actfrcrange",
+        "geom_friction",
+        "eq_data"
+      ],
+      "initial_fronts": {
+        "base": {
+          "x_m": 0.9283512036326774,
+          "geom": "wheel_l_tire"
+        },
+        "upper": {
+          "x_m": 1.0227186463491253,
+          "geom": "link_left_arm_4_LINK_18_collision_4_5"
+        },
+        "payload": {
+          "x_m": 1.0204350366106103,
+          "geom": "payload_beam"
+        }
+      },
+      "initial_distances": {
+        "base": {
+          "distance_m": 0.16000083606939527,
+          "geom": "wheel_l_tire",
+          "witness": [
+            0.9283512036324875,
+            0.28994819946287076,
+            0.09991813259478895,
+            1.0883520397018827,
+            0.2899481994628708,
+            0.09991813259494106
+          ]
+        },
+        "upper": {
+          "distance_m": 0.37448407313979765,
+          "geom": "link_torso_1_LINK_2_collision_14_16",
+          "witness": [
+            0.7296734244438166,
+            0.04685753576829033,
+            0.40764744303479605,
+            1.0883520397018824,
+            0.046857535768290215,
+            0.3
+          ]
+        },
+        "payload": {
+          "distance_m": 0.46430283940886913,
+          "geom": "payload_beam",
+          "witness": [
+            1.0204076267693336,
+            0.21993784781790265,
+            0.7593045650049534,
+            1.0883520397018824,
+            0.2199378478179026,
+            0.3
+          ]
+        }
+      }
+    },
+    {
+      "layout": "upper_bar",
+      "obstacle_attributes": {
+        "name": "qualification_obstacle",
+        "type": "box",
+        "pos": "1.2227186463491253 0 0.87",
+        "size": "0.04 0.7 0.15000000000000002",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": ".78 .38 .18 .58",
+        "group": "2"
+      },
+      "front_x_m": 1.1827186463491253,
+      "height_range_m": [
+        0.72,
+        1.02
+      ],
+      "world_coordinates_preserved": true,
+      "neq": 2,
+      "checked_compiled_fields_identical": [
+        "body_mass",
+        "body_inertia",
+        "body_pos",
+        "body_quat",
+        "jnt_type",
+        "jnt_qposadr",
+        "jnt_dofadr",
+        "jnt_range",
+        "actuator_ctrlrange",
+        "actuator_forcerange",
+        "jnt_actfrcrange",
+        "geom_friction",
+        "eq_data"
+      ],
+      "initial_fronts": {
+        "base": {
+          "x_m": 0.9283512036326774,
+          "geom": "wheel_l_tire"
+        },
+        "upper": {
+          "x_m": 1.0227186463491253,
+          "geom": "link_left_arm_4_LINK_18_collision_4_5"
+        },
+        "payload": {
+          "x_m": 1.0204350366106103,
+          "geom": "payload_beam"
+        }
+      },
+      "initial_distances": {
+        "base": {
+          "distance_m": 0.5706666261295891,
+          "geom": "chassis_collision",
+          "witness": [
+            0.8903588522250905,
+            0.23995077653308058,
+            0.22991210078407337,
+            1.1827186463491253,
+            0.2399507765330806,
+            0.72
+          ]
+        },
+        "upper": {
+          "distance_m": 0.16752500160356312,
+          "geom": "link_left_arm_4_LINK_18_collision_4_5",
+          "witness": [
+            1.0210756774893117,
+            0.17522449707895552,
+            1.0640020088229978,
+            1.1827186463491253,
+            0.1752244970789556,
+            1.02
+          ]
+        },
+        "payload": {
+          "distance_m": 0.16228360973851497,
+          "geom": "payload_beam",
+          "witness": [
+            1.0204350366106103,
+            0.2199377099965547,
+            0.7893045524829775,
+            1.1827186463491253,
+            0.21993770999655474,
+            0.7893045524829775
+          ]
+        }
+      }
+    }
+  ],
+  "new_model_compilations": 3,
+  "new_physics_steps": 0,
+  "new_reference_searches": 0,
+  "new_IK": 0,
+  "new_QP": 0,
+  "limits": [
+    "No full-trajectory admission or dynamic execution",
+    "No controller-state or contact-history equivalence claim",
+    "Existing legacy neq=0 physics is not current-model qualification"
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\audit_b0_layout_alignment.py": "28392d837f47ded7cc453b7ab5e1b3e784a080de761321bc52baa60c09e5ef67",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\check_stage31.py": "261591420a62c2abb7ad91bb3526edd11d061109111be928b38b60655ab76b5d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\buffer_reference.py": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\trigger_scene.xml": "a86db77e7f66d8f1f8ca93847507387dd9efac3434d81fbb2b0a09b455acaeb2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\initial_state.npz": "148aa548be57765e22bb30f63814572938239ccc7642777af47265effc3df9a9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\initial_state.npz": "ac0bb9dc946932fa5fc0f8178bcf8448214671acaa0d963e5dcc8d58d87be6f8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\joint_path.npz": "ec927681ac3017c2f6d41371d97440635f4a7f77aa3a9ea88860bb31eb007f04",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\low\\scene.xml": "a71033157488f40cab899b15a313af5c43af070448366a860242a9072648c48b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\upper_bar\\scene.xml": "302e273226eb4520bf6e5a6e57e0fbfe4aa882341ba5e72b2cdc847d9f627f84"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "archived_candidates": 208,
+  "verified_by_analytic_peak": true,
+  "selection_counts": {
+    "0.1": {
+      "same": 0,
+      "rejected_all": 12,
+      "changed": 0
+    },
+    "0.15": {
+      "same": 5,
+      "rejected_all": 7,
+      "changed": 0
+    },
+    "0.2": {
+      "same": 12,
+      "rejected_all": 0,
+      "changed": 0
+    }
+  },
+  "wheel_zero_sample_times_s": {
+    "n1_buffer": [],
+    "n1_hold": [
+      1.629,
+      1.712,
+      1.7895
+    ],
+    "low\\n1_buffer": [],
+    "low\\n1_fast": [],
+    "low\\n1_tuned": [],
+    "high\\n1_buffer": [],
+    "high\\n1_fast": [],
+    "high\\n1_tuned": []
+  },
+  "new_completed_steps": 40000
+}

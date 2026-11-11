@@ -1,0 +1,128 @@
+{
+  "group": {
+    "speed": 0.8,
+    "curvature": -0.5,
+    "gap": 0.25,
+    "obstacle_pos": [
+      1.794925658957884,
+      -0.0001006139641532037,
+      0.15
+    ],
+    "admitted": 37,
+    "b0": {
+      "speed": 0.8,
+      "curvature": -0.5,
+      "base_a": 1.75,
+      "object_a": 1.5,
+      "jerk": 18.0,
+      "stroke_m": 0.0249206349206349,
+      "reference_stop_s": 0.6166666666666669,
+      "buffer": true,
+      "reference_rms_mps2": 1.3588116242271693,
+      "peak_demand": 0.15540006799106382,
+      "reference_clearances_m": [
+        -0.04816575052473509,
+        0.01183424939876779,
+        0.09183424931008702
+      ],
+      "reference_clearance_m": 0.01183424939876779
+    },
+    "best_hold": {
+      "speed": 0.8,
+      "curvature": -0.5,
+      "base_a": 1.75,
+      "object_a": 1.75,
+      "jerk": 18.0,
+      "stroke_m": 0.0,
+      "reference_stop_s": 0.5543650793650794,
+      "buffer": false,
+      "reference_rms_mps2": 1.4506276019494524,
+      "peak_demand": 0.18025964058911376,
+      "reference_clearances_m": [
+        -0.04816575052473509,
+        0.01183424939876779,
+        0.09183424931008702
+      ],
+      "reference_clearance_m": 0.01183424939876779
+    },
+    "with_friction": {
+      "0.15": null,
+      "0.2": {
+        "speed": 0.8,
+        "curvature": -0.5,
+        "base_a": 1.75,
+        "object_a": 1.5,
+        "jerk": 18.0,
+        "stroke_m": 0.0249206349206349,
+        "reference_stop_s": 0.6166666666666669,
+        "buffer": true,
+        "reference_rms_mps2": 1.3588116242271693,
+        "peak_demand": 0.15540006799106382,
+        "reference_clearances_m": [
+          -0.04816575052473509,
+          0.01183424939876779,
+          0.09183424931008702
+        ],
+        "reference_clearance_m": 0.01183424939876779
+      },
+      "0.25": {
+        "speed": 0.8,
+        "curvature": -0.5,
+        "base_a": 1.75,
+        "object_a": 1.5,
+        "jerk": 18.0,
+        "stroke_m": 0.0249206349206349,
+        "reference_stop_s": 0.6166666666666669,
+        "buffer": true,
+        "reference_rms_mps2": 1.3588116242271693,
+        "peak_demand": 0.15540006799106382,
+        "reference_clearances_m": [
+          -0.04816575052473509,
+          0.01183424939876779,
+          0.09183424931008702
+        ],
+        "reference_clearance_m": 0.01183424939876779
+      }
+    }
+  },
+  "mu": 0.2,
+  "cases": {
+    "b0": {
+      "speed": 0.8,
+      "curvature": -0.5,
+      "base_a": 1.75,
+      "object_a": 1.5,
+      "jerk": 18.0,
+      "stroke_m": 0.0249206349206349,
+      "reference_stop_s": 0.6166666666666669,
+      "buffer": true,
+      "reference_rms_mps2": 1.3588116242271693,
+      "peak_demand": 0.15540006799106382,
+      "reference_clearances_m": [
+        -0.04816575052473509,
+        0.01183424939876779,
+        0.09183424931008702
+      ],
+      "reference_clearance_m": 0.01183424939876779
+    },
+    "hold": {
+      "speed": 0.8,
+      "curvature": -0.5,
+      "base_a": 1.75,
+      "object_a": 1.75,
+      "jerk": 18.0,
+      "stroke_m": 0.0,
+      "reference_stop_s": 0.5543650793650794,
+      "buffer": false,
+      "reference_rms_mps2": 1.4506276019494524,
+      "peak_demand": 0.18025964058911376,
+      "reference_clearances_m": [
+        -0.04816575052473509,
+        0.01183424939876779,
+        0.09183424931008702
+      ],
+      "reference_clearance_m": 0.01183424939876779
+    }
+  },
+  "scope": "mechanism fallback; selector improvement not tested"
+}

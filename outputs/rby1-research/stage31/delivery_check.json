@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checked_state_scene_pairs": 71,
+  "unfiltered_native_pairs": 36068,
+  "broadphase_vs_unfiltered_max_error_m": 0.0,
+  "independent_plane_support_max_error_m": 5.551115123125783e-17,
+  "mesh_vertices_outside_broadphase_aabb_max_m": 0.0,
+  "critical_A_ruckig_distance_max_error_m": 1.6653345369377348e-16,
+  "old_inputs_unchanged": true,
+  "frozen_sources_unchanged": true,
+  "scene_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_only_open.xml": "645680a9fe68bd147d8bfb0dd10adb0b6a04fd7799407208a8bb7e6341c1bcbe",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_only_low.xml": "542d663c32287c18191f7632fc221975097da8a12f5042ee466078b0d04a77fc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_only_tall_same_face.xml": "6776160e5a90b27bf7a60a06d71f901d12471181759798ce20f98b266e9a4e4a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_only_upper_bar.xml": "391a91c0b47ac9883f73a905380d3e67870145baf9a0b2d735da9e2ce7e31def",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\shared_open.xml": "645680a9fe68bd147d8bfb0dd10adb0b6a04fd7799407208a8bb7e6341c1bcbe",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\shared_low.xml": "542d663c32287c18191f7632fc221975097da8a12f5042ee466078b0d04a77fc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\shared_tall_same_face.xml": "6776160e5a90b27bf7a60a06d71f901d12471181759798ce20f98b266e9a4e4a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\shared_upper_bar.xml": "391a91c0b47ac9883f73a905380d3e67870145baf9a0b2d735da9e2ce7e31def",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_buffer_open.xml": "645680a9fe68bd147d8bfb0dd10adb0b6a04fd7799407208a8bb7e6341c1bcbe",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_buffer_low.xml": "542d663c32287c18191f7632fc221975097da8a12f5042ee466078b0d04a77fc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_buffer_tall_same_face.xml": "6776160e5a90b27bf7a60a06d71f901d12471181759798ce20f98b266e9a4e4a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_buffer_upper_bar.xml": "391a91c0b47ac9883f73a905380d3e67870145baf9a0b2d735da9e2ce7e31def",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_held_open.xml": "645680a9fe68bd147d8bfb0dd10adb0b6a04fd7799407208a8bb7e6341c1bcbe",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_held_low.xml": "542d663c32287c18191f7632fc221975097da8a12f5042ee466078b0d04a77fc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_held_tall_same_face.xml": "6776160e5a90b27bf7a60a06d71f901d12471181759798ce20f98b266e9a4e4a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_held_upper_bar.xml": "391a91c0b47ac9883f73a905380d3e67870145baf9a0b2d735da9e2ce7e31def"
+  },
+  "new_physical_runs": 0,
+  "qualification": "Numerical geometry/record audit only, not continuous collision or physical obstacle response certification."
+}

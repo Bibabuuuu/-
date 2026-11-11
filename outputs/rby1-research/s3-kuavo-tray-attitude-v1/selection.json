@@ -1,0 +1,95 @@
+{
+  "straight060": {
+    "mu": 0.1,
+    "cases": {
+      "flat": {
+        "speed": 0.6,
+        "curvature": 0.0,
+        "base_a": 2.0,
+        "object_a": 1.25,
+        "jerk": 12.0,
+        "pitch_deg": 0.0,
+        "rms": 1.0346452073673396,
+        "demand": 0.12742099898063203,
+        "gap_m": 0.014000000051614916,
+        "joint_speed_fraction": 0.05289421622566188,
+        "reference_end_s": 0.5841666666666667
+      },
+      "tilt": {
+        "speed": 0.6,
+        "curvature": 0.0,
+        "base_a": 2.0,
+        "object_a": 1.25,
+        "jerk": 12.0,
+        "pitch_deg": -2.0,
+        "rms": 1.0346452073673396,
+        "demand": 0.0920904601551094,
+        "gap_m": 0.014000000051614916,
+        "joint_speed_fraction": 0.10370073083054773,
+        "reference_end_s": 0.5841666666666667
+      }
+    }
+  },
+  "arc040": {
+    "mu": 0.1,
+    "cases": {
+      "flat": {
+        "speed": 0.4,
+        "curvature": -0.5,
+        "base_a": 1.5,
+        "object_a": 1.125,
+        "jerk": 8.0,
+        "pitch_deg": 0.0,
+        "rms": 0.7924695130634514,
+        "demand": 0.11481410117497698,
+        "gap_m": 0.14786538024414297,
+        "joint_speed_fraction": 0.01734030244013448,
+        "reference_end_s": 0.4961805555555556
+      },
+      "tilt": {
+        "speed": 0.4,
+        "curvature": -0.5,
+        "base_a": 1.5,
+        "object_a": 1.125,
+        "jerk": 8.0,
+        "pitch_deg": -2.0,
+        "rms": 0.7924695130634514,
+        "demand": 0.07967457587398676,
+        "gap_m": 0.14786538024414297,
+        "joint_speed_fraction": 0.10204835733549351,
+        "reference_end_s": 0.4961805555555556
+      }
+    }
+  },
+  "straight095": {
+    "mu": 0.15,
+    "cases": {
+      "flat": {
+        "speed": 0.95,
+        "curvature": 0.0,
+        "base_a": 2.1,
+        "object_a": 1.85,
+        "jerk": 20.0,
+        "pitch_deg": 0.0,
+        "rms": 1.5941470810260308,
+        "demand": 0.1885830784913354,
+        "gap_m": 0.06524404763465579,
+        "joint_speed_fraction": 0.032483780036233166,
+        "reference_end_s": 0.6060135135135136
+      },
+      "tilt": {
+        "speed": 0.95,
+        "curvature": 0.0,
+        "base_a": 2.1,
+        "object_a": 1.85,
+        "jerk": 20.0,
+        "pitch_deg": -4.0,
+        "rms": 1.5941470810260308,
+        "demand": 0.11711191021091585,
+        "gap_m": 0.06524404763465579,
+        "joint_speed_fraction": 0.20681668087816604,
+        "reference_end_s": 0.6060135135135136
+      }
+    }
+  }
+}

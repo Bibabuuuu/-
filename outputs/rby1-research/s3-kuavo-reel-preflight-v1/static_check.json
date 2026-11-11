@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": {
+    "completed": true,
+    "actuators": true,
+    "joints": true,
+    "no_other_penetration": true,
+    "position": true,
+    "rotation": true,
+    "both_hands": true,
+    "only_pad_support": true,
+    "weight": true,
+    "vertical_speed": true
+  },
+  "observations": {
+    "window_s": [
+      1.0,
+      2.5
+    ],
+    "samples": 3001,
+    "relative_displacement_mm": [
+      0.0019960387348388225,
+      0.002040535495906971
+    ],
+    "relative_rotation_deg": [
+      0.0014832798046239119,
+      0.0015155893888419555
+    ],
+    "mean_vertical_support_N": [
+      0.2452381817640833,
+      0.24526178110646865
+    ],
+    "max_vertical_speed_mps": 1.3458203217260692e-06,
+    "loaded_fraction": [
+      1.0,
+      1.0
+    ],
+    "local_friction_ge_099_fraction": [
+      0.0,
+      0.0
+    ],
+    "min_local_friction_margin_N": [
+      0.12737000717856203,
+      0.1273656085141092
+    ],
+    "max_hand_moment_rms_Nm": 0.021742001750088228,
+    "peak_actual_longitudinal_deceleration_mps2": 1.179598429398832e-06,
+    "settled_s": 0.0,
+    "nonpad_payload_contacts": []
+  }
+}

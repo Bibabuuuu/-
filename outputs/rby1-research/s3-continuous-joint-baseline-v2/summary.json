@@ -1,0 +1,81 @@
+{
+  "status": "completed",
+  "scope": "continuous stop-action family, finite offline coverage audit only",
+  "elapsed_s": 31.0064679000061,
+  "total_points": 134,
+  "old_grid_points": 80,
+  "off_grid_points": 4,
+  "geometry_admitted_points": 134,
+  "off_grid_geometry_admitted_points": 4,
+  "pareto_ids": [
+    "A0.600000000_ang+0.00000_f0.000000000",
+    "A0.600000000_ang+0.00000_f0.250000000",
+    "A0.600000000_ang+0.00000_f0.500000000",
+    "A0.600000000_ang+0.00000_f0.750000000",
+    "A0.625000000_ang+0.00000_f0.750000000",
+    "A0.750000000_ang+0.00000_f0.000000000",
+    "A0.750000000_ang+0.00000_f0.250000000",
+    "A0.750000000_ang+0.00000_f0.500000000",
+    "A0.750000000_ang+0.00000_f0.750000000",
+    "A0.875000000_ang+0.00000_f0.250000000",
+    "A0.875000000_ang+0.00000_f0.500000000",
+    "A0.875000000_ang+0.00000_f0.750000000",
+    "A1.000000000_ang+0.00000_f0.000000000",
+    "A1.000000000_ang+0.00000_f0.250000000",
+    "A1.000000000_ang+0.00000_f0.500000000",
+    "A1.000000000_ang+0.00000_f0.750000000",
+    "A1.000000000_ang+0.00000_f1.000000000",
+    "A0.830000000_ang-3.70000_f0.410000000",
+    "A0.570000000_ang+2.35000_f0.180000000"
+  ],
+  "continuous_api_probe": {
+    "passed": true,
+    "points": [
+      {
+        "id": "A0.830000000_ang-3.70000_f0.410000000",
+        "A_mps2": 0.83,
+        "angle_deg": -3.7,
+        "fraction": 0.41,
+        "geometry_admitted": true,
+        "minimum_distance_m": 0.12563703565051743
+      },
+      {
+        "id": "A0.570000000_ang+2.35000_f0.180000000",
+        "A_mps2": 0.57,
+        "angle_deg": 2.35,
+        "fraction": 0.18,
+        "geometry_admitted": true,
+        "minimum_distance_m": 0.10733042842278606
+      },
+      {
+        "id": "A0.940000000_ang+7.20000_f0.630000000",
+        "A_mps2": 0.94,
+        "angle_deg": 7.2,
+        "fraction": 0.63,
+        "geometry_admitted": true,
+        "minimum_distance_m": 0.10939054500330901
+      },
+      {
+        "id": "A0.680000000_ang-8.40000_f0.370000000",
+        "A_mps2": 0.68,
+        "angle_deg": -8.4,
+        "fraction": 0.37,
+        "geometry_admitted": true,
+        "minimum_distance_m": 0.09761790756538624
+      }
+    ]
+  },
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "interpretation": "The parameter interface accepts off-grid continuous values and derives stop duration continuously. The audit does not establish global optimality or full-body continuous planning.",
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\continuous_joint_baseline.py": "32607c840a79d1d051683b5e74931175f285329d23d8b891f82d59119b344cfd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\joint_stop_candidates.py": "9863a089a201730e573757d16de3174039fd5d20bb8b54f66e746a6e45754470",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\planar_upper_buffer.py": "d343bd4c14120121f2966adce0ddc3c99a444d81c41f2f881f75b35ce34c80fb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\state_stop_reference.py": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\check_stage31.py": "261591420a62c2abb7ad91bb3526edd11d061109111be928b38b60655ab76b5d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\trigger_scene.xml": "a86db77e7f66d8f1f8ca93847507387dd9efac3434d81fbb2b0a09b455acaeb2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\initial_state.npz": "148aa548be57765e22bb30f63814572938239ccc7642777af47265effc3df9a9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\joint_path.npz": "ec927681ac3017c2f6d41371d97440635f4a7f77aa3a9ea88860bb31eb007f04"
+  }
+}

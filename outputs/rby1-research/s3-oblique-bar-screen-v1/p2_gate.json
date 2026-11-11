@@ -1,0 +1,12 @@
+{
+  "audit_exit_code": 0,
+  "scope": "Source and packet binding, finite pools, RMS and timing, independent oriented-box native dense geometry, mirror boundary replay",
+  "summary_sha256": {
+    "summary.json": "70a7bff606c3914ffe6cc380f50d0c49aee830d57d231d641addf3fb1c3d2ed1",
+    "boundary_followup/summary.json": "1f39a36e8166b0e975e6863f4730f86040ce4ec5e68c2927fb53b970bc226ca8"
+  },
+  "status": "PASS",
+  "reference_evaluations": 187,
+  "independent_agent": "/root/p1_right_15cm",
+  "new_physics_steps": 0
+}

@@ -1,0 +1,104 @@
+{
+  "initial_speed_mps": 0.3999312722693623,
+  "reference_stop_s": 0.5999312722693624,
+  "sampled_poses_per_reference": 161,
+  "retraction_m": 0.01,
+  "initial_state_policy": "Static settled pose, rolling planar and wheel speeds restored; both commands share the same initial state.",
+  "path_audit": {
+    "qp_calls": 80,
+    "max_qp_constraint_violation": 0.0,
+    "max_qp_stationarity_error": 1.6263032587282567e-19,
+    "line_search_reductions": 0,
+    "max_ik_position_error_m": 3.373212652827969e-08,
+    "max_ik_angle_error_rad": 6.590506922638026e-09,
+    "method": "shared-object Jacobian local QP, offline path, degree-7 interpolation",
+    "include_torso": true,
+    "active_joint_names": [
+      "torso_0",
+      "torso_1",
+      "torso_2",
+      "torso_3",
+      "torso_4",
+      "torso_5",
+      "left_arm_0",
+      "left_arm_1",
+      "left_arm_2",
+      "left_arm_3",
+      "left_arm_4",
+      "left_arm_5",
+      "left_arm_6",
+      "right_arm_0",
+      "right_arm_1",
+      "right_arm_2",
+      "right_arm_3",
+      "right_arm_4",
+      "right_arm_5",
+      "right_arm_6"
+    ],
+    "extent_m": 0.001,
+    "backward_extent_m": 0.01,
+    "polynomial_max_position_error_m": 3.630429195100443e-08,
+    "polynomial_max_angle_error_rad": 7.226974280135978e-09,
+    "nonpayload_self_penetration_m": 0.0,
+    "joint_range_min_margin_rad": 0.26179722613989537,
+    "validation_points": 161,
+    "preparation_wall_ms": 192.25139999616658,
+    "grasp_transforms_object_to_hands": {
+      "left": {
+        "position_m": [
+          -0.02571507770097677,
+          0.1274764830766868,
+          0.003300617506827327
+        ],
+        "rotation": [
+          [
+            0.00040630914242360903,
+            -0.9663614997394371,
+            -0.25718726005429
+          ],
+          [
+            0.022398501924121805,
+            -0.25711396408101445,
+            0.9661214812776434
+          ],
+          [
+            -0.99974903952164,
+            -0.006153153329720524,
+            0.021540582157060034
+          ]
+        ]
+      },
+      "right": {
+        "position_m": [
+          -0.025713146742712304,
+          -0.12747726309647514,
+          0.0032998476151709067
+        ],
+        "rotation": [
+          [
+            0.00040662614401426497,
+            0.9663685548294068,
+            -0.2571607491280672
+          ],
+          [
+            -0.022392871615678038,
+            -0.2570874875581115,
+            -0.9661286576030481
+          ],
+          [
+            -0.9997491655190258,
+            0.006151420810479133,
+            0.021535228487983123
+          ]
+        ]
+      }
+    },
+    "objective": "Task pose residual plus 1e-5 times joint-increment norm normalized by model joint-speed caps; same weights for both groups.",
+    "numerical_trust_step_rad": 0.12,
+    "physical_speed_check": "Performed on the timed stop reference and actual execution, not inferred from IK iteration steps.",
+    "collision_method": "Nonlinear FK at accepted IK steps and independent interpolation grid; no continuous collision certificate or global route search.",
+    "reference_data_is_separate_from_physics": true
+  },
+  "max_runs": 2,
+  "steps_per_run": 3800
+}

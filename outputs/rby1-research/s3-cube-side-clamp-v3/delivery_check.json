@@ -1,0 +1,50 @@
+{
+  "saved_data_verification_passed": true,
+  "static_passed": true,
+  "same_pair_initial_state_and_base_reference": true,
+  "wrench_balance_error": 7.216449660063518e-16,
+  "new_runs_this_task": 5,
+  "new_steps_this_task": 22600,
+  "successful_static_version": "v3",
+  "prior_static_failures": [
+    "s3-cube-side-clamp-v1",
+    "s3-cube-side-clamp-v2"
+  ],
+  "records": {
+    "hold": {
+      "minimum_clearance_mm": 23.074008236269243,
+      "closest_s": 0.25,
+      "nearest_geom": "link_right_arm_5_LINK_12_0_2",
+      "maximum_relative_displacement_mm": 0.4041179711424137,
+      "maximum_relative_rotation_deg": 0.035737711733172375,
+      "settled_s": 0.2245,
+      "peak_measured_deceleration_mps2": 2.936509330068901,
+      "control_request_excess": 1.2983290877832587,
+      "self_penetration_mm": 0.0,
+      "all_hands_loaded": true,
+      "nonpad_payload_contact": false,
+      "full_execution_quality_passed": false
+    },
+    "retract": {
+      "minimum_clearance_mm": 32.93449027936989,
+      "closest_s": 0.3005,
+      "nearest_geom": "link_right_arm_5_LINK_12_0_2",
+      "maximum_relative_displacement_mm": 0.4256382503781088,
+      "maximum_relative_rotation_deg": 0.04158526876126442,
+      "settled_s": 0.2235,
+      "peak_measured_deceleration_mps2": 3.0898808219482135,
+      "control_request_excess": 2.086109984925237,
+      "self_penetration_mm": 0.0,
+      "all_hands_loaded": true,
+      "nonpad_payload_contact": false,
+      "full_execution_quality_passed": false
+    }
+  },
+  "sha256": {
+    "scene.xml": "10e6bbb2db4f1995903db061b7ddb11cb8d68c3851d8d446c9c7fa1521fa18f8",
+    "static_check.json": "b4baee8f0a4bb14368a06df49d5d8aaa5d41283ad59924de5bec6c8dd9a5dc1d",
+    "hard_brake\\side_a30\\scene.xml": "0f144741c02e3b0b9f3c1071407ffa41b80788defec77287cb1c5b27a02866e6",
+    "hard_brake\\side_a30\\pair_summary.json": "56b600188d0015d997624d9ae6d347121f34287b7f8cad3aae4360279d8cf53a",
+    "hard_brake\\side_a30\\side_clamp_controller_source.py": "21d0eeff1a95abe762ce0a5d0282bb222e278e28b0dc96b771d2e14ee5f66459"
+  }
+}

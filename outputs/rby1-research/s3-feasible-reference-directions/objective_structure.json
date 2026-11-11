@@ -1,0 +1,78 @@
+{
+  "audit_passed": true,
+  "definition": "Mean squared shared-object reference COM world acceleration, integrated over the old motion window. No physical stability claim.",
+  "active_objective_coefficients_0based": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "active_count": 9,
+  "other_coefficients_no_direct_objective_dependence": 41,
+  "coefficient_convention": "COM xyz, three quintic-nullspace coefficients each; position scale .01m.",
+  "normalization_horizon_s": 0.8998625445380035,
+  "integration_end_T_s": 0.6195207030426355,
+  "objective_quadratic_form": "f(p)=constant+g.T p+0.5 p.T H p; exact for the frozen quadrature and seed.",
+  "gradient": "g+H p on the 9 COM-translation coordinates; zero direct derivatives on the other 41.",
+  "Hessian_eigenvalues": [
+    0.0038099342531622087,
+    0.0038099342531622087,
+    0.0038099342531622087,
+    0.05315350421520085,
+    0.05315350421520085,
+    0.05315350421520085,
+    0.06900260503701003,
+    0.06900260503701003,
+    0.06900260503701003
+  ],
+  "H_condition": 18.111232491673192,
+  "quadrature_samples_12_24": [
+    60,
+    120
+  ],
+  "order_12_24_differences": {
+    "H": 4.85722573273506e-17,
+    "g": 2.827057164755953e-17,
+    "f0": 2.220446049250313e-16,
+    "qualified_candidate_objective": 1.6653345369377348e-16
+  },
+  "qualified_candidates": [
+    {
+      "case": 0,
+      "mean_acceleration_squared": 0.31347448536615313,
+      "rms_acceleration": 0.5598879221470607,
+      "quadratic_identity_error": 0.0
+    },
+    {
+      "case": 1,
+      "mean_acceleration_squared": 0.3134742943420774,
+      "rms_acceleration": 0.5598877515556823,
+      "quadratic_identity_error": 5.551115123125783e-17
+    }
+  ],
+  "seed_reference_mean_acc2": 0.3134743893457911,
+  "audit_computation_wall_s": 0.289615200003027,
+  "new_IK_calls": 0,
+  "new_QP_calls": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "limitations": [
+    "This does not solve the 50-variable constrained problem.",
+    "The other 41 coordinates affect feasibility, geometry, joint and base constraints.",
+    "No full constraint/Jacobian evaluation cost measured.",
+    "A future evaluator must compare shared target and lifted hand-implied COM acceleration and retain the old window/scaling.",
+    "Nominal initial reference still differs from saved actual initial velocities."
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.feasible-reference-directions\\audit_objective_structure.py": "01b60526a2da8fdbbd750ef70423f131e3cc965f7f3083fd601dc5f828edf653",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.feasible-reference-directions\\contract.json": "e4c26361391e940054689675f7fee8cbd838288834f3b55706bc5bad56634259",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.feasible-reference-directions\\result.json": "7d62a6c033b2863dc9609974f4f27f4e3de402606f724c680092e27777c9c886",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.feasible-reference-directions\\objective_quadratic.npz": "8c603c40e830b390af138d7d814baf0df8813274fa6366658a7050243143d47d"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_right_column",
+  "contract_sha256": "4087a6ac0a2ccfb6f6c6737e477d5c6328bd08dccba8e92c3d0d7c0537fb4191",
+  "pilot_sha256": "1b264948f7d2e7bf84cdcb2e39a1d714d032a0f3d52d660baf66d30f12dfb57a",
+  "independent_exit_code": 0,
+  "evidence": "842 frozen hashes and 36 time-eligible points; exact witness scene/state; exhaustive signed-distance, kinematics and RMS match both pilot rows; no physics or new IK/QP/outer optimization.",
+  "wall_budget": "Cooperative boundary checks with in-flight row tail."
+}

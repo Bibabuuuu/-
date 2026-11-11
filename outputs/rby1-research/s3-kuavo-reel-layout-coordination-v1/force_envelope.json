@@ -1,0 +1,60 @@
+{
+  "physical_steps": 0,
+  "range_abs_reference_decelerations_mps2": [
+    0.0,
+    2.0
+  ],
+  "results": {
+    "left": [
+      {
+        "a_base": 0.0,
+        "a_object": 0.0,
+        "wrench_scale": 1.3769171066238408
+      },
+      {
+        "a_base": 0.0,
+        "a_object": 2.0,
+        "wrench_scale": 1.3063585012961716
+      },
+      {
+        "a_base": 2.0,
+        "a_object": 0.0,
+        "wrench_scale": 1.3769162614171644
+      },
+      {
+        "a_base": 2.0,
+        "a_object": 2.0,
+        "wrench_scale": 1.3063577404522584
+      }
+    ],
+    "right": [
+      {
+        "a_base": 0.0,
+        "a_object": 0.0,
+        "wrench_scale": 2.4238525518916796
+      },
+      {
+        "a_base": 0.0,
+        "a_object": 2.0,
+        "wrench_scale": 2.3669090497295104
+      },
+      {
+        "a_base": 2.0,
+        "a_object": 0.0,
+        "wrench_scale": 2.423852098896864
+      },
+      {
+        "a_base": 2.0,
+        "a_object": 2.0,
+        "wrench_scale": 2.366908617645193
+      }
+    ]
+  },
+  "principle": "Each demanded hand wrench is affine in the two signed accelerations. The fixed-pad admissible wrench set is convex; all four vertices pass.",
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-force-screen-v1\\contract.json": "fc7d1dc8b8f0868dfe0a32bc4986d644bc7f9dae495add1c8c2d0ed995ad205f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left.xml": "da74eb015c3071d9947b13607b612ffc76ea3fbf4565fae7944aa1436a16fb2e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-preflight-v1\\initial.npz": "e75ecdffd91efd812b8856ce98d25160ce68111adfdbc05f79bcdc7dc18c4f35",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-layout-coordination-v1\\force_envelope.py": "c1eaec647b59029409ee60a9270c92391b783fc00cd05d5c59c7af30b685f038"
+  }
+}

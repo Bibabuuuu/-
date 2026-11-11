@@ -1,0 +1,38 @@
+{
+  "calibration_case": "impact",
+  "phase_targets": [
+    0.0026599493129033803,
+    0.2886775181418612,
+    0.7192152151458553
+  ],
+  "boundary_s": [
+    0.36663230280134784,
+    1.9
+  ],
+  "guard_config": {
+    "floor": 0.65,
+    "full": 0.8,
+    "restore_s": 0.03,
+    "sample_s": 0.01
+  },
+  "duration_s": 2.5,
+  "seed_only_variants_use_original_force_shape": true,
+  "late_onset_ramp_s": 0.1,
+  "cases": [
+    {
+      "label": "seed1111",
+      "seed": 1111,
+      "onset_s": 0.0
+    },
+    {
+      "label": "seed1113",
+      "seed": 1113,
+      "onset_s": 0.0
+    },
+    {
+      "label": "seed1113_late",
+      "seed": 1113,
+      "onset_s": 0.8
+    }
+  ]
+}

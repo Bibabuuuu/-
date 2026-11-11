@@ -1,0 +1,39 @@
+{
+  "stage": "limited_result",
+  "pilot": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "active_s": 482.99522419999994,
+  "stats": {
+    "IK_calls": 38283,
+    "QP_calls": 87772,
+    "QP_internal_iterations": 175544,
+    "unique_targets": 38283,
+    "line_search_trials": 87772,
+    "complete_started": 783,
+    "complete_completed": 783,
+    "outer_calls": 4,
+    "jacobians": 40,
+    "cache_hits": 211,
+    "requests": 990
+  },
+  "phases": {
+    "preparepilot": 9.056447000002663,
+    "b0": 69.26798499999859,
+    "b1": 404.6707966000031
+  },
+  "solves": [
+    "B0_solve_0.json",
+    "B0_solve_1.json",
+    "B0_solve_2.json",
+    "B1_solve_0.json"
+  ],
+  "dense": {},
+  "contract_sha256": "75689ed642ae4be254b2d94db372f6836a2e27b7b8e39403b090caff9ef89fa4",
+  "comparison_completed": false,
+  "new_physics_steps": 0
+}

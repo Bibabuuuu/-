@@ -1,0 +1,17 @@
+{
+  "pitches_deg": [
+    -4.0,
+    -3.75,
+    -3.5,
+    -3.25,
+    -3.0,
+    -2.75,
+    -2.5,
+    -2.25,
+    -2.0,
+    0.0,
+    2.0,
+    4.0
+  ],
+  "scope": "Same fixed reserve, test the minimum pitch selected by a finer shared grid. Reuse identical nominal trials."
+}

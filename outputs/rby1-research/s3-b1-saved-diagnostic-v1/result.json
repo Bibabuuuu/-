@@ -1,0 +1,338 @@
+{
+  "scope": "Frozen B1 data algebra only; endpoint constraints are an offline witness, not an implemented solver change.",
+  "complete_B1_evaluations": 882,
+  "derivative_evaluations": 862,
+  "derivative_evaluation_fraction": 0.9773242630385488,
+  "derivative_recorded_wall_s": 808.6732668999757,
+  "all_complete_evaluation_recorded_wall_s": 827.9911606999231,
+  "evaluation_wall_quantiles_s": [
+    0.4599156000185758,
+    0.9431028000108199,
+    1.0644688999891514,
+    1.4561964999884367
+  ],
+  "parameter_Jacobian_reproduction_error": 0.0,
+  "jerk_endpoint_equivalence_saved_cases": 882,
+  "iteration_predictions": [
+    {
+      "iteration": 1,
+      "step_norm": 0.017023762376954982,
+      "aggregate_predicted": [
+        7.123895189146598e-09,
+        1.4308215871767855e-16
+      ],
+      "actual": [
+        -3.601062203983929e-09,
+        -4.385928580319387e-08
+      ],
+      "endpoint_predicted": [
+        -3.6010622637490263e-09,
+        -4.3859285984702454e-08
+      ],
+      "aggregate_prediction_error": 4.385928594627602e-08,
+      "endpoint_prediction_error": 1.8150858591964568e-16
+    },
+    {
+      "iteration": 2,
+      "step_norm": 0.08226454313846315,
+      "aggregate_predicted": [
+        7.748045791925711e-07,
+        6.916874356001067e-17
+      ],
+      "actual": [
+        -4.0185217731192324e-07,
+        -5.034151648430907e-07
+      ],
+      "endpoint_predicted": [
+        -4.0185198441453937e-07,
+        -5.034149424456687e-07
+      ],
+      "aggregate_prediction_error": 1.1766567565044945e-06,
+      "endpoint_prediction_error": 2.2239742199377087e-13
+    },
+    {
+      "iteration": 3,
+      "step_norm": 0.3423674753672763,
+      "aggregate_predicted": [
+        -4.403861935629036e-17,
+        8.9326201717814e-06
+      ],
+      "actual": [
+        -4.126097330825473e-06,
+        -5.9469336347817144e-06
+      ],
+      "endpoint_predicted": [
+        -4.126098417214138e-06,
+        -5.946935092129803e-06
+      ],
+      "aggregate_prediction_error": 1.4879553806563114e-05,
+      "endpoint_prediction_error": 1.4573480887103722e-12
+    },
+    {
+      "iteration": 4,
+      "step_norm": 0.06603838332156381,
+      "aggregate_predicted": [
+        3.2013676750453723e-06,
+        -3.403971305130857e-17
+      ],
+      "actual": [
+        -4.191795484587147e-06,
+        -1.2249731720537227e-05
+      ],
+      "endpoint_predicted": [
+        -4.191792993721021e-06,
+        -1.224972508698898e-05
+      ],
+      "aggregate_prediction_error": 1.2249731720503186e-05,
+      "endpoint_prediction_error": 6.633548246972156e-12
+    },
+    {
+      "iteration": 5,
+      "step_norm": 0.0006794522664028567,
+      "aggregate_predicted": [
+        -4.2402469339550275e-17,
+        -2.1846334962404013e-16
+      ],
+      "actual": [
+        -6.221043808629645e-06,
+        -7.83814023250784e-06
+      ],
+      "endpoint_predicted": [
+        -6.221047722831356e-06,
+        -7.838144047492305e-06
+      ],
+      "aggregate_prediction_error": 7.838140232289377e-06,
+      "endpoint_prediction_error": 3.914201711165718e-12
+    },
+    {
+      "iteration": 6,
+      "step_norm": 0.00320588023567373,
+      "aggregate_predicted": [
+        0.00010624125842439564,
+        9.410291146530385e-05
+      ],
+      "actual": [
+        -6.496915410920678e-05,
+        -3.282480018764744e-05
+      ],
+      "endpoint_predicted": [
+        -6.496904367559147e-05,
+        -3.282474841991999e-05
+      ],
+      "aggregate_prediction_error": 0.00017121041253360242,
+      "endpoint_prediction_error": 1.1043361530956291e-10
+    },
+    {
+      "iteration": 7,
+      "step_norm": 0.014678980841683386,
+      "aggregate_predicted": [
+        6.402213828526904e-17,
+        1.0936211788589723e-16
+      ],
+      "actual": [
+        -0.00010552337137941237,
+        -0.00010720534250001635
+      ],
+      "endpoint_predicted": [
+        -0.00010552244823951157,
+        -0.00010720453558313414
+      ],
+      "aggregate_prediction_error": 0.0001072053425001257,
+      "endpoint_prediction_error": 9.231399007979821e-10
+    },
+    {
+      "iteration": 8,
+      "step_norm": 0.02011703174191006,
+      "aggregate_predicted": [
+        0.0002891078613340235,
+        9.943804475753696e-06
+      ],
+      "actual": [
+        -0.0007621343392187896,
+        -0.00035278016592794615
+      ],
+      "endpoint_predicted": [
+        -0.0007621377724289562,
+        -0.0003527817551102977
+      ],
+      "aggregate_prediction_error": 0.001051242200552813,
+      "endpoint_prediction_error": 3.4332101665713807e-09
+    },
+    {
+      "iteration": 9,
+      "step_norm": 0.0008531898173348937,
+      "aggregate_predicted": [
+        -4.8138576458356397e-17,
+        -2.572811755308102e-16
+      ],
+      "actual": [
+        -0.000207549216338343,
+        3.445279617153574e-10
+      ],
+      "endpoint_predicted": [
+        -0.0002075487312830397,
+        -2.572811755308102e-16
+      ],
+      "aggregate_prediction_error": 0.00020754921633829487,
+      "endpoint_prediction_error": 4.850553032961693e-10
+    },
+    {
+      "iteration": 10,
+      "step_norm": 0.008041372374221221,
+      "aggregate_predicted": [
+        -1.1733778011724372e-16,
+        0.0020614296395189916
+      ],
+      "actual": [
+        -0.0050499276762421275,
+        -0.007294435824353229
+      ],
+      "endpoint_predicted": [
+        -0.005050295277335458,
+        -0.0072949415500683495
+      ],
+      "aggregate_prediction_error": 0.00935586546387222,
+      "endpoint_prediction_error": 5.057257151204128e-07
+    },
+    {
+      "iteration": 11,
+      "step_norm": 0.002148777578166944,
+      "aggregate_predicted": [
+        0.0024925697862479557,
+        -1.3509159069169385e-16
+      ],
+      "actual": [
+        -0.005726706343861743,
+        -0.00010593724881573508
+      ],
+      "endpoint_predicted": [
+        -0.0057267057809311656,
+        -0.00010593673468939835
+      ],
+      "aggregate_prediction_error": 0.008219276130109698,
+      "endpoint_prediction_error": 5.629305771526205e-10
+    },
+    {
+      "iteration": 12,
+      "step_norm": 0.0011687346381332364,
+      "aggregate_predicted": [
+        9.974659986866641e-17,
+        2.8772015152334074e-17
+      ],
+      "actual": [
+        -0.0006475373021203268,
+        -0.001710631020523934
+      ],
+      "endpoint_predicted": [
+        -0.0006474782761707425,
+        -0.0017106044950641935
+      ],
+      "aggregate_prediction_error": 0.0017106310205239627,
+      "endpoint_prediction_error": 5.9025949584339855e-08
+    },
+    {
+      "iteration": 13,
+      "step_norm": 0.00208661187930222,
+      "aggregate_predicted": [
+        -7.971054372113429e-16,
+        1.9331324735416544e-16
+      ],
+      "actual": [
+        -0.000889056479472039,
+        -3.740221519166198e-08
+      ],
+      "endpoint_predicted": [
+        -0.0008891459940890553,
+        1.9331324735416544e-16
+      ],
+      "aggregate_prediction_error": 0.000889056479471242,
+      "endpoint_prediction_error": 8.951461701620176e-08
+    },
+    {
+      "iteration": 14,
+      "step_norm": 0.0006864106857421376,
+      "aggregate_predicted": [
+        -1.8539857149502126e-17,
+        -4.610375781184576e-16
+      ],
+      "actual": [
+        -0.0014237634864047166,
+        3.712585794346523e-14
+      ],
+      "endpoint_predicted": [
+        -0.0014237620405373173,
+        -4.610375781184576e-16
+      ],
+      "aggregate_prediction_error": 0.001423763486404698,
+      "endpoint_prediction_error": 1.4458673993321403e-09
+    },
+    {
+      "iteration": 15,
+      "step_norm": 0.0012625049776535185,
+      "aggregate_predicted": [
+        2.8557885223268187e-16,
+        3.3348432522395136e-16
+      ],
+      "actual": [
+        -0.0009228977047371246,
+        2.6645352591003757e-15
+      ],
+      "endpoint_predicted": [
+        -0.0009228996424947127,
+        3.3348432522395136e-16
+      ],
+      "aggregate_prediction_error": 0.0009228977047374101,
+      "endpoint_prediction_error": 1.9377575881775536e-09
+    },
+    {
+      "iteration": 16,
+      "step_norm": 0.009101682444391926,
+      "aggregate_predicted": [
+        1.4479520013543912e-15,
+        0.0006337665944228872
+      ],
+      "actual": [
+        -0.0027692448931802005,
+        9.324176832592457e-06
+      ],
+      "endpoint_predicted": [
+        -0.0027692448932403195,
+        9.324176837465035e-06
+      ],
+      "aggregate_prediction_error": 0.0027692448931816486,
+      "endpoint_prediction_error": 6.011901046432122e-14
+    }
+  ],
+  "notes": [
+    "Global min/max envelopes are nonsmooth when the active endpoint changes.",
+    "Finite-difference arithmetic is reproducible; this does not prove it is a valid smooth gradient.",
+    "A single saved step size cannot quantify roundoff versus truncation error.",
+    "Endpoint equivalence here is checked on saved vectors, not a new optimizer or dynamics qualification."
+  ],
+  "new_complete_reference_evaluations": 0,
+  "new_IK_calls": 0,
+  "new_QP_calls": 0,
+  "new_physics_steps": 0,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\contract.json": "00856147fc5dc69e94644db71b9735f5c647daf6d8a1c83f10f25b7188aa4f58",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_solve_0.json": "01ff2f7674e21b701b8ad7ab5d82685422d819fa21dfdad22f204b955caeeafd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\alternative_velocity_basis.npz": "ea93b61029b83f125085390d7620eaf639f7a1fdbfbe0bea4c537edf5f294fe0",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-saved-diagnostic-v1\\audit.py": "f13d5fd69d85e5ce6ce4f1e3cf35917238a3d0e0685415757fe50bfa89d9cae3",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_033.npz": "52216994f2237b62bfeee2afde8bdfd762fe69ed3a6611a0344c958e1d6941de",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_034.npz": "aba209fbc1545090ebc022e4564b633c7219df3afc0704d4d83650f7bc883791",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_035.npz": "6a6d90c8331c963eedc28713a1a705aab20623c382405e21144194501ea6042c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_036.npz": "97887441c9592b75c2ed95d65eaee090f6cdb176747f78ff75f45001d9888c54",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_037.npz": "58cade39374dc0fa323f48b6929ca846c32b8f5a67e7d49e91e8cf26576cc520",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_038.npz": "1a7021f2203351d779b22e4872e5c27fee622b502309df70c7e333c73cef08f3",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_039.npz": "cc9768176d0c9fb130205bcf3cdc82904ef8c79dc8997056846e5f59e6efa504",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_040.npz": "f769c4f5daca1015edc7873d211213d8111d9cd9327feb9b07efb4e0815ece01",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_041.npz": "2f410fd7bc4c372463ddd6c4b83cd0353361334281babd8bae4d88e37780d63f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_042.npz": "565472b8c35edc28936442b517a243a61c39f84ddff8122245151dbafb7e8ec0",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_043.npz": "d851647a2cd340845ac7a16e7d4b7e15e4b74187f17b6aca13e5ca0bc688bfec",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_044.npz": "1e5951ab01c1280fe4508aab698c58be6ac1366e2337f8658de03dd4faf6a637",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_045.npz": "754ef292f8f24fd6b500917037fee085f806969b632a383704464972f35c0726",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_046.npz": "90b8a60b69b03d82cea0655c8c4557fe0612bc96a09e84f3057b0fa1aca1534b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_047.npz": "c571fbfdcbc4f5b6ce5e0d3f9083279ad9c52165fbbeaa3f4b1a6c0c33f01272",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_jac_048.npz": "5479ff2b8820fd2f2548ad4acedd50fc798b40f797f743babe815e822681e224"
+  }
+}

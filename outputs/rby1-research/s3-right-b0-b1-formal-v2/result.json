@@ -1,0 +1,34 @@
+{
+  "stage": "stopped",
+  "pilot": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "active_s": 47.92528000000311,
+  "stats": {
+    "IK_calls": 4920,
+    "QP_calls": 2927,
+    "QP_internal_iterations": 5854,
+    "unique_targets": 4920,
+    "line_search_trials": 2927,
+    "complete_started": 100,
+    "complete_completed": 99,
+    "outer_calls": 1,
+    "jacobians": 16,
+    "cache_hits": 79,
+    "requests": 174
+  },
+  "phases": {
+    "preparepilot": 9.896214499996859,
+    "b0": 38.0290743000005
+  },
+  "solves": [],
+  "dense": {},
+  "failure": "AssertionError: ",
+  "contract_sha256": "be407e5d2f775d31159718a5c82119c192fa9be87df43ba721c2bc1dd6597ae7",
+  "comparison_completed": false,
+  "new_physics_steps": 0
+}

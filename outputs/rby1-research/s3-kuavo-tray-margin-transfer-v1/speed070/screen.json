@@ -1,0 +1,319 @@
+{
+  "rows": [
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -4.0,
+      "demand": 0.08305975381147308,
+      "demand_by_block": [
+        0.08305975381147308,
+        0.07617057426643797
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.24330719209480084
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -3.75,
+      "demand": 0.08175801427092685,
+      "demand_by_block": [
+        0.08175801427092685,
+        0.07645293008060322
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.22794026094058809
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -3.5,
+      "demand": 0.08084324947812063,
+      "demand_by_block": [
+        0.08084324947812063,
+        0.08084324947812063
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.21259499783567593
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -3.25,
+      "demand": 0.08523666731662823,
+      "demand_by_block": [
+        0.08523666731662823,
+        0.08523666731662823
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.19727150390389092
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -3.0,
+      "demand": 0.08963335434880843,
+      "demand_by_block": [
+        0.08963335434880843,
+        0.08963335434880843
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.18196988017781318
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -2.75,
+      "demand": 0.0940334818307177,
+      "demand_by_block": [
+        0.0940334818307177,
+        0.0940334818307177
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.16669022759877603
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -2.5,
+      "demand": 0.0984372215487603,
+      "demand_by_block": [
+        0.0984372215487603,
+        0.0984372215487603
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.1514326470168661
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -2.25,
+      "demand": 0.10284474584683614,
+      "demand_by_block": [
+        0.10284474584683614,
+        0.10284474584683614
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.13619723919092344
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -2.0,
+      "demand": 0.10725622765367251,
+      "demand_by_block": [
+        0.10725622765367251,
+        0.10725622765367251
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.1209841047885414
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -1.75,
+      "demand": 0.1116718405103487,
+      "demand_by_block": [
+        0.1116718405103487,
+        0.1116718405103487
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.10579334438606669
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -1.5,
+      "demand": 0.11609175859802336,
+      "demand_by_block": [
+        0.11609175859802336,
+        0.11609175859802336
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.09062505846859932
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -1.25,
+      "demand": 0.12051615676587332,
+      "demand_by_block": [
+        0.12051615676587332,
+        0.12051615676587332
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.07547934742999265
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -1.0,
+      "demand": 0.124945210559255,
+      "demand_by_block": [
+        0.124945210559255,
+        0.124945210559255
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.06035631157285342
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -0.75,
+      "demand": 0.12937909624809607,
+      "demand_by_block": [
+        0.12937909624809607,
+        0.12937909624809607
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.05047883458463713
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -0.5,
+      "demand": 0.13381799085552976,
+      "demand_by_block": [
+        0.13381799085552976,
+        0.13381799085552976
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.050440194113211476
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -0.25,
+      "demand": 0.13826207218677988,
+      "demand_by_block": [
+        0.13826207218677988,
+        0.13826207218677988
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.05040166987201141
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": 0.0,
+      "demand": 0.14271151885830785,
+      "demand_by_block": [
+        0.14271151885830785,
+        0.14271151885830785
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.050363262896531605
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": 2.0,
+      "demand": 0.20076760224561144,
+      "demand_by_block": [
+        0.20076760224561144,
+        0.1900297530529198
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.11932463296943906
+    },
+    {
+      "speed": 0.7,
+      "base_a": 2.0,
+      "object_a": 1.4,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": 4.0,
+      "demand": 0.2688411894186461,
+      "demand_by_block": [
+        0.2688411894186461,
+        0.23952658393565712
+      ],
+      "reference_end_s": 0.6166666666666669,
+      "max_joint_speed_fraction": 0.23723239568309193
+    }
+  ],
+  "nominal": {
+    "speed": 0.7,
+    "base_a": 2.0,
+    "object_a": 1.4,
+    "jerk": 12.0,
+    "curvature": 0.0,
+    "pitch_deg": -2.5,
+    "demand": 0.0984372215487603,
+    "demand_by_block": [
+      0.0984372215487603,
+      0.0984372215487603
+    ],
+    "reference_end_s": 0.6166666666666669,
+    "max_joint_speed_fraction": 0.1514326470168661
+  },
+  "robust": {
+    "speed": 0.7,
+    "base_a": 2.0,
+    "object_a": 1.4,
+    "jerk": 12.0,
+    "curvature": 0.0,
+    "pitch_deg": -3.5,
+    "demand": 0.08084324947812063,
+    "demand_by_block": [
+      0.08084324947812063,
+      0.08084324947812063
+    ],
+    "reference_end_s": 0.6166666666666669,
+    "max_joint_speed_fraction": 0.21259499783567593
+  }
+}

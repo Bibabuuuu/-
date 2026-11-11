@@ -1,0 +1,21 @@
+{
+  "seed": 1113,
+  "onset_s": 0.8,
+  "duration_s": 2.5,
+  "disturbance_scale": 16.0,
+  "phase_targets": [
+    0.0026599493129033803,
+    0.2886775181418612,
+    0.7192152151458553
+  ],
+  "event_s": [
+    0.97,
+    1.04
+  ],
+  "left_pad_friction": 0.6,
+  "dt_s": 0.0005,
+  "modes": [
+    "sharedrollgrip",
+    "sharedrollgripmax"
+  ]
+}

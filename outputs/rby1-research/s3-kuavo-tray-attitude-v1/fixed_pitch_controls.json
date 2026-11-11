@@ -1,0 +1,89 @@
+{
+  "straight060": {
+    "same_translation_pitch_to_demand": {
+      "-4.0": 0.05698642972889223,
+      "-2.0": 0.0920904601551094,
+      "0.0": 0.12742099898063203,
+      "2.0": 0.17555214915385378,
+      "4.0": 0.2281823395798112
+    },
+    "groups": {
+      "0.1": {
+        "friction_aware": -2.0,
+        "level": false,
+        "fixed_minus2": true,
+        "fixed_minus4": true
+      },
+      "0.15": {
+        "friction_aware": 0.0,
+        "level": true,
+        "fixed_minus2": true,
+        "fixed_minus4": true
+      },
+      "0.2": {
+        "friction_aware": 0.0,
+        "level": true,
+        "fixed_minus2": true,
+        "fixed_minus4": true
+      }
+    }
+  },
+  "arc040": {
+    "same_translation_pitch_to_demand": {
+      "-4.0": 0.04488504279177265,
+      "-2.0": 0.07967457587398676,
+      "0.0": 0.11481410117497698,
+      "2.0": 0.1502834729025572,
+      "4.0": 0.19624243827190999
+    },
+    "groups": {
+      "0.1": {
+        "friction_aware": -2.0,
+        "level": false,
+        "fixed_minus2": true,
+        "fixed_minus4": true
+      },
+      "0.15": {
+        "friction_aware": 0.0,
+        "level": true,
+        "fixed_minus2": true,
+        "fixed_minus4": true
+      },
+      "0.2": {
+        "friction_aware": 0.0,
+        "level": true,
+        "fixed_minus2": true,
+        "fixed_minus4": true
+      }
+    }
+  },
+  "straight095": {
+    "same_translation_pitch_to_demand": {
+      "-4.0": 0.11711191021091585,
+      "-2.0": 0.15265699153946746,
+      "0.0": 0.1885830784913354,
+      "2.0": 0.24000432640458558,
+      "4.0": 0.2964898266311757
+    },
+    "groups": {
+      "0.15": {
+        "friction_aware": -4.0,
+        "level": false,
+        "fixed_minus2": false,
+        "fixed_minus4": true
+      },
+      "0.2": {
+        "friction_aware": 0.0,
+        "level": true,
+        "fixed_minus2": true,
+        "fixed_minus4": true
+      },
+      "0.25": {
+        "friction_aware": 0.0,
+        "level": true,
+        "fixed_minus2": true,
+        "fixed_minus4": true
+      }
+    }
+  }
+}

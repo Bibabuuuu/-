@@ -1,0 +1,22 @@
+{
+  "held": {
+    "accel_rms_mps2": 1.1292039722743907,
+    "accel_peak_mps2": 2.008416033595271,
+    "maximum_forward_after_trigger_m": 0.07332260699071491,
+    "peak_pad_tangent_utilization": [
+      0.09620673229748485,
+      0.03255636439563743
+    ],
+    "predicted_reference_accel_rms_mps2": 1.1264972717841235
+  },
+  "buffer": {
+    "accel_rms_mps2": 0.942068790099332,
+    "accel_peak_mps2": 1.1069628626835673,
+    "maximum_forward_after_trigger_m": 0.09101514629820384,
+    "peak_pad_tangent_utilization": [
+      0.05145323015828209,
+      0.020043381669755063
+    ],
+    "predicted_reference_accel_rms_mps2": 0.9408431302355921
+  }
+}

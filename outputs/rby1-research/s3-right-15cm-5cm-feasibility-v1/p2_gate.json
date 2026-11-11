@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_right_15cm",
+  "independent_exit_code": 0,
+  "passed_starts": 4,
+  "sources": 894,
+  "sha256": {
+    "contract.json": "1689673c8cc60e993fb7750b845fbebc0f73c9401d9c9f8828d5db52f5039d02",
+    "p1_gate.json": "9532be3815687eaa0ba5cdf793e005120a21b44c8b1f2fa702ea9a6fc2a18de6",
+    "result.json": "68f3a2d35bbe8339b4632ae0076c42cdeb792793a1d90fb895cb0094688ec0cb"
+  },
+  "evidence": "Native 508-geometry checks at each group minimum, hashes, motion grid, RMS quadrature, deadline and all four starts."
+}

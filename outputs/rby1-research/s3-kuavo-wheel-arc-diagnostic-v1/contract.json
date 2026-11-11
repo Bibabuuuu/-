@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "soft_rear": {
+      "rear_solref": 0.02,
+      "rear_raise_m": 0.0,
+      "accel": 1.75,
+      "jerk": 18.0
+    },
+    "raise_rear": {
+      "rear_solref": 0.01,
+      "rear_raise_m": 0.00025,
+      "accel": 1.75,
+      "jerk": 18.0
+    },
+    "reserve": {
+      "rear_solref": 0.01,
+      "rear_raise_m": 0.0,
+      "accel": 1.85,
+      "jerk": 20.0
+    }
+  },
+  "comparison": "Three single-factor diagnostics against saved wide 0.95 m/s curved stop; common initial state and deadline",
+  "friction": 0.2,
+  "deadline": 0.65,
+  "speed": 0.95,
+  "curvature": -0.5,
+  "dt": 0.0005
+}

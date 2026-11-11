@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_right_15cm",
+  "contract_sha256": "842f163c8868011b5e38d20f066c835f2fc5f21b7044ced7bb91f33c87d10d48",
+  "exit_code": 0,
+  "source_count": 902,
+  "evidence": "Four carried starts, independent 50mm constraint and jerk equivalence, exact floor and 1% tie, 2500 dense schedule probes and budget binding."
+}

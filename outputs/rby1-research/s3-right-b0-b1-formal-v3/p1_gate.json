@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_right_formal",
+  "contract_sha256": "75689ed642ae4be254b2d94db372f6836a2e27b7b8e39403b090caff9ef89fa4",
+  "pilot_sha256": "5fc32b5bc30984026970e3a5815dac51e5c2b8a90bc5e2be32bc094c5e457d7e",
+  "source_hashes": 891,
+  "exit_code": 0,
+  "evidence": "Five carried pilot packets, boundary proof, unchanged task and budget, process-local repair binding."
+}

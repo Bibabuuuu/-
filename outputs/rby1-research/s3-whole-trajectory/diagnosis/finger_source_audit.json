@@ -1,0 +1,130 @@
+{
+  "source_repo": "https://github.com/RainbowRobotics/rby1-sdk",
+  "source_commit": "300a585c297d1bdf8554312c3a1659610a9823f5",
+  "official_sha256": "e146bd1f4fb01b96f19f9189ccf8f103ab8fc016c8208259132933d1975c87bc",
+  "download_manifest_sha256": "a33905807e860fc449f59081a99fc29a7cb026172e278783bf4f76607855695c",
+  "source_constraints": [
+    {
+      "name": "right_finger",
+      "joint1": "gripper_finger_r1",
+      "joint2": "gripper_finger_r2",
+      "polycoef": "0 -1 0 0 0"
+    },
+    {
+      "name": "left_finger",
+      "joint1": "gripper_finger_l1",
+      "joint2": "gripper_finger_l2",
+      "polycoef": "0 -1 0 0 0"
+    }
+  ],
+  "source_builder_sha256": "1e526d6de84b3baffd2ee742e83d1b34d86a77597a329d66d482209938ff2def",
+  "omission": "build_model reconstructs a new MJCF tree and does not transfer the source equality section",
+  "current_scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\right_column\\scene.xml",
+  "current_scene_sha256": "d8b42f8057ed8777289d7cef4d5c22a4a6338b241cf025d7045a43144eddb3bb",
+  "current_neq": 0,
+  "candidate_neq": 2,
+  "candidate": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\diagnosis\\synchronized_scene_candidate.xml",
+  "candidate_sha256": "a979eeb810ab2315bb941c23a3ffcea09186604aee6926cade8b23b406620388",
+  "changes": "exactly the two upstream joint synchronization equalities; no payload weld or other model changes",
+  "state_checks": [
+    {
+      "label": "baseline",
+      "time_s": 0.0,
+      "upstream_constraint_residual": {
+        "l": {
+          "q1_plus_q2_mm": -0.0002126705225188874,
+          "q1_dot_plus_q2_dot_mmps": -6.525707067948827e-05
+        },
+        "r": {
+          "q1_plus_q2_mm": 0.0004479472192828182,
+          "q1_dot_plus_q2_dot_mmps": 0.00014256260007846166
+        }
+      },
+      "least_distance_finger_only_projection_max_m": 2.239736096414091e-07,
+      "projection_is_not_an_executed_initialization": true
+    },
+    {
+      "label": "baseline",
+      "time_s": 0.9,
+      "upstream_constraint_residual": {
+        "l": {
+          "q1_plus_q2_mm": 0.07906168303281787,
+          "q1_dot_plus_q2_dot_mmps": -0.006791243047617946
+        },
+        "r": {
+          "q1_plus_q2_mm": -0.07328163810214026,
+          "q1_dot_plus_q2_dot_mmps": 0.001995112309373037
+        }
+      },
+      "least_distance_finger_only_projection_max_m": 3.95308415164098e-05,
+      "projection_is_not_an_executed_initialization": true
+    },
+    {
+      "label": "baseline",
+      "time_s": 1.9000000000000001,
+      "upstream_constraint_residual": {
+        "l": {
+          "q1_plus_q2_mm": 0.07776408026235158,
+          "q1_dot_plus_q2_dot_mmps": -0.0008620341008313086
+        },
+        "r": {
+          "q1_plus_q2_mm": -0.07478478965163016,
+          "q1_dot_plus_q2_dot_mmps": -0.0005523811544389055
+        }
+      },
+      "least_distance_finger_only_projection_max_m": 3.888204013117666e-05,
+      "projection_is_not_an_executed_initialization": true
+    },
+    {
+      "label": "rms",
+      "time_s": 0.0,
+      "upstream_constraint_residual": {
+        "l": {
+          "q1_plus_q2_mm": -0.0002126705225188874,
+          "q1_dot_plus_q2_dot_mmps": -6.525707067948827e-05
+        },
+        "r": {
+          "q1_plus_q2_mm": 0.0004479472192828182,
+          "q1_dot_plus_q2_dot_mmps": 0.00014256260007846166
+        }
+      },
+      "least_distance_finger_only_projection_max_m": 2.239736096414091e-07,
+      "projection_is_not_an_executed_initialization": true
+    },
+    {
+      "label": "rms",
+      "time_s": 0.9,
+      "upstream_constraint_residual": {
+        "l": {
+          "q1_plus_q2_mm": 0.21958192698627588,
+          "q1_dot_plus_q2_dot_mmps": 0.2598947313659281
+        },
+        "r": {
+          "q1_plus_q2_mm": -0.21500618041426534,
+          "q1_dot_plus_q2_dot_mmps": -0.26406641144178256
+        }
+      },
+      "least_distance_finger_only_projection_max_m": 0.00010979096349313794,
+      "projection_is_not_an_executed_initialization": true
+    },
+    {
+      "label": "rms",
+      "time_s": 1.9000000000000001,
+      "upstream_constraint_residual": {
+        "l": {
+          "q1_plus_q2_mm": 0.48400200244299446,
+          "q1_dot_plus_q2_dot_mmps": 0.2646699016182124
+        },
+        "r": {
+          "q1_plus_q2_mm": -0.48189147925154635,
+          "q1_dot_plus_q2_dot_mmps": -0.265895750911366
+        }
+      },
+      "least_distance_finger_only_projection_max_m": 0.00024200100122149723,
+      "projection_is_not_an_executed_initialization": true
+    }
+  ],
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "scope": "static scene-load and source audit; no new dynamics or recovered performance claim"
+}

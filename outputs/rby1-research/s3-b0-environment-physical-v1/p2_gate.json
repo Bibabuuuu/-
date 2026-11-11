@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "reviewer": "/root/p1_environment_physics",
+  "scope": "saved four-case physics evidence and nominal sampled execution admission, not general stability or hardware",
+  "contract_sha256": "316d87add48c4613cf3425336df89ca4743d17713ee790d34d754d667c2f0a0c",
+  "summary_sha256": "7bf9a86e9290d582186b43a0cbdd380d361194570e11c4b59029c1884d92bdeb",
+  "metrics_csv_sha256": "6dbaf163dc3441e2d5b3a25699b309fd8f830edce2239ff925fc4abc009438c8",
+  "verify_exit_code": 0,
+  "independent_check_exit_code": 0,
+  "source_input_hashes_verified": 197,
+  "run_artifact_hashes_verified": 20,
+  "manifest_direct_input_hashes_verified": 6,
+  "executed_physics_runs": 4,
+  "physical_steps": 16000,
+  "all_runtime_gates_passed": true,
+  "independent_native_geometry_samples": 18,
+  "independent_native_geometry_pairs": 9144,
+  "geometry_error_limit_m": 1e-10,
+  "window_metric_error_limit": 1e-12,
+  "blocking_findings": [],
+  "limits": [
+    "one run per case, fixed base reference and nominal model only",
+    "relative drift persists; no material-point slip or grip-improvement claim",
+    "sampled geometry is not continuous or hardware safety",
+    "startup attempts and actual physics runs must be counted separately on exception paths; no such exception occurred here"
+  ],
+  "new_physics_steps_during_P2": 0
+}

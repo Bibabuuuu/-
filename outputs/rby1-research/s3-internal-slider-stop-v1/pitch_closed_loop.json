@@ -1,0 +1,369 @@
+{
+  "scope": "Prescribed common translation with an actuated pitch axis and moving internal slider. No robot or gripper contact model.",
+  "parameters": {
+    "inertia_kg_m2": 0.0012,
+    "actuator_lag_s": 0.03,
+    "cap_Nm": 0.1,
+    "kp": 0.9,
+    "kd": 0.055,
+    "spring_damping_by_mode": {
+      "continuous": [
+        14.0,
+        0.35
+      ],
+      "impact": [
+        0.0,
+        0.15
+      ]
+    },
+    "spring_bumper_scale_by_case": {
+      "nominal": [
+        1.0,
+        1.0
+      ],
+      "holdout": [
+        0.8,
+        1.3
+      ]
+    },
+    "update_s": 0.01,
+    "prediction_step_s": 0.0025,
+    "horizon_s": 0.15,
+    "base_stop_s": 0.4666666666666667,
+    "speed_mps": 0.6,
+    "base_peak_decel_mps2": 2.0,
+    "stop_distance_m": 0.14,
+    "end_s": 0.9,
+    "initial_slider_speed_mps": 0.14,
+    "integration_s": 0.0005
+  },
+  "results": {
+    "continuous_nominal_forward": {
+      "position_feedback": {
+        "peak_pitch_deg": 0.7902776115618371,
+        "pitch_rms_deg": 0.4137519629882912,
+        "peak_pitch_rate_deg_s": 7.5885608456134905,
+        "peak_applied_torque_Nm": 0.04786020798765993,
+        "peak_slider_mm": 30.94613582260994,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": null,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.11008934463309682,
+        "pitch_rms_deg": 0.057590766949262705,
+        "peak_pitch_rate_deg_s": 1.0085646049547108,
+        "peak_applied_torque_Nm": 0.04442295741564897,
+        "peak_slider_mm": 30.04426163240394,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.11205061560781836,
+        "pitch_rms_deg": 0.05654166972673492,
+        "peak_pitch_rate_deg_s": 2.0414561394135493,
+        "peak_applied_torque_Nm": 0.04494344109170753,
+        "peak_slider_mm": 29.797669981939777,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.6685,
+        "selection_compute_p95_ms": 10.800260001269635,
+        "selection_compute_max_ms": 15.273999997589272
+      }
+    },
+    "continuous_nominal_backward": {
+      "position_feedback": {
+        "peak_pitch_deg": 0.997893823662204,
+        "pitch_rms_deg": 0.5960555210207094,
+        "peak_pitch_rate_deg_s": 12.715677316525744,
+        "peak_applied_torque_Nm": 0.06270999290443277,
+        "peak_slider_mm": 40.09269417280006,
+        "first_contact_s": 0.404,
+        "peak_bumper_force_N": 0.2250711372891276,
+        "pitch_settle_s": null,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.14396342064357892,
+        "pitch_rms_deg": 0.08586126257688134,
+        "peak_pitch_rate_deg_s": 1.8608237281259095,
+        "peak_applied_torque_Nm": 0.05767355008919553,
+        "peak_slider_mm": 38.84055942192099,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.13365454535017993,
+        "pitch_rms_deg": 0.07571317821215745,
+        "peak_pitch_rate_deg_s": 1.7682240045720716,
+        "peak_applied_torque_Nm": 0.05630111511545476,
+        "peak_slider_mm": 38.34182317920195,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": 12.245104997418814,
+        "selection_compute_max_ms": 24.67340000293916
+      }
+    },
+    "continuous_holdout_forward": {
+      "position_feedback": {
+        "peak_pitch_deg": 0.9085006225439978,
+        "pitch_rms_deg": 0.47871805524974226,
+        "peak_pitch_rate_deg_s": 7.683782638111559,
+        "peak_applied_torque_Nm": 0.05854303109587975,
+        "peak_slider_mm": 39.186802641024286,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": null,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.12780458778282539,
+        "pitch_rms_deg": 0.06627428426533347,
+        "peak_pitch_rate_deg_s": 1.0422708251808923,
+        "peak_applied_torque_Nm": 0.05586885587118981,
+        "peak_slider_mm": 37.92917479130224,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.12264264632293756,
+        "pitch_rms_deg": 0.06464938124975635,
+        "peak_pitch_rate_deg_s": 1.6893282752001526,
+        "peak_applied_torque_Nm": 0.0563534156874209,
+        "peak_slider_mm": 37.578172799218315,
+        "first_contact_s": null,
+        "peak_bumper_force_N": 0.0,
+        "pitch_settle_s": 0.0,
+        "selection_compute_p95_ms": 9.565789997941465,
+        "selection_compute_max_ms": 19.71890000277199
+      }
+    },
+    "continuous_holdout_backward": {
+      "position_feedback": {
+        "peak_pitch_deg": 1.0403674357180712,
+        "pitch_rms_deg": 0.5925938841532099,
+        "peak_pitch_rate_deg_s": 22.37567567699554,
+        "peak_applied_torque_Nm": 0.06697257409165167,
+        "peak_slider_mm": 40.885236723510026,
+        "first_contact_s": 0.3755,
+        "peak_bumper_force_N": 2.5176117918931755,
+        "pitch_settle_s": null,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.16812330324406638,
+        "pitch_rms_deg": 0.08743968059244471,
+        "peak_pitch_rate_deg_s": 3.490070792762867,
+        "peak_applied_torque_Nm": 0.061287829587388425,
+        "peak_slider_mm": 40.74225601164839,
+        "first_contact_s": 0.3805,
+        "peak_bumper_force_N": 2.1181590231116556,
+        "pitch_settle_s": 0.481,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.16275716143881766,
+        "pitch_rms_deg": 0.08486983613787615,
+        "peak_pitch_rate_deg_s": 2.420069254152053,
+        "peak_applied_torque_Nm": 0.06054527512993888,
+        "peak_slider_mm": 40.67876357448784,
+        "first_contact_s": 0.384,
+        "peak_bumper_force_N": 1.939440498358988,
+        "pitch_settle_s": 0.40700000000000003,
+        "selection_compute_p95_ms": 9.535300004426972,
+        "selection_compute_max_ms": 17.853900004411116
+      }
+    },
+    "impact_nominal_forward": {
+      "position_feedback": {
+        "peak_pitch_deg": 0.7940689171034727,
+        "pitch_rms_deg": 0.443350428106186,
+        "peak_pitch_rate_deg_s": 23.65882608951185,
+        "peak_applied_torque_Nm": 0.07144381072189591,
+        "peak_slider_mm": 42.41298773228936,
+        "first_contact_s": 0.196,
+        "peak_bumper_force_N": 5.111079071828764,
+        "pitch_settle_s": null,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.14423917064044106,
+        "pitch_rms_deg": 0.07573085779897085,
+        "peak_pitch_rate_deg_s": 4.474045100225097,
+        "peak_applied_torque_Nm": 0.06426963842718492,
+        "peak_slider_mm": 42.33920283129571,
+        "first_contact_s": 0.198,
+        "peak_bumper_force_N": 4.955946958152702,
+        "pitch_settle_s": 0.597,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.1394897045918522,
+        "pitch_rms_deg": 0.04902193446481797,
+        "peak_pitch_rate_deg_s": 2.712584535805144,
+        "peak_applied_torque_Nm": 0.06203324503741784,
+        "peak_slider_mm": 42.31871374460298,
+        "first_contact_s": 0.199,
+        "peak_bumper_force_N": 4.911349442711348,
+        "pitch_settle_s": 0.233,
+        "selection_compute_p95_ms": 9.325900000476395,
+        "selection_compute_max_ms": 10.689599999750499
+      }
+    },
+    "impact_nominal_backward": {
+      "position_feedback": {
+        "peak_pitch_deg": 1.3509864415376611,
+        "pitch_rms_deg": 0.6659820278857222,
+        "peak_pitch_rate_deg_s": 36.52324628896353,
+        "peak_applied_torque_Nm": 0.07418496514657397,
+        "peak_slider_mm": 42.73810092371837,
+        "first_contact_s": 0.3915,
+        "peak_bumper_force_N": 5.813228175765035,
+        "pitch_settle_s": null,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.25002445948698115,
+        "pitch_rms_deg": 0.10741955102364129,
+        "peak_pitch_rate_deg_s": 6.73345475275468,
+        "peak_applied_torque_Nm": 0.06600557841283117,
+        "peak_slider_mm": 42.65713366106809,
+        "first_contact_s": 0.3895,
+        "peak_bumper_force_N": 5.641680217500851,
+        "pitch_settle_s": null,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.2246992635489941,
+        "pitch_rms_deg": 0.09122226273087325,
+        "peak_pitch_rate_deg_s": 4.554358708670375,
+        "peak_applied_torque_Nm": 0.060960851775384045,
+        "peak_slider_mm": 42.608960706967174,
+        "first_contact_s": 0.39,
+        "peak_bumper_force_N": 5.53994600856031,
+        "pitch_settle_s": 0.462,
+        "selection_compute_p95_ms": 9.41034000243235,
+        "selection_compute_max_ms": 9.84489999973448
+      }
+    },
+    "impact_holdout_forward": {
+      "position_feedback": {
+        "peak_pitch_deg": 0.786619198957515,
+        "pitch_rms_deg": 0.4406441088880033,
+        "peak_pitch_rate_deg_s": 22.547837556660323,
+        "peak_applied_torque_Nm": 0.07437049261351943,
+        "peak_slider_mm": 42.04245435765422,
+        "first_contact_s": 0.196,
+        "peak_bumper_force_N": 5.728836586502774,
+        "pitch_settle_s": null,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.13995799424003383,
+        "pitch_rms_deg": 0.07701815253526574,
+        "peak_pitch_rate_deg_s": 4.317265868141744,
+        "peak_applied_torque_Nm": 0.06365803533300989,
+        "peak_slider_mm": 41.97709061462877,
+        "first_contact_s": 0.198,
+        "peak_bumper_force_N": 5.543966880657549,
+        "pitch_settle_s": 0.675,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.1394897045918522,
+        "pitch_rms_deg": 0.051503209030958425,
+        "peak_pitch_rate_deg_s": 2.5748228762099816,
+        "peak_applied_torque_Nm": 0.061162681272393465,
+        "peak_slider_mm": 41.95959728515858,
+        "first_contact_s": 0.199,
+        "peak_bumper_force_N": 5.496409388060426,
+        "pitch_settle_s": 0.23,
+        "selection_compute_p95_ms": 9.243980000974261,
+        "selection_compute_max_ms": 9.935199996107258
+      }
+    },
+    "impact_holdout_backward": {
+      "position_feedback": {
+        "peak_pitch_deg": 1.2842267233204774,
+        "pitch_rms_deg": 0.6487068488113177,
+        "peak_pitch_rate_deg_s": 35.576377310378675,
+        "peak_applied_torque_Nm": 0.07368734811920775,
+        "peak_slider_mm": 42.32686722544624,
+        "first_contact_s": 0.3915,
+        "peak_bumper_force_N": 6.543414352235572,
+        "pitch_settle_s": null,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "velocity_feedback": {
+        "peak_pitch_deg": 0.239541911716024,
+        "pitch_rms_deg": 0.10413652747651139,
+        "peak_pitch_rate_deg_s": 6.5855812766595125,
+        "peak_applied_torque_Nm": 0.06507355008172151,
+        "peak_slider_mm": 42.257248393695434,
+        "first_contact_s": 0.3895,
+        "peak_bumper_force_N": 6.349379522362562,
+        "pitch_settle_s": 0.7505000000000001,
+        "selection_compute_p95_ms": null,
+        "selection_compute_max_ms": null
+      },
+      "rolling": {
+        "peak_pitch_deg": 0.2246992635489941,
+        "pitch_rms_deg": 0.09098614424228865,
+        "peak_pitch_rate_deg_s": 4.327067739991765,
+        "peak_applied_torque_Nm": 0.06009975336106496,
+        "peak_slider_mm": 42.215006660339164,
+        "first_contact_s": 0.39,
+        "peak_bumper_force_N": 6.231561236241768,
+        "pitch_settle_s": 0.465,
+        "selection_compute_p95_ms": 9.773114997005905,
+        "selection_compute_max_ms": 15.025799999420997
+      }
+    }
+  },
+  "refined_peak_pitch_deg": {
+    "continuous_nominal_forward": {
+      "position_feedback": 0.7902778799248766,
+      "velocity_feedback": 0.11008934464509466,
+      "rolling": 0.1120512402854793
+    },
+    "continuous_nominal_backward": {
+      "position_feedback": 0.9978615403993923,
+      "velocity_feedback": 0.14396342042063845,
+      "rolling": 0.13365478617139567
+    },
+    "impact_nominal_forward": {
+      "position_feedback": 0.7939074916629552,
+      "velocity_feedback": 0.14451469697206498,
+      "rolling": 0.1394897049732493
+    },
+    "impact_nominal_backward": {
+      "position_feedback": 1.3459464835247439,
+      "velocity_feedback": 0.25037151583215816,
+      "rolling": 0.22469926430818546
+    }
+  },
+  "robot_simulation_steps": 0
+}

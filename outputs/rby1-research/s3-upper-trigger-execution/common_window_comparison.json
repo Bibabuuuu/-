@@ -1,0 +1,37 @@
+{
+  "baseline": "previous forced_deadline straight fallback, reused without a new run",
+  "new": "one upper_at_deadline episode",
+  "common_motion_window_s": [
+    0.25,
+    0.918732400344874
+  ],
+  "common_hold_window_s": [
+    0.918732400344874,
+    1.918732400344874
+  ],
+  "baseline_metrics": {
+    "object_acceleration_RMS_mps2": 0.6475390208388282,
+    "max_hand_contact_TCP_moment_RMS_Nm": 0.026761279003510705,
+    "common_hold_1s_relative_position_change_mm": 0.1560872317698531,
+    "common_hold_1s_contact_tangent_travel_mm": 0.15610107964520567,
+    "peak_object_acceleration_in_common_motion_mps2": 0.7815043917865654,
+    "peak_hand_contact_TCP_moment_in_common_motion_Nm": 0.03232206947022743
+  },
+  "upper_metrics": {
+    "object_acceleration_RMS_mps2": 0.6523727611227557,
+    "max_hand_contact_TCP_moment_RMS_Nm": 0.03021749002092183,
+    "common_hold_1s_relative_position_change_mm": 0.15947758637732024,
+    "common_hold_1s_contact_tangent_travel_mm": 0.15620895684350458,
+    "peak_object_acceleration_in_common_motion_mps2": 0.9301865925131252,
+    "peak_hand_contact_TCP_moment_in_common_motion_Nm": 0.043831513217455355
+  },
+  "relative_change_percent": {
+    "object_acceleration_RMS_mps2": 0.7464786103030141,
+    "max_hand_contact_TCP_moment_RMS_Nm": 12.914969486165884,
+    "common_hold_1s_relative_position_change_mm": 2.1720896507833043,
+    "common_hold_1s_contact_tangent_travel_mm": 0.06910727238025327,
+    "peak_object_acceleration_in_common_motion_mps2": 19.02512670295602,
+    "peak_hand_contact_TCP_moment_in_common_motion_Nm": 35.60862264042075
+  },
+  "note": "same trigger/cruise prefix and release, but stopping duration, turning and upper motion differ together; no isolated waist/arm causal benefit or overall stability ranking"
+}

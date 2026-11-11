@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-05T03:43:37.119751+00:00",
+  "random_seed": 0,
+  "input_files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\contract.json",
+      "sha256": "f06045f1e15b5280c6dab3e7d31d583aad9a37574e5baa7b40af84b9d2214530",
+      "bytes": 247353
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\result.json",
+      "sha256": "3e14e53978b2af7d210e161c72b5bffeb18d17d5a31b20512f4ff7b4e3eab635",
+      "bytes": 12063
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\progress.json",
+      "sha256": "2358340b3800dd0de7d354c4a51432dff05a395638dbbdc7ee926f9c6fbbf91f",
+      "bytes": 11886
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\pilot.json",
+      "sha256": "9b880dbd8a58c1b334200cd5bea636ebd4103687f9fc0452ecf4d397e4045df8",
+      "bytes": 8785
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\p1_gate.json",
+      "sha256": "fb571cf6cc61394f0c0aba798239a545c2b85b212d09a0d5da87c25adcbbacba",
+      "bytes": 961
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\B1_solve_0.json",
+      "sha256": "497082c0a09e53d625bc8e5792d426d467ba689cb70c6d2a81760e86bd81b29c",
+      "bytes": 4959585
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\iteration_comparison.csv",
+      "sha256": "2166ad23e32e8452ebbaac2f660c96fe5a649ebcc58571f84c32b48ad5b83727",
+      "bytes": 2246
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B0_dense.json",
+      "sha256": "416827680c8b21cc668addd90912865cfbd76f23bdf432d4944bd90698a78c7a",
+      "bytes": 10560
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-b1-continuous-v1\\B1_solve_0.json",
+      "sha256": "01ff2f7674e21b701b8ad7ab5d82685422d819fa21dfdad22f204b955caeeafd",
+      "bytes": 3460219
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\recheck_b1_endpoint.py",
+      "sha256": "054e9f739b922483d20819081b26aae34f0abe4fc99c48c92a429bfb968fa726",
+      "bytes": 11007
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\eval_1160_failed.json",
+      "sha256": "aa8f5e313c969d7181d4f2a2a53408349bcf77a18490e53447553963c780c7e0",
+      "bytes": 10857
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\eval_1160_partial.npz",
+      "sha256": "21e623140dcfd8865fbafcbb2d7872d5d4fbaa553e6e35b2e6a7be58bbaf2ba9",
+      "bytes": 15552
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b1-endpoint-recheck-v1\\eval_1160_started.json",
+      "sha256": "b56b9d1592794a9128721b44d9b1419559c3c9ecb847196ee94b8f29a2ce44a7",
+      "bytes": 863
+    }
+  ],
+  "runtime": {
+    "name": "python",
+    "version": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.1",
+      "mujoco": "3.17.0",
+      "ruckig": "0.19.4"
+    }
+  },
+  "key_parameters": {
+    "status": "controlled B1 phase timeout; no dense or admitted new action",
+    "limits": {
+      "active_s": 1020,
+      "solver_s": 840,
+      "full_evals": 1203,
+      "IK": 65000,
+      "QP": 200000,
+      "QP_iterations": 400000
+    },
+    "actual": {
+      "IK_calls": 57979,
+      "QP_calls": 155624,
+      "QP_internal_iterations": 311248,
+      "unique_targets": 57979,
+      "line_search_trials": 155624,
+      "complete_started": 1160,
+      "complete_completed": 1159,
+      "outer_calls": 1,
+      "jacobians": 20,
+      "cache_hits": 108,
+      "requests": 1266
+    },
+    "active_s": 847.2959145,
+    "phases": {
+      "preparepilot": 7.103625899999997,
+      "b1": 840.1922959999997
+    },
+    "new_physics_steps": 0,
+    "command_exit_codes": {
+      "prepare": 0,
+      "pilot": 0,
+      "solve": 1
+    },
+    "verification": "Saved data only; no optimizer or new reference reruns"
+  },
+  "reproduce_command": "work/robot-model-audit/.venv/Scripts/python.exe simulation/rby1/recheck_b1_endpoint.py verify"
+}

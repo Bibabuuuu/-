@@ -1,0 +1,63 @@
+{
+  "layouts": {
+    "forward": {
+      "forward/nominal": {
+        "steps": 5000,
+        "peak_mm": [
+          4.391045451444427,
+          4.397167316517606
+        ],
+        "pitch_rate_settled_s": 0.5820000000000001,
+        "qualification": true
+      },
+      "forward/robust": {
+        "steps": 5000,
+        "peak_mm": [
+          0.0033725419899138863,
+          0.0032013342440602027
+        ],
+        "pitch_rate_settled_s": 0.6599999999999999,
+        "qualification": true
+      },
+      "fine/forward/robust": {
+        "steps": 5000,
+        "peak_mm": [
+          0.0037407400575545616,
+          0.003744662523928968
+        ],
+        "pitch_rate_settled_s": 0.6519999999999999,
+        "qualification": true
+      }
+    },
+    "staggered": {
+      "staggered/nominal": {
+        "steps": 5000,
+        "peak_mm": [
+          3.0293647796463725,
+          3.2015765900116833
+        ],
+        "pitch_rate_settled_s": 0.6134999999999999,
+        "qualification": true
+      },
+      "staggered/robust": {
+        "steps": 5000,
+        "peak_mm": [
+          0.013620069746818201,
+          0.0014528052788645217
+        ],
+        "pitch_rate_settled_s": 0.6650000000000003,
+        "qualification": true
+      },
+      "fine/staggered/robust": {
+        "steps": 5000,
+        "peak_mm": [
+          0.01949068870604716,
+          0.022421589611427577
+        ],
+        "pitch_rate_settled_s": 0.6570000000000003,
+        "qualification": true
+      }
+    }
+  },
+  "steps": 30000
+}

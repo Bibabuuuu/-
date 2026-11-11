@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-04T09:02:38.149749+00:00",
+  "random_seed": 0,
+  "input_files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-environment-physical-v1\\contract.json",
+      "sha256": "316d87add48c4613cf3425336df89ca4743d17713ee790d34d754d667c2f0a0c",
+      "bytes": 38227
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-environment-physical-v1\\preflight.json",
+      "sha256": "3d6b616a13498abc67d2a7185859d07d7da9197d29285c5cb635cc6e24e32f0e",
+      "bytes": 5151
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-environment-physical-v1\\summary.json",
+      "sha256": "7bf9a86e9290d582186b43a0cbdd380d361194570e11c4b59029c1884d92bdeb",
+      "bytes": 20069
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-environment-physical-v1\\metrics.csv",
+      "sha256": "6dbaf163dc3441e2d5b3a25699b309fd8f830edce2239ff925fc4abc009438c8",
+      "bytes": 4297
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\b0_environment_physical.py",
+      "sha256": "f2cd1827dd6dc9ebeb1b62def5f7dcfa099742ed4b110959e884cf538a86a818",
+      "bytes": 17979
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\initial_state.npz",
+      "sha256": "148aa548be57765e22bb30f63814572938239ccc7642777af47265effc3df9a9",
+      "bytes": 1048
+    }
+  ],
+  "runtime": {
+    "name": "python",
+    "version": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "mujoco": "3.17.0",
+      "ruckig": "0.19.4"
+    }
+  },
+  "key_parameters": {
+    "maximum_runs": 4,
+    "maximum_steps": 16000,
+    "scope": "fixed-base within-scene nominal ablation; no statistics or hardware claim",
+    "command_role": "read-only recomputation of saved metrics and geometry"
+  },
+  "reproduce_command": "work/robot-model-audit/.venv/Scripts/python.exe -B simulation/rby1/b0_environment_physical.py verify"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Evidence audit only, B0 qualification failed wheel_contact.",
+  "agent": "/root/p1_right_physical",
+  "driver_verify_exit_code": 0,
+  "independent_recompute_exit_code": 0,
+  "steps": 3800,
+  "samples": 3801,
+  "failed_checks": [
+    "wheel_contact"
+  ],
+  "wheel_zero_s": [
+    0.1815,
+    0.224
+  ],
+  "sha256": {
+    "contract.json": "d5880035afc96cedc3f3bf3e662b93f5650522193d56d2435f5abd2f839e6f7b",
+    "preflight.json": "5c29ffd5fb7f2db8aac632d0744fb19b5c459a8bf6c7e2296666e7edd508676a",
+    "p1_gate.json": "92e345d396dcaf5d402c8fbc323597890aef971f4292ecf1a15826d3c9362835",
+    "started.json": "5718def72c1929e4ead9a3f380e0dd9aa3baa16d864507e1d24fec7a6b8563c4",
+    "admission.json": "0151cb50b676fbf200280c3a1b8e38f58a2d4df8b7e2e2537a755b744c883590"
+  },
+  "evidence": "Independent artifact and source hashes, windows, RMS, rest, hold, clearance and contact checks match the archived and new trajectories."
+}

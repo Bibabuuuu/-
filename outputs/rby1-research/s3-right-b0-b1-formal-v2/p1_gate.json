@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_right_formal",
+  "contract_sha256": "be407e5d2f775d31159718a5c82119c192fa9be87df43ba721c2bc1dd6597ae7",
+  "pilot_sha256": "5fc32b5bc30984026970e3a5815dac51e5c2b8a90bc5e2be32bc094c5e457d7e",
+  "source_hashes": 878,
+  "exit_code": 0,
+  "evidence": "Five bound pilot records, matching f/g and equivalent endpoint jerk rows, phase cap checked."
+}

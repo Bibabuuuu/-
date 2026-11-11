@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_right_physical",
+  "contract_sha256": "d5880035afc96cedc3f3bf3e662b93f5650522193d56d2435f5abd2f839e6f7b",
+  "preflight_sha256": "5c29ffd5fb7f2db8aac632d0744fb19b5c459a8bf6c7e2296666e7edd508676a",
+  "exit_code": 0,
+  "evidence": "Verified 1201 nodes, 9.869646687 mm, synchronized scene/state, 0.5999312722690018 s, same controller parameters and 3800-step single-run cap."
+}

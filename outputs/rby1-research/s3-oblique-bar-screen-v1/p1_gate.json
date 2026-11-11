@@ -1,0 +1,7 @@
+{
+  "independent_smoke_exit_code": 0,
+  "scope": "+10 degree near slice with B0 pass and B1 failure",
+  "status": "PASS",
+  "script_sha256": "5af038dc068e6354d69b289a627cf9c9bb5cedc9c59bc8c7d03c79e4956b656b",
+  "independent_agent": "/root/p1_right_15cm"
+}

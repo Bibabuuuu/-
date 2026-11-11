@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-01",
+  "method": "定向调查，不是系统综述；关键词检索、历史线索和题名/DOI追查合并",
+  "mcp_queries": [
+    {
+      "query": "mobile manipulator emergency stopping object transportation",
+      "requested_sources": [
+        "crossref",
+        "arxiv"
+      ],
+      "rows": 8,
+      "returned_records": 8,
+      "returned_by_source": {
+        "crossref": 8
+      },
+      "errors": null,
+      "raw_file": "search_raw_1.json"
+    },
+    {
+      "query": "dual arm mobile manipulation whole body model predictive control force torque obstacle",
+      "requested_sources": [
+        "crossref",
+        "arxiv"
+      ],
+      "rows": 8,
+      "returned_records": 8,
+      "returned_by_source": {
+        "crossref": 8
+      },
+      "errors": null,
+      "raw_file": "search_raw_2.json"
+    },
+    {
+      "query": "nonprehensile transportation unexpected obstacle braking stability",
+      "requested_sources": [
+        "crossref",
+        "arxiv"
+      ],
+      "rows": 8,
+      "returned_records": 8,
+      "returned_by_source": {
+        "crossref": 8
+      },
+      "errors": null,
+      "raw_file": "search_raw_3.json"
+    }
+  ],
+  "raw_records": 24,
+  "priority_work_records": 9,
+  "doi_lookups": 9,
+  "selection": "三轮关键词结果含无关项和补充材料；重点集由这些线索、既有前作及定向追查形成，不报告为24筛9的系统筛选",
+  "dedup": "以DOI优先；作者/题名归并预印本与发表版；每项保留实读版本",
+  "arxiv_note": "请求含arxiv但返回记录均来自CrossRef，errors为null，原因未知；随后直接查读arXiv原文，不能据此说arxiv服务失败或没有研究",
+  "primary_reads": "作者arXiv HTML、作者会议PDF、出版者页面；未使用聚合站作技术证据",
+  "access_limits": [
+    {
+      "doi": "10.1109/case49997.2022.9926627",
+      "result": "机构PDF 403，仅元数据"
+    },
+    {
+      "doi": "10.1002/rob.22464",
+      "result": "full入口转abs，仅摘要"
+    },
+    {
+      "doi": "10.1002/rob.70320",
+      "result": "期刊full入口转abs，方法读arxiv v1"
+    }
+  ],
+  "metadata_raw_files": [
+    "metadata_raw.json",
+    "metadata_additional_raw.json"
+  ],
+  "claims_limit": "未复现方法，未证明领域空白或最终创新"
+}
+

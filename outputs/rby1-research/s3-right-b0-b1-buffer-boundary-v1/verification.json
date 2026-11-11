@@ -1,0 +1,661 @@
+{
+  "passed": true,
+  "deadline_residual": -0.0022213950631688904,
+  "records": {
+    "failed_trial": {
+      "packet": {
+        "number": 1,
+        "role": "failed_trial",
+        "parameters": [
+          0.8241725750840838,
+          -0.8044393648364155,
+          1.249000902703301e-16,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "f": 0.3965545124210847,
+        "min_g": -0.005635324036964369,
+        "qualified": false,
+        "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-right-b0-b1-buffer-boundary-v1\\eval_0001.npz",
+        "sha256": "7df7447d42a597979e416c680249f7a4f2d7e0f41b64d2f63486c9113227576d",
+        "T_base_s": 0.6208969032739053,
+        "T_all_s": 0.6208969032739053,
+        "min_gap_m": -0.00028176620184821845,
+        "max_penetration_m": 0.0,
+        "max_target_scaled": 1.1439688624627276e-11,
+        "max_joint_speed_fraction": 2.5166980552028906e-16,
+        "maximum_matrix_condition": 8.15417884450534,
+        "maximum_IK_steps": 0,
+        "queries": 47,
+        "wall_s": 0.2640358999997261,
+        "blocks": [
+          {
+            "name": "closure_minus",
+            "start": 0,
+            "stop": 954,
+            "minimum": 0.9999999999793348
+          },
+          {
+            "name": "closure_plus",
+            "start": 954,
+            "stop": 1908,
+            "minimum": 0.9999999999808108
+          },
+          {
+            "name": "joint_lower",
+            "start": 1908,
+            "stop": 2968,
+            "minimum": 2.6179935498539275
+          },
+          {
+            "name": "joint_upper",
+            "start": 2968,
+            "stop": 4028,
+            "minimum": 2.617994210146073
+          },
+          {
+            "name": "joint_speed",
+            "start": 4028,
+            "stop": 5088,
+            "minimum": 0.9999999999999998
+          },
+          {
+            "name": "geometry",
+            "start": 5088,
+            "stop": 5247,
+            "minimum": -0.005635324036964369
+          },
+          {
+            "name": "penetration",
+            "start": 5247,
+            "stop": 5300,
+            "minimum": 0.1
+          },
+          {
+            "name": "target",
+            "start": 5300,
+            "stop": 5353,
+            "minimum": 0.9999999999885603
+          },
+          {
+            "name": "continuous",
+            "start": 5353,
+            "stop": 5365,
+            "minimum": 0.0
+          },
+          {
+            "name": "deadline",
+            "start": 5365,
+            "stop": 5366,
+            "minimum": -0.0022213950631688904
+          }
+        ],
+        "continuous_ranges": {
+          "minimum": [
+            0.0,
+            -0.9120862875420419,
+            -5.0,
+            -0.14048476199166623,
+            -0.4239869214301839,
+            -2.102669751278477
+          ],
+          "maximum": [
+            0.39993127226900177,
+            0.0,
+            5.0,
+            -8.36065011928973e-05,
+            1.3322676295501878e-15,
+            2.1026697512784804
+          ]
+        },
+        "initial_q_error_rad": 0.0,
+        "terminal_v_a_error": 0.0
+      },
+      "uses_buffer": false
+    },
+    "exact_zero": {
+      "packet": {
+        "number": 2,
+        "role": "exact_zero",
+        "parameters": [
+          0.8241725750840838,
+          -0.8044393648364155,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "f": 0.3965545124210847,
+        "min_g": -0.005635324036964369,
+        "qualified": false,
+        "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-right-b0-b1-buffer-boundary-v1\\eval_0002.npz",
+        "sha256": "3b3044e83dd402a8c4d30c2eef71a70c0289ec292418c84ea55a93de916332d3",
+        "T_base_s": 0.6208969032739053,
+        "T_all_s": 0.6208969032739053,
+        "min_gap_m": -0.00028176620184821845,
+        "max_penetration_m": 0.0,
+        "max_target_scaled": 1.1439688624627276e-11,
+        "max_joint_speed_fraction": 2.5166980552028906e-16,
+        "maximum_matrix_condition": 8.15417884450534,
+        "maximum_IK_steps": 0,
+        "queries": 47,
+        "wall_s": 0.3269099000026472,
+        "blocks": [
+          {
+            "name": "closure_minus",
+            "start": 0,
+            "stop": 954,
+            "minimum": 0.9999999999793348
+          },
+          {
+            "name": "closure_plus",
+            "start": 954,
+            "stop": 1908,
+            "minimum": 0.9999999999808108
+          },
+          {
+            "name": "joint_lower",
+            "start": 1908,
+            "stop": 2968,
+            "minimum": 2.6179935498539275
+          },
+          {
+            "name": "joint_upper",
+            "start": 2968,
+            "stop": 4028,
+            "minimum": 2.617994210146073
+          },
+          {
+            "name": "joint_speed",
+            "start": 4028,
+            "stop": 5088,
+            "minimum": 0.9999999999999998
+          },
+          {
+            "name": "geometry",
+            "start": 5088,
+            "stop": 5247,
+            "minimum": -0.005635324036964369
+          },
+          {
+            "name": "penetration",
+            "start": 5247,
+            "stop": 5300,
+            "minimum": 0.1
+          },
+          {
+            "name": "target",
+            "start": 5300,
+            "stop": 5353,
+            "minimum": 0.9999999999885603
+          },
+          {
+            "name": "continuous",
+            "start": 5353,
+            "stop": 5365,
+            "minimum": 0.0
+          },
+          {
+            "name": "deadline",
+            "start": 5365,
+            "stop": 5366,
+            "minimum": -0.0022213950631688904
+          }
+        ],
+        "continuous_ranges": {
+          "minimum": [
+            0.0,
+            -0.9120862875420419,
+            -5.0,
+            -0.14048476199166623,
+            -0.4239869214301839,
+            -2.102669751278477
+          ],
+          "maximum": [
+            0.39993127226900177,
+            0.0,
+            5.0,
+            -8.36065011928973e-05,
+            1.3322676295501878e-15,
+            2.1026697512784804
+          ]
+        },
+        "initial_q_error_rad": 0.0,
+        "terminal_v_a_error": 0.0
+      },
+      "uses_buffer": false
+    },
+    "distinct_limits_same_endpoint": {
+      "packet": {
+        "number": 3,
+        "role": "distinct_limits_same_endpoint",
+        "parameters": [
+          1.0,
+          -1.0,
+          1e-15,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "f": 0.4514010899335741,
+        "min_g": -1.1102230246251565e-16,
+        "qualified": true,
+        "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-right-b0-b1-buffer-boundary-v1\\eval_0003.npz",
+        "sha256": "7ed73ca570df0e16cb6f23c5a8d557d3efd9f99d05df2d27f7fd45950258fe52",
+        "T_base_s": 0.5999312722690018,
+        "T_all_s": 0.5999312722690018,
+        "min_gap_m": 0.009869648403281795,
+        "max_penetration_m": 0.0,
+        "max_target_scaled": 1.4760888547906164e-11,
+        "max_joint_speed_fraction": 3.5321556639627893e-16,
+        "maximum_matrix_condition": 8.154178844505344,
+        "maximum_IK_steps": 0,
+        "queries": 47,
+        "wall_s": 0.28796719999809284,
+        "blocks": [
+          {
+            "name": "closure_minus",
+            "start": 0,
+            "stop": 954,
+            "minimum": 0.9999999999719543
+          },
+          {
+            "name": "closure_plus",
+            "start": 954,
+            "stop": 1908,
+            "minimum": 0.9999999999719543
+          },
+          {
+            "name": "joint_lower",
+            "start": 1908,
+            "stop": 2968,
+            "minimum": 2.6179935498539275
+          },
+          {
+            "name": "joint_upper",
+            "start": 2968,
+            "stop": 4028,
+            "minimum": 2.617994210146073
+          },
+          {
+            "name": "joint_speed",
+            "start": 4028,
+            "stop": 5088,
+            "minimum": 0.9999999999999997
+          },
+          {
+            "name": "geometry",
+            "start": 5088,
+            "stop": 5247,
+            "minimum": 0.1973929680656359
+          },
+          {
+            "name": "penetration",
+            "start": 5247,
+            "stop": 5300,
+            "minimum": 0.1
+          },
+          {
+            "name": "target",
+            "start": 5300,
+            "stop": 5353,
+            "minimum": 0.9999999999852391
+          },
+          {
+            "name": "continuous",
+            "start": 5353,
+            "stop": 5365,
+            "minimum": -1.1102230246251565e-16
+          },
+          {
+            "name": "deadline",
+            "start": 5365,
+            "stop": 5366,
+            "minimum": 0.031620300463607885
+          }
+        ],
+        "continuous_ranges": {
+          "minimum": [
+            -1.3877787807814457e-17,
+            -1.0,
+            -5.0,
+            -0.17461653170062585,
+            -0.5454778736758403,
+            -2.799714449624663
+          ],
+          "maximum": [
+            0.39993127226900177,
+            1.1102230246251565e-16,
+            5.0,
+            -8.36065011928973e-05,
+            0.0,
+            2.799714449624661
+          ]
+        },
+        "initial_q_error_rad": 0.0,
+        "terminal_v_a_error": 0.0
+      },
+      "uses_buffer": false
+    },
+    "normal_buffer": {
+      "packet": {
+        "number": 4,
+        "role": "normal_buffer",
+        "parameters": [
+          0.8799999999999999,
+          -1.0,
+          0.052195496759240394,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "f": 0.42617542334253344,
+        "min_g": 0.0,
+        "qualified": true,
+        "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-right-b0-b1-buffer-boundary-v1\\eval_0004.npz",
+        "sha256": "217e24b7a6dc82e8386ea77ffa53e0be4bb4192d9079998616ca824a5f765073",
+        "T_base_s": 0.6134588002861721,
+        "T_all_s": 0.6195207030426355,
+        "min_gap_m": 0.006512286570058867,
+        "max_penetration_m": 0.0,
+        "max_target_scaled": 1.0287850372152067e-09,
+        "max_joint_speed_fraction": 0.0020360740965602864,
+        "maximum_matrix_condition": 8.162345742305785,
+        "maximum_IK_steps": 1,
+        "queries": 50,
+        "wall_s": 0.40665650000300957,
+        "blocks": [
+          {
+            "name": "closure_minus",
+            "start": 0,
+            "stop": 954,
+            "minimum": 0.9999999992995608
+          },
+          {
+            "name": "closure_plus",
+            "start": 954,
+            "stop": 1908,
+            "minimum": 0.9999999995172225
+          },
+          {
+            "name": "joint_lower",
+            "start": 1908,
+            "stop": 2968,
+            "minimum": 2.6179935498539275
+          },
+          {
+            "name": "joint_upper",
+            "start": 2968,
+            "stop": 4028,
+            "minimum": 2.617994209562418
+          },
+          {
+            "name": "joint_speed",
+            "start": 4028,
+            "stop": 5088,
+            "minimum": 0.9979639259034397
+          },
+          {
+            "name": "geometry",
+            "start": 5088,
+            "stop": 5247,
+            "minimum": 0.13024573140117734
+          },
+          {
+            "name": "penetration",
+            "start": 5247,
+            "stop": 5300,
+            "minimum": 0.1
+          },
+          {
+            "name": "target",
+            "start": 5300,
+            "stop": 5353,
+            "minimum": 0.9999999989712149
+          },
+          {
+            "name": "continuous",
+            "start": 5353,
+            "stop": 5365,
+            "minimum": 0.0
+          },
+          {
+            "name": "deadline",
+            "start": 5365,
+            "stop": 5366,
+            "minimum": 0.0
+          }
+        ],
+        "continuous_ranges": {
+          "minimum": [
+            1.3877787807814457e-17,
+            -0.94,
+            -5.0,
+            -0.1746165317006258,
+            -0.5334494094734291,
+            -2.677601473393016
+          ],
+          "maximum": [
+            0.39993127226900177,
+            0.0,
+            5.0,
+            -8.36065011928973e-05,
+            2.7755575615628914e-16,
+            2.677601473393016
+          ]
+        },
+        "initial_q_error_rad": 0.0,
+        "terminal_v_a_error": 0.0
+      },
+      "uses_buffer": true
+    }
+  },
+  "active_s": 3.511867000001075,
+  "stats": {
+    "IK_calls": 191,
+    "QP_calls": 31,
+    "QP_internal_iterations": 62,
+    "unique_targets": 191,
+    "line_search_trials": 31,
+    "complete_started": 4,
+    "complete_completed": 4,
+    "outer_calls": 0,
+    "jacobians": 0,
+    "cache_hits": 0,
+    "requests": 0
+  },
+  "phases": {
+    "preparepilot": 3.511868700006744
+  },
+  "original_result_sha256": "1089913c36ab0e450a5a6934522c5fce54a4f5699e10a08ced7d24c40a9c9cf3",
+  "new_physics_steps": 0
+}

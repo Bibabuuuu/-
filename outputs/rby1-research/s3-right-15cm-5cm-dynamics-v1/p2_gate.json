@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "execution evidence only; both physical admission FAIL",
+  "agent": "/root/p1_right_15cm",
+  "exit_code": 0,
+  "trajectory_samples": 7602,
+  "steps": 7600,
+  "gif_frames": 51,
+  "sha256": {
+    "execution_audit.json": "ee098d0cb0100da2c4f93f0d36df5c1509eccf73bb6d83cbefc1f3afded64af9",
+    "B0-B1-\u52a8\u529b\u5b66\u6162\u653e.gif": "e75bbbeb43bb98a45391487f94834a4af0a0697c03963d5a86d1d4d547664f0a",
+    "contract.json": "1a2786a609ec28e1b14f2c1f539765106280686fd2671729d90ec37f1a9d24fe",
+    "preflight.json": "f9ff37a0cccafad98fc10e8b239cb909cb5f9eff9e8c395ef5198c98aa2f3f7d",
+    "p1_gate.json": "78923bfe88daa01aa95674534c3cd72e8a334596d159b4bc94c0ad517b4fd232"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "qualification": {
+    "steps": 5000,
+    "pretrigger_ok": true,
+    "parking_and_grasp_qualified": true,
+    "pretrigger_max_shift_mm": [
+      0.006692747406832101
+    ],
+    "trigger_speed_mps": 0.4001402229196399,
+    "trigger_sample_gap_mm": 250.9844273481243,
+    "block_peak_shift_mm": [
+      0.004155530750405154
+    ],
+    "block_peak_brake_window_mm": [
+      0.004005053511323667
+    ],
+    "block_final_shift_mm": [
+      0.004155530750405154
+    ],
+    "block_first_over_1mm_after_trigger_s": [
+      null
+    ],
+    "block_forward_peak_mm": [
+      0.004141486470210509
+    ],
+    "block_peak_relative_tilt_deg": [
+      0.009977201692023098
+    ],
+    "block_support_at_end": [
+      true
+    ],
+    "block_min_relative_height_change_mm": [
+      -6.786341308351318e-06
+    ],
+    "block_other_contact_pairs": [],
+    "block_other_first_contact_s": {},
+    "tray_nonpad_other_contacts": [],
+    "both_hands_loaded": true,
+    "controller_ok": true,
+    "obstacle_contacts": 0,
+    "base_and_tray_settled_after_trigger_s": 0.48450000000000015,
+    "min_sampled_gap_mm": 148.29030856582062,
+    "tray_pitch_max_abs_deg": 0.31985196562295587,
+    "fixed_tray_hand_point_peak_um": [
+      18.43655679603172,
+      8.413947479732848
+    ],
+    "tray_hand_relative_peak_translation_mm": [
+      0.05183968152022452,
+      0.00581491438978973
+    ],
+    "tray_hand_relative_peak_rotation_deg": [
+      0.04727585723470533,
+      0.005485648824848014
+    ],
+    "tray_accel_rms_mps2": 0.8571459399765377,
+    "tray_point_peak_demand_ratio": [
+      0.15878899765559626
+    ]
+  },
+  "support": {
+    "zero_samples": 0,
+    "zero_pretrigger": 0,
+    "zero_times_s": [],
+    "longest_zero_run_samples": 0,
+    "trigger_speed_mps": 0.4001402229196399,
+    "trigger_yaw_rate_radps": -0.20322322968655923,
+    "pretrigger_grid_samples": 285,
+    "pretrigger_normal_force_grid_percentiles_N": [
+      [
+        259.10102189032716,
+        257.3167011258884,
+        616.3970230498852
+      ],
+      [
+        282.3977925412531,
+        307.66475178230303,
+        622.2484237084789
+      ],
+      [
+        308.87757276644703,
+        320.53171141081685,
+        669.348099530816
+      ],
+      [
+        339.80320722863183,
+        345.9158378451647,
+        704.7935189513772
+      ],
+      [
+        356.80762483138244,
+        374.8174250324279,
+        705.1912710480102
+      ]
+    ],
+    "pretrigger_near_unloaded_by_wheel_grid": [
+      0,
+      0
+    ],
+    "rear_support_force_range_during_zero_N": null
+  }
+}

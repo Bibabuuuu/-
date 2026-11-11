@@ -1,0 +1,133 @@
+{
+  "config": {
+    "initial_speed_mps": 0.3999312722693623,
+    "reference_stop_s": 0.36663230280134784,
+    "dt_s": 0.0005,
+    "duration_s": 2.5,
+    "deceleration_mps2": 2.0,
+    "jerk_mps3": 12.0,
+    "command_period_s": 0.01,
+    "horizon_s": 0.15,
+    "mass_kg": 0.5,
+    "rail_mass_kg": 0.15,
+    "half_stroke_m": 0.038,
+    "disturbance_seed": 1114,
+    "archive": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cube-grasp-probe-v4\\hard_brake\\a20"
+  },
+  "cases": {
+    "impact_truth_feedback": {
+      "window_s": [
+        0.0,
+        2.5
+      ],
+      "samples": 5001,
+      "relative_displacement_mm": [
+        0.5964385386179167,
+        0.5961205703060561
+      ],
+      "relative_rotation_deg": [
+        1.4964786157635894,
+        1.4967193656103106
+      ],
+      "mean_vertical_support_N": [
+        2.4520076572537937,
+        2.451651135369438
+      ],
+      "max_vertical_speed_mps": 0.004496225700152653,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.8184363127374525,
+        0.8162367526494702
+      ],
+      "min_local_friction_margin_N": [
+        -2.220446049250313e-16,
+        -1.6653345369377348e-16
+      ],
+      "max_hand_moment_rms_Nm": 0.07029179653201731,
+      "peak_actual_longitudinal_deceleration_mps2": 2.001865581144216,
+      "settled_s": 0.3535,
+      "nonpad_payload_contacts": [],
+      "pitch_peak_deg": 0.9231763828424963,
+      "pitch_rms_deg": 0.5580645037058493,
+      "hand_moment_peak_Nm": [
+        0.1432032916960737,
+        0.14751271434392496
+      ],
+      "hand_moment_rms_Nm": [
+        0.07026849409034641,
+        0.07029179653201732
+      ],
+      "shell_clearance_min_m": 0.020590800548137545,
+      "axle_travel_m": 0.07323641743464951,
+      "first_internal_contact_s": 0.20600000000000002,
+      "peak_internal_wall_force_N": 4.336565891311568,
+      "peak_abs_center_of_mass_shift_mm": 12.004936629202788,
+      "controller_p95_ms": 0.04496500041568652,
+      "controller_max_ms": 0.057600002037361264,
+      "deadline_fallbacks": 0,
+      "controller_updates": 250,
+      "runner_status": "completed",
+      "external_obstacle_contact": null
+    },
+    "impact_truth_rolling": {
+      "window_s": [
+        0.0,
+        2.5
+      ],
+      "samples": 5001,
+      "relative_displacement_mm": [
+        0.6027857057393378,
+        0.6024020201656946
+      ],
+      "relative_rotation_deg": [
+        1.5144176140037966,
+        1.5140546356023297
+      ],
+      "mean_vertical_support_N": [
+        2.4519697398492277,
+        2.451669183331109
+      ],
+      "max_vertical_speed_mps": 0.004222336416382921,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.8092381523695261,
+        0.8100379924015197
+      ],
+      "min_local_friction_margin_N": [
+        -4.440892098500626e-16,
+        -1.1102230246251565e-16
+      ],
+      "max_hand_moment_rms_Nm": 0.06967632715636506,
+      "peak_actual_longitudinal_deceleration_mps2": 2.0018098969574396,
+      "settled_s": 0.3535,
+      "nonpad_payload_contacts": [],
+      "pitch_peak_deg": 1.1244060711643538,
+      "pitch_rms_deg": 0.6654111498645571,
+      "hand_moment_peak_Nm": [
+        0.1425090269695332,
+        0.14676886111510287
+      ],
+      "hand_moment_rms_Nm": [
+        0.06964119499126599,
+        0.06967632715636506
+      ],
+      "shell_clearance_min_m": 0.020579233658762866,
+      "axle_travel_m": 0.07323534759937844,
+      "first_internal_contact_s": 0.20600000000000002,
+      "peak_internal_wall_force_N": 4.316049162961007,
+      "peak_abs_center_of_mass_shift_mm": 12.00201663246326,
+      "controller_p95_ms": 5.224874995838035,
+      "controller_max_ms": 12.179499994090293,
+      "deadline_fallbacks": 1,
+      "controller_updates": 250,
+      "runner_status": "completed",
+      "external_obstacle_contact": null
+    }
+  }
+}

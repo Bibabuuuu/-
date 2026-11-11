@@ -1,0 +1,150 @@
+{
+  "physical_steps": 0,
+  "scope": "Numerical endpoint condition and stopping deadline; optimistic for full-trajectory clearance; monotonic over 31 checked samples.",
+  "rows": {
+    "low160": {
+      "0.0": {
+        "0.5": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.010000000098662712,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.55": {
+          "optimistic_held_acceleration": 1.4564404301345348,
+          "terminal_gap_m": 5.128752120657469e-10,
+          "acceleration_rms_mps2": 1.101080939527387
+        },
+        "0.65": {
+          "optimistic_held_acceleration": 1.4564404301345348,
+          "terminal_gap_m": 5.128752120657469e-10,
+          "acceleration_rms_mps2": 1.101080939527387
+        }
+      },
+      "0.01": {
+        "0.5": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.010000000098662712,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.55": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.010000000098662712,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.65": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.010000000098662712,
+          "acceleration_rms_mps2": 1.155806819478812
+        }
+      }
+    },
+    "low190": {
+      "0.0": {
+        "0.5": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.040000000056797484,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.55": {
+          "optimistic_held_acceleration": 1.3790627345442772,
+          "terminal_gap_m": 0.025000000411927643,
+          "acceleration_rms_mps2": 1.0774500403425769
+        },
+        "0.65": {
+          "optimistic_held_acceleration": 1.25,
+          "terminal_gap_m": 0.01475000000970858,
+          "acceleration_rms_mps2": 1.0345913704671037
+        }
+      },
+      "0.01": {
+        "0.5": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.040000000056797484,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.55": {
+          "optimistic_held_acceleration": 1.3790627345442772,
+          "terminal_gap_m": 0.025000000411927643,
+          "acceleration_rms_mps2": 1.0774500403425769
+        },
+        "0.65": {
+          "optimistic_held_acceleration": 1.25,
+          "terminal_gap_m": 0.01475000000970858,
+          "acceleration_rms_mps2": 1.0345913704671037
+        }
+      }
+    },
+    "bar160": {
+      "0.0": {
+        "0.5": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.01000000010316587,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.55": {
+          "optimistic_held_acceleration": 1.4564404301345348,
+          "terminal_gap_m": 0.0,
+          "acceleration_rms_mps2": 1.101080939527387
+        },
+        "0.65": {
+          "optimistic_held_acceleration": 1.4564404301345348,
+          "terminal_gap_m": 0.0,
+          "acceleration_rms_mps2": 1.101080939527387
+        }
+      },
+      "0.01": {
+        "0.5": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.01000000010316587,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.55": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.01000000010316587,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.65": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.01000000010316587,
+          "acceleration_rms_mps2": 1.155806819478812
+        }
+      }
+    },
+    "bar190": {
+      "0.0": {
+        "0.5": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.04000000006125667,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.55": {
+          "optimistic_held_acceleration": 1.3790627345442772,
+          "terminal_gap_m": 0.02500000041634499,
+          "acceleration_rms_mps2": 1.0774500403425769
+        },
+        "0.65": {
+          "optimistic_held_acceleration": 1.25,
+          "terminal_gap_m": 0.014750000014196823,
+          "acceleration_rms_mps2": 1.0345913704671037
+        }
+      },
+      "0.01": {
+        "0.5": {
+          "optimistic_held_acceleration": 1.6583592146635056,
+          "terminal_gap_m": 0.04000000006125667,
+          "acceleration_rms_mps2": 1.155806819478812
+        },
+        "0.55": {
+          "optimistic_held_acceleration": 1.3790627345442772,
+          "terminal_gap_m": 0.02500000041634499,
+          "acceleration_rms_mps2": 1.0774500403425769
+        },
+        "0.65": {
+          "optimistic_held_acceleration": 1.25,
+          "terminal_gap_m": 0.014750000014196823,
+          "acceleration_rms_mps2": 1.0345913704671037
+        }
+      }
+    }
+  }
+}

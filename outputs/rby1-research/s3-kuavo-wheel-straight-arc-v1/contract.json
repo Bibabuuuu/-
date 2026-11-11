@@ -1,0 +1,8 @@
+{
+  "arc_inputs": {
+    "v060": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-wheel-arc-diagnostic-v1\\low_speed_control",
+    "v095": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-tray-stress-v1\\wide"
+  },
+  "common": "Longitudinal distance, velocity and deceleration curves, initial state, controller, tray and surface friction match within pairs. Curvature is switched and the obstacle is translated to match nominal trigger clearance.",
+  "support_analysis": "All stored zero samples plus a predeclared 5 ms grid of pretrigger poses. Normal forces reconstructed from the saved position, velocity and control."
+}

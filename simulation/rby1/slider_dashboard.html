@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>箱内移动载荷实验回放</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:light;--page:#edf1f0;--surface:#fff;--ink:#172929;--muted:#465a59;--line:#ccd8d6;--a:#176e68;--b:#a9512e}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.55 "Inter",system-ui,"Microsoft YaHei",sans-serif}
+main{max-width:1250px;margin:auto;padding:clamp(14px,3vw,34px)}
+h1{margin:0;font-size:clamp(25px,4vw,42px);line-height:1.15;letter-spacing:-.035em}
+h2{margin:0;font-size:17px}
+p{margin:.35rem 0;color:var(--muted)}
+header,.panel,.view{border:1px solid var(--line);background:var(--surface);border-radius:14px}
+header{padding:clamp(16px,3vw,30px);margin-bottom:14px}
+.toolbar,.events,.chart-head,.legend,.view-head{display:flex;flex-wrap:wrap;gap:9px 14px;align-items:center}
+.toolbar{margin:14px 0 8px}
+label{display:inline-flex;align-items:center;gap:7px;font-weight:600;max-width:100%}
+button,select{max-width:100%;border:1px solid #acbfbd;border-radius:8px;background:white;color:var(--ink);padding:6px 10px;font:inherit}
+button{cursor:pointer}
+button:hover{border-color:var(--a)}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+#play{min-width:74px;background:#185e58;color:white;border-color:#185e58;font-weight:700}
+.clock{margin-left:auto;white-space:nowrap;font:700 17px/1.5 "IBM Plex Mono",monospace}
+#timeline{width:100%;accent-color:var(--a);margin:6px 0 9px}
+.events button{font-size:13px}
+.view-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.view{overflow:hidden;--color:var(--a);border-top:4px solid var(--color)}
+.view:nth-child(2){--color:var(--b)}
+.view-head{padding:12px 14px;justify-content:space-between}
+.view-head label{min-width:0}
+.view-head .side{white-space:nowrap}
+.view-head select{width:auto;max-width:min(57vw,240px)}
+.robot{display:block;width:100%;aspect-ratio:5/3;object-fit:contain;background:#1b2628}
+.rail,.chart{display:block;width:100%;height:128px}
+.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:0 12px 13px}
+.summary div{background:#f0f5f3;padding:8px;border-radius:8px;font-size:12px;color:var(--muted)}
+.summary strong{display:block;color:var(--ink);font-size:clamp(13px,1.65vw,18px);font-variant-numeric:tabular-nums}
+.panel{margin-top:14px;padding:14px}
+.chart-head{justify-content:space-between}
+.chart{height:230px;cursor:crosshair;margin-top:6px}
+.legend span{display:inline-flex;align-items:center;gap:7px;font-size:13px}
+.legend i{width:16px;height:3px;background:var(--series)}
+.note{font-size:13px;margin:12px 3px 0;overflow-wrap:anywhere}
+details{margin-top:9px}
+summary{cursor:pointer;color:var(--muted)}
+@media(max-width:710px){.view-grid{grid-template-columns:1fr}.clock{margin-left:0}.chart{height:195px}.summary strong{font-size:16px}}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>箱内移动载荷实验回放</h1>
+    <div class="toolbar">
+      <label>实验 <select id="experiment"></select></label>
+      <button type="button" id="play">播放</button>
+      <label>倍速 <select id="speed">
+        <option value=".1">0.10×</option><option value=".25" selected>0.25×</option>
+        <option value=".5">0.50×</option><option value="1">1×</option><option value="2">2×</option>
+      </select></label>
+      <output id="clock" class="clock" for="timeline"></output>
+    </div>
+    <p id="description"></p>
+    <input id="timeline" type="range" min="0" max="2.5" step=".001" value="0" aria-label="回放时间，单位秒">
+    <div id="events" class="events"></div>
+  </header>
+  <section class="view-grid" id="views" aria-label="双画面对照"></section>
+  <section class="panel">
+    <div class="chart-head">
+      <h2>同步曲线</h2>
+      <label>指标 <select id="metric"></select></label>
+    </div>
+    <canvas id="chart" class="chart" aria-label="两组实验的时序曲线，点击曲线跳转"></canvas>
+    <div id="legend" class="legend"></div>
+  </section>
+  <p class="note">整机画面来自保存的 MuJoCo 状态，橙色横挡以半透明显示。箱内剖面用轨道位置画出配重，俯仰放大 12 倍。整机通常每 50 ms 一帧，曲线每 5 ms 取样，关键时刻另有原始样本。</p>
+  <details class="note"><summary>轨迹来源</summary><p id="sources"></p></details>
+</main>
+<template id="view">
+  <article class="view">
+    <div class="view-head"><label><span class="side"></span><select class="trial"></select></label><span class="status"></span></div>
+    <img class="robot" width="480" height="288" alt="保存的整机仿真画面">
+    <canvas class="rail" aria-label="箱体和内部配重的剖面示意"></canvas>
+    <div class="summary">
+      <div>箱体俯仰<strong class="pitch"></strong></div>
+      <div>箱手相对位移<strong class="relative"></strong></div>
+      <div>较吃力侧摩擦余量<strong class="reserve"></strong></div>
+    </div>
+  </article>
+</template>
+<script type="application/json" id="archive">__SLIDER_DASHBOARD_DATA__</script>
+<script>
+"use strict";
+const data = JSON.parse(document.getElementById("archive").textContent);
+const $ = id => document.getElementById(id);
+const cols = Object.fromEntries(data.columns.map((key,i) => [key,i]));
+const colors = ["#176e68","#a9512e"];
+const metrics = [
+  ["pitch","箱体俯仰","°"], ["relative","最大箱手相对位移","mm"], ["reserve","较吃力侧摩擦余量","%"],
+  ["speed","底盘速度","m/s"], ["rail","配重前后位置","mm"], ["impact","箱内撞壁力","N"], ["hidden","附加扰动力","N"],
+  ["left_normal","左手接触法向力","N"], ["right_normal","右手接触法向力","N"],
+  ["left_torque","左手接触力矩","N·m"], ["right_torque","右手接触力矩","N·m"],
+  ["left_boost","左手额外夹紧指令","%"], ["right_boost","右手额外夹紧指令","%"],
+  ["arm_offset","双臂共同俯仰目标偏移","°"]
+];
+const options = (select, entries) => select.replaceChildren(...entries.map(([value,label]) => new Option(label,value)));
+options($("experiment"),data.groups.map(([label],i)=>[i,label]));
+const views = ["左画面","右画面"].map(label => {
+  const root = $("view").content.firstElementChild.cloneNode(true);
+  root.querySelector(".side").textContent = label;
+  $("views").append(root);
+  const find = name => root.querySelector("."+name);
+  const view = Object.fromEntries(["trial","robot","rail","pitch","relative","reserve","status"].map(name=>[name,find(name)]));
+  view.trial.addEventListener("change",updateSelection);
+  return view;
+});
+let trials = [], time = 0, end = 2.5, playing = false, lastFrame, animation;
+const timeline = $("timeline");
+const clamp = (v,min,max) => Math.max(min,Math.min(max,v));
+const number = (value,unit,digits=3) => value.toFixed(digits)+" "+unit;
+function closest(values, t, get = value => value){
+  let lo = 0, hi = values.length-1;
+  while(lo<hi){
+    const i=(lo+hi)>>1;
+    if(get(values[i])<t)lo=i+1;else hi=i;
+  }
+  return lo>0 && t-get(values[lo-1])<get(values[lo])-t ? lo-1 : lo;
+}
+const row = (run,t) => run.rows[closest(run.rows,t,s=>s[0])];
+
+function canvas(canvasEl){
+  const dpr = Math.min(devicePixelRatio || 1,2);
+  const w = canvasEl.clientWidth, h = canvasEl.clientHeight;
+  if(canvasEl.width !== Math.round(w*dpr) || canvasEl.height !== Math.round(h*dpr)){
+    canvasEl.width = Math.round(w*dpr); canvasEl.height = Math.round(h*dpr);
+  }
+  const ctx = canvasEl.getContext("2d");
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.clearRect(0,0,w,h);
+  ctx.font = '12px system-ui,"Microsoft YaHei",sans-serif';
+  ctx.textAlign = "left";
+  return [ctx,w,h];
+}
+function drawRail(el, run, sample, color){
+  const [ctx,w,h] = canvas(el);
+  const center = w/2, railWidth = Math.min(w-50,320), trackY = h*.54;
+  const position = clamp(sample[cols.rail],-run.rail_limit_mm*1.16,run.rail_limit_mm*1.16);
+  const impact = sample[cols.impact] > 0.01;
+  ctx.fillStyle = "#465a59"; ctx.fillText("箱内剖面",14,19);
+  ctx.textAlign = "right"; ctx.fillText("前进 →",w-14,19); ctx.textAlign = "left";
+  ctx.save(); ctx.translate(center,trackY);
+  ctx.rotate(-sample[cols.pitch]*12*Math.PI/180);
+  ctx.fillStyle = "#ecf3f1"; ctx.fillRect(-railWidth/2,-22,railWidth,44);
+  ctx.strokeStyle = impact ? "#b44e2c" : "#819693"; ctx.lineWidth = impact ? 2 : 1;
+  ctx.strokeRect(-railWidth/2,-22,railWidth,44);
+  ctx.beginPath(); ctx.moveTo(-railWidth*.47,0); ctx.lineTo(railWidth*.47,0); ctx.stroke();
+  const x = position/run.rail_limit_mm*railWidth*.42;
+  ctx.fillStyle = color; ctx.fillRect(x-9,-10,18,20);
+  ctx.restore();
+  ctx.fillStyle = "#354949";
+  ctx.fillText("配重 "+number(sample[cols.rail],"mm",1),14,h-10);
+  ctx.textAlign = "right"; ctx.fillText("撞壁力 "+number(sample[cols.impact],"N",2),w-14,h-10);
+}
+function drawChart(){
+  if(!trials.length)return;
+  const [ctx,w,h] = canvas($("chart"));
+  const [key,,unit] = metrics.find(([item])=>item===$("metric").value);
+  const column=cols[key], values=trials.flatMap(run=>run.rows.map(s=>s[column]));
+  const min=Math.min(0,...values), max=Math.max(0,...values), span=Math.max(max-min,1e-6);
+  const left=55,right=w-16,top=14,bottom=h-30;
+  const x=t=>left+(right-left)*t/end, y=v=>bottom-(bottom-top)*(v-min)/span;
+  ctx.fillStyle="#435554";
+  for(let i=0;i<=4;i++){
+    const v=min+span*i/4, yy=y(v);
+    ctx.strokeStyle="#dce6e4";ctx.beginPath();ctx.moveTo(left,yy);ctx.lineTo(right,yy);ctx.stroke();
+    const digits=span<.1?3:span<3?2:1;ctx.textAlign="right";ctx.fillText(v.toFixed(digits),left-7,yy+4);
+    ctx.textAlign="center";ctx.fillText((end*i/4).toFixed(2),x(end*i/4),h-10);
+  }
+  for(const value of [trials[0].stop_s,trials[0].disturbance_s,trials[0].wall_s]){
+    if(value===null || value<=0)continue;
+    ctx.strokeStyle="#aebcba";ctx.setLineDash([3,4]);ctx.beginPath();
+    ctx.moveTo(x(value),top);ctx.lineTo(x(value),bottom);ctx.stroke();ctx.setLineDash([]);
+  }
+  trials.forEach((run,i)=>{
+    ctx.beginPath();
+    run.rows.forEach((s,j)=>j ? ctx.lineTo(x(s[0]),y(s[column])) : ctx.moveTo(x(s[0]),y(s[column])));
+    ctx.lineWidth=2;ctx.strokeStyle=colors[i];ctx.stroke();
+    ctx.fillStyle=colors[i];ctx.beginPath();ctx.arc(x(time),y(row(run,time)[column]),4,0,2*Math.PI);ctx.fill();
+  });
+  ctx.strokeStyle="#526766";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x(time),top);ctx.lineTo(x(time),bottom);ctx.stroke();
+  $("legend").replaceChildren(...trials.map((run,i)=>{
+    const item=document.createElement("span"), line=document.createElement("i");
+    line.style.setProperty("--series",colors[i]);item.append(line,run.label+" · "+number(row(run,time)[column],unit));
+    return item;
+  }));
+}
+function draw(){
+  timeline.value=String(time);
+  $("clock").textContent = time.toFixed(3)+" / "+end.toFixed(3)+" s";
+  trials.forEach((run,i)=>{
+    const view=views[i], sample=row(run,time), frame=closest(run.frame_times,time);
+    const key=run.source+":"+frame;
+    if(view.robot.dataset.frame!==key){
+      view.robot.src="data:image/jpeg;base64,"+run.frames[frame];view.robot.dataset.frame=key;
+    }
+    view.pitch.textContent=number(sample[cols.pitch],"°");
+    view.relative.textContent=number(sample[cols.relative],"mm");
+    view.reserve.textContent=number(sample[cols.reserve],"%",1);
+    view.status.textContent=sample[cols.impact]>.01?"箱内撞壁":time<(run.stop_s ?? end)?"制动中":"底盘已停稳";
+    drawRail(view.rail,run,sample,colors[i]);
+  });
+  drawChart();
+}
+function setTime(value){time=clamp(value,0,end);draw();}
+function pause(){playing=false;lastFrame=undefined;cancelAnimationFrame(animation);$("play").textContent="播放";}
+function animate(now){
+  if(!playing)return;
+  if(lastFrame!==undefined)setTime(time+(now-lastFrame)/1000*Number($("speed").value));
+  lastFrame=now;
+  if(time>=end)pause();else animation=requestAnimationFrame(animate);
+}
+function updateSelection(){
+  pause();
+  trials=views.map(view=>data.trials[view.trial.value]);
+  end=Math.min(...trials.map(run=>run.end_s)); timeline.max=String(end);
+  const previousMetric=$("metric").value;
+  const available=metrics.filter(([key])=>
+    (!key.endsWith("_boost") || trials.every(run=>run.has_wrist)) &&
+    (key!=="arm_offset" || trials.some(run=>run.has_arm_offset)));
+  options($("metric"),available.map(([key,label,unit])=>[key,label+" · "+unit]));
+  if(available.some(([key])=>key===previousMetric))$("metric").value=previousMetric;
+  $("sources").textContent=trials.map(run=>run.source).join(" ／ ");
+  const run=trials[0];
+  const points=[["触发制动",0],["底盘停稳",run.stop_s],["附加扰动",run.disturbance_s],
+    ["扰动结束",run.disturbance_end_s],
+    ["首次撞壁",run.wall_s],["最强撞壁",run.peak_wall_s],["结尾",end]].sort((a,b)=>a[1]-b[1]);
+  $("events").replaceChildren(...points.filter(([,s])=>s!==null && s<=end).map(([label,s])=>{
+    const button=document.createElement("button");button.type="button";
+    button.textContent=label+" "+s.toFixed(3)+" s";
+    button.addEventListener("click",()=>{pause();setTime(s);});return button;
+  }));
+  setTime(time);
+}
+function changeExperiment(){
+  const [,description,keys]=data.groups[$("experiment").value];
+  $("description").textContent=description;
+  views.forEach((view,i)=>{options(view.trial,keys.map(key=>[key,data.trials[key].label]));view.trial.value=keys[i];});
+  time=0;updateSelection();
+}
+$("experiment").addEventListener("change",changeExperiment);
+$("metric").addEventListener("change",drawChart);
+timeline.addEventListener("input",()=>{pause();setTime(Number(timeline.value));});
+$("chart").addEventListener("click",event=>{
+  const rect=event.currentTarget.getBoundingClientRect();
+  pause();setTime((event.clientX-rect.left-55)/(rect.width-71)*end);
+});
+$("play").addEventListener("click",()=>{
+  if(playing){pause();return;}
+  if(time>=end)setTime(0);
+  playing=true;lastFrame=undefined;$("play").textContent="暂停";animation=requestAnimationFrame(animate);
+});
+window.addEventListener("resize",draw);
+changeExperiment();
+</script>
+</body>
+</html>

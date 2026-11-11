@@ -1,0 +1,383 @@
+{
+  "date": "2026-11-01",
+  "status": "Completed bounded diagnosis; baseline adoption and physical calibration remain open.",
+  "physical_runs": 8,
+  "grasp_samples": 72008,
+  "robot_runs_completed_without_warnings": true,
+  "static_no_brake_flag_is_not_a_failure": true,
+  "old_physical_sources_and_models_unchanged": true,
+  "contact_parameters_and_geometry_unchanged_except_declared_solver_options": true,
+  "scene_changes_verified": [
+    {
+      "case": "static_original",
+      "old_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0"
+      },
+      "new_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0"
+      },
+      "rest_of_scene_exact": true
+    },
+    {
+      "case": "static_impratio100",
+      "old_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0"
+      },
+      "new_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "100.0"
+      },
+      "rest_of_scene_exact": true
+    },
+    {
+      "case": "static_noslip3",
+      "old_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0"
+      },
+      "new_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0",
+        "noslip_iterations": "3"
+      },
+      "rest_of_scene_exact": true
+    },
+    {
+      "case": "static_noslip3_halfdt",
+      "old_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0"
+      },
+      "new_option": {
+        "timestep": "0.0005",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0",
+        "noslip_iterations": "3"
+      },
+      "rest_of_scene_exact": true
+    },
+    {
+      "case": "base_only",
+      "old_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0"
+      },
+      "new_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0",
+        "noslip_iterations": "3"
+      },
+      "rest_of_scene_exact": true
+    },
+    {
+      "case": "shared",
+      "old_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0"
+      },
+      "new_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0",
+        "noslip_iterations": "3"
+      },
+      "rest_of_scene_exact": true
+    },
+    {
+      "case": "base_fast_buffer",
+      "old_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0"
+      },
+      "new_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0",
+        "noslip_iterations": "3"
+      },
+      "rest_of_scene_exact": true
+    },
+    {
+      "case": "base_fast_held",
+      "old_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0"
+      },
+      "new_option": {
+        "timestep": "0.001",
+        "integrator": "implicitfast",
+        "solver": "Newton",
+        "iterations": "50",
+        "tolerance": "1e-10",
+        "cone": "elliptic",
+        "impratio": "10.0",
+        "noslip_iterations": "3"
+      },
+      "rest_of_scene_exact": true
+    }
+  ],
+  "raw_file_checks": [
+    {
+      "case": "static_original",
+      "force_sum_max_error_N": 1.7763568394002505e-15,
+      "moment_sum_max_error_Nm": 1.6653345369377348e-16,
+      "grasp_samples": 12001,
+      "files_sha256": {
+        "joint_trace.npz": "0a872f8e84a2b6a5d70b7c33d20578f5a22d78a6237ff2bed520422a6176bb08",
+        "grasp_trace.npz": "bc42f124e2f832211f210476bafcb98f5d3fff27bd665cac3bcf1422d529fe0b",
+        "grasp_contacts.npz": "c31413a20737f5cc1f9407bb5656712098440c5f9d7dddf0924fd78f81dbe770",
+        "trace.csv": "4ee3075997cd803284d67318a6babb9a08a1113e1a3923b2fc60439bc44293fc",
+        "config.json": "449f0d0b3b9cd9625793c72a0114c5c0576a4f7c80ffe96dbccc8e2577ddc6ea",
+        "result.json": "8668b1e026d8f08d7d55ac76b5e8227128953c5eb04845286a2a2ec5fd1c0c74"
+      }
+    },
+    {
+      "case": "static_impratio100",
+      "force_sum_max_error_N": 1.7763568394002505e-15,
+      "moment_sum_max_error_Nm": 1.6653345369377348e-16,
+      "grasp_samples": 12001,
+      "files_sha256": {
+        "joint_trace.npz": "ebe0a59296fa8b010fdb8796ba41bc420a6155564b221e9a23ca88e439d8a42c",
+        "grasp_trace.npz": "c8bae4c004c9d021b04471990d2c3ed730200e3d32117fe9f2036543834d6767",
+        "grasp_contacts.npz": "ee51cc99a07a2670205bed19bb5faa0a56cdbe51172fdd52afddd6e6e4cba447",
+        "trace.csv": "6750ddbbdecbd99e538359e00bd15b3b61cea0f0cc202396812e5d29f2a49b27",
+        "config.json": "f4566462dc703d2c823308419602deee896ccbbdef956f30a2964c738465bbf9",
+        "result.json": "8f92f2ccefe5afb4aec870f22b80b4d3d76676856ac08580f9ff4216235ed17d"
+      }
+    },
+    {
+      "case": "static_noslip3",
+      "force_sum_max_error_N": 1.7763568394002505e-15,
+      "moment_sum_max_error_Nm": 1.5265566588595902e-16,
+      "grasp_samples": 12001,
+      "files_sha256": {
+        "joint_trace.npz": "feed4eb4af3073388c9b14e0e0e43d269c9b9a94f7bf72d1653280d89cccff8e",
+        "grasp_trace.npz": "1b33a27f20291571b01cbac0a62e6d2c2b6249cc83488f05caceda8f5337b166",
+        "grasp_contacts.npz": "9c7d129570041ae4fee5389c760bdb3afb71695bb7f434148303f14b7434bc90",
+        "trace.csv": "cc8d0d063b19280522c8653ccada30186d79b588cf295be967d617425c9ed424",
+        "config.json": "3d4ee8b5c4f35d248d1bcbe9214b0375319e1473f07fad279e49e7b930e60803",
+        "result.json": "65ab7349bec695d74ca3a775ba45c6912f41d229730b4638e615db24551b3618"
+      }
+    },
+    {
+      "case": "static_noslip3_halfdt",
+      "force_sum_max_error_N": 1.7763568394002505e-15,
+      "moment_sum_max_error_Nm": 1.249000902703301e-16,
+      "grasp_samples": 12001,
+      "files_sha256": {
+        "joint_trace.npz": "cf0051c1af6fc4ef039f21d4ea86cc09311b8b3631a1a2cf19fbab7fbf2196c5",
+        "grasp_trace.npz": "f8c6254d79c127e90ef7f839869f90a41a56bc5ec207bf282c3f37a7a8d6d12e",
+        "grasp_contacts.npz": "65674cc13bf0a94da4ef6becb532e7ebb178bcda3b6d7c1b882fbeba362e7455",
+        "trace.csv": "ce859cbf298c84e363cf0895baf9e8a3891a285d15160a20ff728e2f44f8e986",
+        "config.json": "dde6ae617847dbe234695d70b602223ae2c43e46d3a6e150fddeb59b219a34b4",
+        "result.json": "fb5570b16a4561d82d6979991cbb3c4f6e64d5df5db55f0bb9bd5e21bdfd9fe4"
+      }
+    },
+    {
+      "case": "base_only",
+      "force_sum_max_error_N": 1.7763568394002505e-15,
+      "moment_sum_max_error_Nm": 1.3877787807814457e-16,
+      "grasp_samples": 6001,
+      "files_sha256": {
+        "joint_trace.npz": "5a48b1b2b5711d521c4b42e6d9f3da5596935ed11aa7cbc51348c4d75bb1a85c",
+        "grasp_trace.npz": "19792265c3183b80fb16140e186d9f629f56d52247e033e106c595e6020d6dcf",
+        "grasp_contacts.npz": "e981024562649399924a0ec35f0981bd6e253873afc207348bf7eca26a559e29",
+        "trace.csv": "d1478fc220a6126d52b74ac12e048a69edf0b5ccf8c230aa9ff607350a993829",
+        "config.json": "d4de900c813e4bb1280592dfc3f0df3f19b5b180b5d425d7afc808258084d255",
+        "result.json": "cb2f9532546b9df368d51a14e5b940d05aace932412015d64e33b03a0eeb0fe6"
+      }
+    },
+    {
+      "case": "shared",
+      "force_sum_max_error_N": 1.7763568394002505e-15,
+      "moment_sum_max_error_Nm": 1.6653345369377348e-16,
+      "grasp_samples": 6001,
+      "files_sha256": {
+        "joint_trace.npz": "71a926d18a5a68ecf029abfcde5931865882dd34242dd3bff46a6052c814d8eb",
+        "grasp_trace.npz": "520e43d994c547ece272ec3636fd65ccf14b296af87c788a3ea9ee614c69c994",
+        "grasp_contacts.npz": "9714ea025056ad4924937ac4aa9b812716c0ec89d61d121bc82c8125680df3d7",
+        "trace.csv": "9b08b03eb84c880c433e06e9c2f3f9ea2cf82d31df991f210712a98891644041",
+        "config.json": "4c0349fa4e6dbfb4a3698ea0344da850f1cc4fb2d71aa75fa36017b14c151779",
+        "result.json": "16a80870a8fbd3b7b0215583bbd20beb9b69c0fd722621d9e34c4f607229f890"
+      }
+    },
+    {
+      "case": "base_fast_buffer",
+      "force_sum_max_error_N": 1.7763568394002505e-15,
+      "moment_sum_max_error_Nm": 1.3877787807814457e-16,
+      "grasp_samples": 6001,
+      "files_sha256": {
+        "joint_trace.npz": "c067565562cffcd836374af6f245745e3a4810be507928abc4121482d4a03020",
+        "grasp_trace.npz": "a7c109ad69d637a509ef93e5d49218a3f03ac55d50345df9ffa4b21fa2869569",
+        "grasp_contacts.npz": "922b83eff5f7cb9bbfb75af22d4680ee4103502df01547598463ada03abdf41d",
+        "trace.csv": "46684c39f88b0a2cb23cf2038b6cf2227c08b3f12d4eebd11a1a51b0c5c5f0a6",
+        "config.json": "ac97bcc4a3114918d0a7e04994a95f38952a6bd118693621f58b2fb0a190463e",
+        "result.json": "87aa7d895a357bfe34dd7e54884893cd60386267852471d72d6aafd0e831084d"
+      }
+    },
+    {
+      "case": "base_fast_held",
+      "force_sum_max_error_N": 1.7763568394002505e-15,
+      "moment_sum_max_error_Nm": 1.6653345369377348e-16,
+      "grasp_samples": 6001,
+      "files_sha256": {
+        "joint_trace.npz": "c3f9915ed9f2fc4a46a4f019d767c7370e2d30ee2721dfc53649119da5908ccd",
+        "grasp_trace.npz": "110ca59f2a137a1cbefde5d8b8c69aaf58f429e826897ba4eb0ef86327e00579",
+        "grasp_contacts.npz": "9c0045a5fa5aa85b4325dba041bbd247bb99b660a9f30eabc07829aa1f519459",
+        "trace.csv": "2a7d2766b0f610989b7f4425d0d418508720271af8320698df7bc14558676678",
+        "config.json": "d17a4bec6ab1e6d7e6d59fdbd228ae345296b87db59bbdbf32451383098d4c75",
+        "result.json": "82f69e92fc3dca4648b1cc787c7eef827df62ed85e474e6ad81388f696da3fc0"
+      }
+    }
+  ],
+  "runner_wrapper_version_hashes": [
+    "86913e50452ece692b70be2d71bfb6f1aa79af8b0c0f480cbafd46d4f8b903e8",
+    "bb79b20794c5082030bb1a2480689c7d311ee789a6de2c99149c2765a7c4a52b"
+  ],
+  "wrapper_version_reason": "After first three runs completed, half-step duration was reduced from 12 s to 6 s to respect unchanged 90 s wall guard; controllers and solver settings were not changed mid-run.",
+  "fixed_references_match_previous_stage": true,
+  "negative_fixture_cases": 6,
+  "negative_fixture_passed_with_limitations": true,
+  "fixture_attempts_retained": [
+    "fixture_initial_attempt.json",
+    "fixture_initial_snapshot.py",
+    "fixture_pad_attempt/"
+  ],
+  "new_default_contact_model": false,
+  "new_slip_feedback_controller": false,
+  "half_step_comparison": [
+    {
+      "hand": "left",
+      "window_s": [
+        2.0,
+        6.0
+      ],
+      "dt1ms_vertical_slope_mmps": 0.00017689393619708574,
+      "dt0p5ms_vertical_slope_mmps": 0.00017693497414276852
+    },
+    {
+      "hand": "right",
+      "window_s": [
+        2.0,
+        6.0
+      ],
+      "dt1ms_vertical_slope_mmps": 0.0003736584155687737,
+      "dt0p5ms_vertical_slope_mmps": 0.0003737055601645027
+    }
+  ],
+  "micro_motion_ranking_changed": true,
+  "motion_direction_preserved": true,
+  "source_sha256": {
+    "check_stage27_contact.py": "8adfa4b96d4f6c936c50e22af8da0cf6bd116a976ed3e72753a6752eb993ba3b",
+    "run_stage27.py": "bb79b20794c5082030bb1a2480689c7d311ee789a6de2c99149c2765a7c4a52b",
+    "analyze_stage27.py": "04b539d6658fa26da0974043dcf47260a3dbcc9d930bfec5d4141b9ed7f68a05"
+  },
+  "artifact_sha256": {
+    "braking_by_hand.csv": "20dbf3f5a3781cdf55fe022fe106c731098068d46408683a9c892994db999c3b",
+    "braking_summary.csv": "c963a7f06504e7708fdebc50231afacd68947e00c926f67a97bbc2f3351b0a50",
+    "contact_fixture_checks.json": "d4da749ee599a8e3fe2f7de00416bc7c0b55812a7ca6a430a99f4e9b69ac5ca2",
+    "contact_fixture_partial.json": "3edbe8fb49ff5b79454499580734016584887b13897ab0e524b5bf41dab21b50",
+    "fixture_impratio100_0.5.npz": "d4ffd3e1184e271cf3795e6b02e1fd4557ff800812d43c976aa540f9a2970c1e",
+    "fixture_impratio100_1.5.npz": "5fb3a1cf73c5c60583d28e6226998459a2ad0c0291f14179ab3a26ac7c6f9bec",
+    "fixture_initial_attempt.json": "e29393d9f4435f1f4cb4aa3e6b3efc2c9e05ace26aca070b4fc01f7989c4a085",
+    "fixture_initial_impratio100_0.5.npz": "479450b416a925d680934fb6f0da41d6380ed6438b7a89103e550bf1f1ccc1b4",
+    "fixture_initial_impratio100_1.5.npz": "1021bdb6edbf3030b3e28ccf366a7fa2eb7668a507b66948de729ea5e04d67e3",
+    "fixture_initial_noslip3_0.5.npz": "3fe617cb3cb5f5fe380c4c4018e6b138df1655fa2ef0a887b32617f43105e053",
+    "fixture_initial_noslip3_1.5.npz": "6108f9ed95243de39ab546eab4ddb511764c8ddf8de06fb1d1f97ed8db560357",
+    "fixture_initial_original_0.5.npz": "55f3ba77f7b06c6031a7f5315eacbe97aa44ab7a37ef9be97742acd25721dd39",
+    "fixture_initial_original_1.5.npz": "f3d9da08aa83950ca1901ed93a09fce181ba62c0cdd0fbeaaee420afad6b26dc",
+    "fixture_initial_snapshot.py": "72575a29486f67f728bd9cdca52e24580547a80b4a03cce2be5100d8ad456550",
+    "fixture_noslip3_0.5.npz": "f16309972c5c33528e7e6ef6ed4643f4d25f1584b2a6c5c65704e010582b2687",
+    "fixture_noslip3_1.5.npz": "49a3c80a825d1e568980e601a58864d9aa063310e728dfa2a99e2feffa4764f3",
+    "fixture_original_0.5.npz": "75894a87137b0b88b0d94faf79fbef41bf8b1b86bb531e5b265ddfe77e840c99",
+    "fixture_original_1.5.npz": "6d70e980e2bb2321429ff02861c5a95b376ee5c7d0a738d4fc77fd333a409b1c",
+    "source_review.json": "cf3d3bac023f40912c399664b28b28a700fd6a9d1359eda3422b2452c54ddedb",
+    "static_by_hand.csv": "aeebb38b1282dae034bd8097230c133ac6bb04ee7ece02aba8f6f2a64df1b4a4",
+    "static_results.json": "bed4aff35ae4e332b6632534a235a8451acee863dbcf80fe4a8650839d6844e9",
+    "static_summary.csv": "aea5a6d53c9c0db726b61c6ff19e7ed7348aee5d7a8d8fc2fbe198b892c514a2",
+    "summary.json": "d766b07fe493a1c501989d109b6e54c964f0f581e6c0c084871371f43c724221",
+    "抓持慢漂与接触基线_结果说明.md": "43f86a250dab77dd2e9faefb986252395bca49f6675aded68a049e6c964edaa0"
+  },
+  "export_directory": "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\2026-11-01_抓持慢漂基线诊断",
+  "limits": [
+    "No physical gripper calibration, no universal zero-slip claim.",
+    "NoSlip affects global contacts including wheel-ground.",
+    "Solver-dependent micro-motion ranks do not establish real-world grasp quality.",
+    "Half-step checked for static holding only, not all dynamic action rankings."
+  ]
+}

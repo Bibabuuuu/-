@@ -1,0 +1,22 @@
+{
+  "gate": "P1",
+  "status": "PASS",
+  "reviewer": "/root/p1_endpoint_recheck",
+  "contract_sha256": "f06045f1e15b5280c6dab3e7d31d583aad9a37574e5baa7b40af84b9d2214530",
+  "driver_sha256": "054e9f739b922483d20819081b26aae34f0abe4fc99c48c92a429bfb968fa726",
+  "scope": "Two pilot slices, cached callbacks and guarded solve entry. Not optimizer convergence, dense or physical qualification.",
+  "command": "work/robot-model-audit/.venv/Scripts/python.exe simulation/rby1/recheck_b1_endpoint.py verify",
+  "exit_code": 0,
+  "frozen_sources_matched": 1039,
+  "raw_rows": 5366,
+  "solver_rows": 5388,
+  "nonjerk_rows_exact": 5364,
+  "initial_commands_and_objective_arrays_equal_prior": true,
+  "new_audit_reference_evaluations": 0,
+  "new_audit_IK": 0,
+  "new_audit_QP": 0,
+  "new_physics_steps": 0,
+  "P0": [],
+  "P1": [],
+  "limitations": ["Cooperative time checks; disclose output/stop tails.","Actual optimizer Jacobian, convergence and dense remain for P2."]
+}

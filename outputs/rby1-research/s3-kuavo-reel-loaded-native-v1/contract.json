@@ -1,0 +1,147 @@
+{
+  "initial_sha256": "e75ecdffd91efd812b8856ce98d25160ce68111adfdbc05f79bcdc7dc18c4f35",
+  "source_scene_sha256": "aa989ff6af318ad938b481fc61417e80dc61f0bc68c74b94e3874e1f7980d3a7",
+  "controller_sha256": "a608bc4e5cd3ef3f4cad3c783e00dda6e1c3587355b871837746657b890f128f",
+  "inserts": {
+    "mass_each_kg": 0.075,
+    "size_m": [
+      0.03,
+      0.04,
+      0.008
+    ],
+    "local_centers_m": {
+      "center": [
+        [
+          0.0,
+          -0.055,
+          0.0
+        ],
+        [
+          0.0,
+          0.055,
+          0.0
+        ]
+      ],
+      "left": [
+        [
+          -0.015,
+          0.055,
+          0.0
+        ],
+        [
+          0.015,
+          0.055,
+          0.0
+        ]
+      ],
+      "right": [
+        [
+          -0.015,
+          -0.055,
+          0.0
+        ],
+        [
+          0.015,
+          -0.055,
+          0.0
+        ]
+      ]
+    },
+    "model": "Rigid internal ballast, changed only lumped mass, COM and inertia. Illustrative simulation load."
+  },
+  "max_runs": 3,
+  "steps_each": 5000,
+  "dt_s": 0.0005,
+  "duration_s": 2.5,
+  "stationary_s": 0.65,
+  "ramp_s": 0.6,
+  "cruise_s": 0.18,
+  "trigger_s": 1.43,
+  "trigger_speed_mps": 0.4,
+  "reference_accel_mps2": 2.0,
+  "jerk_mps3": 12.0,
+  "relative_position_mm_limit": 2.0,
+  "relative_rotation_deg_limit": 2.0,
+  "deadline_after_trigger_s": 0.5,
+  "zero_obstacle_contact_required": true,
+  "models": {
+    "center": {
+      "sha256": "b900c093042d71088d56060cfcbe76a598c22da4089232a868460e9a7d77e39d",
+      "mass_kg": 0.2,
+      "com_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inertia_kg_m2": [
+        [
+          0.00054595979167,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.345979167e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00062555625
+        ]
+      ]
+    },
+    "left": {
+      "sha256": "da74eb015c3071d9947b13607b612ffc76ea3fbf4565fae7944aa1436a16fb2e",
+      "mass_kg": 0.2,
+      "com_m": [
+        0.0,
+        0.04125,
+        0.0
+      ],
+      "inertia_kg_m2": [
+        [
+          0.00020564729167,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00011720979166999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00031899375000000004
+        ]
+      ]
+    },
+    "right": {
+      "sha256": "088e398ffa903efe4970641be920a588ff29d7bd36a21413dbd45e09f810b8cb",
+      "mass_kg": 0.2,
+      "com_m": [
+        0.0,
+        -0.04125,
+        0.0
+      ],
+      "inertia_kg_m2": [
+        [
+          0.00020564729167,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00011720979166999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00031899375000000004
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "bounded reference screen; no full programming-stage or dynamic qualification",
+  "agent": "/root/p1_right_column",
+  "commands": [
+    "work/robot-model-audit/.venv/Scripts/python.exe -B simulation/rby1/b0_right_column_screen.py verify",
+    "work/robot-model-audit/.venv/Scripts/python.exe -B - (independent read-only recomputation)"
+  ],
+  "exit_codes": [
+    0,
+    0
+  ],
+  "sha256": {
+    "contract.json": "4087a6ac0a2ccfb6f6c6737e477d5c6328bd08dccba8e92c3d0d7c0537fb4191",
+    "pilot.json": "1b264948f7d2e7bf84cdcb2e39a1d714d032a0f3d52d660baf66d30f12dfb57a",
+    "p1_gate.json": "d0d7285c503ec92ca7ce2ec6458bd4c0e2797f433079f811787336e4934d673f",
+    "summary.json": "422d08406c56a685335b2ebb6939e9241a4611530ba6c3c1f1cacf96066236f9",
+    "candidate_metrics.csv": "f4c9a6a0c363c0bf04af2b8873b0eae93cd622fe1475fd3577b22c4774083242"
+  },
+  "frozen_sources": 842,
+  "evaluated": 36,
+  "admitted_indices": [
+    0,
+    1,
+    2,
+    7,
+    8,
+    9,
+    22
+  ],
+  "geometry_rejections": 29,
+  "old_clearance_floor_m": 0.006257608649436586,
+  "evidence": "NPZ hashes, exact CSV/row parity, exhaustive signed distances on stored nodes, sampled kinematics, analytical acceleration RMS and peaks, predicted equal-TCP moment peaks",
+  "limit": "5 ms B0 and 0.5 ms witness samples; finite reference comparison only"
+}

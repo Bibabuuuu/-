@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "physics_steps": 0,
+  "changes": [
+    {
+      "geom": "wheel_r_tire",
+      "before": "0.1 0.035",
+      "after": "0.1 0.025"
+    },
+    {
+      "geom": "wheel_l_tire",
+      "before": "0.1 0.035",
+      "after": "0.1 0.025"
+    }
+  ],
+  "compiled_unchanged_arrays": [
+    "body_mass",
+    "body_inertia",
+    "body_ipos",
+    "body_iquat",
+    "body_pos",
+    "body_quat",
+    "dof_armature",
+    "dof_damping",
+    "jnt_range",
+    "jnt_axis",
+    "jnt_pos",
+    "geom_pos",
+    "geom_quat",
+    "geom_friction",
+    "geom_condim",
+    "geom_solref",
+    "geom_solimp",
+    "actuator_ctrlrange",
+    "actuator_forcerange",
+    "actuator_gear",
+    "pair_friction"
+  ],
+  "changed_geom_size_indices": [
+    [
+      9,
+      1
+    ],
+    [
+      11,
+      1
+    ]
+  ],
+  "mass_inertia_unchanged": true,
+  "frozen_sources_checked": 15,
+  "original_scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154757_768066_s26_base_only\\scene.xml",
+  "variant_scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-width\\model\\scene.xml",
+  "original_scene_sha256": "7bc23e54a46da3a4c40269836818c1f9c403bd3cd5cd908eaa31c9e2bff64ae9",
+  "variant_scene_sha256": "2e4af760b405f02c4ea95e9b78ea7d3a399740019302e1675dfe33da75e77d65",
+  "scope": "only collision width differs; initial state restored, not a new settled state or hardware calibration"
+}

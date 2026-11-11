@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "physical_runs": 5,
+  "new_grasp_samples": 30005,
+  "checked_control_samples": 24000,
+  "checks": [
+    {
+      "run": "noslip3_buffer",
+      "control_samples": 6000,
+      "checked_saved_fk_states": 600,
+      "relative_position_reconstruction_max_error_m": 0.0,
+      "relative_rotation_reconstruction_max_error": 1.1102230246251565e-16,
+      "actual_hand_fk_vs_control_log_max_error_m": 0.0,
+      "force_log_max_error_N": 1.7763568394002505e-15,
+      "moment_log_max_error_Nm": 1.6653345369377348e-16
+    },
+    {
+      "run": "noslip3_held",
+      "control_samples": 6000,
+      "checked_saved_fk_states": 600,
+      "relative_position_reconstruction_max_error_m": 0.0,
+      "relative_rotation_reconstruction_max_error": 1.1102230246251565e-16,
+      "actual_hand_fk_vs_control_log_max_error_m": 0.0,
+      "force_log_max_error_N": 1.7763568394002505e-15,
+      "moment_log_max_error_Nm": 1.3877787807814457e-16
+    },
+    {
+      "run": "original_buffer",
+      "control_samples": 6000,
+      "checked_saved_fk_states": 600,
+      "relative_position_reconstruction_max_error_m": 0.0,
+      "relative_rotation_reconstruction_max_error": 1.1102230246251565e-16,
+      "actual_hand_fk_vs_control_log_max_error_m": 0.0,
+      "force_log_max_error_N": 1.7763568394002505e-15,
+      "moment_log_max_error_Nm": 1.5265566588595902e-16
+    },
+    {
+      "run": "original_held",
+      "control_samples": 6000,
+      "checked_saved_fk_states": 600,
+      "relative_position_reconstruction_max_error_m": 0.0,
+      "relative_rotation_reconstruction_max_error": 1.1102230246251565e-16,
+      "actual_hand_fk_vs_control_log_max_error_m": 0.0,
+      "force_log_max_error_N": 1.7763568394002505e-15,
+      "moment_log_max_error_Nm": 1.5265566588595902e-16
+    }
+  ],
+  "old_inputs_unchanged": true,
+  "frozen_model_sources_unchanged": true,
+  "all_nominal_quality_and_braking_checks_passed": true,
+  "disabled_regression_exact": true,
+  "limits": "Finite nominal simulation, model contact settings; no dynamic step convergence, hardware realtime or slip identification claim."
+}

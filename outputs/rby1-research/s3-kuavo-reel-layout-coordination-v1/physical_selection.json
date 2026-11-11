@@ -1,0 +1,258 @@
+{
+  "low_tuned_hold": {
+    "scene_label": "low160",
+    "reference": {
+      "base_a": 1.675,
+      "object_a": 1.675,
+      "buffer": false,
+      "reference_clearance_m": 0.010662313484440225,
+      "nearest_part": "base",
+      "minima_by_part": {
+        "base": {
+          "distance_m": 0.010662313484440225,
+          "geom": "wheel_l_tire",
+          "witness": [
+            1.4556888883562977,
+            0.2899041106038687,
+            0.0999181613062751,
+            1.466351201803473,
+            0.28990321916512096,
+            0.09991816130618433
+          ],
+          "time_s": 1.9277922885572139
+        },
+        "upper": {
+          "distance_m": 0.2341288127057356,
+          "geom": "link_torso_1_LINK_2_collision_3_5",
+          "witness": [
+            1.2519835553672276,
+            -0.043977092138919406,
+            0.39420605395286046,
+            1.466323285740518,
+            -0.04399501233388431,
+            0.3
+          ],
+          "time_s": 1.9277922885572139
+        },
+        "payload": {
+          "distance_m": 0.6896085611899261,
+          "geom": "reel_middle_1_flange_-1_contact_47",
+          "witness": [
+            1.447752928953189,
+            -9.86067584067803e-05,
+            0.9893583779115407,
+            1.4663269556355782,
+            -0.00010015966779441943,
+            0.3
+          ],
+          "time_s": 1.9277922885572139
+        }
+      },
+      "deadline_eligible": {
+        "0.5": true,
+        "0.55": true,
+        "0.65": true
+      },
+      "reference_rms_mps2": 1.1598813044935714,
+      "base_stop_s": 0.4977922885572139,
+      "object_stop_s": 0.4977922885572139,
+      "base_advance_m": 0.1493376865671641,
+      "object_advance_m": 0.14933768656716387,
+      "joint_speed_fraction": 0.0,
+      "joint_limits": true,
+      "samples": 499
+    }
+  },
+  "low_buffer": {
+    "scene_label": "low160",
+    "reference": {
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "buffer": true,
+      "reference_clearance_m": 0.020000000051650278,
+      "nearest_part": "base",
+      "minima_by_part": {
+        "base": {
+          "distance_m": 0.020000000051650278,
+          "geom": "wheel_l_tire",
+          "witness": [
+            1.4463512018217233,
+            0.28990489129500224,
+            0.09991819789449206,
+            1.466351201803473,
+            0.28990321916495115,
+            0.09991819789442247
+          ],
+          "time_s": 1.8966666666666665
+        },
+        "upper": {
+          "distance_m": 0.2384849040945742,
+          "geom": "link_torso_1_LINK_2_collision_3_5",
+          "witness": [
+            1.2476689441592521,
+            -0.043976339491767616,
+            0.39521201625918845,
+            1.4663232857732846,
+            -0.043994620416283325,
+            0.3
+          ],
+          "time_s": 2.0141666666666667
+        },
+        "payload": {
+          "distance_m": 0.6893583779115404,
+          "geom": "reel_middle_1_flange_-1_contact_1",
+          "witness": [
+            1.4700427427939387,
+            0.012185753773174629,
+            0.9893583779115405,
+            1.4700427427939387,
+            0.012185753773174546,
+            0.29999999999999993
+          ],
+          "time_s": 1.9029999999999478
+        }
+      },
+      "deadline_eligible": {
+        "0.5": false,
+        "0.55": false,
+        "0.65": true
+      },
+      "reference_rms_mps2": 1.034590858427241,
+      "base_stop_s": 0.46666666666666656,
+      "object_stop_s": 0.5841666666666667,
+      "base_advance_m": 0.13999999999999993,
+      "object_advance_m": 0.17524999987680015,
+      "joint_speed_fraction": 0.052864489738272576,
+      "joint_limits": true,
+      "samples": 587
+    }
+  },
+  "low_matched_hold": {
+    "scene_label": "low160",
+    "reference": {
+      "base_a": 2.0,
+      "object_a": 2.0,
+      "buffer": false,
+      "reference_clearance_m": 0.020000000051650278,
+      "nearest_part": "base",
+      "minima_by_part": {
+        "base": {
+          "distance_m": 0.020000000051650278,
+          "geom": "wheel_l_tire",
+          "witness": [
+            1.4463512018217233,
+            0.28990489129500224,
+            0.09991819789449206,
+            1.466351201803473,
+            0.28990321916495115,
+            0.09991819789442247
+          ],
+          "time_s": 1.8966666666666665
+        },
+        "upper": {
+          "distance_m": 0.24268688625337118,
+          "geom": "link_torso_1_LINK_2_collision_3_5",
+          "witness": [
+            1.2438743905981815,
+            -0.043976427016583435,
+            0.39702274714672525,
+            1.4663232857394413,
+            -0.043995025190445486,
+            0.29999999999999966
+          ],
+          "time_s": 1.8966666666666665
+        },
+        "payload": {
+          "distance_m": 0.6899232108988504,
+          "geom": "reel_middle_1_flange_-1_contact_47",
+          "witness": [
+            1.4384152424186603,
+            -9.782606710457328e-05,
+            0.9893583779115407,
+            1.4663269556355782,
+            -0.00010015966779441943,
+            0.3
+          ],
+          "time_s": 1.8966666666666665
+        }
+      },
+      "deadline_eligible": {
+        "0.5": true,
+        "0.55": true,
+        "0.65": true
+      },
+      "reference_rms_mps2": 1.2264872819560746,
+      "base_stop_s": 0.46666666666666656,
+      "object_stop_s": 0.46666666666666656,
+      "base_advance_m": 0.13999999999999993,
+      "object_advance_m": 0.1399999999999997,
+      "joint_speed_fraction": 0.0,
+      "joint_limits": true,
+      "samples": 468
+    }
+  },
+  "bar_tuned_hold": {
+    "scene_label": "bar160",
+    "reference": {
+      "base_a": 1.675,
+      "object_a": 1.675,
+      "buffer": false,
+      "reference_clearance_m": 0.010662313488942237,
+      "nearest_part": "payload",
+      "minima_by_part": {
+        "base": {
+          "distance_m": 0.4917781984312765,
+          "geom": "chassis_collision",
+          "witness": [
+            1.417696536949197,
+            0.23990668767421092,
+            0.22991210078407337,
+            1.4584353081976125,
+            0.23990328164807617,
+            0.72
+          ],
+          "time_s": 1.9277922885572139
+        },
+        "upper": {
+          "distance_m": 0.11977001183215973,
+          "geom": "ee_finger_r2_pad",
+          "witness": [
+            1.3386404574364104,
+            -0.05718498338816905,
+            1.0073083782773047,
+            1.458410468849971,
+            -0.05719499693979441,
+            1.0073083782773047
+          ],
+          "time_s": 1.9277922885572139
+        },
+        "payload": {
+          "distance_m": 0.010662313488942237,
+          "geom": "reel_middle_1_flange_-1_contact_47",
+          "witness": [
+            1.447752928953189,
+            -9.860675840678031e-05,
+            0.9894601773252917,
+            1.4584152424048662,
+            -9.949819713118979e-05,
+            0.9894601773252916
+          ],
+          "time_s": 1.9277922885572139
+        }
+      },
+      "deadline_eligible": {
+        "0.5": true,
+        "0.55": true,
+        "0.65": true
+      },
+      "reference_rms_mps2": 1.1598813044935714,
+      "base_stop_s": 0.4977922885572139,
+      "object_stop_s": 0.4977922885572139,
+      "base_advance_m": 0.1493376865671641,
+      "object_advance_m": 0.14933768656716387,
+      "joint_speed_fraction": 0.0,
+      "joint_limits": true,
+      "samples": 499
+    }
+  }
+}

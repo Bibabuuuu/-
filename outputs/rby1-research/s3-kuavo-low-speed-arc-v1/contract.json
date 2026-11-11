@@ -1,0 +1,29 @@
+{
+  "speeds": {
+    "v040": 0.4,
+    "v050": 0.5
+  },
+  "arc_reference": {
+    "speed": 0.6,
+    "curvature": -0.5,
+    "base_a": 1.5,
+    "object_a": 1.5,
+    "jerk": 8.0,
+    "stroke_m": 0.0,
+    "reference_stop_s": 0.5875000000000001,
+    "buffer": false,
+    "reference_rms_mps2": 1.1063053516963723,
+    "peak_demand": 0.15329529215827908,
+    "reference_clearances_m": [
+      -0.004085584367118957,
+      0.05591441526515462,
+      0.13591441535151672
+    ],
+    "reference_clearance_m": 0.05591441526515462
+  },
+  "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-wheel-arc-diagnostic-v1\\low_speed_control",
+  "initial_reference_gap_m": 0.25,
+  "dt_s": 0.0005,
+  "invariant": "Curvature, profile family and acceleration/jerk settings, controller, physical initial state, deck and friction are held fixed. Only speed and obstacle position change.",
+  "interpretation": "One run per speed, qualifies only the sampled conditions."
+}

@@ -1,0 +1,74 @@
+{
+  "status": "completed",
+  "checks": {
+    "completed": true,
+    "unchanged_during_run": true,
+    "obstacle": true,
+    "control": true,
+    "joints": true,
+    "self_penetration": true,
+    "loaded_hands": true,
+    "terminal_rest": true,
+    "wheel_contact": false
+  },
+  "passed": false,
+  "recorded_steps": 3800,
+  "windows_s": {
+    "reference": [
+      0.0,
+      0.6195207030426355
+    ],
+    "motion": [
+      0.0,
+      0.8998625445380035
+    ],
+    "hold": [
+      0.8998625445380035,
+      1.8998625445380035
+    ]
+  },
+  "acceleration_rms_mps2": 0.6550633133348939,
+  "tcp_moment_rms_Nm": 0.030738930564855826,
+  "hold_relative_position_change_mm": 0.15710273790412263,
+  "actual_sampled_clearance": {
+    "time_s": 0.438,
+    "distance_m": 0.00610165418285406,
+    "geom": "link_right_arm_4_LINK_11_collision_3_4",
+    "witness": [
+      1.1143339633108826,
+      -0.19997809642126652,
+      1.075927568643445,
+      1.1204350366106102,
+      -0.20006228881101243,
+      1.0759275686434449
+    ]
+  },
+  "first_persistent_nominal_rest_s": 0.7555000000000001,
+  "wheel_zero_events": [
+    {
+      "t_s": 0.1815,
+      "r_l_gap_um": [
+        0.031220507504866463,
+        0.004822361476548159
+      ]
+    },
+    {
+      "t_s": 0.224,
+      "r_l_gap_um": [
+        0.26438045162245627,
+        0.12169529326980928
+      ]
+    }
+  ],
+  "side_shift_pct_relative_to_b0": {
+    "acceleration_rms_mps2": -14.01753068428947,
+    "tcp_moment_rms_Nm": -14.73110796035395,
+    "hold_relative_position_change_mm": 0.8467593441321641
+  },
+  "artifact_sha256": {
+    "trace.npz": "f2bc5cd12c31642a6be1dd1b02d12c082767cb2923e652668b0e8c441f74be65",
+    "grasp_trace.npz": "8cbc7913f5fe37325adae176cee06de0a527ef0dc41cc76d648d8813589acc01",
+    "config.json": "5eab794ca7be8be10017a9967cafea5d118d24f79b1c7403aa08d4050cc90cfd",
+    "result.json": "95135bc24fb6d2276941a4c6aa7c96fea5c0ee40872baa80315177ca965f3075"
+  }
+}

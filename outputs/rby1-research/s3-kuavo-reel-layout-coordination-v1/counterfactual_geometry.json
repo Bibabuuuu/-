@@ -1,0 +1,6 @@
+{
+  "physical_steps": 0,
+  "method": "Replay final saved pose of low160 buffer in bar160 geometry only.",
+  "signed_clearance_m": -0.015062095794284538,
+  "nearest_geom": "reel_middle_1_flange_-1_contact_47"
+}

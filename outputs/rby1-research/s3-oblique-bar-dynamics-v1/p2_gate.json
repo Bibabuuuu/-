@@ -1,0 +1,9 @@
+{
+  "scope": "Independent input, trace, oriented geometry, timing and grasp verification; one full execution pass",
+  "new_physics_steps": 22800,
+  "independent_agent": "/root/p1_right_15cm",
+  "audit_exit_code": 0,
+  "summary_sha256": "b3c3e7c57300f11bddbf3fe049526df084a0332da89cce4a1373836e387e3779",
+  "actual_states_checked": 22806,
+  "status": "PASS"
+}

@@ -1,0 +1,48 @@
+{
+  "rows": {
+    "low_tuned_hold": {
+      "peak_tangent_mm": [
+        0.01787045023907698,
+        0.003946438389897546
+      ],
+      "anchor_count": 41
+    },
+    "low_buffer": {
+      "peak_tangent_mm": [
+        0.01769838639173069,
+        0.003329618815809415
+      ],
+      "anchor_count": 41
+    },
+    "low_matched_hold": {
+      "peak_tangent_mm": [
+        0.018608342048858553,
+        0.003965355927914184
+      ],
+      "anchor_count": 41
+    },
+    "bar_tuned_hold": {
+      "peak_tangent_mm": [
+        0.01787045023907698,
+        0.003946438389897546
+      ],
+      "anchor_count": 41
+    }
+  },
+  "matched_prefix_samples": 2861,
+  "prefixes_against_low_buffer": {
+    "low_tuned_hold": {
+      "pretrigger_qpos_max_difference": 0.0,
+      "pretrigger_qvel_max_difference": 0.0
+    },
+    "low_matched_hold": {
+      "pretrigger_qpos_max_difference": 0.0,
+      "pretrigger_qvel_max_difference": 0.0
+    },
+    "bar_tuned_hold": {
+      "pretrigger_qpos_max_difference": 0.0,
+      "pretrigger_qvel_max_difference": 0.0
+    }
+  },
+  "physical_steps": 0
+}

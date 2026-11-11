@@ -1,0 +1,5 @@
+﻿family,start_index,solver_success,failure,message,completed_evaluations,accepted_iterations,initial_J,final_J,final_min_g,best_coarse_qualified_J,selected_dense_reference,physical_runs
+B0,0,False,,Positive directional derivative for linesearch,4,1,0.25065913092005015,0.25065913092005015,-5.204170427930421e-17,0.2506590944776756,False,0
+B0,1,True,,Optimization terminated successfully,82,12,0.2596852207260527,0.25065913091967573,-3.1589503918631967e-13,0.25065885235020136,False,0
+B0,2,True,,Optimization terminated successfully,113,19,0.2926346891813568,0.2506591309196127,-1.6444044711888402e-13,0.25065897245456203,True,0
+B1,0,False,LimitReached: Active-time budget: b1,,882,16,0.2506591309196127,,,0.2491340211203963,False,0

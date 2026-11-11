@@ -1,0 +1,125 @@
+{
+  "fixed_pitch_deg": -2.5,
+  "threshold": 0.085,
+  "all_results": {
+    "forward": [
+      {
+        "advance": 0.01,
+        "duration": 0.1,
+        "demand": 0.08329665007271947,
+        "max_speed_fraction": 0.1817991248448094
+      },
+      {
+        "advance": 0.01,
+        "duration": 0.12,
+        "demand": 0.08329665007271947,
+        "max_speed_fraction": 0.15148740183361503
+      },
+      {
+        "advance": 0.01,
+        "duration": 0.14,
+        "demand": 0.08329665007271947,
+        "max_speed_fraction": 0.12982490126132523
+      },
+      {
+        "advance": 0.02,
+        "duration": 0.1,
+        "demand": 0.08329665007271947,
+        "max_speed_fraction": 0.18177985800572982
+      },
+      {
+        "advance": 0.02,
+        "duration": 0.12,
+        "demand": 0.08329665007271947,
+        "max_speed_fraction": 0.15145919941422847
+      },
+      {
+        "advance": 0.02,
+        "duration": 0.14,
+        "demand": 0.09079368007460462,
+        "max_speed_fraction": 0.12978346610211464
+      },
+      {
+        "advance": 0.03,
+        "duration": 0.1,
+        "demand": 0.08509333969136638,
+        "max_speed_fraction": 0.18174712648386143
+      },
+      {
+        "advance": 0.03,
+        "duration": 0.12,
+        "demand": 0.08849083543806832,
+        "max_speed_fraction": 0.15141360973731519
+      },
+      {
+        "advance": 0.03,
+        "duration": 0.14,
+        "demand": 0.10037772928191811,
+        "max_speed_fraction": 0.12971940790553782
+      }
+    ],
+    "staggered": [
+      {
+        "advance": 0.01,
+        "duration": 0.1,
+        "demand": 0.08329665007271947,
+        "max_speed_fraction": 0.1817991248448094
+      },
+      {
+        "advance": 0.01,
+        "duration": 0.12,
+        "demand": 0.08329665007271947,
+        "max_speed_fraction": 0.15148740183361503
+      },
+      {
+        "advance": 0.01,
+        "duration": 0.14,
+        "demand": 0.08364419635710967,
+        "max_speed_fraction": 0.12982490126132523
+      },
+      {
+        "advance": 0.02,
+        "duration": 0.1,
+        "demand": 0.08329665007271947,
+        "max_speed_fraction": 0.18177985800572982
+      },
+      {
+        "advance": 0.02,
+        "duration": 0.12,
+        "demand": 0.08329665007271947,
+        "max_speed_fraction": 0.15145919941422847
+      },
+      {
+        "advance": 0.02,
+        "duration": 0.14,
+        "demand": 0.09150131033086982,
+        "max_speed_fraction": 0.12978346610211464
+      },
+      {
+        "advance": 0.03,
+        "duration": 0.1,
+        "demand": 0.09084581472736453,
+        "max_speed_fraction": 0.18174712648386143
+      },
+      {
+        "advance": 0.03,
+        "duration": 0.12,
+        "demand": 0.09078748966443796,
+        "max_speed_fraction": 0.15141360973731519
+      },
+      {
+        "advance": 0.03,
+        "duration": 0.14,
+        "demand": 0.10081225458817365,
+        "max_speed_fraction": 0.12971940790553782
+      }
+    ]
+  },
+  "selected": {
+    "advance": 0.02,
+    "duration": 0.12,
+    "demand": 0.08329665007271947,
+    "max_speed_fraction": 0.15145919941422847
+  },
+  "selection": "Earliest reference return satisfying both held-out layouts; lower joint speed breaks ties."
+}

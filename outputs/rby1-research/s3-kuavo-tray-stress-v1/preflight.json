@@ -1,0 +1,10 @@
+{
+  "b0": {
+    "min_sampled_reference_gap_m": 0.01183424939876779,
+    "reference_duration_s": 0.6166666666666669
+  },
+  "hold": {
+    "min_sampled_reference_gap_m": 0.01183424939876779,
+    "reference_duration_s": 0.5543650793650794
+  }
+}

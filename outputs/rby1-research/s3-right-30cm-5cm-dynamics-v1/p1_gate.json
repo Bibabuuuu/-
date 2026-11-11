@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_right_15cm",
+  "contract_sha256": "002563b293fa13643c10b1c930a3b5cee572d417dd4c28b3e2bc72f2c42fdc45",
+  "preflight_sha256": "95bb4171c50a491001ed7e0897adfe76a569649f7198951ce99a7a836dbc3658",
+  "exit_code": 0,
+  "evidence": "923 hashes, only obstacle translation, exact old commands, all preloaded nodes and full native initial clearance checked, zero artificial delay."
+}

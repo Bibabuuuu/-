@@ -1,0 +1,74 @@
+{
+  "zero_contact_samples": 4,
+  "episodes": [
+    {
+      "start_s": 0.493,
+      "last_sample_s": 0.493,
+      "sample_count": 1,
+      "sample_grid_duration_s": 0.0005
+    },
+    {
+      "start_s": 0.5695,
+      "last_sample_s": 0.5695,
+      "sample_count": 1,
+      "sample_grid_duration_s": 0.0005
+    },
+    {
+      "start_s": 0.5815,
+      "last_sample_s": 0.5815,
+      "sample_count": 1,
+      "sample_grid_duration_s": 0.0005
+    },
+    {
+      "start_s": 0.593,
+      "last_sample_s": 0.593,
+      "sample_count": 1,
+      "sample_grid_duration_s": 0.0005
+    }
+  ],
+  "samples": [
+    {
+      "index": 986,
+      "time_s": 0.493,
+      "right_left_tire_geometric_gap_m": [
+        2.655606425081003e-07,
+        7.992060819528302e-08
+      ],
+      "recorded_total_ground_force_z_N": 243.53773242054513,
+      "recorded_base_tilt_deg": 0.0026917259861970887
+    },
+    {
+      "index": 1139,
+      "time_s": 0.5695,
+      "right_left_tire_geometric_gap_m": [
+        3.9881497474608674e-07,
+        4.76251933688443e-07
+      ],
+      "recorded_total_ground_force_z_N": 220.87096443809787,
+      "recorded_base_tilt_deg": 0.00047166724894123546
+    },
+    {
+      "index": 1163,
+      "time_s": 0.5815,
+      "right_left_tire_geometric_gap_m": [
+        1.429622543597242e-06,
+        1.5902941816622885e-06
+      ],
+      "recorded_total_ground_force_z_N": 223.01707375144701,
+      "recorded_base_tilt_deg": 0.001878194714948217
+    },
+    {
+      "index": 1186,
+      "time_s": 0.593,
+      "right_left_tire_geometric_gap_m": [
+        1.2340278255376647e-06,
+        9.649733469091482e-07
+      ],
+      "recorded_total_ground_force_z_N": 225.89882504856251,
+      "recorded_base_tilt_deg": 0.002631044894048545
+    }
+  ],
+  "maximum_tire_floor_gap_um": 1.5902941816622884,
+  "qualification": "original aggregate wheel contact gate failed; not relabeled as success",
+  "interpretation": "recorded contact-count failure plus saved-state geometric gap; positive total ground force may include other base supports; not hardware danger/stability proof or calibrated safety threshold"
+}

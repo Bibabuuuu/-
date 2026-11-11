@@ -1,0 +1,46 @@
+{
+  "scenes": {
+    "10": {
+      "boundary": {
+        "B0": [
+          false,
+          0.04788158184230958
+        ],
+        "B1": [
+          true,
+          0.05182093882739934
+        ]
+      }
+    },
+    "-10": {
+      "boundary": {
+        "B0": [
+          false,
+          0.04788231776338838
+        ],
+        "B1": [
+          true,
+          0.05182144670034281
+        ]
+      }
+    }
+  },
+  "new_physics_steps": 0,
+  "active_s": 25.538597500002652,
+  "stats": {
+    "IK_calls": 4120,
+    "QP_calls": 5584,
+    "QP_internal_iterations": 11168,
+    "unique_targets": 4120,
+    "line_search_trials": 5584,
+    "complete_started": 34,
+    "complete_completed": 34,
+    "outer_calls": 0,
+    "jacobians": 0,
+    "cache_hits": 0,
+    "requests": 0
+  },
+  "phases": {
+    "preparepilot": 25.53860010000062
+  }
+}

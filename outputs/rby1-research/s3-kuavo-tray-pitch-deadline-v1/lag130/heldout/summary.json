@@ -1,0 +1,71 @@
+{
+  "steps": 5000,
+  "pretrigger_ok": true,
+  "parking_and_grasp_qualified": true,
+  "pretrigger_max_shift_mm": [
+    0.006260901931250538,
+    0.00625950061039796
+  ],
+  "trigger_speed_mps": 0.6997393911645222,
+  "trigger_sample_gap_mm": 210.0191794487366,
+  "block_peak_shift_mm": [
+    0.021409217529539785,
+    0.022975266811873514
+  ],
+  "block_peak_brake_window_mm": [
+    0.02117350440080699,
+    0.02278248365677781
+  ],
+  "block_final_shift_mm": [
+    0.021409217529539785,
+    0.022975266811873514
+  ],
+  "block_first_over_1mm_after_trigger_s": [
+    null,
+    null
+  ],
+  "block_forward_peak_mm": [
+    0.021405590080590675,
+    0.022971141332601974
+  ],
+  "block_peak_relative_tilt_deg": [
+    0.006015977616424721,
+    0.006010554526800833
+  ],
+  "block_support_at_end": [
+    true,
+    true
+  ],
+  "block_min_relative_height_change_mm": [
+    -0.001566005360146075,
+    -0.001345711434955904
+  ],
+  "block_other_contact_pairs": [],
+  "block_other_first_contact_s": {},
+  "tray_nonpad_other_contacts": [],
+  "both_hands_loaded": true,
+  "controller_ok": true,
+  "obstacle_contacts": 0,
+  "base_and_tray_settled_after_trigger_s": 0.619,
+  "min_sampled_gap_mm": 34.61748775952821,
+  "tray_pitch_max_abs_deg": 2.820695771286138,
+  "fixed_tray_hand_point_peak_um": [
+    76.33762154581224,
+    60.548314291329916
+  ],
+  "tray_hand_relative_peak_translation_mm": [
+    0.0314816211402492,
+    0.060381165071352265
+  ],
+  "tray_hand_relative_peak_rotation_deg": [
+    0.06404550586823864,
+    0.003463648251174509
+  ],
+  "tray_accel_rms_mps2": 1.1771701452044894,
+  "tray_point_peak_demand_ratio": [
+    0.10118022378989538,
+    0.10007871035268852
+  ],
+  "pitch_rate_settled_s": 0.6740000000000002,
+  "zero_wheel_samples": 0
+}

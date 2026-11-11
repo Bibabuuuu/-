@@ -1,0 +1,250 @@
+{
+  "scope": "read-only FK/Jacobian/basis audit; no new reference solve, optimization or physics",
+  "counts": {
+    "IK_calls": 0,
+    "QP_calls": 0,
+    "outer_optimizer_calls": 0,
+    "physics_runs": 0,
+    "physics_steps": 0
+  },
+  "model_scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\synchronized_scene.xml",
+  "T_s": 0.6195207030426355,
+  "COM_body_offset_m": [
+    0.0,
+    0.0,
+    -0.064
+  ],
+  "initial_q_difference_rad_max": 0.0,
+  "initial_upper_reference_v_radps": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_upper_saved_v_radps": [
+    1.13005061163729e-08,
+    5.4903710595328164e-05,
+    2.628141491329386e-05,
+    -1.7365851338211293e-05,
+    -1.9177555502300568e-08,
+    -1.8536723770072596e-08,
+    -4.3399093228920056e-05,
+    9.988018376442434e-06,
+    2.4613194946406745e-05,
+    1.471527041322424e-06,
+    -1.2672212881801142e-05,
+    6.123223480761673e-07,
+    6.201257547606341e-07,
+    -4.329193028035043e-05,
+    -1.0277326662730655e-05,
+    -2.391917043443901e-05,
+    4.454986465393094e-07,
+    1.7509422950516235e-05,
+    -3.347912989485723e-06,
+    3.5805966521837627e-06
+  ],
+  "initial_upper_reference_minus_saved_radps": [
+    -1.13005061163729e-08,
+    -5.4903710595328164e-05,
+    -2.628141491329386e-05,
+    1.7365851338211293e-05,
+    1.9177555502300568e-08,
+    1.8536723770072596e-08,
+    4.3399093228920056e-05,
+    -9.988018376442434e-06,
+    -2.4613194946406745e-05,
+    -1.471527041322424e-06,
+    1.2672212881801142e-05,
+    -6.123223480761673e-07,
+    -6.201257547606341e-07,
+    4.329193028035043e-05,
+    1.0277326662730655e-05,
+    2.391917043443901e-05,
+    -4.454986465393094e-07,
+    -1.7509422950516235e-05,
+    3.347912989485723e-06,
+    -3.5805966521837627e-06
+  ],
+  "initial_upper_v_difference_radps_max": 5.4903710595328164e-05,
+  "initial_payload": {
+    "twist_order": "world vx,vy,vz,wx,wy,wz; COM point",
+    "saved_body_twist": [
+      0.400002218524684,
+      -3.385526594629332e-05,
+      -0.0001561355286567713,
+      1.4733898226032177e-07,
+      -2.5070300291867123e-05,
+      1.360669300618042e-07
+    ],
+    "reference_twist": [
+      0.3999312708712326,
+      -3.3436854353081035e-05,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reference_minus_saved_body": [
+      -7.094765345139198e-05,
+      4.184115932122869e-07,
+      0.0001561355286567713,
+      -1.4733898226032177e-07,
+      2.5070300291867123e-05,
+      -1.360669300618042e-07
+    ],
+    "hand_implied_twists": {
+      "left": [
+        0.40000062634785233,
+        -3.382632973637084e-05,
+        -2.437877629023014e-08,
+        1.0001802732487965e-07,
+        -4.4899273568279905e-07,
+        4.241972336817333e-08
+      ],
+      "right": [
+        0.40000099883424073,
+        -3.378506460931263e-05,
+        -3.3131423014883964e-08,
+        1.4235348468744425e-07,
+        -6.250773400467498e-06,
+        9.160921241423221e-08
+      ]
+    },
+    "right_minus_left": [
+      3.724863884002616e-07,
+      4.1265127058208266e-08,
+      -8.752646724653824e-09,
+      4.2335457362564597e-08,
+      -5.801780664784699e-06,
+      4.918948904605888e-08
+    ],
+    "right_minus_left_original_scaled_components": [
+      0.003996932911098204,
+      0.00044279186986658165,
+      9.391951717546357e-05,
+      4.542769564427669e-05,
+      0.006225550464177684,
+      5.278235494528455e-05
+    ],
+    "max_original_scaled_component": 0.006225550464177684,
+    "component_tolerance_before_sqrt3": [
+      0.00016141510607938148,
+      0.00016141510607938148,
+      0.00016141510607938148,
+      0.0016141510607938147,
+      0.0016141510607938147,
+      0.0016141510607938147
+    ],
+    "hand_minus_saved_body": {
+      "left": [
+        -1.5921768316551344e-06,
+        2.8936209922480083e-08,
+        0.00015611114988048108,
+        -4.732095493544211e-08,
+        2.4621307556184324e-05,
+        -9.364720669363086e-08
+      ],
+      "right": [
+        -1.2196904432548727e-06,
+        7.020133698068835e-08,
+        0.00015610239723375642,
+        -4.9854975728775164e-09,
+        1.8819526891399624e-05,
+        -4.445771764757198e-08
+      ]
+    },
+    "COM_position_reference_minus_saved_m": [
+      0.0,
+      -1.9800242175016525e-16,
+      -1.1102230246251565e-16
+    ],
+    "independent_COM_v_error_mps_max": 2.710505431213761e-20,
+    "independent_omega_error_radps_max": 2.6469779601696886e-23
+  },
+  "initial_base_axle": {
+    "saved_twist": [
+      0.3999312734576225,
+      -3.343067016755512e-05,
+      -8.255677144161673e-09,
+      -2.1506353208475825e-10,
+      2.5879237237815494e-08,
+      -3.280524403354818e-06
+    ],
+    "reference_twist": [
+      0.3999312708712326,
+      -3.3436854353081035e-05,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reference_minus_saved": [
+      -2.5863899355549336e-09,
+      -6.184185525914029e-09,
+      8.255677144161673e-09,
+      2.1506353208475825e-10,
+      -2.5879237237815494e-08,
+      3.280524403354818e-06
+    ],
+    "saved_longitudinal_mps": 0.39993127485487473,
+    "saved_lateral_mps": 6.184401743311748e-09,
+    "saved_vertical_mps": -8.255677144161673e-09,
+    "position_reference_minus_saved_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "yaw_reference_minus_saved_rad": 0.0
+  },
+  "basis_accounting": {
+    "position_or_rotation_or_null_coordinate_controls": 8,
+    "endpoint_matrix_rank": 5,
+    "free_coefficients_each_scalar": 3,
+    "endpoint_residual_max": 1.5691152081368877e-14,
+    "velocity_free_coefficients": 4,
+    "velocity_endpoint_residual_max": 0.0,
+    "yaw_rate_free_coefficients": 4,
+    "yaw_rate_endpoint_residual_max": 0.0,
+    "initial_fixed_nullspace_shape": [
+      20,
+      8
+    ],
+    "initial_fixed_nullspace_orthogonality_error": 4.440892098500626e-16,
+    "candidate_full_counts": {
+      "base_velocity": 4,
+      "base_yaw_rate": 4,
+      "object_COM_translation": 9,
+      "object_orientation": 9,
+      "upper_redundancy": 24
+    },
+    "candidate_full_total": 50,
+    "candidate_fixed_redundancy_total": 26,
+    "caution": "50 is a proposed local function family; not an exact reduction or coverage proof of old 68-coefficient family"
+  },
+  "unchanged_prior_guard_passed": true,
+  "evidence_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.joint-reference-review\\initial_state_and_basis_audit.py": "5910703250592771e74aa122cfd5375de2cf34cbeaa81559204b864e5efd9226",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-shared-object-prototype\\contract.json": "355067bc9306d4c5351390d9694cc1f0c7e1bbdc729f0236f049d8d866c2f3e9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-shared-object-prototype\\result.json": "44946035fe94fd57c89658e846f26eda60e67adca05f14e4388fde5f5acbd726",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-shared-object-prototype\\delivery_check.json": "6f4a265b158c9d37c729501e1f5be24139cb5ec51fc2746ca2731e495956c3dc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-shared-object-prototype\\shared_object_prototype.py": "40f3368c09183d34b59af2e831b11384ef4c6f4e3418187c8876097ad1835ed7",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\initial_state.npz": "148aa548be57765e22bb30f63814572938239ccc7642777af47265effc3df9a9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\alternative_velocity_basis.npz": "ea93b61029b83f125085390d7620eaf639f7a1fdbfbe0bea4c537edf5f294fe0"
+  }
+}

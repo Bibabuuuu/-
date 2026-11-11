@@ -1,0 +1,293 @@
+{
+  "scope": "saved-state kinematics and quasistatic force balance; zero physical steps; no changed actuator",
+  "window_s": [
+    0.8998625445380035,
+    1.8998625445380035
+  ],
+  "actuator_gain_Ns_per_m": 125.0,
+  "passive_damping_Ns_per_m": 5.0,
+  "each_finger_mass_kg": 0.03326999,
+  "position_feedback_gain": 0.0,
+  "finger_velocity_commands_mps": [
+    0.035,
+    -0.035
+  ],
+  "common_mode_formula": "pad_center_x_dot = (two_finger_mass * g_hand_x - force_on_object_hand_x) / (2*(125+5)); inertial terms neglected",
+  "saved_observer_reconstruction_error_m": 0.0,
+  "runs": [
+    {
+      "label": "baseline",
+      "hands": [
+        {
+          "hand": "left",
+          "object_TCP_net_mm": [
+            0.0006476668312216383,
+            0.014946767930461045,
+            -0.15593514005676767
+          ],
+          "pad_center_TCP_net_mm": [
+            0.0006492088863191441,
+            -1.1794720317424453e-13,
+            5.689893001203927e-13
+          ],
+          "object_minus_pad_center_net_mm": [
+            -1.5420550975058693e-06,
+            0.014946767930578992,
+            -0.15593514005733666
+          ],
+          "object_minus_pad_center_normal_max_change_mm": 1.5705541411663304e-06,
+          "pad_center_distance_change_mm": 2.391326400785765e-06,
+          "pad_center_distance_range_mm": 2.391326400785765e-06,
+          "mean_actual_center_speed_mmps": 0.0006506916617538661,
+          "mean_balance_predicted_speed_mmps": 0.0006701001444124229,
+          "mean_gravity_predicted_speed_mmps": 3.792408894872033e-05,
+          "balance_speed_error_rms_mmps": 8.862562530172616e-05,
+          "gravity_normal_mean_mps2": 3.1150135052979045e-05,
+          "object_contact_normal_force_mean_N": -0.0001721533081838074,
+          "hand_normal_tilt_mean_deg": -0.00018193387051994512,
+          "max_upper_joint_net_rad": 0.0003484313264899784,
+          "pad_velocity_fd_max_error_mps": 2.5286678583466526e-08
+        },
+        {
+          "hand": "right",
+          "object_TCP_net_mm": [
+            0.0007464217439689946,
+            0.01525389430659619,
+            -0.15589574813448803
+          ],
+          "pad_center_TCP_net_mm": [
+            0.0007514006913112263,
+            -2.0603057520337052e-14,
+            2.498001805406602e-13
+          ],
+          "object_minus_pad_center_net_mm": [
+            -4.978947342231725e-06,
+            0.015253894306616793,
+            -0.15589574813473783
+          ],
+          "object_minus_pad_center_normal_max_change_mm": 4.978947342231671e-06,
+          "pad_center_distance_change_mm": 2.4225793732179923e-06,
+          "pad_center_distance_range_mm": 2.4225793732179923e-06,
+          "mean_actual_center_speed_mmps": 0.0007507633487744971,
+          "mean_balance_predicted_speed_mmps": 0.0007296680915396166,
+          "mean_gravity_predicted_speed_mmps": -6.141577970722539e-05,
+          "balance_speed_error_rms_mmps": 8.934192449410472e-05,
+          "gravity_normal_mean_mps2": -5.0445769042755986e-05,
+          "object_contact_normal_force_mean_N": -0.00019307036426348992,
+          "hand_normal_tilt_mean_deg": 0.00029463095417708185,
+          "max_upper_joint_net_rad": 0.0003484313264899784,
+          "pad_velocity_fd_max_error_mps": 2.4648098566227054e-08
+        }
+      ]
+    },
+    {
+      "label": "rms",
+      "hands": [
+        {
+          "hand": "left",
+          "object_TCP_net_mm": [
+            -0.1322054689236185,
+            0.012484557273934396,
+            -0.15423663619586192
+          ],
+          "pad_center_TCP_net_mm": [
+            -0.13220970954175357,
+            5.933257811029481e-12,
+            -2.498001805406602e-13
+          ],
+          "object_minus_pad_center_net_mm": [
+            4.240618135071747e-06,
+            0.012484557268001139,
+            -0.15423663619561212
+          ],
+          "object_minus_pad_center_normal_max_change_mm": 9.489888356341292e-06,
+          "pad_center_distance_change_mm": 1.833597600142678e-06,
+          "pad_center_distance_range_mm": 1.8349108690807192e-06,
+          "mean_actual_center_speed_mmps": -0.13220851530935257,
+          "mean_balance_predicted_speed_mmps": -0.13217688293465799,
+          "mean_gravity_predicted_speed_mmps": -0.13267495291319528,
+          "balance_speed_error_rms_mmps": 8.395906907272925e-05,
+          "gravity_normal_mean_mps2": -0.1089767168034533,
+          "object_contact_normal_force_mean_N": 0.027114681006443632,
+          "hand_normal_tilt_mean_deg": 0.6364968772540532,
+          "max_upper_joint_net_rad": 0.00034536581639714806,
+          "pad_velocity_fd_max_error_mps": 2.3495279527957534e-08
+        },
+        {
+          "hand": "right",
+          "object_TCP_net_mm": [
+            0.1334327333441243,
+            0.01371419265345144,
+            -0.15759332316214736
+          ],
+          "pad_center_TCP_net_mm": [
+            0.13344252369229245,
+            -5.959366750481353e-12,
+            6.938893903907228e-14
+          ],
+          "object_minus_pad_center_net_mm": [
+            -9.790348168129716e-06,
+            0.013714192659410807,
+            -0.15759332316221675
+          ],
+          "object_minus_pad_center_normal_max_change_mm": 1.3217685085817332e-05,
+          "pad_center_distance_change_mm": 1.9405723694632115e-06,
+          "pad_center_distance_range_mm": 1.9407176629626655e-06,
+          "mean_actual_center_speed_mmps": 0.13344206591911095,
+          "mean_balance_predicted_speed_mmps": 0.13340896475585456,
+          "mean_gravity_predicted_speed_mmps": 0.13266837225872424,
+          "balance_speed_error_rms_mmps": 8.488257319184835e-05,
+          "gravity_normal_mean_mps2": 0.10897131157735053,
+          "object_contact_normal_force_mean_N": -0.027435381943591512,
+          "hand_normal_tilt_mean_deg": -0.6364653058192032,
+          "max_upper_joint_net_rad": 0.00034536581639714806,
+          "pad_velocity_fd_max_error_mps": 2.303036122203693e-08
+        }
+      ]
+    },
+    {
+      "label": "baseline_halfdt",
+      "hands": [
+        {
+          "hand": "left",
+          "object_TCP_net_mm": [
+            0.0006078202890447137,
+            0.014927221340739913,
+            -0.1557549609876724
+          ],
+          "pad_center_TCP_net_mm": [
+            0.0006164786121049201,
+            -1.95621819843084e-13,
+            2.636779683484747e-13
+          ],
+          "object_minus_pad_center_net_mm": [
+            -8.658323060206391e-06,
+            0.014927221340935536,
+            -0.15575496098793606
+          ],
+          "object_minus_pad_center_normal_max_change_mm": 8.679856788952113e-06,
+          "pad_center_distance_change_mm": 2.3666745924133537e-06,
+          "pad_center_distance_range_mm": 2.3666745924133537e-06,
+          "mean_actual_center_speed_mmps": 0.0006172569240446738,
+          "mean_balance_predicted_speed_mmps": 0.0006435011250900849,
+          "mean_gravity_predicted_speed_mmps": 2.949178396084926e-05,
+          "balance_speed_error_rms_mmps": 9.496280140718668e-05,
+          "gravity_normal_mean_mps2": 2.4223997960133844e-05,
+          "object_contact_normal_force_mean_N": -0.00016569842818363472,
+          "hand_normal_tilt_mean_deg": -0.0001414814318071699,
+          "max_upper_joint_net_rad": 0.0003800265262708913,
+          "pad_velocity_fd_max_error_mps": 1.4078370440864232e-08
+        },
+        {
+          "hand": "right",
+          "object_TCP_net_mm": [
+            0.0007893497386279869,
+            0.01525068984459731,
+            -0.15604747924383155
+          ],
+          "pad_center_TCP_net_mm": [
+            0.000787171602420036,
+            -1.3022712334228875e-13,
+            1.5265566588595902e-13
+          ],
+          "object_minus_pad_center_net_mm": [
+            2.178136207950875e-06,
+            0.015250689844727537,
+            -0.1560474792439842
+          ],
+          "object_minus_pad_center_normal_max_change_mm": 3.7696056244068904e-06,
+          "pad_center_distance_change_mm": 2.4003571144626257e-06,
+          "pad_center_distance_range_mm": 2.4003571144626257e-06,
+          "mean_actual_center_speed_mmps": 0.000786828813413421,
+          "mean_balance_predicted_speed_mmps": 0.0007597214629204124,
+          "mean_gravity_predicted_speed_mmps": -5.331255965135603e-05,
+          "balance_speed_error_rms_mmps": 9.537902042236968e-05,
+          "gravity_normal_mean_mps2": -4.3789936138090884e-05,
+          "object_contact_normal_force_mean_N": -0.00020044136183413708,
+          "hand_normal_tilt_mean_deg": 0.00025575724015106707,
+          "max_upper_joint_net_rad": 0.0003800265262708913,
+          "pad_velocity_fd_max_error_mps": 1.362316781891721e-08
+        }
+      ]
+    },
+    {
+      "label": "rms_halfdt",
+      "hands": [
+        {
+          "hand": "left",
+          "object_TCP_net_mm": [
+            -0.13220867193380892,
+            0.012483403049248777,
+            -0.1541526028208673
+          ],
+          "pad_center_TCP_net_mm": [
+            -0.13220602490445996,
+            6.068367788005468e-12,
+            5.551115123125783e-14
+          ],
+          "object_minus_pad_center_net_mm": [
+            -2.6470293489674196e-06,
+            0.01248340304318041,
+            -0.1541526028209228
+          ],
+          "object_minus_pad_center_normal_max_change_mm": 2.6470293489622154e-06,
+          "pad_center_distance_change_mm": 1.741636827812254e-06,
+          "pad_center_distance_range_mm": 1.7425204126841898e-06,
+          "mean_actual_center_speed_mmps": -0.1322053786446564,
+          "mean_balance_predicted_speed_mmps": -0.13217404984796174,
+          "mean_gravity_predicted_speed_mmps": -0.13268166348016186,
+          "balance_speed_error_rms_mmps": 8.815614231168391e-05,
+          "gravity_normal_mean_mps2": -0.10898222873724225,
+          "object_contact_normal_force_mean_N": 0.027113577639938522,
+          "hand_normal_tilt_mean_deg": 0.6365290719602829,
+          "max_upper_joint_net_rad": 0.00036497103966031536,
+          "pad_velocity_fd_max_error_mps": 1.2705337085043046e-08
+        },
+        {
+          "hand": "right",
+          "object_TCP_net_mm": [
+            0.1334439425254852,
+            0.013731896699642539,
+            -0.15768764084511666
+          ],
+          "pad_center_TCP_net_mm": [
+            0.1334467171806154,
+            -6.159941726179962e-12,
+            -2.3592239273284576e-13
+          ],
+          "object_minus_pad_center_net_mm": [
+            -2.7746551302214317e-06,
+            0.013731896705802481,
+            -0.15768764084488074
+          ],
+          "object_minus_pad_center_normal_max_change_mm": 5.838777681843599e-06,
+          "pad_center_distance_change_mm": 1.8474598517670415e-06,
+          "pad_center_distance_range_mm": 1.8474860877248922e-06,
+          "mean_actual_center_speed_mmps": 0.1334464294811316,
+          "mean_balance_predicted_speed_mmps": 0.13341439118780904,
+          "mean_gravity_predicted_speed_mmps": 0.1326749631718833,
+          "balance_speed_error_rms_mmps": 8.863162699174018e-05,
+          "gravity_normal_mean_mps2": 0.10897672522974713,
+          "object_contact_normal_force_mean_N": -0.027436432591577478,
+          "hand_normal_tilt_mean_deg": -0.6364969264723458,
+          "max_upper_joint_net_rad": 0.00036497103966031536,
+          "pad_velocity_fd_max_error_mps": 1.259059560486408e-08
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\moment\\history.json": "eedecf91bcf45ecaaed2b9c1fc3ba9753954a773fd75dfc389f5cc0f619d54ee",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\rms\\history.json": "a7434b1610f8743bb1c71828217cde72f5f744e8f2a54bcd6f7921afa9b9f88a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\moment\\plan.json": "676e0288a40423a0bd3926b19b39ff8c318647a5a0c0be84880a0023240a9db4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\rms\\plan.json": "8a88843b2dc9b958b9e2fc6f336d769516107c799b48fe809a5224b46a38d7a3",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\trace.npz": "fb34c9f32e520632a44265a7b83247aab7aa6cd4b0f210e39b96fe45618cd4b2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\grasp_trace.npz": "94a51d60926e30ff9d33d490a61ce620cf676fde40bf9c86285d768daf7c7682",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\trace.npz": "1a033a997aba3ec7d33cc3adc325b49ef4c6bd5dc07e7d8d4f3b5afa454eaf94",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\grasp_trace.npz": "ba7e513e5871b411dcea209e74887fc1f0a0ecf2a0a33e382f0d33234e282a15",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\trace.npz": "75e545a7ff6e9217a8886e2f02414351406b19d051ca6e19d7998523b927811e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\grasp_trace.npz": "b8b3b49bfad9e5727be0b2a94134bdecbc707a34921e629f0ecfbdb92114613a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\trace.npz": "0ecdaa2130ee233a3a632c73d7bdb940e99aaf6b2fc4df6730d0e91d2f5c3150",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\grasp_trace.npz": "f24152f68eb748eb3c12f8f74a0cb74bf6d5cfe7471504991dab3c56a1a3e84d"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "waist_arm": {
+    "torso_peak_joint_motion_deg": 0.7746436321137457,
+    "arm_peak_joint_motion_deg": 0.5368566303280832,
+    "accel_rms_mps2": 0.942068790099332,
+    "accel_peak_mps2": 1.1069628626835673,
+    "maximum_forward_after_trigger_m": 0.09101514629820384,
+    "peak_pad_tangent_utilization": [
+      0.05145323015828209,
+      0.020043381669755063
+    ],
+    "predicted_reference_accel_rms_mps2": 0.9408431302355921
+  },
+  "arm_only": {
+    "torso_peak_joint_motion_deg": 0.002301893598476846,
+    "arm_peak_joint_motion_deg": 2.6893536946438354,
+    "accel_rms_mps2": 0.9425819801306597,
+    "accel_peak_mps2": 1.1131923194387483,
+    "maximum_forward_after_trigger_m": 0.09098411323090638,
+    "peak_pad_tangent_utilization": [
+      0.05190410491269812,
+      0.01953636659246371
+    ],
+    "predicted_reference_accel_rms_mps2": 0.9408431302355921
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "evidence_audit_passed": true,
+  "current_scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\trigger_scene.xml",
+  "current_equality": [
+    {
+      "name": "right_finger",
+      "joint1": "gripper_finger_r1",
+      "joint2": "gripper_finger_r2",
+      "polycoef": "0 -1 0 0 0"
+    },
+    {
+      "name": "left_finger",
+      "joint1": "gripper_finger_l1",
+      "joint2": "gripper_finger_l2",
+      "polycoef": "0 -1 0 0 0"
+    }
+  ],
+  "current_obstacle": {
+    "attributes": {
+      "name": "qualification_obstacle",
+      "type": "box",
+      "pos": "1.3427049005359823 0 .9",
+      "size": ".04 1 .9",
+      "contype": "1",
+      "conaffinity": "1",
+      "rgba": ".78 .38 .18 .65",
+      "group": "2"
+    },
+    "center_m": [
+      1.3427049005359823,
+      0.0,
+      0.9
+    ],
+    "halfsize_m": [
+      0.04,
+      1.0,
+      0.9
+    ],
+    "front_x_m": 1.3027049005359823,
+    "z_range_m": [
+      0.0,
+      1.8
+    ]
+  },
+  "legacy_scenes": [
+    {
+      "name": "low",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\low\\scene.xml",
+      "obstacle": {
+        "attributes": {
+          "name": "qualification_obstacle",
+          "type": "box",
+          "pos": "1.1283520397018825 0 0.15",
+          "size": "0.04 0.7 0.15",
+          "contype": "1",
+          "conaffinity": "1",
+          "rgba": ".78 .38 .18 .58",
+          "group": "2"
+        },
+        "center_m": [
+          1.1283520397018825,
+          0.0,
+          0.15
+        ],
+        "halfsize_m": [
+          0.04,
+          0.7,
+          0.15
+        ],
+        "front_x_m": 1.0883520397018824,
+        "z_range_m": [
+          0.0,
+          0.3
+        ]
+      },
+      "equality_joint_count": 0,
+      "robot_XML_identical_after_removing_obstacle_and_equality": true,
+      "current_dynamic_qualification": false,
+      "reason": "Legacy equality/model state and runtime initial-condition histories are not current qualification."
+    },
+    {
+      "name": "upper_bar",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\upper_bar\\scene.xml",
+      "obstacle": {
+        "attributes": {
+          "name": "qualification_obstacle",
+          "type": "box",
+          "pos": "1.2227186463491253 0 0.87",
+          "size": "0.04 0.7 0.15000000000000002",
+          "contype": "1",
+          "conaffinity": "1",
+          "rgba": ".78 .38 .18 .58",
+          "group": "2"
+        },
+        "center_m": [
+          1.2227186463491253,
+          0.0,
+          0.87
+        ],
+        "halfsize_m": [
+          0.04,
+          0.7,
+          0.15000000000000002
+        ],
+        "front_x_m": 1.1827186463491253,
+        "z_range_m": [
+          0.72,
+          1.02
+        ]
+      },
+      "equality_joint_count": 0,
+      "robot_XML_identical_after_removing_obstacle_and_equality": true,
+      "current_dynamic_qualification": false,
+      "reason": "Legacy equality/model state and runtime initial-condition histories are not current qualification."
+    },
+    {
+      "name": "right_column",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\right_column\\scene.xml",
+      "obstacle": {
+        "attributes": {
+          "name": "qualification_obstacle",
+          "type": "box",
+          "pos": "1.1604350366106104 -0.24006228881101246 .9",
+          "size": ".04 .04 .9",
+          "contype": "1",
+          "conaffinity": "1",
+          "rgba": ".78 .38 .18 .65",
+          "group": "2"
+        },
+        "center_m": [
+          1.1604350366106104,
+          -0.24006228881101246,
+          0.9
+        ],
+        "halfsize_m": [
+          0.04,
+          0.04,
+          0.9
+        ],
+        "front_x_m": 1.1204350366106104,
+        "z_range_m": [
+          0.0,
+          1.8
+        ]
+      },
+      "equality_joint_count": 0,
+      "robot_XML_identical_after_removing_obstacle_and_equality": true,
+      "current_dynamic_qualification": false,
+      "reason": "Legacy equality/model state and runtime initial-condition histories are not current qualification."
+    },
+    {
+      "name": "left_column",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\left_column\\scene.xml",
+      "obstacle": {
+        "attributes": {
+          "name": "qualification_obstacle",
+          "type": "box",
+          "pos": "1.1604350366106104 0.2399466651976647 .9",
+          "size": ".04 .04 .9",
+          "contype": "1",
+          "conaffinity": "1",
+          "rgba": ".78 .38 .18 .65",
+          "group": "2"
+        },
+        "center_m": [
+          1.1604350366106104,
+          0.2399466651976647,
+          0.9
+        ],
+        "halfsize_m": [
+          0.04,
+          0.04,
+          0.9
+        ],
+        "front_x_m": 1.1204350366106104,
+        "z_range_m": [
+          0.0,
+          1.8
+        ]
+      },
+      "equality_joint_count": 0,
+      "robot_XML_identical_after_removing_obstacle_and_equality": true,
+      "current_dynamic_qualification": false,
+      "reason": "Legacy equality/model state and runtime initial-condition histories are not current qualification."
+    },
+    {
+      "name": "center_column",
+      "source": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\center_column\\scene.xml",
+      "obstacle": {
+        "attributes": {
+          "name": "qualification_obstacle",
+          "type": "box",
+          "pos": "1.1604350366106104 -5.78118066738853e-05 .9",
+          "size": ".04 .04 .9",
+          "contype": "1",
+          "conaffinity": "1",
+          "rgba": ".78 .38 .18 .65",
+          "group": "2"
+        },
+        "center_m": [
+          1.1604350366106104,
+          -5.78118066738853e-05,
+          0.9
+        ],
+        "halfsize_m": [
+          0.04,
+          0.04,
+          0.9
+        ],
+        "front_x_m": 1.1204350366106104,
+        "z_range_m": [
+          0.0,
+          1.8
+        ]
+      },
+      "equality_joint_count": 0,
+      "robot_XML_identical_after_removing_obstacle_and_equality": true,
+      "current_dynamic_qualification": false,
+      "reason": "Legacy equality/model state and runtime initial-condition histories are not current qualification."
+    }
+  ],
+  "all_legacy_robot_XML_identical_except_obstacle_and_equality": true,
+  "scene_coordinates_transformed": false,
+  "new_scene_created": false,
+  "new_model_compilations": 0,
+  "new_physics_steps": 0,
+  "new_IK": 0,
+  "new_QP": 0,
+  "accepted_layouts_for_new_execution": false,
+  "implications": [
+    "Reuse obstacle attributes and current robot model in any future approved comparison; do not reuse whole old robot scenes as current qualification.",
+    "A common trigger-frame placement must be specified before candidate evaluation; no candidate-dependent shifts or new run budget is authorized by this XML check.",
+    "Static XML equivalence excludes initialization, timestep overrides, controller state and solver history; it is not dynamic equivalence or a pass verdict."
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\contract.json": "7e8ef2eb3f62490799d7c6f4e1df42985106a5178e3c43d07b18905fbe348c4c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\trigger_scene.xml": "a86db77e7f66d8f1f8ca93847507387dd9efac3434d81fbb2b0a09b455acaeb2",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.s3-mainline-consolidation\\check_layout_reuse.py": "b8615ed87e6d578d2f43b25648481c3a9e0e9ac12a56b9e1953c82de746bfc70",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\low\\scene.xml": "a71033157488f40cab899b15a313af5c43af070448366a860242a9072648c48b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\upper_bar\\scene.xml": "302e273226eb4520bf6e5a6e57e0fbfe4aa882341ba5e72b2cdc847d9f627f84",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\right_column\\scene.xml": "d8b42f8057ed8777289d7cef4d5c22a4a6338b241cf025d7045a43144eddb3bb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\left_column\\scene.xml": "396af6d480f07b3461d55357ce714806da78c9ebeb06eb7f86b0d520ebcdeebd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\center_column\\scene.xml": "671cf7a38c4b96ff2b161051ebd7cb7eae8ca760e6847ce99aad32dae7f095e4"
+  }
+}

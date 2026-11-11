@@ -1,0 +1,2130 @@
+{
+  "model": "One-dimensional box and slider with prescribed motion. Predictive selection uses nominal bumper; replay also varies bumper stiffness and damping together. No robot-contact or continuous replanning model.",
+  "base_peak_decel_mps2": 2.0,
+  "base_stop_s": 0.4666666666666667,
+  "robot_simulation_steps": 0,
+  "speed_mps": 0.6,
+  "jerk_mps3": 12.0,
+  "axial_clearance_floor_m": 0.01,
+  "conditions_gap_m_deadline_s": {
+    "short": [
+      0.16,
+      0.5
+    ],
+    "long": [
+      0.19,
+      0.65
+    ]
+  },
+  "states": {
+    "center_rest": {
+      "initial_slider_x_v": [
+        0.0,
+        0.0
+      ],
+      "comparisons": {
+        "short": {
+          "eligible": [
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.75,
+              "axial_gap_m": 0.013392857142857179,
+              "box_stop_s": 0.48869047619047623,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.999063389952546,
+                  "peak_com_shift_mm": 12.899719016985763,
+                  "peak_required_longitudinal_force_N": 4.9954883395200165,
+                  "peak_required_pitch_moment_Nm": 0.06327312177831518,
+                  "first_wall_contact_s": 0.29125,
+                  "peak_wall_force_N": 4.370177760924681,
+                  "peak_relative_speed_after_box_stop_mps": 0.03790912150942601,
+                  "longitudinal_impulse_error_Ns": 0.00012237928782582452
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.40141059363226,
+                  "peak_com_shift_mm": 12.720423178089677,
+                  "peak_required_longitudinal_force_N": 5.717622444891138,
+                  "peak_required_pitch_moment_Nm": 0.06239367568852987,
+                  "first_wall_contact_s": 0.29125,
+                  "peak_wall_force_N": 5.090176371105707,
+                  "peak_relative_speed_after_box_stop_mps": 0.01608495823039449,
+                  "longitudinal_impulse_error_Ns": 0.00017196133249264278
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.03365349913844,
+                  "peak_com_shift_mm": 12.61009604974153,
+                  "peak_required_longitudinal_force_N": 6.336730641448686,
+                  "peak_required_pitch_moment_Nm": 0.06185252112398221,
+                  "first_wall_contact_s": 0.29125,
+                  "peak_wall_force_N": 5.707384389509006,
+                  "peak_relative_speed_after_box_stop_mps": 0.0005131383341012267,
+                  "longitudinal_impulse_error_Ns": 0.00022341079777193906
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.75,
+              "axial_gap_m": 0.013392857142857179,
+              "box_stop_s": 0.48869047619047623,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.999063389952546,
+                  "peak_com_shift_mm": 12.899719016985763,
+                  "peak_required_longitudinal_force_N": 4.9954883395200165,
+                  "peak_required_pitch_moment_Nm": 0.06327312177831518,
+                  "first_wall_contact_s": 0.29125,
+                  "peak_wall_force_N": 4.370177760924681,
+                  "peak_relative_speed_after_box_stop_mps": 0.03790912150942601,
+                  "longitudinal_impulse_error_Ns": 0.00012237928782582452
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.40141059363226,
+                  "peak_com_shift_mm": 12.720423178089677,
+                  "peak_required_longitudinal_force_N": 5.717622444891138,
+                  "peak_required_pitch_moment_Nm": 0.06239367568852987,
+                  "first_wall_contact_s": 0.29125,
+                  "peak_wall_force_N": 5.090176371105707,
+                  "peak_relative_speed_after_box_stop_mps": 0.01608495823039449,
+                  "longitudinal_impulse_error_Ns": 0.00017196133249264278
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.03365349913844,
+                  "peak_com_shift_mm": 12.61009604974153,
+                  "peak_required_longitudinal_force_N": 6.336730641448686,
+                  "peak_required_pitch_moment_Nm": 0.06185252112398221,
+                  "first_wall_contact_s": 0.29125,
+                  "peak_wall_force_N": 5.707384389509006,
+                  "peak_relative_speed_after_box_stop_mps": 0.0005131383341012267,
+                  "longitudinal_impulse_error_Ns": 0.00022341079777193906
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {}
+        },
+        "long": {
+          "eligible": [
+            1.25,
+            1.375,
+            1.5,
+            1.625,
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.50995413075619,
+                  "peak_com_shift_mm": 12.752986239226859,
+                  "peak_required_longitudinal_force_N": 4.106896707979843,
+                  "peak_required_pitch_moment_Nm": 0.06255339750340774,
+                  "first_wall_contact_s": 0.31475000000000003,
+                  "peak_wall_force_N": 3.6590078755819277,
+                  "peak_relative_speed_after_box_stop_mps": 0.05695831275570826,
+                  "longitudinal_impulse_error_Ns": 8.248735421639841e-05
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.01215382297702,
+                  "peak_com_shift_mm": 12.603646146893105,
+                  "peak_required_longitudinal_force_N": 4.716661746273243,
+                  "peak_required_pitch_moment_Nm": 0.06182088435051068,
+                  "first_wall_contact_s": 0.31475000000000003,
+                  "peak_wall_force_N": 4.267054709810159,
+                  "peak_relative_speed_after_box_stop_mps": 0.0730904342942338,
+                  "longitudinal_impulse_error_Ns": 0.00010984368893390828
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.70507369470853,
+                  "peak_com_shift_mm": 12.511522108412558,
+                  "peak_required_longitudinal_force_N": 5.239284661101745,
+                  "peak_required_pitch_moment_Nm": 0.061369015941763604,
+                  "first_wall_contact_s": 0.31475000000000003,
+                  "peak_wall_force_N": 4.788077109158238,
+                  "peak_relative_speed_after_box_stop_mps": 0.0847074986261297,
+                  "longitudinal_impulse_error_Ns": 0.00023974051645425654
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.50995413075619,
+                  "peak_com_shift_mm": 12.752986239226859,
+                  "peak_required_longitudinal_force_N": 4.106896707979843,
+                  "peak_required_pitch_moment_Nm": 0.06255339750340774,
+                  "first_wall_contact_s": 0.31475000000000003,
+                  "peak_wall_force_N": 3.6590078755819277,
+                  "peak_relative_speed_after_box_stop_mps": 0.05695831275570826,
+                  "longitudinal_impulse_error_Ns": 8.248735421639841e-05
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.01215382297702,
+                  "peak_com_shift_mm": 12.603646146893105,
+                  "peak_required_longitudinal_force_N": 4.716661746273243,
+                  "peak_required_pitch_moment_Nm": 0.06182088435051068,
+                  "first_wall_contact_s": 0.31475000000000003,
+                  "peak_wall_force_N": 4.267054709810159,
+                  "peak_relative_speed_after_box_stop_mps": 0.0730904342942338,
+                  "longitudinal_impulse_error_Ns": 0.00010984368893390828
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.70507369470853,
+                  "peak_com_shift_mm": 12.511522108412558,
+                  "peak_required_longitudinal_force_N": 5.239284661101745,
+                  "peak_required_pitch_moment_Nm": 0.061369015941763604,
+                  "first_wall_contact_s": 0.31475000000000003,
+                  "peak_wall_force_N": 4.788077109158238,
+                  "peak_relative_speed_after_box_stop_mps": 0.0847074986261297,
+                  "longitudinal_impulse_error_Ns": 0.00023974051645425654
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {}
+        }
+      },
+      "evaluated": {
+        "1.25": {
+          "box_travel_m": 0.17525,
+          "box_stop_s": 0.5841666666666666,
+          "frozen": {
+            "peak_internal_travel_mm": 0.0,
+            "peak_com_shift_mm": 0.0,
+            "peak_required_longitudinal_force_N": 0.625,
+            "peak_required_pitch_moment_Nm": 0.0,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.001922060854504,
+            "peak_com_shift_mm": 12.600576618256351,
+            "peak_required_longitudinal_force_N": 4.696037865938045,
+            "peak_required_pitch_moment_Nm": 0.061805828312547405,
+            "first_wall_contact_s": 0.315,
+            "peak_wall_force_N": 4.245466316861611,
+            "peak_relative_speed_after_box_stop_mps": 0.0737422610001313,
+            "longitudinal_impulse_error_Ns": 0.0003522984120761241
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.01215382297702,
+            "peak_com_shift_mm": 12.603646146893105,
+            "peak_required_longitudinal_force_N": 4.716661746273243,
+            "peak_required_pitch_moment_Nm": 0.06182088435051068,
+            "first_wall_contact_s": 0.31475000000000003,
+            "peak_wall_force_N": 4.267054709810159,
+            "peak_relative_speed_after_box_stop_mps": 0.0730904342942338,
+            "longitudinal_impulse_error_Ns": 0.00010984368893390828
+          }
+        },
+        "1.375": {
+          "box_travel_m": 0.1652840909090909,
+          "box_stop_s": 0.5509469696969697,
+          "frozen": {
+            "peak_internal_travel_mm": 0.0,
+            "peak_com_shift_mm": 0.0,
+            "peak_required_longitudinal_force_N": 0.6875,
+            "peak_required_pitch_moment_Nm": 0.0,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.81818181843596e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.10862777420173,
+            "peak_com_shift_mm": 12.632588332260518,
+            "peak_required_longitudinal_force_N": 4.966298825504509,
+            "peak_required_pitch_moment_Nm": 0.06196284576973784,
+            "first_wall_contact_s": 0.307,
+            "peak_wall_force_N": 4.471332994652347,
+            "peak_relative_speed_after_box_stop_mps": 0.04994110399089567,
+            "longitudinal_impulse_error_Ns": 0.0002535589673330896
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.119486694861095,
+            "peak_com_shift_mm": 12.635846008458328,
+            "peak_required_longitudinal_force_N": 4.98804795238031,
+            "peak_required_pitch_moment_Nm": 0.0619788246714881,
+            "first_wall_contact_s": 0.30675,
+            "peak_wall_force_N": 4.494095563489133,
+            "peak_relative_speed_after_box_stop_mps": 0.049208761707320636,
+            "longitudinal_impulse_error_Ns": 0.00013168153428311236
+          }
+        },
+        "1.5": {
+          "box_travel_m": 0.15749999999999997,
+          "box_stop_s": 0.5249999999999999,
+          "frozen": {
+            "peak_internal_travel_mm": 0.0,
+            "peak_com_shift_mm": 0.0,
+            "peak_required_longitudinal_force_N": 0.7499999999999999,
+            "peak_required_pitch_moment_Nm": 0.0,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.22919831009651,
+            "peak_com_shift_mm": 12.66875949302895,
+            "peak_required_longitudinal_force_N": 5.263803078232792,
+            "peak_required_pitch_moment_Nm": 0.06214026531330701,
+            "first_wall_contact_s": 0.3005,
+            "peak_wall_force_N": 4.7256410407433584,
+            "peak_relative_speed_after_box_stop_mps": 0.025625625386756237,
+            "longitudinal_impulse_error_Ns": 0.0003161103969619439
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.21830463291068,
+            "peak_com_shift_mm": 12.665491389873203,
+            "peak_required_longitudinal_force_N": 5.24219476850703,
+            "peak_required_pitch_moment_Nm": 0.06212423526732807,
+            "first_wall_contact_s": 0.3005,
+            "peak_wall_force_N": 4.703448034540527,
+            "peak_relative_speed_after_box_stop_mps": 0.026416000550448626,
+            "longitudinal_impulse_error_Ns": 0.0001524287298440563
+          }
+        },
+        "1.625": {
+          "box_travel_m": 0.15139423076923078,
+          "box_stop_s": 0.5046474358974359,
+          "frozen": {
+            "peak_internal_travel_mm": 0.0,
+            "peak_com_shift_mm": 0.0,
+            "peak_required_longitudinal_force_N": 0.8125,
+            "peak_required_pitch_moment_Nm": 0.0,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.3461538456160937e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.30527098104357,
+            "peak_com_shift_mm": 12.691581294313071,
+            "peak_required_longitudinal_force_N": 5.471181438942092,
+            "peak_required_pitch_moment_Nm": 0.06225220624860562,
+            "first_wall_contact_s": 0.2955,
+            "peak_wall_force_N": 4.88756997198425,
+            "peak_relative_speed_after_box_stop_mps": 0.005103347356778223,
+            "longitudinal_impulse_error_Ns": 0.00032333878719165154
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.317363540090476,
+            "peak_com_shift_mm": 12.695209062027143,
+            "peak_required_longitudinal_force_N": 5.495144346844574,
+            "peak_required_pitch_moment_Nm": 0.062270000449243135,
+            "first_wall_contact_s": 0.29525,
+            "peak_wall_force_N": 4.912450336883705,
+            "peak_relative_speed_after_box_stop_mps": 0.004257959370415279,
+            "longitudinal_impulse_error_Ns": 0.0001672159947045948
+          }
+        },
+        "1.75": {
+          "box_travel_m": 0.14660714285714282,
+          "box_stop_s": 0.48869047619047623,
+          "frozen": {
+            "peak_internal_travel_mm": 0.0,
+            "peak_com_shift_mm": 0.0,
+            "peak_required_longitudinal_force_N": 0.875,
+            "peak_required_pitch_moment_Nm": 0.0,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.4285714289297147e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.40501757832966,
+            "peak_com_shift_mm": 12.7215052734989,
+            "peak_required_longitudinal_force_N": 5.725759528741242,
+            "peak_required_pitch_moment_Nm": 0.062398983366512104,
+            "first_wall_contact_s": 0.2915,
+            "peak_wall_force_N": 5.098291569866931,
+            "peak_relative_speed_after_box_stop_mps": 0.01637628876800865,
+            "longitudinal_impulse_error_Ns": 0.00035411798332563027
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.40141059363226,
+            "peak_com_shift_mm": 12.720423178089677,
+            "peak_required_longitudinal_force_N": 5.717622444891138,
+            "peak_required_pitch_moment_Nm": 0.06239367568852987,
+            "first_wall_contact_s": 0.29125,
+            "peak_wall_force_N": 5.090176371105707,
+            "peak_relative_speed_after_box_stop_mps": 0.01608495823039449,
+            "longitudinal_impulse_error_Ns": 0.00017196133249264278
+          }
+        },
+        "1.875": {
+          "box_travel_m": 0.14287499999999997,
+          "box_stop_s": 0.47625,
+          "frozen": {
+            "peak_internal_travel_mm": 0.0,
+            "peak_com_shift_mm": 0.0,
+            "peak_required_longitudinal_force_N": 0.9375,
+            "peak_required_pitch_moment_Nm": 0.0,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.469045765805234,
+            "peak_com_shift_mm": 12.74071372974157,
+            "peak_required_longitudinal_force_N": 5.902690256483475,
+            "peak_required_pitch_moment_Nm": 0.0624932008443824,
+            "first_wall_contact_s": 0.28800000000000003,
+            "peak_wall_force_N": 5.23208625126838,
+            "peak_relative_speed_after_box_stop_mps": 0.034405033269230396,
+            "longitudinal_impulse_error_Ns": 0.00034242330503592155
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.48067934870287,
+            "peak_com_shift_mm": 12.744203804610862,
+            "peak_required_longitudinal_force_N": 5.929401592459855,
+            "peak_required_pitch_moment_Nm": 0.06251031966161628,
+            "first_wall_contact_s": 0.28775,
+            "peak_wall_force_N": 5.257872271383903,
+            "peak_relative_speed_after_box_stop_mps": 0.035283571535695724,
+            "longitudinal_impulse_error_Ns": 0.00017613590935477985
+          }
+        },
+        "2.0": {
+          "box_travel_m": 0.14,
+          "box_stop_s": 0.4666666666666667,
+          "frozen": {
+            "peak_internal_travel_mm": 0.0,
+            "peak_com_shift_mm": 0.0,
+            "peak_required_longitudinal_force_N": 1.0,
+            "peak_required_pitch_moment_Nm": 0.0,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 0.0
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.55715882217724,
+            "peak_com_shift_mm": 12.767147646653171,
+            "peak_required_longitudinal_force_N": 6.135617022305511,
+            "peak_required_pitch_moment_Nm": 0.06262285920683382,
+            "first_wall_contact_s": 0.28550000000000003,
+            "peak_wall_force_N": 5.419127939015524,
+            "peak_relative_speed_after_box_stop_mps": 0.053307702373701554,
+            "longitudinal_impulse_error_Ns": 0.0003599079421056084
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.55401922456008,
+            "peak_com_shift_mm": 12.766205767368023,
+            "peak_required_longitudinal_force_N": 6.127429246875865,
+            "peak_required_pitch_moment_Nm": 0.06261823928894016,
+            "first_wall_contact_s": 0.28525,
+            "peak_wall_force_N": 5.4122446270914395,
+            "peak_relative_speed_after_box_stop_mps": 0.05303413695345399,
+            "longitudinal_impulse_error_Ns": 0.00017959483699653278
+          }
+        }
+      }
+    },
+    "rear_forward": {
+      "initial_slider_x_v": [
+        -0.02,
+        0.2
+      ],
+      "comparisons": {
+        "short": {
+          "eligible": [
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.75,
+              "axial_gap_m": 0.013392857142857179,
+              "box_stop_s": 0.48869047619047623,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 43.499402352255956,
+                  "peak_com_shift_mm": 13.049820705676787,
+                  "peak_required_longitudinal_force_N": 5.728863013594803,
+                  "peak_required_pitch_moment_Nm": 0.06400937056134463,
+                  "first_wall_contact_s": 0.223,
+                  "peak_wall_force_N": 5.101253540431647,
+                  "peak_relative_speed_after_box_stop_mps": 0.04136216290240936,
+                  "longitudinal_impulse_error_Ns": 0.0001292010253167719
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.80378390198496,
+                  "peak_com_shift_mm": 12.841135170595487,
+                  "peak_required_longitudinal_force_N": 6.575939378599906,
+                  "peak_required_pitch_moment_Nm": 0.06298576801177086,
+                  "first_wall_contact_s": 0.223,
+                  "peak_wall_force_N": 5.945836696947656,
+                  "peak_relative_speed_after_box_stop_mps": 0.06405722875270849,
+                  "longitudinal_impulse_error_Ns": 0.00022862551032176714
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.374730762633924,
+                  "peak_com_shift_mm": 12.712419228790175,
+                  "peak_required_longitudinal_force_N": 7.300428254846095,
+                  "peak_required_pitch_moment_Nm": 0.06235441631721582,
+                  "first_wall_contact_s": 0.223,
+                  "peak_wall_force_N": 6.668013967958676,
+                  "peak_relative_speed_after_box_stop_mps": 0.08042092951414705,
+                  "longitudinal_impulse_error_Ns": 0.0002115202883301026
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.75,
+              "axial_gap_m": 0.013392857142857179,
+              "box_stop_s": 0.48869047619047623,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 43.499402352255956,
+                  "peak_com_shift_mm": 13.049820705676787,
+                  "peak_required_longitudinal_force_N": 5.728863013594803,
+                  "peak_required_pitch_moment_Nm": 0.06400937056134463,
+                  "first_wall_contact_s": 0.223,
+                  "peak_wall_force_N": 5.101253540431647,
+                  "peak_relative_speed_after_box_stop_mps": 0.04136216290240936,
+                  "longitudinal_impulse_error_Ns": 0.0001292010253167719
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.80378390198496,
+                  "peak_com_shift_mm": 12.841135170595487,
+                  "peak_required_longitudinal_force_N": 6.575939378599906,
+                  "peak_required_pitch_moment_Nm": 0.06298576801177086,
+                  "first_wall_contact_s": 0.223,
+                  "peak_wall_force_N": 5.945836696947656,
+                  "peak_relative_speed_after_box_stop_mps": 0.06405722875270849,
+                  "longitudinal_impulse_error_Ns": 0.00022862551032176714
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.374730762633924,
+                  "peak_com_shift_mm": 12.712419228790175,
+                  "peak_required_longitudinal_force_N": 7.300428254846095,
+                  "peak_required_pitch_moment_Nm": 0.06235441631721582,
+                  "first_wall_contact_s": 0.223,
+                  "peak_wall_force_N": 6.668013967958676,
+                  "peak_relative_speed_after_box_stop_mps": 0.08042092951414705,
+                  "longitudinal_impulse_error_Ns": 0.0002115202883301026
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {}
+        },
+        "long": {
+          "eligible": [
+            1.25,
+            1.375,
+            1.5,
+            1.625,
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 43.11372665770594,
+                  "peak_com_shift_mm": 12.93411799731178,
+                  "peak_required_longitudinal_force_N": 4.992198976409034,
+                  "peak_required_pitch_moment_Nm": 0.06344184877681429,
+                  "first_wall_contact_s": 0.2295,
+                  "peak_wall_force_N": 4.54131164516046,
+                  "peak_relative_speed_after_box_stop_mps": 0.11555339936638401,
+                  "longitudinal_impulse_error_Ns": 0.00016159479851679537
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.49709273022935,
+                  "peak_com_shift_mm": 12.749127819068805,
+                  "peak_required_longitudinal_force_N": 5.751848765051796,
+                  "peak_required_pitch_moment_Nm": 0.06253447195253249,
+                  "first_wall_contact_s": 0.2295,
+                  "peak_wall_force_N": 5.298613360178219,
+                  "peak_relative_speed_after_box_stop_mps": 0.1329835528259641,
+                  "longitudinal_impulse_error_Ns": 0.0002426131395250053
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.115810384873754,
+                  "peak_com_shift_mm": 12.634743115462125,
+                  "peak_required_longitudinal_force_N": 6.4002932861563835,
+                  "peak_required_pitch_moment_Nm": 0.06197341498134173,
+                  "first_wall_contact_s": 0.2295,
+                  "peak_wall_force_N": 5.944910264452066,
+                  "peak_relative_speed_after_box_stop_mps": 0.08371008655887012,
+                  "longitudinal_impulse_error_Ns": 0.0003265626711063119
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 43.11372665770594,
+                  "peak_com_shift_mm": 12.93411799731178,
+                  "peak_required_longitudinal_force_N": 4.992198976409034,
+                  "peak_required_pitch_moment_Nm": 0.06344184877681429,
+                  "first_wall_contact_s": 0.2295,
+                  "peak_wall_force_N": 4.54131164516046,
+                  "peak_relative_speed_after_box_stop_mps": 0.11555339936638401,
+                  "longitudinal_impulse_error_Ns": 0.00016159479851679537
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.49709273022935,
+                  "peak_com_shift_mm": 12.749127819068805,
+                  "peak_required_longitudinal_force_N": 5.751848765051796,
+                  "peak_required_pitch_moment_Nm": 0.06253447195253249,
+                  "first_wall_contact_s": 0.2295,
+                  "peak_wall_force_N": 5.298613360178219,
+                  "peak_relative_speed_after_box_stop_mps": 0.1329835528259641,
+                  "longitudinal_impulse_error_Ns": 0.0002426131395250053
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.115810384873754,
+                  "peak_com_shift_mm": 12.634743115462125,
+                  "peak_required_longitudinal_force_N": 6.4002932861563835,
+                  "peak_required_pitch_moment_Nm": 0.06197341498134173,
+                  "first_wall_contact_s": 0.2295,
+                  "peak_wall_force_N": 5.944910264452066,
+                  "peak_relative_speed_after_box_stop_mps": 0.08371008655887012,
+                  "longitudinal_impulse_error_Ns": 0.0003265626711063119
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {}
+        }
+      },
+      "evaluated": {
+        "1.25": {
+          "box_travel_m": 0.17525,
+          "box_stop_s": 0.5841666666666666,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.625,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.509103533070764,
+            "peak_com_shift_mm": 12.75273105992123,
+            "peak_required_longitudinal_force_N": 5.775452976304353,
+            "peak_required_pitch_moment_Nm": 0.06255214584891364,
+            "first_wall_contact_s": 0.2295,
+            "peak_wall_force_N": 5.323199231186058,
+            "peak_relative_speed_after_box_stop_mps": 0.13217300166959886,
+            "longitudinal_impulse_error_Ns": 0.0002339259958208939
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.49709273022935,
+            "peak_com_shift_mm": 12.749127819068805,
+            "peak_required_longitudinal_force_N": 5.751848765051796,
+            "peak_required_pitch_moment_Nm": 0.06253447195253249,
+            "first_wall_contact_s": 0.2295,
+            "peak_wall_force_N": 5.298613360178219,
+            "peak_relative_speed_after_box_stop_mps": 0.1329835528259641,
+            "longitudinal_impulse_error_Ns": 0.0002426131395250053
+          }
+        },
+        "1.375": {
+          "box_travel_m": 0.1652840909090909,
+          "box_stop_s": 0.5509469696969697,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.6875,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.81818181843596e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.59362303880085,
+            "peak_com_shift_mm": 12.778086911640253,
+            "peak_required_longitudinal_force_N": 6.000008947505877,
+            "peak_required_pitch_moment_Nm": 0.06267651630159544,
+            "first_wall_contact_s": 0.2275,
+            "peak_wall_force_N": 5.502691214394842,
+            "peak_relative_speed_after_box_stop_mps": 0.1133966987649702,
+            "longitudinal_impulse_error_Ns": 0.00027513208999785377
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.58951901636282,
+            "peak_com_shift_mm": 12.776855704908845,
+            "peak_required_longitudinal_force_N": 5.99126012922752,
+            "peak_required_pitch_moment_Nm": 0.06267047723257789,
+            "first_wall_contact_s": 0.22725,
+            "peak_wall_force_N": 5.493965989425898,
+            "peak_relative_speed_after_box_stop_mps": 0.11367899269352412,
+            "longitudinal_impulse_error_Ns": 0.0001297639040416798
+          }
+        },
+        "1.5": {
+          "box_travel_m": 0.15749999999999997,
+          "box_stop_s": 0.5249999999999999,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.7499999999999999,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.68685137322752,
+            "peak_com_shift_mm": 12.806055411968256,
+            "peak_required_longitudinal_force_N": 6.241630504477282,
+            "peak_required_pitch_moment_Nm": 0.0628137017957043,
+            "first_wall_contact_s": 0.2255,
+            "peak_wall_force_N": 5.6988534564530084,
+            "peak_relative_speed_after_box_stop_mps": 0.09454304301698822,
+            "longitudinal_impulse_error_Ns": 0.0003142423636100511
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.674201164836596,
+            "peak_com_shift_mm": 12.802260349450979,
+            "peak_required_longitudinal_force_N": 6.214014744237412,
+            "peak_required_pitch_moment_Nm": 0.06279508701405706,
+            "first_wall_contact_s": 0.2255,
+            "peak_wall_force_N": 5.672689110631898,
+            "peak_relative_speed_after_box_stop_mps": 0.09545691869131091,
+            "longitudinal_impulse_error_Ns": 0.00014931767645198768
+          }
+        },
+        "1.625": {
+          "box_travel_m": 0.15139423076923078,
+          "box_stop_s": 0.5046474358974359,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.8125,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.3461538456160937e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.74739922864707,
+            "peak_com_shift_mm": 12.824219768594121,
+            "peak_required_longitudinal_force_N": 6.411371034116136,
+            "peak_required_pitch_moment_Nm": 0.06290279796495417,
+            "first_wall_contact_s": 0.224,
+            "peak_wall_force_N": 5.826567827762754,
+            "peak_relative_speed_after_box_stop_mps": 0.07872428100253842,
+            "longitudinal_impulse_error_Ns": 0.0003277335116740887
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.73431289956095,
+            "peak_com_shift_mm": 12.820293869868285,
+            "peak_required_longitudinal_force_N": 6.384999566646117,
+            "peak_required_pitch_moment_Nm": 0.06288354143170394,
+            "first_wall_contact_s": 0.224,
+            "peak_wall_force_N": 5.798873730412231,
+            "peak_relative_speed_after_box_stop_mps": 0.07963537458218672,
+            "longitudinal_impulse_error_Ns": 0.0002293821753012737
+          }
+        },
+        "1.75": {
+          "box_travel_m": 0.14660714285714282,
+          "box_stop_s": 0.48869047619047623,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.875,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.4285714289297147e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.81736892773173,
+            "peak_com_shift_mm": 12.845210678319518,
+            "peak_required_longitudinal_force_N": 6.602762771159376,
+            "peak_required_pitch_moment_Nm": 0.06300575837715723,
+            "first_wall_contact_s": 0.223,
+            "peak_wall_force_N": 5.974012123102391,
+            "peak_relative_speed_after_box_stop_mps": 0.06310240181084091,
+            "longitudinal_impulse_error_Ns": 0.00046763754021039716
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.80378390198496,
+            "peak_com_shift_mm": 12.841135170595487,
+            "peak_required_longitudinal_force_N": 6.575939378599906,
+            "peak_required_pitch_moment_Nm": 0.06298576801177086,
+            "first_wall_contact_s": 0.223,
+            "peak_wall_force_N": 5.945836696947656,
+            "peak_relative_speed_after_box_stop_mps": 0.06405722875270849,
+            "longitudinal_impulse_error_Ns": 0.00022862551032176714
+          }
+        },
+        "1.875": {
+          "box_travel_m": 0.14287499999999997,
+          "box_stop_s": 0.47625,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.9375,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.867669489036835,
+            "peak_com_shift_mm": 12.86030084671105,
+            "peak_required_longitudinal_force_N": 6.755268975628216,
+            "peak_required_pitch_moment_Nm": 0.0630797756531177,
+            "first_wall_contact_s": 0.2225,
+            "peak_wall_force_N": 6.08106306363576,
+            "peak_relative_speed_after_box_stop_mps": 0.04977730714809616,
+            "longitudinal_impulse_error_Ns": 0.00046129281773799047
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.86341061238487,
+            "peak_com_shift_mm": 12.85902318371546,
+            "peak_required_longitudinal_force_N": 6.745639403001341,
+            "peak_required_pitch_moment_Nm": 0.06307350871612434,
+            "first_wall_contact_s": 0.22225,
+            "peak_wall_force_N": 6.071459277809074,
+            "peak_relative_speed_after_box_stop_mps": 0.05011719069437069,
+            "longitudinal_impulse_error_Ns": 0.000186081409377703
+          }
+        },
+        "2.0": {
+          "box_travel_m": 0.14,
+          "box_stop_s": 0.4666666666666667,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 1.0,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 0.0
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.92328590957078,
+            "peak_com_shift_mm": 12.876985772871233,
+            "peak_required_longitudinal_force_N": 6.916149228522198,
+            "peak_required_pitch_moment_Nm": 0.0631616152159334,
+            "first_wall_contact_s": 0.222,
+            "peak_wall_force_N": 6.198032235077935,
+            "peak_relative_speed_after_box_stop_mps": 0.03712673254300696,
+            "longitudinal_impulse_error_Ns": 0.00046172855804432755
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.91867527346445,
+            "peak_com_shift_mm": 12.875602582039335,
+            "peak_required_longitudinal_force_N": 6.906235708094347,
+            "peak_required_pitch_moment_Nm": 0.06315483066490293,
+            "first_wall_contact_s": 0.22175,
+            "peak_wall_force_N": 6.188145377840478,
+            "peak_relative_speed_after_box_stop_mps": 0.03747648822170384,
+            "longitudinal_impulse_error_Ns": 0.00022375819899989047
+          }
+        }
+      }
+    },
+    "rear_backward": {
+      "initial_slider_x_v": [
+        -0.02,
+        -0.2
+      ],
+      "comparisons": {
+        "short": {
+          "eligible": [
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.75,
+              "axial_gap_m": 0.013392857142857179,
+              "box_stop_s": 0.48869047619047623,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 43.57754173137945,
+                  "peak_com_shift_mm": 13.073262519413834,
+                  "peak_required_longitudinal_force_N": 5.371245796602123,
+                  "peak_required_pitch_moment_Nm": 0.06412435265772486,
+                  "first_wall_contact_s": 0.1285,
+                  "peak_wall_force_N": 5.224561694657387,
+                  "peak_relative_speed_after_box_stop_mps": 0.27219859893756526,
+                  "longitudinal_impulse_error_Ns": 0.0002462042995926561
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.90242059971163,
+                  "peak_com_shift_mm": 12.87072617991349,
+                  "peak_required_longitudinal_force_N": 6.3373680576315135,
+                  "peak_required_pitch_moment_Nm": 0.06313091191247566,
+                  "first_wall_contact_s": 0.1285,
+                  "peak_wall_force_N": 6.167944207300232,
+                  "peak_relative_speed_after_box_stop_mps": 0.2510298778868196,
+                  "longitudinal_impulse_error_Ns": 0.00026284239697171863
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.46113944898005,
+                  "peak_com_shift_mm": 12.738341834694014,
+                  "peak_required_longitudinal_force_N": 7.110497903974866,
+                  "peak_required_pitch_moment_Nm": 0.062481566699174144,
+                  "first_wall_contact_s": 0.1285,
+                  "peak_wall_force_N": 6.927799658387553,
+                  "peak_relative_speed_after_box_stop_mps": 0.23310908176341738,
+                  "longitudinal_impulse_error_Ns": 0.00022884642787585063
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.875,
+              "axial_gap_m": 0.01712500000000003,
+              "box_stop_s": 0.47625,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 43.591050468837615,
+                  "peak_com_shift_mm": 13.077315140651283,
+                  "peak_required_longitudinal_force_N": 5.370714004012779,
+                  "peak_required_pitch_moment_Nm": 0.06414423076489455,
+                  "first_wall_contact_s": 0.1285,
+                  "peak_wall_force_N": 5.244683298009566,
+                  "peak_relative_speed_after_box_stop_mps": 0.2757132530929161,
+                  "longitudinal_impulse_error_Ns": 0.000247454517790735
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.910987595632456,
+                  "peak_com_shift_mm": 12.873296278689738,
+                  "peak_required_longitudinal_force_N": 6.3351715469517345,
+                  "peak_required_pitch_moment_Nm": 0.06314351824697316,
+                  "first_wall_contact_s": 0.1285,
+                  "peak_wall_force_N": 6.186911405054395,
+                  "peak_relative_speed_after_box_stop_mps": 0.25450955595808866,
+                  "longitudinal_impulse_error_Ns": 8.530020405467242e-05
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.48648449077144,
+                  "peak_com_shift_mm": 12.74594534723143,
+                  "peak_required_longitudinal_force_N": 7.162032518198404,
+                  "peak_required_pitch_moment_Nm": 0.06251886192817017,
+                  "first_wall_contact_s": 0.1285,
+                  "peak_wall_force_N": 7.000528825434223,
+                  "peak_relative_speed_after_box_stop_mps": 0.23842713389946277,
+                  "longitudinal_impulse_error_Ns": 0.00012529962427715313
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {
+            "frozen": {
+              "0.000125": 6.3251999184361445,
+              "6.25e-05": 6.326157004305924
+            },
+            "predicted": {
+              "0.000125": 6.333872520813487,
+              "6.25e-05": 6.334631690642681
+            }
+          }
+        },
+        "long": {
+          "eligible": [
+            1.25,
+            1.375,
+            1.5,
+            1.625,
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 43.407249396821406,
+                  "peak_com_shift_mm": 13.02217481904642,
+                  "peak_required_longitudinal_force_N": 5.324938627899514,
+                  "peak_required_pitch_moment_Nm": 0.0638737674874227,
+                  "first_wall_contact_s": 0.12825,
+                  "peak_wall_force_N": 4.972066148598484,
+                  "peak_relative_speed_after_box_stop_mps": 0.22068006555428724,
+                  "longitudinal_impulse_error_Ns": 0.00022214912768270256
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.73450421289526,
+                  "peak_com_shift_mm": 12.820351263868579,
+                  "peak_required_longitudinal_force_N": 6.178397149522599,
+                  "peak_required_pitch_moment_Nm": 0.06288382294927539,
+                  "first_wall_contact_s": 0.12825,
+                  "peak_wall_force_N": 5.805114387591837,
+                  "peak_relative_speed_after_box_stop_mps": 0.19638291570737434,
+                  "longitudinal_impulse_error_Ns": 0.0001704657033984036
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.3216024638928,
+                  "peak_com_shift_mm": 12.69648073916784,
+                  "peak_required_longitudinal_force_N": 6.911621173902146,
+                  "peak_required_pitch_moment_Nm": 0.062276238025618255,
+                  "first_wall_contact_s": 0.12825,
+                  "peak_wall_force_N": 6.527167976354611,
+                  "peak_relative_speed_after_box_stop_mps": 0.17920851865919876,
+                  "longitudinal_impulse_error_Ns": 0.00023700013449995394
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 43.407249396821406,
+                  "peak_com_shift_mm": 13.02217481904642,
+                  "peak_required_longitudinal_force_N": 5.324938627899514,
+                  "peak_required_pitch_moment_Nm": 0.0638737674874227,
+                  "first_wall_contact_s": 0.12825,
+                  "peak_wall_force_N": 4.972066148598484,
+                  "peak_relative_speed_after_box_stop_mps": 0.22068006555428724,
+                  "longitudinal_impulse_error_Ns": 0.00022214912768270256
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.73450421289526,
+                  "peak_com_shift_mm": 12.820351263868579,
+                  "peak_required_longitudinal_force_N": 6.178397149522599,
+                  "peak_required_pitch_moment_Nm": 0.06288382294927539,
+                  "first_wall_contact_s": 0.12825,
+                  "peak_wall_force_N": 5.805114387591837,
+                  "peak_relative_speed_after_box_stop_mps": 0.19638291570737434,
+                  "longitudinal_impulse_error_Ns": 0.0001704657033984036
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 42.3216024638928,
+                  "peak_com_shift_mm": 12.69648073916784,
+                  "peak_required_longitudinal_force_N": 6.911621173902146,
+                  "peak_required_pitch_moment_Nm": 0.062276238025618255,
+                  "first_wall_contact_s": 0.12825,
+                  "peak_wall_force_N": 6.527167976354611,
+                  "peak_relative_speed_after_box_stop_mps": 0.17920851865919876,
+                  "longitudinal_impulse_error_Ns": 0.00023700013449995394
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {}
+        }
+      },
+      "evaluated": {
+        "1.25": {
+          "box_travel_m": 0.17525,
+          "box_stop_s": 0.5841666666666666,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.625,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.72737057963323,
+            "peak_com_shift_mm": 12.818211173889969,
+            "peak_required_longitudinal_force_N": 6.163833928858895,
+            "peak_required_pitch_moment_Nm": 0.0628733258079303,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 5.790872930805396,
+            "peak_relative_speed_after_box_stop_mps": 0.19566401974480688,
+            "longitudinal_impulse_error_Ns": 0.00016482674500767347
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.73450421289526,
+            "peak_com_shift_mm": 12.820351263868579,
+            "peak_required_longitudinal_force_N": 6.178397149522599,
+            "peak_required_pitch_moment_Nm": 0.06288382294927539,
+            "first_wall_contact_s": 0.12825,
+            "peak_wall_force_N": 5.805114387591837,
+            "peak_relative_speed_after_box_stop_mps": 0.19638291570737434,
+            "longitudinal_impulse_error_Ns": 0.0001704657033984036
+          }
+        },
+        "1.375": {
+          "box_travel_m": 0.1652840909090909,
+          "box_stop_s": 0.5509469696969697,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.6875,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.81818181843596e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.80467833307013,
+            "peak_com_shift_mm": 12.841403499921038,
+            "peak_required_longitudinal_force_N": 6.2495657545814804,
+            "peak_required_pitch_moment_Nm": 0.0629870841671127,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 5.95711849175404,
+            "peak_relative_speed_after_box_stop_mps": 0.2209756002708239,
+            "longitudinal_impulse_error_Ns": 0.00033576168807203377
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.81009863661219,
+            "peak_com_shift_mm": 12.843029590983656,
+            "peak_required_longitudinal_force_N": 6.261010517811548,
+            "peak_required_pitch_moment_Nm": 0.06299506014377484,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 5.9681707437303135,
+            "peak_relative_speed_after_box_stop_mps": 0.2215579167557407,
+            "longitudinal_impulse_error_Ns": 0.00024282379025869494
+          }
+        },
+        "1.5": {
+          "box_travel_m": 0.15749999999999997,
+          "box_stop_s": 0.5249999999999999,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.7499999999999999,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.855573675954744,
+            "peak_com_shift_mm": 12.856672102786423,
+            "peak_required_longitudinal_force_N": 6.305265618032687,
+            "peak_required_pitch_moment_Nm": 0.06306197666416741,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.06782413764432,
+            "peak_relative_speed_after_box_stop_mps": 0.2364837349779383,
+            "longitudinal_impulse_error_Ns": 0.0005089184615842401
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.848197280335825,
+            "peak_com_shift_mm": 12.854459184100746,
+            "peak_required_longitudinal_force_N": 6.287594135978709,
+            "peak_required_pitch_moment_Nm": 0.06305112229801416,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.050600701214584,
+            "peak_relative_speed_after_box_stop_mps": 0.2357422291441452,
+            "longitudinal_impulse_error_Ns": 0.00016753016688697553
+          }
+        },
+        "1.625": {
+          "box_travel_m": 0.15139423076923078,
+          "box_stop_s": 0.5046474358974359,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.8125,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.3461538456160937e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.88567274694589,
+            "peak_com_shift_mm": 12.865701824083768,
+            "peak_required_longitudinal_force_N": 6.328613838355638,
+            "peak_required_pitch_moment_Nm": 0.06310626744713088,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.130853234453958,
+            "peak_relative_speed_after_box_stop_mps": 0.24551285277376997,
+            "longitudinal_impulse_error_Ns": 0.0006775652115147413
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.877333294963684,
+            "peak_com_shift_mm": 12.863199988489104,
+            "peak_required_longitudinal_force_N": 6.310649484890845,
+            "peak_required_pitch_moment_Nm": 0.06309399594353907,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.1141823568684455,
+            "peak_relative_speed_after_box_stop_mps": 0.24479574230975212,
+            "longitudinal_impulse_error_Ns": 0.0002502824266123471
+          }
+        },
+        "1.75": {
+          "box_travel_m": 0.14660714285714282,
+          "box_stop_s": 0.48869047619047623,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.875,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.4285714289297147e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.882343954157946,
+            "peak_com_shift_mm": 12.864703186247382,
+            "peak_required_longitudinal_force_N": 6.293457174615126,
+            "peak_required_pitch_moment_Nm": 0.06310136912854342,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.125507916189432,
+            "peak_relative_speed_after_box_stop_mps": 0.24923993187589424,
+            "longitudinal_impulse_error_Ns": 0.0006797059766411873
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.90242059971163,
+            "peak_com_shift_mm": 12.87072617991349,
+            "peak_required_longitudinal_force_N": 6.3373680576315135,
+            "peak_required_pitch_moment_Nm": 0.06313091191247566,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.167944207300232,
+            "peak_relative_speed_after_box_stop_mps": 0.2510298778868196,
+            "longitudinal_impulse_error_Ns": 0.00026284239697171863
+          }
+        },
+        "1.875": {
+          "box_travel_m": 0.14287499999999997,
+          "box_stop_s": 0.47625,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.9375,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.891200316491975,
+            "peak_com_shift_mm": 12.867360094947593,
+            "peak_required_longitudinal_force_N": 6.292569804384557,
+            "peak_required_pitch_moment_Nm": 0.06311440126571795,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.145082888232195,
+            "peak_relative_speed_after_box_stop_mps": 0.25273266301023595,
+            "longitudinal_impulse_error_Ns": 0.0006814613490339627
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.910987595632456,
+            "peak_com_shift_mm": 12.873296278689738,
+            "peak_required_longitudinal_force_N": 6.3351715469517345,
+            "peak_required_pitch_moment_Nm": 0.06314351824697316,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.186911405054395,
+            "peak_relative_speed_after_box_stop_mps": 0.25450955595808866,
+            "longitudinal_impulse_error_Ns": 8.530020405467242e-05
+          }
+        },
+        "2.0": {
+          "box_travel_m": 0.14,
+          "box_stop_s": 0.4666666666666667,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 1.0,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 0.0
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.909998175947685,
+            "peak_com_shift_mm": 12.872999452784304,
+            "peak_required_longitudinal_force_N": 6.318727381760656,
+            "peak_required_pitch_moment_Nm": 0.06314206231590702,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.184716124402824,
+            "peak_relative_speed_after_box_stop_mps": 0.2563074527601766,
+            "longitudinal_impulse_error_Ns": 0.00016166215753410373
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.92123629105016,
+            "peak_com_shift_mm": 12.876370887315048,
+            "peak_required_longitudinal_force_N": 6.3415364962871115,
+            "peak_required_pitch_moment_Nm": 0.06315859920228031,
+            "first_wall_contact_s": 0.1285,
+            "peak_wall_force_N": 6.2090523240573585,
+            "peak_relative_speed_after_box_stop_mps": 0.2572825081423057,
+            "longitudinal_impulse_error_Ns": 8.768437752609826e-05
+          }
+        }
+      }
+    },
+    "front_forward": {
+      "initial_slider_x_v": [
+        0.02,
+        0.2
+      ],
+      "comparisons": {
+        "short": {
+          "eligible": [
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.75,
+              "axial_gap_m": 0.013392857142857179,
+              "box_stop_s": 0.48869047619047623,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.06036980903262,
+                  "peak_com_shift_mm": 12.618110942709786,
+                  "peak_required_longitudinal_force_N": 3.4648791043393565,
+                  "peak_required_pitch_moment_Nm": 0.0618918341739915,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.0017688618265996,
+                  "peak_relative_speed_after_box_stop_mps": 0.03161359023120003,
+                  "longitudinal_impulse_error_Ns": 5.212681802596597e-05
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 41.647301215545156,
+                  "peak_com_shift_mm": 12.494190364663547,
+                  "peak_required_longitudinal_force_N": 3.943688780267812,
+                  "peak_required_pitch_moment_Nm": 0.0612840037386747,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.4908602178430885,
+                  "peak_relative_speed_after_box_stop_mps": 0.00046090319189379705,
+                  "longitudinal_impulse_error_Ns": 2.0758618415772645e-05
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.39324831642045,
+                  "peak_com_shift_mm": 12.417974494926133,
+                  "peak_required_longitudinal_force_N": 4.355943704063111,
+                  "peak_required_pitch_moment_Nm": 0.06091016489761269,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.9092551108263196,
+                  "peak_relative_speed_after_box_stop_mps": 0.007677629511944379,
+                  "longitudinal_impulse_error_Ns": 0.0002048667768689838
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.75,
+              "axial_gap_m": 0.013392857142857179,
+              "box_stop_s": 0.48869047619047623,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.06036980903262,
+                  "peak_com_shift_mm": 12.618110942709786,
+                  "peak_required_longitudinal_force_N": 3.4648791043393565,
+                  "peak_required_pitch_moment_Nm": 0.0618918341739915,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.0017688618265996,
+                  "peak_relative_speed_after_box_stop_mps": 0.03161359023120003,
+                  "longitudinal_impulse_error_Ns": 5.212681802596597e-05
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 41.647301215545156,
+                  "peak_com_shift_mm": 12.494190364663547,
+                  "peak_required_longitudinal_force_N": 3.943688780267812,
+                  "peak_required_pitch_moment_Nm": 0.0612840037386747,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.4908602178430885,
+                  "peak_relative_speed_after_box_stop_mps": 0.00046090319189379705,
+                  "longitudinal_impulse_error_Ns": 2.0758618415772645e-05
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.39324831642045,
+                  "peak_com_shift_mm": 12.417974494926133,
+                  "peak_required_longitudinal_force_N": 4.355943704063111,
+                  "peak_required_pitch_moment_Nm": 0.06091016489761269,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.9092551108263196,
+                  "peak_relative_speed_after_box_stop_mps": 0.007677629511944379,
+                  "longitudinal_impulse_error_Ns": 0.0002048667768689838
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {}
+        },
+        "long": {
+          "eligible": [
+            1.25,
+            1.375,
+            1.5,
+            1.625,
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.059709450221405,
+                  "peak_com_shift_mm": 12.61791283506642,
+                  "peak_required_longitudinal_force_N": 3.4471322597882486,
+                  "peak_required_pitch_moment_Nm": 0.0618908624560008,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.0011862636352076,
+                  "peak_relative_speed_after_box_stop_mps": 0.03732598108940789,
+                  "longitudinal_impulse_error_Ns": 7.78761679559592e-06
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 41.64714736436539,
+                  "peak_com_shift_mm": 12.494144209309615,
+                  "peak_required_longitudinal_force_N": 3.938172861053276,
+                  "peak_required_pitch_moment_Nm": 0.06128377734666367,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.4907881514032315,
+                  "peak_relative_speed_after_box_stop_mps": 0.005447553666788503,
+                  "longitudinal_impulse_error_Ns": 2.2734592107886975e-05
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.39321517574422,
+                  "peak_com_shift_mm": 12.417964552723264,
+                  "peak_required_longitudinal_force_N": 4.355943704063111,
+                  "peak_required_pitch_moment_Nm": 0.06091011613110761,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.9092551108263196,
+                  "peak_relative_speed_after_box_stop_mps": 0.0013737830425268713,
+                  "longitudinal_impulse_error_Ns": 0.0002802859933093149
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.059709450221405,
+                  "peak_com_shift_mm": 12.61791283506642,
+                  "peak_required_longitudinal_force_N": 3.4471322597882486,
+                  "peak_required_pitch_moment_Nm": 0.0618908624560008,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.0011862636352076,
+                  "peak_relative_speed_after_box_stop_mps": 0.03732598108940789,
+                  "longitudinal_impulse_error_Ns": 7.78761679559592e-06
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 41.64714736436539,
+                  "peak_com_shift_mm": 12.494144209309615,
+                  "peak_required_longitudinal_force_N": 3.938172861053276,
+                  "peak_required_pitch_moment_Nm": 0.06128377734666367,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.4907881514032315,
+                  "peak_relative_speed_after_box_stop_mps": 0.005447553666788503,
+                  "longitudinal_impulse_error_Ns": 2.2734592107886975e-05
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.39321517574422,
+                  "peak_com_shift_mm": 12.417964552723264,
+                  "peak_required_longitudinal_force_N": 4.355943704063111,
+                  "peak_required_pitch_moment_Nm": 0.06091011613110761,
+                  "first_wall_contact_s": 0.096,
+                  "peak_wall_force_N": 3.9092551108263196,
+                  "peak_relative_speed_after_box_stop_mps": 0.0013737830425268713,
+                  "longitudinal_impulse_error_Ns": 0.0002802859933093149
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {}
+        }
+      },
+      "evaluated": {
+        "1.25": {
+          "box_travel_m": 0.17525,
+          "box_stop_s": 0.5841666666666666,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.625,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 41.65501095138945,
+            "peak_com_shift_mm": 12.496503285416836,
+            "peak_required_longitudinal_force_N": 3.9547730987618848,
+            "peak_required_pitch_moment_Nm": 0.06129534861496958,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.507503829631251,
+            "peak_relative_speed_after_box_stop_mps": 0.0033083728012386405,
+            "longitudinal_impulse_error_Ns": 3.2932650909645034e-05
+          },
+          "replay": {
+            "peak_internal_travel_mm": 41.64714736436539,
+            "peak_com_shift_mm": 12.494144209309615,
+            "peak_required_longitudinal_force_N": 3.938172861053276,
+            "peak_required_pitch_moment_Nm": 0.06128377734666367,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.4907881514032315,
+            "peak_relative_speed_after_box_stop_mps": 0.005447553666788503,
+            "longitudinal_impulse_error_Ns": 2.2734592107886975e-05
+          }
+        },
+        "1.375": {
+          "box_travel_m": 0.1652840909090909,
+          "box_stop_s": 0.5509469696969697,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.6875,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.81818181843596e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 41.655164810239334,
+            "peak_com_shift_mm": 12.496549443071801,
+            "peak_required_longitudinal_force_N": 3.9604467491995003,
+            "peak_required_pitch_moment_Nm": 0.061295575018267184,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.5075759120004046,
+            "peak_relative_speed_after_box_stop_mps": 0.001705725337965386,
+            "longitudinal_impulse_error_Ns": 0.00042668928279859797
+          },
+          "replay": {
+            "peak_internal_travel_mm": 41.647301215545156,
+            "peak_com_shift_mm": 12.494190364663547,
+            "peak_required_longitudinal_force_N": 3.943688780267812,
+            "peak_required_pitch_moment_Nm": 0.0612840037386747,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.4908602178430885,
+            "peak_relative_speed_after_box_stop_mps": 0.0031975677453289137,
+            "longitudinal_impulse_error_Ns": 1.9247344570760827e-05
+          }
+        },
+        "1.5": {
+          "box_travel_m": 0.15749999999999997,
+          "box_stop_s": 0.5249999999999999,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.7499999999999999,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 41.655164810239334,
+            "peak_com_shift_mm": 12.496549443071801,
+            "peak_required_longitudinal_force_N": 3.9604467491995003,
+            "peak_required_pitch_moment_Nm": 0.061295575018267184,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.5075759120004046,
+            "peak_relative_speed_after_box_stop_mps": 0.001080713969132085,
+            "longitudinal_impulse_error_Ns": 0.00029877719368820443
+          },
+          "replay": {
+            "peak_internal_travel_mm": 41.647301215545156,
+            "peak_com_shift_mm": 12.494190364663547,
+            "peak_required_longitudinal_force_N": 3.943688780267812,
+            "peak_required_pitch_moment_Nm": 0.0612840037386747,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.4908602178430885,
+            "peak_relative_speed_after_box_stop_mps": 0.0026923789856816457,
+            "longitudinal_impulse_error_Ns": 1.9116809810315605e-05
+          }
+        },
+        "1.625": {
+          "box_travel_m": 0.15139423076923078,
+          "box_stop_s": 0.5046474358974359,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.8125,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.3461538456160937e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 41.655164810239334,
+            "peak_com_shift_mm": 12.496549443071801,
+            "peak_required_longitudinal_force_N": 3.9604467491995003,
+            "peak_required_pitch_moment_Nm": 0.061295575018267184,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.5075759120004046,
+            "peak_relative_speed_after_box_stop_mps": 0.0009082167715553337,
+            "longitudinal_impulse_error_Ns": 0.00017090381240802976
+          },
+          "replay": {
+            "peak_internal_travel_mm": 41.647301215545156,
+            "peak_com_shift_mm": 12.494190364663547,
+            "peak_required_longitudinal_force_N": 3.943688780267812,
+            "peak_required_pitch_moment_Nm": 0.0612840037386747,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.4908602178430885,
+            "peak_relative_speed_after_box_stop_mps": 0.002186330690460462,
+            "longitudinal_impulse_error_Ns": 0.00021111291258613107
+          }
+        },
+        "1.75": {
+          "box_travel_m": 0.14660714285714282,
+          "box_stop_s": 0.48869047619047623,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.875,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.4285714289297147e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 41.655164810239334,
+            "peak_com_shift_mm": 12.496549443071801,
+            "peak_required_longitudinal_force_N": 3.9604467491995003,
+            "peak_required_pitch_moment_Nm": 0.061295575018267184,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.5075759120004046,
+            "peak_relative_speed_after_box_stop_mps": 0.00044228106709941873,
+            "longitudinal_impulse_error_Ns": 0.0003004162229238716
+          },
+          "replay": {
+            "peak_internal_travel_mm": 41.647301215545156,
+            "peak_com_shift_mm": 12.494190364663547,
+            "peak_required_longitudinal_force_N": 3.943688780267812,
+            "peak_required_pitch_moment_Nm": 0.0612840037386747,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.4908602178430885,
+            "peak_relative_speed_after_box_stop_mps": 0.00046090319189379705,
+            "longitudinal_impulse_error_Ns": 2.0758618415772645e-05
+          }
+        },
+        "1.875": {
+          "box_travel_m": 0.14287499999999997,
+          "box_stop_s": 0.47625,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.9375,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 41.655164810239334,
+            "peak_com_shift_mm": 12.496549443071801,
+            "peak_required_longitudinal_force_N": 3.9604467491995003,
+            "peak_required_pitch_moment_Nm": 0.061295575018267184,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.5075759120004046,
+            "peak_relative_speed_after_box_stop_mps": 0.0033038310397961214,
+            "longitudinal_impulse_error_Ns": 0.000161318720527881
+          },
+          "replay": {
+            "peak_internal_travel_mm": 41.647301215545156,
+            "peak_com_shift_mm": 12.494190364663547,
+            "peak_required_longitudinal_force_N": 3.943688780267812,
+            "peak_required_pitch_moment_Nm": 0.0612840037386747,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.4908602178430885,
+            "peak_relative_speed_after_box_stop_mps": 0.002455389644407408,
+            "longitudinal_impulse_error_Ns": 7.78356922687129e-05
+          }
+        },
+        "2.0": {
+          "box_travel_m": 0.14,
+          "box_stop_s": 0.4666666666666667,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 1.0,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 0.0
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 41.655164810239334,
+            "peak_com_shift_mm": 12.496549443071801,
+            "peak_required_longitudinal_force_N": 3.9604467491995003,
+            "peak_required_pitch_moment_Nm": 0.061295575018267184,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.5075759120004046,
+            "peak_relative_speed_after_box_stop_mps": 0.007870427266894204,
+            "longitudinal_impulse_error_Ns": 4.6452669606789065e-05
+          },
+          "replay": {
+            "peak_internal_travel_mm": 41.647301215545156,
+            "peak_com_shift_mm": 12.494190364663547,
+            "peak_required_longitudinal_force_N": 3.943688780267812,
+            "peak_required_pitch_moment_Nm": 0.0612840037386747,
+            "first_wall_contact_s": 0.096,
+            "peak_wall_force_N": 3.4908602178430885,
+            "peak_relative_speed_after_box_stop_mps": 0.006969303904500893,
+            "longitudinal_impulse_error_Ns": 7.401906471310449e-05
+          }
+        }
+      }
+    },
+    "front_backward": {
+      "initial_slider_x_v": [
+        0.02,
+        -0.2
+      ],
+      "comparisons": {
+        "short": {
+          "eligible": [
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.75,
+              "axial_gap_m": 0.013392857142857179,
+              "box_stop_s": 0.48869047619047623,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.88013070554149,
+                  "peak_com_shift_mm": 12.864039211662448,
+                  "peak_required_longitudinal_force_N": 4.52451607144738,
+                  "peak_required_pitch_moment_Nm": 0.0630981123332043,
+                  "first_wall_contact_s": 0.403,
+                  "peak_wall_force_N": 4.202381663778292,
+                  "peak_relative_speed_after_box_stop_mps": 0.18867970770008594,
+                  "longitudinal_impulse_error_Ns": 7.3076815897688e-05
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.3144181721791,
+                  "peak_com_shift_mm": 12.69432545165373,
+                  "peak_required_longitudinal_force_N": 5.248774880773252,
+                  "peak_required_pitch_moment_Nm": 0.062265666340361556,
+                  "first_wall_contact_s": 0.403,
+                  "peak_wall_force_N": 4.912785041485071,
+                  "peak_relative_speed_after_box_stop_mps": 0.16936705070036503,
+                  "longitudinal_impulse_error_Ns": 0.00021515234046826093
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.96376720445984,
+                  "peak_com_shift_mm": 12.589130161337952,
+                  "peak_required_longitudinal_force_N": 5.86505416893754,
+                  "peak_required_pitch_moment_Nm": 0.06174968344136266,
+                  "first_wall_contact_s": 0.403,
+                  "peak_wall_force_N": 5.5205805404160415,
+                  "peak_relative_speed_after_box_stop_mps": 0.15499033001200693,
+                  "longitudinal_impulse_error_Ns": 0.00027214744368081467
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.75,
+              "axial_gap_m": 0.013392857142857179,
+              "box_stop_s": 0.48869047619047623,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.88013070554149,
+                  "peak_com_shift_mm": 12.864039211662448,
+                  "peak_required_longitudinal_force_N": 4.52451607144738,
+                  "peak_required_pitch_moment_Nm": 0.0630981123332043,
+                  "first_wall_contact_s": 0.403,
+                  "peak_wall_force_N": 4.202381663778292,
+                  "peak_relative_speed_after_box_stop_mps": 0.18867970770008594,
+                  "longitudinal_impulse_error_Ns": 7.3076815897688e-05
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.3144181721791,
+                  "peak_com_shift_mm": 12.69432545165373,
+                  "peak_required_longitudinal_force_N": 5.248774880773252,
+                  "peak_required_pitch_moment_Nm": 0.062265666340361556,
+                  "first_wall_contact_s": 0.403,
+                  "peak_wall_force_N": 4.912785041485071,
+                  "peak_relative_speed_after_box_stop_mps": 0.16936705070036503,
+                  "longitudinal_impulse_error_Ns": 0.00021515234046826093
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.96376720445984,
+                  "peak_com_shift_mm": 12.589130161337952,
+                  "peak_required_longitudinal_force_N": 5.86505416893754,
+                  "peak_required_pitch_moment_Nm": 0.06174968344136266,
+                  "first_wall_contact_s": 0.403,
+                  "peak_wall_force_N": 5.5205805404160415,
+                  "peak_relative_speed_after_box_stop_mps": 0.15499033001200693,
+                  "longitudinal_impulse_error_Ns": 0.00027214744368081467
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {}
+        },
+        "long": {
+          "eligible": [
+            1.25,
+            1.375,
+            1.5,
+            1.625,
+            1.75,
+            1.875,
+            2.0
+          ],
+          "selection": {
+            "frozen": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.59397562693249,
+                  "peak_com_shift_mm": 12.778192688079747,
+                  "peak_required_longitudinal_force_N": 4.230363723156595,
+                  "peak_required_pitch_moment_Nm": 0.06267703513503116,
+                  "first_wall_contact_s": 0.4675,
+                  "peak_wall_force_N": 3.781683298065217,
+                  "peak_relative_speed_after_box_stop_mps": 0.13477539961185522,
+                  "longitudinal_impulse_error_Ns": 0.00010283861875082234
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.0778515944832,
+                  "peak_com_shift_mm": 12.623355478344958,
+                  "peak_required_longitudinal_force_N": 4.857187314091218,
+                  "peak_required_pitch_moment_Nm": 0.06191755862128203,
+                  "first_wall_contact_s": 0.4675,
+                  "peak_wall_force_N": 4.406469919856856,
+                  "peak_relative_speed_after_box_stop_mps": 0.11575118531973694,
+                  "longitudinal_impulse_error_Ns": 0.00014789233713902172
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.75921607084855,
+                  "peak_com_shift_mm": 12.527764821254564,
+                  "peak_required_longitudinal_force_N": 5.392226706133365,
+                  "peak_required_pitch_moment_Nm": 0.061448686448253645,
+                  "first_wall_contact_s": 0.4675,
+                  "peak_wall_force_N": 4.940032508304222,
+                  "peak_relative_speed_after_box_stop_mps": 0.10186849207096212,
+                  "longitudinal_impulse_error_Ns": 0.0001907001438201661
+                }
+              }
+            },
+            "predicted": {
+              "decel_mps2": 1.25,
+              "axial_gap_m": 0.014750000000000013,
+              "box_stop_s": 0.5841666666666666,
+              "by_bumper_scale": {
+                "0.7": {
+                  "peak_internal_travel_mm": 42.59397562693249,
+                  "peak_com_shift_mm": 12.778192688079747,
+                  "peak_required_longitudinal_force_N": 4.230363723156595,
+                  "peak_required_pitch_moment_Nm": 0.06267703513503116,
+                  "first_wall_contact_s": 0.4675,
+                  "peak_wall_force_N": 3.781683298065217,
+                  "peak_relative_speed_after_box_stop_mps": 0.13477539961185522,
+                  "longitudinal_impulse_error_Ns": 0.00010283861875082234
+                },
+                "1.0": {
+                  "peak_internal_travel_mm": 42.0778515944832,
+                  "peak_com_shift_mm": 12.623355478344958,
+                  "peak_required_longitudinal_force_N": 4.857187314091218,
+                  "peak_required_pitch_moment_Nm": 0.06191755862128203,
+                  "first_wall_contact_s": 0.4675,
+                  "peak_wall_force_N": 4.406469919856856,
+                  "peak_relative_speed_after_box_stop_mps": 0.11575118531973694,
+                  "longitudinal_impulse_error_Ns": 0.00014789233713902172
+                },
+                "1.3": {
+                  "peak_internal_travel_mm": 41.75921607084855,
+                  "peak_com_shift_mm": 12.527764821254564,
+                  "peak_required_longitudinal_force_N": 5.392226706133365,
+                  "peak_required_pitch_moment_Nm": 0.061448686448253645,
+                  "first_wall_contact_s": 0.4675,
+                  "peak_wall_force_N": 4.940032508304222,
+                  "peak_relative_speed_after_box_stop_mps": 0.10186849207096212,
+                  "longitudinal_impulse_error_Ns": 0.0001907001438201661
+                }
+              }
+            }
+          },
+          "refined_peak_force_N": {}
+        }
+      },
+      "evaluated": {
+        "1.25": {
+          "box_travel_m": 0.17525,
+          "box_stop_s": 0.5841666666666666,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.625,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.0877899117317,
+            "peak_com_shift_mm": 12.626336973519509,
+            "peak_required_longitudinal_force_N": 4.877283911140647,
+            "peak_required_pitch_moment_Nm": 0.06193218285511319,
+            "first_wall_contact_s": 0.4675,
+            "peak_wall_force_N": 4.427571073210014,
+            "peak_relative_speed_after_box_stop_mps": 0.11651457812813983,
+            "longitudinal_impulse_error_Ns": 0.0003060341483295814
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.0778515944832,
+            "peak_com_shift_mm": 12.623355478344958,
+            "peak_required_longitudinal_force_N": 4.857187314091218,
+            "peak_required_pitch_moment_Nm": 0.06191755862128203,
+            "first_wall_contact_s": 0.4675,
+            "peak_wall_force_N": 4.406469919856856,
+            "peak_relative_speed_after_box_stop_mps": 0.11575118531973694,
+            "longitudinal_impulse_error_Ns": 0.00014789233713902172
+          }
+        },
+        "1.375": {
+          "box_travel_m": 0.1652840909090909,
+          "box_stop_s": 0.5509469696969697,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.6875,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.81818181843596e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.17476378280367,
+            "peak_com_shift_mm": 12.652429134841102,
+            "peak_required_longitudinal_force_N": 5.029641569033215,
+            "peak_required_pitch_moment_Nm": 0.062060164906395605,
+            "first_wall_contact_s": 0.4455,
+            "peak_wall_force_N": 4.613704046224144,
+            "peak_relative_speed_after_box_stop_mps": 0.1370705232629395,
+            "longitudinal_impulse_error_Ns": 0.00031226792882232957
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.178352800261905,
+            "peak_com_shift_mm": 12.653505840078571,
+            "peak_required_longitudinal_force_N": 5.038949753361024,
+            "peak_required_pitch_moment_Nm": 0.0620654461455854,
+            "first_wall_contact_s": 0.4455,
+            "peak_wall_force_N": 4.6213343263274576,
+            "peak_relative_speed_after_box_stop_mps": 0.1373832150429792,
+            "longitudinal_impulse_error_Ns": 0.00015535413286915656
+          }
+        },
+        "1.5": {
+          "box_travel_m": 0.15749999999999997,
+          "box_stop_s": 0.5249999999999999,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.7499999999999999,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.238486229712805,
+            "peak_com_shift_mm": 12.67154586891384,
+            "peak_required_longitudinal_force_N": 5.131391210534039,
+            "peak_required_pitch_moment_Nm": 0.06215393248702239,
+            "first_wall_contact_s": 0.428,
+            "peak_wall_force_N": 4.750015101023344,
+            "peak_relative_speed_after_box_stop_mps": 0.1516312385713558,
+            "longitudinal_impulse_error_Ns": 0.00023608839687777605
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.24219511196908,
+            "peak_com_shift_mm": 12.672658533590726,
+            "peak_required_longitudinal_force_N": 5.140906585797879,
+            "peak_required_pitch_moment_Nm": 0.062159390107262506,
+            "first_wall_contact_s": 0.428,
+            "peak_wall_force_N": 4.757952313057193,
+            "peak_relative_speed_after_box_stop_mps": 0.15193010569180687,
+            "longitudinal_impulse_error_Ns": 0.00020590047905744147
+          }
+        },
+        "1.625": {
+          "box_travel_m": 0.15139423076923078,
+          "box_stop_s": 0.5046474358974359,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.8125,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.3461538456160937e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.29145170462174,
+            "peak_com_shift_mm": 12.687435511386521,
+            "peak_required_longitudinal_force_N": 5.218196164877497,
+            "peak_required_pitch_moment_Nm": 0.0622318711833509,
+            "first_wall_contact_s": 0.41450000000000004,
+            "peak_wall_force_N": 4.863561234336223,
+            "peak_relative_speed_after_box_stop_mps": 0.16259156723162735,
+            "longitudinal_impulse_error_Ns": 0.0004351530987655172
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.287750117744366,
+            "peak_com_shift_mm": 12.68632503532331,
+            "peak_required_longitudinal_force_N": 5.211824173597871,
+            "peak_required_pitch_moment_Nm": 0.06222642429826084,
+            "first_wall_contact_s": 0.41425,
+            "peak_wall_force_N": 4.855691570295024,
+            "peak_relative_speed_after_box_stop_mps": 0.16231380571984463,
+            "longitudinal_impulse_error_Ns": 0.00012051321586037389
+          }
+        },
+        "1.75": {
+          "box_travel_m": 0.14660714285714282,
+          "box_stop_s": 0.48869047619047623,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.875,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 1.4285714289297147e-07
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.310623408604926,
+            "peak_com_shift_mm": 12.693187022581478,
+            "peak_required_longitudinal_force_N": 5.238878599876917,
+            "peak_required_pitch_moment_Nm": 0.06226008234576215,
+            "first_wall_contact_s": 0.403,
+            "peak_wall_force_N": 4.904717207063969,
+            "peak_relative_speed_after_box_stop_mps": 0.16901222144469263,
+            "longitudinal_impulse_error_Ns": 0.00042191627695059575
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.3144181721791,
+            "peak_com_shift_mm": 12.69432545165373,
+            "peak_required_longitudinal_force_N": 5.248774880773252,
+            "peak_required_pitch_moment_Nm": 0.062265666340361556,
+            "first_wall_contact_s": 0.403,
+            "peak_wall_force_N": 4.912785041485071,
+            "peak_relative_speed_after_box_stop_mps": 0.16936705070036503,
+            "longitudinal_impulse_error_Ns": 0.00021515234046826093
+          }
+        },
+        "1.875": {
+          "box_travel_m": 0.14287499999999997,
+          "box_stop_s": 0.47625,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 0.9375,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.34719928354352,
+            "peak_com_shift_mm": 12.704159785063053,
+            "peak_required_longitudinal_force_N": 5.304705293884948,
+            "peak_required_pitch_moment_Nm": 0.062313903745734284,
+            "first_wall_contact_s": 0.3945,
+            "peak_wall_force_N": 4.98353001668572,
+            "peak_relative_speed_after_box_stop_mps": 0.17569599231920785,
+            "longitudinal_impulse_error_Ns": 0.000242306797497982
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.33649171463634,
+            "peak_com_shift_mm": 12.700947514390903,
+            "peak_required_longitudinal_force_N": 5.28021826405053,
+            "peak_required_pitch_moment_Nm": 0.06229814755808737,
+            "first_wall_contact_s": 0.3945,
+            "peak_wall_force_N": 4.960493665060515,
+            "peak_relative_speed_after_box_stop_mps": 0.1747556755987058,
+            "longitudinal_impulse_error_Ns": 0.0002196619310390613
+          }
+        },
+        "2.0": {
+          "box_travel_m": 0.14,
+          "box_stop_s": 0.4666666666666667,
+          "frozen": {
+            "peak_internal_travel_mm": 20.0,
+            "peak_com_shift_mm": 6.0,
+            "peak_required_longitudinal_force_N": 1.0,
+            "peak_required_pitch_moment_Nm": 0.02943,
+            "first_wall_contact_s": null,
+            "peak_wall_force_N": 0.0,
+            "peak_relative_speed_after_box_stop_mps": 0.0,
+            "longitudinal_impulse_error_Ns": 0.0
+          },
+          "predicted": {
+            "peak_internal_travel_mm": 42.352373499329694,
+            "peak_com_shift_mm": 12.705712049798906,
+            "peak_required_longitudinal_force_N": 5.302024531695872,
+            "peak_required_pitch_moment_Nm": 0.062321517604263646,
+            "first_wall_contact_s": 0.388,
+            "peak_wall_force_N": 4.994766254521593,
+            "peak_relative_speed_after_box_stop_mps": 0.17864300611795328,
+            "longitudinal_impulse_error_Ns": 0.0004502843563762293
+          },
+          "replay": {
+            "peak_internal_travel_mm": 42.36406634594292,
+            "peak_com_shift_mm": 12.709219903782877,
+            "peak_required_longitudinal_force_N": 5.32717911296292,
+            "peak_required_pitch_moment_Nm": 0.062338723628055016,
+            "first_wall_contact_s": 0.38775,
+            "peak_wall_force_N": 5.019629230512202,
+            "peak_relative_speed_after_box_stop_mps": 0.17967904393591524,
+            "longitudinal_impulse_error_Ns": 0.00023127613700651972
+          }
+        }
+      }
+    }
+  }
+}

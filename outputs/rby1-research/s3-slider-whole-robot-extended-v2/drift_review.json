@@ -1,0 +1,730 @@
+{
+  "sides": [
+    "left",
+    "right"
+  ],
+  "contributions_deg_order": [
+    "base",
+    "torso_relative_to_base",
+    "arm_relative_to_torso",
+    "box_relative_to_hand"
+  ],
+  "runs": {
+    "feedback": {
+      "brake": {
+        "window_s": [
+          0.0,
+          0.3665
+        ],
+        "box_pitch_change_deg": 0.16592029497135674,
+        "contributions_deg": [
+          [
+            -0.0007489435566514491,
+            0.0022005597730552218,
+            0.1793601344454836,
+            -0.01489145569053063
+          ],
+          [
+            -0.0007489435566514491,
+            0.0022005597730552218,
+            0.18002982271348333,
+            -0.015561143958530366
+          ]
+        ],
+        "box_relative_rotation_deg": [
+          0.32207271194124254,
+          0.3225403056705051
+        ],
+        "filtered_command_mean_Nm": 0.03319954438974234,
+        "filtered_command_first_last_Nm": [
+          0.0,
+          0.03802421130171671
+        ],
+        "contact_pitch_moment_mean_each_hand_Nm": [
+          0.01734614958741663,
+          0.017352712160664224
+        ],
+        "contact_pitch_moment_mean_Nm": 0.03469886174808087,
+        "slider_gravity_moment_mean_Nm": -0.03449565813282932,
+        "slider_position_change_mm": 27.757676541291758,
+        "pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.20339422572475765,
+            "fixed_point_tangential_end_mm": 0.20339422572475765,
+            "contact_centroid_peak_mm": 6.848433550794575,
+            "contact_centroid_end_mm": 5.197848816040433,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.19420730013033785,
+            "fixed_point_tangential_end_mm": 0.19420730013033785,
+            "contact_centroid_peak_mm": 5.893476802764181,
+            "contact_centroid_end_mm": 5.038277645633336,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.20498932189551308,
+            "fixed_point_tangential_end_mm": 0.20498932189551308,
+            "contact_centroid_peak_mm": 6.404900183762174,
+            "contact_centroid_end_mm": 5.654255919842518,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.19435176365896384,
+            "fixed_point_tangential_end_mm": 0.19435176365896384,
+            "contact_centroid_peak_mm": 5.9004655838112905,
+            "contact_centroid_end_mm": 5.052006539230297,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        }
+      },
+      "early_hold": {
+        "window_s": [
+          0.367,
+          1.9000000000000001
+        ],
+        "box_pitch_change_deg": 0.5608157185219684,
+        "contributions_deg": [
+          [
+            0.0007335888711101912,
+            0.01711270804474352,
+            0.4597237706686057,
+            0.08324565093750902
+          ],
+          [
+            0.0007335888711101912,
+            0.01711270804474352,
+            0.45899472875069747,
+            0.08397469285541725
+          ]
+        ],
+        "box_relative_rotation_deg": [
+          0.9671088887892997,
+          0.9681820164253685
+        ],
+        "filtered_command_mean_Nm": -0.03725383089176942,
+        "filtered_command_first_last_Nm": [
+          0.03691085819904847,
+          -0.06753610500453563
+        ],
+        "contact_pitch_moment_mean_each_hand_Nm": [
+          -0.01509114495770783,
+          -0.015069481423553646
+        ],
+        "contact_pitch_moment_mean_Nm": -0.030160626381261442,
+        "slider_gravity_moment_mean_Nm": 0.03014312123108771,
+        "slider_position_change_mm": -65.75508776332363,
+        "pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.589423380013266,
+            "fixed_point_tangential_end_mm": 0.589423380013266,
+            "contact_centroid_peak_mm": 12.75209738619916,
+            "contact_centroid_end_mm": 12.64548793639172,
+            "min_pad_normal_N": 5.318481340186794
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.6171746753038879,
+            "fixed_point_tangential_end_mm": 0.6171746753038879,
+            "contact_centroid_peak_mm": 4.148778147349896,
+            "contact_centroid_end_mm": 3.9018309760944447,
+            "min_pad_normal_N": 2.9103807986374877
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.5864887345563775,
+            "fixed_point_tangential_end_mm": 0.5864887345563775,
+            "contact_centroid_peak_mm": 12.739536556146144,
+            "contact_centroid_end_mm": 12.632968353953567,
+            "min_pad_normal_N": 5.330577941387597
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.6169984524659288,
+            "fixed_point_tangential_end_mm": 0.6169984524659288,
+            "contact_centroid_peak_mm": 4.166068892735685,
+            "contact_centroid_end_mm": 3.9760593797772112,
+            "min_pad_normal_N": 2.9298248716871678
+          }
+        }
+      },
+      "late_hold": {
+        "window_s": [
+          1.9000000000000001,
+          2.5
+        ],
+        "box_pitch_change_deg": 0.19567473132548274,
+        "contributions_deg": [
+          [
+            -3.6871668829263626e-08,
+            0.005615677972132138,
+            0.1845483472557361,
+            0.005510742969283333
+          ],
+          [
+            -3.6871668829263626e-08,
+            0.005615677972132138,
+            0.18454448546319657,
+            0.005514604761822861
+          ]
+        ],
+        "box_relative_rotation_deg": [
+          0.3394029952702383,
+          0.33941239634526366
+        ],
+        "filtered_command_mean_Nm": -0.06905212391341656,
+        "filtered_command_first_last_Nm": [
+          -0.06753610500453563,
+          -0.07053335049291216
+        ],
+        "contact_pitch_moment_mean_each_hand_Nm": [
+          -0.027968832205530727,
+          -0.027952270749729766
+        ],
+        "contact_pitch_moment_mean_Nm": -0.05592110295526046,
+        "slider_gravity_moment_mean_Nm": 0.05591922667523901,
+        "slider_position_change_mm": -0.008586037731274365,
+        "pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.24585082562557098,
+            "fixed_point_tangential_end_mm": 0.24585082562557098,
+            "contact_centroid_peak_mm": 11.815056504439944,
+            "contact_centroid_end_mm": 11.766392377170215,
+            "min_pad_normal_N": 5.456270034147275
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.21485257582483916,
+            "fixed_point_tangential_end_mm": 0.21485257582483916,
+            "contact_centroid_peak_mm": 1.1353723262107658,
+            "contact_centroid_end_mm": 1.1352549236908873,
+            "min_pad_normal_N": 3.036507919163973
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.2458210747375526,
+            "fixed_point_tangential_end_mm": 0.2458210747375526,
+            "contact_centroid_peak_mm": 11.816850746001144,
+            "contact_centroid_end_mm": 0.27438323313092894,
+            "min_pad_normal_N": 5.455217667125419
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.2148807106163502,
+            "fixed_point_tangential_end_mm": 0.2148807106163502,
+            "contact_centroid_peak_mm": 1.0754887451625488,
+            "contact_centroid_end_mm": 1.0753714467112576,
+            "min_pad_normal_N": 3.0297706941776763
+          }
+        },
+        "arm_joint_pitch_deg_proximal_to_distal": [
+          {
+            "left_arm_0": 0.008338432337156032,
+            "left_arm_1": 0.0010824995494305156,
+            "left_arm_2": 0.002153550581585506,
+            "left_arm_3": -0.002224767105684977,
+            "left_arm_4": 0.02688719817301677,
+            "left_arm_5": -0.06509782320264867,
+            "left_arm_6": 0.2142577275234061
+          },
+          {
+            "right_arm_0": 0.008828813513666045,
+            "right_arm_1": 0.0010131954664098775,
+            "right_arm_2": 0.002471891674054927,
+            "right_arm_3": -0.0026861298096261255,
+            "right_arm_4": 0.027293592559481272,
+            "right_arm_5": -0.06555277694727701,
+            "right_arm_6": 0.21402800531090893
+          }
+        ]
+      },
+      "frozen_state_response": [
+        {
+          "time_s": 0.18,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 4.20271062773897e-05,
+          "contact_pitch_moment_gain": [
+            0.07589434275537821,
+            0.07153859248965819,
+            0.06948305424366516
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            91.91268773013239,
+            91.95491323208833,
+            91.97509126323429
+          ]
+        },
+        {
+          "time_s": 0.22,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 1.7628877762437822e-07,
+          "contact_pitch_moment_gain": [
+            0.07848981390898152,
+            0.07848981328064247,
+            0.07848981076691505
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            91.00209480465864,
+            91.00209420595728,
+            91.00209181065162
+          ]
+        },
+        {
+          "time_s": 0.37,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 1.8281459074898088e-06,
+          "contact_pitch_moment_gain": [
+            0.06427499723689611,
+            0.06427500529005425,
+            0.06746059169496395
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            88.49448021236505,
+            88.49449228455327,
+            88.46539181379248
+          ]
+        },
+        {
+          "time_s": 1.0,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 4.5640349199960184e-07,
+          "contact_pitch_moment_gain": [
+            0.05626855357626498,
+            0.05626856855108012,
+            0.056268628391221986
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            91.78513691327925,
+            91.78515286795718,
+            91.7852166691168
+          ]
+        },
+        {
+          "time_s": 1.9,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 4.959669188960014e-06,
+          "contact_pitch_moment_gain": [
+            0.056645810920706585,
+            0.056646902417567535,
+            0.05665128543649728
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            91.76980854651069,
+            91.76944836871452,
+            91.76800465384814
+          ]
+        },
+        {
+          "time_s": 2.2,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 2.7755575615628914e-17,
+          "contact_pitch_moment_gain": [
+            0.056970455950383636,
+            0.05697045595039127,
+            0.056970455950388146
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            92.93512008137195,
+            92.93512008137245,
+            92.93512008137242
+          ]
+        },
+        {
+          "time_s": 2.5,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 4.163336342344337e-17,
+          "contact_pitch_moment_gain": [
+            0.05702981253617734,
+            0.05702981253617734,
+            0.057029812536175256
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            93.0386283132565,
+            93.03862831325338,
+            93.03862831325354
+          ]
+        }
+      ]
+    },
+    "rolling": {
+      "brake": {
+        "window_s": [
+          0.0,
+          0.3665
+        ],
+        "box_pitch_change_deg": 0.1836625357538335,
+        "contributions_deg": [
+          [
+            -0.0007489827060138676,
+            0.0021984449082321778,
+            0.1961130768020638,
+            -0.0139000032504486
+          ],
+          [
+            -0.0007489827060138676,
+            0.0021984449082321778,
+            0.19811040507253708,
+            -0.015897331520921876
+          ]
+        ],
+        "box_relative_rotation_deg": [
+          0.32061754752144045,
+          0.3226319432193627
+        ],
+        "filtered_command_mean_Nm": 0.03374056026516518,
+        "filtered_command_first_last_Nm": [
+          0.0,
+          0.03777659741108459
+        ],
+        "contact_pitch_moment_mean_each_hand_Nm": [
+          0.017349845529304003,
+          0.017333097406369027
+        ],
+        "contact_pitch_moment_mean_Nm": 0.03468294293567303,
+        "slider_gravity_moment_mean_Nm": -0.03449692950586089,
+        "slider_position_change_mm": 27.738772228684322,
+        "pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.20361383298253025,
+            "fixed_point_tangential_end_mm": 0.20361383298253025,
+            "contact_centroid_peak_mm": 6.8484623946210705,
+            "contact_centroid_end_mm": 5.19105153310613,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.19496868102884932,
+            "fixed_point_tangential_end_mm": 0.19496868102884932,
+            "contact_centroid_peak_mm": 5.893476802764181,
+            "contact_centroid_end_mm": 5.0220682263043965,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.20569716343929592,
+            "fixed_point_tangential_end_mm": 0.20569716343929592,
+            "contact_centroid_peak_mm": 6.405059627289485,
+            "contact_centroid_end_mm": 5.6665943436717745,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.1949761262075229,
+            "fixed_point_tangential_end_mm": 0.1949761262075229,
+            "contact_centroid_peak_mm": 5.930480616522924,
+            "contact_centroid_end_mm": 5.054387492180737,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        }
+      },
+      "early_hold": {
+        "window_s": [
+          0.367,
+          1.9000000000000001
+        ],
+        "box_pitch_change_deg": 0.6894297564581031,
+        "contributions_deg": [
+          [
+            0.0007335371346985919,
+            0.01669924966374947,
+            0.5889911354296256,
+            0.0830058342300295
+          ],
+          [
+            0.0007335371346985919,
+            0.01669924966374947,
+            0.5869610459568986,
+            0.08503592370275648
+          ]
+        ],
+        "box_relative_rotation_deg": [
+          0.9756616425035025,
+          0.9780982987288032
+        ],
+        "filtered_command_mean_Nm": -0.035964196153031765,
+        "filtered_command_first_last_Nm": [
+          0.036747402443404645,
+          -0.06564823346512685
+        ],
+        "contact_pitch_moment_mean_each_hand_Nm": [
+          -0.015258263500152212,
+          -0.015239297931056892
+        ],
+        "contact_pitch_moment_mean_Nm": -0.030497561431209092,
+        "slider_gravity_moment_mean_Nm": 0.03048395425550293,
+        "slider_position_change_mm": -65.75190014763727,
+        "pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.5900556960448413,
+            "fixed_point_tangential_end_mm": 0.5900556960448413,
+            "contact_centroid_peak_mm": 12.758913838752262,
+            "contact_centroid_end_mm": 1.0936297893817941,
+            "min_pad_normal_N": 5.321379117266257
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.6219348051245049,
+            "fixed_point_tangential_end_mm": 0.6219348051245049,
+            "contact_centroid_peak_mm": 4.075120143227436,
+            "contact_centroid_end_mm": 3.9949592617225846,
+            "min_pad_normal_N": 2.910061342611728
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.5875987768890408,
+            "fixed_point_tangential_end_mm": 0.5875987768890408,
+            "contact_centroid_peak_mm": 12.727155969255332,
+            "contact_centroid_end_mm": 12.619374254134987,
+            "min_pad_normal_N": 5.3304041171971885
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.6214806286377063,
+            "fixed_point_tangential_end_mm": 0.6214806286377063,
+            "contact_centroid_peak_mm": 4.168811193699858,
+            "contact_centroid_end_mm": 3.9087093997291644,
+            "min_pad_normal_N": 2.9192187292740774
+          }
+        }
+      },
+      "late_hold": {
+        "window_s": [
+          1.9000000000000001,
+          2.5
+        ],
+        "box_pitch_change_deg": 0.25073053248203303,
+        "contributions_deg": [
+          [
+            3.435599582601867e-08,
+            0.005569910966366054,
+            0.2394199989733059,
+            0.0057405881863652475
+          ],
+          [
+            3.435599582601867e-08,
+            0.005569910966366054,
+            0.23921522818917196,
+            0.005945358970499193
+          ]
+        ],
+        "box_relative_rotation_deg": [
+          0.3484565060765655,
+          0.34841826904626355
+        ],
+        "filtered_command_mean_Nm": -0.06550676794862946,
+        "filtered_command_first_last_Nm": [
+          -0.06564823346512685,
+          -0.06802611544762707
+        ],
+        "contact_pitch_moment_mean_each_hand_Nm": [
+          -0.02799294280253109,
+          -0.027927741670031855
+        ],
+        "contact_pitch_moment_mean_Nm": -0.05592068447256296,
+        "slider_gravity_moment_mean_Nm": 0.05591645519306145,
+        "slider_position_change_mm": 0.004330127783370996,
+        "pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.25191531245618165,
+            "fixed_point_tangential_end_mm": 0.25191531245618165,
+            "contact_centroid_peak_mm": 11.735035234698461,
+            "contact_centroid_end_mm": 0.26590058297001434,
+            "min_pad_normal_N": 5.46134476728706
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.22002273725416943,
+            "fixed_point_tangential_end_mm": 0.22002273725416943,
+            "contact_centroid_peak_mm": 1.0248172608366717,
+            "contact_centroid_end_mm": 1.024693115304877,
+            "min_pad_normal_N": 3.036099310932977
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.25192286690826554,
+            "fixed_point_tangential_end_mm": 0.25192286690826554,
+            "contact_centroid_peak_mm": 11.813057491383633,
+            "contact_centroid_end_mm": 11.813057491383633,
+            "min_pad_normal_N": 5.457965870257657
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.2201365635918211,
+            "fixed_point_tangential_end_mm": 0.2201365635918211,
+            "contact_centroid_peak_mm": 1.1450093998024369,
+            "contact_centroid_end_mm": 1.1448822578443656,
+            "min_pad_normal_N": 3.0279467283895363
+          }
+        },
+        "arm_joint_pitch_deg_proximal_to_distal": [
+          {
+            "left_arm_0": 0.007988076824964718,
+            "left_arm_1": 0.0010325281648007056,
+            "left_arm_2": 0.0024237710846048977,
+            "left_arm_3": -0.0016895302892137032,
+            "left_arm_4": 0.02711938393787028,
+            "left_arm_5": -0.06352177220992683,
+            "left_arm_6": 0.26702751434039573
+          },
+          {
+            "right_arm_0": 0.00847605506033311,
+            "right_arm_1": 0.0009639195768720299,
+            "right_arm_2": 0.0027375546563930264,
+            "right_arm_3": -0.002162845198842689,
+            "right_arm_4": 0.02751864917493929,
+            "right_arm_5": -0.0640347627685296,
+            "right_arm_6": 0.266678808849957
+          }
+        ]
+      },
+      "frozen_state_response": [
+        {
+          "time_s": 0.18,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 1.2501748613003016e-05,
+          "contact_pitch_moment_gain": [
+            0.0655261801958032,
+            0.06552252847835949,
+            0.06551187468152725
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            86.60566096099504,
+            86.60495730983833,
+            86.60210871944946
+          ]
+        },
+        {
+          "time_s": 0.22,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 1.6715081303103618e-07,
+          "contact_pitch_moment_gain": [
+            0.07849517747724744,
+            0.07849517682752757,
+            0.07849517422814298
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            91.02487057600008,
+            91.0248699500089,
+            91.02486744550677
+          ]
+        },
+        {
+          "time_s": 0.37,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 1.6781386466338533e-06,
+          "contact_pitch_moment_gain": [
+            0.06426088674958697,
+            0.06426089487996806,
+            0.06687587809339306
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            88.50691262506773,
+            88.50692484658468,
+            88.48554325152809
+          ]
+        },
+        {
+          "time_s": 1.0,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": -9.339619541984256e-07,
+          "contact_pitch_moment_gain": [
+            0.05728723863864388,
+            0.0572872360950015,
+            0.05728722603283512
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            92.40655821038813,
+            92.40656365835726,
+            92.4065854493379
+          ]
+        },
+        {
+          "time_s": 1.9,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": -3.042378226084108e-07,
+          "contact_pitch_moment_gain": [
+            0.056403717515216,
+            0.05640401643017892,
+            0.056405197589459374
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            91.83782987353756,
+            91.83816597678633,
+            91.83950825233
+          ]
+        },
+        {
+          "time_s": 2.2,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": 2.0816681711721685e-17,
+          "contact_pitch_moment_gain": [
+            0.05715851064332367,
+            0.05715851064332922,
+            0.05715851064333234
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            92.86571520823699,
+            92.86571520823856,
+            92.86571520823773
+          ]
+        },
+        {
+          "time_s": 2.5,
+          "command_halfsteps_Nm": [
+            0.0025,
+            0.005,
+            0.01
+          ],
+          "replay_contact_minus_logged_Nm": -1.1102230246251565e-16,
+          "contact_pitch_moment_gain": [
+            0.05625936411936816,
+            0.05625936411935914,
+            0.05625936411937302
+          ],
+          "box_pitch_angular_acceleration_gain_rad_per_s2_per_Nm": [
+            92.94724675011729,
+            92.94724675011972,
+            92.94724675011958
+          ]
+        }
+      ]
+    }
+  }
+}

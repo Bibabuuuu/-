@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "contract_sha256": "224ba0f5f21f1eadecd35c56306284d4d3180f81432b99d9313f1817f9515e36",
+  "preflight_sha256": "3d7587744b2039f6272366008a816bfff85fa0500a8757eaa163a6dfba4ee938",
+  "new_physics_runs": 1,
+  "new_physics_steps": 4000,
+  "paired_runs": {
+    "held_A075": {
+      "label": "held_A075",
+      "case": "straight",
+      "dt_s": 0.0005,
+      "steps": 4000,
+      "final_turn_deg": -0.000109635342725187,
+      "target_turn_deg": 0.0,
+      "final_yaw_error_deg": 0.000109635342725187,
+      "peak_yaw_error_deg": 0.00012917361391925758,
+      "final_axle_xy_error_mm": 0.12181176154696081,
+      "peak_axle_xy_error_mm": 0.12181176154696081,
+      "peak_object_com_error_mm": 0.31816491087111093,
+      "peak_object_acceleration_mps2": 0.7522978416278157,
+      "peak_object_angular_acceleration_radps2": 0.011462412903947835,
+      "final_object_speed_mmps": 0.15609984437441446,
+      "final_base_yaw_rate_degps": -9.563330868747549e-09,
+      "wheel_no_contact_samples": 0,
+      "peak_wheel_lateral_contact_speed_mps": 1.3936723951287796e-08,
+      "peak_base_tilt_deg": 0.007488099488038551,
+      "linear_balance_residual_rms_N": 0.00023171754941506148,
+      "angular_balance_residual_rms_Nm": 3.7974267220597987e-07,
+      "max_unclipped_control_excess": 0.0,
+      "max_joint_range_excess": 0.0,
+      "max_joint_speed_fraction": 0.254710200737639,
+      "max_self_penetration_m": 0.0,
+      "frozen_unchanged": true,
+      "actuators_at_bound": [],
+      "peak_raw_relative_position_change_mm": 0.3123150055260775,
+      "peak_raw_relative_rotation_change_deg": 0.050872598396402395,
+      "peak_TCP_contact_moment_Nm": 0.031111512612871366,
+      "peak_friction_utilization": 0.4066394698586735,
+      "min_loaded_contacts_per_hand": 0,
+      "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+      "zero_loaded_contact_samples_after_first_controlled_step": 0,
+      "contact_force_crosscheck_N": 2.3603665274397704e-15,
+      "hold_1s_raw_relative_position_change_mm": 0.15608524348903335,
+      "hold_1s_base_yaw_change_deg": 1.8004315062234984e-06,
+      "active_window_s": [
+        0.0,
+        0.683241696358669
+      ],
+      "active_payload_acceleration_rms_mps2": 0.6311276997919592,
+      "active_larger_hand_tcp_moment_rms_Nm": 0.02607759424009834,
+      "hold_window_s": [
+        0.7648900356304028,
+        1.764890035630403
+      ],
+      "hold_1s_raw_relative_position_change_mm_common_window": 0.15609665509046586
+    },
+    "buffer_mid": {
+      "label": "buffer_mid",
+      "case": "straight",
+      "dt_s": 0.0005,
+      "steps": 4000,
+      "final_turn_deg": -0.0001101218893568331,
+      "target_turn_deg": 0.0,
+      "final_yaw_error_deg": 0.0001101218893568331,
+      "peak_yaw_error_deg": 0.0001294364636679546,
+      "final_axle_xy_error_mm": 0.12072505421276357,
+      "peak_axle_xy_error_mm": 0.12072505421276357,
+      "peak_object_com_error_mm": 0.3177106668990575,
+      "peak_object_acceleration_mps2": 0.6271928354178933,
+      "peak_object_angular_acceleration_radps2": 0.011655407696232783,
+      "final_object_speed_mmps": 0.15609885914250834,
+      "final_base_yaw_rate_degps": -9.203017447267481e-09,
+      "wheel_no_contact_samples": 0,
+      "peak_wheel_lateral_contact_speed_mps": 1.3936723951287796e-08,
+      "peak_base_tilt_deg": 0.007372951693941654,
+      "linear_balance_residual_rms_N": 0.000213498206292592,
+      "angular_balance_residual_rms_Nm": 3.6462348279072905e-07,
+      "max_unclipped_control_excess": 0.0,
+      "max_joint_range_excess": 0.0,
+      "max_joint_speed_fraction": 0.254710200737639,
+      "max_self_penetration_m": 0.0,
+      "frozen_unchanged": true,
+      "actuators_at_bound": [],
+      "peak_raw_relative_position_change_mm": 0.3102250513381002,
+      "peak_raw_relative_rotation_change_deg": 0.05093666909163618,
+      "peak_TCP_contact_moment_Nm": 0.025967403089854502,
+      "peak_friction_utilization": 0.3960570397735837,
+      "min_loaded_contacts_per_hand": 0,
+      "min_loaded_contacts_per_hand_after_first_controlled_step": 8,
+      "zero_loaded_contact_samples_after_first_controlled_step": 0,
+      "contact_force_crosscheck_N": 2.3603665277607556e-15,
+      "hold_1s_raw_relative_position_change_mm": 0.15605863654724725,
+      "hold_1s_base_yaw_change_deg": 1.984839366917193e-06,
+      "active_window_s": [
+        0.0,
+        0.683241696358669
+      ],
+      "active_payload_acceleration_rms_mps2": 0.57934236924087,
+      "active_larger_hand_tcp_moment_rms_Nm": 0.02395358615693816,
+      "hold_window_s": [
+        0.7648900356304028,
+        1.764890035630403
+      ],
+      "hold_1s_raw_relative_position_change_mm_common_window": 0.15608224228201023
+    }
+  },
+  "buffered_minus_held": {
+    "active_payload_acceleration_rms_mps2": {
+      "held": 0.6311276997919592,
+      "buffered": 0.57934236924087,
+      "buffered_minus_held": -0.05178533055108914,
+      "buffered_percent_vs_held": -8.205206421483215
+    },
+    "active_larger_hand_tcp_moment_rms_Nm": {
+      "held": 0.02607759424009834,
+      "buffered": 0.02395358615693816,
+      "buffered_minus_held": -0.0021240080831601803,
+      "buffered_percent_vs_held": -8.144954107362361
+    },
+    "hold_1s_raw_relative_position_change_mm_common_window": {
+      "held": 0.15609665509046586,
+      "buffered": 0.15608224228201023,
+      "buffered_minus_held": -1.4412808455627202e-05,
+      "buffered_percent_vs_held": -0.00923325900050469
+    }
+  },
+  "interpretation": "One matched nominal ablation with shared active and hold windows. It estimates this model/controller/scene-specific buffer effect only; it is not a statistical or hardware-general result.",
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\verify_continuous_b0_matched_buffer.py": "26b98f6e0be4980acc9c7eecb04f7b674ec1b431550dab5244a6c21cf67b2b5a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\analyze_planar_stop_qualification.py": "83170641a191a928fbfdf40695c834df87fecb6e5210158de582ae4529befa1b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-matched-buffer-v1\\contract.json": "224ba0f5f21f1eadecd35c56306284d4d3180f81432b99d9313f1817f9515e36",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-matched-buffer-v1\\preflight.json": "3d7587744b2039f6272366008a816bfff85fa0500a8757eaa163a6dfba4ee938",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-physical-v2\\buffer_mid\\config.json": "06d4d1cf89e03c44903ef6ca96ba78881c49266c545a72196cdd2a871768af19",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-physical-v2\\buffer_mid\\result.json": "502548859d6249c15306ea01163dfa406ffa92b740e77a92aa66808d66f3e709",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-physical-v2\\buffer_mid\\trace.npz": "6c60986f9d1ab41d6b8341b2262290cf46a67385ddfa9d40d97ae70ac8dbccba",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-physical-v2\\buffer_mid\\grasp_trace.npz": "1d1d3ea4533ef2023dd20df851e67d87360ab6a153c84eec0f3265d5dbc3c472",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-matched-buffer-v1\\held_A075\\config.json": "379b41cd9f6c92130a58ccb49d2762b26d7a7409944a24ec1cfa6a6afd9daf23",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-matched-buffer-v1\\held_A075\\result.json": "13dab947f836243cd06ebaec0941d603214a564979952d5ffe3085f2d87b83d0",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-matched-buffer-v1\\held_A075\\trace.npz": "37831fcc27ca755038c064794f2e59ac0b1700ee39c8b0ed414115021748cf4a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-b0-matched-buffer-v1\\held_A075\\grasp_trace.npz": "605b890e41bc394f2cd15a34a9f3148c1129430c76c66b30164e8412148e0ee5"
+  }
+}

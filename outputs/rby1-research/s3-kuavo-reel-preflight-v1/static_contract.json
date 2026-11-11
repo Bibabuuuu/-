@@ -1,0 +1,16 @@
+{
+  "dt_s": 0.0005,
+  "duration_s": 2.5,
+  "hold_window_s": [
+    1.0,
+    2.5
+  ],
+  "maximum_relative_position_mm": 2.0,
+  "maximum_relative_rotation_deg": 2.0,
+  "relative_vertical_support_tolerance": 0.05,
+  "maximum_vertical_speed_mps": 0.01,
+  "weight_N": 0.49050000000000005,
+  "scene_sha256": "593770a0b55ec6c52adb550b21d50b9cecec8463d213ca259960789af7b3432f",
+  "initial_sha256": "e75ecdffd91efd812b8856ce98d25160ce68111adfdbc05f79bcdc7dc18c4f35",
+  "controller_sha256": "a608bc4e5cd3ef3f4cad3c783e00dda6e1c3587355b871837746657b890f128f"
+}

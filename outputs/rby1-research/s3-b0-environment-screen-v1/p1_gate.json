@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "reviewer": "/root/p1_environment_screen",
+  "contract_sha256": "dd0358170cd54546697d041adc88724759407d504635413d98d872d730763104",
+  "pilot_sha256": "0b625fcc060c0e4a13821cd023cceb34d51f1121255cf3fd53a7a3e4d438b217",
+  "scope": "P1 read-only audit of four saved pilot candidates; no candidate regeneration",
+  "verify_exit_code": 0,
+  "source_hashes_checked": 25,
+  "unique_points_per_layout": 138,
+  "base_parameter_pairs": 34,
+  "direct_geometry_pairs_checked": 2032,
+  "new_physics_steps": 0,
+  "blocking_findings": []
+}

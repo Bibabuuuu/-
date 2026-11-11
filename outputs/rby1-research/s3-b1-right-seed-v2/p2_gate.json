@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "bounded fixed candidate evidence only",
+  "agent": "/root/p1_b1_right_seed",
+  "independent_exit_code": 0,
+  "source_hashes_verified": 856,
+  "sha256": {
+    "contract.json": "ca0a7f2cfe4acb6d1dde7b79578f6d5f121479e53c087f61fdd25a022e9de638",
+    "pilot.json": "8cc0e58fea7ee1661b840044d13c804d9734057e316218a9987ea30487cfebce",
+    "p1_gate.json": "06ec10d6c499fc55e0b2f3e4e1eb16bf95e9c411226fc98cbde89e5e747624df",
+    "execute.json": "2a75d6b6289f391570bc905802d485238b50cdb5d839b83bab319d3e50ed56f3",
+    "eval_0002.npz": "5bde956f7d12f52c0243ac0d1cb888b7021ebce238724c4ba798b6f7c492d7cc",
+    "eval_0003.npz": "8b0417c9854004700da9efda793a344bf60d897b15a64083c12c614244df2ee9"
+  },
+  "evidence": "Bounded fit, one candidate, all constraint arrays, analytical objective, schedules and limits; zero outer solve and physics."
+}

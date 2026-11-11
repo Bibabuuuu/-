@@ -1,0 +1,75 @@
+{
+  "evidence_verified": true,
+  "new_physics_runs_in_audit": 0,
+  "new_physics_steps_in_audit": 0,
+  "candidate_execution_qualified": false,
+  "checks": [
+    {
+      "label": "warmstart",
+      "metric_max_error": 0.0,
+      "zero_times_s": [],
+      "peak_acceleration_time_s": 0.439,
+      "peak_moment_time_s": 0.1565
+    },
+    {
+      "label": "old_rms",
+      "metric_max_error": 0.0,
+      "zero_times_s": [],
+      "peak_acceleration_time_s": 0.4375,
+      "peak_moment_time_s": 0.166
+    },
+    {
+      "label": "selected",
+      "metric_max_error": 0.0,
+      "zero_times_s": [
+        0.261,
+        0.3945
+      ],
+      "peak_acceleration_time_s": 0.3945,
+      "peak_moment_time_s": 0.3945
+    }
+  ],
+  "contact_replays": [
+    {
+      "time_s": 0.261,
+      "wheel_gaps_um": [
+        0.4097811285488223,
+        0.6914925271429145
+      ],
+      "recomputed_wheel_contacts": 0,
+      "remaining_ground_geoms": [
+        "rear_support_0",
+        "rear_support_1"
+      ],
+      "saved_ground_force_z_N": 267.2723458775018
+    },
+    {
+      "time_s": 0.3945,
+      "wheel_gaps_um": [
+        1.1250570196380538,
+        1.3243242893527796
+      ],
+      "recomputed_wheel_contacts": 0,
+      "remaining_ground_geoms": [
+        "rear_support_0",
+        "rear_support_1"
+      ],
+      "saved_ground_force_z_N": 266.8092325397531
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\audit_longitudinal_execution.py": "8377048bb896167663f62fc903b128fc5680f6321b498e562bdd5511e7d1aacd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\summary.json": "a9823dddc332769a03ad3dfed672e31e94ef94b1314257ef7a506a82cf2ec784",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\contract.json": "8ad5a4fc72e40157694604aac81dc30ea89343c3d33686d0f637753fb9883be5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution\\load_halfdt\\trace.npz": "64b19a3dde0ed64129c5e48aa3080e5a32778e7ed3a3fe3105f129be8625f9d3",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution\\load_halfdt\\grasp_trace.npz": "303a90f8f3b9deb3d0ac2e454cfd6d9b214d2f2059d3e4079236151fbc9404c6",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution\\load_halfdt\\config.json": "3e165e92eb53efbd1e12a5f45ca82bd823aa26f73e5496b70ac404147a6b4aca",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\trace.npz": "6b27ef291391db1ca52b9f6624a6ad3a8e9390b7513e1b2cbd797b7a0cff0115",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\grasp_trace.npz": "8de58ea691cf930863b1cbc5b019814c889831623bd59fb5150c69e370f5f464",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\execution\\rms_halfdt\\config.json": "705d6777b3c7bf53bc9fa290b8c4acba7320ed67cc9d68eac21cf6ca849e92fc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\execution\\selected\\trace.npz": "53ec559af243350dd00433dbc0919e251259398ca810f6631a04907f64f45274",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\execution\\selected\\grasp_trace.npz": "97310c81a34ae8eaeae6891695c257796ef897e796ed74c3981604d9eeae8c55",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\execution\\selected\\config.json": "bfe4fada2aeb396d88496ef6ce352b76e64ba36ebb2f993889a44d6c36aa25c3"
+  },
+  "scope": "Independent raw-metric recomputation and saved-state contact geometry. No new integration or force-history reconstruction; no causal attribution to the optimizer."
+}

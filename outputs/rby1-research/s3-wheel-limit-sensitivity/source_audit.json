@@ -1,0 +1,43 @@
+{
+  "checked_on": "2026-11-01",
+  "question": "Wheel output continuous/peak/braking torque envelope for the selected differential-drive RB-Y1 model",
+  "status": "No verified wheel-output torque limit found in the consulted public sources; 10/20/40 Nm are not hardware data.",
+  "sources": [
+    {
+      "url": "https://rainbowrobotics.github.io/rby1-dev/hardware/mechanical_part.html",
+      "type": "official hardware documentation",
+      "observed": "Wheel row lists planetary gearing, 200 W motor power and maximum 150 RPM. Wheel current-limit cell is blank. Continuous/peak torque table covers torso and arm classes, not wheels.",
+      "boundary": "Power and maximum speed alone do not establish low-speed or braking peak torque, sustained duration, gearing efficiency or drive current limit."
+    },
+    {
+      "url": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "type": "manufacturer product page",
+      "observed": "General speed, payload, mass and current-limit protection descriptions; no numerical wheel-output torque envelope located.",
+      "boundary": "Product revisions may differ from the frozen model; other joint/module torque values cannot be used for wheels."
+    },
+    {
+      "url": "https://rainbow-robotics.com/en/products/mobile-humanoid/rb-y-series/expansion-option/",
+      "type": "manufacturer mobility module page",
+      "observed": "Differential-drive and mecanum mobility specifications; no wheel braking or peak output torque value located.",
+      "boundary": "Does not resolve the selected-version wheel limit."
+    },
+    {
+      "url": "https://github.com/RainbowRobotics/rby1-sdk/discussions/6",
+      "type": "historical reply in official SDK repository, 2024-09-26",
+      "observed": "Reply discusses incompletely accurate control/effort ranges and dynamics omissions such as friction and rotor inertia in models discussed then.",
+      "boundary": "Historical version-specific caution, not proof about every current model; mentioned 100:1 gearing is not adopted as a wheel gear ratio."
+    }
+  ],
+  "local_frozen_source": {
+    "commit": "300a585c297d1bdf8554312c3a1659610a9823f5",
+    "urdf": "work/robot-model-audit/sources/rby1-pinned/models/rby1a/urdf/model_v1.2.urdf",
+    "wheel_limit_fields": {
+      "velocity": "15.707963268",
+      "acceleration": "3.141592"
+    },
+    "wheel_effort_present": false,
+    "mjcf_actuator_count": 0
+  },
+  "local_search_limitation": "Local rby1-sdk copy lacks include/examples/models subdirectories; no conclusion is drawn from that unavailable search. Frozen URDF/MJCF were directly inspected.",
+  "not_done": "No manufacturer contact, robot connection, calibration, sensor measurement or replacement of canonical 10 Nm configuration."
+}

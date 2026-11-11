@@ -1,0 +1,8 @@
+{
+  "independent_smoke_exit_code": 0,
+  "smoke_result": "s3-right-speed-candidates-v2-p1-smoke/result.json",
+  "scope": "0.4 m/s independent slice, including retimed B0 buffer",
+  "independent_agent": "/root/p1_right_15cm",
+  "status": "PASS",
+  "script_sha256": "876b3751a3f151fda836daf67837d4e384c8a0d7db66484a33f176aa833e35a4"
+}

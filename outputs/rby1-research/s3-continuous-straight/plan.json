@@ -1,0 +1,447 @@
+{
+  "decisions": [
+    {
+      "scene": "open",
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\open\\scene.xml",
+      "speed_mps": 0.39993127226900177,
+      "geometry": {
+        "first_contact_distance_bracket_m": null,
+        "checked_horizon_m": 0.1799415861521525,
+        "conditions": {
+          "axis_aligned_world_box": true,
+          "forward_horizontal_translation": true,
+          "all_geometry_initially_before_front": true,
+          "full_lateral_containment_over_horizon": true
+        },
+        "spatial_step_m": 0.005,
+        "minimum_intersection_interval_m": 0.08000000027960188,
+        "native_distance_queries": 333
+      },
+      "exact_A_boundary_bracket_mps2": null,
+      "admitted_A_interval": [
+        0.5,
+        1.0
+      ],
+      "interval_note": "open at first-contact boundary; bracket is numerical, no safety reserve",
+      "boundary_probe": {
+        "A_mps2": 0.5,
+        "J_mps3": 5.0,
+        "D_m": 0.1799415861521525,
+        "T_s": 0.8998625445380035,
+        "reference_admitted": true,
+        "remaining_travel_to_contact_lower_m": null,
+        "predicted_peak_object_acceleration_mps2": 0.5,
+        "predicted_peak_equal_split_TCP_moment_Nm": 0.02074624913028252
+      },
+      "execute_boundary_probe": false,
+      "timing": {
+        "model_compile_s": 0.48630069999489933,
+        "geometry_from_current_state_5_repetitions_s": [
+          0.029558299997006543,
+          0.029923000001872424,
+          0.027747699998144526,
+          0.02514760000485694,
+          0.0253556000025128
+        ],
+        "geometry_median_s": 0.027747699998144526,
+        "geometry_observed_max_s": 0.029923000001872424,
+        "cached_candidates_count": 51,
+        "cached_candidate_queries_total_s": 0.017742500000167638
+      },
+      "independent_time_domain_audits": [
+        {
+          "case": "straight",
+          "A_mps2": 0.5,
+          "J_mps3": 5.0,
+          "T_s": 0.8998625445380035,
+          "reference_geometry_admitted": true,
+          "minimum_predicted_distance_m": 0.12005841447674669,
+          "closest_group": "upper",
+          "closest_geom": "link_left_arm_4_LINK_18_collision_4_5",
+          "first_predicted_intersection_s": null,
+          "predicted_peak_object_acceleration_mps2": 0.5,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.02074624913028279,
+          "samples": 181,
+          "wall_s": 0.1444682000001194
+        },
+        {
+          "case": "straight",
+          "A_mps2": 1.0,
+          "J_mps3": 5.0,
+          "T_s": 0.5999312722690018,
+          "reference_geometry_admitted": true,
+          "minimum_predicted_distance_m": 0.18003436192303154,
+          "closest_group": "upper",
+          "closest_geom": "link_left_arm_4_LINK_18_collision_4_5",
+          "first_predicted_intersection_s": null,
+          "predicted_peak_object_acceleration_mps2": 1.0,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.04131450959965183,
+          "samples": 121,
+          "wall_s": 0.10431989999779034
+        }
+      ]
+    },
+    {
+      "scene": "low",
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\low\\scene.xml",
+      "speed_mps": 0.39993127226900177,
+      "geometry": {
+        "first_contact_distance_bracket_m": [
+          0.16000082969665524,
+          0.16000083923339842
+        ],
+        "checked_horizon_m": 0.1799415861521525,
+        "conditions": {
+          "axis_aligned_world_box": true,
+          "forward_horizontal_translation": true,
+          "all_geometry_initially_before_front": true,
+          "full_lateral_containment_over_horizon": true
+        },
+        "spatial_step_m": 0.005,
+        "minimum_intersection_interval_m": 0.08000000027960188,
+        "native_distance_queries": 694
+      },
+      "exact_A_boundary_bracket_mps2": [
+        0.5855183253066514,
+        0.5855183746489302
+      ],
+      "admitted_A_interval": [
+        0.5855183253066514,
+        1.0
+      ],
+      "interval_note": "open at first-contact boundary; bracket is numerical, no safety reserve",
+      "boundary_probe": {
+        "A_mps2": 0.5855712890625,
+        "J_mps3": 5.0,
+        "D_m": 0.15999060365729345,
+        "T_s": 0.8000904892962737,
+        "reference_admitted": true,
+        "remaining_travel_to_contact_lower_m": 1.022603936179367e-05,
+        "predicted_peak_object_acceleration_mps2": 0.5855712890625,
+        "predicted_peak_equal_split_TCP_moment_Nm": 0.024266354251691463
+      },
+      "execute_boundary_probe": true,
+      "timing": {
+        "model_compile_s": 0.22238999999535736,
+        "geometry_from_current_state_5_repetitions_s": [
+          0.03723539999919012,
+          0.031710200004454236,
+          0.030613000002631452,
+          0.03113790000497829,
+          0.03062570000474807
+        ],
+        "geometry_median_s": 0.03113790000497829,
+        "geometry_observed_max_s": 0.03723539999919012,
+        "cached_candidates_count": 52,
+        "cached_candidate_queries_total_s": 0.007331900000281166
+      },
+      "independent_time_domain_audits": [
+        {
+          "case": "straight",
+          "A_mps2": 0.5,
+          "J_mps3": 5.0,
+          "T_s": 0.8998625445380035,
+          "reference_geometry_admitted": false,
+          "minimum_predicted_distance_m": -0.019940749295565007,
+          "closest_group": "base",
+          "closest_geom": "wheel_l_tire",
+          "first_predicted_intersection_s": 0.5700000000000001,
+          "predicted_peak_object_acceleration_mps2": 0.5,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.02074624913028279,
+          "samples": 181,
+          "wall_s": 0.1569009999948321
+        },
+        {
+          "case": "straight",
+          "A_mps2": 0.5855712890625,
+          "J_mps3": 5.0,
+          "T_s": 0.8000904892962737,
+          "reference_geometry_admitted": true,
+          "minimum_predicted_distance_m": 1.0232972538185085e-05,
+          "closest_group": "base",
+          "closest_geom": "wheel_l_tire",
+          "first_predicted_intersection_s": null,
+          "predicted_peak_object_acceleration_mps2": 0.5855712890625,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.024266354251691734,
+          "samples": 162,
+          "wall_s": 0.1442222000041511
+        },
+        {
+          "case": "straight",
+          "A_mps2": 1.0,
+          "J_mps3": 5.0,
+          "T_s": 0.5999312722690018,
+          "reference_geometry_admitted": true,
+          "minimum_predicted_distance_m": 0.04003519799290535,
+          "closest_group": "base",
+          "closest_geom": "wheel_l_tire",
+          "first_predicted_intersection_s": null,
+          "predicted_peak_object_acceleration_mps2": 1.0,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.04131450959965183,
+          "samples": 121,
+          "wall_s": 0.10852239999803714
+        }
+      ]
+    },
+    {
+      "scene": "tall_same_face",
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\tall_same_face\\scene.xml",
+      "speed_mps": 0.39993127226900177,
+      "geometry": {
+        "first_contact_distance_bracket_m": [
+          0.06563338279724121,
+          0.06563339233398438
+        ],
+        "checked_horizon_m": 0.1799415861521525,
+        "conditions": {
+          "axis_aligned_world_box": true,
+          "forward_horizontal_translation": true,
+          "all_geometry_initially_before_front": true,
+          "full_lateral_containment_over_horizon": true
+        },
+        "spatial_step_m": 0.005,
+        "minimum_intersection_interval_m": 0.08000000027960188,
+        "native_distance_queries": 306
+      },
+      "exact_A_boundary_bracket_mps2": [
+        null,
+        null
+      ],
+      "admitted_A_interval": null,
+      "interval_note": "open at first-contact boundary; bracket is numerical, no safety reserve",
+      "boundary_probe": null,
+      "execute_boundary_probe": false,
+      "timing": {
+        "model_compile_s": 0.21136780000233557,
+        "geometry_from_current_state_5_repetitions_s": [
+          0.031024799995066132,
+          0.027310400000715163,
+          0.02497179999772925,
+          0.02512629999546334,
+          0.025047999995877035
+        ],
+        "geometry_median_s": 0.02512629999546334,
+        "geometry_observed_max_s": 0.031024799995066132,
+        "cached_candidates_count": 51,
+        "cached_candidate_queries_total_s": 0.007077300004311837
+      },
+      "independent_time_domain_audits": [
+        {
+          "case": "straight",
+          "A_mps2": 0.5,
+          "J_mps3": 5.0,
+          "T_s": 0.8998625445380035,
+          "reference_geometry_admitted": false,
+          "minimum_predicted_distance_m": -0.09978492709022868,
+          "closest_group": "payload",
+          "closest_geom": "payload_beam",
+          "first_predicted_intersection_s": 0.17500000000000002,
+          "predicted_peak_object_acceleration_mps2": 0.5,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.02074624913028279,
+          "samples": 181,
+          "wall_s": 0.18567829999665264
+        },
+        {
+          "case": "straight",
+          "A_mps2": 1.0,
+          "J_mps3": 5.0,
+          "T_s": 0.5999312722690018,
+          "reference_geometry_admitted": false,
+          "minimum_predicted_distance_m": -0.05433224472421138,
+          "closest_group": "upper",
+          "closest_geom": "link_left_arm_4_LINK_18_collision_4_5",
+          "first_predicted_intersection_s": 0.18,
+          "predicted_peak_object_acceleration_mps2": 1.0,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.04131450959965183,
+          "samples": 121,
+          "wall_s": 0.11607599999842932
+        }
+      ]
+    },
+    {
+      "scene": "upper_bar",
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\upper_bar\\scene.xml",
+      "speed_mps": 0.39993127226900177,
+      "geometry": {
+        "first_contact_distance_bracket_m": [
+          0.16228360176086426,
+          0.16228361129760743
+        ],
+        "checked_horizon_m": 0.1799415861521525,
+        "conditions": {
+          "axis_aligned_world_box": true,
+          "forward_horizontal_translation": true,
+          "all_geometry_initially_before_front": true,
+          "full_lateral_containment_over_horizon": true
+        },
+        "spatial_step_m": 0.005,
+        "minimum_intersection_interval_m": 0.08000000027960188,
+        "native_distance_queries": 544
+      },
+      "exact_A_boundary_bracket_mps2": [
+        0.5739870584932645,
+        0.5739871055315766
+      ],
+      "admitted_A_interval": [
+        0.5739870584932645,
+        1.0
+      ],
+      "interval_note": "open at first-contact boundary; bracket is numerical, no safety reserve",
+      "boundary_probe": {
+        "A_mps2": 0.57403564453125,
+        "J_mps3": 5.0,
+        "D_m": 0.16227376175930927,
+        "T_s": 0.8115082415968746,
+        "reference_admitted": true,
+        "remaining_travel_to_contact_lower_m": 9.84000155498932e-06,
+        "predicted_peak_object_acceleration_mps2": 0.57403564453125,
+        "predicted_peak_equal_split_TCP_moment_Nm": 0.023791817969156304
+      },
+      "execute_boundary_probe": true,
+      "timing": {
+        "model_compile_s": 0.21518230000219774,
+        "geometry_from_current_state_5_repetitions_s": [
+          0.03570840000611497,
+          0.031144499997026287,
+          0.03086060000350699,
+          0.030671100001200102,
+          0.030586200002289843
+        ],
+        "geometry_median_s": 0.03086060000350699,
+        "geometry_observed_max_s": 0.03570840000611497,
+        "cached_candidates_count": 52,
+        "cached_candidate_queries_total_s": 0.007291300003998913
+      },
+      "independent_time_domain_audits": [
+        {
+          "case": "straight",
+          "A_mps2": 0.5,
+          "J_mps3": 5.0,
+          "T_s": 0.8998625445380035,
+          "reference_geometry_admitted": false,
+          "minimum_predicted_distance_m": -0.017657975784738378,
+          "closest_group": "payload",
+          "closest_geom": "payload_beam",
+          "first_predicted_intersection_s": 0.59,
+          "predicted_peak_object_acceleration_mps2": 0.5,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.02074624913028279,
+          "samples": 181,
+          "wall_s": 0.15997280000010505
+        },
+        {
+          "case": "straight",
+          "A_mps2": 0.57403564453125,
+          "J_mps3": 5.0,
+          "T_s": 0.8115082415968746,
+          "reference_geometry_admitted": true,
+          "minimum_predicted_distance_m": 9.84854635599497e-06,
+          "closest_group": "payload",
+          "closest_geom": "payload_beam",
+          "first_predicted_intersection_s": null,
+          "predicted_peak_object_acceleration_mps2": 0.57403564453125,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.023791817969156578,
+          "samples": 164,
+          "wall_s": 0.14446309999766527
+        },
+        {
+          "case": "straight",
+          "A_mps2": 1.0,
+          "J_mps3": 5.0,
+          "T_s": 0.5999312722690018,
+          "reference_geometry_admitted": true,
+          "minimum_predicted_distance_m": 0.04231797166154627,
+          "closest_group": "payload",
+          "closest_geom": "payload_beam",
+          "first_predicted_intersection_s": null,
+          "predicted_peak_object_acceleration_mps2": 1.0,
+          "predicted_peak_object_angular_acceleration_radps2": 0.0,
+          "predicted_peak_equal_split_TCP_moment_Nm": 0.04131450959965183,
+          "samples": 121,
+          "wall_s": 0.10955429999739863
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\continuous_straight_stop.py": "453dd4423de3939c17aa321ccdcca14fa8da7deaa9130c889553dfa9f15686c6",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_planar_stop.py": "27e091265fe93b232b74ada76f635318708b87146aefcb0b68dd12ad949552e6",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_scene_chain.py": "f782fe87c6793f5e88cd0fbfec66d480762d6cd9be12f6b8fca62d5d78e0644e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\check_stage31.py": "261591420a62c2abb7ad91bb3526edd11d061109111be928b38b60655ab76b5d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\state_stop_reference.py": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\payload_wrench.py": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154757_768066_s26_base_only\\joint_trace.npz": "e2ce08788515b29e95d3654b215fab3f96e9d1ecbe3c83d0d1788c8da3690d1a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\plan.json": "ca62751f62926af7e199327531b5236274cd98270fa5640b102c67b43d7f40c6",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-continuous-straight\\initial_state.npz": "ac0bb9dc946932fa5fc0f8178bcf8448214671acaa0d963e5dcc8d58d87be6f8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\open\\scene.xml": "b88dfe47dea0a6ca50c59839a93e5b06da0aeeac847fc26955cc3cf3b0aff2b4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\low\\scene.xml": "83087440c95615520b28300392a26faf2e1e6554950b9036182180153422797a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\tall_same_face\\scene.xml": "ed8b40855378e32b9c563e8f25cdb6fe01342319c4e72aabb86602c6672a908d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-scene-chain\\upper_bar\\scene.xml": "d76491e1c8233f20386ba121f80562ca4eab4c017ef54f67864643b7a75273df"
+  },
+  "source_state_time_s": 3.501,
+  "A_search_mps2": [
+    0.5,
+    1.0
+  ],
+  "J_mps3": 5.0,
+  "numerical_A_tolerance_mps2": 0.0001,
+  "analytic_vs_ruckig_checks": [
+    {
+      "A": 0.5,
+      "distance_error_m": 2.7755575615628914e-17,
+      "duration_error_s": 0.0,
+      "final_v": -3.469446951953614e-17,
+      "final_a": 0.0
+    },
+    {
+      "A": 0.6,
+      "distance_error_m": 2.7755575615628914e-17,
+      "duration_error_s": 0.0,
+      "final_v": -2.0816681711721685e-17,
+      "final_a": 0.0
+    },
+    {
+      "A": 0.65,
+      "distance_error_m": 0.0,
+      "duration_error_s": 0.0,
+      "final_v": 6.938893903907228e-18,
+      "final_a": 0.0
+    },
+    {
+      "A": 1.0,
+      "distance_error_m": 0.0,
+      "duration_error_s": 0.0,
+      "final_v": -2.7755575615628914e-17,
+      "final_a": 0.0
+    },
+    {
+      "A": 1.5,
+      "distance_error_m": 0.0,
+      "duration_error_s": 1.1102230246251565e-16,
+      "final_v": -5.551115123125783e-17,
+      "final_a": 0.0
+    },
+    {
+      "A": 2.0,
+      "distance_error_m": 0.0,
+      "duration_error_s": 1.1102230246251565e-16,
+      "final_v": -5.551115123125783e-17,
+      "final_a": 0.0
+    }
+  ],
+  "new_physics_runs_at_decision": 0,
+  "execution_budget": {
+    "main_runs": 2,
+    "conditional_halfdt_runs": 1,
+    "maximum_steps": 8000
+  },
+  "scope": "current-state straight fixed-pose reference, checked wide-box corridor only; static geometry reuse invalid after pose/environment change; probe is not preferred safe policy; no physical limit, general route search or real-time guarantee"
+}

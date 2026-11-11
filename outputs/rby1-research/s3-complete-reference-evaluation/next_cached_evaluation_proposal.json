@@ -1,0 +1,37 @@
+{
+  "status": "proposal only; no cached evaluator implemented or run",
+  "date": "2026-11-02",
+  "goal": "Reuse fixed model/seed preparations with separate reference data and candidate caches; verify unchanged complete f/g before selecting a solver budget.",
+  "reference_parameters": [
+    "zero; compare with this archived complete evaluation",
+    "the first already-qualified nonzero direction from s3-feasible-reference-directions/contract.json"
+  ],
+  "maximum_complete_candidates": 2,
+  "coarse_nodes_each": 45,
+  "original_constraints_each": 4860,
+  "reuse_policy": "Only fixed guarded model, grasp, N0, basis and objective quadratic preparations shared. Private MjData, trajectory state and candidate-keyed caches for every reference; no physical-state projection or stale cross-candidate outputs.",
+  "objective_policy": "Same frozen 12-point per-piece objective quadrature, common window and scale; use the audited quadratic and compare against direct target computation without new IK.",
+  "proposed_budget": {
+    "maximum_IK_calls": 90,
+    "maximum_local_steps_per_IK": 30,
+    "maximum_QP_calls": 400,
+    "maximum_QP_internal_iterations": 800,
+    "maximum_run_wall_s": 30,
+    "new_numerical_constraint_Jacobians": 0,
+    "new_outer_optimizer_calls": 0,
+    "new_physics_runs": 0,
+    "new_physics_steps": 0
+  },
+  "verification": "Same f/g rows, original evaluator reconstruction, target-vs-lift at constraint nodes, archived candidate regression and private-cache isolation; report fixed setup and per-candidate time separately.",
+  "limitations": [
+    "Not a full 50D Jacobian or optimization run.",
+    "No speedup or realtime claim before measurement.",
+    "Failed verification stops the new batch without changing old qualified evaluator or limits."
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.complete-reference-evaluation\\contract.json": "f9b74720a0fcc6f05938a445a1ca4ec6c89fd17f1f9c5d74c30bbcd2a6f45eee",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.complete-reference-evaluation\\result.json": "96c8f488a6c0b76164c700ceb82d360a289361735739b85e2d31b0e0b4d187c3",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.complete-reference-evaluation\\delivery_check.json": "d076feef78003dc249ad4d3fe86be7da4526201fc88ee17af19d40c3b0655dfe",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-feasible-reference-directions\\contract.json": "e4c26361391e940054689675f7fee8cbd838288834f3b55706bc5bad56634259"
+  }
+}

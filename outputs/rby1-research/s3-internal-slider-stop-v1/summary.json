@@ -1,0 +1,113 @@
+{
+  "model": "Prescribed longitudinal motion of a horizontal shell, passive 1D slider, symmetric compliant end stops. Forces and moment are net loads at the box center, not per-hand loads.",
+  "mass_kg": 0.5,
+  "slider_mass_kg": 0.15,
+  "stroke_each_side_m": 0.04,
+  "guide_damping_Ns_m": 0.15,
+  "stop_stiffness_N_m": 2000.0,
+  "stop_damping_Ns_m": 6.0,
+  "speed_mps": 0.6,
+  "jerk_mps3": 12.0,
+  "duration_s": 1.2,
+  "steps_s": [
+    0.0005,
+    0.00025
+  ],
+  "robot_simulation_steps": 0,
+  "cases": {
+    "1.25": {
+      "box_stop_s": 0.5841666666666666,
+      "locked": {
+        "dt_0p5ms": {
+          "peak_internal_travel_mm": 0.0,
+          "peak_com_shift_mm": 0.0,
+          "peak_required_longitudinal_force_N": 0.625,
+          "peak_required_pitch_moment_Nm": 0.0,
+          "first_wall_contact_s": null,
+          "peak_wall_force_N": 0.0,
+          "peak_relative_speed_after_box_stop_mps": 0.0,
+          "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+        },
+        "dt_0p25ms": {
+          "peak_internal_travel_mm": 0.0,
+          "peak_com_shift_mm": 0.0,
+          "peak_required_longitudinal_force_N": 0.625,
+          "peak_required_pitch_moment_Nm": 0.0,
+          "first_wall_contact_s": null,
+          "peak_wall_force_N": 0.0,
+          "peak_relative_speed_after_box_stop_mps": 0.0,
+          "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+        }
+      },
+      "released": {
+        "dt_0p5ms": {
+          "peak_internal_travel_mm": 42.001922060854504,
+          "peak_com_shift_mm": 12.600576618256351,
+          "peak_required_longitudinal_force_N": 4.696037865938045,
+          "peak_required_pitch_moment_Nm": 0.061805828312547405,
+          "first_wall_contact_s": 0.315,
+          "peak_wall_force_N": 4.245466316861611,
+          "peak_relative_speed_after_box_stop_mps": 0.0737422610001313,
+          "longitudinal_impulse_error_Ns": 0.0003522984120761241
+        },
+        "dt_0p25ms": {
+          "peak_internal_travel_mm": 42.01215382297702,
+          "peak_com_shift_mm": 12.603646146893105,
+          "peak_required_longitudinal_force_N": 4.716661746273243,
+          "peak_required_pitch_moment_Nm": 0.06182088435051068,
+          "first_wall_contact_s": 0.31475000000000003,
+          "peak_wall_force_N": 4.267054709810159,
+          "peak_relative_speed_after_box_stop_mps": 0.0730904342942338,
+          "longitudinal_impulse_error_Ns": 0.00010984368893390828
+        }
+      }
+    },
+    "2.0": {
+      "box_stop_s": 0.4666666666666667,
+      "locked": {
+        "dt_0p5ms": {
+          "peak_internal_travel_mm": 0.0,
+          "peak_com_shift_mm": 0.0,
+          "peak_required_longitudinal_force_N": 1.0,
+          "peak_required_pitch_moment_Nm": 0.0,
+          "first_wall_contact_s": null,
+          "peak_wall_force_N": 0.0,
+          "peak_relative_speed_after_box_stop_mps": 0.0,
+          "longitudinal_impulse_error_Ns": 0.0
+        },
+        "dt_0p25ms": {
+          "peak_internal_travel_mm": 0.0,
+          "peak_com_shift_mm": 0.0,
+          "peak_required_longitudinal_force_N": 1.0,
+          "peak_required_pitch_moment_Nm": 0.0,
+          "first_wall_contact_s": null,
+          "peak_wall_force_N": 0.0,
+          "peak_relative_speed_after_box_stop_mps": 0.0,
+          "longitudinal_impulse_error_Ns": 5.551115123125783e-17
+        }
+      },
+      "released": {
+        "dt_0p5ms": {
+          "peak_internal_travel_mm": 42.55715882217724,
+          "peak_com_shift_mm": 12.767147646653171,
+          "peak_required_longitudinal_force_N": 6.135617022305511,
+          "peak_required_pitch_moment_Nm": 0.06262285920683382,
+          "first_wall_contact_s": 0.28550000000000003,
+          "peak_wall_force_N": 5.419127939015524,
+          "peak_relative_speed_after_box_stop_mps": 0.053307702373701554,
+          "longitudinal_impulse_error_Ns": 0.0003599079421056084
+        },
+        "dt_0p25ms": {
+          "peak_internal_travel_mm": 42.55401922456008,
+          "peak_com_shift_mm": 12.766205767368023,
+          "peak_required_longitudinal_force_N": 6.127429246875865,
+          "peak_required_pitch_moment_Nm": 0.06261823928894016,
+          "first_wall_contact_s": 0.28525,
+          "peak_wall_force_N": 5.4122446270914395,
+          "peak_relative_speed_after_box_stop_mps": 0.05303413695345399,
+          "longitudinal_impulse_error_Ns": 0.00017959483699653278
+        }
+      }
+    }
+  }
+}

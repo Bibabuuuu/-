@@ -1,0 +1,40 @@
+{
+  "cases": {
+    "tuned": [
+      1.675,
+      1.675
+    ],
+    "fast": [
+      2.0,
+      2.0
+    ],
+    "buffer": [
+      2.0,
+      1.25
+    ]
+  },
+  "block_counts": [
+    1,
+    2
+  ],
+  "mu_nominal": 0.15,
+  "tilt_check_displacement_mm": {
+    "0.9": 0.011980715966820403,
+    "1.1": 47.305281826779726
+  },
+  "calibration_note": "gravity tangential/normal ratio at 0.9 and 1.1 times configured mu; independent simulated check, no measured material",
+  "tray_adapter_mass_kg": 0.006,
+  "block_mass_kg": 0.01,
+  "block_size_m": [
+    0.02,
+    0.02,
+    0.012
+  ],
+  "trigger_s": 1.43,
+  "dt_s": 0.0005,
+  "common_stop_deadline_s": 0.65,
+  "observation_end_s": 2.5,
+  "preregistered_main_metric": "max in-plane displacement relative to tray, from trigger through fixed observation end",
+  "pretrigger_gate": "both hands loaded, blocks seated and pretrigger in-plane drift < 1 mm",
+  "plate_contact": "explicit tray plate vs blocks; other geometric contacts audited"
+}

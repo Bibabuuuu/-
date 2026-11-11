@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": {
+    "deadline": true,
+    "no_geometry_overlap": true,
+    "joint_limits": true,
+    "hands": true,
+    "com": true
+  },
+  "nodes": 253,
+  "min_gap_m": 0.09893939401554887,
+  "max_nonpad_penetration_m": 0.0,
+  "max_joint_speed_fraction": 0.0355155982102885,
+  "min_joint_margin_rad": 0.26179761679808894,
+  "max_hand_position_error_m": 2.7280842393387375e-12,
+  "max_hand_rotation_error_rad": 6.8019931895126015e-12,
+  "max_com_error_m": 2.2215299868541707e-16,
+  "numerical": {
+    "rotation_orthogonality_error": 3.050493934331587e-21,
+    "initial_joint_error_rad": 0.0,
+    "terminal_reference_speed_norm": 0.0,
+    "terminal_reference_acceleration_norm": 0.0,
+    "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+  },
+  "physical_steps": 0
+}

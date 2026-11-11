@@ -1,0 +1,123 @@
+{
+  "records": {
+    "B0": {
+      "checks": {
+        "completed": true,
+        "unchanged": true,
+        "clearance": false,
+        "no_obstacle_contact": true,
+        "control": true,
+        "joints": true,
+        "self_penetration": true,
+        "loaded_hands": true,
+        "wheel_contact": false,
+        "terminal_rest": true
+      },
+      "passed": false,
+      "actual_clearance": {
+        "time_s": 0.4895,
+        "distance_m": 0.048865373377774385,
+        "geom": "link_right_arm_4_LINK_11_collision_3_4",
+        "witness": [
+          1.1215587941831302,
+          -0.1986687637078399,
+          1.0761011714620197,
+          1.1704041741294278,
+          -0.20006646655577776,
+          1.0761011714620197
+        ]
+      },
+      "first_persistent_nominal_stop_s": 0.7505000000000001,
+      "final_axle_mmps": 1.8097950373029423e-06,
+      "final_payload_mmps": 0.15586741435880497,
+      "final_yaw_degps": -1.3888625955794475e-06,
+      "acceleration_rms_mps2": 0.6251046262768084,
+      "peak_acceleration_mps2": 1.1216307580184726,
+      "TCP_force_rms_N": 2.469020418661338,
+      "TCP_moment_rms_Nm": 0.028862270575551817,
+      "peak_TCP_moment_Nm": 0.05884085726405944,
+      "min_hand_normal_force_N": [
+        8.749431302370727,
+        8.749249897280531
+      ],
+      "hold_relative_position_mm": 0.15696866184835492,
+      "hold_relative_rotation_deg": 0.011797661737626341,
+      "peak_object_tracking_error_mm": 2.7145083630017486,
+      "peak_axle_tracking_error_mm": 1.0984865570997808,
+      "wheel_zero_events_s": [
+        0.2975
+      ],
+      "steps": 3800,
+      "hashes": {
+        "trace.npz": "1828998024d925ef299bda3be3dffc229de56efa5bedc289e53f31cbf272d6f5",
+        "grasp_trace.npz": "edfbb98c72474734bc3d9125ee698cb443c37655a25372a0a26d5b09655a4697",
+        "config.json": "234ed3faf0c8e9e9ad9d7dda7ff09116157032112d086d3a4fef28825d7ee5b6",
+        "result.json": "3d4ecb42c6e7037653822e48f74808b0e03974d2ac87c2f3e52ee43076acf518"
+      }
+    },
+    "B1": {
+      "checks": {
+        "completed": true,
+        "unchanged": true,
+        "clearance": false,
+        "no_obstacle_contact": true,
+        "control": true,
+        "joints": true,
+        "self_penetration": true,
+        "loaded_hands": true,
+        "wheel_contact": false,
+        "terminal_rest": true
+      },
+      "passed": false,
+      "actual_clearance": {
+        "time_s": 0.5795,
+        "distance_m": 0.04825368858105971,
+        "geom": "payload_beam",
+        "witness": [
+          1.1224812885302282,
+          -0.1944259437498735,
+          0.7627935590845529,
+          1.1704041741294278,
+          -0.20006646655577776,
+          0.7627935590845529
+        ]
+      },
+      "first_persistent_nominal_stop_s": 0.749,
+      "final_axle_mmps": 3.022897868913841e-07,
+      "final_payload_mmps": 0.15689941267785965,
+      "final_yaw_degps": -1.2013814050216034e-06,
+      "acceleration_rms_mps2": 0.5738985202523933,
+      "peak_acceleration_mps2": 0.9270754136000168,
+      "TCP_force_rms_N": 2.4679268907174876,
+      "TCP_moment_rms_Nm": 0.02593075605790793,
+      "peak_TCP_moment_Nm": 0.04380010317715139,
+      "min_hand_normal_force_N": [
+        8.749559773317078,
+        8.749399889355232
+      ],
+      "hold_relative_position_mm": 0.15755958853249852,
+      "hold_relative_rotation_deg": 0.025799615715817688,
+      "peak_object_tracking_error_mm": 2.57233570870107,
+      "peak_axle_tracking_error_mm": 1.0069321708528889,
+      "wheel_zero_events_s": [
+        0.2725
+      ],
+      "steps": 3800,
+      "hashes": {
+        "trace.npz": "f4b2ede6d51e38aa019b85ff993210cf3765ddd36897428a343fe3211bf204ec",
+        "grasp_trace.npz": "d8bcbac4ba079d2b60483f842dfa5f4a98d17ec82f5707c1349838aa8d2512a6",
+        "config.json": "9d014965c724c540f87a9b57ec6adf1a5eb759cfafdb56cba27a2acfdf56982d",
+        "result.json": "1beae0461a154bf55ac094de6523110a6fe056b678f03116ae01db45dc230d7c"
+      }
+    }
+  },
+  "common_motion_s": [
+    0.0,
+    0.8998625445380035
+  ],
+  "common_hold_s": [
+    0.8998625445380035,
+    1.8998625445380035
+  ],
+  "new_physics_steps": 7600
+}

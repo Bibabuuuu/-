@@ -1,0 +1,65 @@
+{
+  "case": "straight",
+  "dt_s": 0.0005,
+  "duration_requested_s": 1.2,
+  "reference_stop_duration_s": 0.36663230280134784,
+  "payload_mass_kg": 0.35,
+  "initial_axle_speed_mps": 0.3999312722693623,
+  "turn_angle_deg": 0.0,
+  "axle_offset_from_base_yaw_frame_m": [
+    0.22800808852247925,
+    -4.521043413874039e-07,
+    0.09998155613972494
+  ],
+  "track_m": 0.5299999999945839,
+  "radius_m": 0.1,
+  "source_time_s": 3.501,
+  "source_state_policy": "explicit qpos/qvel file; solver history not restored; static zeros velocities",
+  "contact": {
+    "impratio": 10.0,
+    "noslip_iterations": 0
+  },
+  "controller": "external base/upper/payload reference; unchanged inverse dynamics, equal wrench and wheel feedback",
+  "wheel_gains": {
+    "position_Nm_per_m": 100.0,
+    "velocity_Nm_per_radps": 8.0,
+    "yaw_per_s": 4.0,
+    "yaw_rate": 0.4
+  },
+  "parameter_role": "supplied reference A; J=5 and diagnostic +/-10deg, not measured hardware/damage limits; experiment decision defines the search range",
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-slider-whole-robot-brake-impact-v1\\scene.xml": "375efb6af54d9998d4092f072b341b0e53b51f2b5ba0d22a1e13fde4e8ef0c71",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154757_768066_s26_base_only\\joint_trace.npz": "e2ce08788515b29e95d3654b215fab3f96e9d1ecbe3c83d0d1788c8da3690d1a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_planar_stop.py": "4af1539707bd48e1616bc0e8e7a8ab336491cc3a3770dc404ad72d5c89562bd7",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\grasp_observation.py": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\wheel_speed_integral.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-slider-whole-robot-brake-impact-v1\\impact_initial.npz": "1f30034e7a082cc539cad8e9219a00f3d0c3fd459f3543f7dabccc852ea38165",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\whole_body_stop_reference.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f"
+  },
+  "initial_state_path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-slider-whole-robot-brake-impact-v1\\impact_initial.npz",
+  "terminal_stop_priority": true,
+  "reference_acceleration_mps2": 2.0,
+  "wheel_integral": {
+    "kp_existing_Nm_per_radps": 8.0,
+    "integral_time_s": 0.2,
+    "ki_Nm_per_rad": 40.0,
+    "antiwindup": "conditional integration at existing actuator bounds; no new physical limits"
+  },
+  "motion_reference": {
+    "kind": "analytic_legacy_adapter",
+    "units": "SI",
+    "base_frame": "world axle midpoint",
+    "payload_frame": "world COM",
+    "angular_frame": "world",
+    "force_distribution": "unchanged equal split",
+    "upper": null
+  },
+  "reference_contract_audit": {
+    "rotation_orthogonality_error": 3.9968028886505635e-15,
+    "initial_joint_error_rad": 0.0,
+    "terminal_reference_speed_norm": 0.0,
+    "terminal_reference_acceleration_norm": 0.0,
+    "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+  },
+  "all_motion_reference_stop_s": 0.36663230280134784
+}

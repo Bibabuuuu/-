@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-04T08:28:51.425664+00:00",
+  "random_seed": 0,
+  "input_files": [
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-b0-environment-screen-v1\\contract.json",
+      "sha256": "dd0358170cd54546697d041adc88724759407d504635413d98d872d730763104",
+      "bytes": 12917
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\b0_environment_screen.py",
+      "sha256": "5a723885560b786f8f3d71ce2d46846c8567f7806ceb1d0941a9ef0d8fa325ba",
+      "bytes": 11438
+    },
+    {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\initial_state.npz",
+      "sha256": "148aa548be57765e22bb30f63814572938239ccc7642777af47265effc3df9a9",
+      "bytes": 1048
+    }
+  ],
+  "runtime": {
+    "name": "python",
+    "version": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "mujoco": "3.17.0",
+      "ruckig": "0.19.4",
+      "scipy": null
+    }
+  },
+  "key_parameters": {
+    "maximum_evaluations": 276,
+    "maximum_active_wall_s": 180,
+    "physics_budget": 0,
+    "command_role": "verify_saved_references_without_new_search",
+    "new_figures_in_scope": false
+  },
+  "reproduce_command": "work/robot-model-audit/.venv/Scripts/python.exe -B simulation/rby1/b0_environment_screen.py verify"
+}

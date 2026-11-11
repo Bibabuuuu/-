@@ -89,7 +89,7 @@ def reference_check():
 
 
 def source():
-    r = json.loads((OUT.parent/"stage26/summary.json").read_text())["runs"]["base_only"]
+    r = json.loads((OUT.parent/"stage26/summary.json").read_text(encoding="utf-8"))["runs"]["base_only"]
     folder = Path(r["folder"])
     with np.load(folder/"joint_trace.npz") as z:
         i = int(np.argmin(abs(z["time"]-3.5)))
@@ -97,9 +97,11 @@ def source():
     return folder, q, v, t
 
 
-def run(case, label, dt=.001, duration=None, *, wheel_integral=None, output_root=None, yaw_position_gain=1.5, stop_priority=False, scene_override=None, reference_acceleration=.5, reference_turn_angle_rad=None, upper_reference=None, motion_reference=None, initial_state_path=None):
-    assert case in CASES and dt in [.001, .0005]
+def run(case, label, dt=.001, duration=None, *, wheel_integral=None, output_root=None, yaw_position_gain=1.5, stop_priority=False, scene_override=None, reference_acceleration=.5, reference_turn_angle_rad=None, upper_reference=None, motion_reference=None, initial_state_path=None, step_disturbance=None, payload_wrench_adjustment=None, upper_acceleration_adjustment=None, hand_wrench_adjustment=None, finger_command_adjustment=None, nominal_payload_mass_kg=None):
+    assert case in CASES and dt in [.001, .0005, .00025]
     assert np.isfinite(yaw_position_gain) and yaw_position_gain > 0
+    if nominal_payload_mass_kg is not None:
+        assert case == "straight" and motion_reference is not None and nominal_payload_mass_kg > 0.
     angle = CASES[case] if reference_turn_angle_rad is None else float(reference_turn_angle_rad)
     assert np.isfinite(angle) and (case != "static" or angle == 0.)
     frozen = frozen_checks()
@@ -125,6 +127,7 @@ def run(case, label, dt=.001, duration=None, *, wheel_integral=None, output_root
     qa, va = m.jnt_qposadr[jids], m.jnt_dofadr[jids]
     wheels = [a for a, n in enumerate(names) if "wheel" in n]
     fingers = [a for a, n in enumerate(names) if "finger" in n]
+    finger_names = [names[a] for a in fingers]
     upper = [a for a in range(m.nu) if a not in wheels+fingers]
     wb = m.jnt_bodyid[jids[wheels]]
     R0 = d.xmat[base].reshape(3, 3).copy()
@@ -151,7 +154,7 @@ def run(case, label, dt=.001, duration=None, *, wheel_integral=None, output_root
         final_reference_time = ref.T_all
     total = final_reference_time + 1. if duration is None else duration
     steps = int(np.ceil(total/dt))
-    assert 0 < steps <= 5000
+    assert 0 < steps <= (10000 if dt == .00025 else 5000)
     mass = float(m.body_mass[obj])
     object_R0 = d.xmat[obj].reshape(3, 3).copy()
     sites = {s: m.site("ee_"+s+"_site").id for s in ["left", "right"]}
@@ -255,6 +258,8 @@ def run(case, label, dt=.001, duration=None, *, wheel_integral=None, output_root
     try:
         for k in range(steps):
             t = k*dt
+            if step_disturbance is not None:
+                step_disturbance(t, m, d)
             p, yaw, v, a, omega, alpha = planned(t)
             axle = np.mean(d.xpos[wb], axis=0)
             R = d.xmat[base].reshape(3, 3)
@@ -272,6 +277,8 @@ def run(case, label, dt=.001, duration=None, *, wheel_integral=None, output_root
                 uq, uv, ua = motion_reference.joint(t)
                 uqa, uva = motion_reference.qadr, motion_reference.vadr
                 acc[uva] = ua+100*(uq-d.qpos[uqa])+20*(uv-d.qvel[uva])
+            if upper_acceleration_adjustment is not None:
+                acc[va[upper]] += upper_acceleration_adjustment(t, m, d, va[upper])
             for ai in wheels:
                 sign = float(np.sign(d.xaxis[jids[ai]] @ R[:, 1]))
                 side = 1. if names[ai] == "right_wheel" else -1.
@@ -285,20 +292,31 @@ def run(case, label, dt=.001, duration=None, *, wheel_integral=None, output_root
             if motion_reference is not None:
                 object_reference = motion_reference.payload(t)
                 object_acc = object_reference[2]
-            F = mass*(object_acc-m.opt.gravity)
-            Ri = d.ximat[obj].reshape(3, 3); I = (Ri*m.body_inertia[obj]) @ Ri.T
-            mj.mj_jacBodyCom(m, d, jp, jr, obj)
-            desired_R = rz(yaw-yaw0) @ object_R0
-            angular_acc = alpha+100*rotvec(desired_R @ d.xmat[obj].reshape(3, 3).T)+20*(omega-jr @ d.qvel)
-            if motion_reference is not None:
-                desired_R, object_omega, object_alpha = object_reference[3:]
-                angular_acc = object_alpha+100*rotvec(desired_R @ d.xmat[obj].reshape(3, 3).T)+20*(object_omega-jr @ d.qvel)
-            moment = I @ angular_acc+np.cross(jr @ d.qvel, I @ (jr @ d.qvel))
-            fs, ms = split_wrench(d.xipos[obj], {s: d.site_xpos[si] for s, si in sites.items()}, F, moment)
+            if nominal_payload_mass_kg is not None:
+                wrench_center = object_reference[0]
+                F = nominal_payload_mass_kg*(object_acc-m.opt.gravity)
+                moment = np.zeros(3)
+            else:
+                wrench_center = d.xipos[obj]
+                F = mass*(object_acc-m.opt.gravity)
+                Ri = d.ximat[obj].reshape(3, 3); I = (Ri*m.body_inertia[obj]) @ Ri.T
+                mj.mj_jacBodyCom(m, d, jp, jr, obj)
+                desired_R = rz(yaw-yaw0) @ object_R0
+                angular_acc = alpha+100*rotvec(desired_R @ d.xmat[obj].reshape(3, 3).T)+20*(omega-jr @ d.qvel)
+                if motion_reference is not None:
+                    desired_R, object_omega, object_alpha = object_reference[3:]
+                    angular_acc = object_alpha+100*rotvec(desired_R @ d.xmat[obj].reshape(3, 3).T)+20*(object_omega-jr @ d.qvel)
+                moment = I @ angular_acc+np.cross(jr @ d.qvel, I @ (jr @ d.qvel))
+            if payload_wrench_adjustment is not None:
+                F, moment = payload_wrench_adjustment(t, m, d, object_acc, F, moment)
+            hand_positions = {s: d.site_xpos[si] for s, si in sites.items()}
+            fs, ms = split_wrench(wrench_center, hand_positions, F, moment)
+            if hand_wrench_adjustment is not None:
+                fs, ms = hand_wrench_adjustment(t, m, d, hand_positions, fs, ms)
             max_balance = max(max_balance, float(np.linalg.norm(sum(fs.values())-F)),
-                              float(np.linalg.norm(sum(np.cross(d.site_xpos[sites[s]]-d.xipos[obj], fs[s])+ms[s] for s in sites)-moment)))
+                              float(np.linalg.norm(sum(np.cross(d.site_xpos[sites[s]]-wrench_center, fs[s])+ms[s] for s in sites)-moment)))
             force = tau[:3]+F
-            torque_axle = R @ tau[3:6]+np.cross(d.xipos[obj]-d.xpos[base], F)+moment-np.cross(axle-d.xpos[base], force)
+            torque_axle = R @ tau[3:6]+np.cross(wrench_center-d.xpos[base], F)+moment-np.cross(axle-d.xpos[base], force)
             for s, si in sites.items():
                 mj.mj_jacSite(m, d, jp, jr, si)
                 tau[va[upper]] += jp[:, va[upper]].T @ fs[s]+jr[:, va[upper]].T @ ms[s]
@@ -321,6 +339,8 @@ def run(case, label, dt=.001, duration=None, *, wheel_integral=None, output_root
                 ctrl[wheels] = wheel_integral.correct(t, dt, wheel_errors, ctrl[wheels], m.actuator_ctrlrange[wheels], integrate=not terminal)
             for ai in fingers:
                 ctrl[ai] = .035*(1 if names[ai][-1] == "1" else -1)
+            if finger_command_adjustment is not None:
+                ctrl[fingers] = finger_command_adjustment(t, m, d, finger_names, ctrl[fingers])
             maxclip = max(maxclip, float(np.max(np.maximum(m.actuator_ctrlrange[:, 0]-ctrl, ctrl-m.actuator_ctrlrange[:, 1]))))
             d.ctrl[:] = np.clip(ctrl, m.actuator_ctrlrange[:, 0], m.actuator_ctrlrange[:, 1])
             mj.mj_step(m, d)

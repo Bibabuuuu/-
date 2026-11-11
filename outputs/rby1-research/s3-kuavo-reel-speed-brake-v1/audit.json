@@ -1,0 +1,71 @@
+{
+  "v40_a125_left": {
+    "sustained_both_hands_before_brake": true,
+    "sustained_both_hands_common_stop_window": true,
+    "local_touch_boundary_fraction": [
+      0.3235972328977709,
+      0.0
+    ],
+    "reference_trace_sha256": "9d0cdb30e8f4d727477bc1dc463418cbe575d4b1b913dd8c0445aac98047aa9d"
+  },
+  "v40_a200_left": {
+    "sustained_both_hands_before_brake": true,
+    "sustained_both_hands_common_stop_window": true,
+    "local_touch_boundary_fraction": [
+      0.27747886241352804,
+      0.0
+    ],
+    "reference_trace_sha256": "5adc8eace690f51fe0cc13a8ffd2e9050168f89b3d1d148a45bb219d7fb9a641",
+    "pretrigger_qpos_max_difference": 1.3322676295501878e-15,
+    "pretrigger_qvel_max_difference": 3.182732397945254e-14
+  },
+  "v50_a125_left": {
+    "sustained_both_hands_before_brake": true,
+    "sustained_both_hands_common_stop_window": true,
+    "local_touch_boundary_fraction": [
+      0.3051498847040738,
+      0.0
+    ],
+    "reference_trace_sha256": "ae4e85bb75e78095fbd1d1d7aa117ccc07c5362737a04269ad6cd92de75a9f95"
+  },
+  "v50_a200_left": {
+    "sustained_both_hands_before_brake": true,
+    "sustained_both_hands_common_stop_window": true,
+    "local_touch_boundary_fraction": [
+      0.3466564181398924,
+      0.0
+    ],
+    "reference_trace_sha256": "e46d3aac2b2337a01dbea9b5ed979183645134af5499a7e2019dcaeecad60158",
+    "pretrigger_qpos_max_difference": 0.0,
+    "pretrigger_qvel_max_difference": 0.0
+  },
+  "v60_a125_left": {
+    "sustained_both_hands_before_brake": true,
+    "sustained_both_hands_common_stop_window": true,
+    "local_touch_boundary_fraction": [
+      0.28747117601844735,
+      0.0
+    ],
+    "reference_trace_sha256": "c40b49c26b4ac821d00a68ac007cb6643747675770d829fdfefded60f783b6b4"
+  },
+  "v60_a200_left": {
+    "sustained_both_hands_before_brake": true,
+    "sustained_both_hands_common_stop_window": true,
+    "local_touch_boundary_fraction": [
+      0.409684857801691,
+      0.0
+    ],
+    "reference_trace_sha256": "d807f1e565479346b5a1df88c97337411474ee474aaa206028c4996d41394e19",
+    "pretrigger_qpos_max_difference": 0.0,
+    "pretrigger_qvel_max_difference": 0.0
+  },
+  "v60_a200_right": {
+    "sustained_both_hands_before_brake": true,
+    "sustained_both_hands_common_stop_window": true,
+    "local_touch_boundary_fraction": [
+      0.0,
+      0.4104534973097617
+    ],
+    "reference_trace_sha256": "19b9a4ef724b6bb81de0803ab1284677afc7c52e98cbaf7bcf9aa3757a7a768f"
+  }
+}

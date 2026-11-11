@@ -1,0 +1,476 @@
+{
+  "new_physics_runs": 0,
+  "new_optimizer_calls": 0,
+  "runtime_versions": {
+    "mujoco": "3.17.0",
+    "numpy": "2.3.5"
+  },
+  "spline_structure": {
+    "degree": 5,
+    "control_points": 8,
+    "interior_knots": [
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "upper_joint_count": 20,
+    "upper_endpoint_constraint_rank": 5,
+    "base_velocity_endpoint_constraint_rank": 4,
+    "free_upper_coefficients": 60,
+    "free_v_omega_coefficients": 8,
+    "total_free_coefficients": 68,
+    "endpoint_nullspace_error": 1.5691152081368877e-14,
+    "constraint_note": "B-spline endpoint conditions only; no nonlinear grasp/collision guarantee"
+  },
+  "Jacobian_derivative_checks": {
+    "point_velocity_mps": 5.420641366327139e-12,
+    "point_Jdot": 2.689435826819242e-11,
+    "angular_Jdot": 1.6992893203671144e-11
+  },
+  "initial_state": {
+    "upper_joint_speed_max_radps": 5.4903710595328164e-05,
+    "base_body_angular_speed_norm_radps": 3.2806264862338134e-06,
+    "note": "existing references assume held upper start velocity; exact measured initial continuity requires explicit review"
+  },
+  "callback_cost": [
+    {
+      "nodes": 21,
+      "repeat_s": [
+        0.007205800000519957,
+        0.008348199997271877,
+        0.00818740000249818,
+        0.010177000003750436,
+        0.00819440000486793
+      ],
+      "median_packet_s": 0.00819440000486793,
+      "estimated_69_forward_difference_packets_s": 0.5654136003358872,
+      "maximum_seed_grasp_residual_SI": 1.2212453270876722e-15,
+      "minimum_seed_gap_m": 0.006267641803897419,
+      "native_distance_calls": 116,
+      "excludes": "curve integration, objective, solver linear algebra, line search and dense final audit"
+    },
+    {
+      "nodes": 41,
+      "repeat_s": [
+        0.013589999995019753,
+        0.013813999998092186,
+        0.013207099997089244,
+        0.013496200001100078,
+        0.013389500003540888
+      ],
+      "median_packet_s": 0.013496200001100078,
+      "estimated_69_forward_difference_packets_s": 0.9312378000759054,
+      "maximum_seed_grasp_residual_SI": 1.2212453270876722e-15,
+      "minimum_seed_gap_m": 0.006267545903579698,
+      "native_distance_calls": 227,
+      "excludes": "curve integration, objective, solver linear algebra, line search and dense final audit"
+    }
+  ],
+  "local_ranks": [
+    {
+      "state": "trigger",
+      "joint_count": 20,
+      "two_hand_task_rank": 12,
+      "nullity_for_fixed_two_hand_pose": 8,
+      "singular_values_scaled": [
+        1.3899184121627701,
+        1.2990339576855463,
+        0.8393478708732927,
+        0.7090388689881874,
+        0.6934899021758699,
+        0.6377674464535985,
+        0.4448061569313134,
+        0.36436877799224554,
+        0.2717793599534526,
+        0.2103045171798481,
+        0.1902776132402316,
+        0.1704547372172691
+      ]
+    },
+    {
+      "state": "old_stop",
+      "joint_count": 20,
+      "two_hand_task_rank": 12,
+      "nullity_for_fixed_two_hand_pose": 8,
+      "singular_values_scaled": [
+        1.3899184121627692,
+        1.2990339576855463,
+        0.8393478708732921,
+        0.7090388689881872,
+        0.6934899021758697,
+        0.6377674464535985,
+        0.44480615693131326,
+        0.3643687779922454,
+        0.2717793599534523,
+        0.21030451717984802,
+        0.19027761324023165,
+        0.17045473721726914
+      ]
+    }
+  ],
+  "static_IK": [
+    {
+      "state": "trigger",
+      "task": "zero",
+      "displacement_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 0,
+      "elapsed_s": 0.00011729999823728576,
+      "position_residual_m": 6.23728986632994e-16,
+      "angle_residual_rad": 4.118944384594395e-20,
+      "minimum_gap_m": 0.10003086230912513,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.0,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "trigger",
+      "task": "x_-1",
+      "displacement_m": [
+        -0.02,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.001370999998471234,
+      "position_residual_m": 5.068504608490512e-08,
+      "angle_residual_rad": 1.007220886667947e-07,
+      "minimum_gap_m": 0.1200308622551286,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.02780798517103743,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "trigger",
+      "task": "x_+1",
+      "displacement_m": [
+        0.02,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.0012564999997266568,
+      "position_residual_m": 5.071752460823769e-08,
+      "angle_residual_rad": 1.0032968336329e-07,
+      "minimum_gap_m": 0.08003086236312162,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.02812290046151895,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "trigger",
+      "task": "y_-1",
+      "displacement_m": [
+        0.0,
+        -0.02,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.0012212000001454726,
+      "position_residual_m": 4.686233525476307e-08,
+      "angle_residual_rad": 8.230465220074574e-08,
+      "minimum_gap_m": 0.09804365835836244,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.03148003186205091,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "trigger",
+      "task": "y_+1",
+      "displacement_m": [
+        0.0,
+        0.02,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.0012510999949881807,
+      "position_residual_m": 4.686475000450091e-08,
+      "angle_residual_rad": 8.230250965170131e-08,
+      "minimum_gap_m": 0.10003233195575346,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.031479992452825775,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "trigger",
+      "task": "z_-1",
+      "displacement_m": [
+        0.0,
+        0.0,
+        -0.02
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 3,
+      "elapsed_s": 0.001710800002911128,
+      "position_residual_m": 1.0070609752322452e-11,
+      "angle_residual_rad": 6.04615175505256e-11,
+      "minimum_gap_m": 0.10003086230912511,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.08788112706429847,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "trigger",
+      "task": "z_+1",
+      "displacement_m": [
+        0.0,
+        0.0,
+        0.02
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 3,
+      "elapsed_s": 0.001765100001648534,
+      "position_residual_m": 9.646858129895515e-12,
+      "angle_residual_rad": 5.4693536416123547e-11,
+      "minimum_gap_m": 0.10003086230912511,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.086619489292781,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "trigger",
+      "task": "yaw_-",
+      "displacement_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": -0.05,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.001098299995646812,
+      "position_residual_m": 4.426093281336621e-08,
+      "angle_residual_rad": 1.2052739125392964e-07,
+      "minimum_gap_m": 0.10909936413130837,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.04871256663986355,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "trigger",
+      "task": "yaw_+",
+      "displacement_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.05,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.001079800000297837,
+      "position_residual_m": 4.426043346067892e-08,
+      "angle_residual_rad": 1.2053119695342e-07,
+      "minimum_gap_m": 0.08911160408084975,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.04871256722226313,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "old_stop",
+      "task": "zero",
+      "displacement_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 0,
+      "elapsed_s": 0.00010620000102790073,
+      "position_residual_m": 8.087309868639295e-16,
+      "angle_residual_rad": 1.6501739241219622e-16,
+      "minimum_gap_m": 0.006751345942980656,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.0,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "old_stop",
+      "task": "x_-1",
+      "displacement_m": [
+        -0.02,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.0015100000018719584,
+      "position_residual_m": 5.27408858740323e-08,
+      "angle_residual_rad": 1.0364884225706366e-07,
+      "minimum_gap_m": 0.026762688612476986,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.0279238839079733,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "old_stop",
+      "task": "x_+1",
+      "displacement_m": [
+        0.02,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.0025939999977708794,
+      "position_residual_m": 5.2706471129862476e-08,
+      "angle_residual_rad": 1.033540930179959e-07,
+      "minimum_gap_m": -0.013256992276134973,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.028232142424309346,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "old_stop",
+      "task": "y_-1",
+      "displacement_m": [
+        0.0,
+        -0.02,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.0015690000000176951,
+      "position_residual_m": 4.938253554675971e-08,
+      "angle_residual_rad": 8.514409007173138e-08,
+      "minimum_gap_m": 0.004198843725397532,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.03140258413905301,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "old_stop",
+      "task": "y_+1",
+      "displacement_m": [
+        0.0,
+        0.02,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.001454500001273118,
+      "position_residual_m": 4.9683391612069897e-08,
+      "angle_residual_rad": 8.383837420618139e-08,
+      "minimum_gap_m": 0.011147665452109531,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.03135694738677301,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "old_stop",
+      "task": "z_-1",
+      "displacement_m": [
+        0.0,
+        0.0,
+        -0.02
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 3,
+      "elapsed_s": 0.002066599998215679,
+      "position_residual_m": 1.007078921097616e-11,
+      "angle_residual_rad": 6.046171919673586e-11,
+      "minimum_gap_m": 0.006625346163282808,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.0878811270642982,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "old_stop",
+      "task": "z_+1",
+      "displacement_m": [
+        0.0,
+        0.0,
+        0.02
+      ],
+      "yaw_rad": 0.0,
+      "status": "converged",
+      "reason": "",
+      "iterations": 3,
+      "elapsed_s": 0.0020560999982990324,
+      "position_residual_m": 9.646884770890585e-12,
+      "angle_residual_rad": 5.469343759238018e-11,
+      "minimum_gap_m": 0.006868060762585948,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.08661948929278268,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "old_stop",
+      "task": "yaw_-",
+      "displacement_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": -0.05,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.0012590999976964667,
+      "position_residual_m": 4.4260933477180944e-08,
+      "angle_residual_rad": 1.2052739101744964e-07,
+      "minimum_gap_m": 0.0152689856011472,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.0487125666398639,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    },
+    {
+      "state": "old_stop",
+      "task": "yaw_+",
+      "displacement_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 0.05,
+      "status": "converged",
+      "reason": "",
+      "iterations": 2,
+      "elapsed_s": 0.0014689000017824583,
+      "position_residual_m": 4.4260433527465875e-08,
+      "angle_residual_rad": 1.205311971381483e-07,
+      "minimum_gap_m": -0.0017535610642616104,
+      "self_penetration_m": 0.0,
+      "joint_change_norm_rad": 0.04871256722226363,
+      "scope": "static IK endpoint; collision checked after solve; not a collision-free path"
+    }
+  ],
+  "wall_s": 0.9392409000065527,
+  "sources_unchanged": true,
+  "frozen_unchanged": true,
+  "scope": "representation and cost preflight; no trajectory solve or physical qualification"
+}

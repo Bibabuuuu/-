@@ -1,0 +1,184 @@
+{
+  "scope": "Three frozen-base reference configurations; local instantaneous kinematics only, not a global trajectory chart or proof of optimizer failure cause.",
+  "maximum_callbacks": 60,
+  "maximum_probe_wall_s": 30.0,
+  "actual_pose_callbacks": 44,
+  "probe_wall_s": 0.02869259999715723,
+  "new_optimization_solves": 0,
+  "new_IK_solves": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "rotation_note": "Relative angular Jacobian is the shared-object angular-velocity difference. At the middle state, finite differences of the actual SO(3) log residual confirm its rank; finite pose residuals need not give identical matrices.",
+  "rows": [
+    {
+      "time_s": 0.0,
+      "upper_dofs": 20,
+      "fixed_two_object_poses_task": {
+        "rank_default_tolerance": 12,
+        "ranks_at_relative_cutoffs": {
+          "1e-06": 12,
+          "1e-08": 12,
+          "1e-10": 12
+        },
+        "singular_values": [
+          12474.056006767938,
+          11543.386668733985,
+          10084.701068897537,
+          8387.78674867905,
+          7305.612460159421,
+          3667.9326466039856,
+          1990.1791213178856,
+          1771.0655621478957,
+          1508.0986616708226,
+          939.4919766485956,
+          625.2802304843576,
+          573.8579702886029
+        ],
+        "null_dimension": 8,
+        "null_residual_inf": 1.2584875756469225e-12
+      },
+      "relative_shared_object_twist_task": {
+        "rank_default_tolerance": 6,
+        "ranks_at_relative_cutoffs": {
+          "1e-06": 6,
+          "1e-08": 6,
+          "1e-10": 6
+        },
+        "singular_values": [
+          11839.078043891226,
+          11662.331766338339,
+          5887.9826854301655,
+          2115.450690394776,
+          1110.422254904303,
+          833.376453559219
+        ],
+        "null_dimension": 14,
+        "null_residual_inf": 2.7112913782420325e-12
+      },
+      "object_twist_rank_within_relative_nullspace": 6,
+      "fixed_task_jacobian_fd_error": null,
+      "actual_relative_pose_fd_rank_at_middle": null,
+      "closure_pose_norms": [
+        3.0531133177191805e-16,
+        7.560947642226797e-21
+      ]
+    },
+    {
+      "time_s": 0.30976035152131776,
+      "upper_dofs": 20,
+      "fixed_two_object_poses_task": {
+        "rank_default_tolerance": 12,
+        "ranks_at_relative_cutoffs": {
+          "1e-06": 12,
+          "1e-08": 12,
+          "1e-10": 12
+        },
+        "singular_values": [
+          12462.316543462357,
+          11491.768643123552,
+          10070.614313560784,
+          8383.692571676998,
+          7273.691004455302,
+          3668.541790262965,
+          1990.4850048530354,
+          1771.4046719548658,
+          1507.9377258518077,
+          946.677148469093,
+          625.4688556986841,
+          573.9121951712856
+        ],
+        "null_dimension": 8,
+        "null_residual_inf": 1.444021116804008e-12
+      },
+      "relative_shared_object_twist_task": {
+        "rank_default_tolerance": 6,
+        "ranks_at_relative_cutoffs": {
+          "1e-06": 6,
+          "1e-08": 6,
+          "1e-10": 6
+        },
+        "singular_values": [
+          11833.085709258776,
+          11655.496365782055,
+          5889.03606276764,
+          2115.7756684326973,
+          1110.6612151758954,
+          833.7491290275316
+        ],
+        "null_dimension": 14,
+        "null_residual_inf": 1.5309524379493843e-12
+      },
+      "object_twist_rank_within_relative_nullspace": 6,
+      "fixed_task_jacobian_fd_error": 4.811574472185498e-10,
+      "actual_relative_pose_fd_rank_at_middle": 6,
+      "closure_pose_norms": [
+        5.3050518703755375e-06,
+        5.105337578697389e-05
+      ]
+    },
+    {
+      "time_s": 0.6195207030426355,
+      "upper_dofs": 20,
+      "fixed_two_object_poses_task": {
+        "rank_default_tolerance": 12,
+        "ranks_at_relative_cutoffs": {
+          "1e-06": 12,
+          "1e-08": 12,
+          "1e-10": 12
+        },
+        "singular_values": [
+          12477.999456777205,
+          11522.376237157869,
+          10078.20371343761,
+          8386.057435673341,
+          7293.988363141764,
+          3669.321628520239,
+          1990.7859522766003,
+          1769.8511160537491,
+          1508.0825134464396,
+          941.9758344856782,
+          625.1994347383605,
+          573.851552174555
+        ],
+        "null_dimension": 8,
+        "null_residual_inf": 2.0227869702577663e-12
+      },
+      "relative_shared_object_twist_task": {
+        "rank_default_tolerance": 6,
+        "ranks_at_relative_cutoffs": {
+          "1e-06": 6,
+          "1e-08": 6,
+          "1e-10": 6
+        },
+        "singular_values": [
+          11836.639344636818,
+          11660.380098564356,
+          5888.019363711824,
+          2115.619804644931,
+          1110.4917447377277,
+          833.4891685629971
+        ],
+        "null_dimension": 14,
+        "null_residual_inf": 3.0715191722040404e-12
+      },
+      "object_twist_rank_within_relative_nullspace": 6,
+      "fixed_task_jacobian_fd_error": null,
+      "actual_relative_pose_fd_rank_at_middle": null,
+      "closure_pose_norms": [
+        9.936277416114096e-06,
+        9.531179942256403e-05
+      ]
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\joint_baseline_probe.py": "ba2bdf3e12a8c0a29bc596c43eb389730fa9af0a62850c92e1ec3df012be5eb7",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\velocity_reference.py": "e108e0c1c523868280a09f85078ce03d4bc1f40f3edea24b4b00e2ec6e6c28cc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\whole_stop_spline.py": "410c48590691c0094af8e9abc1561c00e9cea3b04e8c3f2c7731fb33d6c9bf97",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\motion_distribution.py": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_planar_stop.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\contract.json": "8ad5a4fc72e40157694604aac81dc30ea89343c3d33686d0f637753fb9883be5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\solve\\plan.json": "adc19e92c2c0f22e7acca64926c7385e889ff1e4c4d0601e366b585001bcf21b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\synchronized_scene.xml": "a979eeb810ab2315bb941c23a3ffcea09186604aee6926cade8b23b406620388",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\initial_state.npz": "148aa548be57765e22bb30f63814572938239ccc7642777af47265effc3df9a9"
+  }
+}

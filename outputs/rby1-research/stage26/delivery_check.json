@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-01",
+  "section_status": "已完成：有限名义基线比较",
+  "physical_runs": 4,
+  "new_dependencies": 0,
+  "grasp_samples": 24004,
+  "all_model_and_tracking_checks_passed": true,
+  "all_source_snapshots_verified": true,
+  "old_physical_sources_and_models_unchanged": true,
+  "stage24_summary_sha256": "c176ac12d573d6d1f3fe8e7855816b7dd6267b1c65e6e47e00dba05f50a57ffc",
+  "contact_force_moment_identity_checks": [
+    {
+      "case": "base_only",
+      "max_force_sum_error_N": 1.7763568394002505e-15,
+      "max_moment_sum_error_Nm": 1.3877787807814457e-16
+    },
+    {
+      "case": "shared",
+      "max_force_sum_error_N": 1.7763568394002505e-15,
+      "max_moment_sum_error_Nm": 1.3877787807814457e-16
+    },
+    {
+      "case": "base_fast_buffer",
+      "max_force_sum_error_N": 1.7763568394002505e-15,
+      "max_moment_sum_error_Nm": 1.3877787807814457e-16
+    },
+    {
+      "case": "base_fast_held",
+      "max_force_sum_error_N": 1.7763568394002505e-15,
+      "max_moment_sum_error_Nm": 1.3877787807814457e-16
+    }
+  ],
+  "pretrigger_saved_state_and_grasp_exact": true,
+  "matched_object_reference_exact": true,
+  "matched_fast_base_reference_exact": true,
+  "figure_alignment": "PASS",
+  "figure_collision": "PASS",
+  "figure_source_fails": 0,
+  "figure_source_warnings": [
+    "EXPORT-RASTER"
+  ],
+  "figure_warning_disposition": "No TIFF needed for the internal PNG/PDF/SVG deliverable.",
+  "figure_min_font_pt": 7.0,
+  "figure_png_pixels": [
+    4322,
+    2551
+  ],
+  "figure_png_dpi": [
+    599.9988,
+    599.9988
+  ],
+  "final_visual_inspection_passed": true,
+  "all_report_local_links_exist": true,
+  "source_sha256": {
+    "analyze_stage26.py": "b5d1d03804919b2805ae885870191d55e5c9ed01530b5257e5b69b47a90a6430",
+    "check_stage26.py": "18794c0d399ff1a8c164e7bb2a3125087f8bdbf5076595267665aff62b07ada6",
+    "plot_stage26.py": "92a06df906c16cb8e220c28252c260ea52d9cc7c4ba2d19341bfe37a893d5d7f",
+    "run_stage26.py": "0b35ae4413275f5a682f5b899782231d5f1c1063cb4b699486a4ac4e3d6e1f57"
+  },
+  "new_reference_sha256": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+  "artifact_sha256": {
+    "allocation.alignment.json": "f8f997dfbc6160b032f67068bc6775c21f6d94833b41b17a21931a9b8dcb39de",
+    "allocation.alignment.overlay.svg": "53983f19bb5a5743c1cc880e81a6945ce008e41bf9188310222454d7d8a75b96",
+    "allocation.collision-audit.json": "7c44ae8d0a10681b6dadad9282748a3029449e88e9504e443cf73ec57a37f33f",
+    "base_fast_buffer_reference.npz": "223edca098847cfa3a1b872b77382d15c55134d23eda24dfe2f247289a496f60",
+    "base_fast_held_reference.npz": "33b2f29827adc1876580090c8d137d051f7277f390fe45696b1fd48e69193f44",
+    "base_only_reference.npz": "d96044fe359fa069f1cbe492a9399bf7335c1bb8c7e0dac88b96c007a1b5fcea",
+    "conditional_reference_requirements.csv": "3fe9e37c83758e9c93ac7bbc9318e1163d29b1da3120a4e1f481670c0c7b3e1b",
+    "figure_contract.json": "9d191da643d765169de13fa75f58e11d9b690039aaa0a019a3e9dd53c4ee72cc",
+    "figure_source_preflight.json": "d24022ca31d0d021d197654264cea7fce9db53ef2e7704c329a2fcbcd691aef6",
+    "figure_text_audit.json": "733b66aaa8f472dbd4cda5afe727f522b166a7bfc1a2c8cd4d8cfc1f46dd23c7",
+    "grasp_metrics_by_hand.csv": "8523e79d93fb488f64edb946e72086c5b714492d782ee61a28367aaa9a4888c2",
+    "independent_checks.json": "447b5f4dab88db39cb0fbe890b5c2ea43558d8d576a1945a1585aae7989fdff6",
+    "qa_notes.md": "01d4db765c0f05fec3ea81c0f42a3c4457f3b2439235f09d0a0e48496f29c8f6",
+    "runs.csv": "8a2826619650ae1acf1ed3796d725a4652b6dd83eded6cf4b51055452d57a7db",
+    "shared_reference.npz": "404a8fe70a3571c050ebe6e9eb33c1b68e6b139e6f2878485ae10033a7993f2f",
+    "summary.json": "7266117b5337eff801bcb6812eb44a0e4a4dfd34260842888ecc15455f8e4165",
+    "底盘与上身停止分配.pdf": "0a7d9fffb968e291b4a2f5e2d33ce23d8ba09a7bd29c2717dd5a03212b23e228",
+    "底盘与上身停止分配.png": "a4312b4ad7bdb6f20a3f4bbe2259521b5e10b39f488035722fbee9004f11a413",
+    "底盘与上身停止分配.svg": "91b70ed99d037dd5de456eafed3acc64b87ec8e77e77b3d0c8097900cb7b286b",
+    "底盘与上身停止分配_结果说明.md": "08c47746b548c7ff37d5ca32d98e5b1f34a77a76fcc1bd93b64c3424d5390cd4"
+  },
+  "export_directory": "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\2026-11-01_底盘上身停止分配",
+  "limitations": [
+    "No external obstacle added or hardware stopping interface verified.",
+    "Example 12/18 cm are nominal reference distances, not physical clearance guarantees.",
+    "Single nominal run per condition, no statistical or universal grasp/damage claim.",
+    "No new joint optimizer or academic novelty established."
+  ],
+  "analysis_revision": {
+    "date": "2026-11-01",
+    "reason": "User noted acceleration-only presentation; clarify multi-indicator stability and unresolved holding drift.",
+    "new_physical_runs": 0,
+    "physical_trace_changes": 0,
+    "per_hand_rows": 8,
+    "common_window_s": [
+      3.5,
+      4.4
+    ],
+    "hold_window_duration_s": 1.0,
+    "finite_and_aggregate_checks_passed": true,
+    "figure_files_unchanged": true,
+    "prior_report_and_data_sha256": {
+      "底盘与上身停止分配_结果说明.md": "1379a6d0966a5823c616a73eff38ebaf156261a5875ec2aa352ec8fa9a90a2c0",
+      "runs.csv": "752906f1e30a845a44e35b3917d7e98a4df4d0695083fba0a3fc42bf2205bde9",
+      "summary.json": "acdd981116a74c7c0c5bf28f0792da5f600c06039f772f77cd0c58a1eeba2c9e"
+    },
+    "overall_stable_grasp_established": false
+  }
+}

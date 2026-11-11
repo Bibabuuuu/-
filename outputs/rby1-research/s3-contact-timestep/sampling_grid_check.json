@@ -1,0 +1,71 @@
+{
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "rows": [
+    {
+      "label": "default_1ms",
+      "stride": 1,
+      "observation_dt_s": 0.001,
+      "peak_acceleration_mps2_on_1ms_grid": 0.8952753773625873,
+      "peak_TCP_moment_Nm_on_1ms_grid": 0.05131284873224287,
+      "native_grid_peak_acceleration_mps2": 0.8952753773625873,
+      "native_grid_peak_TCP_moment_Nm": 0.05131284873224287
+    },
+    {
+      "label": "default_half",
+      "stride": 2,
+      "observation_dt_s": 0.001,
+      "peak_acceleration_mps2_on_1ms_grid": 0.874552287219515,
+      "peak_TCP_moment_Nm_on_1ms_grid": 0.043865069049423513,
+      "native_grid_peak_acceleration_mps2": 0.8768235423476051,
+      "native_grid_peak_TCP_moment_Nm": 0.043865069049423513
+    },
+    {
+      "label": "hard_1ms",
+      "stride": 1,
+      "observation_dt_s": 0.001,
+      "peak_acceleration_mps2_on_1ms_grid": 0.9401638368744192,
+      "peak_TCP_moment_Nm_on_1ms_grid": 0.06111319916459383,
+      "native_grid_peak_acceleration_mps2": 0.9401638368744192,
+      "native_grid_peak_TCP_moment_Nm": 0.06111319916459383
+    },
+    {
+      "label": "hard_half",
+      "stride": 2,
+      "observation_dt_s": 0.001,
+      "peak_acceleration_mps2_on_1ms_grid": 0.8740742408715007,
+      "peak_TCP_moment_Nm_on_1ms_grid": 0.04544088667596047,
+      "native_grid_peak_acceleration_mps2": 0.890141723710421,
+      "native_grid_peak_TCP_moment_Nm": 0.04544088667596047
+    }
+  ],
+  "comparisons": [
+    {
+      "setting": "default",
+      "half_vs_1ms_percent_change_on_common_observation_grid": {
+        "peak_acceleration_mps2_on_1ms_grid": -2.314716864449129,
+        "peak_TCP_moment_Nm_on_1ms_grid": -14.514453722269138
+      }
+    },
+    {
+      "setting": "hard",
+      "half_vs_1ms_percent_change_on_common_observation_grid": {
+        "peak_acceleration_mps2_on_1ms_grid": -7.029582867453598,
+        "peak_TCP_moment_Nm_on_1ms_grid": -25.644726021335796
+      }
+    }
+  ],
+  "controller_timing": "The existing run loop updates feedback and wheel PI every physical step. Gains/law/state are unchanged, but controller update period changes with dt.",
+  "interpretation": "Common observation-grid resampling checks measurement frequency only. It does not separate physics integration from feedback-update frequency or prove convergence.",
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\check_timestep_sampling.py": "84678782eafa2f51d7d65835b569643dfb9789bd7878b2b8d3830f6e8d98f751",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution\\space\\trace.npz": "4677619e0d7f16018dd00a9d24fb3361eb4bf831a84f59d2cdb9e6857cbad52b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution\\space\\grasp_trace.npz": "b449e8af20570480a6b7127db1b9eea5533ae7f9f2ca3c8fa6f2eb6f9dd22464",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution\\space_halfdt\\trace.npz": "a2255e034dc49db0c38596b5f54f7b9e03215d4ddfeb301ab940b889f18dcaa1",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution\\space_halfdt\\grasp_trace.npz": "9d1cd90f03d0137784a56f61156f7ac1906937183e57a44a8b655cb94f33d1fc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-dynamic\\execution\\space\\trace.npz": "1dfd9211f6fbf5f2c5e6d41417ec6ee13808012f96096e8934ef41c217e39d1c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-dynamic\\execution\\space\\grasp_trace.npz": "7b623df7b56289bf3b66f10b883c28e598569eed499e2f5b1d82df01a062f100",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-timestep\\execution\\space_halfdt\\trace.npz": "0fabe3c64077ccfc625f88686e16183eb3fc4d90c7b8a03513f3616725384275",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-contact-timestep\\execution\\space_halfdt\\grasp_trace.npz": "d9b99e7dac4fecaf38ef46accff7e22fe31648e4e31cea974fe643ec328222e7"
+  }
+}

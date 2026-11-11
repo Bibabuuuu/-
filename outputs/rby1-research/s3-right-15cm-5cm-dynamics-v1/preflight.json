@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "reports": {
+    "B0": {
+      "source_packet": 633,
+      "nodes": 1271,
+      "clearance_m": 0.05150686096067509,
+      "reference_stop_s": 0.6195206206207752,
+      "schema": {
+        "rotation_orthogonality_error": 3.6637359812630166e-15,
+        "initial_joint_error_rad": 0.0,
+        "terminal_reference_speed_norm": 0.0,
+        "terminal_reference_acceleration_norm": 0.0,
+        "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+      },
+      "commands_sha256": "3a634afcf70f519917df8853cb928c0eedf8793b810339bdf473f42544499662"
+    },
+    "B1": {
+      "source_packet": 634,
+      "nodes": 1270,
+      "clearance_m": 0.05000436998688615,
+      "reference_stop_s": 0.6195207030426355,
+      "schema": {
+        "rotation_orthogonality_error": 3.885780586188048e-15,
+        "initial_joint_error_rad": 0.0,
+        "terminal_reference_speed_norm": 6.105647996393643e-17,
+        "terminal_reference_acceleration_norm": 9.989287966290156e-16,
+        "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+      },
+      "commands_sha256": "06ba47f506932a7033dfddb4b72093c03c580aaec1383ea05cf23a160949a98d"
+    }
+  },
+  "contract_sha256": "1a2786a609ec28e1b14f2c1f539765106280686fd2671729d90ec37f1a9d24fe",
+  "active_s": 41.586371500001405,
+  "stats": {
+    "IK_calls": 2478,
+    "QP_calls": 3614,
+    "QP_internal_iterations": 7228,
+    "unique_targets": 2478,
+    "line_search_trials": 3614,
+    "complete_started": 0,
+    "complete_completed": 0,
+    "outer_calls": 0,
+    "jacobians": 0,
+    "cache_hits": 0,
+    "requests": 0
+  },
+  "phases": {
+    "preparepilot": 41.58637489999819
+  },
+  "new_physics_steps": 0
+}

@@ -1,0 +1,142 @@
+{
+  "config": {
+    "initial_speed_mps": 0.3999312722693623,
+    "reference_stop_s": 0.36663230280134784,
+    "dt_s": 0.0005,
+    "duration_s": 2.5,
+    "deceleration_mps2": 2.0,
+    "jerk_mps3": 12.0,
+    "command_period_s": 0.01,
+    "horizon_s": 0.15,
+    "mass_kg": 0.5,
+    "rail_mass_kg": 0.15,
+    "half_stroke_m": 0.038,
+    "disturbance_seed": 1114,
+    "archive": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cube-grasp-probe-v4\\hard_brake\\a20",
+    "shared_pose": {
+      "kp": 400.0,
+      "kd": 32.0,
+      "jacobian_damping": 0.015,
+      "rotation_weight_m": 0.25,
+      "max_correction_radps2": 12.0,
+      "active_joints": "arms only",
+      "reference": "frozen box attitude with translation following measured base pose"
+    }
+  },
+  "cases": {
+    "impact_truth_feedback": {
+      "window_s": [
+        0.0,
+        2.5
+      ],
+      "samples": 5001,
+      "relative_displacement_mm": [
+        0.5964385386179167,
+        0.5961205703060561
+      ],
+      "relative_rotation_deg": [
+        1.4964786157635894,
+        1.4967193656103106
+      ],
+      "mean_vertical_support_N": [
+        2.4520076572537937,
+        2.451651135369438
+      ],
+      "max_vertical_speed_mps": 0.004496225700152653,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.8184363127374525,
+        0.8162367526494702
+      ],
+      "min_local_friction_margin_N": [
+        -2.220446049250313e-16,
+        -1.6653345369377348e-16
+      ],
+      "max_hand_moment_rms_Nm": 0.07029179653201731,
+      "peak_actual_longitudinal_deceleration_mps2": 2.001865581144216,
+      "settled_s": 0.3535,
+      "nonpad_payload_contacts": [],
+      "pitch_peak_deg": 0.9231763828424963,
+      "pitch_rms_deg": 0.5580645037058493,
+      "hand_moment_peak_Nm": [
+        0.1432032916960737,
+        0.14751271434392496
+      ],
+      "hand_moment_rms_Nm": [
+        0.07026849409034641,
+        0.07029179653201732
+      ],
+      "shell_clearance_min_m": 0.020590800548137545,
+      "axle_travel_m": 0.07323641743464951,
+      "first_internal_contact_s": 0.20600000000000002,
+      "peak_internal_wall_force_N": 4.336565891311568,
+      "peak_abs_center_of_mass_shift_mm": 12.004936629202788,
+      "controller_p95_ms": 0.06949999999505962,
+      "controller_max_ms": 0.09360000001379376,
+      "deadline_fallbacks": 0,
+      "controller_updates": 250,
+      "runner_status": "completed",
+      "external_obstacle_contact": null
+    },
+    "impact_truth_shared": {
+      "window_s": [
+        0.0,
+        2.5
+      ],
+      "samples": 5001,
+      "relative_displacement_mm": [
+        0.2581662475241004,
+        0.2581715605024459
+      ],
+      "relative_rotation_deg": [
+        0.6533225447153469,
+        0.6536335116238647
+      ],
+      "mean_vertical_support_N": [
+        2.4522607687606173,
+        2.451653976547627
+      ],
+      "max_vertical_speed_mps": 0.004873350036479163,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.40731853629274145,
+        0.4055188962207559
+      ],
+      "min_local_friction_margin_N": [
+        -2.220446049250313e-16,
+        -2.220446049250313e-16
+      ],
+      "max_hand_moment_rms_Nm": 0.10047487870262216,
+      "peak_actual_longitudinal_deceleration_mps2": 2.001836885766892,
+      "settled_s": 0.3535,
+      "nonpad_payload_contacts": [],
+      "pitch_peak_deg": 0.6346142497575579,
+      "pitch_rms_deg": 0.4503488976731112,
+      "hand_moment_peak_Nm": [
+        0.16033933565485797,
+        0.1617741094566195
+      ],
+      "hand_moment_rms_Nm": [
+        0.10047487870262216,
+        0.1004572198137854
+      ],
+      "shell_clearance_min_m": 0.02131020452740942,
+      "axle_travel_m": 0.07328306525503474,
+      "first_internal_contact_s": 0.20600000000000002,
+      "peak_internal_wall_force_N": 4.378275740001552,
+      "peak_abs_center_of_mass_shift_mm": 12.011289800243272,
+      "controller_p95_ms": 0.07013999996274832,
+      "controller_max_ms": 0.17300000001796434,
+      "deadline_fallbacks": 0,
+      "controller_updates": 250,
+      "runner_status": "completed",
+      "external_obstacle_contact": null
+    }
+  }
+}

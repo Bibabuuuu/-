@@ -1,0 +1,61 @@
+{
+  "duration_s": 1.2,
+  "dt_s": 0.0005,
+  "half_stroke_m": 0.038,
+  "initial_speed_mps": 0.3999312722693623,
+  "nominal_payload_mass_kg": 0.5,
+  "channels": "robot state and two simulated wrist F/T sensors",
+  "calibration_decelerations_mps2": [
+    1.4,
+    2.1
+  ],
+  "holdouts": [
+    [
+      "a165_quiet",
+      1.65,
+      [
+        "quiet",
+        0,
+        0.05,
+        0.32
+      ]
+    ],
+    [
+      "a165_random73",
+      1.65,
+      [
+        "random",
+        73,
+        0.05,
+        0.32
+      ]
+    ],
+    [
+      "a190_quiet",
+      1.9,
+      [
+        "quiet",
+        0,
+        0.08,
+        0.33
+      ]
+    ],
+    [
+      "a190_periodic29",
+      1.9,
+      [
+        "periodic",
+        29,
+        0.08,
+        0.33
+      ]
+    ]
+  ],
+  "jerk_mps3": 12.0,
+  "sensor_period_s": 0.01,
+  "sensor_delay_s": 0.01,
+  "force_limit_N": 1.4,
+  "comparison_threshold_N": 0.5,
+  "comparison_threshold_Nm": 0.035,
+  "prediction": "linear interpolation of clean wrist traces at each tick after braking trigger"
+}

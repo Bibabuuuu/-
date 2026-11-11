@@ -1,0 +1,35 @@
+{
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left.xml": "da74eb015c3071d9947b13607b612ffc76ea3fbf4565fae7944aa1436a16fb2e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-preflight-v1\\initial.npz": "e75ecdffd91efd812b8856ce98d25160ce68111adfdbc05f79bcdc7dc18c4f35",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\qualify_planar_stop.py": "a608bc4e5cd3ef3f4cad3c783e00dda6e1c3587355b871837746657b890f128f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\probe.py": "a96fb0cc5010713e0636d922b81975d5e084e00fd9a8c86ce5d126beb1c2872c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left_summary.json": "994348a36ab2120f30690fc2b0a83d450307e467465453b2c58e389296f9fbf4"
+  },
+  "path_sha256": "09e65ab5b41683a66aa216917b9fce0e7c9e0ee7d3bdce7c3e7f33ea0707e820",
+  "forward_stroke_m": 0.017727272727272744,
+  "object_accel_mps2": 1.1,
+  "base_accel_mps2": 2.0,
+  "jerk_mps3": 12.0,
+  "trigger_s": 1.43,
+  "base_reference_stop_s": 1.7966666666666666,
+  "all_reference_stop_s": 1.8853030303030303,
+  "deadline_s": 1.93,
+  "windows_s": {
+    "brake": [
+      1.43,
+      1.8853030303030303
+    ],
+    "hold": [
+      1.8853030303030303,
+      2.5
+    ]
+  },
+  "dt_s": 0.0005,
+  "duration_s": 2.5,
+  "max_runs": 1,
+  "max_steps": 5000,
+  "comparison": "Saved same-left-loaded held trajectory. Same base reference and controller, add forward waist-arm buffer.",
+  "relative_displacement_limit_mm": 2.0,
+  "relative_rotation_limit_deg": 2.0
+}

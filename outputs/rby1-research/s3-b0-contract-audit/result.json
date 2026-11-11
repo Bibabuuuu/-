@@ -1,0 +1,562 @@
+{
+  "audit_passed": true,
+  "b0_coverage_complete": false,
+  "current_permission_matrix_covered": true,
+  "current_qualified_comparison_complete": false,
+  "contract": {
+    "name": "B0 mature stop baseline",
+    "status": "evidence_audit",
+    "frozen_on": "2026-11-04",
+    "target_model": {
+      "engine": "MuJoCo",
+      "robot": "RB-Y1 nominal research model",
+      "wheel_width_m": 0.05,
+      "payload_mass_kg": 0.5,
+      "initial_forward_speed_mps": 0.4,
+      "wheel_torque_condition_Nm": 20.0,
+      "finger_constraint": "neq=2",
+      "friction": 0.8,
+      "calibration": "uncalibrated diagnostic simulation condition"
+    },
+    "evidence_tracks": {
+      "current_synchronized_model": {
+        "source": "s3-finger-sync-repair/synchronized_scene.xml",
+        "role": "model-qualification evidence only; not a complete B0 permission matrix"
+      },
+      "legacy_candidate_matrix": {
+        "source": "s3-joint-candidates scene XML and execution records",
+        "role": "historical candidate evidence; neq=0 and excluded from current-model qualification"
+      }
+    },
+    "candidate_family": [
+      "straight stop",
+      "turn stop",
+      "upper-body buffer",
+      "continuous parameter search within the family"
+    ],
+    "permissions": [
+      "base fixed, upper body adjustable",
+      "base adjustable, upper body held",
+      "base and upper body adjustable"
+    ],
+    "scenes": [
+      "open",
+      "low",
+      "upper_bar",
+      "right_column",
+      "left_column"
+    ],
+    "reports": [
+      "reference admission",
+      "actual execution admission",
+      "payload acceleration and angular acceleration",
+      "per-hand contact force/moment and margin",
+      "whole-robot and payload clearance",
+      "stop time and travel",
+      "upper-body motion",
+      "post-stop relative motion",
+      "planning and execution timing",
+      "failure and fallback reason"
+    ],
+    "stop_rules": [
+      "do not use future execution data for online selection",
+      "do not relax historical gates after a failure",
+      "separate prediction, reference admission, physical execution, and audit",
+      "no MPC or learning method in B0"
+    ]
+  },
+  "evidence": {
+    "current_synchronized_model": {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\synchronized_scene.xml",
+      "sha256": "a979eeb810ab2315bb941c23a3ffcea09186604aee6926cade8b23b406620388",
+      "xml_timestep_s": 0.001,
+      "equality_count": 2,
+      "equality_names": [
+        "right_finger",
+        "left_finger"
+      ],
+      "wheel_torque_range_Nm": [
+        -20.0,
+        20.0
+      ],
+      "wheel_friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "execution_timesteps_s": [
+        0.0005,
+        0.001
+      ],
+      "qualification_rows": [
+        {
+          "label": "baseline",
+          "dt_s": 0.001,
+          "steps": 1900,
+          "source": "s3-finger-sync-repair",
+          "role": "fixed-action model/metric qualification; not a three-permission B0 comparison"
+        },
+        {
+          "label": "baseline_halfdt",
+          "dt_s": 0.0005,
+          "steps": 3800,
+          "source": "s3-finger-sync-repair",
+          "role": "fixed-action model/metric qualification; not a three-permission B0 comparison"
+        },
+        {
+          "label": "rms",
+          "dt_s": 0.001,
+          "steps": 1900,
+          "source": "s3-finger-sync-repair",
+          "role": "fixed-action model/metric qualification; not a three-permission B0 comparison"
+        },
+        {
+          "label": "rms_halfdt",
+          "dt_s": 0.0005,
+          "steps": 3800,
+          "source": "s3-finger-sync-repair",
+          "role": "fixed-action model/metric qualification; not a three-permission B0 comparison"
+        }
+      ]
+    },
+    "current_wide_wall_scene": {
+      "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\trigger_scene.xml",
+      "sha256": "a86db77e7f66d8f1f8ca93847507387dd9efac3434d81fbb2b0a09b455acaeb2",
+      "xml_timestep_s": 0.001,
+      "equality_count": 2,
+      "equality_names": [
+        "right_finger",
+        "left_finger"
+      ],
+      "wheel_torque_range_Nm": [
+        -20.0,
+        20.0
+      ],
+      "wheel_friction": [
+        0.8,
+        0.005,
+        0.0001
+      ]
+    },
+    "current_model_executions": [
+      {
+        "source": "s3-trigger-stop-demo",
+        "scenario": "wide_wall",
+        "permission": "base_adjustable_upper_held",
+        "action": "measured_latency",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "qualified": true,
+        "role": "current synchronized-model event-chain execution"
+      },
+      {
+        "source": "s3-trigger-stop-demo",
+        "scenario": "wide_wall",
+        "permission": "base_adjustable_upper_held",
+        "action": "forced_deadline",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "qualified": true,
+        "role": "current synchronized-model event-chain execution"
+      },
+      {
+        "source": "s3-upper-trigger-execution",
+        "scenario": "wide_wall",
+        "permission": "base_reference_fixed_upper_adjustable",
+        "action": "upper_at_deadline",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "qualified": true,
+        "role": "current synchronized-model fixed base-reference waist/arm execution"
+      },
+      {
+        "source": "s3-matched-base-execution",
+        "scenario": "wide_wall",
+        "permission": "base_reference_fixed_upper_held",
+        "action": "matched_held",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "qualified": false,
+        "role": "current synchronized-model same fixed-base-reference held counterfactual; original wheel gate retained"
+      }
+    ],
+    "legacy_candidate_models": {
+      "low": {
+        "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\low\\scene.xml",
+        "sha256": "a71033157488f40cab899b15a313af5c43af070448366a860242a9072648c48b",
+        "xml_timestep_s": 0.001,
+        "equality_count": 0,
+        "equality_names": [],
+        "wheel_torque_range_Nm": [
+          -20.0,
+          20.0
+        ],
+        "wheel_friction": [
+          0.8,
+          0.005,
+          0.0001
+        ]
+      },
+      "upper_bar": {
+        "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\upper_bar\\scene.xml",
+        "sha256": "302e273226eb4520bf6e5a6e57e0fbfe4aa882341ba5e72b2cdc847d9f627f84",
+        "xml_timestep_s": 0.001,
+        "equality_count": 0,
+        "equality_names": [],
+        "wheel_torque_range_Nm": [
+          -20.0,
+          20.0
+        ],
+        "wheel_friction": [
+          0.8,
+          0.005,
+          0.0001
+        ]
+      },
+      "right_column": {
+        "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\right_column\\scene.xml",
+        "sha256": "d8b42f8057ed8777289d7cef4d5c22a4a6338b241cf025d7045a43144eddb3bb",
+        "xml_timestep_s": 0.001,
+        "equality_count": 0,
+        "equality_names": [],
+        "wheel_torque_range_Nm": [
+          -20.0,
+          20.0
+        ],
+        "wheel_friction": [
+          0.8,
+          0.005,
+          0.0001
+        ]
+      },
+      "left_column": {
+        "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\left_column\\scene.xml",
+        "sha256": "396af6d480f07b3461d55357ce714806da78c9ebeb06eb7f86b0d520ebcdeebd",
+        "xml_timestep_s": 0.001,
+        "equality_count": 0,
+        "equality_names": [],
+        "wheel_torque_range_Nm": [
+          -20.0,
+          20.0
+        ],
+        "wheel_friction": [
+          0.8,
+          0.005,
+          0.0001
+        ]
+      },
+      "center_column": {
+        "path": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\center_column\\scene.xml",
+        "sha256": "671cf7a38c4b96ff2b161051ebd7cb7eae8ca760e6847ce99aad32dae7f095e4",
+        "xml_timestep_s": 0.001,
+        "equality_count": 0,
+        "equality_names": [],
+        "wheel_torque_range_Nm": [
+          -20.0,
+          20.0
+        ],
+        "wheel_friction": [
+          0.8,
+          0.005,
+          0.0001
+        ]
+      }
+    },
+    "scene_chain": {
+      "scenes_found": [
+        "low",
+        "open",
+        "upper_bar"
+      ],
+      "physics_runs": 3,
+      "physics_steps": 5474,
+      "source_sha256": "ff63bd5f88296468f6674212db1f2087a0ce8d7ffe280d3d08c48656f72d2978"
+    },
+    "joint_candidates": {
+      "physics_runs": 5,
+      "physics_steps": 11400,
+      "execution_rows": 5,
+      "execution_timesteps_s": [
+        0.0005,
+        0.001
+      ],
+      "source_sha256": "25165812276bf2ebdc37559430732eb7d4e349aafe8c9d7f89e97fb7b4658d4c"
+    },
+    "consolidation_source_sha256": "0f03ab048ef22332f53299fad23ec106d197d4f6f921a86dc7d5b0721b8f6819"
+  },
+  "coverage": {
+    "legacy_rows": [
+      {
+        "scene": "open",
+        "family": "straight",
+        "upper_body": "held",
+        "base": "adjustable",
+        "source": "s3-scene-chain",
+        "model_track": "legacy_neq0",
+        "reference_admitted": true,
+        "execution_admitted": true,
+        "physics_run": true,
+        "failure": null
+      },
+      {
+        "scene": "low",
+        "family": "straight",
+        "upper_body": "held",
+        "base": "adjustable",
+        "source": "s3-scene-chain",
+        "model_track": "legacy_neq0",
+        "reference_admitted": true,
+        "execution_admitted": true,
+        "physics_run": true,
+        "failure": null
+      },
+      {
+        "scene": "upper_bar",
+        "family": "straight",
+        "upper_body": "held",
+        "base": "adjustable",
+        "source": "s3-scene-chain",
+        "model_track": "legacy_neq0",
+        "reference_admitted": true,
+        "execution_admitted": true,
+        "physics_run": true,
+        "failure": null
+      },
+      {
+        "scene": "upper_bar",
+        "family": "straight",
+        "upper_body": "held",
+        "base": "adjustable",
+        "source": "s3-joint-candidates",
+        "model_track": "legacy_neq0",
+        "reference_admitted": true,
+        "execution_admitted": true,
+        "physics_run": true,
+        "failure": null
+      },
+      {
+        "scene": "upper_bar",
+        "family": "straight",
+        "upper_body": "buffer",
+        "base": "adjustable",
+        "source": "s3-joint-candidates",
+        "model_track": "legacy_neq0",
+        "reference_admitted": true,
+        "execution_admitted": true,
+        "physics_run": true,
+        "failure": null
+      },
+      {
+        "scene": "right_column",
+        "family": "turn",
+        "upper_body": "held",
+        "base": "adjustable",
+        "source": "s3-joint-candidates",
+        "model_track": "legacy_neq0",
+        "reference_admitted": true,
+        "execution_admitted": true,
+        "physics_run": true,
+        "failure": null
+      },
+      {
+        "scene": "right_column",
+        "family": "turn",
+        "upper_body": "buffer",
+        "base": "adjustable",
+        "source": "s3-joint-candidates",
+        "model_track": "legacy_neq0",
+        "reference_admitted": true,
+        "execution_admitted": true,
+        "physics_run": true,
+        "failure": null
+      },
+      {
+        "scene": "right_column",
+        "family": "turn",
+        "upper_body": "buffer_halfdt",
+        "base": "adjustable",
+        "source": "s3-joint-candidates",
+        "model_track": "legacy_neq0",
+        "reference_admitted": true,
+        "execution_admitted": true,
+        "physics_run": true,
+        "failure": null
+      }
+    ],
+    "current_model_qualification_rows": [
+      {
+        "label": "baseline",
+        "dt_s": 0.001,
+        "steps": 1900,
+        "source": "s3-finger-sync-repair",
+        "role": "fixed-action model/metric qualification; not a three-permission B0 comparison"
+      },
+      {
+        "label": "baseline_halfdt",
+        "dt_s": 0.0005,
+        "steps": 3800,
+        "source": "s3-finger-sync-repair",
+        "role": "fixed-action model/metric qualification; not a three-permission B0 comparison"
+      },
+      {
+        "label": "rms",
+        "dt_s": 0.001,
+        "steps": 1900,
+        "source": "s3-finger-sync-repair",
+        "role": "fixed-action model/metric qualification; not a three-permission B0 comparison"
+      },
+      {
+        "label": "rms_halfdt",
+        "dt_s": 0.0005,
+        "steps": 3800,
+        "source": "s3-finger-sync-repair",
+        "role": "fixed-action model/metric qualification; not a three-permission B0 comparison"
+      }
+    ],
+    "current_model_execution_rows": [
+      {
+        "source": "s3-trigger-stop-demo",
+        "scenario": "wide_wall",
+        "permission": "base_adjustable_upper_held",
+        "action": "measured_latency",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "qualified": true,
+        "role": "current synchronized-model event-chain execution"
+      },
+      {
+        "source": "s3-trigger-stop-demo",
+        "scenario": "wide_wall",
+        "permission": "base_adjustable_upper_held",
+        "action": "forced_deadline",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "qualified": true,
+        "role": "current synchronized-model event-chain execution"
+      },
+      {
+        "source": "s3-upper-trigger-execution",
+        "scenario": "wide_wall",
+        "permission": "base_reference_fixed_upper_adjustable",
+        "action": "upper_at_deadline",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "qualified": true,
+        "role": "current synchronized-model fixed base-reference waist/arm execution"
+      },
+      {
+        "source": "s3-matched-base-execution",
+        "scenario": "wide_wall",
+        "permission": "base_reference_fixed_upper_held",
+        "action": "matched_held",
+        "dt_s": 0.0005,
+        "steps": 4000,
+        "qualified": false,
+        "role": "current synchronized-model same fixed-base-reference held counterfactual; original wheel gate retained"
+      }
+    ],
+    "required_permissions": [
+      "base_adjustable_upper_held",
+      "base_reference_fixed_upper_adjustable",
+      "base_reference_fixed_upper_held"
+    ],
+    "observed_permissions": [
+      "base_adjustable_upper_held",
+      "base_reference_fixed_upper_adjustable",
+      "base_reference_fixed_upper_held"
+    ],
+    "gaps": [
+      "The three current permission labels are represented in the wide-wall evidence, but the fixed-base-reference held member failed the unchanged wheel-contact gate, so this is not a three-qualified-method comparison.",
+      "The upper-adjustable row is a preloaded fixed candidate rather than online three-permission selection; online selection and general-state coverage remain unqualified.",
+      "left_column and center_column remain diagnostic selection evidence, not executed B0 comparisons.",
+      "General state perturbations and repeated trials are not covered by this finite matrix."
+    ],
+    "interpretation": "The synchronized model has separate fixed-action qualification evidence. The finite B0 candidate matrix is legacy neq=0 evidence and does not close a same-scene three-permission matrix on the synchronized model."
+  },
+  "findings": {
+    "upper_bar_buffer_vs_held": {
+      "acceleration_rms_mps2": {
+        "held": 0.6094590526262159,
+        "buffer": 0.5607428210519195,
+        "buffer_change_percent": -7.991
+      },
+      "hand_moment_rms_Nm": {
+        "held": 0.02516082928595927,
+        "buffer": 0.023165182940590587,
+        "buffer_change_percent": -7.935
+      },
+      "minimum_clearance_mm": {
+        "held": 42.4684,
+        "buffer": 29.3507
+      },
+      "interpretation": "Upper-body buffering reduces load metrics in this executed upper-bar pair, while consuming clearance and adding object travel."
+    },
+    "right_column_buffer_vs_held": {
+      "acceleration_rms_mps2": {
+        "held": 0.6610431061636584,
+        "buffer": 0.6469734088276209,
+        "buffer_change_percent": -2.128
+      },
+      "hand_moment_rms_Nm": {
+        "held": 0.030827650711034323,
+        "buffer": 0.030218789566377444,
+        "buffer_change_percent": -1.975
+      },
+      "minimum_clearance_mm": {
+        "held": 6.2435,
+        "buffer": 3.2876
+      },
+      "interpretation": "The turn case shows a smaller load benefit and a much tighter clearance margin; it is a boundary tradeoff, not a universal win."
+    },
+    "wide_wall_recorded_pair": {
+      "straight_vs_coordinated": {
+        "acceleration_rms_mps2": [
+          0.6475390208388282,
+          0.6523727611227557
+        ],
+        "hand_moment_rms_Nm": [
+          0.026761279003510705,
+          0.03021749002092183
+        ],
+        "clearance_mm": [
+          46.42110255462462,
+          28.11665028816246
+        ],
+        "axle_forward_travel_mm": [
+          153.59418802405557,
+          144.57281937526477
+        ]
+      },
+      "interpretation": "The recorded straight stop is better on load and clearance, while the coordinated candidate saves about 9 mm of axle travel; adding travel as an objective creates a tradeoff."
+    }
+  },
+  "checks": [
+    "scene-chain evidence covers open, low, and upper_bar",
+    "scene-chain retains exactly three historical physics runs",
+    "scene-chain step count is unchanged at 5474",
+    "joint candidate acceleration levels match the frozen finite family",
+    "joint candidate angle levels match the frozen finite family",
+    "joint candidate buffer fractions match the frozen finite family",
+    "joint candidate search budget remains 460 reference evaluations",
+    "joint candidate physical budget remains 11400 steps",
+    "joint candidate evidence retains five historical physics runs",
+    "joint candidate step count is unchanged at 11400",
+    "joint candidate summary contains held/buffer paired evidence",
+    "each joint execution reports metrics and actual geometry admission",
+    "each joint execution reports obstacle-contact audit data",
+    "synchronized qualification model XML contains two finger equalities",
+    "current wide-wall event scene XML contains two finger equalities",
+    "synchronized qualification model XML default timestep is 1 ms",
+    "all joint-candidate scene XML files are legacy neq=0 models",
+    "all joint-candidate scene XML files default to a 1 ms timestep",
+    "legacy joint-candidate executions include 1 ms and half-step runs",
+    "synchronized-model qualification includes 1 ms and 0.5 ms runs",
+    "current wide-wall event scene matches synchronized qualification model contract fields",
+    "consolidation still identifies fair baseline contract as the prior milestone",
+    "contact-diagnostic expansion remains disabled",
+    "fixed-T optimizer time extension remains disabled"
+  ],
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "qualification": "Contract and evidence-coverage audit only. Existing finite B0 results are not a global optimum, continuous collision certificate, real-time guarantee, or proof that MPC/RL is necessary."
+}

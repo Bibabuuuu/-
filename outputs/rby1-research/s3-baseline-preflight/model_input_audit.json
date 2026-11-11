@@ -1,0 +1,221 @@
+{
+  "audit_date": "2026-11-01",
+  "source_commit": "300a585c297d1bdf8554312c3a1659610a9823f5",
+  "scope": "Pinned source structure and current assumptions only; no real contact calibration or new dynamics runs",
+  "new_physics_runs": 0,
+  "source_files_match_pinned_download": {
+    "models\\rby1a\\urdf\\model_v1.2.urdf": true,
+    "models\\rby1a\\mujoco\\rby1_v1.2.xml": true,
+    "models\\rby1a\\mujoco\\assets\\WHEEL\\geoms.xml": true,
+    "models\\rby1a\\mujoco\\assets\\WHEEL\\assets.xml": true,
+    "models\\rby1a\\mujoco\\assets\\WHEEL\\WHEEL.obj": true
+  },
+  "upstream_base_direct_child_bodies": [
+    "wheel_r",
+    "wheel_l",
+    "link_torso_0"
+  ],
+  "upstream_worldbody_joint_names": [
+    "world_j",
+    "right_wheel",
+    "left_wheel",
+    "torso_0",
+    "torso_1",
+    "torso_2",
+    "torso_3",
+    "torso_4",
+    "torso_5",
+    "right_arm_0",
+    "right_arm_1",
+    "right_arm_2",
+    "right_arm_3",
+    "right_arm_4",
+    "right_arm_5",
+    "right_arm_6",
+    "gripper_finger_r1",
+    "gripper_finger_r2",
+    "left_arm_0",
+    "left_arm_1",
+    "left_arm_2",
+    "left_arm_3",
+    "left_arm_4",
+    "left_arm_5",
+    "left_arm_6",
+    "gripper_finger_l1",
+    "gripper_finger_l2",
+    "head_0",
+    "head_1"
+  ],
+  "urdf_moving_joints": [
+    {
+      "name": "right_wheel",
+      "type": "continuous"
+    },
+    {
+      "name": "left_wheel",
+      "type": "continuous"
+    },
+    {
+      "name": "torso_0",
+      "type": "revolute"
+    },
+    {
+      "name": "torso_1",
+      "type": "revolute"
+    },
+    {
+      "name": "torso_2",
+      "type": "revolute"
+    },
+    {
+      "name": "torso_3",
+      "type": "revolute"
+    },
+    {
+      "name": "torso_4",
+      "type": "revolute"
+    },
+    {
+      "name": "torso_5",
+      "type": "revolute"
+    },
+    {
+      "name": "right_arm_0",
+      "type": "revolute"
+    },
+    {
+      "name": "right_arm_1",
+      "type": "revolute"
+    },
+    {
+      "name": "right_arm_2",
+      "type": "revolute"
+    },
+    {
+      "name": "right_arm_3",
+      "type": "revolute"
+    },
+    {
+      "name": "right_arm_4",
+      "type": "revolute"
+    },
+    {
+      "name": "right_arm_5",
+      "type": "revolute"
+    },
+    {
+      "name": "right_arm_6",
+      "type": "revolute"
+    },
+    {
+      "name": "left_arm_0",
+      "type": "revolute"
+    },
+    {
+      "name": "left_arm_1",
+      "type": "revolute"
+    },
+    {
+      "name": "left_arm_2",
+      "type": "revolute"
+    },
+    {
+      "name": "left_arm_3",
+      "type": "revolute"
+    },
+    {
+      "name": "left_arm_4",
+      "type": "revolute"
+    },
+    {
+      "name": "left_arm_5",
+      "type": "revolute"
+    },
+    {
+      "name": "left_arm_6",
+      "type": "revolute"
+    },
+    {
+      "name": "gripper_finger_r1",
+      "type": "prismatic",
+      "in_model_type": "fixed"
+    },
+    {
+      "name": "gripper_finger_r2",
+      "type": "prismatic",
+      "in_model_type": "fixed"
+    },
+    {
+      "name": "gripper_finger_l1",
+      "type": "prismatic",
+      "in_model_type": "fixed"
+    },
+    {
+      "name": "gripper_finger_l2",
+      "type": "prismatic",
+      "in_model_type": "fixed"
+    },
+    {
+      "name": "head_0",
+      "type": "revolute"
+    },
+    {
+      "name": "head_1",
+      "type": "revolute"
+    }
+  ],
+  "upstream_includes_joint_elements": [],
+  "upstream_mj_actuator_count": 0,
+  "wheel_collision_mesh_pieces_per_wheel": 38,
+  "visual_mesh_only_not_contact_patch": {
+    "bounds_min_m": [
+      -0.099965,
+      -0.025,
+      -0.1
+    ],
+    "bounds_max_m": [
+      0.099965,
+      0.025,
+      0.099858
+    ],
+    "extents_m": [
+      0.19993,
+      0.05,
+      0.199858
+    ],
+    "max_radius_about_local_y_m": 0.10000043734404365
+  },
+  "research_assumptions": {
+    "wheel_radius_m": 0.1,
+    "wheel_half_width_m": 0.035,
+    "wheel_friction": 0.8,
+    "wheel_torque_limit_Nm": 10.0,
+    "support_centers_m": [
+      [
+        -0.277,
+        -0.083,
+        0.035
+      ],
+      [
+        -0.277,
+        0.083,
+        0.035
+      ]
+    ],
+    "support_friction": 0.0,
+    "support_note": "Ideal passive support approximation near original rear ground-contact coordinates. Normal contact only at zero friction; no caster swivel/rolling inertia. Straight motion on flat ground only."
+  },
+  "frozen_sources_checked": 15,
+  "frozen_sources_unchanged": true,
+  "source_sha256": {
+    "work\\robot-model-audit\\sources\\rby1-pinned\\models\\rby1a\\urdf\\model_v1.2.urdf": "3e0df2e108a26b2c9170bd2f55f577fe8de5d744814b3a492b57a88fc86ba967",
+    "work\\robot-model-audit\\sources\\rby1-pinned\\models\\rby1a\\mujoco\\rby1_v1.2.xml": "e146bd1f4fb01b96f19f9189ccf8f103ab8fc016c8208259132933d1975c87bc",
+    "work\\robot-model-audit\\sources\\rby1-pinned\\models\\rby1a\\mujoco\\assets\\WHEEL\\geoms.xml": "a153c104ad9f8c1026c5c4044af7319c62955e4fad2e82cf385b3d01caf1338f",
+    "work\\robot-model-audit\\sources\\rby1-pinned\\models\\rby1a\\mujoco\\assets\\WHEEL\\assets.xml": "c719f8ea20a3490ae3edc89126e07a09f09fc7bca871bae3d84f1d0b11d700d4",
+    "work\\robot-model-audit\\sources\\rby1-pinned\\models\\rby1a\\mujoco\\assets\\WHEEL\\WHEEL.obj": "fbe6bef0b7a5e44e46a5f1185277ed45f03522a6ebe940d81b1cdf8a4f42b36d",
+    "simulation\\rby1\\config.json": "9ae54b2f942d33ab906806fe290151c39337e2794324ea65de7f0b8c671e0a35",
+    "work\\robot-model-audit\\sources\\rby1-pinned\\download_manifest.json": "a33905807e860fc449f59081a99fc29a7cb026172e278783bf4f76607855695c",
+    "outputs\\rby1-research\\s3-baseline-preflight\\audit_model_inputs.py": "17dcff9114f23bdc90a92eb80ded5a3cd62dbc5ec7b39a94679459e75631faf3"
+  },
+  "qualification": "No independent rear caster swivel or rolling joints in this pinned model. This does not describe every official model or the physical robot. Mesh dimensions do not establish loaded contact width."
+}

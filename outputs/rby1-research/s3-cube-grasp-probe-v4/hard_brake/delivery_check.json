@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "physical_runs": 4,
+  "physical_steps": 15200,
+  "cases": {
+    "a15": {
+      "same_initial_state_and_base_reference": true,
+      "setup": {
+        "initial_speed_mps": 0.3999312722693623,
+        "initial_clearance_m": 0.1,
+        "reference_stop_s": 0.3916208481795749,
+        "reference_stop_travel_m": 0.07831071202983213,
+        "reference_peak_mps2": 1.5,
+        "jerk_mps3": 12.0
+      },
+      "records": {
+        "hold": {
+          "minimum_clearance_mm": 21.109444753323757,
+          "closest_time_s": 0.3805,
+          "nearest_geom": "payload_cube",
+          "states": 3801,
+          "maximum_relative_displacement_mm": 0.11617278023817079,
+          "maximum_relative_rotation_deg": 0.2820284529390931,
+          "peak_measured_axle_deceleration_mps2": 1.5022339736497088,
+          "settled_s": 0.3785,
+          "local_friction_ge_099_fraction": [
+            0.7729591836734694,
+            0.7767857142857143
+          ],
+          "stationary_window_relative_displacement_mm": 0.23889352915328715,
+          "stationary_window_relative_rotation_deg": 0.588858616887392,
+          "zero_wheel_contact_samples": 0,
+          "hands_loaded_after_first_step": true
+        },
+        "retract": {
+          "minimum_clearance_mm": 31.131139193007176,
+          "closest_time_s": 0.3685,
+          "nearest_geom": "payload_cube",
+          "states": 3801,
+          "maximum_relative_displacement_mm": 0.11712403012110452,
+          "maximum_relative_rotation_deg": 0.2789005544308224,
+          "peak_measured_axle_deceleration_mps2": 1.5026051369214883,
+          "settled_s": 0.3785,
+          "local_friction_ge_099_fraction": [
+            0.7653061224489796,
+            0.7525510204081632
+          ],
+          "stationary_window_relative_displacement_mm": 0.2396409802845622,
+          "stationary_window_relative_rotation_deg": 0.5892083019860906,
+          "zero_wheel_contact_samples": 0,
+          "hands_loaded_after_first_step": true
+        }
+      },
+      "hashes": {
+        "scene.xml": "bf72a38bd8cd53e6af2b50bf9f7e97e58ede8199473a9e1952b7139699cfde05",
+        "rolling_initial.npz": "4e252977fa01fa4fcc165a22ca6150ccdd9441027bcacd69758e2fa24ecf978f",
+        "pair_summary.json": "7f3eebefec1fede6207eef14cfa69ed76587cea4ef4874f32bcdd2573a48863c",
+        "pair_preflight.json": "efeacc6c69aeb054a861aa02578bd9d6b510d484563411cef54950404eae601a"
+      }
+    },
+    "a20": {
+      "same_initial_state_and_base_reference": true,
+      "setup": {
+        "initial_speed_mps": 0.3999312722693623,
+        "initial_clearance_m": 0.095,
+        "reference_stop_s": 0.36663230280134784,
+        "reference_stop_travel_m": 0.07331386165719461,
+        "reference_peak_mps2": 2.0,
+        "jerk_mps3": 12.0
+      },
+      "records": {
+        "hold": {
+          "minimum_clearance_mm": 21.103257579530492,
+          "closest_time_s": 0.3545,
+          "nearest_geom": "payload_cube",
+          "states": 3801,
+          "maximum_relative_displacement_mm": 0.11049849164839803,
+          "maximum_relative_rotation_deg": 0.27169334457899386,
+          "peak_measured_axle_deceleration_mps2": 2.001863333250867,
+          "settled_s": 0.3535,
+          "local_friction_ge_099_fraction": [
+            0.7302452316076294,
+            0.726158038147139
+          ],
+          "stationary_window_relative_displacement_mm": 0.2395024499807936,
+          "stationary_window_relative_rotation_deg": 0.5891212140160782,
+          "zero_wheel_contact_samples": 0,
+          "hands_loaded_after_first_step": true
+        },
+        "retract": {
+          "minimum_clearance_mm": 31.11179392491816,
+          "closest_time_s": 0.334,
+          "nearest_geom": "payload_cube",
+          "states": 3801,
+          "maximum_relative_displacement_mm": 0.11129298021086911,
+          "maximum_relative_rotation_deg": 0.26764011357839756,
+          "peak_measured_axle_deceleration_mps2": 2.0022261696397265,
+          "settled_s": 0.3535,
+          "local_friction_ge_099_fraction": [
+            0.7043596730245232,
+            0.7111716621253406
+          ],
+          "stationary_window_relative_displacement_mm": 0.23937970196373884,
+          "stationary_window_relative_rotation_deg": 0.5896099417963839,
+          "zero_wheel_contact_samples": 0,
+          "hands_loaded_after_first_step": true
+        }
+      },
+      "hashes": {
+        "scene.xml": "4a252647168b8401f1ae312b077e8a922a1c24d5937beac9b8aa6225ec767d5b",
+        "rolling_initial.npz": "4e252977fa01fa4fcc165a22ca6150ccdd9441027bcacd69758e2fa24ecf978f",
+        "pair_summary.json": "9965ca45624cd2a8c7248e70ff9f1de2576f3a90548d5db02a0d189dfec9a00e",
+        "pair_preflight.json": "c330b8ba4df2cd5ac39149f19f14aad0973b38a0d63e56259fd8474009c2f457"
+      }
+    }
+  }
+}

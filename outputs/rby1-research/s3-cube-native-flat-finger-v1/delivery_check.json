@@ -1,0 +1,26 @@
+{
+  "verified": true,
+  "physical_runs": 1,
+  "physical_steps": 5000,
+  "static_passed": false,
+  "brake_started": false,
+  "first_point_contacts": [
+    [
+      "ee_finger_l2_EE_FINGER_collision_2_4_native_pad"
+    ],
+    [
+      "ee_finger_r2_EE_FINGER_collision_2_4_native_pad"
+    ]
+  ],
+  "relative_displacement_mm": 61.45279128832153,
+  "relative_rotation_deg": 25.044692303552665,
+  "largest_joint_limit_excess": {
+    "joint": "gripper_finger_r2",
+    "amount_in_joint_units": 0.004595829802703365
+  },
+  "source_hashes": {
+    "scene.xml": "33c4a602adfec0c2bedeea4c6aa9b55dbc0e3b7ede8107b1cc85c48b2c705487",
+    "preflight.json": "1ff344275932b4f1273c481726cb9fb1bf4449866d165f25eac3d7c592c27283",
+    "static_check.json": "b2c859330693e52e53200616b1653262621af206d01d82f18566e958e5f8f9f0"
+  }
+}

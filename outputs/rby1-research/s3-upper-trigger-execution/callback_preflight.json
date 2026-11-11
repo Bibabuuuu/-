@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "upper_activated": true,
+  "checks": {
+    "nominal_regression_state": true,
+    "both_hands_loaded": true,
+    "command_C2": true,
+    "reference_gap": true,
+    "ready_by_deadline": true
+  },
+  "handover": {
+    "time_s": 0.25,
+    "reason": "preloaded_upper_at_fixed_release",
+    "reference_position_jump_m": 0.0,
+    "reference_velocity_jump_mps": 0.0,
+    "reference_acceleration_jump_mps2": 0.0,
+    "payload_position_jump_m": 2.270042084698181e-16,
+    "payload_velocity_jump_mps": 0.0,
+    "payload_acceleration_jump_mps2": 0.0,
+    "payload_rotation_jump_rad": 1.312377606067111e-19,
+    "joint_q_jump_rad": 0.0,
+    "joint_v_jump_radps": 0.0,
+    "joint_a_jump_radps2": 0.0,
+    "live_integration_state_unchanged": true,
+    "activation_and_telemetry_wall_s": 0.00028980000934097916
+  },
+  "new_physics_steps": 0,
+  "scope": "private saved-state callback replay; mj_forward only, not actual continuation or a physical run",
+  "source_sha256": "05e1005480327378b735d1fedb825eb886d8558981979268f59d708687f49390"
+}

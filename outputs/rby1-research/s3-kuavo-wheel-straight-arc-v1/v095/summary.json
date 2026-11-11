@@ -1,0 +1,165 @@
+{
+  "straight": {
+    "zero_samples": 0,
+    "zero_pretrigger": 0,
+    "zero_times_s": [],
+    "longest_zero_run_samples": 0,
+    "trigger_speed_mps": 0.9496438362878035,
+    "trigger_yaw_rate_radps": -1.036483589483127e-05,
+    "pretrigger_grid_samples": 285,
+    "pretrigger_normal_force_grid_percentiles_N": [
+      [
+        232.3699067946572,
+        247.03709339982657,
+        620.6060872059097
+      ],
+      [
+        232.81278087746034,
+        247.4811367661761,
+        621.7724524884311
+      ],
+      [
+        275.08212341242563,
+        289.8444043946209,
+        734.2611335374039
+      ],
+      [
+        331.26728507591065,
+        346.14405408593433,
+        818.8894167461863
+      ],
+      [
+        331.90757709286663,
+        346.83329680663275,
+        819.7765570472422
+      ]
+    ],
+    "pretrigger_near_unloaded_by_wheel_grid": [
+      0,
+      0
+    ],
+    "rear_support_force_range_during_zero_N": null
+  },
+  "arc": {
+    "zero_samples": 18,
+    "zero_pretrigger": 17,
+    "zero_times_s": [
+      0.751,
+      0.9025,
+      0.9135,
+      0.923,
+      0.995,
+      1.0045,
+      1.0375,
+      1.0465,
+      1.0675000000000001,
+      1.106,
+      1.1315,
+      1.1405,
+      1.1735,
+      1.182,
+      1.2095,
+      1.218,
+      1.412,
+      1.4575
+    ],
+    "longest_zero_run_samples": 1,
+    "trigger_speed_mps": 0.9504269173291463,
+    "trigger_yaw_rate_radps": -0.4764993875284113,
+    "pretrigger_grid_samples": 285,
+    "pretrigger_normal_force_grid_percentiles_N": [
+      [
+        0.0,
+        0.0,
+        591.2441394315367
+      ],
+      [
+        228.6385056349129,
+        169.00123236610042,
+        622.2554609200266
+      ],
+      [
+        301.7349523114538,
+        278.99770723461177,
+        741.002787933558
+      ],
+      [
+        402.62636116278924,
+        345.92146049799015,
+        818.4710643451887
+      ],
+      [
+        505.771179136128,
+        406.7063954945553,
+        843.8673092379127
+      ]
+    ],
+    "pretrigger_near_unloaded_by_wheel_grid": [
+      8,
+      14
+    ],
+    "rear_support_force_range_during_zero_N": [
+      363.02340208195886,
+      622.545611101216
+    ]
+  },
+  "straight_qualification": {
+    "steps": 5000,
+    "pretrigger_ok": true,
+    "parking_and_grasp_qualified": false,
+    "pretrigger_max_shift_mm": [
+      0.009874471474179657
+    ],
+    "trigger_speed_mps": 0.9496438362878035,
+    "trigger_sample_gap_mm": 330.016512705998,
+    "block_peak_shift_mm": [
+      0.011775106647132603
+    ],
+    "block_peak_brake_window_mm": [
+      0.011775106647132603
+    ],
+    "block_final_shift_mm": [
+      0.01153657628136433
+    ],
+    "block_first_over_1mm_after_trigger_s": [
+      null
+    ],
+    "block_forward_peak_mm": [
+      0.011775044497966403
+    ],
+    "block_peak_relative_tilt_deg": [
+      0.011643318392420225
+    ],
+    "block_support_at_end": [
+      true
+    ],
+    "block_min_relative_height_change_mm": [
+      -1.931585278877601e-06
+    ],
+    "block_other_contact_pairs": [],
+    "block_other_first_contact_s": {},
+    "tray_nonpad_other_contacts": [],
+    "both_hands_loaded": true,
+    "controller_ok": true,
+    "obstacle_contacts": 0,
+    "base_and_tray_settled_after_trigger_s": 0.671,
+    "min_sampled_gap_mm": 26.267872418776506,
+    "tray_pitch_max_abs_deg": 0.3342338758033907,
+    "fixed_tray_hand_point_peak_um": [
+      44.21881251221774,
+      7.982503460104577
+    ],
+    "tray_hand_relative_peak_translation_mm": [
+      0.13959173517091167,
+      0.01754724386684598
+    ],
+    "tray_hand_relative_peak_rotation_deg": [
+      0.10938713366174133,
+      0.015262623223966194
+    ],
+    "tray_accel_rms_mps2": 1.5514117689373927,
+    "tray_point_peak_demand_ratio": [
+      0.18502695028760097
+    ]
+  }
+}

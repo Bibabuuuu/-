@@ -1,0 +1,71 @@
+{
+  "physical_steps": 0,
+  "model_equal": "Current nominal equal TCP force and equal residual TCP torque; shared object pose reference, without measured attitude feedback.",
+  "model_lever": "Allocate by COM projection between nominal geometric contact centroids; divide residual moment equally at those centroids.",
+  "geometry": "Contacts and TCPs from initial model and qpos, orientation fixed. Both predictions use only reference accelerations and gravity. No fitted coefficients.",
+  "comparison": "Stored contact force on object and stored contact moment about object COM, in world axes, matched time windows.",
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-force-screen-v1\\result.json": "b5eb41163311a1af9b4920f8931c53e986a38291ee4720ebfa1d20eb30b196a9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-load-allocation-audit-v1\\audit.py": "9f3ba39fc6a9cc318d84c4edbd2b7074906d80f82b45693375e298b2833f8765",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\center\\grasp_trace.npz": "ba44cfb9baf9ccad7290ade3dcc430be0490699ea1d13f3729fba45ac29dba3c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\center\\trace.npz": "f49ae309e609d59eb547377d568a87c6af1837e9850470646617fd2d86750a7a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\center.xml": "b900c093042d71088d56060cfcbe76a598c22da4089232a868460e9a7d77e39d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left\\grasp_trace.npz": "21122c73d5ca8ef55088d6f40db6671af44c718f4cef6733d8d4d09e8537354e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left\\trace.npz": "5adc8eace690f51fe0cc13a8ffd2e9050168f89b3d1d148a45bb219d7fb9a641",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left.xml": "da74eb015c3071d9947b13607b612ffc76ea3fbf4565fae7944aa1436a16fb2e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\right\\grasp_trace.npz": "646df56767fd5174e1b8dca9ea8ff010a7b82429a9ebf3f6dfdaccbc8c3f8940",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\right\\trace.npz": "478b94c9bd998289dd5af0664de716b36f4802c9bdeafcd2e996a42429a8d8cf",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\right.xml": "088e398ffa903efe4970641be920a588ff29d7bd36a21413dbd45e09f810b8cb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\buffer\\grasp_trace.npz": "7eaab921899e573137a3d2aba430077a2e664a81192ce789baf6b43c3f496f50",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\buffer\\trace.npz": "e90f7309596025c01ff3fcbe33e492cd5b7bf407f26522f03493fc6803516268",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\contract.json": "338456dd6319b833c73dbf7ba1f3c300e9ecc3a8cb07a9fbf8dfe1cf0cb0661c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-posture-pair-v1\\arm_only\\grasp_trace.npz": "057ca24251677bad410074c63dba2eda0d9b419876c3e9d4d91551e569618263",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-posture-pair-v1\\arm_only\\trace.npz": "42018c4307deab4b2c90aa1515dc3838c66ad10c93f2055f8b729a402ca43829",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-preflight-v1\\initial.npz": "e75ecdffd91efd812b8856ce98d25160ce68111adfdbc05f79bcdc7dc18c4f35",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\contract.json": "c2ed16bd5931ee047f406c194669e467d34a840e113a756daea91f8b4953e36c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a125_left\\grasp_trace.npz": "c5d563571ebeb39237ad72b877f7cb81a6805118dbab6d5be20650923c7cb95a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a125_left\\trace.npz": "c40b49c26b4ac821d00a68ac007cb6643747675770d829fdfefded60f783b6b4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a125_left.xml": "88f4a7f0f3c7db87e6e804bd3f24f0c4b072f4fab528982750ecf4dd5f6c37a7",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_left\\grasp_trace.npz": "e835d1d0050f3bafb7590c88777dab798a3f7893db657d4fd12b18820031a5b9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_left\\trace.npz": "d807f1e565479346b5a1df88c97337411474ee474aaa206028c4996d41394e19",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_left.xml": "88f4a7f0f3c7db87e6e804bd3f24f0c4b072f4fab528982750ecf4dd5f6c37a7",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_right\\grasp_trace.npz": "23dc05e04941a918a8218751781d2484c8d79e7f49864825db2324a066949606",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_right\\trace.npz": "19b9a4ef724b6bb81de0803ab1284677afc7c52e98cbaf7bcf9aa3757a7a768f",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_right.xml": "e903650cd2753ddf201ac21726fa2c05cd7cd71390005a3447651dbb533a9b88",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\payload_wrench.py": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8"
+  },
+  "windows": {
+    "04_center_held": [
+      1.43,
+      1.8853030303030303
+    ],
+    "04_left_held": [
+      1.43,
+      1.8853030303030303
+    ],
+    "04_right_held": [
+      1.43,
+      1.8853030303030303
+    ],
+    "04_left_waist_arm": [
+      1.43,
+      1.8853030303030303
+    ],
+    "04_left_arm_only": [
+      1.43,
+      1.8853030303030303
+    ],
+    "v60_a125_left": [
+      1.43,
+      2.08
+    ],
+    "v60_a200_left": [
+      1.43,
+      2.08
+    ],
+    "v60_a200_right": [
+      1.43,
+      2.08
+    ]
+  }
+}

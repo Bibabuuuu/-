@@ -1,0 +1,301 @@
+{
+  "physical_steps": 0,
+  "results": {
+    "04_center_held": {
+      "samples": 911,
+      "actual_left_vertical_fraction": 0.4999676017197832,
+      "actual_per_hand_moment_rms_Nm": [
+        0.14750003281212,
+        0.14750003154803104
+      ],
+      "actual_moment_about_nominal_grip_center_rms_Nm": [
+        0.0916096614835332,
+        0.09160404759306089
+      ],
+      "total_force_vector_rmse_N": 0.002325008842581038,
+      "models": {
+        "equal": {
+          "left_vertical_fraction": 0.5,
+          "hand_force_vector_rmse_N": [
+            0.005806349720978773,
+            0.0058172803249821395
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.0042768703973516805,
+            0.004276876342348484
+          ]
+        },
+        "lever": {
+          "left_vertical_fraction": 0.4999999999997983,
+          "hand_force_vector_rmse_N": [
+            0.005806349720977734,
+            0.005817280324972998
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.08405195548582393,
+            0.08405195432433352
+          ]
+        }
+      }
+    },
+    "04_left_held": {
+      "samples": 911,
+      "actual_left_vertical_fraction": 0.5037579323229048,
+      "actual_per_hand_moment_rms_Nm": [
+        0.14518682634197833,
+        0.14518680097856165
+      ],
+      "actual_moment_about_nominal_grip_center_rms_Nm": [
+        0.12723663898363294,
+        0.056309051153882676
+      ],
+      "total_force_vector_rmse_N": 0.002398462600888688,
+      "models": {
+        "equal": {
+          "left_vertical_fraction": 0.5,
+          "hand_force_vector_rmse_N": [
+            0.010322957340026015,
+            0.010219229305631943
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.006815517562441698,
+            0.006815554655367412
+          ]
+        },
+        "lever": {
+          "left_vertical_fraction": 0.820944739886809,
+          "hand_force_vector_rmse_N": [
+            0.6260907144376009,
+            0.6262157849179525
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.11005537928383981,
+            0.1100553203196497
+          ]
+        }
+      }
+    },
+    "04_right_held": {
+      "samples": 911,
+      "actual_left_vertical_fraction": 0.496149486438206,
+      "actual_per_hand_moment_rms_Nm": [
+        0.14517873090010788,
+        0.14517875526336763
+      ],
+      "actual_moment_about_nominal_grip_center_rms_Nm": [
+        0.05631157992521013,
+        0.12722732387658456
+      ],
+      "total_force_vector_rmse_N": 0.0023956896385510795,
+      "models": {
+        "equal": {
+          "left_vertical_fraction": 0.5,
+          "hand_force_vector_rmse_N": [
+            0.010477023709034267,
+            0.010591447065713449
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.006825973225643693,
+            0.006825941489227715
+          ]
+        },
+        "lever": {
+          "left_vertical_fraction": 0.17905526011278733,
+          "hand_force_vector_rmse_N": [
+            0.6260060640434008,
+            0.6258812334001868
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.11004832441641318,
+            0.11004838244367611
+          ]
+        }
+      }
+    },
+    "04_left_waist_arm": {
+      "samples": 911,
+      "actual_left_vertical_fraction": 0.503745038523599,
+      "actual_per_hand_moment_rms_Nm": [
+        0.14497861517715938,
+        0.14497877271400123
+      ],
+      "actual_moment_about_nominal_grip_center_rms_Nm": [
+        0.1270690344028603,
+        0.056286741301402564
+      ],
+      "total_force_vector_rmse_N": 0.001468753440477479,
+      "models": {
+        "equal": {
+          "left_vertical_fraction": 0.5,
+          "hand_force_vector_rmse_N": [
+            0.009245903896638711,
+            0.009098032519225079
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.006608140614349062,
+            0.006607596505615982
+          ]
+        },
+        "lever": {
+          "left_vertical_fraction": 0.820944739886809,
+          "hand_force_vector_rmse_N": [
+            0.6248777365110276,
+            0.6249741101250899
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.10992273920965784,
+            0.10992282842416996
+          ]
+        }
+      }
+    },
+    "04_left_arm_only": {
+      "samples": 911,
+      "actual_left_vertical_fraction": 0.5037237865483218,
+      "actual_per_hand_moment_rms_Nm": [
+        0.14498891495709754,
+        0.14498897763633534
+      ],
+      "actual_moment_about_nominal_grip_center_rms_Nm": [
+        0.12708450984770303,
+        0.05629633484032271
+      ],
+      "total_force_vector_rmse_N": 0.0016819590698194456,
+      "models": {
+        "equal": {
+          "left_vertical_fraction": 0.5,
+          "hand_force_vector_rmse_N": [
+            0.009690034966302503,
+            0.009556862896764402
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.006652090415309328,
+            0.006652108208163961
+          ]
+        },
+        "lever": {
+          "left_vertical_fraction": 0.820944739886809,
+          "hand_force_vector_rmse_N": [
+            0.6249391816431158,
+            0.6250222134030167
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.10993399376910357,
+            0.10993403903434627
+          ]
+        }
+      }
+    },
+    "v60_a125_left": {
+      "samples": 1301,
+      "actual_left_vertical_fraction": 0.5037523043028125,
+      "actual_per_hand_moment_rms_Nm": [
+        0.14507215491807274,
+        0.14507214682097389
+      ],
+      "actual_moment_about_nominal_grip_center_rms_Nm": [
+        0.12713942017626223,
+        0.056296309158175795
+      ],
+      "total_force_vector_rmse_N": 0.0014894318880721749,
+      "models": {
+        "equal": {
+          "left_vertical_fraction": 0.5,
+          "hand_force_vector_rmse_N": [
+            0.009914250759360038,
+            0.009844314258391556
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.006750812216098547,
+            0.006750921419543866
+          ]
+        },
+        "lever": {
+          "left_vertical_fraction": 0.820944739886809,
+          "hand_force_vector_rmse_N": [
+            0.6254846409437971,
+            0.625545441805062
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.10997976343683373,
+            0.10997973103524195
+          ]
+        }
+      }
+    },
+    "v60_a200_left": {
+      "samples": 1301,
+      "actual_left_vertical_fraction": 0.5037639620420191,
+      "actual_per_hand_moment_rms_Nm": [
+        0.1452984068861533,
+        0.1452983809381283
+      ],
+      "actual_moment_about_nominal_grip_center_rms_Nm": [
+        0.12732175703769838,
+        0.05631660504802799
+      ],
+      "total_force_vector_rmse_N": 0.0017562615793874014,
+      "models": {
+        "equal": {
+          "left_vertical_fraction": 0.5,
+          "hand_force_vector_rmse_N": [
+            0.010997631424615026,
+            0.010972704176981417
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.0070159970815767475,
+            0.00701612656310314
+          ]
+        },
+        "lever": {
+          "left_vertical_fraction": 0.820944739886809,
+          "hand_force_vector_rmse_N": [
+            0.6268699928428317,
+            0.6269379717000987
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.11012168374686787,
+            0.1101216500801326
+          ]
+        }
+      }
+    },
+    "v60_a200_right": {
+      "samples": 1301,
+      "actual_left_vertical_fraction": 0.4961383390638968,
+      "actual_per_hand_moment_rms_Nm": [
+        0.1452897506113859,
+        0.14528977620381456
+      ],
+      "actual_moment_about_nominal_grip_center_rms_Nm": [
+        0.05631976953714739,
+        0.12731155002952185
+      ],
+      "total_force_vector_rmse_N": 0.0017541243235770897,
+      "models": {
+        "equal": {
+          "left_vertical_fraction": 0.5,
+          "hand_force_vector_rmse_N": [
+            0.011228156873167324,
+            0.011258677121352836
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.007028202276618893,
+            0.007028077871133154
+          ]
+        },
+        "lever": {
+          "left_vertical_fraction": 0.17905526011278725,
+          "hand_force_vector_rmse_N": [
+            0.6267161561063554,
+            0.6266481944482761
+          ],
+          "hand_com_moment_vector_rmse_Nm": [
+            0.11011397513801471,
+            0.11011400839807307
+          ]
+        }
+      }
+    }
+  }
+}

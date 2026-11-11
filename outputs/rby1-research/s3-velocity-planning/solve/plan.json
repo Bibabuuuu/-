@@ -1,0 +1,266 @@
+{
+  "solver": {
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully",
+    "nit": 4,
+    "z": [
+      -0.0715497209696635,
+      1.6406202084215082e-09,
+      0.12523916215751188,
+      -2.7755575615628914e-17
+    ]
+  },
+  "failure": null,
+  "iterations": 4,
+  "evaluations_including_audit": 38,
+  "dense_audits": 2,
+  "wall_s": 3.847925199996098,
+  "audits": [
+    {
+      "name": "warmstart",
+      "z": [
+        -0.0,
+        -0.0,
+        0.09019822267897064,
+        -0.0
+      ],
+      "full_reference_qualified": true,
+      "reference": {
+        "evaluation": 36,
+        "role": "dense",
+        "z": [
+          -0.0,
+          -0.0,
+          0.09019822267897064,
+          -0.0
+        ],
+        "objective_scaled": 0.7339747617600694,
+        "accurate_rms_mps2": 0.5580234991651197,
+        "minimum_full_constraint": 0.0,
+        "samples": 1290,
+        "reference": {
+          "rms_acceleration_mps2": 0.5580237422142564,
+          "peak_acceleration_mps2": 0.8485335170741884,
+          "peak_predicted_TCP_moment_Nm": 0.036143860306282055,
+          "minimum_reference_gap_m": 0.006516766095815605,
+          "closure_norm_max_SI": [
+            9.936277416114096e-06,
+            9.531179942256403e-05,
+            3.0212630626110605e-05,
+            0.00028906313800495837,
+            0.0001727996569726265,
+            0.0014890653106906975
+          ],
+          "maximum_self_penetration_m": 0.0,
+          "minimum_scaled_constraint": 0.0,
+          "upper_joint_excursion_norm_rad": 0.03708915826900716,
+          "final_turn_deg": -9.439781930294698
+        },
+        "wall_s": 2.8490491999982623
+      },
+      "scalar": {
+        "passed": true,
+        "speed_range_mps": [
+          1.3877787807814457e-17,
+          0.39993127226900177
+        ],
+        "acceleration_range_mps2": [
+          -0.9585460436475831,
+          0.0
+        ],
+        "peak_jerk_mps3": 5.0,
+        "continuity_error": 5.551115123125783e-17,
+        "terminal_v_a": [
+          1.3877787807814457e-17,
+          -1.1102230246251565e-16
+        ],
+        "intervals": [
+          {
+            "start_s": 0.0,
+            "end_s": 0.18340679628518677,
+            "coefficients_seconds": [
+              0.6148471932845829,
+              -2.5,
+              0.0,
+              0.39993127226900177
+            ],
+            "critical_relative_s": [
+              0.0,
+              0.18340679628518677
+            ]
+          },
+          {
+            "start_s": 0.18340679628518677,
+            "end_s": 0.43611390675744877,
+            "coefficients_seconds": [
+              1.4416938917542619,
+              -0.6692536755994664,
+              -0.85498719414304,
+              0.3196294074517931
+            ],
+            "critical_relative_s": [
+              0.0,
+              0.252707110472262,
+              0.1547378121035838
+            ]
+          },
+          {
+            "start_s": 0.43611390675744877,
+            "end_s": 0.6195207030426355,
+            "coefficients_seconds": [
+              0.0,
+              2.5,
+              -0.9170339814259338,
+              0.08409513230899002
+            ],
+            "critical_relative_s": [
+              0.0,
+              0.18340679628518675
+            ]
+          }
+        ],
+        "critical_times_s": [
+          0.0,
+          0.18340679628518677,
+          0.18340679628518677,
+          0.43611390675744877,
+          0.3381446083887706,
+          0.43611390675744877,
+          0.6195207030426355
+        ]
+      },
+      "gauss12_mean_acc2": 0.3113902256204845,
+      "gauss24_mean_acc2": 0.31139022562048446
+    },
+    {
+      "name": "final",
+      "z": [
+        -0.0715497209696635,
+        1.6406202084215082e-09,
+        0.12523916215751188,
+        -2.7755575615628914e-17
+      ],
+      "full_reference_qualified": false,
+      "reference": {
+        "evaluation": 37,
+        "role": "dense",
+        "z": [
+          -0.0715497209696635,
+          1.6406202084215082e-09,
+          0.12523916215751188,
+          -2.7755575615628914e-17
+        ],
+        "objective_scaled": 0.7298818403032804,
+        "accurate_rms_mps2": 0.5564654487942662,
+        "minimum_full_constraint": -0.0005658855041847932,
+        "samples": 1290,
+        "reference": {
+          "rms_acceleration_mps2": 0.5564655726749188,
+          "peak_acceleration_mps2": 0.809336519970792,
+          "peak_predicted_TCP_moment_Nm": 0.035173154066932256,
+          "minimum_reference_gap_m": 0.006915742843352375,
+          "closure_norm_max_SI": [
+            9.936277416190813e-06,
+            9.531179942256403e-05,
+            3.0212630626098926e-05,
+            0.00028906313800495837,
+            0.00017279965697258564,
+            0.0014890653106906975
+          ],
+          "maximum_self_penetration_m": 0.0,
+          "minimum_scaled_constraint": -0.0005658855041847932,
+          "upper_joint_excursion_norm_rad": 0.03708915826900716,
+          "final_turn_deg": -9.439781930294698
+        },
+        "wall_s": 3.769744699995499
+      },
+      "scalar": {
+        "passed": false,
+        "speed_range_mps": [
+          2.7755575615628914e-17,
+          0.39993127226900177
+        ],
+        "acceleration_range_mps2": [
+          -1.0005658855041848,
+          0.0
+        ],
+        "peak_jerk_mps3": 5.0000000292636475,
+        "continuity_error": 1.1102230246251565e-16,
+        "terminal_v_a": [
+          2.7755575615628914e-17,
+          -1.1102230246251565e-16
+        ],
+        "intervals": [
+          {
+            "start_s": 0.0,
+            "end_s": 0.18340679628518677,
+            "coefficients_seconds": [
+              0.8537080338702923,
+              -2.4999999999999996,
+              0.0,
+              0.39993127226900177
+            ],
+            "critical_relative_s": [
+              0.0,
+              0.18340679628518677
+            ]
+          },
+          {
+            "start_s": 0.18340679628518677,
+            "end_s": 0.43611390675744877,
+            "coefficients_seconds": [
+              3.1453982448267923,
+              -1.2653707275514612,
+              -0.8308827533520499,
+              0.3211030468723669
+            ],
+            "critical_relative_s": [
+              0.0,
+              0.252707110472262,
+              0.13409756402416395
+            ]
+          },
+          {
+            "start_s": 0.43611390675744877,
+            "end_s": 0.6195207030426355,
+            "coefficients_seconds": [
+              0.48772746976422815,
+              2.231642416562612,
+              -0.8678153794724237,
+              0.081086123772409
+            ],
+            "critical_relative_s": [
+              0.0,
+              0.18340679628518675,
+              0.18340679628518672
+            ]
+          }
+        ],
+        "critical_times_s": [
+          0.0,
+          0.18340679628518677,
+          0.18340679628518677,
+          0.43611390675744877,
+          0.3175043603093507,
+          0.43611390675744877,
+          0.6195207030426355,
+          0.6195207030426355
+        ]
+      },
+      "gauss12_mean_acc2": 0.30965379570180407,
+      "gauss24_mean_acc2": 0.3096537957018041
+    }
+  ],
+  "kkt": {
+    "stationarity_inf": 5.551115123125783e-17,
+    "complementarity_inf": 4.547205587909134e-18,
+    "dual_sign_violation": 0.0,
+    "scope": "Four-variable finite-difference nonlinear Jacobian; no full-space or global certificate."
+  },
+  "selected": null,
+  "execution_admitted": false,
+  "contract_sha256": "94f7dae3d0d748c0f412355d2214f7e9f80873185298c7bbf1ec947bb1f07569",
+  "new_physics_runs": 0,
+  "new_physics_steps": 0
+}

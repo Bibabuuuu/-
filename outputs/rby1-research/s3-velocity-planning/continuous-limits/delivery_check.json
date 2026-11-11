@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "evidence_verified": true,
+  "solver_success": true,
+  "execution_admitted": true,
+  "new_physics_runs": 1,
+  "new_physics_steps": 3800,
+  "scalar_checks": [
+    {
+      "candidate": "warmstart",
+      "scalar_valid": true,
+      "native_polynomial_error": 9.992007221626409e-16,
+      "quadrature_error": 5.551115123125783e-17
+    },
+    {
+      "candidate": "final",
+      "scalar_valid": true,
+      "native_polynomial_error": 1.3322676295501878e-15,
+      "quadrature_error": 5.551115123125783e-17
+    }
+  ],
+  "relative_pose_replay_error_m": 0.0,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\contract.json": "8ad5a4fc72e40157694604aac81dc30ea89343c3d33686d0f637753fb9883be5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\model.npz": "6f9c44e67542336aaf699fcac57736b714226718fb9b21a0edf227fb61f32ead",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\solve\\plan.json": "adc19e92c2c0f22e7acca64926c7385e889ff1e4c4d0601e366b585001bcf21b",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\solve\\history.json": "e5dc966488dc4a748130ace4baffc1b1a0c11ca907f66d2dcd302645a639fec5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\summary.json": "a9823dddc332769a03ad3dfed672e31e94ef94b1314257ef7a506a82cf2ec784",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-velocity-planning\\continuous-limits\\longitudinal_planner_complete.py": "328ef919483707592cd3a4b3b003b324cf92fb288b9fd90d78c5fbd2b3c699a9"
+  },
+  "not_verified": [
+    "full 68-variable convergence",
+    "global optimum",
+    "continuous geometric safety",
+    "overall grasp improvement",
+    "hardware or real-time planning"
+  ]
+}

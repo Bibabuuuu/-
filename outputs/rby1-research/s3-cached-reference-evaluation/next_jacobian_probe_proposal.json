@@ -1,0 +1,46 @@
+{
+  "status": "proposal only; no numerical-domain adapter or Jacobian probe implemented/run",
+  "goal": "Check full 50-coordinate numerical constraint sensitivities and fixed-row handling before choosing a bounded mature optimizer run.",
+  "proposed_evaluations": [
+    "one zero baseline",
+    "50 forward coordinate steps h=1e-6",
+    "one mixed check z_i=1e-6*cos(i+1)"
+  ],
+  "maximum_complete_candidates": 52,
+  "coarse_nodes_each": 45,
+  "original_constraint_count": 4860,
+  "derivative_matrix_shape": [
+    4860,
+    50
+  ],
+  "objective_gradient": "Use already audited exact quadratic gradient.",
+  "numerical_domain": "May evaluate finite references violating sampled/continuous constraints; report violations and qualification=false. This grants no physical admission and changes no limit. Unsolvable/invalid mappings stop.",
+  "original_outputs": "Keep all 4860 rows plus independent continuous/base and mapping diagnostics; four fixed active endpoint rows reviewed separately for a later solver only.",
+  "proposed_budget": {
+    "maximum_IK_calls": 2340,
+    "maximum_local_steps_per_IK": 30,
+    "maximum_QP_calls": 6000,
+    "maximum_QP_internal_iterations": 12000,
+    "maximum_run_wall_s": 90,
+    "new_outer_optimizer_calls": 0,
+    "new_physics_runs": 0,
+    "new_physics_steps": 0
+  },
+  "evidence_to_report": [
+    "matrix finiteness and per-block sensitivity/step noise",
+    "one mixed-direction finite-difference remainder",
+    "four endpoint-row derivative residuals",
+    "private state/cache isolation",
+    "model and original admission rules unchanged",
+    "actual complete-evaluation count and timings; stop on invalid mapping or budget without tuning"
+  ],
+  "limits": "One forward step size and one mixed check do not establish full smoothness, a global derivative certificate, optimizer convergence or real-time capability. No optimizer is run.",
+  "estimated_wall_s_setup_plus_52_evaluations": 19.726393199933227,
+  "estimate_status": "Projection from only two qualified references; invalid probes, audits and I/O may differ. Not measured Jacobian time.",
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\contract.json": "598c3cb9835748d0441a4c720e5420496f9671a86b133ed8e51caf0bac934298",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\result.json": "3c03ae4d09a93f7e3680cd320a1e4bc5a4de7897d580bf6b3543a8e2e87eeec0",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\delivery_check.json": "f5cfeb8bb3bd76c4920ec118093af58b47e2078d003857fd4ff3897757ceb736",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.cached-reference-evaluation\\solver_readiness_review.json": "4b942635422c987de8f20e0b14d7533099adbf34fe949ac74d8782fcab6b0ceb"
+  }
+}

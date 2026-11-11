@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_b1_right_seed",
+  "contract_sha256": "ca0a7f2cfe4acb6d1dde7b79578f6d5f121479e53c087f61fdd25a022e9de638",
+  "pilot_sha256": "8cc0e58fea7ee1661b840044d13c804d9734057e316218a9987ea30487cfebce",
+  "exit_code": 0,
+  "evidence": "856 source hashes; independent COM reconstruction and bounded-fit KKT; three-node mapping and QP reserve."
+}

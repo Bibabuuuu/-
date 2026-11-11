@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "physical_runs": 2,
+  "physical_steps": 9900,
+  "wrench_balance_error": 3.3860451414858995e-17,
+  "static": {
+    "window_s": [
+      1.0,
+      2.5
+    ],
+    "samples": 3001,
+    "relative_displacement_mm": [
+      0.15087845887310716,
+      0.15088870352035802
+    ],
+    "relative_rotation_deg": [
+      0.043839808806989504,
+      0.04384300152897418
+    ],
+    "mean_vertical_support_N": [
+      4.9050053920727,
+      4.904994636993961
+    ],
+    "max_vertical_speed_mps": 0.00011102575460654293,
+    "loaded_fraction": [
+      1.0,
+      1.0
+    ],
+    "local_friction_ge_099_fraction": [
+      0.0,
+      0.0
+    ],
+    "min_local_friction_margin_N": [
+      0.14702716440282604,
+      0.14697664535527877
+    ],
+    "max_hand_moment_rms_Nm": 0.8202566419860349,
+    "peak_actual_longitudinal_deceleration_mps2": 1.1977048580007242e-06,
+    "settled_s": 0.0,
+    "nonpad_payload_contacts": []
+  },
+  "actual": {
+    "trigger_speed_mps": 0.39983014721083904,
+    "trigger_gap_mm": 94.92683259527253,
+    "minimum_gap_mm": 21.654290160350765,
+    "nearest_geometry": "payload_cube",
+    "closest_time_s": 1.7855,
+    "peak_deceleration_mps2": 2.0017876291527728,
+    "settled_after_trigger_s": 0.35350000000000015,
+    "relative_brake_displacement_mm": 0.03698807034949547,
+    "relative_brake_rotation_deg": 0.010717184825579,
+    "mean_brake_normal_force_N": [
+      9.999266248417994,
+      9.999246413974939
+    ],
+    "maximum_pad_contact_overlap_mm": 0.02676840548738895,
+    "visible_robot_mesh_intrusion_sampled_mm": 0.0,
+    "robot_mesh_audit_samples": 9,
+    "samples": 4901
+  },
+  "hashes": {
+    "scene.xml": "c3599652969059b36ddf5f43b75d550acf27423e6299a441afdc01342cb7396d",
+    "preflight.json": "1ff8fb8fa95a07576b7389c5227a101ea09826cdf39b0705bbe6276e49be240a",
+    "static_check.json": "8a332c549b224d5c560e80abe689e9fe9de9cee6c81da8e213923328bafdcd31",
+    "brake_contract.json": "a90009ed5020146a48f8afbdeb29c179228d9085314bdecde9eeb70d9d431029",
+    "brake_summary.json": "c5d73ea0576104de37672cf9c2e9ecaf4d10360b598eeb30a6d61905ce4cf43c",
+    "brake_layout/scene.xml": "d6c747e90412e7ef3c9f6228116b13022541e612709c922e5d5dc9a5c00e551e"
+  }
+}

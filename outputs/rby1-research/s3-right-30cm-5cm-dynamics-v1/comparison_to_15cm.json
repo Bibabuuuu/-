@@ -1,0 +1,30 @@
+{
+  "B0": {
+    "qpos": {
+      "exact": true,
+      "max_abs_delta": 0.0
+    },
+    "qvel": {
+      "exact": true,
+      "max_abs_delta": 0.0
+    },
+    "ctrl": {
+      "exact": true,
+      "max_abs_delta": 0.0
+    }
+  },
+  "B1": {
+    "qpos": {
+      "exact": true,
+      "max_abs_delta": 0.0
+    },
+    "qvel": {
+      "exact": true,
+      "max_abs_delta": 0.0
+    },
+    "ctrl": {
+      "exact": true,
+      "max_abs_delta": 0.0
+    }
+  }
+}

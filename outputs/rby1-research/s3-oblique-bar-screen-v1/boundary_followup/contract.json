@@ -1,0 +1,14 @@
+{
+  "prior_sha256": "70a7bff606c3914ffe6cc380f50d0c49aee830d57d231d641addf3fb1c3d2ed1",
+  "script_sha256": "5af038dc068e6354d69b289a627cf9c9bb5cedc9c59bc8c7d03c79e4956b656b",
+  "yaw_deg": [
+    10,
+    -10
+  ],
+  "level_offset_m": -0.036,
+  "reason": "28 mm closer than the original tight case, where the two best B0 gaps were about 75.46 mm",
+  "selection": "Repeat the same finite pool at one predeclared tighter offset for both signs",
+  "replay": "Set check_oblique_bar.LEVELS to {'boundary': -.036} and call screen for (10, -10)",
+  "max_evaluations": 34,
+  "new_physics_steps": 0
+}

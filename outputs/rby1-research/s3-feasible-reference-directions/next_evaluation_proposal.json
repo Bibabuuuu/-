@@ -1,0 +1,33 @@
+{
+  "status": "proposal only; not started",
+  "date": "2026-11-02",
+  "goal": "Measure and audit one complete shared-object reference objective/constraint evaluation before choosing an outer solver or budget.",
+  "candidate": "One zero parameter reference only; old nominal initial boundary and frozen default model/control.",
+  "proposed_maximum_complete_candidates": 1,
+  "proposed_coarse_reference_nodes": 45,
+  "proposed_objective_quadrature_nodes": 60,
+  "objective": "Same COM world acceleration squared and old common horizon/normalization; explicit target vs lifted-hand agreement audited.",
+  "constraints": "Retain the original 108-per-node structure (4860 on 45 nodes) for comparison; continuous base extrema and target-mapping diagnostics separately reported. Final solver row selection/interface not frozen.",
+  "proposed_budget": {
+    "maximum_IK_calls": 45,
+    "maximum_local_steps_per_IK": 30,
+    "maximum_QP_calls": 200,
+    "maximum_QP_internal_iterations": 400,
+    "maximum_run_wall_s": 30,
+    "new_outer_optimizer_calls": 0,
+    "new_physics_runs": 0,
+    "new_physics_steps": 0
+  },
+  "scope_limits": [
+    "No finite-difference Jacobian or 50-variable optimization in this cost sample.",
+    "No physical simulation, changed thresholds or actual-state projection.",
+    "One reference evaluation cost does not prove real-time or total optimization cost.",
+    "Stop and preserve failure without retries or budget expansion."
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.feasible-reference-directions\\contract.json": "e4c26361391e940054689675f7fee8cbd838288834f3b55706bc5bad56634259",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.feasible-reference-directions\\result.json": "7d62a6c033b2863dc9609974f4f27f4e3de402606f724c680092e27777c9c886",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.feasible-reference-directions\\delivery_check.json": "9fa9039e45866801039cd16b536b6ccf91d894b344a22ba282a0eda56ee22a1e",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.feasible-reference-directions\\objective_structure.json": "ac765b76b4806cf7a5a4d49736e776f8e9ba3371c4090d248b405e562614958d"
+  }
+}

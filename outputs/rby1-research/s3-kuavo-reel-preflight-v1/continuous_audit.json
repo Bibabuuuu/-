@@ -1,0 +1,24 @@
+{
+  "sample_interval_s": 0.01,
+  "sampled_states": 108,
+  "trigger_clearance_m": 0.1900159157531105,
+  "minimum_sampled_clearance_m": 0.053453249640922476,
+  "minimum_time_s": 2.1,
+  "nearest_geom": "reel_middle_1_flange_-1_contact_47",
+  "peak_contact_friction_utilization_left_right": {
+    "drive": [
+      0.03413673706027654,
+      0.03416008613721415
+    ],
+    "brake": [
+      0.027216497513712367,
+      0.02718562987102066
+    ],
+    "hold": [
+      0.004917417190300715,
+      0.0049563687286875375
+    ]
+  },
+  "both_loaded_in_all_windows": true,
+  "source_hashes_verified": true
+}

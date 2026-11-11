@@ -1,0 +1,150 @@
+{
+  "straight": {
+    "zero_samples": 0,
+    "zero_pretrigger": 0,
+    "zero_times_s": [],
+    "longest_zero_run_samples": 0,
+    "trigger_speed_mps": 0.5997772729479742,
+    "trigger_yaw_rate_radps": -6.747279264073213e-06,
+    "pretrigger_grid_samples": 285,
+    "pretrigger_normal_force_grid_percentiles_N": [
+      [
+        268.7279167087394,
+        283.47545582161683,
+        620.6060872059097
+      ],
+      [
+        269.0076181427935,
+        283.755865237625,
+        621.9390506034522
+      ],
+      [
+        295.70314284882846,
+        310.5103350012353,
+        692.9773333408027
+      ],
+      [
+        331.18748067911025,
+        346.06754065066264,
+        746.4221943924517
+      ],
+      [
+        331.90757709286663,
+        346.83329680663275,
+        746.9824296446932
+      ]
+    ],
+    "pretrigger_near_unloaded_by_wheel_grid": [
+      0,
+      0
+    ],
+    "rear_support_force_range_during_zero_N": null
+  },
+  "arc": {
+    "zero_samples": 3,
+    "zero_pretrigger": 2,
+    "zero_times_s": [
+      0.9235,
+      0.9470000000000001,
+      1.44
+    ],
+    "longest_zero_run_samples": 1,
+    "trigger_speed_mps": 0.5999152498531021,
+    "trigger_yaw_rate_radps": -0.2966496072548894,
+    "pretrigger_grid_samples": 285,
+    "pretrigger_normal_force_grid_percentiles_N": [
+      [
+        0.0,
+        0.0,
+        615.3359873722363
+      ],
+      [
+        261.3864133511689,
+        286.52821855891364,
+        622.1349171709521
+      ],
+      [
+        300.76444637543165,
+        307.76889018948384,
+        694.4776482180358
+      ],
+      [
+        361.8612979057125,
+        345.98844421840346,
+        747.4197417541675
+      ],
+      [
+        429.1191648942561,
+        425.8008426213043,
+        779.1000730659634
+      ]
+    ],
+    "pretrigger_near_unloaded_by_wheel_grid": [
+      3,
+      1
+    ],
+    "rear_support_force_range_during_zero_N": [
+      426.75414980982407,
+      546.8970103181656
+    ]
+  },
+  "straight_qualification": {
+    "steps": 5000,
+    "pretrigger_ok": true,
+    "parking_and_grasp_qualified": true,
+    "pretrigger_max_shift_mm": [
+      0.006039131501680242
+    ],
+    "trigger_speed_mps": 0.5997772729479742,
+    "trigger_sample_gap_mm": 250.0189226935946,
+    "block_peak_shift_mm": [
+      0.007271599752899126
+    ],
+    "block_peak_brake_window_mm": [
+      0.007199569744622379
+    ],
+    "block_final_shift_mm": [
+      0.007271599752899126
+    ],
+    "block_first_over_1mm_after_trigger_s": [
+      null
+    ],
+    "block_forward_peak_mm": [
+      0.007269964771995652
+    ],
+    "block_peak_relative_tilt_deg": [
+      0.010002535060160968
+    ],
+    "block_support_at_end": [
+      true
+    ],
+    "block_min_relative_height_change_mm": [
+      0.0
+    ],
+    "block_other_contact_pairs": [],
+    "block_other_first_contact_s": {},
+    "tray_nonpad_other_contacts": [],
+    "both_hands_loaded": true,
+    "controller_ok": true,
+    "obstacle_contacts": 0,
+    "base_and_tray_settled_after_trigger_s": 0.5720000000000003,
+    "min_sampled_gap_mm": 73.94288279311188,
+    "tray_pitch_max_abs_deg": 0.3260924431512669,
+    "fixed_tray_hand_point_peak_um": [
+      27.456144752475446,
+      4.527472968037959
+    ],
+    "tray_hand_relative_peak_translation_mm": [
+      0.08497928098100987,
+      0.009865623145944621
+    ],
+    "tray_hand_relative_peak_rotation_deg": [
+      0.06832429607749767,
+      0.008622476271030716
+    ],
+    "tray_accel_rms_mps2": 1.0817788974676728,
+    "tray_point_peak_demand_ratio": [
+      0.15912507493326114
+    ]
+  }
+}

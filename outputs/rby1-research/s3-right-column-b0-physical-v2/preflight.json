@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "reference": {
+    "id": "A1.000000000_ang-10.00000_f0.000000000",
+    "A_mps2": 1.0,
+    "angle_deg": -10.0,
+    "fraction": 0.0,
+    "object_A_mps2": 1.0,
+    "buffer_stroke_m": 0.0,
+    "base_stop_s": 0.5999312722690018,
+    "all_reference_stop_s": 0.5999312722690018,
+    "samples": 1201,
+    "predicted_acceleration_mps2": 1.105000199733416,
+    "predicted_equal_TCP_moment_Nm": 0.04675810833012297,
+    "max_hand_position_error_m": 1.227185368752063e-15,
+    "max_hand_angle_error_rad": 8.494753918553544e-16,
+    "max_self_penetration_m": 0.0,
+    "minimum_joint_range_margin_rad": 0.26179935498539275,
+    "max_joint_speed_fraction": 0.0,
+    "minimum_distance_m": 0.009869646687411755,
+    "geometry_admitted": true,
+    "first_intersection_s": null,
+    "closest": {
+      "time_s": 0.436,
+      "group": "upper",
+      "geom": "link_right_arm_4_LINK_11_collision_3_4"
+    }
+  },
+  "new_physics_steps": 0,
+  "contract_sha256": "d5880035afc96cedc3f3bf3e662b93f5650522193d56d2435f5abd2f839e6f7b",
+  "reference_sha256": "2c0b9773c4fe0979b5386b7d08f58fedcc2af3b2dd29ddd2c3d27c855950df83"
+}

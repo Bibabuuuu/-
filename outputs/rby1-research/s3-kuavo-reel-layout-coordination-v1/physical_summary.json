@@ -1,0 +1,330 @@
+{
+  "low_tuned_hold": {
+    "qualified": true,
+    "steps": 5000,
+    "settled_after_trigger_s": 0.4850000000000001,
+    "min_sampled_clearance_m": 0.010848107259068393,
+    "nearest_part": "base",
+    "measured_payload_accel_rms_mps2": 1.1610636593215131,
+    "measured_base_advance_m": 0.14917077205508866,
+    "measured_object_advance_m": 0.14928457443420687,
+    "brake": {
+      "window_s": [
+        1.43,
+        2.08
+      ],
+      "samples": 1301,
+      "relative_displacement_mm": [
+        0.06201750038916195,
+        0.00825231736526801
+      ],
+      "relative_rotation_deg": [
+        0.05115087635336903,
+        0.007309983040628716
+      ],
+      "mean_vertical_support_N": [
+        0.9883886466412809,
+        0.9736296867476806
+      ],
+      "max_vertical_speed_mps": 0.00025824033618732296,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.45349730976172176,
+        0.0
+      ],
+      "min_local_friction_margin_N": [
+        -1.3877787807814457e-17,
+        0.06424758968228972
+      ],
+      "max_hand_moment_rms_Nm": 0.09876211330749825,
+      "peak_actual_longitudinal_deceleration_mps2": 1.677040425465691,
+      "settled_s": 1.915,
+      "nonpad_payload_contacts": []
+    },
+    "hold": {
+      "window_s": [
+        2.08,
+        2.5
+      ],
+      "samples": 841,
+      "relative_displacement_mm": [
+        0.00994102034559725,
+        0.003938265419744089
+      ],
+      "relative_rotation_deg": [
+        0.008832192107358056,
+        0.0031329021240829374
+      ],
+      "mean_vertical_support_N": [
+        0.9883189304809566,
+        0.9736599299639768
+      ],
+      "max_vertical_speed_mps": 4.645757167611317e-05,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.0,
+        0.0
+      ],
+      "min_local_friction_margin_N": [
+        0.0393524224507421,
+        0.07720049873578218
+      ],
+      "max_hand_moment_rms_Nm": 0.09855596715394493,
+      "peak_actual_longitudinal_deceleration_mps2": 1.4325791883426815e-07,
+      "settled_s": 1.915,
+      "nonpad_payload_contacts": []
+    }
+  },
+  "low_buffer": {
+    "qualified": true,
+    "steps": 5000,
+    "settled_after_trigger_s": 0.5690000000000002,
+    "min_sampled_clearance_m": 0.020181501784098457,
+    "nearest_part": "base",
+    "measured_payload_accel_rms_mps2": 1.0350478176169633,
+    "measured_base_advance_m": 0.1398372337852024,
+    "measured_object_advance_m": 0.17517226523039586,
+    "brake": {
+      "window_s": [
+        1.43,
+        2.08
+      ],
+      "samples": 1301,
+      "relative_displacement_mm": [
+        0.05793696156192267,
+        0.008244525603028402
+      ],
+      "relative_rotation_deg": [
+        0.04789372732614045,
+        0.007120373323304735
+      ],
+      "mean_vertical_support_N": [
+        0.9883754082898892,
+        0.9736592259337599
+      ],
+      "max_vertical_speed_mps": 0.0002183092642645708,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.29746348962336666,
+        0.0
+      ],
+      "min_local_friction_margin_N": [
+        -1.3877787807814457e-17,
+        0.06797213815298599
+      ],
+      "max_hand_moment_rms_Nm": 0.09870638237850238,
+      "peak_actual_longitudinal_deceleration_mps2": 2.002663875683993,
+      "settled_s": 1.8840000000000001,
+      "nonpad_payload_contacts": []
+    },
+    "hold": {
+      "window_s": [
+        2.08,
+        2.5
+      ],
+      "samples": 841,
+      "relative_displacement_mm": [
+        0.010076978747581757,
+        0.003990553579266354
+      ],
+      "relative_rotation_deg": [
+        0.009385810459631256,
+        0.003174386676634114
+      ],
+      "mean_vertical_support_N": [
+        0.9882966265110338,
+        0.9736496471669248
+      ],
+      "max_vertical_speed_mps": 0.00011353859478577838,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.0,
+        0.0
+      ],
+      "min_local_friction_margin_N": [
+        0.03854944618922797,
+        0.07703724293218006
+      ],
+      "max_hand_moment_rms_Nm": 0.09855454253721398,
+      "peak_actual_longitudinal_deceleration_mps2": 1.246977575632726e-07,
+      "settled_s": 1.8840000000000001,
+      "nonpad_payload_contacts": []
+    }
+  },
+  "low_matched_hold": {
+    "qualified": true,
+    "steps": 5000,
+    "settled_after_trigger_s": 0.4540000000000002,
+    "min_sampled_clearance_m": 0.02018549982854036,
+    "nearest_part": "base",
+    "measured_payload_accel_rms_mps2": 1.2282541350184069,
+    "measured_base_advance_m": 0.13983335386561851,
+    "measured_object_advance_m": 0.13995084877403005,
+    "brake": {
+      "window_s": [
+        1.43,
+        2.08
+      ],
+      "samples": 1301,
+      "relative_displacement_mm": [
+        0.06394921747204754,
+        0.00832078331583207
+      ],
+      "relative_rotation_deg": [
+        0.05249875154601165,
+        0.007360501498966513
+      ],
+      "mean_vertical_support_N": [
+        0.9883914103049813,
+        0.9736215258695532
+      ],
+      "max_vertical_speed_mps": 0.0002801693433252598,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.409684857801691,
+        0.0
+      ],
+      "min_local_friction_margin_N": [
+        -1.3877787807814457e-17,
+        0.06156799460356539
+      ],
+      "max_hand_moment_rms_Nm": 0.09879046875622256,
+      "peak_actual_longitudinal_deceleration_mps2": 2.002015368042464,
+      "settled_s": 1.8840000000000001,
+      "nonpad_payload_contacts": []
+    },
+    "hold": {
+      "window_s": [
+        2.08,
+        2.5
+      ],
+      "samples": 841,
+      "relative_displacement_mm": [
+        0.009931191205634205,
+        0.0039404181181521185
+      ],
+      "relative_rotation_deg": [
+        0.00866423597484963,
+        0.003135219581616523
+      ],
+      "mean_vertical_support_N": [
+        0.9883256090651632,
+        0.9736619247166463
+      ],
+      "max_vertical_speed_mps": 2.876022533316609e-05,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.0,
+        0.0
+      ],
+      "min_local_friction_margin_N": [
+        0.03952647400982046,
+        0.07720898616657992
+      ],
+      "max_hand_moment_rms_Nm": 0.09855643264749785,
+      "peak_actual_longitudinal_deceleration_mps2": 1.4999684847276026e-07,
+      "settled_s": 1.8840000000000001,
+      "nonpad_payload_contacts": []
+    }
+  },
+  "bar_tuned_hold": {
+    "qualified": true,
+    "steps": 5000,
+    "settled_after_trigger_s": 0.4850000000000001,
+    "min_sampled_clearance_m": 0.010804696457235096,
+    "nearest_part": "payload",
+    "measured_payload_accel_rms_mps2": 1.1610636593215131,
+    "measured_base_advance_m": 0.14917077205508866,
+    "measured_object_advance_m": 0.14928457443420687,
+    "brake": {
+      "window_s": [
+        1.43,
+        2.08
+      ],
+      "samples": 1301,
+      "relative_displacement_mm": [
+        0.06201750038916195,
+        0.00825231736526801
+      ],
+      "relative_rotation_deg": [
+        0.05115087635336903,
+        0.007309983040628716
+      ],
+      "mean_vertical_support_N": [
+        0.9883886466412809,
+        0.9736296867476806
+      ],
+      "max_vertical_speed_mps": 0.00025824033618732296,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.45349730976172176,
+        0.0
+      ],
+      "min_local_friction_margin_N": [
+        -1.3877787807814457e-17,
+        0.06424758968228972
+      ],
+      "max_hand_moment_rms_Nm": 0.09876211330749825,
+      "peak_actual_longitudinal_deceleration_mps2": 1.677040425465691,
+      "settled_s": 1.915,
+      "nonpad_payload_contacts": []
+    },
+    "hold": {
+      "window_s": [
+        2.08,
+        2.5
+      ],
+      "samples": 841,
+      "relative_displacement_mm": [
+        0.00994102034559725,
+        0.003938265419744089
+      ],
+      "relative_rotation_deg": [
+        0.008832192107358056,
+        0.0031329021240829374
+      ],
+      "mean_vertical_support_N": [
+        0.9883189304809566,
+        0.9736599299639768
+      ],
+      "max_vertical_speed_mps": 4.645757167611317e-05,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.0,
+        0.0
+      ],
+      "min_local_friction_margin_N": [
+        0.0393524224507421,
+        0.07720049873578218
+      ],
+      "max_hand_moment_rms_Nm": 0.09855596715394493,
+      "peak_actual_longitudinal_deceleration_mps2": 1.4325791883426815e-07,
+      "settled_s": 1.915,
+      "nonpad_payload_contacts": []
+    }
+  }
+}

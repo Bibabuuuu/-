@@ -1,0 +1,146 @@
+{
+  "scope": "common nominal checks on archived samples; no new physical steps",
+  "window_s": {
+    "reference": [
+      0.0,
+      0.6195207030426355
+    ],
+    "motion": [
+      0.0,
+      0.8998625445380035
+    ],
+    "hold": [
+      0.8998625445380035,
+      1.8998625445380035
+    ]
+  },
+  "rules_source": "outputs/rby1-research/s3-b0-environment-physical-v1/contract.json",
+  "historical_step_count_per_run": 3800,
+  "records": [
+    {
+      "label": "baseline_halfdt",
+      "checks": {
+        "completed": true,
+        "unchanged_during_run": true,
+        "obstacle": true,
+        "control": true,
+        "joints": true,
+        "self_penetration": true,
+        "loaded_hands": true,
+        "terminal_rest": true,
+        "wheel_contact": false
+      },
+      "passed": false,
+      "samples": 3801,
+      "rest": {
+        "first_persistent_s": 0.761,
+        "held_until_s": 1.9000000000000001,
+        "terminal_axle_mmps": 1.74280344185153e-06,
+        "terminal_payload_mmps": 0.15586653579857573,
+        "terminal_yaw_degps": 1.390663053432776e-06
+      },
+      "actual_sampled_clearance": {
+        "time_s": 0.4665,
+        "distance_m": 0.0029610326231891628,
+        "geom": "link_right_arm_4_LINK_11_collision_3_4",
+        "witness": [
+          1.1174745568479814,
+          -0.20000507193714298,
+          1.0756954237373624,
+          1.1204350366106102,
+          -0.20006228881101243,
+          1.0756954237373624
+        ]
+      },
+      "archived_clearance_with_local_midpoints_mm": 2.961032623189163,
+      "wheel_zero_count": 1,
+      "wheel_zero_events": [
+        {
+          "sample": 462,
+          "time_s": 0.231,
+          "r_l_geometric_gap_um": [
+            0.5326601086140006,
+            0.913181116304028
+          ],
+          "previous_count": 4,
+          "next_count": 4,
+          "all_ground_vertical_force_N": 230.99797160148404
+        }
+      ],
+      "both_tires_geometrically_above_plane_samples": 1,
+      "acceleration_rms_mps2": 0.6371784172044758,
+      "tcp_moment_rms_Nm": 0.02979595596947602,
+      "reference_window_acceleration_rms_mps2": 0.7677098357352894,
+      "reference_window_tcp_moment_rms_Nm": 0.03588756963505892,
+      "hold_relative_position_change_mm": 0.15712839507177548
+    },
+    {
+      "label": "rms_halfdt",
+      "checks": {
+        "completed": true,
+        "unchanged_during_run": true,
+        "obstacle": true,
+        "control": true,
+        "joints": true,
+        "self_penetration": true,
+        "loaded_hands": true,
+        "terminal_rest": true,
+        "wheel_contact": true
+      },
+      "passed": true,
+      "samples": 3801,
+      "rest": {
+        "first_persistent_s": 0.756,
+        "held_until_s": 1.9000000000000001,
+        "terminal_axle_mmps": 3.0646480186825194e-06,
+        "terminal_payload_mmps": 0.15592888403000368,
+        "terminal_yaw_degps": 7.431194810743405e-07
+      },
+      "actual_sampled_clearance": {
+        "time_s": 0.5690000000000001,
+        "distance_m": 0.005341276901155393,
+        "geom": "payload_beam",
+        "witness": [
+          1.1151466003975596,
+          -0.19931283477285466,
+          0.7623653633096146,
+          1.1204350366106102,
+          -0.20006228881101246,
+          0.7623653633096146
+        ]
+      },
+      "archived_clearance_with_local_midpoints_mm": 5.3412769011553936,
+      "wheel_zero_count": 0,
+      "wheel_zero_events": [],
+      "both_tires_geometrically_above_plane_samples": 0,
+      "acceleration_rms_mps2": 0.5632396123866519,
+      "tcp_moment_rms_Nm": 0.026210745517488677,
+      "reference_window_acceleration_rms_mps2": 0.6786034117638673,
+      "reference_window_tcp_moment_rms_Nm": 0.03141027461520368,
+      "hold_relative_position_change_mm": 0.15843302001721324
+    }
+  ],
+  "source_sha256": {
+    "outputs/rby1-research/s3-finger-sync-repair/synchronized_scene.xml": "a979eeb810ab2315bb941c23a3ffcea09186604aee6926cade8b23b406620388",
+    "outputs/rby1-research/s3-finger-sync-repair/initial_state.npz": "148aa548be57765e22bb30f63814572938239ccc7642777af47265effc3df9a9",
+    "outputs/rby1-research/s3-b0-environment-physical-v1/contract.json": "316d87add48c4613cf3425336df89ca4743d17713ee790d34d754d667c2f0a0c",
+    "outputs/rby1-research/s3-finger-sync-repair/summary.json": "1035ac8b0ca1efaefcc607362267f12d8bbbda97d442df49047bfa3718741610",
+    "outputs/rby1-research/s3-finger-sync-repair/contract.json": "1a5b583466e84aa7b5ba6035a3ae8175bb223dfe2bceb0984b211b675c6ab5e4",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/config.json": "3274557d47edaff06373426378c8c66ae55056ab88015672c389db0bc2b85ea8",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/result.json": "4e9d996e03de449f46dbb7f471b4a64adb70d7edff1c5ffde035d440d28cf295",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/trace.npz": "0eaae1d3eebe2ded4d32e875ebe70a7802381f511b0f5d976c45e28d7b8cb58e",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/grasp_trace.npz": "619a9ae485806f65d41c792518579baaa6f833265d136054eff8361f98f5c989",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/decision_binding.json": "93c36d8a499a83fb34891f2f27fb476bdca17ca208afb1911204ba66a4beebf5",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/baseline_halfdt/reference_contract_source.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/config.json": "705d6777b3c7bf53bc9fa290b8c4acba7320ed67cc9d68eac21cf6ca849e92fc",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/result.json": "8935ec70123c235528e3fd38b65db2d56080d6bf66ee0411e6fdc82c6a72698b",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/trace.npz": "6b27ef291391db1ca52b9f6624a6ad3a8e9390b7513e1b2cbd797b7a0cff0115",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/grasp_trace.npz": "8de58ea691cf930863b1cbc5b019814c889831623bd59fb5150c69e370f5f464",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/decision_binding.json": "b8602ccc60bbae02841952c719983ce75c10eeeef7d650a302ab57738c85cffe",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/probe_source.py": "2d1b5428f6428a1cbfb268408d1f2f6970faedb0097538663f341aff19e993be",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/wheel_integral_source.py": "ef82ba0e376e689391b4414eee0b45117c3728c1b9f3e46b0658e58b1b67d069",
+    "outputs/rby1-research/s3-finger-sync-repair/execution/rms_halfdt/reference_contract_source.py": "b7e8ec22764b96e79de736db00c9dde3911989e5bf7a25ee44c5a103804f7d9f"
+  }
+}

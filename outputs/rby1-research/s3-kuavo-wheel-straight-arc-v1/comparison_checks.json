@@ -1,0 +1,10 @@
+{
+  "v060": {
+    "xml_equivalent_excluding_obstacle_position": true,
+    "longitudinal_reference_trace_max_difference": 0.0
+  },
+  "v095": {
+    "xml_equivalent_excluding_obstacle_position": true,
+    "longitudinal_reference_trace_max_difference": 0.0
+  }
+}

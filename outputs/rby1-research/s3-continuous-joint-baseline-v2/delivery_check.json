@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "recorded_points": 134,
+  "source_hashes_verified": 8,
+  "new_physics_steps": 0,
+  "scope": "continuous stop-action family, finite offline coverage audit only"
+}

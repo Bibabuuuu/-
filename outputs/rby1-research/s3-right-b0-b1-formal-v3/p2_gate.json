@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "limited archive evidence; formal comparison incomplete",
+  "agent": "/root/p1_right_formal",
+  "verify_exit_code": 0,
+  "source_count": 891,
+  "evaluations": 783,
+  "comparison_completed": false,
+  "new_physics_steps": 0,
+  "sha256": {
+    "contract.json": "75689ed642ae4be254b2d94db372f6836a2e27b7b8e39403b090caff9ef89fa4",
+    "pilot.json": "5fc32b5bc30984026970e3a5815dac51e5c2b8a90bc5e2be32bc094c5e457d7e",
+    "p1_gate.json": "79732331a21b7e46d4c4b4f377effedfb6a9cea2a0ab70770a15455e9404779e",
+    "result.json": "5faf6bf73e4f16a9887b4f5e931f51f48e372d5b93f9faad836fc87a6dad7e87",
+    "eval_0100.json": "abef746a083dbb918761d9c65e73a4c00b8a67bc37c6329581a8ac0e2453cd47",
+    "B0_solve_0.json": "c3d112299a884f1a14ca345773f8ab96e40e60d277bc55a86ae8788bf838d6e7",
+    "B0_solve_1.json": "2ebb6805d1e994f9790ab58445836a451a8da5e4b3a57f2f90cfc18b2211cc7b",
+    "B0_solve_2.json": "4f5420a4b1f10f2fa7c6af03ecb21c3167ad13fb51dd08373fba377052d87bb4",
+    "B1_solve_0.json": "adc4fed4c651bd7de0d9dfb780207f9df984e276100d4954b87db1b27d37ed09"
+  },
+  "evidence": "Bindings, exact original trial replay, four solve limits, B0 zero-gap final, B1 evaluation cap, no dense."
+}

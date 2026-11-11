@@ -1,0 +1,319 @@
+{
+  "rows": [
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -4.0,
+      "demand": 0.08305975381147336,
+      "demand_by_block": [
+        0.08305975381147336,
+        0.07617057426643821
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.24334357903900275
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -3.75,
+      "demand": 0.0817580142709271,
+      "demand_by_block": [
+        0.0817580142709271,
+        0.07564397893881532
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.2279750185167935
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -3.5,
+      "demand": 0.08057733227696535,
+      "demand_by_block": [
+        0.08057733227696535,
+        0.0752332909323633
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.21262812208052645
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -3.25,
+      "demand": 0.07953526547116156,
+      "demand_by_block": [
+        0.07953526547116156,
+        0.07497520300341447
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.19730299090960404
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -3.0,
+      "demand": 0.07867196996868508,
+      "demand_by_block": [
+        0.07867196996868508,
+        0.07492145085745001
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.18199972609218204
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -2.75,
+      "demand": 0.07890462116968278,
+      "demand_by_block": [
+        0.07890462116968278,
+        0.07890462116968278
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.16671842862516933
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -2.5,
+      "demand": 0.08329665007271947,
+      "demand_by_block": [
+        0.08329665007271947,
+        0.08329665007271947
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.15145919941422847
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -2.25,
+      "demand": 0.08769187272435854,
+      "demand_by_block": [
+        0.08769187272435854,
+        0.08769187272435854
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.13622213927377516
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -2.0,
+      "demand": 0.0920904601551094,
+      "demand_by_block": [
+        0.0920904601551094,
+        0.0920904601551094
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.12100734892697845
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -1.75,
+      "demand": 0.09649258391389962,
+      "demand_by_block": [
+        0.09649258391389962,
+        0.09649258391389962
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.1058149290057608
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -1.5,
+      "demand": 0.10089841609514509,
+      "demand_by_block": [
+        0.10089841609514509,
+        0.10089841609514509
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.09064498005079791
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -1.25,
+      "demand": 0.10530812936599918,
+      "demand_by_block": [
+        0.10530812936599918,
+        0.10530812936599918
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.07549760251151888
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -1.0,
+      "demand": 0.1097218969937914,
+      "demand_by_block": [
+        0.1097218969937914,
+        0.1097218969937914
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.06037289674610612
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -0.75,
+      "demand": 0.1141398928736636,
+      "demand_by_block": [
+        0.1141398928736636,
+        0.1141398928736636
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.05301642058674541
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -0.5,
+      "demand": 0.11856229155641476,
+      "demand_by_block": [
+        0.11856229155641476,
+        0.11856229155641476
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.05297556308002932
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": -0.25,
+      "demand": 0.12298926827656248,
+      "demand_by_block": [
+        0.12298926827656248,
+        0.12298926827656248
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.052934847203057064
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": 0.0,
+      "demand": 0.12742099898063203,
+      "demand_by_block": [
+        0.12742099898063203,
+        0.12742099898063203
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.05289425668067731
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": 2.0,
+      "demand": 0.18413560352730285,
+      "demand_by_block": [
+        0.18413560352730285,
+        0.17431356813256144
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.11932845147291563
+    },
+    {
+      "speed": 0.6,
+      "base_a": 2.0,
+      "object_a": 1.25,
+      "jerk": 12.0,
+      "curvature": 0.0,
+      "pitch_deg": 4.0,
+      "demand": 0.25054449435411497,
+      "demand_by_block": [
+        0.25054449435411497,
+        0.22331095199629128
+      ],
+      "reference_end_s": 0.5841666666666667,
+      "max_joint_speed_fraction": 0.23724995132122648
+    }
+  ],
+  "nominal": {
+    "speed": 0.6,
+    "base_a": 2.0,
+    "object_a": 1.25,
+    "jerk": 12.0,
+    "curvature": 0.0,
+    "pitch_deg": 0.0,
+    "demand": 0.12742099898063203,
+    "demand_by_block": [
+      0.12742099898063203,
+      0.12742099898063203
+    ],
+    "reference_end_s": 0.5841666666666667,
+    "max_joint_speed_fraction": 0.05289425668067731
+  },
+  "robust": {
+    "speed": 0.6,
+    "base_a": 2.0,
+    "object_a": 1.25,
+    "jerk": 12.0,
+    "curvature": 0.0,
+    "pitch_deg": -0.75,
+    "demand": 0.1141398928736636,
+    "demand_by_block": [
+      0.1141398928736636,
+      0.1141398928736636
+    ],
+    "reference_end_s": 0.5841666666666667,
+    "max_joint_speed_fraction": 0.05301642058674541
+  }
+}

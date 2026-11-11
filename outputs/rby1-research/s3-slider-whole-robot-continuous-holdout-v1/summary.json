@@ -1,0 +1,207 @@
+{
+  "config": {
+    "initial_speed_mps": 0.3999312722693623,
+    "reference_stop_s": 0.36663230280134784,
+    "dt_s": 0.0005,
+    "duration_s": 2.5,
+    "deceleration_mps2": 2.0,
+    "jerk_mps3": 12.0,
+    "command_period_s": 0.01,
+    "horizon_s": 0.15,
+    "mass_kg": 0.5,
+    "rail_mass_kg": 0.15,
+    "half_stroke_m": 0.038,
+    "disturbance_seed": 1114,
+    "archive": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cube-grasp-probe-v4\\hard_brake\\a20",
+    "shared_pose": {
+      "kp": 400.0,
+      "kd": 32.0,
+      "jacobian_damping": 0.015,
+      "rotation_weight_m": 0.25,
+      "max_correction_radps2": 12.0,
+      "active_joints": "arms only",
+      "reference": "frozen box attitude with translation following measured base pose"
+    }
+  },
+  "cases": {
+    "continuous_truth_feedback": {
+      "window_s": [
+        0.0,
+        2.5
+      ],
+      "samples": 5001,
+      "relative_displacement_mm": [
+        0.6035956371111821,
+        0.6033104512740082
+      ],
+      "relative_rotation_deg": [
+        1.416886166941044,
+        1.4163643513271535
+      ],
+      "mean_vertical_support_N": [
+        2.4521343710259944,
+        2.4518022896932443
+      ],
+      "max_vertical_speed_mps": 0.00600061540058755,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.8398320335932813,
+        0.8362327534493101
+      ],
+      "min_local_friction_margin_N": [
+        -2.220446049250313e-16,
+        -2.220446049250313e-16
+      ],
+      "max_hand_moment_rms_Nm": 0.07459827570732086,
+      "peak_actual_longitudinal_deceleration_mps2": 2.0018411700110903,
+      "settled_s": 0.3535,
+      "nonpad_payload_contacts": [],
+      "pitch_peak_deg": 0.8955771951533518,
+      "pitch_rms_deg": 0.5375362884791431,
+      "hand_moment_peak_Nm": [
+        0.12867486495433791,
+        0.12851241315351777
+      ],
+      "hand_moment_rms_Nm": [
+        0.07459827570732086,
+        0.07457220255063768
+      ],
+      "shell_clearance_min_m": 0.02080461817755232,
+      "axle_travel_m": 0.07323405315078396,
+      "first_internal_contact_s": null,
+      "peak_internal_wall_force_N": 0.0,
+      "peak_abs_center_of_mass_shift_mm": 9.354230641541585,
+      "controller_p95_ms": 0.06897500002196466,
+      "controller_max_ms": 0.12510000010479416,
+      "deadline_fallbacks": 0,
+      "controller_updates": 250,
+      "runner_status": "completed",
+      "external_obstacle_contact": null
+    },
+    "continuous_truth_shared": {
+      "window_s": [
+        0.0,
+        2.5
+      ],
+      "samples": 5001,
+      "relative_displacement_mm": [
+        0.27676884794021317,
+        0.2767232474994114
+      ],
+      "relative_rotation_deg": [
+        0.6280500565487744,
+        0.6278761541516303
+      ],
+      "mean_vertical_support_N": [
+        2.4523267803209428,
+        2.451790965106682
+      ],
+      "max_vertical_speed_mps": 0.002959215243756116,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.2705458908218356,
+        0.2699460107978404
+      ],
+      "min_local_friction_margin_N": [
+        -2.220446049250313e-16,
+        -2.220446049250313e-16
+      ],
+      "max_hand_moment_rms_Nm": 0.10329335584927388,
+      "peak_actual_longitudinal_deceleration_mps2": 2.0018282166838333,
+      "settled_s": 0.3535,
+      "nonpad_payload_contacts": [],
+      "pitch_peak_deg": 0.597095251676245,
+      "pitch_rms_deg": 0.4346669662303644,
+      "hand_moment_peak_Nm": [
+        0.162469173379881,
+        0.1602143588175802
+      ],
+      "hand_moment_rms_Nm": [
+        0.10329335584927388,
+        0.10323870180974053
+      ],
+      "shell_clearance_min_m": 0.021266708637552457,
+      "axle_travel_m": 0.07328177204107532,
+      "first_internal_contact_s": null,
+      "peak_internal_wall_force_N": 0.0,
+      "peak_abs_center_of_mass_shift_mm": 9.40089825131483,
+      "controller_p95_ms": 0.06856500004914778,
+      "controller_max_ms": 0.10819999988598283,
+      "deadline_fallbacks": 0,
+      "controller_updates": 250,
+      "runner_status": "completed",
+      "external_obstacle_contact": null,
+      "roll_tracking": {
+        "mode": "full",
+        "residual_multiplier": 1.0
+      }
+    },
+    "continuous_truth_sharedrolldiff": {
+      "window_s": [
+        0.0,
+        2.5
+      ],
+      "samples": 5001,
+      "relative_displacement_mm": [
+        0.4224164590243983,
+        0.4224241366187011
+      ],
+      "relative_rotation_deg": [
+        0.9602038182417559,
+        0.9601092105159558
+      ],
+      "mean_vertical_support_N": [
+        2.452322721729011,
+        2.451747081322634
+      ],
+      "max_vertical_speed_mps": 0.003275750565436158,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.8176364727054589,
+        0.8200359928014397
+      ],
+      "min_local_friction_margin_N": [
+        -2.220446049250313e-16,
+        -2.220446049250313e-16
+      ],
+      "max_hand_moment_rms_Nm": 0.0859286949399894,
+      "peak_actual_longitudinal_deceleration_mps2": 2.0018394422406516,
+      "settled_s": 0.3535,
+      "nonpad_payload_contacts": [],
+      "pitch_peak_deg": 0.46895756142068473,
+      "pitch_rms_deg": 0.319146914343656,
+      "hand_moment_peak_Nm": [
+        0.14515442737414605,
+        0.14446750868970984
+      ],
+      "hand_moment_rms_Nm": [
+        0.0859286949399894,
+        0.0858831339227677
+      ],
+      "shell_clearance_min_m": 0.02134635354389871,
+      "axle_travel_m": 0.07325473961961751,
+      "first_internal_contact_s": null,
+      "peak_internal_wall_force_N": 0.0,
+      "peak_abs_center_of_mass_shift_mm": 9.43906808664024,
+      "controller_p95_ms": 0.06849999999758438,
+      "controller_max_ms": 0.09800000020732114,
+      "deadline_fallbacks": 0,
+      "controller_updates": 250,
+      "runner_status": "completed",
+      "external_obstacle_contact": null,
+      "roll_tracking": {
+        "mode": "differential",
+        "residual_multiplier": 0.0
+      }
+    }
+  }
+}

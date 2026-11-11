@@ -1,0 +1,36 @@
+{
+  "stationary_s": 0.65,
+  "ramp_s": 0.6,
+  "cruise_s": 0.18,
+  "trigger_s": 1.43,
+  "initial_speed_mps": 0.0,
+  "trigger_speed_mps": 0.4,
+  "trigger_clearance_m": 0.19,
+  "reference_deceleration_mps2": 0.75,
+  "jerk_mps3": 5.0,
+  "reference_stop_s": 2.1133333333333333,
+  "nominal_settle_deadline_s": 2.263333333333333,
+  "maximum_steps": 5000,
+  "relative_displacement_limit_mm": 2.0,
+  "relative_rotation_limit_deg": 2.0,
+  "windows_s": {
+    "drive": [
+      0.45,
+      1.43
+    ],
+    "brake": [
+      1.43,
+      2.1133333333333333
+    ],
+    "hold": [
+      2.1133333333333333,
+      2.5
+    ]
+  },
+  "dt_s": 0.0005,
+  "duration_s": 2.5,
+  "sha256": {
+    "scene.xml": "aa989ff6af318ad938b481fc61417e80dc61f0bc68c74b94e3874e1f7980d3a7",
+    "initial.npz": "e75ecdffd91efd812b8856ce98d25160ce68111adfdbc05f79bcdc7dc18c4f35"
+  }
+}

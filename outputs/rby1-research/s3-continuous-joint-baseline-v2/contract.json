@@ -1,0 +1,72 @@
+{
+  "status": "implemented_and_audited",
+  "scope": "continuous stop-action family, finite offline coverage audit only",
+  "parameter_bounds": {
+    "A_mps2": [
+      0.5,
+      1.0
+    ],
+    "angle_deg": [
+      -10.0,
+      10.0
+    ],
+    "buffer_fraction": [
+      0.0,
+      1.0
+    ],
+    "jerk_mps3": 5.0
+  },
+  "meaning": {
+    "A": "base and object Ruckig acceleration bound; object bound is interpolated by fraction",
+    "angle": "terminal planar yaw change in the existing PlanarStop family",
+    "buffer_fraction": "continuous interpolation of object acceleration bound along the existing checked 1-D IK path",
+    "duration": "derived by Ruckig from current speed, A and fixed J; not a separate discrete preset"
+  },
+  "audit_points": {
+    "lattice_count": 130,
+    "off_grid_count": 4,
+    "total": 134,
+    "old_grid_definition": {
+      "A_mps2": [
+        0.5,
+        0.6,
+        0.75,
+        1.0
+      ],
+      "angle_deg": [
+        -10.0,
+        -5.0,
+        0.0,
+        5.0,
+        10.0
+      ],
+      "buffer_fraction": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    }
+  },
+  "physics": {
+    "new_runs": 0,
+    "new_steps": 0,
+    "model": "synchronized neq=2 scene; reference/geometry only"
+  },
+  "limits": [
+    "finite audit points are not an exhaustive continuous certificate",
+    "upper-body shape remains the existing one-dimensional offline IK path",
+    "no force allocation optimization, online MPC, RL or hardware claim"
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\continuous_joint_baseline.py": "32607c840a79d1d051683b5e74931175f285329d23d8b891f82d59119b344cfd",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\joint_stop_candidates.py": "9863a089a201730e573757d16de3174039fd5d20bb8b54f66e746a6e45754470",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\planar_upper_buffer.py": "d343bd4c14120121f2966adce0ddc3c99a444d81c41f2f881f75b35ce34c80fb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\state_stop_reference.py": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\check_stage31.py": "261591420a62c2abb7ad91bb3526edd11d061109111be928b38b60655ab76b5d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-trigger-stop-demo\\trigger_scene.xml": "a86db77e7f66d8f1f8ca93847507387dd9efac3434d81fbb2b0a09b455acaeb2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-finger-sync-repair\\initial_state.npz": "148aa548be57765e22bb30f63814572938239ccc7642777af47265effc3df9a9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\joint_path.npz": "ec927681ac3017c2f6d41371d97440635f4a7f77aa3a9ea88860bb31eb007f04"
+  }
+}

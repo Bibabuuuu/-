@@ -1,0 +1,18 @@
+{
+  "calibration_actual": 0.10404459707826284,
+  "calibration_predicted": 0.0920904601551094,
+  "calibration_difference": 0.011954136923153447,
+  "friction_reserve": 0.015,
+  "mu": 0.1,
+  "layouts": {
+    "forward": [
+      -0.02,
+      -0.02
+    ],
+    "staggered": [
+      -0.05,
+      -0.012
+    ]
+  },
+  "scope": "Fixed margin from prior layout. Both held-out positions fixed before runs. Same translation and posture candidates; compare nominal and reserved rules only."
+}

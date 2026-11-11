@@ -1,0 +1,165 @@
+{
+  "common_hold_window_s": [
+    0.8998625445380035,
+    1.8998625445380035
+  ],
+  "position_definition": "object body origin expressed in the instantaneous hand TCP frame, not COM or tracked material contact point",
+  "normal_evidence": "all loaded contact normals in common hold window, transformed to the associated hand frame",
+  "interpretation": "extra X motion is approximately contact-normal, not evidence of increased downward tangential slip; causal mechanism unverified",
+  "observations": [
+    {
+      "label": "baseline",
+      "hands": [
+        {
+          "hand": "left",
+          "net_hand_frame_change_mm": [
+            0.0006476668312216383,
+            0.014946767930461045,
+            -0.15593514005676767
+          ],
+          "peak_change_norm_mm": 0.15665118336104286,
+          "peak_hand_yz_change_mm": 0.15664984448154046,
+          "loaded_contact_normal_samples": 8000,
+          "minimum_abs_contact_normal_x": 0.9999999882652876,
+          "maximum_contact_normal_yz_norm": 0.00015319730502721948
+        },
+        {
+          "hand": "right",
+          "net_hand_frame_change_mm": [
+            0.0007464217439689946,
+            0.01525389430659619,
+            -0.15589574813448803
+          ],
+          "peak_change_norm_mm": 0.15664202093738577,
+          "peak_hand_yz_change_mm": 0.1566402425238436,
+          "loaded_contact_normal_samples": 8000,
+          "minimum_abs_contact_normal_x": 0.9999999882244953,
+          "maximum_contact_normal_yz_norm": 0.00015346337437359897
+        }
+      ],
+      "contact_tangent_travel_mm": 0.3503266184038961
+    },
+    {
+      "label": "baseline_halfdt",
+      "hands": [
+        {
+          "hand": "left",
+          "net_hand_frame_change_mm": [
+            0.0006078202890447137,
+            0.014927221340739913,
+            -0.1557549609876724
+          ],
+          "peak_change_norm_mm": 0.1564698030123722,
+          "peak_hand_yz_change_mm": 0.15646862244305337,
+          "loaded_contact_normal_samples": 16000,
+          "minimum_abs_contact_normal_x": 0.9999999883819372,
+          "maximum_contact_normal_yz_norm": 0.00015243402855722436
+        },
+        {
+          "hand": "right",
+          "net_hand_frame_change_mm": [
+            0.0007893497386279869,
+            0.01525068984459731,
+            -0.15604747924383155
+          ],
+          "peak_change_norm_mm": 0.15679292838677392,
+          "peak_hand_yz_change_mm": 0.15679094144461964,
+          "loaded_contact_normal_samples": 16000,
+          "minimum_abs_contact_normal_x": 0.9999999883413033,
+          "maximum_contact_normal_yz_norm": 0.0001527003415029672
+        }
+      ],
+      "contact_tangent_travel_mm": 0.3498274035360255
+    },
+    {
+      "label": "rms",
+      "hands": [
+        {
+          "hand": "left",
+          "net_hand_frame_change_mm": [
+            -0.1322054689236185,
+            0.012484557273934396,
+            -0.15423663619586192
+          ],
+          "peak_change_norm_mm": 0.20352663248001393,
+          "peak_hand_yz_change_mm": 0.15474108735349126,
+          "loaded_contact_normal_samples": 8000,
+          "minimum_abs_contact_normal_x": 0.9999999872112355,
+          "maximum_contact_normal_yz_norm": 0.00015992976746608865
+        },
+        {
+          "hand": "right",
+          "net_hand_frame_change_mm": [
+            0.1334327333441243,
+            0.01371419265345144,
+            -0.15759332316214736
+          ],
+          "peak_change_norm_mm": 0.2069493390013826,
+          "peak_hand_yz_change_mm": 0.15818892055205697,
+          "loaded_contact_normal_samples": 8000,
+          "minimum_abs_contact_normal_x": 0.999999987031756,
+          "maximum_contact_normal_yz_norm": 0.0001610480894261819
+        }
+      ],
+      "contact_tangent_travel_mm": 0.2961141917075698
+    },
+    {
+      "label": "rms_halfdt",
+      "hands": [
+        {
+          "hand": "left",
+          "net_hand_frame_change_mm": [
+            -0.13220867193380892,
+            0.012483403049248777,
+            -0.1541526028208673
+          ],
+          "peak_change_norm_mm": 0.203464968096819,
+          "peak_hand_yz_change_mm": 0.15465723490395805,
+          "loaded_contact_normal_samples": 16000,
+          "minimum_abs_contact_normal_x": 0.999999987769141,
+          "maximum_contact_normal_yz_norm": 0.00015640243348400042
+        },
+        {
+          "hand": "right",
+          "net_hand_frame_change_mm": [
+            0.1334439425254852,
+            0.013731896699642539,
+            -0.15768764084511666
+          ],
+          "peak_change_norm_mm": 0.20702957001117775,
+          "peak_hand_yz_change_mm": 0.1582844182548243,
+          "loaded_contact_normal_samples": 16000,
+          "minimum_abs_contact_normal_x": 0.9999999875936282,
+          "maximum_contact_normal_yz_norm": 0.00015752062822899
+        }
+      ],
+      "contact_tangent_travel_mm": 0.2960507039961689
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\config.json": "ec77ae62bb6f5c1de84d8ec642dc78bc1cf36daca972b044ae526454173aa1de",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\result.json": "651a0637f403b35e06f99685e406254d43ee75f3e8e02870c492a50822d6950e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\trace.npz": "fb34c9f32e520632a44265a7b83247aab7aa6cd4b0f210e39b96fe45618cd4b2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\grasp_trace.npz": "94a51d60926e30ff9d33d490a61ce620cf676fde40bf9c86285d768daf7c7682",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\probe_source.py": "2300c8531ed6a64846ece8045b292632c8488013ff54bd45df586c0339ffa718",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\decision_binding.json": "d8a901bc334a43678c7c1c25ccf696f03dad8166a67c81a6576fb5067c58cbcc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\config.json": "3954e6c1ba248212af5cedc0da76bd27975170c0a13f51ecf9b0ff958e0bce10",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\result.json": "e36fc6a21f4724de2e9aec10ee5ecb651e1ea83afca53f38b6c18a5e437f07d6",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\trace.npz": "1a033a997aba3ec7d33cc3adc325b49ef4c6bd5dc07e7d8d4f3b5afa454eaf94",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\grasp_trace.npz": "ba7e513e5871b411dcea209e74887fc1f0a0ecf2a0a33e382f0d33234e282a15",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\probe_source.py": "2300c8531ed6a64846ece8045b292632c8488013ff54bd45df586c0339ffa718",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\decision_binding.json": "d8a901bc334a43678c7c1c25ccf696f03dad8166a67c81a6576fb5067c58cbcc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\config.json": "9f7b98d19cb8adc74856f417ff81fbe7740b4e6eae2c8f2df3c5cfc55d1aacf5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\result.json": "e1a9aa890254c3d9e06852d1a61310d4923bfa92a0657bc537263ce802105945",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\trace.npz": "75e545a7ff6e9217a8886e2f02414351406b19d051ca6e19d7998523b927811e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\grasp_trace.npz": "b8b3b49bfad9e5727be0b2a94134bdecbc707a34921e629f0ecfbdb92114613a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\probe_source.py": "2300c8531ed6a64846ece8045b292632c8488013ff54bd45df586c0339ffa718",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\decision_binding.json": "e90ebc3c4e3dd92d07015b6706a2e8680854cc9ba082124994040724cdfaa0ab",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\config.json": "f16bad639116a0d5eb8874631d439c9e9c02e4a22ab726936d99f82c4ea73b99",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\result.json": "dfe098f8708ccdd2304946b3607766d845671b62ec6dbdcce88de1cfa6bac6e5",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\trace.npz": "0ecdaa2130ee233a3a632c73d7bdb940e99aaf6b2fc4df6730d0e91d2f5c3150",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\grasp_trace.npz": "f24152f68eb748eb3c12f8f74a0cb74bf6d5cfe7471504991dab3c56a1a3e84d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\probe_source.py": "2300c8531ed6a64846ece8045b292632c8488013ff54bd45df586c0339ffa718",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\decision_binding.json": "e90ebc3c4e3dd92d07015b6706a2e8680854cc9ba082124994040724cdfaa0ab"
+  }
+}

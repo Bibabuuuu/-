@@ -1,0 +1,22 @@
+{
+  "impact_truth_feedback": {
+    "signed_pitch_deg_at_1p9_and_2p5_s": [
+      0.7275016515170133,
+      0.9231763828424963
+    ],
+    "common_window_pitch_max_difference_deg": 0.0,
+    "peak_time_s": 2.5,
+    "axle_displacement_mm_after_1p9_s": 0.014603974567302083,
+    "zero_wheel_samples": 0
+  },
+  "impact_truth_rolling": {
+    "signed_pitch_deg_at_1p9_and_2p5_s": [
+      0.8736755386823208,
+      1.1244060711643538
+    ],
+    "common_window_pitch_max_difference_deg": 0.0,
+    "peak_time_s": 2.5,
+    "axle_displacement_mm_after_1p9_s": 0.014123753836489318,
+    "zero_wheel_samples": 0
+  }
+}

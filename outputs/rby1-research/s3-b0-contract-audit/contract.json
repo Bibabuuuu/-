@@ -1,0 +1,62 @@
+{
+  "name": "B0 mature stop baseline",
+  "status": "evidence_audit",
+  "frozen_on": "2026-11-04",
+  "target_model": {
+    "engine": "MuJoCo",
+    "robot": "RB-Y1 nominal research model",
+    "wheel_width_m": 0.05,
+    "payload_mass_kg": 0.5,
+    "initial_forward_speed_mps": 0.4,
+    "wheel_torque_condition_Nm": 20.0,
+    "finger_constraint": "neq=2",
+    "friction": 0.8,
+    "calibration": "uncalibrated diagnostic simulation condition"
+  },
+  "evidence_tracks": {
+    "current_synchronized_model": {
+      "source": "s3-finger-sync-repair/synchronized_scene.xml",
+      "role": "model-qualification evidence only; not a complete B0 permission matrix"
+    },
+    "legacy_candidate_matrix": {
+      "source": "s3-joint-candidates scene XML and execution records",
+      "role": "historical candidate evidence; neq=0 and excluded from current-model qualification"
+    }
+  },
+  "candidate_family": [
+    "straight stop",
+    "turn stop",
+    "upper-body buffer",
+    "continuous parameter search within the family"
+  ],
+  "permissions": [
+    "base fixed, upper body adjustable",
+    "base adjustable, upper body held",
+    "base and upper body adjustable"
+  ],
+  "scenes": [
+    "open",
+    "low",
+    "upper_bar",
+    "right_column",
+    "left_column"
+  ],
+  "reports": [
+    "reference admission",
+    "actual execution admission",
+    "payload acceleration and angular acceleration",
+    "per-hand contact force/moment and margin",
+    "whole-robot and payload clearance",
+    "stop time and travel",
+    "upper-body motion",
+    "post-stop relative motion",
+    "planning and execution timing",
+    "failure and fallback reason"
+  ],
+  "stop_rules": [
+    "do not use future execution data for online selection",
+    "do not relax historical gates after a failure",
+    "separate prediction, reference admission, physical execution, and audit",
+    "no MPC or learning method in B0"
+  ]
+}

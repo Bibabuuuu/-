@@ -1,0 +1,362 @@
+{
+  "center": {
+    "steps": 5000,
+    "sampled_states": 108,
+    "trigger_clearance_m": 0.19003114490817527,
+    "min_sampled_clearance_m": 0.11672176092659067,
+    "closest_geom": "reel_middle_1_flange_-1_contact_47",
+    "peak_friction_utilization": [
+      0.34937284859176004,
+      0.3484873613126777
+    ],
+    "min_loaded_contact_count_by_hand": [
+      18.0,
+      18.0
+    ],
+    "peak_brake_upper_command_fraction": 0.4380055639842484,
+    "peak_brake_wheel_command_fraction": 0.6959714735232422,
+    "zero_wheel_contact_samples_after_first_step": 0,
+    "peak_hold_object_speed_mps": 0.0009374452700958602,
+    "brake_vertical_support_fraction": [
+      0.49996650224660544,
+      0.5000334977533945
+    ],
+    "max_brake_relative_displacement_mm": [
+      0.0208133420093421,
+      0.02077875881220732
+    ],
+    "passed": true,
+    "friction_by_phase": {
+      "rest": {
+        "peak": [
+          0.21700327838686462,
+          0.21804853936572743
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.020753937076544514,
+          0.020812419395395416
+        ]
+      },
+      "acceleration": {
+        "peak": [
+          0.45681744001908414,
+          0.4575250968563934
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.03523763454513275,
+          0.03523989952028968
+        ]
+      },
+      "cruise": {
+        "peak": [
+          0.03191806613797648,
+          0.03160130597401621
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.0060084685799856145,
+          0.0060363196896707355
+        ]
+      },
+      "brake": {
+        "peak": [
+          0.34937284859176004,
+          0.3484873613126777
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.06154365067291591,
+          0.06152412205600258
+        ]
+      },
+      "hold": {
+        "peak": [
+          0.09117425744795307,
+          0.09160969435259156
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.006356222075335313,
+          0.00630363086255047
+        ]
+      }
+    }
+  },
+  "left": {
+    "steps": 5000,
+    "sampled_states": 108,
+    "trigger_clearance_m": 0.19003304843645705,
+    "min_sampled_clearance_m": 0.11672117942225964,
+    "closest_geom": "reel_middle_1_flange_-1_contact_47",
+    "peak_friction_utilization": [
+      1.0000000000000004,
+      0.21840530721321422
+    ],
+    "min_loaded_contact_count_by_hand": [
+      12.0,
+      27.0
+    ],
+    "peak_brake_upper_command_fraction": 0.43800477502383256,
+    "peak_brake_wheel_command_fraction": 0.695817128509927,
+    "zero_wheel_contact_samples_after_first_step": 0,
+    "peak_hold_object_speed_mps": 0.0009508577119779906,
+    "brake_vertical_support_fraction": [
+      0.5037641828172105,
+      0.49623581718278953
+    ],
+    "max_brake_relative_displacement_mm": [
+      0.041006783069571354,
+      0.005301274197960064
+    ],
+    "passed": true,
+    "friction_by_phase": {
+      "rest": {
+        "peak": [
+          0.6883981299407157,
+          0.09138551098394122
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.1424572604284919,
+          0.008097811180787525
+        ]
+      },
+      "acceleration": {
+        "peak": [
+          0.593693957998729,
+          0.15615990600547155
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.07772693959499496,
+          0.019434507575704935
+        ]
+      },
+      "cruise": {
+        "peak": [
+          0.1618076931304535,
+          0.010163406429089597
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.023526145436416093,
+          0.0026577199697795885
+        ]
+      },
+      "brake": {
+        "peak": [
+          1.0000000000000004,
+          0.21840530721321422
+        ],
+        "sample_fraction": [
+          0.49182561307901906,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.06064674890343641,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.09620673229748485,
+          0.03255636439563743
+        ]
+      },
+      "hold": {
+        "peak": [
+          0.17678892741760588,
+          0.051891800448682836
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.011389642408978577,
+          0.0022821438080479093
+        ]
+      }
+    }
+  },
+  "right": {
+    "steps": 5000,
+    "sampled_states": 108,
+    "trigger_clearance_m": 0.19003310749576166,
+    "min_sampled_clearance_m": 0.11672149698428956,
+    "closest_geom": "reel_middle_1_flange_-1_contact_0",
+    "peak_friction_utilization": [
+      0.21875767385354297,
+      1.0000000000000004
+    ],
+    "min_loaded_contact_count_by_hand": [
+      27.0,
+      12.0
+    ],
+    "peak_brake_upper_command_fraction": 0.43800476921125325,
+    "peak_brake_wheel_command_fraction": 0.696125444631428,
+    "zero_wheel_contact_samples_after_first_step": 0,
+    "peak_hold_object_speed_mps": 0.0009504815904802141,
+    "brake_vertical_support_fraction": [
+      0.4961404358869522,
+      0.5038595641130479
+    ],
+    "max_brake_relative_displacement_mm": [
+      0.005332493612955379,
+      0.04091518658414474
+    ],
+    "passed": true,
+    "friction_by_phase": {
+      "rest": {
+        "peak": [
+          0.09094236350508891,
+          0.6864342079959892
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.008065637467830242,
+          0.14254304469640383
+        ]
+      },
+      "acceleration": {
+        "peak": [
+          0.15580488320937244,
+          0.5969235514379889
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.019459237216638645,
+          0.07782711370334812
+        ]
+      },
+      "cruise": {
+        "peak": [
+          0.009940250943095683,
+          0.16293337703573602
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.0026684610282682727,
+          0.023610443273028785
+        ]
+      },
+      "brake": {
+        "peak": [
+          0.21875767385354297,
+          1.0000000000000004
+        ],
+        "sample_fraction": [
+          0.0,
+          0.49318801089918257
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.060713860639324616
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.0325360672971353,
+          0.096117898072421
+        ]
+      },
+      "hold": {
+        "peak": [
+          0.05141927596531499,
+          0.17829465965762997
+        ],
+        "sample_fraction": [
+          0.0,
+          0.0
+        ],
+        "near_boundary_contact_max_normal_N": [
+          0.0,
+          0.0
+        ],
+        "peak_pad_net_tangent_utilization": [
+          0.002316365759855238,
+          0.011445126474691734
+        ]
+      }
+    }
+  }
+}

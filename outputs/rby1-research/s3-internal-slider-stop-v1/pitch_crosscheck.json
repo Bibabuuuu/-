@@ -1,0 +1,106 @@
+{
+  "mujoco_instantaneous_states": 32,
+  "max_pitch_and_slider_acceleration_error": [
+    4.263256414560601e-14,
+    8.881784197001252e-16
+  ],
+  "fast_prediction_step_s": 0.005,
+  "results": {
+    "continuous_nominal_forward": {
+      "peak_pitch_deg": 0.11033511608884247,
+      "pitch_rms_deg": 0.05774427915923846,
+      "peak_pitch_rate_deg_s": 2.1220568275659653,
+      "peak_applied_torque_Nm": 0.04494344109170753,
+      "peak_slider_mm": 29.797669981939777,
+      "first_contact_s": null,
+      "peak_bumper_force_N": 0.0,
+      "pitch_settle_s": 0.685,
+      "selection_compute_p95_ms": 5.191304997060797,
+      "selection_compute_max_ms": 9.576500000548549
+    },
+    "continuous_nominal_backward": {
+      "peak_pitch_deg": 0.13365454535017993,
+      "pitch_rms_deg": 0.07571317821215745,
+      "peak_pitch_rate_deg_s": 1.7682240045720716,
+      "peak_applied_torque_Nm": 0.05630111511545476,
+      "peak_slider_mm": 38.34182317920195,
+      "first_contact_s": null,
+      "peak_bumper_force_N": 0.0,
+      "pitch_settle_s": 0.0,
+      "selection_compute_p95_ms": 4.942215003393358,
+      "selection_compute_max_ms": 5.561300000408664
+    },
+    "continuous_holdout_forward": {
+      "peak_pitch_deg": 0.12264264632293756,
+      "pitch_rms_deg": 0.06464938124975635,
+      "peak_pitch_rate_deg_s": 1.6893282752001526,
+      "peak_applied_torque_Nm": 0.0563534156874209,
+      "peak_slider_mm": 37.578172799218315,
+      "first_contact_s": null,
+      "peak_bumper_force_N": 0.0,
+      "pitch_settle_s": 0.0,
+      "selection_compute_p95_ms": 5.449079998288653,
+      "selection_compute_max_ms": 5.812199997308198
+    },
+    "continuous_holdout_backward": {
+      "peak_pitch_deg": 0.16275716143881766,
+      "pitch_rms_deg": 0.08486983613787615,
+      "peak_pitch_rate_deg_s": 2.420069254152053,
+      "peak_applied_torque_Nm": 0.06054527512993888,
+      "peak_slider_mm": 40.67876357448784,
+      "first_contact_s": 0.384,
+      "peak_bumper_force_N": 1.939440498358988,
+      "pitch_settle_s": 0.40700000000000003,
+      "selection_compute_p95_ms": 4.855204997875262,
+      "selection_compute_max_ms": 5.32039999961853
+    },
+    "impact_nominal_forward": {
+      "peak_pitch_deg": 0.1394897045918522,
+      "pitch_rms_deg": 0.04902193446481797,
+      "peak_pitch_rate_deg_s": 2.712584535805144,
+      "peak_applied_torque_Nm": 0.06203324503741784,
+      "peak_slider_mm": 42.31871374460298,
+      "first_contact_s": 0.199,
+      "peak_bumper_force_N": 4.911349442711348,
+      "pitch_settle_s": 0.233,
+      "selection_compute_p95_ms": 4.87153999711154,
+      "selection_compute_max_ms": 5.07340000331169
+    },
+    "impact_nominal_backward": {
+      "peak_pitch_deg": 0.2246992635489941,
+      "pitch_rms_deg": 0.09122226273087325,
+      "peak_pitch_rate_deg_s": 4.554358708670375,
+      "peak_applied_torque_Nm": 0.060960851775384045,
+      "peak_slider_mm": 42.608960706967174,
+      "first_contact_s": 0.39,
+      "peak_bumper_force_N": 5.53994600856031,
+      "pitch_settle_s": 0.462,
+      "selection_compute_p95_ms": 4.933144999449723,
+      "selection_compute_max_ms": 5.465199996251613
+    },
+    "impact_holdout_forward": {
+      "peak_pitch_deg": 0.1394897045918522,
+      "pitch_rms_deg": 0.051503209030958425,
+      "peak_pitch_rate_deg_s": 2.5748228762099816,
+      "peak_applied_torque_Nm": 0.061162681272393465,
+      "peak_slider_mm": 41.95959728515858,
+      "first_contact_s": 0.199,
+      "peak_bumper_force_N": 5.496409388060426,
+      "pitch_settle_s": 0.23,
+      "selection_compute_p95_ms": 4.908434997196309,
+      "selection_compute_max_ms": 5.112799997732509
+    },
+    "impact_holdout_backward": {
+      "peak_pitch_deg": 0.2246992635489941,
+      "pitch_rms_deg": 0.09098614424228865,
+      "peak_pitch_rate_deg_s": 4.327067739991765,
+      "peak_applied_torque_Nm": 0.06009975336106496,
+      "peak_slider_mm": 42.215006660339164,
+      "first_contact_s": 0.39,
+      "peak_bumper_force_N": 6.231561236241768,
+      "pitch_settle_s": 0.465,
+      "selection_compute_p95_ms": 5.202529997404781,
+      "selection_compute_max_ms": 10.153999995964114
+    }
+  }
+}

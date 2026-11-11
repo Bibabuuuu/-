@@ -1,0 +1,2022 @@
+{
+  "config": {
+    "initial_speed_mps": 0.3999312722693623,
+    "reference_stop_s": 0.36663230280134784,
+    "dt_s": 0.0005,
+    "duration_s": 2.5,
+    "deceleration_mps2": 2.0,
+    "jerk_mps3": 12.0,
+    "command_period_s": 0.01,
+    "horizon_s": 0.15,
+    "mass_kg": 0.5,
+    "rail_mass_kg": 0.15,
+    "half_stroke_m": 0.038,
+    "disturbance_seed": 1114,
+    "archive": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cube-grasp-probe-v4\\hard_brake\\a20",
+    "shared_pose": {
+      "kp": 400.0,
+      "kd": 32.0,
+      "jacobian_damping": 0.015,
+      "rotation_weight_m": 0.25,
+      "max_correction_radps2": 12.0,
+      "reference": "frozen box attitude with translation following measured base pose"
+    },
+    "waist_reserve": {
+      "floor": 0.65,
+      "full": 0.8,
+      "restore_s": 0.03,
+      "sample_s": 0.01,
+      "fixed_fraction": 0.5
+    }
+  },
+  "same_initial_reference_and_hidden_input": true,
+  "verified_authority_against_contact_archive": true,
+  "pairs": {
+    "impact": {
+      "arms": {
+        "window_s": [
+          0.0,
+          2.5
+        ],
+        "samples": 5001,
+        "relative_displacement_mm": [
+          0.4165196854945445,
+          0.4170927156270841
+        ],
+        "relative_rotation_deg": [
+          1.044133221057478,
+          1.0447872604284225
+        ],
+        "mean_vertical_support_N": [
+          2.452135097609284,
+          2.4516490067585925
+        ],
+        "max_vertical_speed_mps": 0.005137978367894034,
+        "loaded_fraction": [
+          1.0,
+          1.0
+        ],
+        "local_friction_ge_099_fraction": [
+          0.8674265146970606,
+          0.8658268346330734
+        ],
+        "min_local_friction_margin_N": [
+          -2.220446049250313e-16,
+          -2.220446049250313e-16
+        ],
+        "max_hand_moment_rms_Nm": 0.08368274678729645,
+        "peak_actual_longitudinal_deceleration_mps2": 2.001811450423048,
+        "settled_s": 0.3535,
+        "nonpad_payload_contacts": [],
+        "pitch_peak_deg": 0.5164538635300433,
+        "pitch_rms_deg": 0.33873149845554784,
+        "hand_moment_peak_Nm": [
+          0.14861473645962225,
+          0.1530757453555555
+        ],
+        "hand_moment_rms_Nm": [
+          0.08366716770729365,
+          0.08368274678729645
+        ],
+        "shell_clearance_min_m": 0.02138805493854285,
+        "axle_travel_m": 0.07325755673304953,
+        "first_internal_contact_s": 0.20550000000000002,
+        "peak_internal_wall_force_N": 4.323379002519848,
+        "peak_abs_center_of_mass_shift_mm": 12.003531177182259,
+        "controller_p95_ms": 0.07231500002262689,
+        "controller_max_ms": 0.11840000001939188,
+        "deadline_fallbacks": 0,
+        "controller_updates": 250,
+        "runner_status": "completed",
+        "external_obstacle_contact": null,
+        "roll_tracking": {
+          "mode": "differential",
+          "residual_multiplier": 0.0
+        },
+        "box_pitch_peak_deg": 0.5164538635300433,
+        "box_roll_peak_deg": 0.001597137595571256,
+        "box_pitch_brake_rms_deg": 0.03224487560009143,
+        "late_pitch_change_deg": 0.07766893862592888,
+        "late_pitch_range_deg": 0.07766893862592888,
+        "late_differential_heading_moment_rms_Nm": 0.08442847369383488,
+        "late_common_heading_moment_rms_Nm": 0.023172317818502843,
+        "late": {
+          "window_s": [
+            1.9000000000000001,
+            2.5
+          ],
+          "force_peak_N": [
+            2.738499840733317,
+            2.7386214107248814
+          ],
+          "force_rms_N": [
+            2.4628043548981706,
+            2.4623300101026677
+          ],
+          "moment_peak_Nm": [
+            0.13989807708802177,
+            0.1394637573345005
+          ],
+          "moment_rms_Nm": [
+            0.09549474329622816,
+            0.09544764442220961
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.08757978262795527,
+              0.03697465329837338,
+              0.009050010249589485
+            ],
+            [
+              0.08752159169559379,
+              0.03697716075787007,
+              0.009105679277513464
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0009293417650423762,
+            0.055962399321824,
+            0.002001452011448821
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.22914556342590428,
+            0.007031213600804526,
+            0.01036773306690809
+          ],
+          "hand_min_loaded_count": [
+            3.0,
+            3.0
+          ]
+        },
+        "brake": {
+          "window_s": [
+            0.0,
+            0.3665
+          ],
+          "force_peak_N": [
+            3.7313515893419833,
+            3.7532940531589336
+          ],
+          "force_rms_N": [
+            2.532046544527181,
+            2.533277741375491
+          ],
+          "moment_peak_Nm": [
+            0.14861473645962225,
+            0.1530757453555555
+          ],
+          "moment_rms_Nm": [
+            0.0888912130339451,
+            0.08917551529608994
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.02387166288695683,
+              0.08039545876316445,
+              0.029467977126331864
+            ],
+            [
+              0.023912713394554565,
+              0.0804038365093984,
+              0.030260167564026854
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0010756765484629185,
+            0.03888664631802971,
+            0.0013984368665861482
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.2960451299260994,
+            0.005683497867910818,
+            0.03490114740305497
+          ],
+          "hand_min_loaded_count": [
+            2.0,
+            2.0
+          ]
+        },
+        "late_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.15211383169345477,
+            "fixed_point_tangential_end_mm": 0.15211383169345477,
+            "contact_centroid_peak_mm": 11.860880873688208,
+            "contact_centroid_end_mm": 0.16033398741275415,
+            "min_pad_normal_N": 5.433347074220532
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.10800108356492026,
+            "fixed_point_tangential_end_mm": 0.10800108356492026,
+            "contact_centroid_peak_mm": 1.1707262966460428,
+            "contact_centroid_end_mm": 0.8490383698100324,
+            "min_pad_normal_N": 3.0138625492739006
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.1519716588413459,
+            "fixed_point_tangential_end_mm": 0.1519716588413459,
+            "contact_centroid_peak_mm": 11.798120108081585,
+            "contact_centroid_end_mm": 11.758255330090048,
+            "min_pad_normal_N": 5.4326529216033554
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.10798394454315653,
+            "fixed_point_tangential_end_mm": 0.10798394454315653,
+            "contact_centroid_peak_mm": 1.091013203970601,
+            "contact_centroid_end_mm": 0.887789674985229,
+            "min_pad_normal_N": 3.007424119313917
+          }
+        },
+        "brake_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.17716305199205593,
+            "fixed_point_tangential_end_mm": 0.17716305199205593,
+            "contact_centroid_peak_mm": 6.836707429991006,
+            "contact_centroid_end_mm": 5.270159902517732,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.1571981803587248,
+            "fixed_point_tangential_end_mm": 0.1571981803587248,
+            "contact_centroid_peak_mm": 5.890186623578858,
+            "contact_centroid_end_mm": 4.31723303847328,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.1775085933179867,
+            "fixed_point_tangential_end_mm": 0.1775085933179867,
+            "contact_centroid_peak_mm": 6.392920440576151,
+            "contact_centroid_end_mm": 5.713700311746309,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.1574624026216225,
+            "fixed_point_tangential_end_mm": 0.1574624026216225,
+            "contact_centroid_peak_mm": 5.897884511506494,
+            "contact_centroid_end_mm": 4.312931659701533,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        },
+        "measured_axle_gap_to_full_mm": 0.0,
+        "zero_wheel_contact_samples": 0,
+        "max_unclipped_control_excess": 0.0,
+        "worst_hand_reserve_p05": 0.5633892178695534,
+        "late_worst_hand_reserve_p05": 0.7410621083313491
+      },
+      "unrestricted": {
+        "window_s": [
+          0.0,
+          2.5
+        ],
+        "samples": 5001,
+        "relative_displacement_mm": [
+          0.45646128517510387,
+          0.4565105263184177
+        ],
+        "relative_rotation_deg": [
+          1.1394189118063565,
+          1.139689038489824
+        ],
+        "mean_vertical_support_N": [
+          2.4521125702830973,
+          2.451624732393285
+        ],
+        "max_vertical_speed_mps": 0.005180449982703891,
+        "loaded_fraction": [
+          1.0,
+          1.0
+        ],
+        "local_friction_ge_099_fraction": [
+          0.9154169166166767,
+          0.9144171165766847
+        ],
+        "min_local_friction_margin_N": [
+          -2.220446049250313e-16,
+          -1.6653345369377348e-16
+        ],
+        "max_hand_moment_rms_Nm": 0.08009564806142289,
+        "peak_actual_longitudinal_deceleration_mps2": 2.001897348949683,
+        "settled_s": 0.3535,
+        "nonpad_payload_contacts": [],
+        "pitch_peak_deg": 0.4830624203162646,
+        "pitch_rms_deg": 0.3130768209577287,
+        "hand_moment_peak_Nm": [
+          0.14778898356771658,
+          0.15232109240131456
+        ],
+        "hand_moment_rms_Nm": [
+          0.08007065561178592,
+          0.08009564806142289
+        ],
+        "shell_clearance_min_m": 0.021417155843782797,
+        "axle_travel_m": 0.07325245182497729,
+        "first_internal_contact_s": 0.20550000000000002,
+        "peak_internal_wall_force_N": 4.328166620152947,
+        "peak_abs_center_of_mass_shift_mm": 12.004216626761183,
+        "controller_p95_ms": 0.06912499986810869,
+        "controller_max_ms": 0.1407999998264131,
+        "deadline_fallbacks": 0,
+        "controller_updates": 250,
+        "runner_status": "completed",
+        "external_obstacle_contact": null,
+        "roll_tracking": {
+          "mode": "differential",
+          "residual_multiplier": 0.0
+        },
+        "active_pose_joints": [
+          "torso_1",
+          "torso_2",
+          "torso_3",
+          "left_arm_0",
+          "left_arm_1",
+          "left_arm_2",
+          "left_arm_3",
+          "left_arm_4",
+          "left_arm_5",
+          "left_arm_6",
+          "right_arm_0",
+          "right_arm_1",
+          "right_arm_2",
+          "right_arm_3",
+          "right_arm_4",
+          "right_arm_5",
+          "right_arm_6"
+        ],
+        "box_pitch_peak_deg": 0.4830624203162646,
+        "box_roll_peak_deg": 0.0019280494662323702,
+        "box_pitch_brake_rms_deg": 0.029491998299209166,
+        "late_pitch_change_deg": 0.07892307088362222,
+        "late_pitch_range_deg": 0.07892307088362222,
+        "late_differential_heading_moment_rms_Nm": 0.07790995103402368,
+        "late_common_heading_moment_rms_Nm": 0.02372015724591276,
+        "late": {
+          "window_s": [
+            1.9000000000000001,
+            2.5
+          ],
+          "force_peak_N": [
+            2.7395585434366208,
+            2.7365909955100114
+          ],
+          "force_rms_N": [
+            2.4624882362008034,
+            2.462326335558233
+          ],
+          "moment_peak_Nm": [
+            0.1333188904586569,
+            0.13375781776628676
+          ],
+          "moment_rms_Nm": [
+            0.09011062457781889,
+            0.09011340816881111
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.08144643027156846,
+              0.03728867451293724,
+              0.009795836405911196
+            ],
+            [
+              0.08143519755934672,
+              0.03731449272428461,
+              0.009816494435296738
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0009329131633523016,
+            0.055957271646794385,
+            0.002287477741031564
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.23552216792782707,
+            0.007883931555296299,
+            0.010805638256243201
+          ],
+          "hand_min_loaded_count": [
+            3.0,
+            3.0
+          ]
+        },
+        "brake": {
+          "window_s": [
+            0.0,
+            0.3665
+          ],
+          "force_peak_N": [
+            3.7299450673238113,
+            3.762110664515229
+          ],
+          "force_rms_N": [
+            2.5322109641328585,
+            2.5331294653179124
+          ],
+          "moment_peak_Nm": [
+            0.14778898356771658,
+            0.15232109240131456
+          ],
+          "moment_rms_Nm": [
+            0.08814050064526051,
+            0.08839451636648764
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.021380502863245807,
+              0.08039239347408206,
+              0.029132199072851698
+            ],
+            [
+              0.021418007929775877,
+              0.08040596242023014,
+              0.029828521037118826
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0010595728505021838,
+            0.03889247958315825,
+            0.0014161206577548878
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.3000197304317429,
+            0.005658313794706044,
+            0.035662193438873634
+          ],
+          "hand_min_loaded_count": [
+            2.0,
+            2.0
+          ]
+        },
+        "late_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.1770689206237661,
+            "fixed_point_tangential_end_mm": 0.1770689206237661,
+            "contact_centroid_peak_mm": 11.86113522635972,
+            "contact_centroid_end_mm": 11.813738068198738,
+            "min_pad_normal_N": 5.439902421165512
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.1288896175769803,
+            "fixed_point_tangential_end_mm": 0.1288896175769803,
+            "contact_centroid_peak_mm": 1.1375226161985676,
+            "contact_centroid_end_mm": 0.9824359088371291,
+            "min_pad_normal_N": 3.0208464400732806
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.1769570289218526,
+            "fixed_point_tangential_end_mm": 0.1769570289218526,
+            "contact_centroid_peak_mm": 11.860184754062338,
+            "contact_centroid_end_mm": 0.18605552366572747,
+            "min_pad_normal_N": 5.434704283254457
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.1287272514576498,
+            "fixed_point_tangential_end_mm": 0.1287272514576498,
+            "contact_centroid_peak_mm": 1.2165548628669693,
+            "contact_centroid_end_mm": 0.9618845125628795,
+            "min_pad_normal_N": 3.01779397501394
+          }
+        },
+        "brake_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.18331368234097903,
+            "fixed_point_tangential_end_mm": 0.18331368234097903,
+            "contact_centroid_peak_mm": 6.83939857312563,
+            "contact_centroid_end_mm": 5.274009657228753,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.16448655808867862,
+            "fixed_point_tangential_end_mm": 0.16448655808867862,
+            "contact_centroid_peak_mm": 5.887777566242973,
+            "contact_centroid_end_mm": 4.260797687999168,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.18382036146524738,
+            "fixed_point_tangential_end_mm": 0.18382036146524738,
+            "contact_centroid_peak_mm": 6.395028004680364,
+            "contact_centroid_end_mm": 5.713028417407047,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.16484051518838336,
+            "fixed_point_tangential_end_mm": 0.16484051518838336,
+            "contact_centroid_peak_mm": 5.895525395836617,
+            "contact_centroid_end_mm": 4.28148425074358,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        },
+        "measured_axle_gap_to_full_mm": 0.005104908076325525,
+        "zero_wheel_contact_samples": 0,
+        "max_unclipped_control_excess": 0.0,
+        "worst_hand_reserve_p05": 0.5561604393389854,
+        "late_worst_hand_reserve_p05": 0.7170785672474317
+      },
+      "adaptive": {
+        "window_s": [
+          0.0,
+          2.5
+        ],
+        "samples": 5001,
+        "relative_displacement_mm": [
+          0.4378565148459818,
+          0.4377264879815099
+        ],
+        "relative_rotation_deg": [
+          1.0941816814507697,
+          1.0945975490164785
+        ],
+        "mean_vertical_support_N": [
+          2.4521406412803293,
+          2.451603550494247
+        ],
+        "max_vertical_speed_mps": 0.005159390689222453,
+        "loaded_fraction": [
+          1.0,
+          1.0
+        ],
+        "local_friction_ge_099_fraction": [
+          0.8860227954409118,
+          0.8884223155368927
+        ],
+        "min_local_friction_margin_N": [
+          -2.220446049250313e-16,
+          -2.220446049250313e-16
+        ],
+        "max_hand_moment_rms_Nm": 0.08137164153914425,
+        "peak_actual_longitudinal_deceleration_mps2": 2.001811450423048,
+        "settled_s": 0.3535,
+        "nonpad_payload_contacts": [],
+        "pitch_peak_deg": 0.4797682513664289,
+        "pitch_rms_deg": 0.3221790512405507,
+        "hand_moment_peak_Nm": [
+          0.14861473645962225,
+          0.1530757453555555
+        ],
+        "hand_moment_rms_Nm": [
+          0.08136124765311684,
+          0.08137164153914425
+        ],
+        "shell_clearance_min_m": 0.02138814510493642,
+        "axle_travel_m": 0.07325487994021493,
+        "first_internal_contact_s": 0.20550000000000002,
+        "peak_internal_wall_force_N": 4.323379002519848,
+        "peak_abs_center_of_mass_shift_mm": 12.003531177182259,
+        "controller_p95_ms": 0.049120000085167696,
+        "controller_max_ms": 0.06979999989198404,
+        "deadline_fallbacks": 0,
+        "controller_updates": 250,
+        "runner_status": "completed",
+        "external_obstacle_contact": null,
+        "roll_tracking": {
+          "mode": "differential",
+          "residual_multiplier": 0.0
+        },
+        "active_pose_joints": [
+          "torso_1",
+          "torso_2",
+          "torso_3",
+          "left_arm_0",
+          "left_arm_1",
+          "left_arm_2",
+          "left_arm_3",
+          "left_arm_4",
+          "left_arm_5",
+          "left_arm_6",
+          "right_arm_0",
+          "right_arm_1",
+          "right_arm_2",
+          "right_arm_3",
+          "right_arm_4",
+          "right_arm_5",
+          "right_arm_6"
+        ],
+        "box_pitch_peak_deg": 0.4797682513664289,
+        "box_roll_peak_deg": 0.001597137595571256,
+        "box_pitch_brake_rms_deg": 0.03222224989009715,
+        "late_pitch_change_deg": 0.06758919560588011,
+        "late_pitch_range_deg": 0.06758919560588011,
+        "late_differential_heading_moment_rms_Nm": 0.0782527411205521,
+        "late_common_heading_moment_rms_Nm": 0.02397528287587107,
+        "late": {
+          "window_s": [
+            1.9000000000000001,
+            2.5
+          ],
+          "force_peak_N": [
+            2.7417769362179563,
+            2.73652563761951
+          ],
+          "force_rms_N": [
+            2.462839020420293,
+            2.4623270620555306
+          ],
+          "moment_peak_Nm": [
+            0.13388168550589355,
+            0.13334152191637283
+          ],
+          "moment_rms_Nm": [
+            0.09047289785465702,
+            0.09040772144077172
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.08188407550474527,
+              0.037272776670592596,
+              0.009543769916364048
+            ],
+            [
+              0.08180226207016227,
+              0.03727551391615167,
+              0.009616760296660858
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0009555977913622322,
+            0.05595747341451831,
+            0.002234109811308725
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.2351917382396773,
+            0.007723655726122312,
+            0.010531716857537883
+          ],
+          "hand_min_loaded_count": [
+            3.0,
+            3.0
+          ]
+        },
+        "brake": {
+          "window_s": [
+            0.0,
+            0.3665
+          ],
+          "force_peak_N": [
+            3.7313515893419833,
+            3.7532940531589336
+          ],
+          "force_rms_N": [
+            2.5320469673447743,
+            2.53327821748957
+          ],
+          "moment_peak_Nm": [
+            0.14861473645962225,
+            0.1530757453555555
+          ],
+          "moment_rms_Nm": [
+            0.08888957349329228,
+            0.08917336095281866
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.02386584354260228,
+              0.08039549989195599,
+              0.02946763283573913
+            ],
+            [
+              0.023905177463585073,
+              0.08040384326564248,
+              0.030259755157141778
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.001075729723699708,
+            0.03888664886260705,
+            0.001398617620091232
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.2960521848082735,
+            0.00568391936252775,
+            0.034901188068562274
+          ],
+          "hand_min_loaded_count": [
+            2.0,
+            2.0
+          ]
+        },
+        "late_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.17411875285705106,
+            "fixed_point_tangential_end_mm": 0.17411875285705106,
+            "contact_centroid_peak_mm": 11.791685072938186,
+            "contact_centroid_end_mm": 11.746255403992757,
+            "min_pad_normal_N": 5.417826865845389
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.12728364555627106,
+            "fixed_point_tangential_end_mm": 0.12728364555627106,
+            "contact_centroid_peak_mm": 1.2043493642182732,
+            "contact_centroid_end_mm": 0.9889662005673203,
+            "min_pad_normal_N": 3.0162810296942286
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.17401938439305628,
+            "fixed_point_tangential_end_mm": 0.17401938439305628,
+            "contact_centroid_peak_mm": 11.860067694529526,
+            "contact_centroid_end_mm": 0.18310317245164467,
+            "min_pad_normal_N": 5.429393219456292
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.127437139338165,
+            "fixed_point_tangential_end_mm": 0.127437139338165,
+            "contact_centroid_peak_mm": 1.2756759182502084,
+            "contact_centroid_end_mm": 1.0851786428173456,
+            "min_pad_normal_N": 3.01319109181445
+          }
+        },
+        "brake_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.1771729541450267,
+            "fixed_point_tangential_end_mm": 0.1771729541450267,
+            "contact_centroid_peak_mm": 6.836710240783516,
+            "contact_centroid_end_mm": 5.270145186437301,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.15721271334877585,
+            "fixed_point_tangential_end_mm": 0.15721271334877585,
+            "contact_centroid_peak_mm": 5.890186623578858,
+            "contact_centroid_end_mm": 4.317181766265685,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.17751876336459108,
+            "fixed_point_tangential_end_mm": 0.17751876336459108,
+            "contact_centroid_peak_mm": 6.392923277628414,
+            "contact_centroid_end_mm": 5.713691935170451,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.15747692367298205,
+            "fixed_point_tangential_end_mm": 0.15747692367298205,
+            "contact_centroid_peak_mm": 5.897884511506494,
+            "contact_centroid_end_mm": 4.312886859626052,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        },
+        "measured_axle_gap_to_full_mm": 0.0026767928450137125,
+        "zero_wheel_contact_samples": 0,
+        "max_unclipped_control_excess": 0.0,
+        "worst_hand_reserve_p05": 0.5633892178695534,
+        "late_worst_hand_reserve_p05": 0.7202116558100845,
+        "mean_waist_fraction": 0.34240404788822015,
+        "mean_brake_waist_fraction": 0.00249848855266586,
+        "first_nonzero_waist_s": 0.3,
+        "mean_late_waist_fraction": 0.7010771896097556,
+        "waist_fraction_range": [
+          0.0,
+          0.9189132474597598
+        ],
+        "zero_waist_samples": 1000
+      },
+      "fixed": {
+        "window_s": [
+          0.0,
+          2.5
+        ],
+        "samples": 5001,
+        "relative_displacement_mm": [
+          0.43102245517445215,
+          0.43164287128523093
+        ],
+        "relative_rotation_deg": [
+          1.0798530131023345,
+          1.0808996078549868
+        ],
+        "mean_vertical_support_N": [
+          2.452227301175565,
+          2.451524360591359
+        ],
+        "max_vertical_speed_mps": 0.005154707465926263,
+        "loaded_fraction": [
+          1.0,
+          1.0
+        ],
+        "local_friction_ge_099_fraction": [
+          0.8908218356328734,
+          0.8912217556488702
+        ],
+        "min_local_friction_margin_N": [
+          -2.220446049250313e-16,
+          -2.220446049250313e-16
+        ],
+        "max_hand_moment_rms_Nm": 0.0823297229670512,
+        "peak_actual_longitudinal_deceleration_mps2": 2.001885623179902,
+        "settled_s": 0.3535,
+        "nonpad_payload_contacts": [],
+        "pitch_peak_deg": 0.5044013163622986,
+        "pitch_rms_deg": 0.3288206998692938,
+        "hand_moment_peak_Nm": [
+          0.14823896403768577,
+          0.15262177579015632
+        ],
+        "hand_moment_rms_Nm": [
+          0.08232966601027455,
+          0.0823297229670512
+        ],
+        "shell_clearance_min_m": 0.021396352666127806,
+        "axle_travel_m": 0.0732556318043242,
+        "first_internal_contact_s": 0.20550000000000002,
+        "peak_internal_wall_force_N": 4.324452233670197,
+        "peak_abs_center_of_mass_shift_mm": 12.003683883431972,
+        "controller_p95_ms": 0.061465000203497766,
+        "controller_max_ms": 0.14009999995323597,
+        "deadline_fallbacks": 0,
+        "controller_updates": 250,
+        "runner_status": "completed",
+        "external_obstacle_contact": null,
+        "roll_tracking": {
+          "mode": "differential",
+          "residual_multiplier": 0.0
+        },
+        "active_pose_joints": [
+          "torso_1",
+          "torso_2",
+          "torso_3",
+          "left_arm_0",
+          "left_arm_1",
+          "left_arm_2",
+          "left_arm_3",
+          "left_arm_4",
+          "left_arm_5",
+          "left_arm_6",
+          "right_arm_0",
+          "right_arm_1",
+          "right_arm_2",
+          "right_arm_3",
+          "right_arm_4",
+          "right_arm_5",
+          "right_arm_6"
+        ],
+        "box_pitch_peak_deg": 0.5044013163622986,
+        "box_roll_peak_deg": 0.0016627250070595837,
+        "box_pitch_brake_rms_deg": 0.029283956332077195,
+        "late_pitch_change_deg": 0.07964906552818873,
+        "late_pitch_range_deg": 0.07964906552818873,
+        "late_differential_heading_moment_rms_Nm": 0.08211461337639035,
+        "late_common_heading_moment_rms_Nm": 0.024117943048638076,
+        "late": {
+          "window_s": [
+            1.9000000000000001,
+            2.5
+          ],
+          "force_peak_N": [
+            2.734541717156165,
+            2.735107587118684
+          ],
+          "force_rms_N": [
+            2.4635019311623183,
+            2.461855329552057
+          ],
+          "moment_peak_Nm": [
+            0.1372879811316736,
+            0.13686268245558414
+          ],
+          "moment_rms_Nm": [
+            0.09388118367360306,
+            0.09368468569250973
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.08567747501698275,
+              0.037258846971613274,
+              0.00921006216140621
+            ],
+            [
+              0.08548884275680402,
+              0.037192585048031954,
+              0.00922982745514066
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0009593688286508235,
+            0.05595544033298076,
+            0.0021729092335935314
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.23136216746686486,
+            0.0075804002514038935,
+            0.010179047645736907
+          ],
+          "hand_min_loaded_count": [
+            3.0,
+            3.0
+          ]
+        },
+        "brake": {
+          "window_s": [
+            0.0,
+            0.3665
+          ],
+          "force_peak_N": [
+            3.734976923250824,
+            3.752262171387779
+          ],
+          "force_rms_N": [
+            2.531725927452783,
+            2.533066395568039
+          ],
+          "moment_peak_Nm": [
+            0.14823896403768577,
+            0.15262177579015632
+          ],
+          "moment_rms_Nm": [
+            0.08832906014607969,
+            0.08863859153983146
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.021798104212188783,
+              0.08040107979295133,
+              0.029368893189423748
+            ],
+            [
+              0.021952937177982232,
+              0.08040372386298178,
+              0.030168023607621542
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0009835583790276004,
+            0.03888844123071156,
+            0.0013042712436413914
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.29767327385422293,
+            0.005230085820680538,
+            0.03515294970631975
+          ],
+          "hand_min_loaded_count": [
+            2.0,
+            2.0
+          ]
+        },
+        "late_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.16316394894026112,
+            "fixed_point_tangential_end_mm": 0.16316394894026112,
+            "contact_centroid_peak_mm": 11.859367789331914,
+            "contact_centroid_end_mm": 0.17204920921444922,
+            "min_pad_normal_N": 5.429937633665102
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.11599808742419848,
+            "fixed_point_tangential_end_mm": 0.11599808742419848,
+            "contact_centroid_peak_mm": 1.2193356926205405,
+            "contact_centroid_end_mm": 1.0243179212370528,
+            "min_pad_normal_N": 3.013474017186244
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.16297635092712282,
+            "fixed_point_tangential_end_mm": 0.16297635092712282,
+            "contact_centroid_peak_mm": 11.791768373818691,
+            "contact_centroid_end_mm": 0.16463729626459536,
+            "min_pad_normal_N": 5.423741879133711
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.11584660273220371,
+            "fixed_point_tangential_end_mm": 0.11584660273220371,
+            "contact_centroid_peak_mm": 1.100934216243545,
+            "contact_centroid_end_mm": 0.878068507513114,
+            "min_pad_normal_N": 3.0153782901563897
+          }
+        },
+        "brake_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.17849743707205848,
+            "fixed_point_tangential_end_mm": 0.17849743707205848,
+            "contact_centroid_peak_mm": 6.837382755782387,
+            "contact_centroid_end_mm": 5.270311895529461,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.15925409968952445,
+            "fixed_point_tangential_end_mm": 0.15925409968952445,
+            "contact_centroid_peak_mm": 5.889302406247198,
+            "contact_centroid_end_mm": 4.315292698598007,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.17881830846291985,
+            "fixed_point_tangential_end_mm": 0.17881830846291985,
+            "contact_centroid_peak_mm": 6.393708024440765,
+            "contact_centroid_end_mm": 5.715424528140845,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.1594223383910533,
+            "fixed_point_tangential_end_mm": 0.1594223383910533,
+            "contact_centroid_peak_mm": 5.89701971352564,
+            "contact_centroid_end_mm": 4.311501022843662,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        },
+        "measured_axle_gap_to_full_mm": 0.0019249287269535722,
+        "zero_wheel_contact_samples": 0,
+        "max_unclipped_control_excess": 0.0,
+        "worst_hand_reserve_p05": 0.5617598409304506,
+        "late_worst_hand_reserve_p05": 0.7306277689368055,
+        "mean_waist_fraction": 0.34240404788822015,
+        "mean_brake_waist_fraction": 0.34240404788822015,
+        "first_nonzero_waist_s": 0.0,
+        "mean_late_waist_fraction": 0.34240404788822015,
+        "waist_fraction_range": [
+          0.34240404788822015,
+          0.34240404788822015
+        ],
+        "zero_waist_samples": 0
+      }
+    },
+    "continuous": {
+      "arms": {
+        "window_s": [
+          0.0,
+          2.5
+        ],
+        "samples": 5001,
+        "relative_displacement_mm": [
+          0.4224164590243983,
+          0.4224241366187011
+        ],
+        "relative_rotation_deg": [
+          0.9602038182417559,
+          0.9601092105159558
+        ],
+        "mean_vertical_support_N": [
+          2.452322721729011,
+          2.451747081322634
+        ],
+        "max_vertical_speed_mps": 0.003275750565436158,
+        "loaded_fraction": [
+          1.0,
+          1.0
+        ],
+        "local_friction_ge_099_fraction": [
+          0.8176364727054589,
+          0.8200359928014397
+        ],
+        "min_local_friction_margin_N": [
+          -2.220446049250313e-16,
+          -2.220446049250313e-16
+        ],
+        "max_hand_moment_rms_Nm": 0.0859286949399894,
+        "peak_actual_longitudinal_deceleration_mps2": 2.0018394422406516,
+        "settled_s": 0.3535,
+        "nonpad_payload_contacts": [],
+        "pitch_peak_deg": 0.46895756142068473,
+        "pitch_rms_deg": 0.319146914343656,
+        "hand_moment_peak_Nm": [
+          0.14515442737414605,
+          0.14446750868970984
+        ],
+        "hand_moment_rms_Nm": [
+          0.0859286949399894,
+          0.0858831339227677
+        ],
+        "shell_clearance_min_m": 0.02134635354389871,
+        "axle_travel_m": 0.07325473961961751,
+        "first_internal_contact_s": null,
+        "peak_internal_wall_force_N": 0.0,
+        "peak_abs_center_of_mass_shift_mm": 9.43906808664024,
+        "controller_p95_ms": 0.06849999999758438,
+        "controller_max_ms": 0.09800000020732114,
+        "deadline_fallbacks": 0,
+        "controller_updates": 250,
+        "runner_status": "completed",
+        "external_obstacle_contact": null,
+        "roll_tracking": {
+          "mode": "differential",
+          "residual_multiplier": 0.0
+        },
+        "box_pitch_peak_deg": 0.46895756142068473,
+        "box_roll_peak_deg": 0.0006420617606302368,
+        "box_pitch_brake_rms_deg": 0.03548926715874078,
+        "late_pitch_change_deg": 0.05823842856599054,
+        "late_pitch_range_deg": 0.05823842856599054,
+        "late_differential_heading_moment_rms_Nm": 0.07800261147224391,
+        "late_common_heading_moment_rms_Nm": 0.01164169571843089,
+        "late": {
+          "window_s": [
+            1.9000000000000001,
+            2.5
+          ],
+          "force_peak_N": [
+            2.6843251890681414,
+            2.673721191874033
+          ],
+          "force_rms_N": [
+            2.4561641539529635,
+            2.455329172731317
+          ],
+          "moment_peak_Nm": [
+            0.14515442737414605,
+            0.14446750868970984
+          ],
+          "moment_rms_Nm": [
+            0.10049074190839048,
+            0.10039494400106756
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.07892128039475728,
+              0.06198626343036063,
+              0.005246318336964854
+            ],
+            [
+              0.07881183809317728,
+              0.06197098560893459,
+              0.005237928980954614
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0004720037665196154,
+            0.009246418969279555,
+            0.000654364586553936
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.23499895538933027,
+            0.003409781266363245,
+            0.007423702337536132
+          ],
+          "hand_min_loaded_count": [
+            3.0,
+            3.0
+          ]
+        },
+        "brake": {
+          "window_s": [
+            0.0,
+            0.3665
+          ],
+          "force_peak_N": [
+            2.7706077741610384,
+            2.7658023368744753
+          ],
+          "force_rms_N": [
+            2.47207371089758,
+            2.4711046067483093
+          ],
+          "moment_peak_Nm": [
+            0.10188694184480113,
+            0.10169847885344106
+          ],
+          "moment_rms_Nm": [
+            0.0731116071653414,
+            0.07314640335362224
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.02236858714740002,
+              0.06718954533424745,
+              0.018180165266175646
+            ],
+            [
+              0.022272836040356632,
+              0.06720490156901565,
+              0.018379834150206397
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0008683047339084726,
+            0.022444742727412797,
+            0.0009729451982572628
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.2956523624604762,
+            0.004422138562721608,
+            0.019492782953127313
+          ],
+          "hand_min_loaded_count": [
+            2.0,
+            2.0
+          ]
+        },
+        "late_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.1148496400364266,
+            "fixed_point_tangential_end_mm": 0.1148496400364266,
+            "contact_centroid_peak_mm": 12.013137673075558,
+            "contact_centroid_end_mm": 0.14060729365455568,
+            "min_pad_normal_N": 5.357236848428448
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.09884064688036326,
+            "fixed_point_tangential_end_mm": 0.09884064688036326,
+            "contact_centroid_peak_mm": 0.7669933108790461,
+            "contact_centroid_end_mm": 0.7261654615178119,
+            "min_pad_normal_N": 3.035215256512862
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.11486644482706383,
+            "fixed_point_tangential_end_mm": 0.11486644482706383,
+            "contact_centroid_peak_mm": 12.013489540447322,
+            "contact_centroid_end_mm": 0.14092250651418814,
+            "min_pad_normal_N": 5.353721396704895
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.09908181534502326,
+            "fixed_point_tangential_end_mm": 0.09908181534502326,
+            "contact_centroid_peak_mm": 0.7547844316640746,
+            "contact_centroid_end_mm": 0.7133861148229793,
+            "min_pad_normal_N": 3.0259792260518723
+          }
+        },
+        "brake_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.15981971329300204,
+            "fixed_point_tangential_end_mm": 0.15981971329300204,
+            "contact_centroid_peak_mm": 6.833818815627408,
+            "contact_centroid_end_mm": 6.833818815627408,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.14931733740124215,
+            "fixed_point_tangential_end_mm": 0.14931733740124215,
+            "contact_centroid_peak_mm": 5.284117030835072,
+            "contact_centroid_end_mm": 4.5738661777510226,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.16039107744089875,
+            "fixed_point_tangential_end_mm": 0.16039107744089875,
+            "contact_centroid_peak_mm": 6.390029331929634,
+            "contact_centroid_end_mm": 5.4771191912607335,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.14955406633246482,
+            "fixed_point_tangential_end_mm": 0.14955406633246482,
+            "contact_centroid_peak_mm": 5.297634085512552,
+            "contact_centroid_end_mm": 3.538939577141206,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        },
+        "measured_axle_gap_to_full_mm": 0.0,
+        "zero_wheel_contact_samples": 0,
+        "max_unclipped_control_excess": 0.0,
+        "worst_hand_reserve_p05": 0.5860916223680415,
+        "late_worst_hand_reserve_p05": 0.7583556261313671
+      },
+      "unrestricted": {
+        "window_s": [
+          0.0,
+          2.5
+        ],
+        "samples": 5001,
+        "relative_displacement_mm": [
+          0.46188941273315154,
+          0.4622256124838936
+        ],
+        "relative_rotation_deg": [
+          1.0521999537691118,
+          1.0528429909169537
+        ],
+        "mean_vertical_support_N": [
+          2.4522863701238724,
+          2.4517330869203087
+        ],
+        "max_vertical_speed_mps": 0.0034115911807309643,
+        "loaded_fraction": [
+          1.0,
+          1.0
+        ],
+        "local_friction_ge_099_fraction": [
+          0.884623075384923,
+          0.8842231553689263
+        ],
+        "min_local_friction_margin_N": [
+          -2.220446049250313e-16,
+          -2.220446049250313e-16
+        ],
+        "max_hand_moment_rms_Nm": 0.08302469895827597,
+        "peak_actual_longitudinal_deceleration_mps2": 2.0018562847783983,
+        "settled_s": 0.3535,
+        "nonpad_payload_contacts": [],
+        "pitch_peak_deg": 0.44651385871160604,
+        "pitch_rms_deg": 0.29650848862136503,
+        "hand_moment_peak_Nm": [
+          0.14411088625637755,
+          0.13993505527890737
+        ],
+        "hand_moment_rms_Nm": [
+          0.08302469895827597,
+          0.08298108598889331
+        ],
+        "shell_clearance_min_m": 0.02137455874630269,
+        "axle_travel_m": 0.0732497326509071,
+        "first_internal_contact_s": null,
+        "peak_internal_wall_force_N": 0.0,
+        "peak_abs_center_of_mass_shift_mm": 9.447387115076678,
+        "controller_p95_ms": 0.06986999987930173,
+        "controller_max_ms": 0.11610000001383014,
+        "deadline_fallbacks": 0,
+        "controller_updates": 250,
+        "runner_status": "completed",
+        "external_obstacle_contact": null,
+        "roll_tracking": {
+          "mode": "differential",
+          "residual_multiplier": 0.0
+        },
+        "active_pose_joints": [
+          "torso_1",
+          "torso_2",
+          "torso_3",
+          "left_arm_0",
+          "left_arm_1",
+          "left_arm_2",
+          "left_arm_3",
+          "left_arm_4",
+          "left_arm_5",
+          "left_arm_6",
+          "right_arm_0",
+          "right_arm_1",
+          "right_arm_2",
+          "right_arm_3",
+          "right_arm_4",
+          "right_arm_5",
+          "right_arm_6"
+        ],
+        "box_pitch_peak_deg": 0.44651385871160604,
+        "box_roll_peak_deg": 0.0005638825613773443,
+        "box_pitch_brake_rms_deg": 0.02823210180156463,
+        "late_pitch_change_deg": 0.06381829540742223,
+        "late_pitch_range_deg": 0.06381829540742223,
+        "late_differential_heading_moment_rms_Nm": 0.0722430071765363,
+        "late_common_heading_moment_rms_Nm": 0.012794248735286836,
+        "late": {
+          "window_s": [
+            1.9000000000000001,
+            2.5
+          ],
+          "force_peak_N": [
+            2.672949714200576,
+            2.6755556558712845
+          ],
+          "force_rms_N": [
+            2.456456208964399,
+            2.4555401836710784
+          ],
+          "moment_peak_Nm": [
+            0.14411088625637755,
+            0.13993505527890737
+          ],
+          "moment_rms_Nm": [
+            0.09638062419680603,
+            0.09626909161973975
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.07342888675545797,
+              0.06209279913955432,
+              0.006473608378256917
+            ],
+            [
+              0.0733054563521444,
+              0.062069759647285484,
+              0.006433739785063087
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.00051596989629065,
+            0.009229060869675149,
+            0.0008032575116661621
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.2406478796496714,
+            0.004047659085415325,
+            0.008417145079827845
+          ],
+          "hand_min_loaded_count": [
+            3.0,
+            3.0
+          ]
+        },
+        "brake": {
+          "window_s": [
+            0.0,
+            0.3665
+          ],
+          "force_peak_N": [
+            2.7688557324267005,
+            2.7744349735764664
+          ],
+          "force_rms_N": [
+            2.471774609175481,
+            2.4728757126131886
+          ],
+          "moment_peak_Nm": [
+            0.09758177838456485,
+            0.09774234420539865
+          ],
+          "moment_rms_Nm": [
+            0.07262523743394156,
+            0.07267221114990237
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.020919078729156697,
+              0.067223751312211,
+              0.017826511632221625
+            ],
+            [
+              0.02102386071841295,
+              0.06719016235028964,
+              0.01802025630368458
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0009661735738120819,
+            0.02246416507501433,
+            0.0010892100847482778
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.29845475595187326,
+            0.004977650262691519,
+            0.020069933883389474
+          ],
+          "hand_min_loaded_count": [
+            2.0,
+            2.0
+          ]
+        },
+        "late_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.13076827209706465,
+            "fixed_point_tangential_end_mm": 0.13076827209706465,
+            "contact_centroid_peak_mm": 11.99974903235387,
+            "contact_centroid_end_mm": 0.14250136921549775,
+            "min_pad_normal_N": 5.34151212815005
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.12233374910016631,
+            "fixed_point_tangential_end_mm": 0.12233374910016631,
+            "contact_centroid_peak_mm": 1.0072184315598087,
+            "contact_centroid_end_mm": 0.9093290712507147,
+            "min_pad_normal_N": 3.0399989353409382
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.1306044403093871,
+            "fixed_point_tangential_end_mm": 0.1306044403093871,
+            "contact_centroid_peak_mm": 12.002025926979508,
+            "contact_centroid_end_mm": 0.14129098889232178,
+            "min_pad_normal_N": 5.346258753793371
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.12230725991735122,
+            "fixed_point_tangential_end_mm": 0.12230725991735122,
+            "contact_centroid_peak_mm": 1.0307686901715198,
+            "contact_centroid_end_mm": 0.8337357909572304,
+            "min_pad_normal_N": 3.031956866129167
+          }
+        },
+        "brake_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.16519671751714002,
+            "fixed_point_tangential_end_mm": 0.16519671751714002,
+            "contact_centroid_peak_mm": 6.83514764595693,
+            "contact_centroid_end_mm": 5.02916985836248,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.155474545869956,
+            "fixed_point_tangential_end_mm": 0.155474545869956,
+            "contact_centroid_peak_mm": 5.356401616090256,
+            "contact_centroid_end_mm": 3.6102266216465106,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.16576025525687896,
+            "fixed_point_tangential_end_mm": 0.16576025525687896,
+            "contact_centroid_peak_mm": 6.391721819618962,
+            "contact_centroid_end_mm": 6.391721819618962,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.1554968544462681,
+            "fixed_point_tangential_end_mm": 0.1554968544462681,
+            "contact_centroid_peak_mm": 5.364239984525144,
+            "contact_centroid_end_mm": 4.573143941628753,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        },
+        "measured_axle_gap_to_full_mm": 0.0050069687116812,
+        "zero_wheel_contact_samples": 0,
+        "max_unclipped_control_excess": 0.0,
+        "worst_hand_reserve_p05": 0.5803443324913863,
+        "late_worst_hand_reserve_p05": 0.7477235584006627
+      },
+      "adaptive": {
+        "window_s": [
+          0.0,
+          2.5
+        ],
+        "samples": 5001,
+        "relative_displacement_mm": [
+          0.4482111815162718,
+          0.44816581020001234
+        ],
+        "relative_rotation_deg": [
+          1.019004791166651,
+          1.0187794855612051
+        ],
+        "mean_vertical_support_N": [
+          2.4523188844646064,
+          2.451735667980654
+        ],
+        "max_vertical_speed_mps": 0.003579907849808052,
+        "loaded_fraction": [
+          1.0,
+          1.0
+        ],
+        "local_friction_ge_099_fraction": [
+          0.8688262347530494,
+          0.870625874825035
+        ],
+        "min_local_friction_margin_N": [
+          -2.220446049250313e-16,
+          -2.220446049250313e-16
+        ],
+        "max_hand_moment_rms_Nm": 0.08331059959250306,
+        "peak_actual_longitudinal_deceleration_mps2": 2.0018394422406516,
+        "settled_s": 0.3535,
+        "nonpad_payload_contacts": [],
+        "pitch_peak_deg": 0.43357100045603564,
+        "pitch_rms_deg": 0.2997302447704965,
+        "hand_moment_peak_Nm": [
+          0.1408795760283867,
+          0.1386211534398899
+        ],
+        "hand_moment_rms_Nm": [
+          0.08331059959250306,
+          0.08326520827956883
+        ],
+        "shell_clearance_min_m": 0.02134637450479014,
+        "axle_travel_m": 0.07325112509878326,
+        "first_internal_contact_s": null,
+        "peak_internal_wall_force_N": 0.0,
+        "peak_abs_center_of_mass_shift_mm": 9.43906808664024,
+        "controller_p95_ms": 0.057445000129518996,
+        "controller_max_ms": 0.06940000002941815,
+        "deadline_fallbacks": 0,
+        "controller_updates": 250,
+        "runner_status": "completed",
+        "external_obstacle_contact": null,
+        "roll_tracking": {
+          "mode": "differential",
+          "residual_multiplier": 0.0
+        },
+        "active_pose_joints": [
+          "torso_1",
+          "torso_2",
+          "torso_3",
+          "left_arm_0",
+          "left_arm_1",
+          "left_arm_2",
+          "left_arm_3",
+          "left_arm_4",
+          "left_arm_5",
+          "left_arm_6",
+          "right_arm_0",
+          "right_arm_1",
+          "right_arm_2",
+          "right_arm_3",
+          "right_arm_4",
+          "right_arm_5",
+          "right_arm_6"
+        ],
+        "box_pitch_peak_deg": 0.43357100045603564,
+        "box_roll_peak_deg": 0.0006994577609502463,
+        "box_pitch_brake_rms_deg": 0.03548926715874078,
+        "late_pitch_change_deg": 0.05345213833998763,
+        "late_pitch_range_deg": 0.05345213833998763,
+        "late_differential_heading_moment_rms_Nm": 0.07156097753256134,
+        "late_common_heading_moment_rms_Nm": 0.012648435160450519,
+        "late": {
+          "window_s": [
+            1.9000000000000001,
+            2.5
+          ],
+          "force_peak_N": [
+            2.6639574458157336,
+            2.660446595843849
+          ],
+          "force_rms_N": [
+            2.456209446977705,
+            2.4553798872233745
+          ],
+          "moment_peak_Nm": [
+            0.1408795760283867,
+            0.1386211534398899
+          ],
+          "moment_rms_Nm": [
+            0.09581588670103772,
+            0.09571987556968531
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.07272525821485133,
+              0.06208540665293298,
+              0.006092884590178364
+            ],
+            [
+              0.0726150879109279,
+              0.06207109033998502,
+              0.006043453546579544
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0005122795141608076,
+            0.009221486878636907,
+            0.0007714196232699864
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.24130173818387024,
+            0.003913296291430697,
+            0.00808232537778823
+          ],
+          "hand_min_loaded_count": [
+            3.0,
+            3.0
+          ]
+        },
+        "brake": {
+          "window_s": [
+            0.0,
+            0.3665
+          ],
+          "force_peak_N": [
+            2.7706077741610384,
+            2.7658023368744753
+          ],
+          "force_rms_N": [
+            2.47207371089758,
+            2.4711046067483093
+          ],
+          "moment_peak_Nm": [
+            0.10188694184480113,
+            0.10169847885344106
+          ],
+          "moment_rms_Nm": [
+            0.0731116071653414,
+            0.07314640335362224
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.02236858714740002,
+              0.06718954533424745,
+              0.018180165266175646
+            ],
+            [
+              0.022272836040356632,
+              0.06720490156901565,
+              0.018379834150206397
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0008683047339084726,
+            0.022444742727412797,
+            0.0009729451982572628
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.2956523624604762,
+            0.004422138562721608,
+            0.019492782953127313
+          ],
+          "hand_min_loaded_count": [
+            2.0,
+            2.0
+          ]
+        },
+        "late_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.13074897589256781,
+            "fixed_point_tangential_end_mm": 0.13074897589256781,
+            "contact_centroid_peak_mm": 12.006541720455253,
+            "contact_centroid_end_mm": 0.14687951350841694,
+            "min_pad_normal_N": 5.361818365570938
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.12182269571763865,
+            "fixed_point_tangential_end_mm": 0.12182269571763865,
+            "contact_centroid_peak_mm": 0.9359656551105392,
+            "contact_centroid_end_mm": 0.9023010996364608,
+            "min_pad_normal_N": 3.03398953267198
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.1306586039276458,
+            "fixed_point_tangential_end_mm": 0.1306586039276458,
+            "contact_centroid_peak_mm": 12.006810126727359,
+            "contact_centroid_end_mm": 0.14705279447420258,
+            "min_pad_normal_N": 5.359188508610904
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.12190528983903053,
+            "fixed_point_tangential_end_mm": 0.12190528983903053,
+            "contact_centroid_peak_mm": 0.9353437124111242,
+            "contact_centroid_end_mm": 0.9011967258818941,
+            "min_pad_normal_N": 3.048841827850903
+          }
+        },
+        "brake_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.15981971329300204,
+            "fixed_point_tangential_end_mm": 0.15981971329300204,
+            "contact_centroid_peak_mm": 6.833818815627408,
+            "contact_centroid_end_mm": 6.833818815627408,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.14931733740124215,
+            "fixed_point_tangential_end_mm": 0.14931733740124215,
+            "contact_centroid_peak_mm": 5.284117030835072,
+            "contact_centroid_end_mm": 4.5738661777510226,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.16039107744089875,
+            "fixed_point_tangential_end_mm": 0.16039107744089875,
+            "contact_centroid_peak_mm": 6.390029331929634,
+            "contact_centroid_end_mm": 5.4771191912607335,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.14955406633246482,
+            "fixed_point_tangential_end_mm": 0.14955406633246482,
+            "contact_centroid_peak_mm": 5.297634085512552,
+            "contact_centroid_end_mm": 3.538939577141206,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        },
+        "measured_axle_gap_to_full_mm": 0.0036145208436827374,
+        "zero_wheel_contact_samples": 0,
+        "max_unclipped_control_excess": 0.0,
+        "worst_hand_reserve_p05": 0.5860916223680415,
+        "late_worst_hand_reserve_p05": 0.7478634909588777,
+        "mean_waist_fraction": 0.4666932721098932,
+        "mean_brake_waist_fraction": 0.0,
+        "first_nonzero_waist_s": 0.38,
+        "mean_late_waist_fraction": 0.8365146914377721,
+        "waist_fraction_range": [
+          0.0,
+          0.9999474160283819
+        ],
+        "zero_waist_samples": 1000
+      },
+      "fixed": {
+        "window_s": [
+          0.0,
+          2.5
+        ],
+        "samples": 5001,
+        "relative_displacement_mm": [
+          0.442175941976191,
+          0.4421709319799558
+        ],
+        "relative_rotation_deg": [
+          1.0055889995631264,
+          1.005452009385536
+        ],
+        "mean_vertical_support_N": [
+          2.4523151711189533,
+          2.451743757901955
+        ],
+        "max_vertical_speed_mps": 0.003309731543773731,
+        "loaded_fraction": [
+          1.0,
+          1.0
+        ],
+        "local_friction_ge_099_fraction": [
+          0.8750249950009998,
+          0.8770245950809838
+        ],
+        "min_local_friction_margin_N": [
+          -2.220446049250313e-16,
+          -2.220446049250313e-16
+        ],
+        "max_hand_moment_rms_Nm": 0.08444533964395216,
+        "peak_actual_longitudinal_deceleration_mps2": 2.0018472119128603,
+        "settled_s": 0.3535,
+        "nonpad_payload_contacts": [],
+        "pitch_peak_deg": 0.4574397495640947,
+        "pitch_rms_deg": 0.3077722278446358,
+        "hand_moment_peak_Nm": [
+          0.1411898256977444,
+          0.14415570376241554
+        ],
+        "hand_moment_rms_Nm": [
+          0.08444533964395216,
+          0.08439838404687296
+        ],
+        "shell_clearance_min_m": 0.02136227030176923,
+        "axle_travel_m": 0.07325224458164054,
+        "first_internal_contact_s": null,
+        "peak_internal_wall_force_N": 0.0,
+        "peak_abs_center_of_mass_shift_mm": 9.442493548235097,
+        "controller_p95_ms": 0.05482000003667053,
+        "controller_max_ms": 0.07679999998799758,
+        "deadline_fallbacks": 0,
+        "controller_updates": 250,
+        "runner_status": "completed",
+        "external_obstacle_contact": null,
+        "roll_tracking": {
+          "mode": "differential",
+          "residual_multiplier": 0.0
+        },
+        "active_pose_joints": [
+          "torso_1",
+          "torso_2",
+          "torso_3",
+          "left_arm_0",
+          "left_arm_1",
+          "left_arm_2",
+          "left_arm_3",
+          "left_arm_4",
+          "left_arm_5",
+          "left_arm_6",
+          "right_arm_0",
+          "right_arm_1",
+          "right_arm_2",
+          "right_arm_3",
+          "right_arm_4",
+          "right_arm_5",
+          "right_arm_6"
+        ],
+        "box_pitch_peak_deg": 0.4574397495640947,
+        "box_roll_peak_deg": 0.000593327418291904,
+        "box_pitch_brake_rms_deg": 0.0319178638024372,
+        "late_pitch_change_deg": 0.06072938428499214,
+        "late_pitch_range_deg": 0.06072938428499214,
+        "late_differential_heading_moment_rms_Nm": 0.0751373272738332,
+        "late_common_heading_moment_rms_Nm": 0.01260338903767439,
+        "late": {
+          "window_s": [
+            1.9000000000000001,
+            2.5
+          ],
+          "force_peak_N": [
+            2.664411877071576,
+            2.6718747004728387
+          ],
+          "force_rms_N": [
+            2.4561964660204954,
+            2.4553610669305796
+          ],
+          "moment_peak_Nm": [
+            0.1411898256977444,
+            0.14415570376241554
+          ],
+          "moment_rms_Nm": [
+            0.09847294299490937,
+            0.09838092153443129
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.0762396261288763,
+              0.06205104472494667,
+              0.005840184787356461
+            ],
+            [
+              0.07613440380713252,
+              0.062038147828983356,
+              0.005798835473230361
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0005088914076937252,
+            0.009235593825782864,
+            0.0007488681962331278
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.23778366263654727,
+            0.0038347760721536106,
+            0.007860550349995533
+          ],
+          "hand_min_loaded_count": [
+            3.0,
+            3.0
+          ]
+        },
+        "brake": {
+          "window_s": [
+            0.0,
+            0.3665
+          ],
+          "force_peak_N": [
+            2.760657527827226,
+            2.7695709070652375
+          ],
+          "force_rms_N": [
+            2.4724774252056276,
+            2.4721142742593853
+          ],
+          "moment_peak_Nm": [
+            0.0995287732131235,
+            0.09941542132245548
+          ],
+          "moment_rms_Nm": [
+            0.07299354377230596,
+            0.07302570170631126
+          ],
+          "tcp_moment_rms_world_Nm": [
+            [
+              0.02211672791606331,
+              0.06720751246697187,
+              0.017945975780887153
+            ],
+            [
+              0.022058249849156525,
+              0.06720616234426807,
+              0.01815264350575993
+            ]
+          ],
+          "net_box_com_moment_rms_world_Nm": [
+            0.0009579160473380831,
+            0.022454708421251135,
+            0.0010671962048667597
+          ],
+          "differential_box_com_moment_rms_world_Nm": [
+            0.2969928236465594,
+            0.004902026167554145,
+            0.019835297933646075
+          ],
+          "hand_min_loaded_count": [
+            2.0,
+            2.0
+          ]
+        },
+        "late_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.12321421966657439,
+            "fixed_point_tangential_end_mm": 0.12321421966657439,
+            "contact_centroid_peak_mm": 12.146006950967143,
+            "contact_centroid_end_mm": 12.076153153355044,
+            "min_pad_normal_N": 5.36149461486182
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.11009241817193778,
+            "fixed_point_tangential_end_mm": 0.11009241817193778,
+            "contact_centroid_peak_mm": 1.0944131329416156,
+            "contact_centroid_end_mm": 1.0532416834117369,
+            "min_pad_normal_N": 3.0420093935661723
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.12321412560954559,
+            "fixed_point_tangential_end_mm": 0.12321412560954559,
+            "contact_centroid_peak_mm": 11.974424037587754,
+            "contact_centroid_end_mm": 0.16052243709577418,
+            "min_pad_normal_N": 5.358034528504966
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.11033526798360628,
+            "fixed_point_tangential_end_mm": 0.11033526798360628,
+            "contact_centroid_peak_mm": 0.8443413644580956,
+            "contact_centroid_end_mm": 0.8025390880305312,
+            "min_pad_normal_N": 3.0533785558601205
+          }
+        },
+        "brake_pad": {
+          "ee_finger_r1_pad": {
+            "fixed_point_tangential_peak_mm": 0.16295664482329963,
+            "fixed_point_tangential_end_mm": 0.16295664482329963,
+            "contact_centroid_peak_mm": 6.8347420852138585,
+            "contact_centroid_end_mm": 6.8347420852138585,
+            "min_pad_normal_N": 0.24840829006070658
+          },
+          "ee_finger_r2_pad": {
+            "fixed_point_tangential_peak_mm": 0.1526927576522458,
+            "fixed_point_tangential_end_mm": 0.1526927576522458,
+            "contact_centroid_peak_mm": 5.34623643887652,
+            "contact_centroid_end_mm": 4.221971241867304,
+            "min_pad_normal_N": 0.03827329537704952
+          },
+          "ee_finger_l1_pad": {
+            "fixed_point_tangential_peak_mm": 0.16353370993172617,
+            "fixed_point_tangential_end_mm": 0.16353370993172617,
+            "contact_centroid_peak_mm": 6.391050001932704,
+            "contact_centroid_end_mm": 6.391050001932704,
+            "min_pad_normal_N": 0.25011440936139384
+          },
+          "ee_finger_l2_pad": {
+            "fixed_point_tangential_peak_mm": 0.15272173081708929,
+            "fixed_point_tangential_end_mm": 0.15272173081708929,
+            "contact_centroid_peak_mm": 5.354064901039502,
+            "contact_centroid_end_mm": 4.222214736980613,
+            "min_pad_normal_N": 0.03482534234634515
+          }
+        },
+        "measured_axle_gap_to_full_mm": 0.0024950379777097403,
+        "zero_wheel_contact_samples": 0,
+        "max_unclipped_control_excess": 0.0,
+        "worst_hand_reserve_p05": 0.5851162638576338,
+        "late_worst_hand_reserve_p05": 0.7524883888950397,
+        "mean_waist_fraction": 0.4666932721098932,
+        "mean_brake_waist_fraction": 0.46669327210989314,
+        "first_nonzero_waist_s": 0.0,
+        "mean_late_waist_fraction": 0.4666932721098932,
+        "waist_fraction_range": [
+          0.4666932721098932,
+          0.4666932721098932
+        ],
+        "zero_waist_samples": 0
+      }
+    }
+  }
+}

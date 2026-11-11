@@ -1,0 +1,25 @@
+{
+  "gate": "P1",
+  "status": "PASS",
+  "reviewer": "/root/p1_explicit_mapping",
+  "contract_sha256": "4c6c38d9582d0896d11112d6c9acf8250234e72004ba29cdbd0a765e49ac37dd",
+  "code_sha256": "209e09c71e343017b8947eadbf10ad3727302a630d6ddd3f3065f95d413b423b",
+  "scope": "First low_held saved 75-node slice; independent source, seed provenance, FK, FD, cache and budget checks. Remaining three cases not yet admitted.",
+  "command": "work/robot-model-audit/.venv/Scripts/python.exe simulation/rby1/qualify_explicit_stop_mapping.py verify",
+  "exit_code": 0,
+  "source_hashes_matched": 210,
+  "independent_FK_COM_error_m": 3.755811850761348e-16,
+  "independent_two_hand_COM_error_m": 6.938893903907228e-16,
+  "all_four_archived_seed_qpos_replay_error_max": 2.220446049250313e-16,
+  "new_IK_calls": 0,
+  "new_QP_calls": 0,
+  "new_physics_steps": 0,
+  "P0": [],
+  "P1": [],
+  "limitations": [
+    "Cooperative timing with serialization/check tail overhead, not a hard real-time guarantee.",
+    "Geometry admission follows all declared node solves within each case; failure stops before the next case.",
+    "XML external mesh assets are pinned upstream but not individually hashed in this contract.",
+    "Zero-correction held case uses no QP; no nonzero coefficient or outer optimizer qualification."
+  ]
+}

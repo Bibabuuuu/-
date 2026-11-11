@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "observations": {
+    "window_s": [
+      1.0,
+      2.5
+    ],
+    "samples": 3001,
+    "relative_displacement_mm": [
+      0.42946755982060564,
+      0.42946158581802274
+    ],
+    "relative_rotation_deg": [
+      0.00013923056238366943,
+      0.00016110778834411009
+    ],
+    "mean_vertical_support_N": [
+      4.905072165797002,
+      4.904927879348725
+    ],
+    "max_vertical_speed_mps": 0.00028637670481214265,
+    "loaded_fraction": [
+      1.0,
+      1.0
+    ],
+    "local_friction_ge_099_fraction": [
+      0.0,
+      0.0
+    ],
+    "min_local_friction_margin_N": [
+      0.38118235170107395,
+      0.38110688346282184
+    ],
+    "max_hand_moment_rms_Nm": 0.5788630569475589,
+    "peak_actual_longitudinal_deceleration_mps2": 6.260318906157352e-07,
+    "settled_s": 0.0,
+    "nonpad_payload_contacts": []
+  },
+  "run": {
+    "case": "static",
+    "label": "static",
+    "status": "completed",
+    "steps": 5000,
+    "wall_s": 24.795707100000072,
+    "sim_s": 2.5,
+    "max_unclipped_control_excess": 0.0,
+    "max_joint_range_excess": 0.0,
+    "max_joint_speed_fraction": 0.002472815628210309,
+    "max_self_penetration_m": 0.0,
+    "feedforward_wrench_balance_error": 5.345592376527603e-16,
+    "sources_unchanged": true,
+    "frozen_unchanged": true,
+    "scope": "nominal execution/telemetry probe; optional offline waist/arm buffer; no stability superiority or hardware claim",
+    "obstacle_contact_audit": {
+      "contact_steps": 0,
+      "first_contact_s": null,
+      "minimum_contact_distance_m": null
+    }
+  },
+  "policy": "Side normal targets added as balanced internal force through arm joint torque only. No external payload forces."
+}

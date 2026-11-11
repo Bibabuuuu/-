@@ -1,0 +1,242 @@
+{
+  "physical_steps": 0,
+  "trigger_s": 1.43,
+  "dt_s": 0.0005,
+  "force_check_dt_s": 0.01,
+  "hand_normal_cap_N": 8.75,
+  "reserve_definition": "Largest scalar multiple of the whole required wrench, including gravity, feasible with fixed contact patch and caps. >=1 passes.",
+  "geometry": "Convex hulls of initial nominal pad contacts; no measured forces in prediction. World orientation fixed. Eight-facet inner friction cones; moment from contact point force levers.",
+  "excluded": "Dynamic changes of contact patch, force tracking, joint-torque feasibility and hardware calibration.",
+  "candidate_set": {
+    "left04_held": {
+      "speed": 0.4,
+      "base_accel": 2.0,
+      "object_accel": 2.0,
+      "window_end": 1.8853030303030303
+    },
+    "left04_waist_arm": {
+      "speed": 0.4,
+      "base_accel": 2.0,
+      "object_accel": 1.1,
+      "window_end": 1.8853030303030303
+    },
+    "left04_arm_only": {
+      "speed": 0.4,
+      "base_accel": 2.0,
+      "object_accel": 1.1,
+      "window_end": 1.8853030303030303
+    },
+    "left06_soft": {
+      "speed": 0.6,
+      "base_accel": 1.25,
+      "object_accel": 1.25,
+      "window_end": 2.08
+    },
+    "left06_firm": {
+      "speed": 0.6,
+      "base_accel": 2.0,
+      "object_accel": 2.0,
+      "window_end": 2.08
+    }
+  },
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left.xml": "da74eb015c3071d9947b13607b612ffc76ea3fbf4565fae7944aa1436a16fb2e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-preflight-v1\\initial.npz": "e75ecdffd91efd812b8856ce98d25160ce68111adfdbc05f79bcdc7dc18c4f35",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-force-screen-v1\\check.py": "37bf85f1e3d2429b86600b46af83ff526f13551b07dc466bbff911c4263d2331",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\contract.json": "338456dd6319b833c73dbf7ba1f3c300e9ecc3a8cb07a9fbf8dfe1cf0cb0661c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-posture-pair-v1\\contract.json": "a324fca37c182db8e8b58c2e6762627241de5e3a7952927b6fcec0eda93753eb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\contract.json": "c2ed16bd5931ee047f406c194669e467d34a840e113a756daea91f8b4953e36c",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left\\trace.npz": "5adc8eace690f51fe0cc13a8ffd2e9050168f89b3d1d148a45bb219d7fb9a641",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-loaded-native-v1\\left\\grasp_trace.npz": "21122c73d5ca8ef55088d6f40db6671af44c718f4cef6733d8d4d09e8537354e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\buffer\\trace.npz": "e90f7309596025c01ff3fcbe33e492cd5b7bf407f26522f03493fc6803516268",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-matched-buffer-v1\\buffer\\grasp_trace.npz": "7eaab921899e573137a3d2aba430077a2e664a81192ce789baf6b43c3f496f50",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-posture-pair-v1\\arm_only\\trace.npz": "42018c4307deab4b2c90aa1515dc3838c66ad10c93f2055f8b729a402ca43829",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-posture-pair-v1\\arm_only\\grasp_trace.npz": "057ca24251677bad410074c63dba2eda0d9b419876c3e9d4d91551e569618263",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a125_left\\trace.npz": "c40b49c26b4ac821d00a68ac007cb6643747675770d829fdfefded60f783b6b4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a125_left\\grasp_trace.npz": "c5d563571ebeb39237ad72b877f7cb81a6805118dbab6d5be20650923c7cb95a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_left\\trace.npz": "d807f1e565479346b5a1df88c97337411474ee474aaa206028c4996d41394e19",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-reel-speed-brake-v1\\v60_a200_left\\grasp_trace.npz": "e835d1d0050f3bafb7590c88777dab798a3f7893db657d4fd12b18820031a5b9"
+  },
+  "patches": {
+    "ee_finger_r1_pad": {
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mu": 0.8,
+      "corners_relative_com_m": [
+        [
+          -0.039899523910315815,
+          -0.08634216322325619,
+          -0.005974999846401263
+        ],
+        [
+          -0.0549916003980081,
+          -0.11247736002513184,
+          -0.005974999825420935
+        ],
+        [
+          -0.05479794872667898,
+          -0.11264721658123508,
+          -0.005974999825322125
+        ],
+        [
+          -0.0450099672298947,
+          -0.11918852722594862,
+          -0.005974999821814042
+        ],
+        [
+          -0.03445190841957524,
+          -0.12439627691831692,
+          -0.0059749998193766585
+        ],
+        [
+          -0.03420799392320251,
+          -0.12447909747853513,
+          -0.005974999819347571
+        ],
+        [
+          -0.01911591757301845,
+          -0.09834390091478433,
+          -0.005974999840327899
+        ]
+      ]
+    },
+    "ee_finger_r2_pad": {
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "mu": 0.8,
+      "corners_relative_com_m": [
+        [
+          -0.039899523907028556,
+          -0.08634216320604893,
+          0.005975000177886325
+        ],
+        [
+          -0.05499160040248663,
+          -0.112477360021373,
+          0.005975000198866431
+        ],
+        [
+          -0.05479794872670862,
+          -0.11264721658137855,
+          0.005975000198953917
+        ],
+        [
+          -0.04500996722992434,
+          -0.11918852722609209,
+          0.005975000201934644
+        ],
+        [
+          -0.03445190841960488,
+          -0.12439627691846039,
+          0.0059750002038446715
+        ],
+        [
+          -0.03420799392883578,
+          -0.12447909747677594,
+          0.005975000203862435
+        ],
+        [
+          -0.019115917569730967,
+          -0.09834390089757723,
+          0.005975000182881884
+        ]
+      ]
+    },
+    "ee_finger_l1_pad": {
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mu": 0.8,
+      "corners_relative_com_m": [
+        [
+          -0.054979689488705574,
+          0.02998655405148104,
+          -0.005974999825242855
+        ],
+        [
+          -0.03989198335676958,
+          0.0038488340236799007,
+          -0.0059749998462379494
+        ],
+        [
+          -0.019106370463445765,
+          0.015847096258223725,
+          -0.005974999840158923
+        ],
+        [
+          -0.03419407645794581,
+          0.0419848160479334,
+          -0.005974999819163718
+        ],
+        [
+          -0.034438004799422495,
+          0.041902036274602567,
+          -0.0059749998191928055
+        ],
+        [
+          -0.04499693426559703,
+          0.0366960520997439,
+          -0.005974999821632632
+        ],
+        [
+          -0.05478600941773171,
+          0.030156378224244274,
+          -0.005974999825143823
+        ]
+      ]
+    },
+    "ee_finger_l2_pad": {
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "mu": 0.8,
+      "corners_relative_com_m": [
+        [
+          -0.05497968949359422,
+          0.029986554047361794,
+          0.005975000197967151
+        ],
+        [
+          -0.03989198335394295,
+          0.003848834006194249,
+          0.005975000176971945
+        ],
+        [
+          -0.019106370460618916,
+          0.015847096240738108,
+          0.005975000184128443
+        ],
+        [
+          -0.03419407646409722,
+          0.04198481604600132,
+          0.005975000205123648
+        ],
+        [
+          -0.034438004799444366,
+          0.04190203627475064,
+          0.005975000205083236
+        ],
+        [
+          -0.044996934265618904,
+          0.036696052099891976,
+          0.005975000202115832
+        ],
+        [
+          -0.05478600941775358,
+          0.03015637822439235,
+          0.005975000198077285
+        ]
+      ]
+    }
+  }
+}

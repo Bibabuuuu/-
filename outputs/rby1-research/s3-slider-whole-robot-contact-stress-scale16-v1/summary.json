@@ -1,0 +1,129 @@
+{
+  "config": {
+    "initial_speed_mps": 0.3999312722693623,
+    "reference_stop_s": 0.36663230280134784,
+    "dt_s": 0.0005,
+    "duration_s": 2.5,
+    "deceleration_mps2": 2.0,
+    "jerk_mps3": 12.0,
+    "command_period_s": 0.01,
+    "horizon_s": 0.15,
+    "mass_kg": 0.5,
+    "rail_mass_kg": 0.15,
+    "half_stroke_m": 0.038,
+    "disturbance_seed": 1113,
+    "disturbance_onset_s": 0.8,
+    "disturbance_scale": 16.0,
+    "archive": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-cube-grasp-probe-v4\\hard_brake\\a20",
+    "waist_phase": {
+      "boundary_s": [
+        0.36663230280134784,
+        1.9
+      ],
+      "targets": [
+        0.0026599493129033803,
+        0.2886775181418612,
+        0.7192152151458553
+      ],
+      "sample_s": 0.01,
+      "restore_s": 0.03
+    },
+    "shared_pose": {
+      "kp": 400.0,
+      "kd": 32.0,
+      "jacobian_damping": 0.015,
+      "rotation_weight_m": 0.25,
+      "max_correction_radps2": 12.0,
+      "reference": "frozen box attitude with translation following measured base pose"
+    },
+    "waist_reserve": {
+      "floor": 0.65,
+      "full": 0.8,
+      "restore_s": 0.03,
+      "sample_s": 0.01,
+      "fixed_fraction": 0.5
+    }
+  },
+  "cases": {
+    "continuous_truth_sharedrollphase": {
+      "window_s": [
+        0.0,
+        2.5
+      ],
+      "samples": 5001,
+      "relative_displacement_mm": [
+        0.4819379272176788,
+        0.48712537875606665
+      ],
+      "relative_rotation_deg": [
+        1.0865284118511973,
+        1.0968423462095844
+      ],
+      "mean_vertical_support_N": [
+        2.452005548282667,
+        2.451653002948822
+      ],
+      "max_vertical_speed_mps": 0.008065967660927532,
+      "loaded_fraction": [
+        1.0,
+        1.0
+      ],
+      "local_friction_ge_099_fraction": [
+        0.8342331533693261,
+        0.8314337132573485
+      ],
+      "min_local_friction_margin_N": [
+        -8.881784197001252e-16,
+        -8.881784197001252e-16
+      ],
+      "max_hand_moment_rms_Nm": 0.09949886106179091,
+      "peak_actual_longitudinal_deceleration_mps2": 2.001841502842325,
+      "settled_s": 0.3535,
+      "nonpad_payload_contacts": [],
+      "pitch_peak_deg": 0.6846627206514355,
+      "pitch_rms_deg": 0.3243795256270138,
+      "hand_moment_peak_Nm": [
+        0.44045130967450613,
+        0.47487445782724597
+      ],
+      "hand_moment_rms_Nm": [
+        0.09903710589367323,
+        0.09949886106179091
+      ],
+      "shell_clearance_min_m": 0.020864945235760702,
+      "axle_travel_m": 0.07325462114709844,
+      "first_internal_contact_s": 0.963,
+      "peak_internal_wall_force_N": 13.073666156409734,
+      "peak_abs_center_of_mass_shift_mm": 13.222748512240749,
+      "controller_p95_ms": 0.06866499948046109,
+      "controller_max_ms": 0.18649999947228935,
+      "deadline_fallbacks": 0,
+      "controller_updates": 250,
+      "runner_status": "completed",
+      "external_obstacle_contact": null,
+      "roll_tracking": {
+        "mode": "differential",
+        "residual_multiplier": 0.0
+      },
+      "active_pose_joints": [
+        "torso_1",
+        "torso_2",
+        "torso_3",
+        "left_arm_0",
+        "left_arm_1",
+        "left_arm_2",
+        "left_arm_3",
+        "left_arm_4",
+        "left_arm_5",
+        "left_arm_6",
+        "right_arm_0",
+        "right_arm_1",
+        "right_arm_2",
+        "right_arm_3",
+        "right_arm_4",
+        "right_arm_5",
+        "right_arm_6"
+      ]
+    }
+  }
+}

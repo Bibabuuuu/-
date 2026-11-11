@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "common_window_s": [
+    0,
+    0.5999312722693624
+  ],
+  "same_initial_state_and_base_reference": true,
+  "cube": {
+    "hold": {
+      "max_displacement_mm": 0.16626044947603913,
+      "max_rotation_deg": 0.37942603144198295,
+      "all_hands_loaded_after_first_step": true,
+      "local_friction_ge_099_fraction": [
+        0.8825,
+        0.8816666666666667
+      ]
+    },
+    "retract": {
+      "max_displacement_mm": 0.16520951114073984,
+      "max_rotation_deg": 0.3765999488854279,
+      "all_hands_loaded_after_first_step": true,
+      "local_friction_ge_099_fraction": [
+        0.895,
+        0.8966666666666666
+      ]
+    }
+  },
+  "historical_beam_context": {
+    "B0": {
+      "max_displacement_mm": 0.09389555404151721,
+      "max_rotation_deg": 0.05077238512415596,
+      "all_hands_loaded_after_first_step": true,
+      "local_friction_ge_099_fraction": [
+        0.0,
+        0.0
+      ]
+    },
+    "B1": {
+      "max_displacement_mm": 0.0927103770941447,
+      "max_rotation_deg": 0.051636232098621955,
+      "all_hands_loaded_after_first_step": true,
+      "local_friction_ge_099_fraction": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "comparison_scope": "Within-cube pair isolates upper command. Beam comparison is descriptive because pose, grasp direction, inertia and starting geometry differ.",
+  "physical_runs": 3,
+  "physical_steps": 12600,
+  "sha256": {
+    "scene.xml": "4914275ad2f9ded172c7cdd0d126e327decac823665b069a9ed370c827dcef19",
+    "geometry_preflight.json": "1607839badb285346c1d17961b630b6b267a10dd186b1d281d53043327557e3e",
+    "initial.npz": "9c9bc2463c3362686ae0ad02d835246e7e108c5a7367b0188b884723c90c1563",
+    "static_check.json": "e3677c4196a74be4b9da036e3f2ecfded96c38f5dc3694fdc56c62eaa6866c66",
+    "pair_preflight.json": "37d82560d1e9493797a6797adb210804a0ea607a3c770cdfdfd4aa8b82b53592",
+    "rolling_initial.npz": "4e252977fa01fa4fcc165a22ca6150ccdd9441027bcacd69758e2fa24ecf978f",
+    "pair_summary.json": "1d2cd3b55ae3ed8d3623b1d7a868399b18f522f50e549117808fec05c76a8959"
+  },
+  "minimum_actual_sampled_clearance": {
+    "hold": {
+      "distance_m": 0.16058983928864562,
+      "time_s": 0.585,
+      "geom": "payload_cube",
+      "states": 3801
+    },
+    "retract": {
+      "distance_m": 0.17060240568117968,
+      "time_s": 0.5765,
+      "geom": "payload_cube",
+      "states": 3801
+    }
+  }
+}

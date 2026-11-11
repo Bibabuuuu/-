@@ -1,0 +1,36 @@
+{
+  "seed": 1113,
+  "onset_s": 0.8,
+  "duration_s": 2.5,
+  "disturbance_scale": 16.0,
+  "phase_targets": [
+    0.0026599493129033803,
+    0.2886775181418612,
+    0.7192152151458553
+  ],
+  "event_s": [
+    0.97,
+    1.04
+  ],
+  "left_pad_friction": 0.6,
+  "dt_s": 0.0005,
+  "modes": [
+    "sharedrollgrip",
+    "sharedrollgripmax"
+  ],
+  "enabled_s": 0.37,
+  "switch_s": 0.8,
+  "constant_levels": [
+    0.4001483924924884,
+    0.16561847602417556
+  ],
+  "phased_before_levels": [
+    0.4555142016145048,
+    0.09166879416083916
+  ],
+  "phased_after_levels": [
+    0.38614409959691737,
+    0.1843233955543172
+  ],
+  "matching_quantity": "integrated extra closing velocity target per hand"
+}

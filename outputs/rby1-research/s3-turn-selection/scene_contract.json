@@ -1,0 +1,81 @@
+{
+  "scenes": [
+    {
+      "name": "right_column",
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\scene.xml",
+      "front_x_m": 1.1204350366106104,
+      "center_y_m": -0.24006228881101246,
+      "width_m": 0.08,
+      "thickness_m": 0.08,
+      "z_range_m": [
+        0.0,
+        1.8
+      ]
+    },
+    {
+      "name": "left_column",
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\scene.xml",
+      "front_x_m": 1.1204350366106104,
+      "center_y_m": 0.2399466651976647,
+      "width_m": 0.08,
+      "thickness_m": 0.08,
+      "z_range_m": [
+        0.0,
+        1.8
+      ]
+    },
+    {
+      "name": "center_column",
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\center_column\\scene.xml",
+      "front_x_m": 1.1204350366106104,
+      "center_y_m": -5.78118066738853e-05,
+      "width_m": 0.08,
+      "thickness_m": 0.08,
+      "z_range_m": [
+        0.0,
+        1.8
+      ]
+    }
+  ],
+  "initial_payload_front_m": 1.0204350366106103,
+  "initial_payload_y_bounds_m": [
+    -0.22006228881101245,
+    0.21994666519766468
+  ],
+  "source_state_time_s": 3.501,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-wheel-width\\model\\scene.xml": "2e4af760b405f02c4ea95e9b78ea7d3a399740019302e1675dfe33da75e77d65",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154757_768066_s26_base_only\\joint_trace.npz": "e2ce08788515b29e95d3654b215fab3f96e9d1ecbe3c83d0d1788c8da3690d1a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\initial_state.npz": "ac0bb9dc946932fa5fc0f8178bcf8448214671acaa0d963e5dcc8d58d87be6f8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\turn_stop_search.py": "b93ef29fb219af82d78e7d45dcf348c37d87416c888c22ffed10f5f28dfaca6e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\right_column\\scene.xml": "98f4eb784da41a1f940e46a0181021b5f4110600de6957c28683c43b743e44d8",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\left_column\\scene.xml": "9936b36160c5e8f6be533ef0eb3ab0cdcb2fc35439eb2035256d47a2963f9f63",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-turn-selection\\center_column\\scene.xml": "5b630d06b6eebbaa16788459a22326c2fca8afbf860a4e6dc8daa68a0ed11e34"
+  },
+  "rule": "columns 10cm ahead of initial payload front; side columns overlap its initial y outline by 2cm; no candidate or future execution used",
+  "A_levels_mps2": [
+    0.5,
+    0.75,
+    1.0
+  ],
+  "angle_domain_deg": [
+    -10,
+    10
+  ],
+  "coarse_angles_deg": [
+    -10.0,
+    -5.0,
+    0.0,
+    5.0,
+    10.0
+  ],
+  "angle_refinement_tolerance_deg": 0.1,
+  "maximum_evaluations": 160,
+  "physics_budget": {
+    "main_runs": 2,
+    "conditional_halfdt_runs": 1,
+    "maximum_steps": 8000
+  },
+  "new_reference_evaluations": 0,
+  "new_physics_runs": 0
+}

@@ -1,0 +1,14 @@
+{
+  "status": "单次名义事件接管已实现并通过冻结验收",
+  "new_physics_runs": 1,
+  "new_physics_steps": 4000,
+  "S3_cumulative_runs": 55,
+  "S3_cumulative_steps": 137061,
+  "upper_action_activated": true,
+  "default_straight_action_replaced": false,
+  "general_state_admission_established": false,
+  "evidence": "same successful cruise prefix, live trigger guard, preloaded unchanged old reference, C2 and physical checks passed",
+  "selection_role": "this test exercised one admissible preloaded upper action; it did not implement multi-metric optimal selection",
+  "reason_to_keep_straight_default": "in this scene straight already stops with more clearance; upper candidate has higher object acceleration and hand moment metrics; base path/turn/profile also differ",
+  "next_scope": "read-only review of fair action comparison and when upper coordination is needed; no further physical run in this batch"
+}

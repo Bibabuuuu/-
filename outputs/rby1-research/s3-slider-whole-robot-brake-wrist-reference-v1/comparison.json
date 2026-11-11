@@ -1,0 +1,749 @@
+{
+  "frozen_prediction_verified": true,
+  "results": {
+    "a165_quiet": {
+      "force_peak_N": 0.0,
+      "seed": 0,
+      "cases": {
+        "wrist_feedback": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.2717235220294132,
+            0.2544937073977883
+          ],
+          "relative_rotation_deg": [
+            0.6135059152272674,
+            0.5731071735617133
+          ],
+          "mean_vertical_support_N": [
+            2.45274229219964,
+            2.450311608366245
+          ],
+          "max_vertical_speed_mps": 0.0036059537520463777,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.9037900874635568,
+            0.5127030403998334
+          ],
+          "min_local_friction_margin_N": [
+            -2.220446049250313e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.07518464328668478,
+          "peak_actual_longitudinal_deceleration_mps2": 1.6521736074262776,
+          "settled_s": 0.3665,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.5639361560696743,
+          "brake_pitch_peak_deg": 0.13395774609331768,
+          "brake_pitch_rms_deg": 0.08678610491647369,
+          "brake_relative_peak_mm": 0.056818347938556786,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.01889357227920926,
+          "brake_boost_mean": [
+            0.44235876683680386,
+            0.4419457612532889
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.37988258925415896,
+          "disturbance_onset_s": null,
+          "disturbance_end_s": null,
+          "reference_deceleration_mps2": 1.65,
+          "policy": "wrist_feedback",
+          "mean_brake_boost_fraction": [
+            0.44235876683680386,
+            0.4419457612532889
+          ],
+          "brake_samples_with_boost": 36,
+          "first_boost_s": 0.02,
+          "before_forcing_mean_boost": [
+            0.6,
+            0.6
+          ],
+          "forcing_mean_boost": [
+            0.48299703043561715,
+            0.4720779653796253
+          ],
+          "first_boost_during_forcing_s": 0.05,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        },
+        "reference_feedback": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.2806288654138388,
+            0.2607764572957515
+          ],
+          "relative_rotation_deg": [
+            0.6317697444173077,
+            0.5870034569198751
+          ],
+          "mean_vertical_support_N": [
+            2.4530324812644877,
+            2.450028816462528
+          ],
+          "max_vertical_speed_mps": 0.0034804636236632673,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.8929612661391088,
+            0.6888796334860475
+          ],
+          "min_local_friction_margin_N": [
+            -1.6653345369377348e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.07564108785541662,
+          "peak_actual_longitudinal_deceleration_mps2": 1.6521740126242435,
+          "settled_s": 0.3665,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.5739113814563301,
+          "brake_pitch_peak_deg": 0.1562305503795134,
+          "brake_pitch_rms_deg": 0.09907230680931334,
+          "brake_relative_peak_mm": 0.06892077201772559,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.018897865337333303,
+          "brake_boost_mean": [
+            0.0,
+            0.0
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.37988258925415896,
+          "disturbance_onset_s": null,
+          "disturbance_end_s": null,
+          "reference_deceleration_mps2": 1.65,
+          "policy": "reference_feedback",
+          "mean_brake_boost_fraction": [
+            0.0,
+            0.0
+          ],
+          "brake_samples_with_boost": 0,
+          "first_boost_s": null,
+          "before_forcing_mean_boost": [
+            0.0,
+            0.0
+          ],
+          "forcing_mean_boost": [
+            0.0,
+            0.0
+          ],
+          "first_boost_during_forcing_s": null,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        }
+      }
+    },
+    "a165_random73": {
+      "force_peak_N": 1.3103766219183186,
+      "seed": 73,
+      "cases": {
+        "nominal": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.28563183141176834,
+            0.25819318774965777
+          ],
+          "relative_rotation_deg": [
+            0.6358555598987999,
+            0.577706497945952
+          ],
+          "mean_vertical_support_N": [
+            2.4531623346467395,
+            2.4498327239315913
+          ],
+          "max_vertical_speed_mps": 0.003780705968059754,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.9566847147022074,
+            0.8029987505206164
+          ],
+          "min_local_friction_margin_N": [
+            -2.220446049250313e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.07058348430111203,
+          "peak_actual_longitudinal_deceleration_mps2": 1.6522033151033497,
+          "settled_s": 0.3665,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.47700198407736294,
+          "brake_pitch_peak_deg": 0.24363644738707602,
+          "brake_pitch_rms_deg": 0.15991397298322332,
+          "brake_relative_peak_mm": 0.1089709387228667,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.0189098389215985,
+          "brake_boost_mean": [
+            0.0,
+            0.0
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.37988258925415896,
+          "disturbance_onset_s": 0.05,
+          "disturbance_end_s": 0.32,
+          "reference_deceleration_mps2": 1.65,
+          "policy": "nominal",
+          "mean_brake_boost_fraction": [
+            0.0,
+            0.0
+          ],
+          "brake_samples_with_boost": 0,
+          "first_boost_s": null,
+          "before_forcing_mean_boost": [
+            0.0,
+            0.0
+          ],
+          "forcing_mean_boost": [
+            0.0,
+            0.0
+          ],
+          "first_boost_during_forcing_s": null,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        },
+        "wrist_feedback": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.27639714249439906,
+            0.25112128407009426
+          ],
+          "relative_rotation_deg": [
+            0.6164640207317931,
+            0.5626117099816361
+          ],
+          "mean_vertical_support_N": [
+            2.4529893936970417,
+            2.4499952798417746
+          ],
+          "max_vertical_speed_mps": 0.0033707795061811365,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.9387755102040817,
+            0.7546855476884632
+          ],
+          "min_local_friction_margin_N": [
+            -2.220446049250313e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.07012363197124044,
+          "peak_actual_longitudinal_deceleration_mps2": 1.652205546136031,
+          "settled_s": 0.3665,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.46664948784029514,
+          "brake_pitch_peak_deg": 0.22485695013979767,
+          "brake_pitch_rms_deg": 0.14363154178750942,
+          "brake_relative_peak_mm": 0.09603919732773734,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.01890361608841754,
+          "brake_boost_mean": [
+            0.48730425933338223,
+            0.4888091300406121
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.37988258925415896,
+          "disturbance_onset_s": 0.05,
+          "disturbance_end_s": 0.32,
+          "reference_deceleration_mps2": 1.65,
+          "policy": "wrist_feedback",
+          "mean_brake_boost_fraction": [
+            0.48730425933338223,
+            0.4888091300406121
+          ],
+          "brake_samples_with_boost": 36,
+          "first_boost_s": 0.02,
+          "before_forcing_mean_boost": [
+            0.6,
+            0.6
+          ],
+          "forcing_mean_boost": [
+            0.5492914410201767,
+            0.5513213725446088
+          ],
+          "first_boost_during_forcing_s": 0.05,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        },
+        "reference_feedback": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.28248641786087847,
+            0.2570064064650076
+          ],
+          "relative_rotation_deg": [
+            0.6290526917372579,
+            0.5753406472365236
+          ],
+          "mean_vertical_support_N": [
+            2.453047986386188,
+            2.449952060509064
+          ],
+          "max_vertical_speed_mps": 0.003785709244758414,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.956268221574344,
+            0.8284048313202832
+          ],
+          "min_local_friction_margin_N": [
+            -4.440892098500626e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.07043435089471409,
+          "peak_actual_longitudinal_deceleration_mps2": 1.6522033151033497,
+          "settled_s": 0.3665,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.4745730372717276,
+          "brake_pitch_peak_deg": 0.23806902441557476,
+          "brake_pitch_rms_deg": 0.15690391111109006,
+          "brake_relative_peak_mm": 0.1064568212846849,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.018906565397834432,
+          "brake_boost_mean": [
+            0.08907236899196284,
+            0.0733377752084122
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.37988258925415896,
+          "disturbance_onset_s": 0.05,
+          "disturbance_end_s": 0.32,
+          "reference_deceleration_mps2": 1.65,
+          "policy": "reference_feedback",
+          "mean_brake_boost_fraction": [
+            0.08907236899196284,
+            0.0733377752084122
+          ],
+          "brake_samples_with_boost": 21,
+          "first_boost_s": 0.17,
+          "before_forcing_mean_boost": [
+            0.0,
+            0.0
+          ],
+          "forcing_mean_boost": [
+            0.08727022444969182,
+            0.09568209548662207
+          ],
+          "first_boost_during_forcing_s": 0.17,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        }
+      }
+    },
+    "a190_quiet": {
+      "force_peak_N": 0.0,
+      "seed": 0,
+      "cases": {
+        "wrist_feedback": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.2720981366021213,
+            0.2546182403864837
+          ],
+          "relative_rotation_deg": [
+            0.6149173595840243,
+            0.5735319085594868
+          ],
+          "mean_vertical_support_N": [
+            2.452778137242829,
+            2.4502941965883647
+          ],
+          "max_vertical_speed_mps": 0.0035109262802844026,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.8929612661391088,
+            0.5089546022490629
+          ],
+          "min_local_friction_margin_N": [
+            -2.220446049250313e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.075416215929358,
+          "peak_actual_longitudinal_deceleration_mps2": 1.9019220227351354,
+          "settled_s": 0.3555,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.5661880093724398,
+          "brake_pitch_peak_deg": 0.1316344861079315,
+          "brake_pitch_rms_deg": 0.08512604658254198,
+          "brake_relative_peak_mm": 0.055137813164477356,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.021105791441321676,
+          "brake_boost_mean": [
+            0.4623212230846196,
+            0.48376699132483036
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.36882347663299775,
+          "disturbance_onset_s": null,
+          "disturbance_end_s": null,
+          "reference_deceleration_mps2": 1.9,
+          "policy": "wrist_feedback",
+          "mean_brake_boost_fraction": [
+            0.4623212230846196,
+            0.48376699132483036
+          ],
+          "brake_samples_with_boost": 35,
+          "first_boost_s": 0.02,
+          "before_forcing_mean_boost": [
+            0.75,
+            0.75
+          ],
+          "forcing_mean_boost": [
+            0.41702581660332794,
+            0.4353716841699178
+          ],
+          "first_boost_during_forcing_s": 0.08,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        },
+        "reference_feedback": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.28011016505432,
+            0.26102666441196354
+          ],
+          "relative_rotation_deg": [
+            0.6309907120728437,
+            0.5878009213550114
+          ],
+          "mean_vertical_support_N": [
+            2.4529737723541527,
+            2.4501056528943996
+          ],
+          "max_vertical_speed_mps": 0.003592263513599118,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.8875468554768846,
+            0.6817992503123699
+          ],
+          "min_local_friction_margin_N": [
+            -1.1102230246251565e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.07576799797264547,
+          "peak_actual_longitudinal_deceleration_mps2": 1.9019620268732638,
+          "settled_s": 0.3555,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.5751307143185738,
+          "brake_pitch_peak_deg": 0.15388899611041174,
+          "brake_pitch_rms_deg": 0.09780270048291378,
+          "brake_relative_peak_mm": 0.06445464297722224,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.02110946588862957,
+          "brake_boost_mean": [
+            0.028404911175759533,
+            0.012684734990483176
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.36882347663299775,
+          "disturbance_onset_s": null,
+          "disturbance_end_s": null,
+          "reference_deceleration_mps2": 1.9,
+          "policy": "reference_feedback",
+          "mean_brake_boost_fraction": [
+            0.028404911175759533,
+            0.012684734990483176
+          ],
+          "brake_samples_with_boost": 18,
+          "first_boost_s": 0.19,
+          "before_forcing_mean_boost": [
+            0.0,
+            0.0
+          ],
+          "forcing_mean_boost": [
+            0.037378288716735215,
+            0.01706286330974545
+          ],
+          "first_boost_during_forcing_s": 0.19,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        }
+      }
+    },
+    "a190_periodic29": {
+      "force_peak_N": 0.996385839047454,
+      "seed": 29,
+      "cases": {
+        "nominal": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.2845424077880686,
+            0.2610745420542964
+          ],
+          "relative_rotation_deg": [
+            0.6377175571126925,
+            0.5875027083560943
+          ],
+          "mean_vertical_support_N": [
+            2.453063621582203,
+            2.4502492528573576
+          ],
+          "max_vertical_speed_mps": 0.006014483262294484,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.9616826322365681,
+            0.6959600166597251
+          ],
+          "min_local_friction_margin_N": [
+            -2.220446049250313e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.07371025009058373,
+          "peak_actual_longitudinal_deceleration_mps2": 1.9019177474815478,
+          "settled_s": 0.3555,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.5221309453146528,
+          "brake_pitch_peak_deg": 0.18026263232535733,
+          "brake_pitch_rms_deg": 0.11671628821203246,
+          "brake_relative_peak_mm": 0.07806566220835331,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.020997029142156984,
+          "brake_boost_mean": [
+            0.0,
+            0.0
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.36882347663299775,
+          "disturbance_onset_s": 0.08,
+          "disturbance_end_s": 0.33,
+          "reference_deceleration_mps2": 1.9,
+          "policy": "nominal",
+          "mean_brake_boost_fraction": [
+            0.0,
+            0.0
+          ],
+          "brake_samples_with_boost": 0,
+          "first_boost_s": null,
+          "before_forcing_mean_boost": [
+            0.0,
+            0.0
+          ],
+          "forcing_mean_boost": [
+            0.0,
+            0.0
+          ],
+          "first_boost_during_forcing_s": null,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        },
+        "wrist_feedback": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.2750899483363708,
+            0.25318551414291623
+          ],
+          "relative_rotation_deg": [
+            0.618378301446037,
+            0.5705020011208526
+          ],
+          "mean_vertical_support_N": [
+            2.4529108365653274,
+            2.450395321299585
+          ],
+          "max_vertical_speed_mps": 0.006126506938656535,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.9521032902957102,
+            0.5797584339858393
+          ],
+          "min_local_friction_margin_N": [
+            -2.220446049250313e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.07314643065581561,
+          "peak_actual_longitudinal_deceleration_mps2": 1.9019155653305972,
+          "settled_s": 0.3555,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.5112007314694513,
+          "brake_pitch_peak_deg": 0.19523132277566324,
+          "brake_pitch_rms_deg": 0.11037807683173767,
+          "brake_relative_peak_mm": 0.06807548037500828,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.020992835215804754,
+          "brake_boost_mean": [
+            0.4537762585828192,
+            0.46398609216961245
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.36882347663299775,
+          "disturbance_onset_s": 0.08,
+          "disturbance_end_s": 0.33,
+          "reference_deceleration_mps2": 1.9,
+          "policy": "wrist_feedback",
+          "mean_brake_boost_fraction": [
+            0.4537762585828192,
+            0.46398609216961245
+          ],
+          "brake_samples_with_boost": 35,
+          "first_boost_s": 0.02,
+          "before_forcing_mean_boost": [
+            0.75,
+            0.75
+          ],
+          "forcing_mean_boost": [
+            0.40144137416359743,
+            0.41369852651100775
+          ],
+          "first_boost_during_forcing_s": 0.08,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        },
+        "reference_feedback": {
+          "window_s": [
+            0.0,
+            1.2
+          ],
+          "samples": 2401,
+          "relative_displacement_mm": [
+            0.28196130681274983,
+            0.25875881367213
+          ],
+          "relative_rotation_deg": [
+            0.6317205543259371,
+            0.582322017834517
+          ],
+          "mean_vertical_support_N": [
+            2.453020047593995,
+            2.450298775579684
+          ],
+          "max_vertical_speed_mps": 0.006018067013453023,
+          "loaded_fraction": [
+            1.0,
+            1.0
+          ],
+          "local_friction_ge_099_fraction": [
+            0.9554352353186173,
+            0.6909620991253644
+          ],
+          "min_local_friction_margin_N": [
+            -2.220446049250313e-16,
+            -2.220446049250313e-16
+          ],
+          "max_hand_moment_rms_Nm": 0.07347564249335568,
+          "peak_actual_longitudinal_deceleration_mps2": 1.9019177474815478,
+          "settled_s": 0.3555,
+          "nonpad_payload_contacts": [],
+          "pitch_peak_deg": 0.5185593563801802,
+          "brake_pitch_peak_deg": 0.18464873786971436,
+          "brake_pitch_rms_deg": 0.11765490768115007,
+          "brake_relative_peak_mm": 0.0759039806855376,
+          "peak_internal_wall_force_N": 0.0,
+          "first_internal_contact_s": null,
+          "first_external_contact_s": null,
+          "shell_clearance_min_m": 0.02099621400613053,
+          "brake_boost_mean": [
+            0.11207306713008379,
+            0.10165815170391666
+          ],
+          "runner_status": "completed",
+          "reference_stop_s": 0.36882347663299775,
+          "disturbance_onset_s": 0.08,
+          "disturbance_end_s": 0.33,
+          "reference_deceleration_mps2": 1.9,
+          "policy": "reference_feedback",
+          "mean_brake_boost_fraction": [
+            0.11207306713008379,
+            0.10165815170391666
+          ],
+          "brake_samples_with_boost": 13,
+          "first_boost_s": 0.24,
+          "before_forcing_mean_boost": [
+            0.0,
+            0.0
+          ],
+          "forcing_mean_boost": [
+            0.134890437233305,
+            0.12138580261264124
+          ],
+          "first_boost_during_forcing_s": 0.24,
+          "zero_wheel_contact_samples": 0,
+          "control_excess": 0.0,
+          "force_window_before_actual_stop": true
+        }
+      }
+    }
+  }
+}

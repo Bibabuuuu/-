@@ -1,0 +1,23 @@
+{
+  "cases": {
+    "hold": {
+      "reference_end_s": 0.6000000000000003,
+      "trigger_gap_m": 0.1900000003867005,
+      "reference_min_gap_m": 0.02138830501852974,
+      "predicted_center_block_peak": 0.10199821538392005
+    },
+    "buffer": {
+      "reference_end_s": 0.6187826086956523,
+      "trigger_gap_m": 0.1900000003867005,
+      "reference_min_gap_m": 0.02138830501852974,
+      "predicted_center_block_peak": 0.09420016863362403
+    }
+  },
+  "speed_mps": 0.4,
+  "turn_deg": -10,
+  "scene": "translated low obstacle, retaining ~190 mm initial clearance; right-column turn law reused, different obstacle",
+  "dt_s": 0.0005,
+  "end_s": 2.5,
+  "deadline_s": 0.65,
+  "friction": 0.15
+}

@@ -1,0 +1,205 @@
+{
+  "physical_steps": 0,
+  "fit_window_s": [
+    0.45,
+    0.6
+  ],
+  "vertical_prior_m": 0.0,
+  "estimates": {
+    "center": {
+      "accepted": true,
+      "samples": 301,
+      "mass_kg": 0.2000054979030275,
+      "com_body_m": [
+        -4.0526978422071504e-08,
+        -7.412712392627963e-10,
+        0.0
+      ],
+      "xy_rank": 2,
+      "moment_rmse_Nm": 2.6798999744287944e-08,
+      "mean_world_force_N": [
+        -1.2236593703344267e-05,
+        1.4090434084491088e-07,
+        1.9620539344287011
+      ],
+      "std_world_force_N": [
+        4.1740118659412835e-06,
+        2.2198652957425242e-07,
+        4.642601901001157e-05
+      ],
+      "mean_world_moment_at_origin_Nm": [
+        -1.4474398969105463e-09,
+        7.951731326214977e-08,
+        8.965452870142958e-10
+      ],
+      "qualification": "Static wrench proxy, known gravity and vertical COM prior; sensor offsets and inertia are not estimated."
+    },
+    "left": {
+      "accepted": true,
+      "samples": 301,
+      "mass_kg": 0.20001158028867524,
+      "com_body_m": [
+        2.5062141952993594e-08,
+        0.04125011003706774,
+        0.0
+      ],
+      "xy_rank": 2,
+      "moment_rmse_Nm": 9.969960224247614e-08,
+      "mean_world_force_N": [
+        -2.5963779083904342e-05,
+        1.0942173853672655e-06,
+        1.962113602631904
+      ],
+      "std_world_force_N": [
+        4.875510471416851e-06,
+        1.8871671631066237e-07,
+        5.041448839210064e-05
+      ],
+      "mean_world_moment_at_origin_Nm": [
+        0.0809373437769276,
+        -2.4304060245840282e-05,
+        1.2116110095184115e-06
+      ],
+      "qualification": "Static wrench proxy, known gravity and vertical COM prior; sensor offsets and inertia are not estimated."
+    },
+    "right": {
+      "accepted": true,
+      "samples": 301,
+      "mass_kg": 0.20001159746866648,
+      "com_body_m": [
+        2.5434024789567455e-08,
+        -0.04125011211590116,
+        0.0
+      ],
+      "xy_rank": 2,
+      "moment_rmse_Nm": 9.784867358807153e-08,
+      "mean_world_force_N": [
+        -2.590020342630509e-05,
+        2.874088733858406e-08,
+        1.9621137711676189
+      ],
+      "std_world_force_N": [
+        4.827600564301313e-06,
+        2.619658422740536e-07,
+        5.051085896975497e-05
+      ],
+      "mean_world_moment_at_origin_Nm": [
+        -0.08093735650328017,
+        -9.41618451836741e-06,
+        -1.2048012438243077e-06
+      ],
+      "qualification": "Static wrench proxy, known gravity and vertical COM prior; sensor offsets and inertia are not estimated."
+    }
+  },
+  "truth": {
+    "center": [
+      0.2,
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "left": [
+      0.2,
+      [
+        0.0,
+        0.04125,
+        0.0
+      ]
+    ],
+    "right": [
+      0.2,
+      [
+        0.0,
+        -0.04125,
+        0.0
+      ]
+    ]
+  },
+  "minimum_scale_left_right": {
+    "04_left_held": {
+      "nominal": [
+        1.7089408955542653,
+        1.7089228945636792
+      ],
+      "estimated": [
+        1.306281082535437,
+        2.3667731527397673
+      ],
+      "truth": [
+        1.3063577404522584,
+        2.3669086176451706
+      ]
+    },
+    "04_left_waist_arm": {
+      "nominal": [
+        1.7408455390305884,
+        1.740865102530349
+      ],
+      "estimated": [
+        1.3371146028467746,
+        2.392061622651818
+      ],
+      "truth": [
+        1.337193068262036,
+        2.3921985480074124
+      ]
+    },
+    "04_left_arm_only": {
+      "nominal": [
+        1.7408455390305884,
+        1.740865102530349
+      ],
+      "estimated": [
+        1.3371146028467746,
+        2.392061622651818
+      ],
+      "truth": [
+        1.337193068262036,
+        2.3921985480074124
+      ]
+    },
+    "v60_a125_left": {
+      "nominal": [
+        1.7376008802583411,
+        1.737621183993788
+      ],
+      "estimated": [
+        1.3318752927265505,
+        2.387809581244466
+      ],
+      "truth": [
+        1.331953451013219,
+        2.3879462610187936
+      ]
+    },
+    "v60_a200_left": {
+      "nominal": [
+        1.7089408955542653,
+        1.7089228945636763
+      ],
+      "estimated": [
+        1.306281082535437,
+        2.3667731527397646
+      ],
+      "truth": [
+        1.306357740452249,
+        2.366908617645193
+      ]
+    }
+  },
+  "choices": {
+    "left_04": {
+      "nominal": "left04_waist_arm",
+      "estimated": "left04_waist_arm",
+      "truth": "left04_waist_arm"
+    },
+    "left_06": {
+      "nominal": "left06_soft",
+      "estimated": "left06_soft",
+      "truth": "left06_soft"
+    }
+  },
+  "truth_check": "Reproduced stored per-hand minima at 1e-9 absolute tolerance"
+}

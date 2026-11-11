@@ -1,0 +1,136 @@
+{
+  "evidence_verified": true,
+  "dynamic_qualification_passed": false,
+  "failure_reason": "Wheel-ground contact count is zero in two 1ms samples.",
+  "original_gate_note": "The same zero-contact phenomenon already occurs in the paired baseline; the preflight had not screened it. No relaxation after the failure.",
+  "batch_stopped": true,
+  "new_physics_runs": 1,
+  "new_physics_steps": 1900,
+  "remaining_planned_runs_unexecuted": 3,
+  "raw_checks": [
+    {
+      "role": "baseline",
+      "initial_state_exact": true,
+      "acceleration_rms": 0.5668914781132578,
+      "moment_rms": 0.026268173665732617,
+      "peak_moment_Nm": 0.05131284873224287,
+      "peak_moment_time_s": 0.22,
+      "peak_moment_hand": "right",
+      "acceleration_peak_time_s": 0.22,
+      "wheel_zero_times_s": [
+        0.22,
+        0.257
+      ],
+      "hold_relative_change_mm": 0.15832079303662,
+      "hold_z_slope_mmps": [
+        -0.15580080993905093,
+        -0.1563036124336265
+      ],
+      "minimum_native_checked_gap_mm": 6.840881587731882
+    },
+    {
+      "role": "candidate",
+      "initial_state_exact": true,
+      "acceleration_rms": 0.5686224133701538,
+      "moment_rms": 0.027041132465554184,
+      "peak_moment_Nm": 0.06111319916459383,
+      "peak_moment_time_s": 0.221,
+      "peak_moment_hand": "right",
+      "acceleration_peak_time_s": 0.41600000000000004,
+      "wheel_zero_times_s": [
+        0.221,
+        0.41600000000000004
+      ],
+      "hold_relative_change_mm": 0.018472970842728764,
+      "hold_z_slope_mmps": [
+        -0.017225193595928067,
+        -0.01394696376990189
+      ],
+      "minimum_native_checked_gap_mm": 7.019690305517298
+    }
+  ],
+  "contact_geometry_replay": [
+    {
+      "role": "baseline",
+      "time_s": 0.22,
+      "wheel_geometric_gaps_um": [
+        0.9548875262879383,
+        0.4694354467404613
+      ],
+      "recomputed_wheel_contacts": 0,
+      "remaining_ground_geoms": [
+        "rear_support_0",
+        "rear_support_1"
+      ],
+      "saved_ground_support_z_N": 263.058399665499,
+      "note": "Geometry/contact replay only; saved support force retained, solver history is not restored."
+    },
+    {
+      "role": "baseline",
+      "time_s": 0.257,
+      "wheel_geometric_gaps_um": [
+        1.8580268394574606,
+        0.6438151448268092
+      ],
+      "recomputed_wheel_contacts": 0,
+      "remaining_ground_geoms": [
+        "rear_support_0",
+        "rear_support_1"
+      ],
+      "saved_ground_support_z_N": 271.16950309458383,
+      "note": "Geometry/contact replay only; saved support force retained, solver history is not restored."
+    },
+    {
+      "role": "candidate",
+      "time_s": 0.221,
+      "wheel_geometric_gaps_um": [
+        2.177438284567575,
+        0.5801375857615587
+      ],
+      "recomputed_wheel_contacts": 0,
+      "remaining_ground_geoms": [
+        "rear_support_0",
+        "rear_support_1"
+      ],
+      "saved_ground_support_z_N": 261.83051326348345,
+      "note": "Geometry/contact replay only; saved support force retained, solver history is not restored."
+    },
+    {
+      "role": "candidate",
+      "time_s": 0.41600000000000004,
+      "wheel_geometric_gaps_um": [
+        0.06749005074455083,
+        0.9469978026267409
+      ],
+      "recomputed_wheel_contacts": 0,
+      "remaining_ground_geoms": [
+        "rear_support_0",
+        "rear_support_1"
+      ],
+      "saved_ground_support_z_N": 281.324402210921,
+      "note": "Geometry/contact replay only; saved support force retained, solver history is not restored."
+    }
+  ],
+  "old_halfstep_contact_counts": [
+    {
+      "label": "space_halfdt",
+      "wheel_zero_times_s": [],
+      "role": "old setting only; not candidate half-step qualification"
+    },
+    {
+      "label": "load_halfdt",
+      "wheel_zero_times_s": [],
+      "role": "old setting only; not candidate half-step qualification"
+    }
+  ],
+  "relative_pose_replay_error_m": 0.0,
+  "reference_traces_exact": true,
+  "not_proven": [
+    "that impratio100 causes or eliminates wheel lift-off",
+    "candidate half-step behavior",
+    "peak convergence",
+    "continuous safety",
+    "overall grasp improvement",
+    "real contact calibration"
+  ]
+}

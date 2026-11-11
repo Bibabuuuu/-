@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "new_physics_runs": 4,
+  "new_physics_steps": 11400,
+  "reused_baseline_runs": 2,
+  "baseline_reference_replay_error": 0.0,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution_contract.json": "461e9f0134198c93a15e57acffd62c926faba7ce222d06ac72ccfd728d8ca010",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execution_summary.json": "943dc8afab217e57e52573873264b7896e3575bb601f0d12118e42e6c78df99d",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\execute_velocity_reference.py": "746458005bc57a2a0b5e9c63aa0aba5fa9150e53c5d5c496c4d043ab41d07615",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\analyze_velocity_execution.py": "379e279f7c2b55b9b1459469068f50774db90d804e91bb125baafb00145e1cfb",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\velocity_reference.py": "e108e0c1c523868280a09f85078ce03d4bc1f40f3edea24b4b00e2ec6e6c28cc",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\velocity_reference_check.json": "225c657cc31121ae2952db540d9f7d9c6cf09200149110bfc676716c41783283",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\velocity_basis_check.json": "e9e66461d0c331e351401d48e149a6634e1ccaa39f0a255b800f8d7fd7dcd921",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-structured-conditioning\\verify_velocity_execution.py": "99ed65af432ec2df8116ae31eac23e07cfa7ff12f3e20bfb6c0bd9440e51e5e3"
+  },
+  "runs": [
+    {
+      "label": "load",
+      "steps": 1900,
+      "reference_replay_error": 0.0,
+      "initial_state_exact": true
+    },
+    {
+      "label": "load_halfdt",
+      "steps": 3800,
+      "reference_replay_error": 0.0,
+      "initial_state_exact": true
+    },
+    {
+      "label": "space",
+      "steps": 1900,
+      "reference_replay_error": 0.0,
+      "initial_state_exact": true
+    },
+    {
+      "label": "space_halfdt",
+      "steps": 3800,
+      "reference_replay_error": 0.0,
+      "initial_state_exact": true
+    }
+  ],
+  "actual_relative_pose_replay_error_m": 0.0,
+  "not_verified": [
+    "material slip",
+    "continuous collision safety",
+    "hardware dynamics",
+    "overall grasp improvement",
+    "real-time planning"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "runs": [
+    {
+      "scene": "low",
+      "folder": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-optimization-pilot\\low\\default_regression",
+      "old": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-upper-buffer\\fast_held",
+      "arrays_equal": {
+        "data": true,
+        "qpos": true,
+        "qvel": true,
+        "ctrl": true,
+        "columns": true
+      },
+      "grasp_arrays_equal": {
+        "time": true,
+        "relative_position": true,
+        "relative_rotation": true,
+        "relative_velocity": true,
+        "contact_load_tcp_hand": true,
+        "force_on_object_world": true,
+        "moment_on_object_about_com_world": true,
+        "hand_normal_force": true,
+        "hand_contact_count": true,
+        "hand_loaded_count": true,
+        "hand_friction_utilization": true,
+        "hand_friction_margin": true,
+        "hand_tangent_speed": true,
+        "hand_peak_contact_tangent_speed": true,
+        "hand_tangent_travel": true,
+        "pad_data": true,
+        "object_angular_velocity_world": true,
+        "object_orientation_world": true,
+        "joint_generalized_force": true
+      },
+      "reference_audit": {
+        "rotation_orthogonality_error": 3.3306690738754696e-15,
+        "initial_joint_error_rad": 0.0,
+        "terminal_reference_speed_norm": 0.0,
+        "terminal_reference_acceleration_norm": 0.0,
+        "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+      }
+    },
+    {
+      "scene": "right_column",
+      "folder": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-optimization-pilot\\right_column\\adapter_regression",
+      "old": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-joint-candidates\\right_column\\buffer",
+      "arrays_equal": {
+        "data": true,
+        "qpos": true,
+        "qvel": true,
+        "ctrl": true,
+        "columns": true
+      },
+      "grasp_arrays_equal": {
+        "time": true,
+        "relative_position": true,
+        "relative_rotation": true,
+        "relative_velocity": true,
+        "contact_load_tcp_hand": true,
+        "force_on_object_world": true,
+        "moment_on_object_about_com_world": true,
+        "hand_normal_force": true,
+        "hand_contact_count": true,
+        "hand_loaded_count": true,
+        "hand_friction_utilization": true,
+        "hand_friction_margin": true,
+        "hand_tangent_speed": true,
+        "hand_peak_contact_tangent_speed": true,
+        "hand_tangent_travel": true,
+        "pad_data": true,
+        "object_angular_velocity_world": true,
+        "object_orientation_world": true,
+        "joint_generalized_force": true
+      },
+      "reference_audit": {
+        "rotation_orthogonality_error": 3.552713678800501e-15,
+        "initial_joint_error_rad": 0.0,
+        "terminal_reference_speed_norm": 0.0,
+        "terminal_reference_acceleration_norm": 0.0,
+        "scope": "shape, finite values, rotation, initial joints and terminal rest; not physical tracking or collision proof"
+      }
+    }
+  ],
+  "passed": true
+}

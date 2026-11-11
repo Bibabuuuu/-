@@ -1,0 +1,8 @@
+{
+  "independent_agent": "/root/p1_right_15cm",
+  "status": "PASS",
+  "maximum_runs": 6,
+  "maximum_steps": 22800,
+  "audit_exit_code": 0,
+  "preflight_sha256": "79bbffd7a57166f089539479ddfda2ddac93482867b5171c9e06c9f508c1acbf"
+}

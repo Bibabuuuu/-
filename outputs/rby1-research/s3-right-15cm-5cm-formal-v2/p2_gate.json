@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "sampled kinematic comparison and numerical integrity",
+  "agent": "/root/p1_right_15cm",
+  "verify_exit_code": 0,
+  "independent_exit_code": 0,
+  "complete": 633,
+  "comparison_completed": true,
+  "physics_steps": 0,
+  "sha256": {
+    "contract.json": "842f163c8868011b5e38d20f066c835f2fc5f21b7044ced7bb91f33c87d10d48",
+    "p1_gate.json": "3e4fc28ce8d0d57785582d9464ec1eb1ad8df941fd2e2e01c994d0a0239974b4",
+    "result.json": "8763ca29fc24c83768302aeac09b2ef3d100224dc8d0840b0f6eca06ac033a77",
+    "B0_dense.json": "a60096ad392fb601365659d7ece0cee80c99e11cfa0d2066661e6f9872222e21",
+    "B1_dense.json": "41dd7e47fccd83504711dd00040c898caf1adc0050a2ab927fd48af44f0a49f3"
+  },
+  "evidence": "Independent selection and raw quadrature/clearance, dense node and stencil checks; cooperative cutoff tail 0.126482 s in B1 phase."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "execution artifact evidence; both fail only wheel contact",
+  "agent": "/root/p1_right_15cm",
+  "exit_code": 0,
+  "steps": 7600,
+  "trajectory_samples": 7602,
+  "gif_frames": 51,
+  "exact_trace_and_grasp_vs_15cm": true,
+  "sha256": {
+    "execution_audit.json": "13eef01b41aa4e12dc6a5981663baf68e1fe9a6116bbc10bd782b922df2bd201",
+    "comparison_to_15cm.json": "f3645e20d08e9cbb72637ad74d053e4deddb6beedf76087fcf2fb41bd0406db7",
+    "B0-B1-\u52a8\u529b\u5b66\u6162\u653e.gif": "94d09c649e5702ad75fc4103ae7a48d62d2b94836db2daf93c3d62b10bb8156c",
+    "contract.json": "002563b293fa13643c10b1c930a3b5cee572d417dd4c28b3e2bc72f2c42fdc45",
+    "preflight.json": "95bb4171c50a491001ed7e0897adfe76a569649f7198951ce99a7a836dbc3658",
+    "p1_gate.json": "4dc99495d17d5c37c46e4f8babf94c01c6f29b2ded962996751874e9ce65a98c"
+  }
+}

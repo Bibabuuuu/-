@@ -1,0 +1,783 @@
+{
+  "scenes": [
+    {
+      "name": "open",
+      "front_x_m": 1.3227186463491254,
+      "z_range_m": [
+        0.0,
+        1.8
+      ],
+      "width_m": 1.4,
+      "thickness_m": 0.08,
+      "face_gap_from_initial_front_m": {
+        "base": 0.394366606647243,
+        "upper": 0.30000000000000004,
+        "payload": 0.3022836097385151
+      }
+    },
+    {
+      "name": "low",
+      "front_x_m": 1.0883520397018824,
+      "z_range_m": [
+        0.0,
+        0.3
+      ],
+      "width_m": 1.4,
+      "thickness_m": 0.08,
+      "face_gap_from_initial_front_m": {
+        "base": 0.16000000000000003,
+        "upper": 0.06563339335275709,
+        "payload": 0.06791700309127213
+      }
+    },
+    {
+      "name": "tall_same_face",
+      "front_x_m": 1.0883520397018824,
+      "z_range_m": [
+        0.0,
+        1.8
+      ],
+      "width_m": 1.4,
+      "thickness_m": 0.08,
+      "face_gap_from_initial_front_m": {
+        "base": 0.16000000000000003,
+        "upper": 0.06563339335275709,
+        "payload": 0.06791700309127213
+      }
+    },
+    {
+      "name": "upper_bar",
+      "front_x_m": 1.1827186463491253,
+      "z_range_m": [
+        0.72,
+        1.02
+      ],
+      "width_m": 1.4,
+      "thickness_m": 0.08,
+      "face_gap_from_initial_front_m": {
+        "base": 0.25436660664724287,
+        "upper": 0.15999999999999992,
+        "payload": 0.16228360973851497
+      }
+    }
+  ],
+  "initial_fronts": {
+    "base": {
+      "x_m": 0.9283520397018824,
+      "geom": "wheel_l_tire"
+    },
+    "upper": {
+      "x_m": 1.0227186463491253,
+      "geom": "link_left_arm_4_LINK_18_collision_4_5"
+    },
+    "payload": {
+      "x_m": 1.0204350366106103,
+      "geom": "payload_beam"
+    }
+  },
+  "initial_states_exact": true,
+  "anchor_time_s": 3.501,
+  "results": [
+    {
+      "scene": "open",
+      "case": "base_only",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.30000000000000004,
+      "min_distance_m": 0.12040696105911808,
+      "closest_group": "upper",
+      "closest_geom": "link_right_arm_4_LINK_11_collision_3_4",
+      "closest_time_s": 5.501,
+      "first_sampled_intersection_s": null,
+      "positive_at_all_samples": true,
+      "intersection_samples": 0,
+      "group_minimum_m": {
+        "base": 0.2147525059537543,
+        "upper": 0.12040696105911808,
+        "payload": 0.12264243730233537
+      },
+      "max_front_x_m": {
+        "base": 1.1079661403953724,
+        "upper": 1.2023116852900073,
+        "payload": 1.20007620904679
+      },
+      "closest_witness": [
+        1.2023116852900073,
+        -0.17313330972040353,
+        1.0758019733809876,
+        1.3227186463491254,
+        -0.17313330972040347,
+        1.0758019733809874
+      ],
+      "native_distance_queries": 3608,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_only_open.xml"
+    },
+    {
+      "scene": "low",
+      "case": "base_only",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.16000000000019052,
+      "min_distance_m": -0.01961391953416739,
+      "closest_group": "base",
+      "closest_geom": "wheel_l_tire",
+      "closest_time_s": 5.501,
+      "first_sampled_intersection_s": 4.0760000000000005,
+      "positive_at_all_samples": false,
+      "intersection_samples": 286,
+      "group_minimum_m": {
+        "base": -0.01961391953416739,
+        "upper": 0.20676378802261927,
+        "payload": 0.4590442087797561
+      },
+      "max_front_x_m": {
+        "base": 1.1079661403953724,
+        "upper": 1.2023116852900073,
+        "payload": 1.20007620904679
+      },
+      "closest_witness": [
+        1.1079659592360345,
+        0.27454444841725345,
+        0.09997180262156169,
+        1.0883520397018822,
+        0.2745444516135473,
+        0.09997177847190306
+      ],
+      "native_distance_queries": 5239,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_only_low.xml"
+    },
+    {
+      "scene": "tall_same_face",
+      "case": "base_only",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.06563339335275709,
+      "min_distance_m": -0.09999807735712696,
+      "closest_group": "payload",
+      "closest_geom": "payload_beam",
+      "closest_time_s": 4.136,
+      "first_sampled_intersection_s": 3.676,
+      "positive_at_all_samples": false,
+      "intersection_samples": 366,
+      "group_minimum_m": {
+        "base": -0.01961381487683105,
+        "upper": -0.09728116880823556,
+        "payload": -0.09999807735712696
+      },
+      "max_front_x_m": {
+        "base": 1.1079661403953724,
+        "upper": 1.2023116852900073,
+        "payload": 1.20007620904679
+      },
+      "closest_witness": [
+        1.0683539623447555,
+        -0.22006041148658753,
+        0.7592647504750997,
+        1.1683520397018825,
+        -0.2200604114865875,
+        0.7592647504750997
+      ],
+      "native_distance_queries": 34637,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_only_tall_same_face.xml"
+    },
+    {
+      "scene": "upper_bar",
+      "case": "base_only",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.16228360973851497,
+      "min_distance_m": -0.017357562697664752,
+      "closest_group": "payload",
+      "closest_geom": "payload_beam",
+      "closest_time_s": 5.081,
+      "first_sampled_intersection_s": 4.091,
+      "positive_at_all_samples": false,
+      "intersection_samples": 283,
+      "group_minimum_m": {
+        "base": 0.5028883372221122,
+        "upper": -0.006544371023810224,
+        "payload": -0.017357562697664752
+      },
+      "max_front_x_m": {
+        "base": 1.1079661403953724,
+        "upper": 1.2023116852900073,
+        "payload": 1.20007620904679
+      },
+      "closest_witness": [
+        1.20007620904679,
+        0.21994133842551017,
+        0.7891108543716416,
+        1.1827186463491253,
+        0.2199413384255102,
+        0.7891108543716416
+      ],
+      "native_distance_queries": 3060,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_only_upper_bar.xml"
+    },
+    {
+      "scene": "open",
+      "case": "shared",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.30000000000000004,
+      "min_distance_m": 0.12041505163551379,
+      "closest_group": "upper",
+      "closest_geom": "link_right_arm_4_LINK_11_collision_3_4",
+      "closest_time_s": 5.501,
+      "first_sampled_intersection_s": null,
+      "positive_at_all_samples": true,
+      "intersection_samples": 0,
+      "group_minimum_m": {
+        "base": 0.24566899275540063,
+        "upper": 0.12041505163551379,
+        "payload": 0.12263465030016651
+      },
+      "max_front_x_m": {
+        "base": 1.077049653593726,
+        "upper": 1.2023035947136116,
+        "payload": 1.2000839960489589
+      },
+      "closest_witness": [
+        1.2023035947136116,
+        -0.17322293412228318,
+        1.075826185454603,
+        1.3227186463491254,
+        -0.17322293412228312,
+        1.075826185454603
+      ],
+      "native_distance_queries": 3608,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\shared_open.xml"
+    },
+    {
+      "scene": "low",
+      "case": "shared",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.16000000000019052,
+      "min_distance_m": 0.01130238610882916,
+      "closest_group": "base",
+      "closest_geom": "wheel_l_tire",
+      "closest_time_s": 5.501,
+      "first_sampled_intersection_s": null,
+      "positive_at_all_samples": true,
+      "intersection_samples": 0,
+      "group_minimum_m": {
+        "base": 0.01130238610882916,
+        "upper": 0.2309753333606008,
+        "payload": 0.45904175006181835
+      },
+      "max_front_x_m": {
+        "base": 1.077049653593726,
+        "upper": 1.2023035947136116,
+        "payload": 1.2000839960489589
+      },
+      "closest_witness": [
+        1.0770496535930532,
+        0.2999465553707758,
+        0.09991496160723029,
+        1.0883520397018824,
+        0.29994655537074577,
+        0.09991496160711853
+      ],
+      "native_distance_queries": 4978,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\shared_low.xml"
+    },
+    {
+      "scene": "tall_same_face",
+      "case": "shared",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.06563339335275709,
+      "min_distance_m": -0.09998986803058994,
+      "closest_group": "payload",
+      "closest_geom": "payload_beam",
+      "closest_time_s": 4.136,
+      "first_sampled_intersection_s": 3.676,
+      "positive_at_all_samples": false,
+      "intersection_samples": 366,
+      "group_minimum_m": {
+        "base": 0.011302386108157751,
+        "upper": -0.09729032141026404,
+        "payload": -0.09998986803058994
+      },
+      "max_front_x_m": {
+        "base": 1.077049653593726,
+        "upper": 1.2023035947136116,
+        "payload": 1.2000839960489589
+      },
+      "closest_witness": [
+        1.0683621716712925,
+        -0.2200583603524755,
+        0.7592629344021388,
+        1.1683520397018825,
+        -0.22005836035247553,
+        0.7592629344021388
+      ],
+      "native_distance_queries": 34636,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\shared_tall_same_face.xml"
+    },
+    {
+      "scene": "upper_bar",
+      "case": "shared",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.16228360973851497,
+      "min_distance_m": -0.01736534969983361,
+      "closest_group": "payload",
+      "closest_geom": "payload_beam",
+      "closest_time_s": 5.061,
+      "first_sampled_intersection_s": 4.091,
+      "positive_at_all_samples": false,
+      "intersection_samples": 283,
+      "group_minimum_m": {
+        "base": 0.5107123096497486,
+        "upper": -0.006605675289948527,
+        "payload": -0.01736534969983361
+      },
+      "max_front_x_m": {
+        "base": 1.077049653593726,
+        "upper": 1.2023035947136116,
+        "payload": 1.2000839960489589
+      },
+      "closest_witness": [
+        1.2000839960489587,
+        0.21994286175255964,
+        0.7891111900998955,
+        1.182718646349125,
+        0.21994286175255964,
+        0.7891111900998955
+      ],
+      "native_distance_queries": 3620,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\shared_upper_bar.xml"
+    },
+    {
+      "scene": "open",
+      "case": "base_fast_buffer",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.30000000000000004,
+      "min_distance_m": 0.12042775775020376,
+      "closest_group": "upper",
+      "closest_geom": "link_right_arm_4_LINK_11_collision_3_4",
+      "closest_time_s": 5.501,
+      "first_sampled_intersection_s": null,
+      "positive_at_all_samples": true,
+      "intersection_samples": 0,
+      "group_minimum_m": {
+        "base": 0.2747404031581878,
+        "upper": 0.12042775775020376,
+        "payload": 0.12262805204516525
+      },
+      "max_front_x_m": {
+        "base": 1.0479782431909386,
+        "upper": 1.2022908885989216,
+        "payload": 1.2000905943039601
+      },
+      "closest_witness": [
+        1.2022908885989216,
+        -0.17333028542854473,
+        1.0758920374638314,
+        1.3227186463491254,
+        -0.17333028542854478,
+        1.0758920374638314
+      ],
+      "native_distance_queries": 3608,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_buffer_open.xml"
+    },
+    {
+      "scene": "low",
+      "case": "base_fast_buffer",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.16000000000019052,
+      "min_distance_m": 0.04037379651162784,
+      "closest_group": "base",
+      "closest_geom": "wheel_l_tire",
+      "closest_time_s": 5.501,
+      "first_sampled_intersection_s": null,
+      "positive_at_all_samples": true,
+      "intersection_samples": 0,
+      "group_minimum_m": {
+        "base": 0.04037379651162784,
+        "upper": 0.2541962198201727,
+        "payload": 0.45904948789837
+      },
+      "max_front_x_m": {
+        "base": 1.0479782431909386,
+        "upper": 1.2022908885989216,
+        "payload": 1.2000905943039601
+      },
+      "closest_witness": [
+        1.0479782431902547,
+        0.2999480595240869,
+        0.09991174559696651,
+        1.0883520397018824,
+        0.29994805952405523,
+        0.09991174559700619
+      ],
+      "native_distance_queries": 5252,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_buffer_low.xml"
+    },
+    {
+      "scene": "tall_same_face",
+      "case": "base_fast_buffer",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.06563339335275709,
+      "min_distance_m": -0.09998700140612725,
+      "closest_group": "payload",
+      "closest_geom": "payload_beam",
+      "closest_time_s": 4.136,
+      "first_sampled_intersection_s": 3.676,
+      "positive_at_all_samples": false,
+      "intersection_samples": 366,
+      "group_minimum_m": {
+        "base": 0.04037379651094497,
+        "upper": -0.09728698898221654,
+        "payload": -0.09998700140612725
+      },
+      "max_front_x_m": {
+        "base": 1.0479782431909386,
+        "upper": 1.2022908885989216,
+        "payload": 1.2000905943039601
+      },
+      "closest_witness": [
+        1.068365038295755,
+        0.21994422631632068,
+        0.7592771546870576,
+        1.1683520397018823,
+        0.21994422631632077,
+        0.7592771546870577
+      ],
+      "native_distance_queries": 34635,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_buffer_tall_same_face.xml"
+    },
+    {
+      "scene": "upper_bar",
+      "case": "base_fast_buffer",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.16228360973851497,
+      "min_distance_m": -0.01737194795483488,
+      "closest_group": "payload",
+      "closest_geom": "payload_beam",
+      "closest_time_s": 5.061,
+      "first_sampled_intersection_s": 4.091,
+      "positive_at_all_samples": false,
+      "intersection_samples": 283,
+      "group_minimum_m": {
+        "base": 0.5196420973236621,
+        "upper": -0.006675952830421754,
+        "payload": -0.01737194795483488
+      },
+      "max_front_x_m": {
+        "base": 1.0479782431909386,
+        "upper": 1.2022908885989216,
+        "payload": 1.2000905943039601
+      },
+      "closest_witness": [
+        1.2000905943039604,
+        0.2199442775797366,
+        0.7891185960643914,
+        1.1827186463491255,
+        0.2199442775797365,
+        0.7891185960643913
+      ],
+      "native_distance_queries": 3620,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_buffer_upper_bar.xml"
+    },
+    {
+      "scene": "open",
+      "case": "base_fast_held",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.30000000000000004,
+      "min_distance_m": 0.18040686753158214,
+      "closest_group": "upper",
+      "closest_geom": "link_right_arm_4_LINK_11_collision_3_4",
+      "closest_time_s": 5.501,
+      "first_sampled_intersection_s": null,
+      "positive_at_all_samples": true,
+      "intersection_samples": 0,
+      "group_minimum_m": {
+        "base": 0.2747427330714248,
+        "upper": 0.18040686753158214,
+        "payload": 0.18264206348062248
+      },
+      "max_front_x_m": {
+        "base": 1.0479759132777016,
+        "upper": 1.1423117788175432,
+        "payload": 1.1400765828685029
+      },
+      "closest_witness": [
+        1.142311778817543,
+        -0.17313004921590772,
+        1.0758019513987729,
+        1.322718646349125,
+        -0.17313004921590772,
+        1.0758019513987729
+      ],
+      "native_distance_queries": 3608,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_held_open.xml"
+    },
+    {
+      "scene": "low",
+      "case": "base_fast_held",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.16000000000019052,
+      "min_distance_m": 0.04037612642486765,
+      "closest_group": "base",
+      "closest_geom": "wheel_l_tire",
+      "closest_time_s": 5.501,
+      "first_sampled_intersection_s": null,
+      "positive_at_all_samples": true,
+      "intersection_samples": 0,
+      "group_minimum_m": {
+        "base": 0.04037612642486765,
+        "upper": 0.26144941631300656,
+        "payload": 0.4590427887858757
+      },
+      "max_front_x_m": {
+        "base": 1.0479759132777016,
+        "upper": 1.1423117788175432,
+        "payload": 1.1400765828685029
+      },
+      "closest_witness": [
+        1.0479759132770146,
+        0.29994814546457493,
+        0.0999180673737952,
+        1.0883520397018822,
+        0.2999481454645435,
+        0.09991806737383285
+      ],
+      "native_distance_queries": 4983,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_held_low.xml"
+    },
+    {
+      "scene": "tall_same_face",
+      "case": "base_fast_held",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.06563339335275709,
+      "min_distance_m": -0.05395973911566076,
+      "closest_group": "upper",
+      "closest_geom": "link_right_arm_4_LINK_11_collision_3_4",
+      "closest_time_s": 5.501,
+      "first_sampled_intersection_s": 3.681,
+      "positive_at_all_samples": false,
+      "intersection_samples": 365,
+      "group_minimum_m": {
+        "base": 0.04037612642418198,
+        "upper": -0.05395973911566076,
+        "payload": -0.05172454316662045
+      },
+      "max_front_x_m": {
+        "base": 1.0479759132777016,
+        "upper": 1.1423117788175432,
+        "payload": 1.1400765828685029
+      },
+      "closest_witness": [
+        1.1423117788175434,
+        -0.1731300492159078,
+        1.075801951398773,
+        1.0883520397018827,
+        -0.17313004921590783,
+        1.0758019513987733
+      ],
+      "native_distance_queries": 25462,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_held_tall_same_face.xml"
+    },
+    {
+      "scene": "upper_bar",
+      "case": "base_fast_held",
+      "sampled_states": 401,
+      "initial_min_distance_m": 0.16228360973851497,
+      "min_distance_m": 0.04264206348062238,
+      "closest_group": "payload",
+      "closest_geom": "payload_beam",
+      "closest_time_s": 4.751,
+      "first_sampled_intersection_s": null,
+      "positive_at_all_samples": true,
+      "intersection_samples": 0,
+      "group_minimum_m": {
+        "base": 0.5196366178290828,
+        "upper": 0.05345199498542891,
+        "payload": 0.04264206348062238
+      },
+      "max_front_x_m": {
+        "base": 1.0479759132777016,
+        "upper": 1.1423117788175432,
+        "payload": 1.1400765828685029
+      },
+      "closest_witness": [
+        1.1400765828685029,
+        -0.22005539574850663,
+        0.7891603151079893,
+        1.1827186463491253,
+        -0.22005539574850658,
+        0.7891603151079895
+      ],
+      "native_distance_queries": 5171,
+      "scene_xml": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage31\\base_fast_held_upper_bar.xml"
+    }
+  ],
+  "continuous_reference_checks": [
+    {
+      "scene": "open",
+      "rigid_carry_pose_first_contact_translation_m": 0.2999999955389672,
+      "reference_v_mps": 0.4,
+      "reference_J_mps3": 5.0,
+      "minimum_distance_in_same_jerk_family_m": 0.1131370849898476,
+      "reference_critical_A_mps2": 0.2768890070831702,
+      "common_A0p6_distance_m": 0.15733333333333335,
+      "common_A0p6_duration_s": 0.7866666666666667,
+      "common_A0p6_min_geometry_distance_m": 0.14266666666666675,
+      "common_A0p6_positive_at_samples": true,
+      "qualification": "Rigid translation of the recorded initial carry pose, not dynamic execution or a global feasibility bound. A/J are shaping settings."
+    },
+    {
+      "scene": "low",
+      "rigid_carry_pose_first_contact_translation_m": 0.1599999999537272,
+      "reference_v_mps": 0.4,
+      "reference_J_mps3": 5.0,
+      "minimum_distance_in_same_jerk_family_m": 0.1131370849898476,
+      "reference_critical_A_mps2": 0.5857864378664903,
+      "common_A0p6_distance_m": 0.15733333333333335,
+      "common_A0p6_duration_s": 0.7866666666666667,
+      "common_A0p6_min_geometry_distance_m": 0.002666666669002987,
+      "common_A0p6_positive_at_samples": true,
+      "qualification": "Rigid translation of the recorded initial carry pose, not dynamic execution or a global feasibility bound. A/J are shaping settings."
+    },
+    {
+      "scene": "tall_same_face",
+      "rigid_carry_pose_first_contact_translation_m": 0.0656333866888576,
+      "reference_v_mps": 0.4,
+      "reference_J_mps3": 5.0,
+      "minimum_distance_in_same_jerk_family_m": 0.1131370849898476,
+      "reference_critical_A_mps2": null,
+      "common_A0p6_distance_m": 0.15733333333333335,
+      "common_A0p6_duration_s": 0.7866666666666667,
+      "common_A0p6_min_geometry_distance_m": -0.08941633024206119,
+      "common_A0p6_positive_at_samples": false,
+      "qualification": "Rigid translation of the recorded initial carry pose, not dynamic execution or a global feasibility bound. A/J are shaping settings."
+    },
+    {
+      "scene": "upper_bar",
+      "rigid_carry_pose_first_contact_translation_m": 0.16228360608790132,
+      "reference_v_mps": 0.4,
+      "reference_J_mps3": 5.0,
+      "minimum_distance_in_same_jerk_family_m": 0.1131370849898476,
+      "reference_critical_A_mps2": 0.5742427946715007,
+      "common_A0p6_distance_m": 0.15733333333333335,
+      "common_A0p6_duration_s": 0.7866666666666667,
+      "common_A0p6_min_geometry_distance_m": 0.004950276405181642,
+      "common_A0p6_positive_at_samples": true,
+      "qualification": "Rigid translation of the recorded initial carry pose, not dynamic execution or a global feasibility bound. A/J are shaping settings."
+    }
+  ],
+  "primitive_checks": {
+    "sphere_box_positive_m": 0.30000000000000004,
+    "box_box_negative_m": -0.05000000000000002,
+    "passed": true
+  },
+  "active_collision_geoms": {
+    "base": 3,
+    "upper": 502,
+    "payload": 3
+  },
+  "native_ccd_enabled": true,
+  "source_summary_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\stage26\\summary.json": "7266117b5337eff801bcb6812eb44a0e4a4dfd34260842888ecc15455f8e4165"
+  },
+  "input_sha256": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154757_768066_s26_base_only\\scene.xml": "7bc23e54a46da3a4c40269836818c1f9c403bd3cd5cd908eaa31c9e2bff64ae9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154757_768066_s26_base_only\\joint_trace.npz": "e2ce08788515b29e95d3654b215fab3f96e9d1ecbe3c83d0d1788c8da3690d1a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154757_768066_s26_base_only\\initialization.json": "95774035ac257f992a5f497aadc265e6cfdcb3e5fd2695263193ee56585ed1bf",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154757_768066_s26_base_only\\result.json": "fd5f3ef86c1643a26335c8dd1831d31d6fe200eb7c4dffc9129fa2eb701fb5b4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154848_221240_s26_shared\\scene.xml": "7bc23e54a46da3a4c40269836818c1f9c403bd3cd5cd908eaa31c9e2bff64ae9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154848_221240_s26_shared\\joint_trace.npz": "db964230d2b0d3e234d9ac0fc89b0c832b99c320f8cea0788cf843e1648f70bf",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154848_221240_s26_shared\\initialization.json": "95774035ac257f992a5f497aadc265e6cfdcb3e5fd2695263193ee56585ed1bf",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154848_221240_s26_shared\\result.json": "42616933019c139afe7eac046ada218b9d5e5bed45204e750bfe46ab54f757e2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154921_522582_s26_base_fast_buffer\\scene.xml": "7bc23e54a46da3a4c40269836818c1f9c403bd3cd5cd908eaa31c9e2bff64ae9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154921_522582_s26_base_fast_buffer\\joint_trace.npz": "d5b426fae97b84564495d302228c4e67954dc9c402f320db7b268d988cae55aa",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154921_522582_s26_base_fast_buffer\\initialization.json": "95774035ac257f992a5f497aadc265e6cfdcb3e5fd2695263193ee56585ed1bf",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154921_522582_s26_base_fast_buffer\\result.json": "a63e42918f465b01a1eb07d21ebb9d4ada6436b73639e3946e8ce448a13c9bac",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154955_127035_s26_base_fast_held\\scene.xml": "7bc23e54a46da3a4c40269836818c1f9c403bd3cd5cd908eaa31c9e2bff64ae9",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154955_127035_s26_base_fast_held\\joint_trace.npz": "59a1eb9c491d8fda10425d136f8938ef2ed8c9ce2d59357578d06fe1861442d2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154955_127035_s26_base_fast_held\\initialization.json": "95774035ac257f992a5f497aadc265e6cfdcb3e5fd2695263193ee56585ed1bf",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\buffer_runs\\20261101T154955_127035_s26_base_fast_held\\result.json": "2007da918bea9ac10eda3c4e61ada7150fd255b9868b311c1e94dc14e0f74f6e"
+  },
+  "frozen_checks": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_buffer.py": {
+      "expected": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "actual": "6b141264b18c4a48f7be38ab4578ff436026b75ec78522651eced31184604a68",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\grasp_observation.py": {
+      "expected": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "actual": "2b540980610115170ca513c1b8a1481c520cbf5cf2f32e86eb4b16aabaf7196a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\state_stop_reference.py": {
+      "expected": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "actual": "c8d815bf9157e1342fe7f7d68c7b34856c359363396f1d0dc1510e1b542e6276",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_candidates.py": {
+      "expected": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "actual": "9077c1b0af418605d45fc43f8ff6c2af96e0b4462f19b250c19b6072694e64a6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\motion_distribution.py": {
+      "expected": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "actual": "aea59b1de0ff5ec9c1ae220aaced92fd4b42f471feacdf15d893fb9044e0aa3a",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\buffer_reference.py": {
+      "expected": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "actual": "e72ce7c3229ab4ec7967350e82f8835464b3af850fce3fb60154bf7f71663f52",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\payload_wrench.py": {
+      "expected": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "actual": "bf86dc678a69a3725dc581020708d1cda47b91edc061511be18bd19b33a87cf8",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\load_sharing.py": {
+      "expected": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "actual": "af2c4ef161e0bfdfa67729ed87f25f1de03d562e1b2234c982b4ae73f0712331",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\control_uncertainty.py": {
+      "expected": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "actual": "69f44264f9aa33343aed7a2a83aacd40c364595d5f1c23966e6fc630e4d9fbb6",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_profiles.py": {
+      "expected": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "actual": "09f7a8a4cd120a6bfbe6795ad883619fcaf1a28a9a29a15e8d10d0c77d9fb828",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\static_payload.py": {
+      "expected": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "actual": "835fb4acd7ca907b1cd15ecee24265213adefe4632781e94b52e92288ceb0034",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\model\\research_model.xml": {
+      "expected": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "actual": "a66346c0839622d469dd4739d5f2a172ab8a1424d86537b43a571925c3c0195e",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\payload_model\\payload_scene.xml": {
+      "expected": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "actual": "d6701100d6fd49deb2541093ca6fca63acf4ffa676d8cbc8e3a3fe29bb824154",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\run_payload.py": {
+      "expected": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "actual": "0d426bd07b83fa7d9e9aa55be086826dd5cbfef845aee8a89e706febeeb15906",
+      "unchanged": true
+    },
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\simulation\\rby1\\stop_allocation.py": {
+      "expected": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "actual": "64a4d50a8d98e81325c54b58587c4b4ec8e67df1f185191525e1b7c235199662",
+      "unchanged": true
+    }
+  },
+  "new_physical_runs": 0,
+  "replayed_state_scene_pairs": 6416,
+  "wall_s": 12.041721300000063,
+  "scope": "Saved-state and interpolated geometry with static finite boxes; intersection rejects this replay, not a simulated collision response.",
+  "sampling": "201 saved states plus 200 MuJoCo position-manifold midpoints per case, 3.501-5.501 s; no continuous collision certificate.",
+  "documentation": [
+    "https://mujoco.readthedocs.io/en/stable/APIreference/APIfunctions.html#mj-geomdistance",
+    "https://mujoco.readthedocs.io/en/stable/computation.html#collision-detection"
+  ],
+  "innovation_established": false
+}

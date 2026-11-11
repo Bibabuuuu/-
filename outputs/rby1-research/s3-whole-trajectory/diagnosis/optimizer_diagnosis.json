@@ -1,0 +1,2051 @@
+{
+  "scope": "finite probes of frozen callbacks and saved history; no new solve and no physical steps",
+  "callback_evaluations": 250,
+  "wall_s": 7.397124299997813,
+  "samples": [
+    {
+      "objective": "rms",
+      "evaluation": 0,
+      "summary": {
+        "rms_acceleration_mps2": 0.6516632829891265,
+        "peak_acceleration_mps2": 1.025800069847806,
+        "peak_predicted_TCP_moment_Nm": 0.043773332428708685,
+        "minimum_reference_gap_m": 0.006267832277180974,
+        "closure_norm_max_SI": [
+          8.238311188599651e-16,
+          8.918686000694025e-16,
+          2.775557561563699e-16,
+          0.0,
+          1.5313432992918543e-15,
+          0.0
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": 0.0,
+        "upper_joint_excursion_norm_rad": 0.0,
+        "final_turn_deg": -10.0
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": 0.9999999999903851,
+          "violated_components": 0,
+          "worst_time_s": 0.23232026364098832,
+          "worst_index": [
+            17,
+            0,
+            1
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": 0.9999999999884622,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0,
+            2
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.6179935498539275,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.617994210146073,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 1.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": 0.00020447255488775795,
+          "violated_components": 0,
+          "worst_time_s": 0.4801285448580425,
+          "worst_index": [
+            35,
+            1
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08296601857406616,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.031620300463607975,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 0.0644339277380197,
+          "violated_components": 0,
+          "worst_time_s": 0.1239041406085271,
+          "worst_index": [
+            8,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "objective": "rms",
+      "evaluation": 69,
+      "summary": {
+        "rms_acceleration_mps2": 1.7540076872954975,
+        "peak_acceleration_mps2": 3.1493027849931727,
+        "peak_predicted_TCP_moment_Nm": 0.1290410170810366,
+        "minimum_reference_gap_m": 0.005875651152108971,
+        "closure_norm_max_SI": [
+          0.00011270584048355635,
+          0.00018149538489603708,
+          0.0009477388244078556,
+          0.0015112794970663945,
+          0.015469702767700837,
+          0.02516500989195855
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -101.60024795926327,
+        "upper_joint_excursion_norm_rad": 0.06786820556500205,
+        "final_turn_deg": -9.999999999983206
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": -65.9504126918135,
+          "violated_components": 183,
+          "worst_time_s": 0.46464052728197663,
+          "worst_index": [
+            34,
+            4,
+            1
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": -101.60024795926327,
+          "violated_components": 142,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            4,
+            1
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.4549250794538864,
+          "violated_components": 0,
+          "worst_time_s": 0.557568632738372,
+          "worst_index": [
+            40,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.510285592485307,
+          "violated_components": 0,
+          "worst_time_s": 0.21683224606492243,
+          "worst_index": [
+            16,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.8747228430655484,
+          "violated_components": 0,
+          "worst_time_s": 0.17036819333672476,
+          "worst_index": [
+            11,
+            1
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": -0.007639149946552289,
+          "violated_components": 3,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            2
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08296601857406571,
+          "violated_components": 0,
+          "worst_time_s": 0.23232026364098832,
+          "worst_index": [
+            17,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": -1.1102230246251565e-15,
+          "violated_components": 0,
+          "worst_time_s": 0.43611390675744877,
+          "worst_index": [
+            32,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": 1.6793233470480118e-12,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.035991180864235583,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 0.0672156251431496,
+          "violated_components": 0,
+          "worst_time_s": 0.4956165624341084,
+          "worst_index": [
+            36,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "objective": "rms",
+      "evaluation": 365,
+      "summary": {
+        "rms_acceleration_mps2": 0.5601862494990211,
+        "peak_acceleration_mps2": 0.874710254258234,
+        "peak_predicted_TCP_moment_Nm": 0.037472970843246474,
+        "minimum_reference_gap_m": 0.0074952359163902105,
+        "closure_norm_max_SI": [
+          9.936277416172456e-06,
+          9.531179942256403e-05,
+          3.0210221482978744e-05,
+          0.0002888946547608866,
+          0.0001727553072452122,
+          0.0014881696395933138
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -6.661338147750939e-16,
+        "upper_joint_excursion_norm_rad": 0.03708915826900716,
+        "final_turn_deg": -9.439781930294698
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": 0.11445269494605981,
+          "violated_components": 0,
+          "worst_time_s": 0.4956165624341084,
+          "worst_index": [
+            36,
+            5,
+            1
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": 0.11022502755475994,
+          "violated_components": 0,
+          "worst_time_s": 0.10841612303246122,
+          "worst_index": [
+            7,
+            5,
+            1
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.3504782326367106,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.617994210146073,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.9619501679066993,
+          "violated_components": 0,
+          "worst_time_s": 0.32524836909738364,
+          "worst_index": [
+            23,
+            0
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": 0.024752545339072497,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            2
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08296601857406616,
+          "violated_components": 0,
+          "worst_time_s": 0.23232026364098832,
+          "worst_index": [
+            17,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": -6.661338147750939e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.6040326854665696,
+          "worst_index": [
+            43,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": 0.056021806970530164,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.07653658959006782,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 0.10117005582454242,
+          "violated_components": 0,
+          "worst_time_s": 0.4801285448580425,
+          "worst_index": [
+            35,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "objective": "rms",
+      "evaluation": 2767,
+      "summary": {
+        "rms_acceleration_mps2": 0.551868524764891,
+        "peak_acceleration_mps2": 0.8122784817778189,
+        "peak_predicted_TCP_moment_Nm": 0.04428070081196737,
+        "minimum_reference_gap_m": 0.006258903823302889,
+        "closure_norm_max_SI": [
+          2.4700356122479046e-06,
+          9.810310425662236e-05,
+          1.3269393821789463e-05,
+          0.00033817568389402195,
+          0.0002525583347590731,
+          0.0021763046817848057
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -0.0886492973995161,
+        "upper_joint_excursion_norm_rad": 0.1252023152772701,
+        "final_turn_deg": -10.000000000060815
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": -0.0886492973995161,
+          "violated_components": 7,
+          "worst_time_s": 0.2478082812170542,
+          "worst_index": [
+            18,
+            4,
+            1
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": -0.07568399903080092,
+          "violated_components": 7,
+          "worst_time_s": 0.5111045800101743,
+          "worst_index": [
+            37,
+            4,
+            2
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.454955437713591,
+          "violated_components": 0,
+          "worst_time_s": 0.18585621091279064,
+          "worst_index": [
+            13,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.3000372188635105,
+          "violated_components": 0,
+          "worst_time_s": 0.44915250970591075,
+          "worst_index": [
+            33,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.8305494290722448,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            5
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": 2.590347732606829e-05,
+          "violated_components": 0,
+          "worst_time_s": 0.5111045800101743,
+          "worst_index": [
+            37,
+            1
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08296604647155381,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": -2.936894042404603e-06,
+          "violated_components": 2,
+          "worst_time_s": 0.6040326854665696,
+          "worst_index": [
+            43,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": -6.0815796842916825e-12,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.18245557772932774,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 4.7124526503239395e-12,
+          "violated_components": 0,
+          "worst_time_s": 0.5420806151623061,
+          "worst_index": [
+            39,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "objective": "rms",
+      "evaluation": 2833,
+      "summary": {
+        "rms_acceleration_mps2": 0.5518685287322335,
+        "peak_acceleration_mps2": 0.8122784851831859,
+        "peak_predicted_TCP_moment_Nm": 0.04428068509855877,
+        "minimum_reference_gap_m": 0.006258910495196799,
+        "closure_norm_max_SI": [
+          2.469761251261131e-06,
+          9.811987046137388e-05,
+          1.3258733882993339e-05,
+          0.0003382842362646516,
+          0.00025245644810523155,
+          0.0021762888324954547
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -0.08902676879196925,
+        "upper_joint_excursion_norm_rad": 0.1252023039942239,
+        "final_turn_deg": -10.000000000060815
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": -0.08902676879196925,
+          "violated_components": 7,
+          "worst_time_s": 0.2478082812170542,
+          "worst_index": [
+            18,
+            4,
+            1
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": -0.07570796145285552,
+          "violated_components": 7,
+          "worst_time_s": 0.5111045800101743,
+          "worst_index": [
+            37,
+            4,
+            2
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.454955437713591,
+          "violated_components": 0,
+          "worst_time_s": 0.18585621091279064,
+          "worst_index": [
+            13,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.3000372188635105,
+          "violated_components": 0,
+          "worst_time_s": 0.44915250970591075,
+          "worst_index": [
+            33,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.8305494290722448,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            5
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": 2.6036915204263184e-05,
+          "violated_components": 0,
+          "worst_time_s": 0.5111045800101743,
+          "worst_index": [
+            37,
+            1
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08296601857406605,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": -4.440892098500626e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.06195207030426355,
+          "worst_index": [
+            4,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": -6.0815796842916825e-12,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.18245557772932774,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 4.7124526503239395e-12,
+          "violated_components": 0,
+          "worst_time_s": 0.5420806151623061,
+          "worst_index": [
+            39,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "objective": "moment",
+      "evaluation": 0,
+      "summary": {
+        "rms_acceleration_mps2": 0.6516632829891265,
+        "peak_acceleration_mps2": 1.025800069847806,
+        "peak_predicted_TCP_moment_Nm": 0.043773332428708685,
+        "minimum_reference_gap_m": 0.006267832277180974,
+        "closure_norm_max_SI": [
+          8.238311188599651e-16,
+          8.918686000694025e-16,
+          2.775557561563699e-16,
+          0.0,
+          1.5313432992918543e-15,
+          0.0
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": 0.0,
+        "upper_joint_excursion_norm_rad": 0.0,
+        "final_turn_deg": -10.0
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": 0.9999999999903851,
+          "violated_components": 0,
+          "worst_time_s": 0.23232026364098832,
+          "worst_index": [
+            17,
+            0,
+            1
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": 0.9999999999884622,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0,
+            2
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.6179935498539275,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.617994210146073,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 1.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": 0.00020447255488775795,
+          "violated_components": 0,
+          "worst_time_s": 0.4801285448580425,
+          "worst_index": [
+            35,
+            1
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08296601857406616,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.031620300463607975,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 0.0644339277380197,
+          "violated_components": 0,
+          "worst_time_s": 0.1239041406085271,
+          "worst_index": [
+            8,
+            0
+          ]
+        },
+        "moment_epigraph": {
+          "minimum_scaled": -5.551115123125783e-15,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "objective": "moment",
+      "evaluation": 50,
+      "summary": {
+        "rms_acceleration_mps2": 0.6516631585380581,
+        "peak_acceleration_mps2": 1.0257988820511124,
+        "peak_predicted_TCP_moment_Nm": 0.04377327935916977,
+        "minimum_reference_gap_m": 0.0062678080879368095,
+        "closure_norm_max_SI": [
+          7.855367300016406e-16,
+          9.263039411520114e-16,
+          3.5327080320462685e-16,
+          0.0,
+          1.3334236103577202e-15,
+          0.0
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": 0.0,
+        "upper_joint_excursion_norm_rad": 3.337701481864741e-08,
+        "final_turn_deg": -10.0
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": 0.9999999999903851,
+          "violated_components": 0,
+          "worst_time_s": 0.17036819333672476,
+          "worst_index": [
+            11,
+            0,
+            1
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": 0.9999999999903851,
+          "violated_components": 0,
+          "worst_time_s": 0.278784316369186,
+          "worst_index": [
+            20,
+            0,
+            2
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.6179935498539275,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.617994210146073,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.9999998644009908,
+          "violated_components": 0,
+          "worst_time_s": 0.3407363866734495,
+          "worst_index": [
+            24,
+            1
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": 0.00020398877000447554,
+          "violated_components": 0,
+          "worst_time_s": 0.4801285448580425,
+          "worst_index": [
+            35,
+            1
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08296601857406616,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.031620300463607975,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 0.0644339277380197,
+          "violated_components": 0,
+          "worst_time_s": 0.1239041406085271,
+          "worst_index": [
+            8,
+            0
+          ]
+        },
+        "moment_epigraph": {
+          "minimum_scaled": 1.212371453784833e-06,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "objective": "moment",
+      "evaluation": 70,
+      "summary": {
+        "rms_acceleration_mps2": 0.6892118720649618,
+        "peak_acceleration_mps2": 1.0592554754445962,
+        "peak_predicted_TCP_moment_Nm": 0.034588654983554915,
+        "minimum_reference_gap_m": 0.005763266478694924,
+        "closure_norm_max_SI": [
+          1.3631744508399206e-05,
+          0.0001661404982596777,
+          5.6600626213675505e-05,
+          0.0004670364353413918,
+          0.0004308529895187522,
+          0.002551556529672778
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -1.8326750301854107,
+        "upper_joint_excursion_norm_rad": 0.016275041687640393,
+        "final_turn_deg": -9.883411132022502
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": -1.8326750301854107,
+          "violated_components": 21,
+          "worst_time_s": 0.38720043940164717,
+          "worst_index": [
+            27,
+            4,
+            0
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": -1.090753591088733,
+          "violated_components": 12,
+          "worst_time_s": 0.20650690101421185,
+          "worst_index": [
+            15,
+            4,
+            0
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.5634895081138374,
+          "violated_components": 0,
+          "worst_time_s": 0.43366449212984487,
+          "worst_index": [
+            31,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.60220866189521,
+          "violated_components": 0,
+          "worst_time_s": 0.17036819333672476,
+          "worst_index": [
+            11,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.9784613242198276,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            0
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": -0.009886843414833226,
+          "violated_components": 12,
+          "worst_time_s": 0.5111045800101743,
+          "worst_index": [
+            37,
+            2
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.08296601857406594,
+          "violated_components": 0,
+          "worst_time_s": 0.18340679628518677,
+          "worst_index": [
+            12,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": -4.440892098500626e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": 0.011658886797749735,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.043886237714004905,
+          "violated_components": 0,
+          "worst_time_s": 0.30976035152131776,
+          "worst_index": [
+            22,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 0.07336047011841118,
+          "violated_components": 0,
+          "worst_time_s": 0.4956165624341084,
+          "worst_index": [
+            36,
+            0
+          ]
+        },
+        "moment_epigraph": {
+          "minimum_scaled": -0.1504086136215581,
+          "violated_components": 50,
+          "worst_time_s": 0.40268845697771305,
+          "worst_index": [
+            28,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "objective": "moment",
+      "evaluation": 2805,
+      "summary": {
+        "rms_acceleration_mps2": 1.9482129552431837,
+        "peak_acceleration_mps2": 4.219505958341405,
+        "peak_predicted_TCP_moment_Nm": 0.004946213756924966,
+        "minimum_reference_gap_m": 0.006256796248321856,
+        "closure_norm_max_SI": [
+          2.341053441212109e-06,
+          1.948889371692929e-05,
+          1.187512441267563e-05,
+          0.00011406297966379845,
+          0.00026612282189909635,
+          0.00244770539258568
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -0.1077781609652988,
+        "upper_joint_excursion_norm_rad": 0.3050354763133473,
+        "final_turn_deg": -5.951948571973635
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": -0.1077781609652988,
+          "violated_components": 9,
+          "worst_time_s": 0.4130138020284237,
+          "worst_index": [
+            29,
+            4,
+            0
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": -0.08735127403010168,
+          "violated_components": 15,
+          "worst_time_s": 0.3407363866734495,
+          "worst_index": [
+            24,
+            4,
+            1
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.5117806915858907,
+          "violated_components": 0,
+          "worst_time_s": 0.418176474553779,
+          "worst_index": [
+            30,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.435102320816077,
+          "violated_components": 0,
+          "worst_time_s": 0.20650690101421185,
+          "worst_index": [
+            15,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.3267315820867295,
+          "violated_components": 0,
+          "worst_time_s": 0.139392158184593,
+          "worst_index": [
+            9,
+            2
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": -1.6248022294586273e-05,
+          "violated_components": 1,
+          "worst_time_s": 0.3717124218255813,
+          "worst_index": [
+            26,
+            2
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.0829660185738964,
+          "violated_components": 0,
+          "worst_time_s": 0.20134422848885652,
+          "worst_index": [
+            14,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": -7.773781618425346e-13,
+          "violated_components": 0,
+          "worst_time_s": 0.10841612303246122,
+          "worst_index": [
+            7,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": 0.40480514280263646,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.5394251377212733,
+          "violated_components": 0,
+          "worst_time_s": 0.40268845697771305,
+          "worst_index": [
+            28,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 0.2773882785372208,
+          "violated_components": 0,
+          "worst_time_s": 0.06195207030426355,
+          "worst_index": [
+            4,
+            0
+          ]
+        },
+        "moment_epigraph": {
+          "minimum_scaled": -0.0035775673576188965,
+          "violated_components": 24,
+          "worst_time_s": 0.5420806151623061,
+          "worst_index": [
+            39,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "objective": "moment",
+      "evaluation": 2874,
+      "summary": {
+        "rms_acceleration_mps2": 1.9482129552431837,
+        "peak_acceleration_mps2": 4.219505958341405,
+        "peak_predicted_TCP_moment_Nm": 0.004946213756924966,
+        "minimum_reference_gap_m": 0.006256796248321856,
+        "closure_norm_max_SI": [
+          2.341053441212109e-06,
+          1.948889371692929e-05,
+          1.187512441267563e-05,
+          0.00011406297966379845,
+          0.00026612282189909635,
+          0.00244770539258568
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -0.1077781609652988,
+        "upper_joint_excursion_norm_rad": 0.3050354763133473,
+        "final_turn_deg": -5.951948571973635
+      },
+      "groups": {
+        "closure_minus": {
+          "minimum_scaled": -0.1077781609652988,
+          "violated_components": 9,
+          "worst_time_s": 0.4130138020284237,
+          "worst_index": [
+            29,
+            4,
+            0
+          ]
+        },
+        "closure_plus": {
+          "minimum_scaled": -0.08735127403010168,
+          "violated_components": 15,
+          "worst_time_s": 0.3407363866734495,
+          "worst_index": [
+            24,
+            4,
+            1
+          ]
+        },
+        "joint_lower": {
+          "minimum_scaled": 2.5117806915858907,
+          "violated_components": 0,
+          "worst_time_s": 0.418176474553779,
+          "worst_index": [
+            30,
+            0
+          ]
+        },
+        "joint_upper": {
+          "minimum_scaled": 2.435102320816077,
+          "violated_components": 0,
+          "worst_time_s": 0.20650690101421185,
+          "worst_index": [
+            15,
+            0
+          ]
+        },
+        "joint_speed": {
+          "minimum_scaled": 0.3267315820867295,
+          "violated_components": 0,
+          "worst_time_s": 0.139392158184593,
+          "worst_index": [
+            9,
+            2
+          ]
+        },
+        "obstacle_gap": {
+          "minimum_scaled": -1.6248022294586273e-05,
+          "violated_components": 1,
+          "worst_time_s": 0.3717124218255813,
+          "worst_index": [
+            26,
+            2
+          ]
+        },
+        "self_penetration": {
+          "minimum_scaled": 0.1,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "speed_lower": {
+          "minimum_scaled": 0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "speed_upper": {
+          "minimum_scaled": 1.3877787807814457e-16,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "acceleration_lower": {
+          "minimum_scaled": 0.0829660185738964,
+          "violated_components": 0,
+          "worst_time_s": 0.20134422848885652,
+          "worst_index": [
+            14,
+            0
+          ]
+        },
+        "acceleration_upper": {
+          "minimum_scaled": -0.0,
+          "violated_components": 0,
+          "worst_time_s": 0.0,
+          "worst_index": [
+            0,
+            0
+          ]
+        },
+        "jerk": {
+          "minimum_scaled": -7.773781618425346e-13,
+          "violated_components": 0,
+          "worst_time_s": 0.10841612303246122,
+          "worst_index": [
+            7,
+            0
+          ]
+        },
+        "turn": {
+          "minimum_scaled": 0.40480514280263646,
+          "violated_components": 0,
+          "worst_time_s": 0.6195207030426355,
+          "worst_index": [
+            44,
+            0
+          ]
+        },
+        "yaw_speed": {
+          "minimum_scaled": 0.5394251377212733,
+          "violated_components": 0,
+          "worst_time_s": 0.40268845697771305,
+          "worst_index": [
+            28,
+            0
+          ]
+        },
+        "yaw_acceleration": {
+          "minimum_scaled": 0.2773882785372208,
+          "violated_components": 0,
+          "worst_time_s": 0.06195207030426355,
+          "worst_index": [
+            4,
+            0
+          ]
+        },
+        "moment_epigraph": {
+          "minimum_scaled": -0.0035765673576188955,
+          "violated_components": 24,
+          "worst_time_s": 0.5420806151623061,
+          "worst_index": [
+            39,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "gradient_checks": [
+    {
+      "objective": "rms",
+      "evaluation": 0,
+      "constraints": 4860,
+      "active_rows_at_1e_7": 29,
+      "active_near_zero_gradient_rows": 4,
+      "row_gradient_norm_quantiles": [
+        0.00022486584228635368,
+        0.05617358605873892,
+        0.49789402532782995,
+        3996.096217069725,
+        29615.906611542123
+      ],
+      "closure_singular_values": [
+        117727.64165613131,
+        116945.59042524209,
+        105539.68708012579,
+        104791.32367283941,
+        57049.77458624253,
+        54088.534407952386,
+        28272.16181418531,
+        27816.280993472523,
+        20498.49393806704,
+        19448.117639981054,
+        14065.996000787885,
+        10776.772757143855,
+        10228.148357590075,
+        8055.895496662224,
+        7645.627278598822,
+        5052.69828957084,
+        2654.029490045233,
+        1991.9937724525444,
+        0.002133507680650456,
+        0.0015636191402923767,
+        0.0009125461287739241,
+        0.0007639384276070442,
+        0.0005607766422291613,
+        0.00041695573309777096,
+        0.00032674325837015584,
+        0.00030935562281239463,
+        0.00020632986858056294,
+        0.00017950613512575427,
+        6.521969824272852e-05,
+        6.233452535044388e-05,
+        5.7025379106504785e-05,
+        5.4982079963463534e-05,
+        5.308908393311318e-05,
+        5.089713812297523e-05,
+        4.988437133694007e-05,
+        4.747575831318539e-05,
+        4.484273744410607e-05,
+        4.410922378363571e-05,
+        4.197807348420706e-05,
+        4.0861303568830786e-05,
+        3.845347515975373e-05,
+        3.6093138788236656e-05,
+        3.501530514503304e-05,
+        3.3806855535333496e-05,
+        3.293361013890541e-05,
+        3.097428046092828e-05,
+        3.035578978256233e-05,
+        2.905252109438221e-05,
+        2.8825498914137935e-05,
+        2.7585916868876087e-05,
+        2.658932365048243e-05,
+        2.4336945284147472e-05,
+        2.3376282610929966e-05,
+        2.251936523200892e-05,
+        2.1912808706266785e-05,
+        2.1363746249130776e-05,
+        1.975774931506113e-05,
+        1.8107240728189794e-05,
+        1.7993928669943214e-05,
+        1.666599853351319e-05,
+        1.6488143363709242e-05,
+        1.5207229779727626e-05,
+        1.3879124277846202e-05,
+        1.3027230922542062e-05,
+        1.2079088246092106e-05,
+        9.942606554223346e-06,
+        8.6511366310299e-06,
+        7.307481726835419e-06
+      ],
+      "closure_numerical_rank_at_relative_1e_6": 18,
+      "closure_numerical_rank_at_relative_1e_8": 20,
+      "directional_checks": [
+        {
+          "central_step": 1e-05,
+          "forward_vs_central_relative_l2": 2.0683380348396936e-08,
+          "forward_vs_central_max_scaled": 0.00017730167064655689
+        },
+        {
+          "central_step": 1e-06,
+          "forward_vs_central_relative_l2": 2.068139829945106e-08,
+          "forward_vs_central_max_scaled": 0.00017730170429786085
+        },
+        {
+          "central_step": 1e-07,
+          "forward_vs_central_relative_l2": 2.21292823936992e-08,
+          "forward_vs_central_max_scaled": 0.00017730170429786085
+        },
+        {
+          "central_step": 1e-05,
+          "forward_vs_central_relative_l2": 3.8656719993603654e-08,
+          "forward_vs_central_max_scaled": 0.00013521201594812737
+        },
+        {
+          "central_step": 1e-06,
+          "forward_vs_central_relative_l2": 3.868862091291436e-08,
+          "forward_vs_central_max_scaled": 0.0001353458310404676
+        },
+        {
+          "central_step": 1e-07,
+          "forward_vs_central_relative_l2": 5.1110863021793165e-08,
+          "forward_vs_central_max_scaled": 0.00016602407100663186
+        }
+      ]
+    },
+    {
+      "objective": "rms",
+      "evaluation": 365,
+      "constraints": 4860,
+      "active_rows_at_1e_7": 28,
+      "active_near_zero_gradient_rows": 4,
+      "row_gradient_norm_quantiles": [
+        0.0002248657312852068,
+        0.056173586168187295,
+        0.49789402716588305,
+        3993.2179777606802,
+        29559.96485988255
+      ],
+      "closure_singular_values": [
+        116734.76661884565,
+        115807.55996714321,
+        106390.53051616147,
+        105503.70095524593,
+        57055.8784293833,
+        54100.557119330835,
+        28265.64375679644,
+        27814.354953882874,
+        20501.73063783348,
+        19450.954847313005,
+        14066.680615371284,
+        10771.347092858712,
+        10221.535847317915,
+        8066.175228636329,
+        7653.987599617851,
+        5053.301648472973,
+        2653.88539224039,
+        1991.9913861984992,
+        124.46245041987336,
+        110.09567313920104,
+        74.81263544966717,
+        54.778601517861624,
+        42.063074418704886,
+        29.040361923042042,
+        18.265834889051206,
+        15.695672440877347,
+        8.304096356358473,
+        4.876886796755909,
+        4.017010622781672,
+        3.534208614043457,
+        3.328365978779808,
+        2.5074466251468195,
+        2.2508512597671793,
+        1.3433451767174465,
+        1.05963671458836,
+        1.0230279117640355,
+        0.8117338652424144,
+        0.6392947888069708,
+        0.33727331829671614,
+        0.2548616995825882,
+        0.20002136254718092,
+        0.04665628396941658,
+        0.041929525827234526,
+        0.040670505304398065,
+        0.03872958778582469,
+        0.025164614811349045,
+        0.021309913059183984,
+        0.014445035127854923,
+        0.010489254392914933,
+        0.008761299435005254,
+        0.004265826045436438,
+        0.003904715575047488,
+        0.0017136772553464252,
+        0.0007702414402713877,
+        6.677996136714901e-05,
+        4.5867418592584226e-05,
+        4.4703241413070993e-05,
+        4.113827417236207e-05,
+        3.630248988183279e-05,
+        3.4369052592658814e-05,
+        3.120923533362913e-05,
+        2.9123700691534334e-05,
+        2.6063675548513685e-05,
+        2.5938525272909402e-05,
+        2.0731438161718302e-05,
+        1.139700295865416e-05,
+        8.791911602304962e-06,
+        8.609167883371728e-06
+      ],
+      "closure_numerical_rank_at_relative_1e_6": 41,
+      "closure_numerical_rank_at_relative_1e_8": 53,
+      "directional_checks": [
+        {
+          "central_step": 1e-05,
+          "forward_vs_central_relative_l2": 2.357552756281324e-08,
+          "forward_vs_central_max_scaled": 0.00016555297111153777
+        },
+        {
+          "central_step": 1e-06,
+          "forward_vs_central_relative_l2": 2.3590920529434056e-08,
+          "forward_vs_central_max_scaled": 0.0001653898345921334
+        },
+        {
+          "central_step": 1e-07,
+          "forward_vs_central_relative_l2": 2.555025234681008e-08,
+          "forward_vs_central_max_scaled": 0.00016616210587017122
+        },
+        {
+          "central_step": 1e-05,
+          "forward_vs_central_relative_l2": 2.939129478231128e-08,
+          "forward_vs_central_max_scaled": 0.00020953740687446043
+        },
+        {
+          "central_step": 1e-06,
+          "forward_vs_central_relative_l2": 2.946687441838321e-08,
+          "forward_vs_central_max_scaled": 0.0002104916213170327
+        },
+        {
+          "central_step": 1e-07,
+          "forward_vs_central_relative_l2": 3.0358998040646696e-08,
+          "forward_vs_central_max_scaled": 0.0002104342227653433
+        }
+      ]
+    },
+    {
+      "objective": "moment",
+      "evaluation": 2874,
+      "constraints": 4860,
+      "active_rows_at_1e_7": 28,
+      "active_near_zero_gradient_rows": 4,
+      "row_gradient_norm_quantiles": [
+        0.00022486584228635368,
+        0.05617358605873892,
+        0.49789402606364414,
+        4012.0833204103246,
+        30149.665121936545
+      ],
+      "closure_singular_values": [
+        119474.60473874655,
+        115259.23345782571,
+        111994.24612299669,
+        109494.5128341085,
+        57753.406358952976,
+        53932.4925843977,
+        29679.331582783423,
+        28100.902574819986,
+        20736.40833645132,
+        19514.249218735775,
+        14853.71951716649,
+        10854.584716194926,
+        10180.96339148778,
+        8199.998574874005,
+        7651.803873223265,
+        5054.684194774942,
+        3342.7569285940735,
+        2640.45090215731,
+        2391.9749014475674,
+        2004.0408550518798,
+        1962.7340781248151,
+        1711.6721821850676,
+        1407.8444200895688,
+        1034.0913750926736,
+        500.400237569404,
+        304.48817013339,
+        247.68348823906564,
+        188.27329861895743,
+        142.6253120597834,
+        131.20908482961255,
+        118.87386444185869,
+        63.26027530973112,
+        43.977807539033414,
+        32.65009973894137,
+        22.529032870922066,
+        14.75968044628135,
+        9.816174596750946,
+        8.182198739609381,
+        7.088472598117361,
+        4.839713714439161,
+        4.599887139998835,
+        1.8140459070324393,
+        0.47917617798284434,
+        0.3269207740596477,
+        0.2583168239985097,
+        0.22359419595312388,
+        0.20460168713300128,
+        0.17650852495110295,
+        0.15030521041525874,
+        0.11138442640172347,
+        0.08187523182285493,
+        0.009220179342641622,
+        0.004547249204690499,
+        0.003129742679775341,
+        0.002160853037036824,
+        0.001394421710539348,
+        0.0008079482925081274,
+        0.00022625968844420567,
+        0.0001418798994935079,
+        0.00011524756674159235,
+        0.00011122087776409995,
+        0.00010177436464346567,
+        9.167353210084338e-05,
+        8.402490749820146e-05,
+        7.281935765372201e-05,
+        4.0295952091505725e-05,
+        3.7893632874660086e-05,
+        2.7715103849559836e-05
+      ],
+      "closure_numerical_rank_at_relative_1e_6": 49,
+      "closure_numerical_rank_at_relative_1e_8": 56,
+      "directional_checks": [
+        {
+          "central_step": 1e-05,
+          "forward_vs_central_relative_l2": 9.690761740224278e-09,
+          "forward_vs_central_max_scaled": 0.00010197332903771894
+        },
+        {
+          "central_step": 1e-06,
+          "forward_vs_central_relative_l2": 9.927382430141002e-09,
+          "forward_vs_central_max_scaled": 0.00011870320236084808
+        },
+        {
+          "central_step": 1e-07,
+          "forward_vs_central_relative_l2": 2.668250078845859e-08,
+          "forward_vs_central_max_scaled": 0.0003025141377293039
+        },
+        {
+          "central_step": 1e-05,
+          "forward_vs_central_relative_l2": 6.489757882224462e-08,
+          "forward_vs_central_max_scaled": 0.0002559862722009143
+        },
+        {
+          "central_step": 1e-06,
+          "forward_vs_central_relative_l2": 6.48512280404182e-08,
+          "forward_vs_central_max_scaled": 0.0002576837365921847
+        },
+        {
+          "central_step": 1e-07,
+          "forward_vs_central_relative_l2": 1.2964832719966075e-07,
+          "forward_vs_central_max_scaled": 0.0006493519829859906
+        }
+      ]
+    }
+  ],
+  "first_trial_linearization": [
+    {
+      "objective": "rms",
+      "evaluation": 69,
+      "linearized_minimum_scaled": -1.8189894035458565e-12,
+      "actual_minimum_scaled": -101.60024795926327,
+      "linearized_closure_minimum": -1.8189894035458565e-12,
+      "actual_closure_minimum": -101.60024795926327
+    },
+    {
+      "objective": "moment",
+      "evaluation": 70,
+      "linearized_minimum_scaled": -3.0229152514493762e-12,
+      "actual_minimum_scaled": -1.8326750301854107,
+      "linearized_closure_minimum": -3.0229152514493762e-12,
+      "actual_closure_minimum": -1.8326750301854107
+    }
+  ],
+  "unavailable": "iteration callbacks and KKT multipliers were not saved; no unique root-cause or stationarity proof",
+  "sources": {
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\moment\\history.json": "eedecf91bcf45ecaaed2b9c1fc3ba9753954a773fd75dfc389f5cc0f619d54ee",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\rms\\history.json": "a7434b1610f8743bb1c71828217cde72f5f744e8f2a54bcd6f7921afa9b9f88a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\moment\\plan.json": "676e0288a40423a0bd3926b19b39ff8c318647a5a0c0be84880a0023240a9db4",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\rms\\plan.json": "8a88843b2dc9b958b9e2fc6f336d769516107c799b48fe809a5224b46a38d7a3",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\trace.npz": "fb34c9f32e520632a44265a7b83247aab7aa6cd4b0f210e39b96fe45618cd4b2",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline\\grasp_trace.npz": "94a51d60926e30ff9d33d490a61ce620cf676fde40bf9c86285d768daf7c7682",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\trace.npz": "1a033a997aba3ec7d33cc3adc325b49ef4c6bd5dc07e7d8d4f3b5afa454eaf94",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\baseline_halfdt\\grasp_trace.npz": "ba7e513e5871b411dcea209e74887fc1f0a0ecf2a0a33e382f0d33234e282a15",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\trace.npz": "75e545a7ff6e9217a8886e2f02414351406b19d051ca6e19d7998523b927811e",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms\\grasp_trace.npz": "b8b3b49bfad9e5727be0b2a94134bdecbc707a34921e629f0ecfbdb92114613a",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\trace.npz": "0ecdaa2130ee233a3a632c73d7bdb940e99aaf6b2fc4df6730d0e91d2f5c3150",
+    "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-whole-trajectory\\execution\\rms_halfdt\\grasp_trace.npz": "f24152f68eb748eb3c12f8f74a0cb74bf6d5cfe7471504991dab3c56a1a3e84d"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_right_15cm",
+  "contract_sha256": "1a2786a609ec28e1b14f2c1f539765106280686fd2671729d90ec37f1a9d24fe",
+  "preflight_sha256": "f9ff37a0cccafad98fc10e8b239cb909cb5f9eff9e8c395ef5198c98aa2f3f7d",
+  "exit_code": 0,
+  "evidence": "912 hashes and all 2541 prepared command nodes; original candidate binding, joint/closure and geometry, all 3801 ticks each, no online IK."
+}

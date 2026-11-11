@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "agent": "/root/p1_right_15cm",
+  "exit_code": 0,
+  "source_count": 894,
+  "contract_sha256": "1689673c8cc60e993fb7750b845fbebc0f73c9401d9c9f8828d5db52f5039d02",
+  "evidence": "508 native initial geom distances, obstacle position only, exactly four archived starts; no outer/physics."
+}

@@ -1,0 +1,38 @@
+{
+  "status": "review draft only; original vector, Jacobian, qualification and source code unchanged",
+  "data_evaluations_reused": 52,
+  "original_constraint_count": 4860,
+  "signed_jerk_candidate_constraint_count": 4905,
+  "original_vs_min_signed_max_error": 0.0,
+  "feasible_jerk_sets_identical_on_all_probes": true,
+  "mathematical_equivalence": "1-abs(j)/5>=-tol iff both 1-j/5>=-tol and 1+j/5>=-tol, with the same tol.",
+  "worst_original_jerk_row": 4692,
+  "worst_time_s": 0.18340679628518677,
+  "nominal_jerk_at_worst_row": -1.0106319285440498e-15,
+  "original_folded_mixed_derivative_remainder": 7.299870913906371,
+  "zero_crossing_formula_remainder": -7.299870914090337,
+  "signed_mixed_derivative_remainder": 4.664837405243816e-10,
+  "signed_mixed_value_remainder": 4.664837405243815e-16,
+  "full_4905_candidate_mixed_derivative_remainder": 6.407545792859093e-05,
+  "full_candidate_residual_note": "Remaining maximum is from numerical closure residuals, which are ideally constant; this is not a global derivative certificate.",
+  "proposed_solver_view": {
+    "row_count": 4928,
+    "composition": "Original 4860, replace 45 folded jerk by 90 signed rows, omit only four fixed active endpoint rows in solver view, add old 24 continuous velocity/a/jerk and 3 angular-extrema checks.",
+    "new_continuous_block_mixed_derivative_remainder": 1.6397462735352881,
+    "new_angular_block_mixed_derivative_remainder": 1.383510105368302e-07,
+    "continuous_caveat": "Extrema envelopes are piecewise smooth; one mixed check does not certify all directions. Original full rows and all original qualification remain authoritative."
+  },
+  "new_IK_calls": 0,
+  "new_QP_calls": 0,
+  "new_reference_evaluations": 0,
+  "new_outer_optimizer_calls": 0,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "source_sha256": {
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\review_signed_jerk.py": "722b715990a7d6269b97345e6ef936e50f2dff46a4114a54dd5f93b66f8487b0",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\contract.json": "7b8ac11dbcd504b0de087068edecee95a317ad1aec8e4d3ed71715f390290e46",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\result.json": "8eed52be9db1b578b43a03244a486697bd843c0fa83018542d0837eed0f29d52",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\jacobian.npz": "ac742763f8d5207f825852bf888230bb8b221e3e87502416d6e2d86a657f4e01",
+    "C:\\Users\\14737\\Documents\\ChatGPT\\研究方向讨论\\.reference-jacobian-diagnostic\\signed_jerk_review.npz": "3e244bce34680d16e53fa0318884ac21b39f79b0b396f61e3f9d643aff875b5d"
+  }
+}

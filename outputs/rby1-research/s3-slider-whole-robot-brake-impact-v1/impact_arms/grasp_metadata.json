@@ -1,0 +1,69 @@
+{
+  "sample_interval_s": 0.0005,
+  "trigger_s": 0.0,
+  "trigger_sample_index": 0,
+  "hands": [
+    "left",
+    "right"
+  ],
+  "pad_names": [
+    "ee_finger_r1_pad",
+    "ee_finger_r2_pad",
+    "ee_finger_l1_pad",
+    "ee_finger_l2_pad"
+  ],
+  "pad_sides": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "pad_columns": [
+    "normal_force_N",
+    "contact_count",
+    "loaded_count",
+    "force_weighted_tangent_speed_mps",
+    "cumulative_tangent_travel_m",
+    "max_friction_utilization",
+    "min_tangential_margin_N"
+  ],
+  "joint_names": [
+    "right_wheel",
+    "left_wheel",
+    "torso_0",
+    "torso_1",
+    "torso_2",
+    "torso_3",
+    "torso_4",
+    "torso_5",
+    "right_arm_0",
+    "right_arm_1",
+    "right_arm_2",
+    "right_arm_3",
+    "right_arm_4",
+    "right_arm_5",
+    "right_arm_6",
+    "left_arm_0",
+    "left_arm_1",
+    "left_arm_2",
+    "left_arm_3",
+    "left_arm_4",
+    "left_arm_5",
+    "left_arm_6",
+    "gripper_finger_r1",
+    "gripper_finger_r2",
+    "gripper_finger_l1",
+    "gripper_finger_l2",
+    "head_0",
+    "head_1"
+  ],
+  "force_recording_epsilon_N": 0.05,
+  "wrench_convention": "Contact contribution of object on hand, about each EE site, expressed in that hand frame; [Fx,Fy,Fz,Mx,My,Mz]. Not a wrist sensor including gripper dynamics.",
+  "sliding_convention": "Object-minus-pad point velocity in the contact tangent plane; normal-force-weighted speed per fixed pad geometry. Right-endpoint integral is tangential travel proxy, not net pose slip or a tracked material point.",
+  "inactive_contact_policy": "Undefined speed/friction entries are NaN; travel excludes unloaded intervals, separately observable in force/count arrays.",
+  "force_epsilon_role": "Masks near-zero denominators and labels recorded loaded contacts, not a physical grasp-success threshold.",
+  "generalized_force_units": "Nm for revolute joints, N for prismatic fingers; actual qfrc_actuator, not velocity command.",
+  "contact_rows": 18309,
+  "samples": 2401,
+  "qualification": "Read-only live telemetry; no model or controller changes."
+}

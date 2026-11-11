@@ -1,0 +1,38 @@
+{
+  "nominal": {
+    "post_onset_reserve_p05": 0.7088575185837217,
+    "min_post_onset_reserve": 0.6646537586156895,
+    "longest_below_floor_ticks": 0,
+    "peak_hidden_force_N": 0.08365713981831568,
+    "peak_wall_force_N": 0.0,
+    "retained_grasp_and_execution": true,
+    "max_relative_translation_mm": 0.4356695423358359,
+    "selected": false
+  },
+  "screened": [
+    {
+      "scale": 8.0,
+      "label": "contact-stress-scale8-v1",
+      "post_onset_reserve_p05": 0.6543078813472702,
+      "min_post_onset_reserve": 0.022243706584140086,
+      "longest_below_floor_ticks": 5,
+      "peak_hidden_force_N": 0.6692571185465255,
+      "peak_wall_force_N": 5.624039685911412,
+      "retained_grasp_and_execution": true,
+      "max_relative_translation_mm": 0.4547168585249202,
+      "selected": false
+    },
+    {
+      "scale": 16.0,
+      "label": "contact-stress-scale16-v1",
+      "post_onset_reserve_p05": 0.41075533508844964,
+      "min_post_onset_reserve": 0.0017980322655234988,
+      "longest_below_floor_ticks": 7,
+      "peak_hidden_force_N": 1.338514237093051,
+      "peak_wall_force_N": 13.073666156409734,
+      "retained_grasp_and_execution": true,
+      "max_relative_translation_mm": 0.48712537875606665,
+      "selected": true
+    }
+  ]
+}

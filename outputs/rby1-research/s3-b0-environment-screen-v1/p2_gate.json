@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "reviewer": "/root/p1_environment_screen",
+  "scope": "read-only validation of saved finite reference screening, not physics, full-domain safety, figures or manuscript delivery",
+  "contract_sha256": "dd0358170cd54546697d041adc88724759407d504635413d98d872d730763104",
+  "summary_sha256": "ac3ea4c53b15e16cc0e9c60110e37ad020645cf583537c48edfcffd169f106fa",
+  "candidate_metrics_csv_sha256": "bd8214717718775d24439a119d3848345b2ada5e0078247c74a0607a48b20ea4",
+  "verify_exit_code": 0,
+  "independent_data_geometry_check_exit_code": 0,
+  "manifest_hash_check_exit_code": 0,
+  "source_hashes_checked": 25,
+  "rows_and_reference_hashes_checked": 276,
+  "direct_manifest_input_hashes_checked": 3,
+  "sampled_reference_geometry_checks": 8,
+  "sampled_minimum_distance_error_limit_m": 1e-10,
+  "low": {"held_admitted": 11, "adjustable_admitted": 49, "held_pareto": 7, "adjustable_pareto": 20, "held_admitted_base_pairs": 11, "adjustable_admitted_base_pairs": 11, "buffer_rescue_pairs": 0},
+  "upper_bar": {"held_admitted": 17, "adjustable_admitted": 40, "held_pareto": 7, "adjustable_pareto": 18, "held_admitted_base_pairs": 17, "adjustable_admitted_base_pairs": 17, "buffer_rescue_pairs": 0},
+  "blocking_findings": [],
+  "known_limitations": ["elapsed_active_s excludes terminal summary and CSV serialization; not strict complete-job wall time"],
+  "new_physics_steps": 0,
+  "new_IK": 0,
+  "new_QP": 0
+}

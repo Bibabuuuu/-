@@ -1,0 +1,56 @@
+{
+  "edge_m": 0.12,
+  "mass_kg": 1.0,
+  "inertia_diagonal_kgm2": [
+    0.0024,
+    0.0024,
+    0.0024
+  ],
+  "grasp": "Existing per-hand top-bottom pinch; same wrist poses.",
+  "joints": {
+    "gripper_finger_l1": {
+      "range_m": [
+        -0.05,
+        0.0
+      ],
+      "fully_open_q_m": -0.05,
+      "required_q_m": -0.06005
+    },
+    "gripper_finger_r1": {
+      "range_m": [
+        -0.05,
+        0.0
+      ],
+      "fully_open_q_m": -0.05,
+      "required_q_m": -0.06005
+    },
+    "gripper_finger_l2": {
+      "range_m": [
+        0.0,
+        0.05
+      ],
+      "fully_open_q_m": 0.05,
+      "required_q_m": 0.06005
+    },
+    "gripper_finger_r2": {
+      "range_m": [
+        0.0,
+        0.05
+      ],
+      "fully_open_q_m": 0.05,
+      "required_q_m": 0.06005
+    }
+  },
+  "pad_to_cube_signed_distance_m": {
+    "ee_finger_l1_pad": -0.010000201327786451,
+    "ee_finger_l2_pad": -0.00999981578896958,
+    "ee_finger_r1_pad": -0.010000200929827117,
+    "ee_finger_r2_pad": -0.009999816156362806
+  },
+  "allowed_inner_aperture_m": 0.1,
+  "required_inner_aperture_m": 0.12,
+  "feasible": false,
+  "new_physics_runs": 0,
+  "new_physics_steps": 0,
+  "reason": "A 120 mm cube exceeds the current 100 mm per-gripper aperture. Fully opened pads overlap the cube by approximately 10 mm per side."
+}

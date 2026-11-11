@@ -1,0 +1,88 @@
+{
+  "cases": {
+    "straight060": {
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-loose-load-v1\\scene_1.xml",
+      "speed": 0.6,
+      "curvature": 0.0,
+      "motion": [
+        [
+          1.675,
+          1.675,
+          12.0
+        ],
+        [
+          2.0,
+          2.0,
+          12.0
+        ],
+        [
+          2.0,
+          1.25,
+          12.0
+        ]
+      ],
+      "mu": [
+        0.1,
+        0.15,
+        0.2
+      ]
+    },
+    "arc040": {
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-low-speed-arc-v1\\v040\\scene_1.xml",
+      "speed": 0.4,
+      "curvature": -0.5,
+      "motion": [
+        [
+          1.5,
+          1.5,
+          8.0
+        ],
+        [
+          1.5,
+          1.125,
+          8.0
+        ]
+      ],
+      "mu": [
+        0.1,
+        0.15,
+        0.2
+      ]
+    },
+    "straight095": {
+      "scene": "C:\\Users\\14737\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\rby1-research\\s3-kuavo-wheel-straight-arc-v1\\v095_reserve\\scene_1.xml",
+      "speed": 0.95,
+      "curvature": 0.0,
+      "motion": [
+        [
+          1.85,
+          1.85,
+          20.0
+        ],
+        [
+          2.1,
+          1.85,
+          20.0
+        ]
+      ],
+      "mu": [
+        0.15,
+        0.2,
+        0.25
+      ]
+    }
+  },
+  "pitches_deg": [
+    -4.0,
+    -2.0,
+    0.0,
+    2.0,
+    4.0
+  ],
+  "ramp_s": 0.14,
+  "deadline_s": 0.65,
+  "geometry_margin_m": 0.01,
+  "order": "shared COM acceleration RMS, then minimum absolute attitude, then clearance",
+  "friction_only_difference": true,
+  "physical_priority": "robust selection switch with excess >= .008 and constrained reserve >= .002; one per scene, otherwise retain null and test no new dynamics"
+}

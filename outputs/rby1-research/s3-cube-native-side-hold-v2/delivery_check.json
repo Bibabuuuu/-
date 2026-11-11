@@ -1,0 +1,27 @@
+{
+  "verified": true,
+  "static_passed": false,
+  "brake_started": false,
+  "native_load_geometries": [
+    "ee_right_EE_BODY_collision_1_2",
+    "ee_finger_r2_EE_FINGER_collision_2_4",
+    "ee_left_EE_BODY_collision_1_2",
+    "ee_left_EE_BODY_collision_2_3",
+    "ee_left_EE_BODY_collision_4_5",
+    "ee_left_EE_BODY_collision_8_9",
+    "ee_finger_l2_EE_FINGER_collision_2_4"
+  ],
+  "maximum_relative_displacement_mm": 5.76502124763104,
+  "maximum_relative_rotation_deg": 3.769942689282289,
+  "source_hashes": {
+    "scene.xml": "33c4a602adfec0c2bedeea4c6aa9b55dbc0e3b7ede8107b1cc85c48b2c705487",
+    "preflight.json": "98f209e1cfe227d985be2f10c2deed0ddc6b3a383d5e33366b8addc50aafa8e7",
+    "static_check.json": "78c0f66cd4f966c063b24dfc19fe8e0a5a95312afddb5f9c6abed09d2cd70594"
+  },
+  "full_trial_maximum_relative_displacement_mm": 67.34696168187996,
+  "final_world_rotation_from_start_deg": 39.4270437331635,
+  "maximum_world_rotation_from_start_deg": 50.508338284488794,
+  "visible_mesh_audit_stride_s": 0.025,
+  "sampled_visible_mesh_maximum_intrusion_mm": 0.0,
+  "visible_mesh_intrusion_at": null
+}

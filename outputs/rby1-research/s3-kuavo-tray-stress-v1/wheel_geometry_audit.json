@@ -1,0 +1,610 @@
+{
+  "n1_b0": [
+    {
+      "t": 0.8150000000000001,
+      "tire_geometry_distance_m": [
+        4.091830917568595e-07,
+        4.0644832083325255e-09
+      ],
+      "ground_fz_N": 590.9573167037797,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.8345,
+      "tire_geometry_distance_m": [
+        8.135060279440554e-07,
+        4.34077200558991e-07
+      ],
+      "ground_fz_N": 589.909048350316,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.9415,
+      "tire_geometry_distance_m": [
+        5.580631946139336e-07,
+        1.8618600204634017e-07
+      ],
+      "ground_fz_N": 576.565505287062,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0055,
+      "tire_geometry_distance_m": [
+        1.165412616549455e-07,
+        9.445549702113976e-08
+      ],
+      "ground_fz_N": 564.8743226007102,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0745,
+      "tire_geometry_distance_m": [
+        1.0432567279228255e-06,
+        9.163281571716864e-07
+      ],
+      "ground_fz_N": 547.4206314867719,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.199,
+      "tire_geometry_distance_m": [
+        8.814021576208919e-07,
+        6.29598975551704e-07
+      ],
+      "ground_fz_N": 502.9280632347883,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.4425000000000001,
+      "tire_geometry_distance_m": [
+        7.273560746062779e-07,
+        1.495568862641683e-07
+      ],
+      "ground_fz_N": 399.37744144785745,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    }
+  ],
+  "n1_hold": [
+    {
+      "t": 0.8150000000000001,
+      "tire_geometry_distance_m": [
+        4.091830917568595e-07,
+        4.0644832083325255e-09
+      ],
+      "ground_fz_N": 590.9573167037797,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.8345,
+      "tire_geometry_distance_m": [
+        8.135060279440554e-07,
+        4.34077200558991e-07
+      ],
+      "ground_fz_N": 589.909048350316,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.9415,
+      "tire_geometry_distance_m": [
+        5.580631946139336e-07,
+        1.8618600204634017e-07
+      ],
+      "ground_fz_N": 576.565505287062,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0055,
+      "tire_geometry_distance_m": [
+        1.165412616549455e-07,
+        9.445549702113976e-08
+      ],
+      "ground_fz_N": 564.8743226007102,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0745,
+      "tire_geometry_distance_m": [
+        1.0432567279228255e-06,
+        9.163281571716864e-07
+      ],
+      "ground_fz_N": 547.4206314867719,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.199,
+      "tire_geometry_distance_m": [
+        8.814021576208919e-07,
+        6.29598975551704e-07
+      ],
+      "ground_fz_N": 502.9280632347883,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.4425000000000001,
+      "tire_geometry_distance_m": [
+        7.273560746062779e-07,
+        1.495568862641683e-07
+      ],
+      "ground_fz_N": 399.37744144785745,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    }
+  ],
+  "extreme\\n1_b0": [
+    {
+      "t": 0.751,
+      "tire_geometry_distance_m": [
+        3.265530110069248e-07,
+        2.1705315730868868e-07
+      ],
+      "ground_fz_N": 622.5456111085962,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.9025,
+      "tire_geometry_distance_m": [
+        9.410651574670581e-08,
+        1.396859622415647e-07
+      ],
+      "ground_fz_N": 607.9713858508037,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.9135,
+      "tire_geometry_distance_m": [
+        5.256305783130077e-07,
+        9.992875014408487e-07
+      ],
+      "ground_fz_N": 605.5197711417643,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.923,
+      "tire_geometry_distance_m": [
+        2.4873425547022876e-07,
+        1.8045166812197255e-07
+      ],
+      "ground_fz_N": 605.0113895745762,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.995,
+      "tire_geometry_distance_m": [
+        5.20918343960286e-07,
+        8.881414608474802e-07
+      ],
+      "ground_fz_N": 591.2441394142447,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0045,
+      "tire_geometry_distance_m": [
+        8.635080348262658e-07,
+        4.818550504159802e-07
+      ],
+      "ground_fz_N": 586.56574851922,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0375,
+      "tire_geometry_distance_m": [
+        4.3105145262900546e-07,
+        1.9837132048117212e-07
+      ],
+      "ground_fz_N": 583.5054525948234,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0465,
+      "tire_geometry_distance_m": [
+        1.067143316116348e-06,
+        9.80993248161921e-08
+      ],
+      "ground_fz_N": 573.4141867646049,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0675000000000001,
+      "tire_geometry_distance_m": [
+        1.2483614675179444e-06,
+        3.7396185555149675e-07
+      ],
+      "ground_fz_N": 576.3209940565141,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.106,
+      "tire_geometry_distance_m": [
+        1.0404405512420833e-06,
+        1.1582209051563819e-07
+      ],
+      "ground_fz_N": 553.0392609869792,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.1315,
+      "tire_geometry_distance_m": [
+        3.0406492060319756e-08,
+        4.40950172625465e-08
+      ],
+      "ground_fz_N": 552.065604335505,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.1405,
+      "tire_geometry_distance_m": [
+        1.655443817194513e-06,
+        9.207995553817128e-07
+      ],
+      "ground_fz_N": 536.8056568715284,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.1735,
+      "tire_geometry_distance_m": [
+        1.5615492983400703e-07,
+        6.460678836778255e-07
+      ],
+      "ground_fz_N": 531.254445238853,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.182,
+      "tire_geometry_distance_m": [
+        3.1752149672048535e-07,
+        1.7804944663774025e-06
+      ],
+      "ground_fz_N": 522.966116876112,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.2095,
+      "tire_geometry_distance_m": [
+        6.204865471148846e-07,
+        7.301666526959849e-08
+      ],
+      "ground_fz_N": 515.7631789170151,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.218,
+      "tire_geometry_distance_m": [
+        1.295863998773683e-06,
+        4.728555814403901e-07
+      ],
+      "ground_fz_N": 500.9564283893276,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.412,
+      "tire_geometry_distance_m": [
+        6.325327965156502e-07,
+        6.468036255202758e-08
+      ],
+      "ground_fz_N": 426.01252786375187,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.4575,
+      "tire_geometry_distance_m": [
+        1.3198197814229262e-06,
+        3.1679396896022727e-07
+      ],
+      "ground_fz_N": 363.02340203290026,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    }
+  ],
+  "wide\\n1_b0": [
+    {
+      "t": 0.751,
+      "tire_geometry_distance_m": [
+        3.265530110069248e-07,
+        2.1705315730868868e-07
+      ],
+      "ground_fz_N": 622.5456111085962,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.9025,
+      "tire_geometry_distance_m": [
+        9.410651574670581e-08,
+        1.396859622415647e-07
+      ],
+      "ground_fz_N": 607.9713858508037,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.9135,
+      "tire_geometry_distance_m": [
+        5.256305783130077e-07,
+        9.992875014408487e-07
+      ],
+      "ground_fz_N": 605.5197711417643,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.923,
+      "tire_geometry_distance_m": [
+        2.4873425547022876e-07,
+        1.8045166812197255e-07
+      ],
+      "ground_fz_N": 605.0113895745762,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 0.995,
+      "tire_geometry_distance_m": [
+        5.20918343960286e-07,
+        8.881414608474802e-07
+      ],
+      "ground_fz_N": 591.2441394142447,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0045,
+      "tire_geometry_distance_m": [
+        8.635080348262658e-07,
+        4.818550504159802e-07
+      ],
+      "ground_fz_N": 586.56574851922,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0375,
+      "tire_geometry_distance_m": [
+        4.3105145262900546e-07,
+        1.9837132048117212e-07
+      ],
+      "ground_fz_N": 583.5054525948234,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0465,
+      "tire_geometry_distance_m": [
+        1.067143316116348e-06,
+        9.80993248161921e-08
+      ],
+      "ground_fz_N": 573.4141867646049,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.0675000000000001,
+      "tire_geometry_distance_m": [
+        1.2483614675179444e-06,
+        3.7396185555149675e-07
+      ],
+      "ground_fz_N": 576.3209940565141,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.106,
+      "tire_geometry_distance_m": [
+        1.0404405512420833e-06,
+        1.1582209051563819e-07
+      ],
+      "ground_fz_N": 553.0392609869792,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.1315,
+      "tire_geometry_distance_m": [
+        3.0406492060319756e-08,
+        4.40950172625465e-08
+      ],
+      "ground_fz_N": 552.065604335505,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.1405,
+      "tire_geometry_distance_m": [
+        1.655443817194513e-06,
+        9.207995553817128e-07
+      ],
+      "ground_fz_N": 536.8056568715284,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.1735,
+      "tire_geometry_distance_m": [
+        1.5615492983400703e-07,
+        6.460678836778255e-07
+      ],
+      "ground_fz_N": 531.254445238853,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.182,
+      "tire_geometry_distance_m": [
+        3.1752149672048535e-07,
+        1.7804944663774025e-06
+      ],
+      "ground_fz_N": 522.966116876112,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.2095,
+      "tire_geometry_distance_m": [
+        6.204865471148846e-07,
+        7.301666526959849e-08
+      ],
+      "ground_fz_N": 515.7631789170151,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.218,
+      "tire_geometry_distance_m": [
+        1.295863998773683e-06,
+        4.728555814403901e-07
+      ],
+      "ground_fz_N": 500.9564283893276,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.412,
+      "tire_geometry_distance_m": [
+        6.325327965156502e-07,
+        6.468036255202758e-08
+      ],
+      "ground_fz_N": 426.01252786375187,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    },
+    {
+      "t": 1.4575,
+      "tire_geometry_distance_m": [
+        1.3198197814229262e-06,
+        3.1679396896022727e-07
+      ],
+      "ground_fz_N": 363.02340203290026,
+      "other_ground_contacts": [
+        "rear_support_0",
+        "rear_support_1"
+      ]
+    }
+  ]
+}

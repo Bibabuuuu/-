@@ -1,0 +1,38 @@
+{
+  "gate": "P2",
+  "status": "PASS",
+  "reviewer": "/root/p1_explicit_mapping",
+  "scope": "Four known zero-correction references; 300 saved nodes, 180 geometry nodes, 48 two-step-size differences, frozen sources, cache/schema/holds and reproducibility metadata. No optimization, dynamics or paper figures.",
+  "contract_sha256": "4c6c38d9582d0896d11112d6c9acf8250234e72004ba29cdbd0a765e49ac37dd",
+  "code_sha256": "209e09c71e343017b8947eadbf10ad3727302a630d6ddd3f3065f95d413b423b",
+  "result_sha256": "c28ba60c3b6c9636cd17621f554322cce8eca35e808a1aa19b918934fdfd48ef",
+  "manifest_sha256": "ce5575ea3ec9f20fb7cf2455da0307ebafa7ebe5b64bf884cfb47ce4627a60d0",
+  "sample_sha256": {
+    "low_held.npz": "4cc35adc4d5638a128735eae8e7147952218954570bdf38a0826a1c554a143cf",
+    "low_buffer.npz": "f4f14cf4a00a6e8ba5d685122f67c83e915a3a11b61b2b3759af93877f9f847e",
+    "upper_buffer.npz": "5a6b8495fcf3dd3f1f6d096f74a084c2a2f4b3d5a402730be988c0188d73fceb",
+    "upper_soft_held.npz": "0762b33cf882a3a0414a3d32e7ba7e6a9e73d56761d456727bae9373e1bc462a"
+  },
+  "command": "work/robot-model-audit/.venv/Scripts/python.exe simulation/rby1/qualify_explicit_stop_mapping.py verify",
+  "exit_code": 0,
+  "source_hashes_matched": 210,
+  "manifest_direct_inputs_matched": 17,
+  "independent_COM_position_error_m_max": 4.82948e-14,
+  "independent_COM_velocity_acceleration_error_max": 3.8e-16,
+  "native_distance_pairs_checked": 2032,
+  "native_distance_error_m_max": 2.23e-16,
+  "maximum_local_IK_steps": 1,
+  "new_audit_IK_calls": 0,
+  "new_audit_QP_calls": 0,
+  "new_physics_steps": 0,
+  "P0": [],
+  "P1": [],
+  "resolved": ["Regenerated manifest with task-local SciPy distribution path; scipy=1.17.1 independently verified."],
+  "limitations": [
+    "Known zero-correction seeds only; not a free coefficient or duration optimizer.",
+    "Sampled geometry does not prove continuous safety or execution qualification.",
+    "Cooperative timing is not a hard real-time guarantee.",
+    "External mesh files not individually hashed.",
+    "Initial actual-state velocity discrepancy remains explicitly reported."
+  ]
+}

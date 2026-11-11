@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "initial": {
+    "max_nonpad_penetration_m": 0.0,
+    "contact_count": 22,
+    "max_qacc": 58.36597641273695,
+    "max_sync_q_m": 0.0
+  },
+  "references": [
+    {
+      "label": "baseline",
+      "samples": 1245,
+      "min_gap_m": 0.006257657326516535,
+      "max_nonpad_penetration_m": 0.0,
+      "original_reference_check": {
+        "rms_acceleration_mps2": 0.651346593534362,
+        "peak_acceleration_mps2": 1.0258000698478063,
+        "peak_predicted_TCP_moment_Nm": 0.04377333242870844,
+        "minimum_reference_gap_m": 0.006257657326516535,
+        "closure_norm_max_SI": [
+          1.1487589816380692e-15,
+          1.2095898088553593e-15,
+          3.8659043403128113e-16,
+          0.0,
+          2.047902597024501e-15,
+          0.0
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": 0.0,
+        "upper_joint_excursion_norm_rad": 0.0,
+        "final_turn_deg": -10.0
+      }
+    },
+    {
+      "label": "rms",
+      "samples": 1245,
+      "min_gap_m": 0.0074952359163902105,
+      "max_nonpad_penetration_m": 0.0,
+      "original_reference_check": {
+        "rms_acceleration_mps2": 0.5598881909292887,
+        "peak_acceleration_mps2": 0.874710254258234,
+        "peak_predicted_TCP_moment_Nm": 0.037472970843246474,
+        "minimum_reference_gap_m": 0.0074952359163902105,
+        "closure_norm_max_SI": [
+          9.936277416172456e-06,
+          9.531179942256403e-05,
+          3.021263062612226e-05,
+          0.00028906313800495837,
+          0.00017279965697218977,
+          0.0014890653106906975
+        ],
+        "maximum_self_penetration_m": 0.0,
+        "minimum_scaled_constraint": -1.1102230246251565e-15,
+        "upper_joint_excursion_norm_rad": 0.03708915826900716,
+        "final_turn_deg": -9.439781930294698
+      }
+    }
+  ]
+}

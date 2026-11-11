@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "stopped-archive evidence only",
+  "agent": "/root/p1_right_formal",
+  "source_count": 878,
+  "verify_exit_code": 0,
+  "complete_evaluations": 99,
+  "comparison_completed": false,
+  "hashes": {
+    "contract.json": "be407e5d2f775d31159718a5c82119c192fa9be87df43ba721c2bc1dd6597ae7",
+    "pilot.json": "5fc32b5bc30984026970e3a5815dac51e5c2b8a90bc5e2be32bc094c5e457d7e",
+    "p1_gate.json": "6a8b067e0b39062d4b79c7b28162693568ef6ed96f1e89c57467d065892542a0",
+    "result.json": "1089913c36ab0e450a5a6934522c5fce54a4f5699e10a08ced7d24c40a9c9cf3",
+    "eval_0100_started.json": "d4eb4c97f444ae94310645000e236b13f345a509cd301fd40f995d98a97f1649",
+    "B0_solve_0.json": "dbe2cccc01280476d1f3a6504576473d26ab6f398af722085cc412266aebc38a"
+  },
+  "evidence": "Bound hashes, 5+94 completed; sole incomplete f=1.249e-16 makes A_obj round to A; no B1 or physics."
+}
